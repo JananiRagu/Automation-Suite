@@ -1,6 +1,8 @@
 package com.test.regression.cub.testscripts;
 
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 import javax.xml.parsers.ParserConfigurationException;
@@ -51,12 +53,26 @@ public class Coupons extends SuiteBase{
 		
 		cp.loadCompleteCouponsPage();
 			log.info("Coupons Page is loaded fully");
-		
-		cp.addNthCoupon(_driver, wantedCouponNumber);
-			log.info("Added nth coupon");
-
+			boolean isCouponFlipp = cp.chkIfFlipp(_driver, wantedCouponNumber);
 			
-		String addedCouponName = cp.getNthCouponName(_driver, wantedCouponNumber);
+			System.out.println("isCouponFlipp value : "+ isCouponFlipp);
+			String addedCouponName = null;
+			if(isCouponFlipp = true){
+				
+				cp.addNthFlippCoupon(_driver, wantedCouponNumber);
+					log.info("Added nth coupon");
+
+				
+				addedCouponName  = cp.getNthFlippCouponName(_driver, wantedCouponNumber);
+				}
+				
+				else if(isCouponFlipp = false){
+					cp.addNthInmarCoupon(_driver, wantedCouponNumber);
+					log.info("Added nth coupon");
+
+				
+				addedCouponName = cp.getNthInmarCouponName(_driver, wantedCouponNumber);
+				}	
 		
 		ecp = new MyeCouponsPage(_driver);
 		
@@ -110,11 +126,26 @@ public class Coupons extends SuiteBase{
 		cp.loadCompleteCouponsPage();
 			log.info("Coupons Page is loaded fully");
 		
-		cp.addNthCoupon(_driver, wantedCouponNumber);
-			log.info("Added nth coupon");
-
+			boolean isCouponFlipp = cp.chkIfFlipp(_driver, wantedCouponNumber);
 			
-		String addedCouponName = cp.getNthCouponName(_driver, wantedCouponNumber);
+			String addedCouponName = null;
+			if(isCouponFlipp = true){
+				
+				cp.addNthFlippCoupon(_driver, wantedCouponNumber);
+					log.info("Added nth coupon");
+
+				
+				addedCouponName  = cp.getNthFlippCouponName(_driver, wantedCouponNumber);
+				}
+				
+				else{
+					cp.addNthInmarCoupon(_driver, wantedCouponNumber);
+					log.info("Added nth coupon");
+
+				
+				addedCouponName = cp.getNthInmarCouponName(_driver, wantedCouponNumber);
+				}	
+	
 		
 		ecp = new MyeCouponsPage(_driver);
 		
@@ -126,61 +157,120 @@ public class Coupons extends SuiteBase{
 		Assert.assertTrue(result);
 		
 	}
-	/*		
-	@Test(enabled=false)
+	
+	// Sign Up for an account just by closing the Rewards Card pop up
+	// So, it will prompt for card-less id while trying to add coupon
+			
+	@Test(enabled=true)
 	public void addCouponForNoCardNewUser() throws XPathExpressionException, ParserConfigurationException, SAXException, IOException, InterruptedException{
 		
-		Map<String, String> addCouponForNoCardNewUserData = readxml.getUserData("TestData.xml", "new-user-2");
+		Map<String, String> addCouponForNoCardNewUserData = readxml.getUserData("TestData.xml", "new-user-coupon1");
 		String userId = addCouponForNoCardNewUserData.get("UserName");
 		String password = addCouponForNoCardNewUserData.get("password");
-	String firstName = addCouponForNoCardNewUserData.get("firstname");
-		String lastName = addCouponForNoCardNewUserData.get("lastname");
-		String address1 = addCouponForNoCardNewUserData.get("address1");
-		String address2 = addCouponForNoCardNewUserData.get("address2");
-		String city = addCouponForNoCardNewUserData.get("city");
-		String state = addCouponForNoCardNewUserData.get("state");
-		String zip = addCouponForNoCardNewUserData.get("zipcode");
-		String homePhone = addCouponForNoCardNewUserData.get("homephone");
-		String mobilePhone = addCouponForNoCardNewUserData.get("mobilephone");
-		String cardlessId = addCouponForNoCardNewUserData.get("cardlessid");
-		String wantedCouponNumber = addCouponForNoCardNewUserData.get("wantedCoupon");
+		String allWantedCouponNumbersInString = addCouponForNoCardNewUserData.get("wantedCoupons");
+		String cardlessId7 = addCouponForNoCardNewUserData.get("cardlessid7");
+		String cardlessId4 = addCouponForNoCardNewUserData.get("cardlessid4");
+		String addedCouponName = null;
 		
 		signUpPage = new SignUpPage(_driver);
 		
 		signUpPage.clickSignUpLink();
 			log.info("SignUp popup is displayed");
 		signUpPage.enterSignUpDetails(userId,password);
-			log.info("Entered Username and password");
-		signUpPage.clickNoButWantCardRadio();
-			log.info("Selected No but Want One Option");
-		signUpPage.clickContinueButton();
-		signUpPage.enterContactInformationInSignUp(firstName, lastName, address1, address2, city, state, zip, homePhone, mobilePhone, cardlessId);		
-			log.info("Entered all contact details");
-		signUpPage.clickUseThisAddressButton();
-			log.info("Entered all the necessary information for the new card");
+			log.info("Entered Sign Up Details and clicked on Continue button");
+			log.info("Signed up with " + userId + "   " + password);
+			Thread.sleep(5000);
+		signUpPage.closeRewardsCardPopup();
+			log.info("Didnt Select any option in Rewards Card popup, Just Closed the popup");
 			
 		cp = new CouponPage(_driver);
 		
 		cp.clickOnCouponsInMyToolsHomePage();
-		
-		cp.loadCompleteCouponsPage();
+			log.info("In Coupons page now..");
+		//cp.loadCompleteCouponsPage();
 			log.info("Coupons Page is loaded fully");
-		
-		cp.addNthCoupon(_driver, wantedCouponNumber);
-			log.info("Added nth coupon");
-
 			
-		String addedCouponName = cp.getNthCouponName(_driver, wantedCouponNumber);
+		// Delimiting the wanted coupon numbers' data
+			
+		List<String> allWantedCouponNumbers = Arrays.asList(allWantedCouponNumbersInString.split(","));
+		int size=allWantedCouponNumbers.size();
+		String firstWantedCoupon = allWantedCouponNumbers.get(0);
+		List<String> otherWantedCoupons = allWantedCouponNumbers.subList(1, size);
+			
+	// Adding First Coupon		
+			boolean isFirstCouponFlipp = cp.chkIfFlipp(_driver, firstWantedCoupon);
+			System.out.println("isCouponFlipp value is "+ isFirstCouponFlipp);
+			
+			String firstAddedCouponName;
+			
+			if(isFirstCouponFlipp){
+					log.info("Trying to add Flipp Coupon");
+				cp.addNthFlippCoupon(_driver, firstWantedCoupon);
+					log.info("Added wanted Flipp coupon");
+				cp.enterCardlessId(cardlessId7, cardlessId4);
+					log.info("Entered Cardless Id Details");
+				cp.clickContinueAfterAddingCardlessIdCongratsPopup();
+		
+				firstAddedCouponName = cp.getNthFlippCouponName(_driver, firstWantedCoupon);
+					log.info("Added Coupon Name : " + firstAddedCouponName);
+			}
+			else{
+					log.info("Trying to add Inmar Coupon");
+				cp.addNthInmarCoupon(_driver, firstWantedCoupon);
+					log.info("Added wanted Inmar Coupon");
+				cp.enterCardlessId(cardlessId7, cardlessId4);
+					log.info("Entered Cardless Id Details");
+				cp.clickContinueAfterAddingCardlessIdCongratsPopup();
+			
+				firstAddedCouponName = cp.getNthInmarCouponName(_driver, firstWantedCoupon);
+					log.info("Added Coupon Name : " + firstAddedCouponName);
+			}
+	if(size>1){
+		
+		for(String wantedCouponNumber : otherWantedCoupons){
+		
+		// Check if wantedCouponNumber is Flipp or Inmar
+			
+		boolean isCouponFlipp = cp.chkIfFlipp(_driver, wantedCouponNumber);
+		System.out.println("isCouponFlipp value is "+ isCouponFlipp);
+			
+		
+		if(isCouponFlipp){
+				log.info("Trying to add Flipp Coupon");
+			cp.addNthFlippCoupon(_driver, wantedCouponNumber);
+				log.info("Added wanted Flipp coupon");
+	
+			addedCouponName = cp.getNthFlippCouponName(_driver, wantedCouponNumber);
+				log.info("Added Coupon Name : " + addedCouponName);
+		}
+		else{
+				log.info("Trying to add Inmar Coupon");
+			cp.addNthInmarCoupon(_driver, wantedCouponNumber);
+				log.info("Added wanted Inmar Coupon");
+		
+			addedCouponName = cp.getNthInmarCouponName(_driver, wantedCouponNumber);
+				log.info("Added Coupon Name : " + addedCouponName);
+		}
+		}
 		
 		ecp = new MyeCouponsPage(_driver);
 		
 		ecp.clickOnMyeCouponsInMyToolsHomePage();
-		
+			log.info("Validating whether the added coupon is in My eCoupons page");
+			
 		boolean result = ecp.isCouponPresent(addedCouponName);
+		if(result)
+			log.info(addedCouponName + " is present in My eCoupons Page");
+		else
+			log.info(addedCouponName + " is NOT present in My eCoupons Page");
+		}
 		
-		System.out.println("Result is " + result);
-		Assert.assertTrue(result);
+		int eCouponsNumber = ecp.noOfECoupons();
 		
-	} */
-}
+		Assert.assertTrue(size == eCouponsNumber);
+		
+	} 
+	}
+	
+
 

@@ -78,4 +78,27 @@
 <spacepassword>f v m m h</spacepassword>
 </user>
 
+
+
+															<!-- Data Used for Coupons Testing -->
+
+<!-- Change the UserName, cardlessid7, cardlessid4 and wantedCoupons -->
+
+<user userid="new-user-coupon1">
+<UserName>addCouponForNoCardNewUser9@cub.com</UserName>
+<password>password</password>
+<firstname>addCoupon</firstname>
+<lastname>NoCardNewUser</lastname>
+<address1>123 cedar Road</address1>
+<address2>test</address2>
+<city>Minneapolis</city>
+<state>MN</state>
+<zipcode>58963</zipcode>
+<homephone>8523697410</homephone>
+<mobilephone>7410254863</mobilephone>
+<cardlessid7>5632741</cardlessid7>
+<cardlessid4>2898</cardlessid4>
+<wantedCoupons>1,2,3,4</wantedCoupons>
+</user>
+
 </TestData> 

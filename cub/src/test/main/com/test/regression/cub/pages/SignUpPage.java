@@ -102,6 +102,9 @@ public class SignUpPage extends SuiteBase{
 	@FindBy(id = "ss-add-rewards-cardlessid-input-4")
 	private WebElement _cardlessId2InAddRewardsPopup;
 	
+	@FindBy(xpath = "//div[@class='ss-cardconfirm-container ss-inner-container']/a")
+	private WebElement _closeButtonInRewardsCardPopup;
+	
 	public void clickSignUpLink() throws InterruptedException{
 		
 		waitFor(_signUpLink);
@@ -136,6 +139,11 @@ public class SignUpPage extends SuiteBase{
 		
 	}
 	
+	public void closeRewardsCardPopup(){
+		
+		waitFor(_closeButtonInRewardsCardPopup);
+		_closeButtonInRewardsCardPopup.click();
+	}
 	
 	public void clickDontWantCardRadio() throws InterruptedException{
 		

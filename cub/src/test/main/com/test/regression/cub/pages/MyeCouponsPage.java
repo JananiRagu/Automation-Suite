@@ -23,7 +23,7 @@ public class MyeCouponsPage extends SuiteBase{
 	@FindBy(id = "toolsMenu")
 	private WebElement _MyToolsLink;
 	
-	@FindBy(xpath = "//*[@id='login-options-sub']/li[4]/a")
+	@FindBy(xpath = "//a[text()='My eCoupons']")
 	private WebElement _MyECoupons;
 	
 	@FindAll({@FindBy(xpath = "//div[@id='coupons-outer']/div/div/div/p/strong")})
@@ -31,8 +31,9 @@ public class MyeCouponsPage extends SuiteBase{
 	
 	public void clickOnMyeCouponsInMyToolsHomePage() throws InterruptedException{
 		Thread.sleep(5000);
-		waitFor(_MyToolsLink);
 		_MyToolsLink.click();
+		
+		Thread.sleep(5000);
 		_MyECoupons.click();
 	    
 	}
@@ -56,5 +57,9 @@ public class MyeCouponsPage extends SuiteBase{
 			return false;
 	}
 	
+	public int noOfECoupons(){
+		int size = _myECoupons.size();
+		return size;
+	}
 	
 }
