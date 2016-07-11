@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <test name="Coupons - Testing(failed)" parallel="none">
+    <classes>
+      <class name="com.test.regression.cub.testscripts.Coupons">
+        <methods>
+          <include name="breakDown"/>
+          <include name="addCouponForNewUser"/>
+          <include name="startExtent"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- com.test.regression.cub.testscripts.Coupons -->
+    </classes>
+  </test> <!-- Coupons - Testing(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,81 @@
+
+<TestData>
+
+<user userid="carded-user">
+<UserName>janani.ragu@supervalu.com</UserName>
+<password>password</password>
+<SLName>list1</SLName>
+<item1>litchi</item1>
+<quantity1>10 kgs</quantity1>
+<item1update>litcheeeeeeeeee</item1update>
+<quantity1update>123456789 kgsssss</quantity1update>
+<item2>carrot</item2>
+<quantity2>100000100</quantity2>
+<item3>fish</item3>
+<quantity3>two</quantity3>
+</user>
+
+<user userid="carded-user1">
+<UserName>july5@cub.com</UserName>
+<password>password</password>
+<wantedCoupon>8</wantedCoupon>
+</user>
+
+
+<user userid="invalid-user">
+<UserName>ankusha10@gmail.com</UserName>
+<password>An55333</password>
+</user>
+
+<user userid="new-user-1">
+<UserName>cubprod4ju@cub.com</UserName>
+<password>password</password>
+</user>
+
+<user userid="new-user-2">
+<UserName>cubprod5july1@cub.com</UserName>
+<password>password</password>
+<firstname>cub</firstname>
+<lastname>prod</lastname>
+<address1>123 cedar ave</address1>
+<address2>test</address2>
+<city>Minneapolis</city>
+<state>MN</state>
+<zipcode>58963</zipcode>
+<homephone>8523697410</homephone>
+<mobilephone>7410254863</mobilephone>
+<cardlessid>51525353595</cardlessid>
+<wantedCoupon>8</wantedCoupon>
+</user>
+
+<user userid="new-user-3">
+<UserName>cubprod4jul@cub.com</UserName>
+<password>password</password>
+<lastname>Test</lastname>
+<rewardsnumber>48630936861</rewardsnumber>
+</user>
+
+
+<user userid="new-user-4">
+<ZipCode>55434</ZipCode>
+<CityName>Central Ave Ne Blaine</CityName>
+<State>MN</State>
+</user>
+
+
+<user userid="user-to-change-pwd">
+<UserName>july11test@cub.com</UserName>
+<oldpassword>password</oldpassword>
+
+<wrongoldpassword>pass11word</wrongoldpassword>
+<newpassword>changepassword</newpassword>
+<diffnewpassword>changepassword</diffnewpassword>
+
+<lengthypasswordreset>jsghdwhgendxhiweghxd</lengthypasswordreset>
+<lengthypassword>jsghdwhgendxhiweghxdihgexdfsdgkgiuxdjkseui</lengthypassword>
+
+<shortpassword>aa</shortpassword>
+<spacepassword>f v m m h</spacepassword>
+</user>
+
+</TestData> 

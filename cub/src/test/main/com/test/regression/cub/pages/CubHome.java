@@ -1,0 +1,311 @@
+package com.test.regression.cub.pages;
+
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.test.regression.cub.utils.SuiteBase;
+
+public class CubHome extends SuiteBase{
+	
+	WebDriver _driver;
+	
+	public CubHome(WebDriver driver) {
+		super();
+		_driver=driver;
+		PageFactory.initElements(_driver, this);
+	}
+	
+	@FindBy(id="logo")
+	private WebElement _Logo;
+	
+	
+	@FindBy(xpath = "//a[text()='Sign In']")
+	private WebElement _signInLink;
+	
+    // Below is the list of WebElements in the SignIn Popup
+	
+	@FindBy(id = "ss-email-input")
+	private WebElement _userName;
+	
+	@FindBy(id = "ss-password-login")
+	private WebElement _password;
+	
+	@FindBy(xpath = "//button[text()='Sign in']")
+	private WebElement _signInButton;
+	
+	@FindBy(id = "ss-toggle-visible-password")
+	private WebElement _showChkBox;
+	
+	@FindBy(xpath = "//a[text()='I forgot my password']")
+	private WebElement _forgotPwd;
+	
+	@FindBy(xpath = "//a[text()='Sign up!']")
+	private WebElement _signUp;
+	
+	@FindBy(id = "ss-remember-login")
+	private WebElement _rememberMe;
+	
+	@FindBy(xpath = "//a[text()='reset your password']")
+	private WebElement _pwdIncorrect;
+	
+	@FindBy(xpath = "//a[text()='Shopping List']")
+	private WebElement _shoppingListButton;
+	
+	
+	@FindBy(xpath = "//a[text()='Log Out']")
+	private WebElement _logOut;
+	
+	@FindBy(xpath="//a[text()='Find a Store']")
+	private WebElement _FindAStore;
+	
+	// Footer links
+	
+			@FindBy(xpath = "//div[@class ='footer-links-container']/ul/li/a[text()='Customer Service']")
+			private WebElement _CustomerService;
+			
+			@FindBy(xpath = "//a[text()='About Us']")
+			private WebElement _AboutUs;
+			
+			@FindBy(xpath = "//a[text()='Careers']")
+			private WebElement _Careers;
+			
+			@FindBy(xpath = "//a[text()='Recalls']")
+			private WebElement _Recalls;
+			
+			@FindBy(xpath = "(//a[text()='Privacy Policy'])[2]")
+			private WebElement _PrivacyPolicy;
+			
+			@FindBy(xpath = "//div[@class ='footer-links-container']/ul/li/a[text()='Terms of Use']")
+			private WebElement _TermsOfUse;
+			
+	// Associates link
+			
+			@FindBy(xpath = "//a[text()='Associates']")
+			private WebElement _Associates;
+			
+	// Header tabs
+			
+			@FindBy(xpath = "//a[text()='Savings']")
+			private WebElement _Savings;
+			
+			@FindBy(xpath = "//a[text()='Recipes']")
+			private WebElement _Recipes;
+			
+			@FindBy(xpath = "//a[text()='Departments']")
+			private WebElement _Departments;
+			
+			@FindBy(xpath = "//a[text()='Pharmacy']")
+			private WebElement _Pharmacy;
+			
+			@FindBy(xpath = "//a[text()='About']")
+			private WebElement _About;
+			
+			@FindBy(xpath = "//a[text()='Grocery Delivery']")
+			private WebElement _GroceryDelivery;
+			
+		
+	// Search text box in home page 
+			
+			@FindBy(id = "inp-search")
+			private WebElement _Search;
+
+	// Home Page Tiles
+			
+			@FindBy(xpath = "//a[text()='Weekly Ads']")
+			private WebElement _WeeklyAdTile;
+			
+			@FindBy(xpath = "//div[@class='homepanel_column homepanel_column1of2']/ul/li[2]/a[text()='Coupons']")
+			private WebElement _CouponTile;
+			
+			@FindBy(xpath = "//a[text()='Cakes & Party Trays']")
+			private WebElement _CakesandPartyTile;
+			
+			@FindBy(xpath = "(//a[text()='My Cub Rewards'])[2]")
+			private WebElement _CubRewardsTile;
+			
+			
+	
+	//Method to click on Logo
+	
+	public void clickOnLogo(){
+			waitFor(_Logo);
+			_Logo.click();
+	}
+
+	//Method to click SignOut link in Home page
+	
+
+	public void clickOnLogOutLink()
+	{
+		waitFor(_logOut);
+		_logOut.click();
+	}
+
+
+//Methods to click Header tabs  in Home page
+	
+	public void clickOnSavings()
+	{
+		waitFor(_Savings);
+		_Savings.click();
+	}	
+	
+	
+	public void clickOnRecipes()
+	{
+		waitFor(_Recipes);
+		_Recipes.click();
+	}	
+	
+	public void clickOnDepartments()
+	{
+		waitFor(_Departments);
+		_Departments.click();
+	}	
+	
+	public void clickOnPharmacy()
+	{
+		waitFor(_Pharmacy);
+		_Pharmacy.click();
+	}
+	
+	
+	public void clickOnAbout()
+	{
+		waitFor(_About);
+		_About.click();
+	}
+	
+	
+	public void clickOnGroceryDelivery()
+	{
+		waitFor(_GroceryDelivery);
+		_GroceryDelivery.click();
+	}
+
+//Methods to click Footer links  in Home page
+	
+	public void clickOnAboutUs()
+	{
+		waitFor(_AboutUs);
+		_AboutUs.click();
+	}
+	
+	public void clickCareers()
+	{
+		waitFor(_Careers);
+		_Careers.click();
+	}
+	
+	public void clickRecalls()
+	{
+		waitFor(_Recalls);
+		_Recalls.click();
+	}
+	
+	public void clickPrivacyPolicy()
+	{
+		waitFor(_PrivacyPolicy);
+		_PrivacyPolicy.click();
+	}
+	
+	
+	public void clickTermsOfUse()
+	{
+		waitFor(_TermsOfUse);
+		_TermsOfUse.click();
+	}
+	
+	
+	public void clickCustomerService()
+	{
+		waitFor(_CustomerService);
+		_CustomerService.click();
+	}
+	
+//Methods to click tiles in Home Page
+	
+	public void clickWeeklyAdTile()
+	{
+		waitFor(_WeeklyAdTile);
+		_WeeklyAdTile.click();
+	}
+	
+	
+	public void clickCouponTile(WebDriver driver)
+	{
+		
+		Actions actions = new Actions(driver);
+
+		actions.moveToElement(_CouponTile).click().perform();
+		//waitFor(_CouponTile);
+		//_CouponTile.click();
+	}
+	
+	
+	public void clickCakesandPartyTile()
+	{
+		waitFor(_CakesandPartyTile);
+		_CakesandPartyTile.click();
+	}
+	
+
+	public void clickCubRewardsTile()
+	{
+		waitFor(_CubRewardsTile);
+		_CubRewardsTile.click();
+	}
+	
+		
+	
+	public void clickSignInLink() throws InterruptedException{
+		waitFor(_signInLink);
+		_signInLink.click();
+	}
+	
+	public void enterLoginDetails(String UserName, String Password){
+		waitFor(_userName);
+		_userName.sendKeys(UserName);
+		waitFor(_password);
+		_password.sendKeys(Password);
+		
+	}
+	
+	public void clickSignInButton(){
+		waitFor(_signInButton);
+		_signInButton.click();
+		
+	}
+	
+
+	public boolean isLogOutButtonPresent(){
+				
+		try {
+			waitFor(_logOut);
+            return _logOut.isDisplayed();
+          } catch (NoSuchElementException e) {
+            return false;
+          }catch (TimeoutException ex) {
+              return false;
+            }	
+	}
+	
+	public boolean isPasswordIncorrectTextPresent(){
+		waitFor(_pwdIncorrect);
+		return(_pwdIncorrect.isDisplayed());
+		
+	}
+	
+	
+	public void clickAssociates()
+	{
+		waitFor(_Associates);
+		_Associates.click();
+	}
+}
+

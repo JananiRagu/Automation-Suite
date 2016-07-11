@@ -1,0 +1,969 @@
+2016-06-22 16:21:28,118 [main] INFO com.test.regression.cub.utils.Logg - Test Data : 
+2016-06-22 16:21:28,124 [main] INFO com.test.regression.cub.utils.Logg - User Nameankusha10@gmail.com
+2016-06-22 16:21:28,124 [main] INFO com.test.regression.cub.utils.Logg - PasswordAnkusha_10
+2016-06-22 16:21:28,124 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-06-22 16:21:29,046 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-22 16:21:30,453 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-22 16:21:30,872 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-22 16:21:30,872 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-06-22 16:25:18,038 [main] INFO com.test.regression.cub.utils.Logg - Test Data : 
+2016-06-22 16:25:18,043 [main] INFO com.test.regression.cub.utils.Logg - User Nameankusha10@gmail.com
+2016-06-22 16:25:18,043 [main] INFO com.test.regression.cub.utils.Logg - PasswordAnkusha_10
+2016-06-22 16:25:18,044 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-06-22 16:25:18,884 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-22 16:25:19,642 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-22 16:25:19,898 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-22 16:25:19,898 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-06-22 17:01:16,068 [main] INFO com.test.regression.cub.utils.Logg - User Nameankusha10@gmail.com
+2016-06-22 17:01:16,132 [main] INFO com.test.regression.cub.utils.Logg - PasswordAnkusha_10
+2016-06-22 17:01:16,133 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-06-22 17:01:16,485 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-22 17:01:18,182 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-22 17:01:18,410 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-22 17:01:18,410 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-06-22 17:08:49,456 [main] INFO com.test.regression.cub.utils.Logg - User Nameankusha10@gmail.com
+2016-06-22 17:08:49,488 [main] INFO com.test.regression.cub.utils.Logg - PasswordAnkusha_10
+2016-06-22 17:08:49,489 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-06-22 17:08:50,207 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-22 17:08:51,023 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-22 17:08:51,215 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-22 17:08:51,216 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-06-22 17:09:21,974 [main] INFO com.test.regression.cub.utils.Logg - User Nameankusha10@gmail.com
+2016-06-22 17:09:21,975 [main] INFO com.test.regression.cub.utils.Logg - PasswordAnkusha_102
+2016-06-22 17:09:21,976 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-06-22 17:09:22,416 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-22 17:09:23,670 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-22 17:09:23,930 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-22 17:09:23,931 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-06-22 17:16:45,165 [main] INFO com.test.regression.cub.utils.Logg - User Nameankusha10@gmail.com
+2016-06-22 17:16:45,171 [main] INFO com.test.regression.cub.utils.Logg - PasswordAnkusha_10
+2016-06-22 17:16:45,171 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-06-22 17:16:45,640 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-22 17:16:46,467 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-22 17:16:46,672 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-22 17:16:46,674 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-06-22 17:17:10,453 [main] INFO com.test.regression.cub.utils.Logg - User Nameankusha10@gmail.com
+2016-06-22 17:17:10,455 [main] INFO com.test.regression.cub.utils.Logg - PasswordAnkusha_102
+2016-06-22 17:17:10,455 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-06-22 17:17:10,873 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-22 17:17:12,021 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-22 17:17:12,222 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-22 17:17:12,222 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-06-23 10:49:11,366 [main] INFO com.test.regression.cub.utils.Logg - User Nameankusha10@gmail.com
+2016-06-23 10:49:11,374 [main] INFO com.test.regression.cub.utils.Logg - PasswordAnkusha_10
+2016-06-23 10:49:11,375 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-06-23 10:49:11,731 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-23 10:49:12,989 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-23 10:49:13,220 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-23 10:49:13,220 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-06-23 10:49:38,468 [main] INFO com.test.regression.cub.utils.Logg - User Nameankusha10@gmail.com
+2016-06-23 10:49:38,469 [main] INFO com.test.regression.cub.utils.Logg - PasswordAnkusha_102
+2016-06-23 10:49:38,473 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-06-23 10:49:38,695 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-23 10:49:39,991 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-23 10:49:40,243 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-23 10:49:40,243 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-06-23 10:51:09,845 [main] INFO com.test.regression.cub.utils.Logg - User Nameankusha10@gmail.com
+2016-06-23 10:51:09,852 [main] INFO com.test.regression.cub.utils.Logg - PasswordAnkusha_10
+2016-06-23 10:51:09,853 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-06-23 10:51:10,094 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-23 10:51:11,922 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-23 10:51:12,149 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-23 10:51:12,149 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-06-23 10:51:40,958 [main] INFO com.test.regression.cub.utils.Logg - User Nameankusha10@gmail.com
+2016-06-23 10:51:40,958 [main] INFO com.test.regression.cub.utils.Logg - PasswordAnkusha_102
+2016-06-23 10:51:40,965 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-06-23 10:51:41,972 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-23 10:51:42,672 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-23 10:51:42,913 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-23 10:51:42,917 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-06-23 11:36:22,653 [main] INFO com.test.regression.cub.utils.Logg - User Nameankusha10@gmail.com
+2016-06-23 11:36:22,658 [main] INFO com.test.regression.cub.utils.Logg - PasswordAnkusha_102
+2016-06-23 11:36:22,659 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-06-23 11:36:23,064 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-23 11:36:23,917 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-23 11:36:24,125 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-23 11:36:24,126 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-06-23 11:38:03,992 [main] INFO com.test.regression.cub.utils.Logg - User Nameankusha10@gmail.com
+2016-06-23 11:38:03,992 [main] INFO com.test.regression.cub.utils.Logg - PasswordAnkusha_102
+2016-06-23 11:38:03,996 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-06-23 11:38:04,584 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-23 11:38:05,566 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-23 11:38:05,768 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-23 11:38:05,769 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-06-23 11:50:28,756 [main] INFO com.test.regression.cub.utils.Logg - User Nameankusha10@gmail.com
+2016-06-23 11:50:28,761 [main] INFO com.test.regression.cub.utils.Logg - PasswordAnkusha_102
+2016-06-23 11:50:28,762 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-06-23 11:50:29,250 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-23 11:50:30,623 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-23 11:50:30,837 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-23 11:50:30,838 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-06-23 11:52:10,761 [main] INFO com.test.regression.cub.utils.Logg - User Nameankusha10@gmail.com
+2016-06-23 11:52:10,761 [main] INFO com.test.regression.cub.utils.Logg - PasswordAnkusha_102
+2016-06-23 11:52:10,764 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-06-23 11:52:11,899 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-23 11:52:12,688 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-23 11:52:12,925 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-23 11:52:12,926 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-06-27 16:12:13,624 [main] INFO com.test.regression.cub.utils.Logg - User Nameankusha10@gmail.com
+2016-06-27 16:12:13,645 [main] INFO com.test.regression.cub.utils.Logg - PasswordAnkusha_102
+2016-06-27 16:12:13,646 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-06-27 16:12:13,937 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-27 16:12:15,249 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-27 16:12:15,450 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-27 16:12:15,450 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-06-27 16:13:49,680 [main] INFO com.test.regression.cub.utils.Logg - User Nameankusha10@gmail.com
+2016-06-27 16:13:49,680 [main] INFO com.test.regression.cub.utils.Logg - PasswordAnkusha_102
+2016-06-27 16:13:49,683 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-06-27 16:13:50,187 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-27 16:13:52,515 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-27 16:13:52,755 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-27 16:13:52,756 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-06-27 16:18:07,530 [main] INFO com.test.regression.cub.utils.Logg - User Name : ankusha10@gmail.com
+2016-06-27 16:18:07,536 [main] INFO com.test.regression.cub.utils.Logg - Password : Ankusha_10
+2016-06-27 16:18:07,537 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-06-27 16:18:07,851 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-27 16:18:08,985 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-27 16:18:09,168 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-27 16:18:09,168 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-06-27 16:18:24,079 [main] INFO com.test.regression.cub.utils.Logg - User Nameankusha10@gmail.com
+2016-06-27 16:18:24,082 [main] INFO com.test.regression.cub.utils.Logg - PasswordAnkusha_102
+2016-06-27 16:18:24,082 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-06-27 16:18:24,485 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-27 16:18:25,714 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-27 16:18:25,893 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-27 16:18:25,893 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-06-27 16:27:19,470 [main] INFO com.test.regression.cub.utils.Logg - User Name : ankusha10@gmail.com
+2016-06-27 16:27:19,475 [main] INFO com.test.regression.cub.utils.Logg - Password : Ankusha_10
+2016-06-27 16:27:19,476 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-06-27 16:27:20,222 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-27 16:27:21,061 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-27 16:27:21,231 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-27 16:27:21,231 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-06-27 16:27:35,677 [main] INFO com.test.regression.cub.utils.Logg - User Nameankusha10@gmail.com
+2016-06-27 16:27:35,680 [main] INFO com.test.regression.cub.utils.Logg - PasswordAnkusha_102
+2016-06-27 16:27:35,691 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-06-27 16:27:36,528 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-27 16:27:37,191 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-27 16:27:37,406 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-27 16:27:37,407 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-06-27 16:27:54,436 [main] INFO com.test.regression.cub.utils.Logg - Launched Cub Website
+2016-06-27 16:27:55,889 [main] INFO com.test.regression.cub.utils.Logg - Entered Sign Up Data
+2016-06-27 16:28:24,395 [main] INFO com.test.regression.cub.utils.Logg - Clicked on No Card Option
+2016-06-27 16:28:35,267 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-27 16:28:36,061 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-27 16:28:36,777 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-27 16:28:37,040 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-27 16:28:45,766 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-27 16:29:35,446 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-27 16:29:49,396 [main] INFO com.test.regression.cub.utils.Logg - SignUp Popup Launched
+2016-06-27 16:30:07,832 [main] INFO com.test.regression.cub.utils.Logg - Entered existing reward card details
+2016-06-27 16:30:19,624 [main] INFO com.test.regression.cub.utils.Logg - SignUp popup is displayed
+2016-06-27 16:30:20,434 [main] INFO com.test.regression.cub.utils.Logg - Entered Username and password
+2016-06-27 16:30:47,729 [main] INFO com.test.regression.cub.utils.Logg - Selected No but Want One Option
+2016-06-27 16:30:52,355 [main] INFO com.test.regression.cub.utils.Logg - Entered all contact details
+2016-06-27 16:30:53,776 [main] INFO com.test.regression.cub.utils.Logg - Entered all the necessary information for the new card
+2016-06-27 16:46:15,361 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-27 16:46:15,641 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-27 16:46:16,953 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-27 16:46:17,164 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-27 16:46:24,553 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-27 16:46:30,638 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-27 16:52:30,451 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-27 16:52:31,218 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-27 16:52:32,039 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-27 16:52:32,219 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-27 16:52:40,332 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-27 16:52:49,172 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-27 16:56:20,157 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-27 16:56:20,444 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-27 16:56:21,709 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-27 16:56:21,895 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-27 16:56:26,626 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-28 10:52:53,925 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-28 10:52:54,215 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-28 10:52:55,958 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-28 10:52:56,132 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-28 10:53:05,276 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-28 10:53:11,555 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-28 11:05:36,721 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-28 11:05:36,954 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-28 11:05:38,315 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-28 11:05:38,520 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-28 11:05:46,602 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-28 11:05:52,884 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-28 11:06:49,116 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-28 11:06:49,413 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-28 11:06:50,999 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-28 11:06:51,171 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-28 11:07:00,266 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-28 11:07:06,664 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-28 11:08:04,290 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-28 11:08:04,584 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-28 11:08:05,602 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-28 11:08:05,776 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-28 11:08:13,442 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-28 11:08:19,847 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-28 16:28:18,027 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-28 16:28:19,237 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-28 16:28:21,418 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-28 16:28:21,773 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-28 16:28:30,637 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-28 16:28:44,121 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-28 16:28:58,150 [main] INFO com.test.regression.cub.utils.Logg - 2 items added to shopping list
+2016-06-28 16:31:31,720 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-28 16:31:34,086 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-28 16:31:45,022 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-28 16:31:47,251 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-28 16:32:17,219 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-28 16:32:30,494 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-28 16:32:48,941 [main] INFO com.test.regression.cub.utils.Logg - 2 items added to shopping list
+2016-06-28 17:00:37,577 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-28 17:00:38,113 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-28 17:00:38,768 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-28 17:00:38,941 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-28 17:00:46,947 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-28 17:00:53,250 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-28 17:00:54,332 [main] INFO com.test.regression.cub.utils.Logg - 2 items added to shopping list
+2016-06-28 17:02:33,778 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-28 17:02:34,536 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-28 17:02:38,814 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-28 17:02:39,023 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-28 17:02:47,123 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-28 17:02:55,212 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-28 17:02:56,382 [main] INFO com.test.regression.cub.utils.Logg - 2 items added to shopping list
+2016-06-28 17:05:37,686 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-28 17:05:39,940 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-28 17:05:40,896 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-28 17:05:41,130 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-28 17:05:49,442 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-28 17:05:56,027 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-28 17:05:57,169 [main] INFO com.test.regression.cub.utils.Logg - 2 items added to shopping list
+2016-06-28 17:09:13,719 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-28 17:09:14,485 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-28 17:09:15,358 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-28 17:09:15,560 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-28 17:09:20,875 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-28 17:09:45,741 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-28 17:09:47,111 [main] INFO com.test.regression.cub.utils.Logg - 2 items added to shopping list
+2016-06-28 17:17:44,015 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-28 17:17:44,320 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-28 17:17:45,890 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-28 17:17:46,088 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-28 17:17:54,155 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-28 17:18:00,757 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-28 17:18:02,292 [main] INFO com.test.regression.cub.utils.Logg - 2 items added to shopping list
+2016-06-28 17:22:13,176 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-28 17:22:13,920 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-28 17:22:14,680 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-28 17:22:14,891 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-28 17:22:23,367 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-28 17:22:30,588 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-28 17:22:31,248 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-28 17:23:48,493 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-28 17:23:48,835 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-28 17:23:49,801 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-28 17:23:50,044 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-28 17:24:02,623 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-28 17:24:09,202 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-28 17:24:09,823 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-28 17:24:10,455 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-28 17:30:42,436 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-28 17:30:42,720 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-28 17:30:43,967 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-28 17:30:44,169 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-28 17:30:52,261 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-28 17:30:59,508 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-28 17:31:00,181 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-28 17:31:00,676 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-28 17:31:01,063 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-28 17:32:46,518 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-28 17:32:46,905 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-28 17:32:48,451 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-28 17:32:48,649 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-28 17:32:57,121 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-28 17:33:03,641 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-28 17:33:04,368 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-28 17:33:05,015 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-28 17:33:05,441 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-28 17:35:35,518 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-28 17:35:36,970 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-28 17:35:39,003 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-28 17:35:39,183 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-28 17:35:48,518 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-28 17:35:57,127 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-28 17:35:57,842 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-28 17:35:58,492 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-28 17:35:58,887 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 13:29:00,099 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-29 13:29:00,413 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-29 13:29:02,300 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-29 13:29:02,510 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-29 13:29:10,604 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-29 13:29:17,289 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-29 13:29:18,000 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 13:29:18,568 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 13:29:18,994 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 13:39:21,645 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-29 13:39:21,890 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-29 13:39:23,569 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-29 13:39:23,761 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-29 13:39:31,930 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-29 13:39:39,638 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-29 13:39:40,338 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 13:39:40,800 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 13:39:41,203 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 15:08:57,318 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-29 15:08:57,660 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-29 15:08:59,448 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-29 15:08:59,722 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-29 15:10:12,130 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-29 15:11:10,008 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-29 15:11:10,795 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 15:11:11,380 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 15:11:11,810 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 15:22:31,514 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-29 15:22:31,737 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-29 15:22:33,429 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-29 15:22:33,627 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-29 15:22:44,839 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-29 15:22:56,800 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-29 15:22:57,494 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 15:22:58,110 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 15:22:58,685 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 15:24:11,774 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-29 15:24:12,009 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-29 15:24:13,622 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-29 15:24:13,860 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-29 15:24:19,698 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-29 15:24:59,056 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-29 15:24:59,748 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 15:25:00,359 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 15:25:00,771 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 15:34:53,178 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-29 15:34:53,936 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-29 15:34:55,233 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-29 15:34:55,437 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-29 15:35:04,441 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-29 15:35:11,567 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-29 15:35:12,242 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 15:35:12,766 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 15:35:13,190 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 16:20:37,721 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-29 16:20:37,958 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-29 16:20:40,107 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-29 16:20:40,775 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-29 16:20:57,543 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-29 16:21:46,088 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-29 16:21:47,046 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 16:21:47,597 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 16:21:48,004 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 16:23:21,241 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-29 16:23:21,592 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-29 16:23:22,749 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-29 16:23:22,930 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-29 16:23:31,787 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-29 16:23:40,475 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-29 16:23:41,228 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 16:23:41,951 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 16:23:42,370 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 16:28:35,863 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-29 16:28:36,613 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-29 16:28:37,472 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-29 16:28:38,057 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-29 16:28:46,518 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-29 16:28:54,226 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-29 16:28:54,902 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 16:28:55,424 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 16:28:55,841 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 16:30:35,948 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-29 16:30:37,978 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-29 16:30:39,813 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-29 16:30:40,033 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-29 16:30:44,944 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-29 16:31:13,680 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-29 16:31:14,447 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 16:31:14,966 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 16:31:15,385 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 17:22:32,498 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-29 17:22:32,818 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-29 17:22:35,319 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-29 17:22:35,490 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-29 17:22:47,365 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-29 17:22:55,746 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-29 17:22:56,485 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-06-29 17:23:54,103 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-06-29 17:23:54,439 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-06-29 17:23:55,992 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-06-29 17:23:56,217 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-06-29 17:24:05,286 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-06-29 17:24:14,001 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-06-29 17:24:14,732 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-07-01 13:28:58,099 [main] INFO com.test.regression.cub.utils.Logg - AboutUs Navigation - Success 
+2016-07-01 13:32:32,850 [main] INFO com.test.regression.cub.utils.Logg - AboutUs Navigation - Success 
+2016-07-01 14:53:46,145 [main] INFO com.test.regression.cub.utils.Logg - User Name : janani.ragu@supervalu.com
+2016-07-01 14:53:46,408 [main] INFO com.test.regression.cub.utils.Logg - Password : password
+2016-07-01 14:53:46,527 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-07-01 15:00:05,649 [main] INFO com.test.regression.cub.utils.Logg - AboutUs Navigation - Success 
+2016-07-01 15:04:47,367 [main] INFO com.test.regression.cub.utils.Logg - User Name : janani.ragu@supervalu.com
+2016-07-01 15:04:47,629 [main] INFO com.test.regression.cub.utils.Logg - Password : password1
+2016-07-01 15:04:47,754 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-07-01 15:04:49,572 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-01 15:04:50,497 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-01 15:04:50,839 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-01 15:04:50,951 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-07-01 15:10:47,520 [main] INFO com.test.regression.cub.utils.Logg - User Name : janani.ragu@supervalu.com
+2016-07-01 15:10:47,780 [main] INFO com.test.regression.cub.utils.Logg - Password : password
+2016-07-01 15:10:47,890 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-07-01 15:10:49,022 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-01 15:10:49,884 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-01 15:10:50,196 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-01 15:10:50,307 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-07-01 15:11:14,578 [main] INFO com.test.regression.cub.utils.Logg - AboutUs Navigation - Success 
+2016-07-01 15:11:24,796 [main] INFO com.test.regression.cub.utils.Logg - User Nameankusha10@gmail.com
+2016-07-01 15:11:24,910 [main] INFO com.test.regression.cub.utils.Logg - PasswordAnkusha_102
+2016-07-01 15:11:25,018 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-07-01 15:11:25,363 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-01 15:11:26,494 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-01 15:11:26,806 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-01 15:11:26,916 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-07-01 15:11:58,734 [main] INFO com.test.regression.cub.utils.Logg - Launched Cub Website
+2016-07-01 15:12:00,520 [main] INFO com.test.regression.cub.utils.Logg - Entered Sign Up Data
+2016-07-01 15:12:51,949 [main] INFO com.test.regression.cub.utils.Logg - SignUp Popup Launched
+2016-07-01 15:13:43,292 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-01 15:13:43,613 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-01 15:13:44,648 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-01 15:13:44,957 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-01 15:13:53,477 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-07-01 15:13:59,950 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-07-01 15:14:10,159 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-01 15:14:10,482 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-01 15:14:11,476 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-01 15:14:11,775 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-01 15:14:19,618 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-07-01 15:14:26,142 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-07-01 15:14:27,074 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-07-01 15:15:23,004 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-01 15:15:23,367 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-01 15:15:24,516 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-01 15:15:24,842 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-01 15:15:37,131 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-07-01 15:15:43,683 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-07-01 15:15:44,620 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-07-01 15:16:39,285 [main] INFO com.test.regression.cub.utils.Logg - SignUp popup is displayed
+2016-07-01 15:16:40,340 [main] INFO com.test.regression.cub.utils.Logg - Entered Username and password
+2016-07-01 15:17:32,094 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-01 15:17:32,647 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-01 15:17:33,478 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-01 15:17:33,762 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-01 15:17:41,612 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-07-01 15:17:47,751 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-07-01 15:17:48,592 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-07-01 15:17:49,245 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-07-01 15:17:49,928 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-07-01 15:18:03,482 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-01 15:18:03,818 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-01 15:18:04,781 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-01 15:18:05,104 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-01 15:18:12,918 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-07-01 15:18:19,166 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-07-01 15:18:20,076 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-07-01 15:18:20,741 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-07-01 15:18:21,235 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-07-01 15:47:14,773 [main] INFO com.test.regression.cub.utils.Logg - User Name : janani.ragu@supervalu.com
+2016-07-01 15:47:14,836 [main] INFO com.test.regression.cub.utils.Logg - Password : password
+2016-07-01 15:47:14,837 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-07-01 15:47:15,075 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-01 15:47:16,124 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-01 15:47:16,335 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-01 15:47:16,336 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-07-01 15:47:32,943 [main] INFO com.test.regression.cub.utils.Logg - AboutUs Navigation - Success 
+2016-07-01 15:47:41,735 [main] INFO com.test.regression.cub.utils.Logg - User Nameankusha10@gmail.com
+2016-07-01 15:47:41,735 [main] INFO com.test.regression.cub.utils.Logg - PasswordAn55333
+2016-07-01 15:47:41,736 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-07-01 15:47:41,956 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-01 15:47:42,868 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-01 15:47:43,085 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-01 15:47:43,087 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-07-01 15:47:57,451 [main] INFO com.test.regression.cub.utils.Logg - Launched Cub Website
+2016-07-01 15:47:58,988 [main] INFO com.test.regression.cub.utils.Logg - Entered Sign Up Data
+2016-07-01 15:48:18,705 [main] INFO com.test.regression.cub.utils.Logg - Clicked on No Card Option
+2016-07-01 15:48:28,917 [main] INFO com.test.regression.cub.utils.Logg - SignUp Popup Launched
+2016-07-01 15:48:43,488 [main] INFO com.test.regression.cub.utils.Logg - Entered existing reward card details
+2016-07-01 15:48:52,272 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-01 15:48:52,516 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-01 15:48:53,420 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-01 15:48:53,615 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-01 15:49:01,695 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-07-01 15:49:08,005 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-07-01 15:49:16,609 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-01 15:49:17,436 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-01 15:49:18,130 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-01 15:49:18,346 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-01 15:49:26,134 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-07-01 15:49:31,965 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-07-01 15:49:32,763 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-07-01 15:50:25,399 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-01 15:50:25,637 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-01 15:50:26,654 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-01 15:50:26,862 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-01 15:50:34,669 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-07-01 15:50:41,349 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-07-01 15:50:42,065 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-07-01 15:51:34,462 [main] INFO com.test.regression.cub.utils.Logg - SignUp popup is displayed
+2016-07-01 15:51:35,570 [main] INFO com.test.regression.cub.utils.Logg - Entered Username and password
+2016-07-01 15:51:50,590 [main] INFO com.test.regression.cub.utils.Logg - Selected No but Want One Option
+2016-07-01 15:51:55,602 [main] INFO com.test.regression.cub.utils.Logg - Entered all contact details
+2016-07-01 15:51:59,047 [main] INFO com.test.regression.cub.utils.Logg - Entered all the necessary information for the new card
+2016-07-01 15:52:10,173 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-01 15:52:10,671 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-01 15:52:11,534 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-01 15:52:11,766 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-01 15:52:19,576 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-07-01 15:52:25,760 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-07-01 15:52:26,470 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-07-01 15:52:27,054 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-07-01 15:52:27,543 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-07-01 15:52:40,005 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-01 15:52:40,505 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-01 15:52:41,302 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-01 15:52:41,528 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-01 15:52:49,273 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-07-01 15:52:55,874 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-07-01 15:52:56,619 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-07-01 15:52:57,172 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-07-01 15:52:57,636 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-07-01 16:25:22,569 [main] INFO com.test.regression.cub.utils.Logg - AboutUs Navigation - Success 
+2016-07-01 16:25:34,385 [main] INFO com.test.regression.cub.utils.Logg - Careers Navigation - Success 
+2016-07-01 16:25:44,562 [main] INFO com.test.regression.cub.utils.Logg - Product Recalls Navigation - Success 
+2016-07-01 16:25:55,394 [main] INFO com.test.regression.cub.utils.Logg - PrivacyPolicy Navigation - Success 
+2016-07-01 16:27:48,453 [main] INFO com.test.regression.cub.utils.Logg - Navigation of WeeklyAd Tile in Home page - Success 
+2016-07-01 16:27:59,752 [main] INFO com.test.regression.cub.utils.Logg - Navigation of Coupon Tile in Home page - Success 
+2016-07-01 16:28:16,080 [main] INFO com.test.regression.cub.utils.Logg - Navigation of Cakes and Party Tile in Home page - Success 
+2016-07-01 16:28:27,042 [main] INFO com.test.regression.cub.utils.Logg - Navigation of Cub Rewards Tile  in Home page - Success 
+2016-07-04 13:20:56,217 [main] INFO com.test.regression.cub.utils.Logg - User Name : janani.ragu@supervalu.com
+2016-07-04 13:20:56,231 [main] INFO com.test.regression.cub.utils.Logg - Password : password
+2016-07-04 13:20:56,233 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-07-04 13:20:56,885 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-04 13:20:57,745 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-04 13:20:57,967 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-04 13:20:57,969 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-07-04 13:21:12,924 [main] INFO com.test.regression.cub.utils.Logg - User Nameankusha10@gmail.com
+2016-07-04 13:21:12,932 [main] INFO com.test.regression.cub.utils.Logg - PasswordAn55333
+2016-07-04 13:21:12,934 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-07-04 13:21:13,167 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-04 13:21:14,191 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-04 13:21:14,482 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-04 13:21:14,483 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-07-04 13:21:45,432 [main] INFO com.test.regression.cub.utils.Logg - Launched Cub Website
+2016-07-04 13:21:47,149 [main] INFO com.test.regression.cub.utils.Logg - Entered Sign Up Data
+2016-07-04 13:22:38,256 [main] INFO com.test.regression.cub.utils.Logg - SignUp Popup Launched
+2016-07-04 13:23:34,394 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-04 13:23:34,665 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-04 13:23:36,577 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-04 13:23:36,861 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-04 13:23:41,848 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-07-04 13:24:33,169 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-04 13:24:33,807 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-04 13:24:34,647 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-04 13:24:34,878 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-04 13:24:43,315 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-07-04 13:24:49,445 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-07-04 13:24:50,118 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-07-04 13:25:43,332 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-04 13:25:43,976 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-04 13:25:44,905 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-04 13:25:45,087 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-04 13:25:56,986 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-07-04 13:26:03,323 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-07-04 13:26:04,082 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-07-04 13:26:56,822 [main] INFO com.test.regression.cub.utils.Logg - SignUp popup is displayed
+2016-07-04 13:26:57,900 [main] INFO com.test.regression.cub.utils.Logg - Entered Username and password
+2016-07-04 13:27:49,381 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-04 13:27:49,641 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-04 13:27:50,711 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-04 13:27:51,486 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-04 13:27:59,477 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-07-04 13:28:06,059 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-07-04 13:28:06,753 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-07-04 13:28:07,260 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-07-04 13:28:07,688 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-07-04 13:28:20,385 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-04 13:28:20,608 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-04 13:28:24,571 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-04 13:28:24,733 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-04 13:28:32,790 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Shopping list link in Home page
+2016-07-04 13:28:39,017 [main] INFO com.test.regression.cub.utils.Logg - Added a new shopping list
+2016-07-04 13:28:39,667 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-07-04 13:28:40,174 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-07-04 13:28:40,548 [main] INFO com.test.regression.cub.utils.Logg - Item added to shopping list
+2016-07-04 13:43:57,076 [main] INFO com.test.regression.cub.utils.Logg - User Name : janani.ragu@supervalu.com
+2016-07-04 13:43:57,101 [main] INFO com.test.regression.cub.utils.Logg - Password : password
+2016-07-04 13:43:57,104 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-07-04 13:43:57,381 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-04 13:43:58,681 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-04 13:43:58,877 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-04 13:43:58,880 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-07-04 13:44:14,559 [main] INFO com.test.regression.cub.utils.Logg - User Nameankusha10@gmail.com
+2016-07-04 13:44:17,098 [main] INFO com.test.regression.cub.utils.Logg - PasswordAn55333
+2016-07-04 13:44:17,100 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-07-04 13:44:17,334 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-04 13:44:18,613 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-04 13:44:18,826 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-04 13:44:18,828 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-07-04 13:48:38,159 [main] INFO com.test.regression.cub.utils.Logg - User Name : janani.ragu@supervalu.com
+2016-07-04 13:48:38,173 [main] INFO com.test.regression.cub.utils.Logg - Password : password
+2016-07-04 13:48:38,175 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-07-04 13:48:38,835 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-04 13:48:39,851 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-04 13:48:40,051 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-04 13:48:40,055 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-07-04 13:48:55,191 [main] INFO com.test.regression.cub.utils.Logg - User Nameankusha10@gmail.com
+2016-07-04 13:48:55,204 [main] INFO com.test.regression.cub.utils.Logg - PasswordAn55333
+2016-07-04 13:48:55,206 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-07-04 13:48:55,449 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-04 13:48:56,415 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-04 13:48:56,596 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-04 13:48:56,606 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-07-04 16:04:54,556 [main] INFO com.test.regression.cub.utils.Logg - User Name : janani.ragu@supervalu.com
+2016-07-04 16:04:54,594 [main] INFO com.test.regression.cub.utils.Logg - Password : password
+2016-07-04 16:04:54,594 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-07-04 16:04:55,638 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-04 16:04:57,192 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-04 16:04:57,402 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-04 16:04:57,403 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-07-04 16:05:14,184 [main] INFO com.test.regression.cub.utils.Logg - User Nameankusha10@gmail.com
+2016-07-04 16:05:14,185 [main] INFO com.test.regression.cub.utils.Logg - PasswordAn55333
+2016-07-04 16:05:14,185 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-07-04 16:05:14,416 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-04 16:05:15,581 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-04 16:05:15,785 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-04 16:05:15,785 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-07-04 16:05:42,220 [main] INFO com.test.regression.cub.utils.Logg - Launched Cub Website
+2016-07-04 16:05:43,814 [main] INFO com.test.regression.cub.utils.Logg - Entered Sign Up Data
+2016-07-04 16:05:56,232 [main] INFO com.test.regression.cub.utils.Logg - Clicked on No Card Option
+2016-07-04 16:06:08,992 [main] INFO com.test.regression.cub.utils.Logg - SignUp Popup Launched
+2016-07-04 16:06:29,595 [main] INFO com.test.regression.cub.utils.Logg - Entered existing reward card details
+2016-07-04 16:06:42,187 [main] INFO com.test.regression.cub.utils.Logg - SignUp popup is displayed
+2016-07-04 16:06:43,216 [main] INFO com.test.regression.cub.utils.Logg - Entered Username and password
+2016-07-04 16:07:53,818 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-04 16:07:54,151 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-04 16:07:54,954 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-04 16:07:55,165 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-04 16:08:45,702 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-04 16:08:46,307 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-04 16:08:47,616 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-04 16:08:47,816 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-04 16:09:38,644 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-04 16:09:39,029 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-04 16:09:40,274 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-04 16:09:40,486 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-04 16:10:39,266 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-04 16:10:39,532 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-04 16:10:40,465 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-04 16:10:40,632 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-04 16:11:35,259 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-04 16:11:35,917 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-04 16:11:36,534 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-04 16:11:36,736 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-04 16:12:31,529 [main] INFO com.test.regression.cub.utils.Logg - AboutUs Navigation - Success 
+2016-07-04 16:12:43,793 [main] INFO com.test.regression.cub.utils.Logg - Careers Navigation - Success 
+2016-07-04 16:12:55,977 [main] INFO com.test.regression.cub.utils.Logg - Product Recalls Navigation - Success 
+2016-07-04 16:13:08,708 [main] INFO com.test.regression.cub.utils.Logg - PrivacyPolicy Navigation - Success 
+2016-07-04 16:14:14,723 [main] INFO com.test.regression.cub.utils.Logg - Customer Service Navigation- Success 
+2016-07-04 16:14:37,028 [main] INFO com.test.regression.cub.utils.Logg - Navigation of WeeklyAd Tile in Home page - Success 
+2016-07-04 16:14:50,519 [main] INFO com.test.regression.cub.utils.Logg - Navigation of Coupon Tile in Home page - Success 
+2016-07-04 16:15:02,425 [main] INFO com.test.regression.cub.utils.Logg - Navigation of Cakes and Party Tile in Home page - Success 
+2016-07-04 16:15:16,227 [main] INFO com.test.regression.cub.utils.Logg - Navigation of Cub Rewards Tile  in Home page - Success 
+2016-07-04 16:20:01,113 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-04 16:20:01,590 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-04 16:20:02,696 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-04 16:20:02,955 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-04 16:20:54,155 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-04 16:20:54,476 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-04 16:20:55,605 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-04 16:20:55,827 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-04 16:21:46,894 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-04 16:21:47,144 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-04 16:21:48,211 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-04 16:21:48,366 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-04 16:22:40,252 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-04 16:22:40,494 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-04 16:22:41,332 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-04 16:22:41,656 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-04 16:23:36,716 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-04 16:23:37,109 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-04 16:23:37,927 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-04 16:23:38,123 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 12:51:55,113 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 12:51:55,381 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 12:51:56,688 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 12:51:56,881 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 12:54:44,484 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 12:54:44,886 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 12:54:45,671 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 12:54:45,843 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 12:57:47,126 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 12:57:47,422 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 12:57:48,843 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 12:57:49,016 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 13:07:18,593 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 13:07:18,898 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 13:07:22,482 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 13:07:22,675 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 14:06:39,902 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 14:06:40,189 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 14:06:41,715 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 14:06:41,962 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 14:06:42,071 [main] INFO com.test.regression.cub.utils.Logg - Clicked on Coupons Tile in Home page
+2016-07-05 14:06:56,454 [main] INFO com.test.regression.cub.utils.Logg - Coupons Page is loaded fully
+2016-07-05 14:06:58,972 [main] INFO com.test.regression.cub.utils.Logg - Added nth coupon
+2016-07-05 14:26:35,064 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 14:26:35,380 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 14:26:36,717 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 14:26:36,913 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 14:26:45,145 [main] INFO com.test.regression.cub.utils.Logg - Coupons page launched
+2016-07-05 14:26:57,460 [main] INFO com.test.regression.cub.utils.Logg - Coupons Page is loaded fully
+2016-07-05 14:27:45,895 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 14:27:46,560 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 14:27:47,293 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 14:27:47,476 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 14:27:54,492 [main] INFO com.test.regression.cub.utils.Logg - Coupons page launched
+2016-07-05 14:28:05,934 [main] INFO com.test.regression.cub.utils.Logg - Coupons Page is loaded fully
+2016-07-05 14:28:08,553 [main] INFO com.test.regression.cub.utils.Logg - Added nth coupon
+2016-07-05 14:30:52,388 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 14:30:53,032 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 14:30:53,796 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 14:30:54,062 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 14:33:02,442 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 14:33:02,731 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 14:33:03,922 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 14:33:04,104 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 14:33:25,754 [main] INFO com.test.regression.cub.utils.Logg - Coupons page launched
+2016-07-05 14:33:25,834 [main] INFO com.test.regression.cub.utils.Logg - Coupons Page is loaded fully
+2016-07-05 14:33:29,675 [main] INFO com.test.regression.cub.utils.Logg - Added nth coupon
+2016-07-05 14:35:57,116 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 14:35:57,320 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 14:35:58,371 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 14:35:58,624 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 14:36:06,956 [main] INFO com.test.regression.cub.utils.Logg - Coupons page launched
+2016-07-05 14:36:07,016 [main] INFO com.test.regression.cub.utils.Logg - Coupons Page is loaded fully
+2016-07-05 14:36:10,117 [main] INFO com.test.regression.cub.utils.Logg - Added nth coupon
+2016-07-05 14:42:24,831 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 14:42:25,116 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 14:42:26,672 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 14:42:26,880 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 14:42:35,820 [main] INFO com.test.regression.cub.utils.Logg - Coupons page launched
+2016-07-05 14:42:35,884 [main] INFO com.test.regression.cub.utils.Logg - Coupons Page is loaded fully
+2016-07-05 14:42:38,917 [main] INFO com.test.regression.cub.utils.Logg - Added nth coupon
+2016-07-05 14:49:13,424 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 14:49:13,728 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 14:49:15,194 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 14:49:15,406 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 14:49:24,206 [main] INFO com.test.regression.cub.utils.Logg - Coupons page launched
+2016-07-05 14:49:24,275 [main] INFO com.test.regression.cub.utils.Logg - Coupons Page is loaded fully
+2016-07-05 14:51:44,083 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 14:51:44,387 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 14:51:45,678 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 14:51:45,866 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 14:51:53,584 [main] INFO com.test.regression.cub.utils.Logg - Coupons page launched
+2016-07-05 14:51:53,652 [main] INFO com.test.regression.cub.utils.Logg - Coupons Page is loaded fully
+2016-07-05 14:52:07,738 [main] INFO com.test.regression.cub.utils.Logg - Added nth coupon
+2016-07-05 14:58:13,379 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 14:58:14,083 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 14:58:14,928 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 14:58:15,136 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 14:58:21,228 [main] INFO com.test.regression.cub.utils.Logg - Coupons page launched
+2016-07-05 14:58:43,562 [main] INFO com.test.regression.cub.utils.Logg - Coupons Page is loaded fully
+2016-07-05 14:58:46,906 [main] INFO com.test.regression.cub.utils.Logg - Added nth coupon
+2016-07-05 15:04:01,123 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 15:04:01,790 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 15:04:02,607 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 15:04:02,799 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 15:05:48,190 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 15:05:48,457 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 15:05:49,439 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 15:05:49,659 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 15:09:28,963 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 15:09:29,670 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 15:09:30,579 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 15:09:30,762 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 15:11:08,912 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 15:11:09,130 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 15:11:10,365 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 15:11:10,580 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 15:13:13,170 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 15:13:13,440 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 15:13:14,457 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 15:13:14,641 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 15:21:25,229 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 15:21:25,462 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 15:21:26,695 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 15:21:26,890 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 15:23:36,220 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 15:23:36,522 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 15:23:37,596 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 15:23:37,788 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 15:23:46,073 [main] INFO com.test.regression.cub.utils.Logg - Coupons Page is loaded fully
+2016-07-05 15:24:30,191 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 15:24:30,854 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 15:24:31,540 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 15:24:31,735 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 15:24:49,200 [main] INFO com.test.regression.cub.utils.Logg - Coupons Page is loaded fully
+2016-07-05 15:24:51,686 [main] INFO com.test.regression.cub.utils.Logg - Added nth coupon
+2016-07-05 15:27:33,197 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 15:27:33,911 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 15:27:34,578 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 15:27:34,758 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 15:27:54,850 [main] INFO com.test.regression.cub.utils.Logg - Coupons Page is loaded fully
+2016-07-05 15:27:57,825 [main] INFO com.test.regression.cub.utils.Logg - Added nth coupon
+2016-07-05 15:36:47,193 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 15:36:47,510 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 15:36:48,526 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 15:36:48,744 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 15:36:56,654 [main] INFO com.test.regression.cub.utils.Logg - Coupons Page is loaded fully
+2016-07-05 15:37:01,579 [main] INFO com.test.regression.cub.utils.Logg - Added nth coupon
+2016-07-05 15:40:11,971 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 15:40:12,205 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 15:40:13,370 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 15:40:13,552 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 15:41:03,484 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 15:41:04,300 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 15:41:04,791 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 15:41:04,969 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 15:42:10,053 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 15:42:10,333 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 15:42:11,432 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 15:42:11,614 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 15:42:24,675 [main] INFO com.test.regression.cub.utils.Logg - Coupons Page is loaded fully
+2016-07-05 15:42:26,583 [main] INFO com.test.regression.cub.utils.Logg - Added nth coupon
+2016-07-05 15:49:18,407 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 15:49:19,218 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 15:49:20,696 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 15:49:20,915 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 15:49:57,401 [main] INFO com.test.regression.cub.utils.Logg - Coupons Page is loaded fully
+2016-07-05 15:49:59,843 [main] INFO com.test.regression.cub.utils.Logg - Added nth coupon
+2016-07-05 15:51:10,196 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 15:51:10,455 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 15:51:11,387 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 15:51:11,570 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 15:51:22,833 [main] INFO com.test.regression.cub.utils.Logg - Coupons Page is loaded fully
+2016-07-05 15:51:25,298 [main] INFO com.test.regression.cub.utils.Logg - Added nth coupon
+2016-07-05 15:52:49,425 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 15:52:49,716 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 15:52:50,623 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 15:52:50,828 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 15:53:15,890 [main] INFO com.test.regression.cub.utils.Logg - Coupons Page is loaded fully
+2016-07-05 15:53:18,276 [main] INFO com.test.regression.cub.utils.Logg - Added nth coupon
+2016-07-05 15:56:02,078 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 15:56:02,718 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 15:56:03,473 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 15:56:03,641 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 15:57:22,677 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 15:57:23,159 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 15:57:24,233 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 15:57:24,736 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 15:57:33,910 [main] INFO com.test.regression.cub.utils.Logg - Coupons Page is loaded fully
+2016-07-05 15:57:38,161 [main] INFO com.test.regression.cub.utils.Logg - Added nth coupon
+2016-07-05 16:02:04,887 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 16:02:05,102 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 16:02:06,023 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 16:02:06,188 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 16:02:15,394 [main] INFO com.test.regression.cub.utils.Logg - Coupons Page is loaded fully
+2016-07-05 16:02:58,896 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 16:02:59,533 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 16:03:00,123 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 16:03:00,309 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 16:03:11,640 [main] INFO com.test.regression.cub.utils.Logg - Coupons Page is loaded fully
+2016-07-05 16:03:14,633 [main] INFO com.test.regression.cub.utils.Logg - Added nth coupon
+2016-07-05 16:04:28,344 [main] INFO com.test.regression.cub.utils.Logg - cubHome obj instantiated
+2016-07-05 16:04:28,616 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-05 16:04:29,987 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-05 16:04:30,174 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-05 16:04:53,155 [main] INFO com.test.regression.cub.utils.Logg - Coupons Page is loaded fully
+2016-07-05 16:04:54,937 [main] INFO com.test.regression.cub.utils.Logg - Added nth coupon
+2016-07-05 17:11:51,525 [main] INFO com.test.regression.cub.utils.Logg - SignUp popup is displayed
+2016-07-05 17:11:52,695 [main] INFO com.test.regression.cub.utils.Logg - Entered Username and password
+2016-07-05 17:12:06,311 [main] INFO com.test.regression.cub.utils.Logg - Selected No but Want One Option
+2016-07-05 17:12:10,924 [main] INFO com.test.regression.cub.utils.Logg - Entered all contact details
+2016-07-05 17:12:13,600 [main] INFO com.test.regression.cub.utils.Logg - Entered all the necessary information for the new card
+2016-07-05 17:15:28,871 [main] INFO com.test.regression.cub.utils.Logg - SignUp popup is displayed
+2016-07-05 17:15:30,224 [main] INFO com.test.regression.cub.utils.Logg - Entered Username and password
+2016-07-05 17:15:47,041 [main] INFO com.test.regression.cub.utils.Logg - Selected No but Want One Option
+2016-07-05 17:15:51,450 [main] INFO com.test.regression.cub.utils.Logg - Entered all contact details
+2016-07-05 17:15:53,874 [main] INFO com.test.regression.cub.utils.Logg - Entered all the necessary information for the new card
+2016-07-05 17:17:23,465 [main] INFO com.test.regression.cub.utils.Logg - SignUp popup is displayed
+2016-07-05 17:17:25,148 [main] INFO com.test.regression.cub.utils.Logg - Entered Username and password
+2016-07-05 17:17:39,750 [main] INFO com.test.regression.cub.utils.Logg - Selected No but Want One Option
+2016-07-05 17:17:44,209 [main] INFO com.test.regression.cub.utils.Logg - Entered all contact details
+2016-07-05 17:17:48,118 [main] INFO com.test.regression.cub.utils.Logg - Entered all the necessary information for the new card
+2016-07-05 17:18:00,155 [main] INFO com.test.regression.cub.utils.Logg - Coupons Page is loaded fully
+2016-07-05 17:18:04,844 [main] INFO com.test.regression.cub.utils.Logg - Added nth coupon
+2016-07-11 16:14:18,187 [main] INFO com.test.regression.cub.utils.Logg - Find a Store page is launched
+2016-07-11 16:14:26,247 [main] INFO com.test.regression.cub.utils.Logg - Store Locations Page-Success
+2016-07-11 16:14:28,247 [main] INFO com.test.regression.cub.utils.Logg - Find a Store page is launched
+2016-07-11 16:14:33,041 [main] INFO com.test.regression.cub.utils.Logg - Store Locations Page-Success
+2016-07-11 16:15:46,801 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-07-11 16:15:47,041 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-11 16:15:48,073 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-11 16:15:48,324 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-11 16:15:48,325 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-07-11 16:15:48,326 [main] INFO com.test.regression.cub.utils.Logg - User Signed In
+2016-07-11 16:17:31,866 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-07-11 16:17:32,128 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-11 16:17:33,143 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-11 16:17:33,376 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-11 16:17:33,377 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-07-11 16:17:33,378 [main] INFO com.test.regression.cub.utils.Logg - User Signed In
+2016-07-11 16:17:49,551 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-07-11 16:17:52,627 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-11 16:17:53,391 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-11 16:17:53,647 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-11 16:17:53,647 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-07-11 16:17:53,648 [main] INFO com.test.regression.cub.utils.Logg - User Signed In
+2016-07-11 16:17:59,011 [main] INFO com.test.regression.cub.utils.Logg - Password Changed successfully
+2016-07-11 16:18:20,650 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-07-11 16:18:21,006 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-11 16:18:22,158 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-11 16:18:22,400 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-11 16:18:22,401 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-07-11 16:18:22,401 [main] INFO com.test.regression.cub.utils.Logg - User Signed In
+2016-07-11 16:18:38,832 [main] INFO com.test.regression.cub.utils.Logg - Error is displayed when user wrong Old Passwordy
+2016-07-11 16:18:49,538 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-07-11 16:18:49,762 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-11 16:18:50,874 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-11 16:18:51,176 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-11 16:18:51,176 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-07-11 16:18:51,177 [main] INFO com.test.regression.cub.utils.Logg - User Signed In
+2016-07-11 16:19:07,709 [main] INFO com.test.regression.cub.utils.Logg - Error is displayed when user uses space in new password field
+2016-07-11 16:19:16,833 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-07-11 16:19:17,076 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-11 16:19:18,157 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-11 16:19:18,393 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-11 16:19:18,394 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-07-11 16:19:18,395 [main] INFO com.test.regression.cub.utils.Logg - User Signed In
+2016-07-11 16:19:40,485 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-07-11 16:19:43,221 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-11 16:19:44,146 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-11 16:19:44,358 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-11 16:19:44,359 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-07-11 16:19:44,360 [main] INFO com.test.regression.cub.utils.Logg - User Signed In
+2016-07-11 16:19:49,692 [main] INFO com.test.regression.cub.utils.Logg - Password field is accepting only 18 digits
+2016-07-11 16:20:12,178 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-07-11 16:20:12,677 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-11 16:20:13,423 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-11 16:20:13,726 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-11 16:20:13,727 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-07-11 16:20:13,734 [main] INFO com.test.regression.cub.utils.Logg - User Signed In
+2016-07-11 16:20:28,747 [main] INFO com.test.regression.cub.utils.Logg - Error is displayed when user uses short password in new password field
+2016-07-11 16:20:37,379 [main] INFO com.test.regression.cub.utils.Logg - Cub Home page is launched
+2016-07-11 16:20:37,761 [main] INFO com.test.regression.cub.utils.Logg - SignIn Link Clicked
+2016-07-11 16:20:40,041 [main] INFO com.test.regression.cub.utils.Logg - Entered login Details
+2016-07-11 16:20:40,243 [main] INFO com.test.regression.cub.utils.Logg - SignInButton Clicked
+2016-07-11 16:20:40,244 [main] INFO com.test.regression.cub.utils.Logg - Entered all details and clicked on Sign In Button
+2016-07-11 16:20:40,250 [main] INFO com.test.regression.cub.utils.Logg - User Signed In
+2016-07-11 16:20:55,286 [main] INFO com.test.regression.cub.utils.Logg - Error is displayed when user uses different passwords in new password fields
+2016-07-11 16:21:05,595 [main] INFO com.test.regression.cub.utils.Logg - Find a Store page is launched
+2016-07-11 16:21:16,452 [main] INFO com.test.regression.cub.utils.Logg - Store Locations Page-Success
+2016-07-11 16:21:18,454 [main] INFO com.test.regression.cub.utils.Logg - Find a Store page is launched
+2016-07-11 16:21:26,054 [main] INFO com.test.regression.cub.utils.Logg - Store Locations Page-Success
