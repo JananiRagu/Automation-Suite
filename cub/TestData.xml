@@ -49,7 +49,6 @@
 <!-- Used for Sign Up No, But want a card scenario -->
 <!-- Change the UserName and cardless id everytime -->
 
-
 <user userid="new-user-2">
 <UserName>suwjuly12@cub.com</UserName>
 <password>password</password>
@@ -63,8 +62,9 @@
 <homephone>8523697410</homephone>
 <mobilephone>7410254863</mobilephone>
 <cardlessid>75395148620</cardlessid>
-<wantedCoupon>8</wantedCoupon>
+<wantedCoupons>1,3,9</wantedCoupons>
 </user>
+
 
 <!-- Used for Sign Up Yes, I have card scenario -->
 <!-- Change the UserName everytime -->
@@ -82,6 +82,7 @@
 <CityName>Central Ave Ne Blaine</CityName>
 <State>MN</State>
 </user>
+
 
 
 <user userid="user-to-change-pwd">
@@ -105,8 +106,8 @@
 
 <!-- Change the UserName, cardlessid7, cardlessid4 and wantedCoupons -->
 
-<user userid="new-user-coupon2">
-<UserName>NoCardNewUser16@cub.com</UserName>
+<user userid="new-user-coupon1">
+<UserName>NoCardNewUser21@cub.com</UserName>
 <password>password</password>
 <firstname>addCoupon</firstname>
 <lastname>NoCardNewUser</lastname>
@@ -118,8 +119,26 @@
 <homephone>8523697410</homephone>
 <mobilephone>7410254863</mobilephone>
 <cardlessid7>7412369</cardlessid7>
-<cardlessid4>1003</cardlessid4>
-<wantedCoupons>1,2,3,4</wantedCoupons>
+<cardlessid4>1008</cardlessid4>
+<wantedCoupons>1,2,4,9</wantedCoupons>
+</user>
+
+<!-- Change the UserName and cardless id everytime -->
+
+<user userid="new-user-coupon2">
+<UserName>wantcarduser5@cub.com</UserName>
+<password>password</password>
+<firstname>test</firstname>
+<lastname>want</lastname>
+<address1>123 cedar ave</address1>
+<address2>test</address2>
+<city>Eden Prairie</city>
+<state>MN</state>
+<zipcode>58963</zipcode>
+<homephone>8523697410</homephone>
+<mobilephone>7410254863</mobilephone>
+<cardlessid>78524567534</cardlessid>
+<wantedCoupons>1,3,9</wantedCoupons>
 </user>
 
 </TestData> 
