@@ -6,8 +6,8 @@
       <class name="com.test.regression.cub.testscripts.Coupons">
         <methods>
           <include name="initialization"/>
-          <include name="addCouponForNoCardNewUser"/>
           <include name="breakDown"/>
+          <include name="addCouponForWantOneNewUser"/>
           <include name="closeDriver"/>
         </methods>
       </class> <!-- com.test.regression.cub.testscripts.Coupons -->

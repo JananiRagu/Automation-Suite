@@ -76,7 +76,7 @@ public class Coupons extends SuiteBase{
 		
 		ecp = new MyeCouponsPage(_driver);
 		
-		ecp.clickOnMyeCouponsInMyToolsHomePage();
+		ecp.clickOnMyeCouponsInMyToolsHomePage(_driver);
 		
 		boolean result = ecp.isCouponPresent(addedCouponName);
 		
@@ -87,10 +87,10 @@ public class Coupons extends SuiteBase{
 	
 	
 	
-	@Test(priority=12, enabled=false)
-	public void addCouponForWantOneNewUser() throws XPathExpressionException, ParserConfigurationException, SAXException, IOException, InterruptedException{
-		
-		Map<String, String> addCouponForWantOneNewUserData = readxml.getUserData("TestData.xml", "new-user-2");
+	@Test(priority=12, enabled=true)
+	public void addCouponForWantOneNewUser() {
+		try {
+		Map<String, String> addCouponForWantOneNewUserData = readxml.getUserData("TestData.xml", "new-user-coupon2");
 		String userId = addCouponForWantOneNewUserData.get("UserName");
 		String password = addCouponForWantOneNewUserData.get("password");
 		String firstName = addCouponForWantOneNewUserData.get("firstname");
@@ -103,69 +103,110 @@ public class Coupons extends SuiteBase{
 		String homePhone = addCouponForWantOneNewUserData.get("homephone");
 		String mobilePhone = addCouponForWantOneNewUserData.get("mobilephone");
 		String cardlessId = addCouponForWantOneNewUserData.get("cardlessid");
-		String wantedCouponNumber = addCouponForWantOneNewUserData.get("wantedCoupon");
+		String allWantedCouponNumbersInString = addCouponForWantOneNewUserData.get("wantedCoupons");
+		String addedCouponName = null;
 		
 		signUpPage = new SignUpPage(_driver);
 		
 		signUpPage.clickSignUpLink();
-			log.info("SignUp popup is displayed");
+			log.info("Test Data Used >>>>>>>");
+			log.info("User Name : " + userId);
+			log.info("Password : " + password);
 		signUpPage.enterSignUpDetails(userId,password);
-			log.info("Entered Username and password");
+			
 		signUpPage.clickNoButWantCardRadio();
-			log.info("Selected No but Want One Option");
+			
 		signUpPage.clickContinueButton();
 		signUpPage.enterContactInformationInSignUp(firstName, lastName, address1, address2, city, state, zip, homePhone, mobilePhone, cardlessId);		
-			log.info("Entered all contact details");
+			
 		signUpPage.clickUseThisAddressButton();
-			log.info("Entered all the necessary information for the new card");
+			
 			
 		cp = new CouponPage(_driver);
 		
 		cp.clickOnCouponsInMyToolsHomePage();
-		
-		cp.loadCompleteCouponsPage();
-			log.info("Coupons Page is loaded fully");
-		
-			boolean isCouponFlipp = cp.chkIfFlipp(_driver, wantedCouponNumber);
+			log.info("In Coupons page now..");
+		//cp.loadCompleteCouponsPage();
+			//log.info("Coupons Page is loaded fully");
 			
-			String addedCouponName = null;
-			if(isCouponFlipp = true){
-				
-				cp.addNthFlippCoupon(_driver, wantedCouponNumber);
-					log.info("Added nth coupon");
-
-				
-				addedCouponName  = cp.getNthFlippCouponName(_driver, wantedCouponNumber);
-				}
-				
-				else{
-					cp.addNthInmarCoupon(_driver, wantedCouponNumber);
-					log.info("Added nth coupon");
-
-				
-				addedCouponName = cp.getNthInmarCouponName(_driver, wantedCouponNumber);
-				}	
-	
+		// Delimiting the wanted coupon numbers' data
+			
+		List<String> allWantedCouponNumbers = Arrays.asList(allWantedCouponNumbersInString.split(","));
+		int size=allWantedCouponNumbers.size();
 		
+		for(String wantedCouponNumber : allWantedCouponNumbers){
+		
+		// Check if wantedCouponNumber is Flipp or Inmar
+			
+		boolean isCouponFlipp = cp.chkIfFlipp(_driver, wantedCouponNumber);
+		System.out.println("isCouponFlipp value is "+ isCouponFlipp);
+			
+		
+		if(isCouponFlipp){
+				log.info("Trying to add Flipp Coupon");
+			cp.addNthFlippCoupon(_driver, wantedCouponNumber);
+				log.info("Added wanted Flipp coupon");
+	
+			addedCouponName = cp.getNthFlippCouponName(_driver, wantedCouponNumber);
+				log.info("Added Coupon Name : " + addedCouponName);
+		}
+		else{
+				log.info("Trying to add Inmar Coupon");
+			cp.addNthInmarCoupon(_driver, wantedCouponNumber);
+				log.info("Added wanted Inmar Coupon");
+		
+			addedCouponName = cp.getNthInmarCouponName(_driver, wantedCouponNumber);
+				log.info("Added Coupon Name : " + addedCouponName);
+		}
+		
+		}
 		ecp = new MyeCouponsPage(_driver);
 		
-		ecp.clickOnMyeCouponsInMyToolsHomePage();
+		ecp.clickOnMyeCouponsInMyToolsHomePage(_driver);
+			log.info("Validating whether the added coupon is in My eCoupons page");
+			
+		/*boolean result = ecp.isCouponPresent(addedCouponName);
+		if(result)
+			log.info(addedCouponName + " is present in My eCoupons Page");
+		else
+			log.info(addedCouponName + " is NOT present in My eCoupons Page");*/
 		
-		boolean result = ecp.isCouponPresent(addedCouponName);
 		
-		System.out.println("Result is " + result);
-		Assert.assertTrue(result);
+		int eCouponsNumber = ecp.noOfECoupons();
 		
-	}
+		Assert.assertTrue(size == eCouponsNumber);
+		
+		} catch (InterruptedException ie) {
+			log.info(ie.getMessage());
+			Assert.fail("Caught Interrupted Exception");
+		} catch (IOException ioe) {
+			log.info(ioe.getMessage());	
+			Assert.fail("Caught IOException Exception");
+		} catch (XPathExpressionException xee) {
+			log.info(xee.getMessage());	
+			Assert.fail("Caught XPathExpressionException Exception");
+		} catch (ParserConfigurationException pce) {
+			log.info(pce.getMessage());
+			Assert.fail("Caught ParserConfigurationException Exception");
+		} catch (SAXException saxe) {
+			log.info(saxe.getMessage());
+			Assert.fail("Caught SAXException Exception");
+		} catch (Exception e) {
+			log.info(e.getMessage());
+			Assert.fail(e.getLocalizedMessage());
+		}
+}
+	
+
 	
 	// Sign Up for an account just by closing the Rewards Card pop up
 	// So, it will prompt for card-less id while trying to add coupon
 			
-	@Test(priority=13, enabled=true)
+	@Test(priority=13, enabled=false)
 	public void addCouponForNoCardNewUser() {
 		
 		try {
-		Map<String, String> addCouponForNoCardNewUserData = readxml.getUserData("TestData.xml", "new-user-coupon2");
+		Map<String, String> addCouponForNoCardNewUserData = readxml.getUserData("TestData.xml", "new-user-coupon1");
 		String userId = addCouponForNoCardNewUserData.get("UserName");
 		String password = addCouponForNoCardNewUserData.get("password");
 		String allWantedCouponNumbersInString = addCouponForNoCardNewUserData.get("wantedCoupons");
@@ -258,7 +299,7 @@ public class Coupons extends SuiteBase{
 		
 		ecp = new MyeCouponsPage(_driver);
 		
-		ecp.clickOnMyeCouponsInMyToolsHomePage();
+		ecp.clickOnMyeCouponsInMyToolsHomePage(_driver);
 			log.info("Validating whether the added coupon is in My eCoupons page");
 			
 		/*boolean result = ecp.isCouponPresent(addedCouponName);

@@ -234,12 +234,13 @@ public class SignUpPage extends SuiteBase{
 			
 	}
 	
-	public void clickUseThisAddressButton(){
+	public void clickUseThisAddressButton() throws InterruptedException{
 	
 		waitFor(_useThisAddress);
 		_useThisAddress.click();
 		
 		log.info("Clicked on Use this address button on Address Verification");
+		Thread.sleep(5000);
 	}
 	
 	public void addRewardsCard_EnterDetails(String lastname, String rewardsNum){

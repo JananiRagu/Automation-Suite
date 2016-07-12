@@ -50,7 +50,7 @@ public class CouponPage extends SuiteBase{
 	
 	public void clickOnCouponsInMyToolsHomePage() throws InterruptedException{
 		
-		Thread.sleep(5000);
+		Thread.sleep(6000);
 		_MyToolsLink.click();
 		
 		Thread.sleep(5000);
