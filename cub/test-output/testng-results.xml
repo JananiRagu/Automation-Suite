@@ -1,227 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="247867" started-at="2016-07-11T10:47:21Z" finished-at="2016-07-11T10:51:29Z">
+  <suite name="Suite" duration-ms="123219" started-at="2016-07-12T12:27:26Z" finished-at="2016-07-12T12:29:29Z">
     <groups>
     </groups>
-    <test name="My Account- Testing" duration-ms="215373" started-at="2016-07-11T10:47:21Z" finished-at="2016-07-11T10:50:57Z">
-      <class name="com.test.regression.cub.testscripts.MyAccount">
-        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd]" name="startExtent" is-config="true" duration-ms="9882" started-at="2016-07-11T16:17:21Z" finished-at="2016-07-11T16:17:31Z">
+    <test name="Coupons - Testing" duration-ms="123219" started-at="2016-07-12T12:27:26Z" finished-at="2016-07-12T12:29:29Z">
+      <class name="com.test.regression.cub.testscripts.Coupons">
+        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.Coupons@4b952a2d]" name="initialization" is-config="true" duration-ms="15567" started-at="2016-07-12T17:57:26Z" finished-at="2016-07-12T17:57:41Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.test.regression.cub.testscripts.MyAccount.ChangePwdValid() throws java.lang.InterruptedException,java.io.IOException,javax.xml.xpath.XPathExpressionException,javax.xml.parsers.ParserConfigurationException,org.xml.sax.SAXException]]>
+                <![CDATA[public void com.test.regression.cub.testscripts.Coupons.addCouponForNoCardNewUser()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startExtent -->
-        <test-method status="PASS" signature="ChangePwdValid()[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd]" name="ChangePwdValid" duration-ms="36897" started-at="2016-07-11T16:17:31Z" finished-at="2016-07-11T16:18:08Z">
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="addCouponForNoCardNewUser()[pri:0, instance:com.test.regression.cub.testscripts.Coupons@4b952a2d]" name="addCouponForNoCardNewUser" duration-ms="102927" started-at="2016-07-12T17:57:41Z" finished-at="2016-07-12T17:59:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ChangePwdValid -->
-        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd]" name="breakDown" is-config="true" duration-ms="2662" started-at="2016-07-11T16:18:08Z" finished-at="2016-07-11T16:18:11Z">
+        </test-method> <!-- addCouponForNoCardNewUser -->
+        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.Coupons@4b952a2d]" name="breakDown" is-config="true" duration-ms="0" started-at="2016-07-12T17:59:24Z" finished-at="2016-07-12T17:59:24Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ChangePwdValid status=SUCCESS method=MyAccount.ChangePwdValid()[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- breakDown -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd]" name="closeDriver" is-config="true" duration-ms="1412" started-at="2016-07-11T16:18:11Z" finished-at="2016-07-11T16:18:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd]" name="startExtent" is-config="true" duration-ms="7901" started-at="2016-07-11T16:18:12Z" finished-at="2016-07-11T16:18:20Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.regression.cub.testscripts.MyAccount.ChangePwdWrongOldPwd() throws java.lang.InterruptedException,java.io.IOException,javax.xml.xpath.XPathExpressionException,javax.xml.parsers.ParserConfigurationException,org.xml.sax.SAXException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startExtent -->
-        <test-method status="PASS" signature="ChangePwdWrongOldPwd()[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd]" name="ChangePwdWrongOldPwd" duration-ms="18268" started-at="2016-07-11T16:18:20Z" finished-at="2016-07-11T16:18:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ChangePwdWrongOldPwd -->
-        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd]" name="breakDown" is-config="true" duration-ms="247" started-at="2016-07-11T16:18:38Z" finished-at="2016-07-11T16:18:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ChangePwdWrongOldPwd status=SUCCESS method=MyAccount.ChangePwdWrongOldPwd()[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd] output={null}]]]>
+                <![CDATA[[TestResult name=addCouponForNoCardNewUser status=SUCCESS method=Coupons.addCouponForNoCardNewUser()[pri:0, instance:com.test.regression.cub.testscripts.Coupons@4b952a2d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- breakDown -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd]" name="closeDriver" is-config="true" duration-ms="1016" started-at="2016-07-11T16:18:39Z" finished-at="2016-07-11T16:18:40Z">
+        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.Coupons@4b952a2d]" name="closeDriver" is-config="true" duration-ms="4698" started-at="2016-07-12T17:59:24Z" finished-at="2016-07-12T17:59:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.Coupons.addCouponForNoCardNewUser()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd]" name="startExtent" is-config="true" duration-ms="9388" started-at="2016-07-11T16:18:40Z" finished-at="2016-07-11T16:18:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.regression.cub.testscripts.MyAccount.ChangePwdSpace() throws java.lang.InterruptedException,java.io.IOException,javax.xml.xpath.XPathExpressionException,javax.xml.parsers.ParserConfigurationException,org.xml.sax.SAXException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startExtent -->
-        <test-method status="PASS" signature="ChangePwdSpace()[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd]" name="ChangePwdSpace" duration-ms="18201" started-at="2016-07-11T16:18:49Z" finished-at="2016-07-11T16:19:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ChangePwdSpace -->
-        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd]" name="breakDown" is-config="true" duration-ms="281" started-at="2016-07-11T16:19:07Z" finished-at="2016-07-11T16:19:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ChangePwdSpace status=SUCCESS method=MyAccount.ChangePwdSpace()[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- breakDown -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd]" name="closeDriver" is-config="true" duration-ms="900" started-at="2016-07-11T16:19:07Z" finished-at="2016-07-11T16:19:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd]" name="startExtent" is-config="true" duration-ms="7903" started-at="2016-07-11T16:19:08Z" finished-at="2016-07-11T16:19:16Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.regression.cub.testscripts.MyAccount.ChangePwdLengthyPwd() throws java.lang.InterruptedException,java.io.IOException,javax.xml.xpath.XPathExpressionException,javax.xml.parsers.ParserConfigurationException,org.xml.sax.SAXException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startExtent -->
-        <test-method status="PASS" signature="ChangePwdLengthyPwd()[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd]" name="ChangePwdLengthyPwd" duration-ms="42550" started-at="2016-07-11T16:19:16Z" finished-at="2016-07-11T16:19:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ChangePwdLengthyPwd -->
-        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd]" name="breakDown" is-config="true" duration-ms="2784" started-at="2016-07-11T16:19:59Z" finished-at="2016-07-11T16:20:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ChangePwdLengthyPwd status=SUCCESS method=MyAccount.ChangePwdLengthyPwd()[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- breakDown -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd]" name="closeDriver" is-config="true" duration-ms="957" started-at="2016-07-11T16:20:02Z" finished-at="2016-07-11T16:20:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd]" name="startExtent" is-config="true" duration-ms="9051" started-at="2016-07-11T16:20:03Z" finished-at="2016-07-11T16:20:12Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.regression.cub.testscripts.MyAccount.ChangePwdShortPwd() throws java.lang.InterruptedException,java.io.IOException,javax.xml.xpath.XPathExpressionException,javax.xml.parsers.ParserConfigurationException,org.xml.sax.SAXException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startExtent -->
-        <test-method status="PASS" signature="ChangePwdShortPwd()[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd]" name="ChangePwdShortPwd" duration-ms="16605" started-at="2016-07-11T16:20:12Z" finished-at="2016-07-11T16:20:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ChangePwdShortPwd -->
-        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd]" name="breakDown" is-config="true" duration-ms="209" started-at="2016-07-11T16:20:28Z" finished-at="2016-07-11T16:20:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ChangePwdShortPwd status=SUCCESS method=MyAccount.ChangePwdShortPwd()[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- breakDown -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd]" name="closeDriver" is-config="true" duration-ms="843" started-at="2016-07-11T16:20:28Z" finished-at="2016-07-11T16:20:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd]" name="startExtent" is-config="true" duration-ms="7521" started-at="2016-07-11T16:20:29Z" finished-at="2016-07-11T16:20:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.regression.cub.testscripts.MyAccount.ChangePwdDifferentNewPwds() throws java.lang.InterruptedException,java.io.IOException,javax.xml.xpath.XPathExpressionException,javax.xml.parsers.ParserConfigurationException,org.xml.sax.SAXException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startExtent -->
-        <test-method status="PASS" signature="ChangePwdDifferentNewPwds()[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd]" name="ChangePwdDifferentNewPwds" duration-ms="17963" started-at="2016-07-11T16:20:37Z" finished-at="2016-07-11T16:20:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ChangePwdDifferentNewPwds -->
-        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd]" name="breakDown" is-config="true" duration-ms="847" started-at="2016-07-11T16:20:55Z" finished-at="2016-07-11T16:20:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ChangePwdDifferentNewPwds status=SUCCESS method=MyAccount.ChangePwdDifferentNewPwds()[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- breakDown -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.test.regression.cub.testscripts.MyAccount@192b07fd]" name="closeDriver" is-config="true" duration-ms="1006" started-at="2016-07-11T16:20:56Z" finished-at="2016-07-11T16:20:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-      </class> <!-- com.test.regression.cub.testscripts.MyAccount -->
-    </test> <!-- My Account- Testing -->
-    <test name="Find a Store - Testing" duration-ms="32473" started-at="2016-07-11T10:50:57Z" finished-at="2016-07-11T10:51:29Z">
-      <class name="com.test.regression.cub.testscripts.FindAStore">
-        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.FindAStore@370736d9]" name="startExtent" is-config="true" duration-ms="8365" started-at="2016-07-11T16:20:57Z" finished-at="2016-07-11T16:21:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.regression.cub.testscripts.FindAStore.StoresbyState() throws java.lang.InterruptedException,java.io.IOException,javax.xml.xpath.XPathExpressionException,javax.xml.parsers.ParserConfigurationException,org.xml.sax.SAXException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startExtent -->
-        <test-method status="PASS" signature="StoresbyState()[pri:0, instance:com.test.regression.cub.testscripts.FindAStore@370736d9]" name="StoresbyState" duration-ms="22513" started-at="2016-07-11T16:21:05Z" finished-at="2016-07-11T16:21:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StoresbyState -->
-        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.FindAStore@370736d9]" name="breakDown" is-config="true" duration-ms="269" started-at="2016-07-11T16:21:28Z" finished-at="2016-07-11T16:21:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=StoresbyState status=SUCCESS method=FindAStore.StoresbyState()[pri:0, instance:com.test.regression.cub.testscripts.FindAStore@370736d9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- breakDown -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.test.regression.cub.testscripts.FindAStore@370736d9]" name="closeDriver" is-config="true" duration-ms="1297" started-at="2016-07-11T16:21:28Z" finished-at="2016-07-11T16:21:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-      </class> <!-- com.test.regression.cub.testscripts.FindAStore -->
-    </test> <!-- Find a Store - Testing -->
+      </class> <!-- com.test.regression.cub.testscripts.Coupons -->
+    </test> <!-- Coupons - Testing -->
   </suite> <!-- Suite -->
 </testng-results>

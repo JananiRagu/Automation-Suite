@@ -19,38 +19,50 @@ public class SignIn extends SuiteBase {
 	Logger log = Logg.createLogger();
 	ReadXML readxml = new ReadXML();
 
-	@Test(priority = 1)
+	@Test(priority=1, enabled=true)
 	
-	public void validLogin() throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException {
-		
+	public void validLogin() {
+		try {
+			
 		// Retrieving test data for valid login
 		Map<String, String> validLogin = readxml.getUserData("TestData.xml", "carded-user");
 		String userId = validLogin.get("UserName");
 		String password = validLogin.get("password");
 
 		cubHome = new CubHome(_driver);
-		
+			log.info("Test Data Used >>>>>>>");
 			log.info("User Name : " + userId);
 			log.info("Password : " + password);
-			log.info("Cub Home page is launched");
+		
 		cubHome.clickSignInLink();
-			log.info("SignIn Link Clicked");
+		
 		cubHome.enterLoginDetails(userId, password);
-			log.info("Entered login Details");
+
 		cubHome.clickSignInButton();
-			log.info("SignInButton Clicked");
-			log.info("Entered all details and clicked on Sign In Button");
 		
 		boolean result = cubHome.isLogOutButtonPresent();
 		System.out.println("Result is " + result);
 		Assert.assertTrue(result);
 		
+		} catch (InterruptedException ie) {
+			log.info(ie.getMessage());		
+		} catch (IOException ioe) {
+			log.info(ioe.getMessage());		
+		} catch (XPathExpressionException xee) {
+			log.info(xee.getMessage());		
+		} catch (ParserConfigurationException pce) {
+			log.info(pce.getMessage());		
+		} catch (SAXException saxe) {
+			log.info(saxe.getMessage());		
+		} catch (Exception e) {
+			log.info(e.getMessage());		
+		}
 	}
 	
 	@Test(priority=2,enabled=true) 
-	  public void inValidLogin() throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException{
+	  public void inValidLogin(){
 		
-		
+		try {
 		// Retrieving test data for valid login
 		Map<String, String> invalidLogin = readxml.getUserData("TestData.xml", "invalid-user");
 		String userId = invalidLogin.get("UserName");
@@ -58,20 +70,32 @@ public class SignIn extends SuiteBase {
 
 		cubHome = new CubHome(_driver);
 		
+			log.info("Test Data Used >>>>>>>");
 			log.info("User Name" + userId);
 			log.info("Password" + password);
-			log.info("Cub Home page is launched");
+			
 		cubHome.clickSignInLink();
-			log.info("SignIn Link Clicked");
+			
 		cubHome.enterLoginDetails(userId, password);
-			log.info("Entered login Details");
+			
 		cubHome.clickSignInButton();
-			log.info("SignInButton Clicked");
-			log.info("Entered all details and clicked on Sign In Button");
 		
 		Assert.assertTrue(cubHome.isPasswordIncorrectTextPresent());
 	
-	  }
+		} catch (InterruptedException ie) {
+			log.info(ie.getMessage());		
+		} catch (IOException ioe) {
+			log.info(ioe.getMessage());		
+		} catch (XPathExpressionException xee) {
+			log.info(xee.getMessage());		
+		} catch (ParserConfigurationException pce) {
+			log.info(pce.getMessage());		
+		} catch (SAXException saxe) {
+			log.info(saxe.getMessage());		
+		} catch (Exception e) {
+			log.info(e.getMessage());		
+		}
 	 
-
+	}
+	
 }

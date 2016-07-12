@@ -1,8 +1,11 @@
 
 <TestData>
 
+
+						<!-- Data Used for Valid SignIn , Shopping Lists Testing -->
+						
 <user userid="carded-user">
-<UserName>janani.ragu@supervalu.com</UserName>
+<UserName>sltesting@cub.com</UserName>
 <password>password</password>
 <SLName>list1</SLName>
 <item1>litchi</item1>
@@ -21,35 +24,51 @@
 <wantedCoupon>8</wantedCoupon>
 </user>
 
+						<!-- Data Used for In-Valid SignIn Testing -->
 
 <user userid="invalid-user">
 <UserName>ankusha10@gmail.com</UserName>
 <password>An55333</password>
 </user>
 
+						<!-- Data Used for Sign Up Testing -->
+						
+
+
+<!-- Used for Sign Up no card scenario -->
+<!-- Change the UserName everytime -->	
+					
 <user userid="new-user-1">
-<UserName>cubprod4ju@cub.com</UserName>
+<UserName>sujuly12@cub.com</UserName>
 <password>password</password>
 </user>
 
+
+<!-- Used for Sign Up No, But want a card scenario -->
+<!-- Change the UserName and cardless id everytime -->
+
+
 <user userid="new-user-2">
-<UserName>cubprod5july1@cub.com</UserName>
+<UserName>suwjuly12@cub.com</UserName>
 <password>password</password>
-<firstname>cub</firstname>
-<lastname>prod</lastname>
+<firstname>test</firstname>
+<lastname>want</lastname>
 <address1>123 cedar ave</address1>
 <address2>test</address2>
-<city>Minneapolis</city>
+<city>Eden Prairie</city>
 <state>MN</state>
 <zipcode>58963</zipcode>
 <homephone>8523697410</homephone>
 <mobilephone>7410254863</mobilephone>
-<cardlessid>51525353595</cardlessid>
+<cardlessid>75395148620</cardlessid>
 <wantedCoupon>8</wantedCoupon>
 </user>
 
+<!-- Used for Sign Up Yes, I have card scenario -->
+<!-- Change the UserName everytime -->
+
 <user userid="new-user-3">
-<UserName>cubprod4jul@cub.com</UserName>
+<UserName>suyjuly12@cub.com</UserName>
 <password>password</password>
 <lastname>Test</lastname>
 <rewardsnumber>48630936861</rewardsnumber>
@@ -80,12 +99,12 @@
 
 
 
-															<!-- Data Used for Coupons Testing -->
+						<!-- Data Used for Coupons Testing -->
 
 <!-- Change the UserName, cardlessid7, cardlessid4 and wantedCoupons -->
 
-<user userid="new-user-coupon1">
-<UserName>addCouponForNoCardNewUser9@cub.com</UserName>
+<user userid="new-user-coupon2">
+<UserName>NoCardNewUser16@cub.com</UserName>
 <password>password</password>
 <firstname>addCoupon</firstname>
 <lastname>NoCardNewUser</lastname>
@@ -96,8 +115,8 @@
 <zipcode>58963</zipcode>
 <homephone>8523697410</homephone>
 <mobilephone>7410254863</mobilephone>
-<cardlessid7>5632741</cardlessid7>
-<cardlessid4>2898</cardlessid4>
+<cardlessid7>7412369</cardlessid7>
+<cardlessid4>1003</cardlessid4>
 <wantedCoupons>1,2,3,4</wantedCoupons>
 </user>
 

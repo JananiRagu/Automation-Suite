@@ -1,16 +1,19 @@
 package com.test.regression.cub.pages;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.test.regression.cub.utils.Logg;
 import com.test.regression.cub.utils.SuiteBase;
 
 public class SignUpPage extends SuiteBase{
 	
 	WebDriver _driver;
+	Logger log = Logg.createLogger();
 	
 	public SignUpPage(WebDriver driver) {
 		super();
@@ -106,11 +109,10 @@ public class SignUpPage extends SuiteBase{
 	private WebElement _closeButtonInRewardsCardPopup;
 	
 	public void clickSignUpLink() throws InterruptedException{
-		
 		waitFor(_signUpLink);
-		
 		_signUpLink.click();
 		
+		log.info("Clicked on SignUp Link..");
 	}
 	
 	public void enterSignUpDetails(String UserName, String Password){
@@ -120,29 +122,36 @@ public class SignUpPage extends SuiteBase{
 		_password.sendKeys(Password);
 		_password.sendKeys(Keys.ENTER);
 		
+		log.info("Entered SignUp Username and Password");
+		
 	}
 	
-	public void clickContinueButtonNoCheck() throws InterruptedException{
+/*	public void clickContinueButtonNoCheck() throws InterruptedException{
 		
 		waitFor(_continueButton);
 		_continueButton.click();
 		
-	}
+		
+	}*/
 	
 	public void clickContinueButton() throws InterruptedException{
 		
 		waitFor(_continueButton);
 		
 		System.out.println("Continue Button presence flag :" + _continueButton.isEnabled());
+		
 		if(_continueButton.isEnabled())
 		_continueButton.click();
 		
+		log.info("Clicked on Continue Button");
 	}
 	
 	public void closeRewardsCardPopup(){
 		
 		waitFor(_closeButtonInRewardsCardPopup);
 		_closeButtonInRewardsCardPopup.click();
+		
+		log.info("Didnt Select any option in Rewards Card popup, Just Closed the popup");
 	}
 	
 	public void clickDontWantCardRadio() throws InterruptedException{
@@ -150,6 +159,8 @@ public class SignUpPage extends SuiteBase{
 		waitFor(_dontWantCardRadio);
 		
 		_dontWantCardRadio.click();
+		
+		log.info("Selected 'No, I dont want card' option");
 		
 	}
 	
@@ -159,12 +170,16 @@ public class SignUpPage extends SuiteBase{
 		
 		_noButWantCardRadio.click();
 		
+		log.info("Selected 'No, But I want one' option");
+		
 	}
 	public void clickYesHaveCardRadio() throws InterruptedException{
 		
 		waitFor(_yesHaveCardRadio);
 		
 		_yesHaveCardRadio.click();
+		
+		log.info("Selected 'Yes, I have a card' option");
 		
 	}
 	
@@ -214,6 +229,8 @@ public class SignUpPage extends SuiteBase{
 		waitFor(_cardless2);
 		_cardless2.sendKeys(cardlessId2);
 		_cardless2.sendKeys(Keys.ENTER);
+		
+		log.info("Entered the Contact Information details..");
 			
 	}
 	
@@ -221,6 +238,8 @@ public class SignUpPage extends SuiteBase{
 	
 		waitFor(_useThisAddress);
 		_useThisAddress.click();
+		
+		log.info("Clicked on Use this address button on Address Verification");
 	}
 	
 	public void addRewardsCard_EnterDetails(String lastname, String rewardsNum){
@@ -230,11 +249,14 @@ public class SignUpPage extends SuiteBase{
 		waitFor(_rewardsNumInAddRewardsPopup);
 		_rewardsNumInAddRewardsPopup.sendKeys(rewardsNum);
 		_rewardsNumInAddRewardsPopup.sendKeys(Keys.ENTER);
+		
+		log.info("Entered existing reward card details for linking a card");
 	}
 	
 	public boolean isLogOutButtonPresent(){
 		waitFor(_logOut);
 		return(_logOut.isDisplayed());
+
 		
 	}
 	

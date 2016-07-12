@@ -4,6 +4,7 @@ import java.io.File;
 import java.lang.reflect.Method;
 import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -21,30 +22,45 @@ import com.test.regression.cub.utils.Constant;
 
 public class SuiteBase {	
 	
-	
+	Logger log = Logg.createLogger();
 	protected static WebDriver _driver;
  
 	@AfterMethod
-	public void closeDriver()
+	public void closeDriver(Method method)
 	{
+		
 		_driver.quit();
+		
+		log.info(method.getName() + " execution Complete.............");
+		
 	}
 	
     
      @AfterMethod
  	public void breakDown(ITestResult result)
  	{
- 		if(ITestResult.FAILURE==result.getStatus());
+ 		if(result.getStatus()==ITestResult.FAILURE)
  		{
  			CaptureScreenShot(_driver, result.getName());
+ 			
  	}
  	}
    
        
    @BeforeMethod
-     public void startExtent(Method method) {
+     public void initialization(Method method) {
+	   
+	   
+	   log.info("***************************************************************");
+	   
+	   log.info("Starting " + method.getName() + " ................");
+	   
+	   log.info("***************************************************************");
+	   
     	 _driver = InitializeDriver(Constant.browser_name);
     	 _driver.get(Constant.URL);
+    	 
+    	 log.info("Launched "+ Constant.URL + " Successfully!");
          
      }
 

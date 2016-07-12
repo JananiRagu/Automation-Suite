@@ -20,30 +20,50 @@ public class SignUp extends SuiteBase{
 	CubHome cubHome;
 	SignUpPage signUpPage;
 
-	@Test(priority=3)
-	public void validSignUp_noCard() throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException{
+	@Test(priority=3, enabled=true)
+	public void validSignUp_noCard(){
+		try{
 		// Retrieving test data for valid sign up no card
 				Map<String, String> validSignUpNoCard = readxml.getUserData("TestData.xml", "new-user-1");
 				String userId = validSignUpNoCard.get("UserName");
 				String password = validSignUpNoCard.get("password");
-				
-				log.info("Launched Cub Website");
+
 		
-		signUpPage = new SignUpPage(_driver);	
+		signUpPage = new SignUpPage(_driver);
+		
+		log.info("Test Data Used >>>>>>>");
+		log.info("User Name : " + userId);
+		log.info("Password : " + password);
+		
 		signUpPage.clickSignUpLink();
 		signUpPage.enterSignUpDetails(userId,password);
-			log.info("Entered Sign Up Data");
+			
 		signUpPage.clickDontWantCardRadio();
-			log.info("Clicked on No Card Option");
+			
 		signUpPage.clickContinueButton();
 		
-		Assert.assertTrue(signUpPage.isLogOutButtonPresent());		
+		Assert.assertTrue(signUpPage.isLogOutButtonPresent());	
+		
+		} catch (InterruptedException ie) {
+			log.info(ie.getMessage());		
+		} catch (IOException ioe) {
+			log.info(ioe.getMessage());		
+		} catch (XPathExpressionException xee) {
+			log.info(xee.getMessage());		
+		} catch (ParserConfigurationException pce) {
+			log.info(pce.getMessage());		
+		} catch (SAXException saxe) {
+			log.info(saxe.getMessage());		
+		} catch (Exception e) {
+			log.info(e.getMessage());		
+		}
 		
 	}
 
-	@Test(priority=4)
-	public void validSignUp_yesIHaveOne() throws InterruptedException, XPathExpressionException, ParserConfigurationException, SAXException, IOException{
+	@Test(priority=4, enabled=true)
+	public void validSignUp_yesIHaveOne(){
 		
+		try {
 		Map<String, String> validSignUpYesIHave = readxml.getUserData("TestData.xml", "new-user-3");
 		String userId = validSignUpYesIHave.get("UserName");
 		String password = validSignUpYesIHave.get("password");
@@ -52,22 +72,42 @@ public class SignUp extends SuiteBase{
 		
 		signUpPage = new SignUpPage(_driver);
 		
+		log.info("Test Data Used >>>>>>>");
+		log.info("User Name : " + userId);
+		log.info("Password : " + password);
+		log.info("Last Name : " + lastName);
+		log.info("Rewards Number : " + rewardsNum);
+		
 		signUpPage.clickSignUpLink();
-		log.info("SignUp Popup Launched");
+		
 		signUpPage.enterSignUpDetails(userId,password);
 		
 		signUpPage.clickYesHaveCardRadio();
 		signUpPage.clickContinueButton();
 		signUpPage.addRewardsCard_EnterDetails(lastName, rewardsNum);
-		log.info("Entered existing reward card details");
+		
 		Assert.assertTrue(signUpPage.isLogOutButtonPresent());
 		
-	
+		} catch (InterruptedException ie) {
+			log.info(ie.getMessage());		
+		} catch (IOException ioe) {
+			log.info(ioe.getMessage());		
+		} catch (XPathExpressionException xee) {
+			log.info(xee.getMessage());		
+		} catch (ParserConfigurationException pce) {
+			log.info(pce.getMessage());		
+		} catch (SAXException saxe) {
+			log.info(saxe.getMessage());		
+		} catch (Exception e) {
+			log.info(e.getMessage());		
+		}
 		
 	}
 	
-	@Test(priority=5)
-	public void validSignUp_noCardButWantOne() throws InterruptedException, XPathExpressionException, ParserConfigurationException, SAXException, IOException{
+	@Test(priority=5, enabled=true)
+	public void validSignUp_noCardButWantOne(){
+		
+		try {
 		Map<String, String> validSignUpYesIHave = readxml.getUserData("TestData.xml", "new-user-2");
 		String userId = validSignUpYesIHave.get("UserName");
 		String password = validSignUpYesIHave.get("password");
@@ -84,20 +124,36 @@ public class SignUp extends SuiteBase{
 		
 		signUpPage = new SignUpPage(_driver);
 		
+		log.info("Test Data Used >>>>>>>");
+		log.info("User Name : " + userId);
+		log.info("Password : " + password);
+		
 		signUpPage.clickSignUpLink();
-			log.info("SignUp popup is displayed");
+			
 		signUpPage.enterSignUpDetails(userId,password);
-			log.info("Entered Username and password");
+			
 		signUpPage.clickNoButWantCardRadio();
-			log.info("Selected No but Want One Option");
+			
 		signUpPage.clickContinueButton();
 		signUpPage.enterContactInformationInSignUp(firstName, lastName, address1, address2, city, state, zip, homePhone, mobilePhone, cardlessId);		
-			log.info("Entered all contact details");
+			
 		signUpPage.clickUseThisAddressButton();
-			log.info("Entered all the necessary information for the new card");
 		
 		Assert.assertTrue(signUpPage.isLogOutButtonPresent());
 		
+		} catch (InterruptedException ie) {
+			log.info(ie.getMessage());		
+		} catch (IOException ioe) {
+			log.info(ioe.getMessage());		
+		} catch (XPathExpressionException xee) {
+			log.info(xee.getMessage());		
+		} catch (ParserConfigurationException pce) {
+			log.info(pce.getMessage());		
+		} catch (SAXException saxe) {
+			log.info(saxe.getMessage());		
+		} catch (Exception e) {
+			log.info(e.getMessage());		
+		}
 	}
 	
 	
