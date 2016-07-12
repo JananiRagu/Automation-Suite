@@ -1,5 +1,6 @@
 package com.test.regression.cub.pages;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
@@ -8,11 +9,13 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.test.regression.cub.utils.Logg;
 import com.test.regression.cub.utils.SuiteBase;
 
 public class CubHome extends SuiteBase{
 	
 	WebDriver _driver;
+	Logger log = Logg.createLogger();
 	
 	public CubHome(WebDriver driver) {
 		super();
@@ -266,6 +269,9 @@ public class CubHome extends SuiteBase{
 	public void clickSignInLink() throws InterruptedException{
 		waitFor(_signInLink);
 		_signInLink.click();
+		
+		log.info("SignIn Link Clicked");
+		
 	}
 	
 	public void enterLoginDetails(String UserName, String Password){
@@ -274,12 +280,14 @@ public class CubHome extends SuiteBase{
 		waitFor(_password);
 		_password.sendKeys(Password);
 		
+		log.info("Entered login Details");
 	}
 	
 	public void clickSignInButton(){
 		waitFor(_signInButton);
 		_signInButton.click();
 		
+		log.info("SignInButton Clicked");
 	}
 	
 
@@ -287,7 +295,10 @@ public class CubHome extends SuiteBase{
 				
 		try {
 			waitFor(_logOut);
-            return _logOut.isDisplayed();
+			boolean logOutButton = _logOut.isDisplayed();
+				log.info("LogOut Button Status : "+logOutButton);
+            return logOutButton;
+            
           } catch (NoSuchElementException e) {
             return false;
           }catch (TimeoutException ex) {
@@ -297,7 +308,9 @@ public class CubHome extends SuiteBase{
 	
 	public boolean isPasswordIncorrectTextPresent(){
 		waitFor(_pwdIncorrect);
-		return(_pwdIncorrect.isDisplayed());
+		boolean pwdIncorrectText = _pwdIncorrect.isDisplayed();
+		log.info("Password Incorrect Text Status : "+pwdIncorrectText);
+		return(pwdIncorrectText);
 		
 	}
 	

@@ -1,5 +1,6 @@
 package com.test.regression.cub.pages;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -7,11 +8,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.test.regression.cub.utils.Logg;
 import com.test.regression.cub.utils.SuiteBase;
 
 public class CouponPage extends SuiteBase{
 	
 	WebDriver _driver;
+	
+	Logger log = Logg.createLogger();
 	
 	public CouponPage(WebDriver driver) {
 		super();
@@ -63,11 +67,11 @@ public class CouponPage extends SuiteBase{
 		
 		String couponClassName = driver.findElement(By.xpath(wantedAddItemButton)).getAttribute("class");
 		if(couponClassName.equalsIgnoreCase("coupon-badge")){
-			System.out.println("Coupon is Flippp!");
+			log.info("Coupon is Flippp!");
 			return true;
 		}
 		else{
-			System.out.println("Coupon is Inmar!");
+			log.info("Coupon is Inmar!");
 			return false;
 		}
 	}
@@ -79,9 +83,9 @@ public class CouponPage extends SuiteBase{
 		String temp2 = "]/div/div/div[3]/button[text()='+ Add Item']";
 		
 		String wantedAddItemButton = temp1+couponNo+temp2;
-		System.out.println("Trying to Add this coupon" + wantedAddItemButton);
+		log.info("Trying to Add this coupon" + wantedAddItemButton);
 		driver.findElement(By.xpath(wantedAddItemButton)).click();
-				
+		log.info("Added this coupon successfully : " + wantedAddItemButton);	
 	}
 	
 	public void addNthInmarCoupon(WebDriver driver, String couponNo) throws InterruptedException{
@@ -93,7 +97,7 @@ public class CouponPage extends SuiteBase{
 		System.out.println("Trying to Add this coupon" + wantedAddItemButton);
 		Thread.sleep(5000);
 		driver.findElement(By.xpath(wantedAddItemButton)).click();
-				
+		log.info("Added this coupon successfully : " + wantedAddItemButton);		
 	}
 
 	public String getNthFlippCouponName(WebDriver driver, String couponNo){
@@ -107,7 +111,7 @@ public class CouponPage extends SuiteBase{
 		WebElement wantedCouponNameElement = driver.findElement(By.xpath(wantedCouponNameXpath));
 		
 		String wantedCouponName = wantedCouponNameElement.getText();
-		System.out.println("Coupon name in Coupons page : " + wantedCouponName);
+		log.info("Coupon name in Coupons page : " + wantedCouponName);
 		return wantedCouponName;
 		
 	}
@@ -123,7 +127,7 @@ public class CouponPage extends SuiteBase{
 		WebElement wantedCouponNameElement = driver.findElement(By.xpath(wantedCouponNameXpath));
 		
 		String wantedCouponName = wantedCouponNameElement.getText();
-		System.out.println("Coupon name in Coupons page : " + wantedCouponName);
+		log.info("Coupon name in Coupons page : " + wantedCouponName);
 		return wantedCouponName;
 		
 	}
@@ -163,11 +167,16 @@ public class CouponPage extends SuiteBase{
 		Thread.sleep(5000);
 		waitFor(_continueButtonInCardlessIdPopUp);
 		_continueButtonInCardlessIdPopUp.click();
+		
+		log.info("Entered Cardless id");
+		Thread.sleep(5000);
 	}
 	
 	public void clickContinueAfterAddingCardlessIdCongratsPopup() throws InterruptedException{
-		waitFor(_continueAfterAddingCardlessId);
+		//waitFor(_continueAfterAddingCardlessId);
 		Thread.sleep(5000);
 		_continueAfterAddingCardlessId.click();
+		
+		log.info("Clicked on Continue in Congrats popup");
 	}
 }

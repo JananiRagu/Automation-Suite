@@ -2,6 +2,7 @@ package com.test.regression.cub.pages;
 
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,9 +10,12 @@ import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.test.regression.cub.utils.Logg;
 import com.test.regression.cub.utils.SuiteBase;
 
 public class ShoppingListPage extends SuiteBase{
+	
+	Logger log = Logg.createLogger();
 	
 	public ShoppingListPage(WebDriver driver) {
 		super();
@@ -59,6 +63,8 @@ public class ShoppingListPage extends SuiteBase{
 	public void clickOnShoppingListButtonHomePage(){
 		waitFor(_shoppingListButton);
 		_shoppingListButton.click();
+		
+		log.info("Clicked on Shopping List button in Home Page");
 	}
 	
 	public void addNewShoppingList(String shoppingListName){
@@ -70,6 +76,7 @@ public class ShoppingListPage extends SuiteBase{
 		waitFor(_SaveSLButton);
 		_SaveSLButton.click();
 		
+		log.info("Created New Shopping List");
 	}
 	
 	public void clickOnMyListInMyToolsHomePage(){
@@ -78,6 +85,8 @@ public class ShoppingListPage extends SuiteBase{
 		_MyToolsLink.click();
 		waitFor(_MyList);
 		_MyList.click();
+		
+		log.info("Selected My List in My Tools dropdown");
 	    
 	}
 	
@@ -105,7 +114,8 @@ public class ShoppingListPage extends SuiteBase{
 
 		waitFor(_add2ListButton);
 		_add2ListButton.click();
-
+		
+		log.info("Added 2 items to Shopping list");
 	}
 	
 	public int SLSize(){
@@ -147,8 +157,10 @@ public class ShoppingListPage extends SuiteBase{
 		String updatedItemQuantity = updatedQuantity1.getText();
 		System.out.println(updatedItemQuantity);
 		
-		if(updatedItemName.equals(updatedItem))
+		if(updatedItemName.equals(updatedItem)){
+			log.info("Updated Shopping list item name and quantity");
 			return true;
+		}
 		else
 			return false;
 	}
@@ -160,13 +172,15 @@ public class ShoppingListPage extends SuiteBase{
 		
 		WebElement deleteButton = driver.findElement(By.xpath(temp+"col_sli-modify']/button[@name='remove']"));
 		deleteButton.click();
-		
+		log.info("Deleted the last item from Shopping list");
 	}
 
 	public void clearList() {
 		
 		waitFor(_clearListLink);
 		_clearListLink.click();
+		
+		log.info("Cleared Shopping list...");
 	}
 	
 }

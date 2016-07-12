@@ -30,7 +30,7 @@ public class Coupons extends SuiteBase{
 	Logger log = Logg.createLogger();
 	ReadXML readxml = new ReadXML();
 	
-	@Test(enabled=false)
+	@Test(priority=11, enabled=false)
 	public void addCouponForAuthorizedUser() throws XPathExpressionException, ParserConfigurationException, SAXException, IOException, InterruptedException{
 		
 		Map<String, String> newSL = readxml.getUserData("TestData.xml", "carded-user1");
@@ -87,7 +87,7 @@ public class Coupons extends SuiteBase{
 	
 	
 	
-	@Test(enabled=false)
+	@Test(priority=12, enabled=false)
 	public void addCouponForWantOneNewUser() throws XPathExpressionException, ParserConfigurationException, SAXException, IOException, InterruptedException{
 		
 		Map<String, String> addCouponForWantOneNewUserData = readxml.getUserData("TestData.xml", "new-user-2");
@@ -161,10 +161,11 @@ public class Coupons extends SuiteBase{
 	// Sign Up for an account just by closing the Rewards Card pop up
 	// So, it will prompt for card-less id while trying to add coupon
 			
-	@Test(enabled=true)
-	public void addCouponForNoCardNewUser() throws XPathExpressionException, ParserConfigurationException, SAXException, IOException, InterruptedException{
+	@Test(priority=13, enabled=true)
+	public void addCouponForNoCardNewUser() {
 		
-		Map<String, String> addCouponForNoCardNewUserData = readxml.getUserData("TestData.xml", "new-user-coupon1");
+		try {
+		Map<String, String> addCouponForNoCardNewUserData = readxml.getUserData("TestData.xml", "new-user-coupon2");
 		String userId = addCouponForNoCardNewUserData.get("UserName");
 		String password = addCouponForNoCardNewUserData.get("password");
 		String allWantedCouponNumbersInString = addCouponForNoCardNewUserData.get("wantedCoupons");
@@ -173,22 +174,23 @@ public class Coupons extends SuiteBase{
 		String addedCouponName = null;
 		
 		signUpPage = new SignUpPage(_driver);
+			log.info("Test Data Used >>>>>>>");
+			log.info("User Name : " + userId);
+			log.info("Password : " + password);
 		
 		signUpPage.clickSignUpLink();
-			log.info("SignUp popup is displayed");
+			
 		signUpPage.enterSignUpDetails(userId,password);
-			log.info("Entered Sign Up Details and clicked on Continue button");
-			log.info("Signed up with " + userId + "   " + password);
+
 			Thread.sleep(5000);
 		signUpPage.closeRewardsCardPopup();
-			log.info("Didnt Select any option in Rewards Card popup, Just Closed the popup");
 			
 		cp = new CouponPage(_driver);
 		
 		cp.clickOnCouponsInMyToolsHomePage();
 			log.info("In Coupons page now..");
 		//cp.loadCompleteCouponsPage();
-			log.info("Coupons Page is loaded fully");
+			//log.info("Coupons Page is loaded fully");
 			
 		// Delimiting the wanted coupon numbers' data
 			
@@ -225,6 +227,7 @@ public class Coupons extends SuiteBase{
 				firstAddedCouponName = cp.getNthInmarCouponName(_driver, firstWantedCoupon);
 					log.info("Added Coupon Name : " + firstAddedCouponName);
 			}
+			
 	if(size>1){
 		
 		for(String wantedCouponNumber : otherWantedCoupons){
@@ -258,17 +261,36 @@ public class Coupons extends SuiteBase{
 		ecp.clickOnMyeCouponsInMyToolsHomePage();
 			log.info("Validating whether the added coupon is in My eCoupons page");
 			
-		boolean result = ecp.isCouponPresent(addedCouponName);
+		/*boolean result = ecp.isCouponPresent(addedCouponName);
 		if(result)
 			log.info(addedCouponName + " is present in My eCoupons Page");
 		else
-			log.info(addedCouponName + " is NOT present in My eCoupons Page");
+			log.info(addedCouponName + " is NOT present in My eCoupons Page");*/
 		}
 		
 		int eCouponsNumber = ecp.noOfECoupons();
 		
 		Assert.assertTrue(size == eCouponsNumber);
 		
+		} catch (InterruptedException ie) {
+			log.info(ie.getMessage());
+			Assert.fail("Caught Interrupted Exception");
+		} catch (IOException ioe) {
+			log.info(ioe.getMessage());	
+			Assert.fail("Caught IOException Exception");
+		} catch (XPathExpressionException xee) {
+			log.info(xee.getMessage());	
+			Assert.fail("Caught XPathExpressionException Exception");
+		} catch (ParserConfigurationException pce) {
+			log.info(pce.getMessage());
+			Assert.fail("Caught ParserConfigurationException Exception");
+		} catch (SAXException saxe) {
+			log.info(saxe.getMessage());
+			Assert.fail("Caught SAXException Exception");
+		} catch (Exception e) {
+			log.info(e.getMessage());
+			Assert.fail(e.getLocalizedMessage());
+		}
 	} 
 	}
 	

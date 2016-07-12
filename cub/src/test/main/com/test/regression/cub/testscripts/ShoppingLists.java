@@ -22,39 +22,58 @@ public class ShoppingLists extends SuiteBase{
 	Logger log = Logg.createLogger();
 	ReadXML readxml = new ReadXML();
 	
-	@Test(enabled=true, priority=4)
-	public void createShoppingList() throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException{
+	@Test(enabled=true, priority=6)
+	public void createShoppingList(){
 		
+		try{
 		Map<String, String> newSL = readxml.getUserData("TestData.xml", "carded-user");
 		String userId = newSL.get("UserName");
 		String password = newSL.get("password");
 		String SLName = newSL.get("SLName");
 
 		cubHome = new CubHome(_driver);
-			log.info("cubHome obj instantiated");
+			log.info("Test Data Used >>>>>>>");
+			log.info("User Name : " + userId);
+			log.info("Password : " + password);
+			
+		
 		cubHome.clickSignInLink();
-			log.info("SignIn Link Clicked");
+			
 		cubHome.enterLoginDetails(userId, password);
-			log.info("Entered login Details");
+			
 		cubHome.clickSignInButton();
-			log.info("SignInButton Clicked");
+			
 			
 		sl=new ShoppingListPage(_driver);
 		
 		sl.clickOnMyListInMyToolsHomePage();
-			log.info("Clicked on Shopping list link in Home page");
+			
 		sl.addNewShoppingList(SLName);
-			log.info("Added a new shopping list");
+			
 		
 		boolean result = sl.verifyNewAddedShoppingListName(SLName);
 		Assert.assertTrue(result);
-	
+		
+		} catch (InterruptedException ie) {
+			log.info(ie.getMessage());		
+		} catch (IOException ioe) {
+			log.info(ioe.getMessage());		
+		} catch (XPathExpressionException xee) {
+			log.info(xee.getMessage());		
+		} catch (ParserConfigurationException pce) {
+			log.info(pce.getMessage());		
+		} catch (SAXException saxe) {
+			log.info(saxe.getMessage());		
+		} catch (Exception e) {
+			log.info(e.getMessage());		
+		}
 		
 	}
 	
-	@Test(enabled=true, priority=5)
-	public void AddItems2ShoppingList() throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException{
+	@Test(enabled=true, priority=7)
+	public void Add3Items2ShoppingList(){
 		
+		try{
 		Map<String, String> AddItems2newSL = readxml.getUserData("TestData.xml", "carded-user");
 		String userId = AddItems2newSL.get("UserName");
 		String password = AddItems2newSL.get("password");
@@ -67,38 +86,55 @@ public class ShoppingLists extends SuiteBase{
 		String quantity3 = AddItems2newSL.get("quantity3");
 
 		cubHome = new CubHome(_driver);
-			log.info("cubHome obj instantiated");
+		
+			log.info("Test Data Used >>>>>>>");
+			log.info("User Name : " + userId);
+			log.info("Password : " + password);
+			
 		cubHome.clickSignInLink();
-			log.info("SignIn Link Clicked");
+			
 		cubHome.enterLoginDetails(userId, password);
-			log.info("Entered login Details");
+			
 		cubHome.clickSignInButton();
-			log.info("SignInButton Clicked");
+			
 			
 		sl=new ShoppingListPage(_driver);
 		
 		sl.clickOnMyListInMyToolsHomePage();
-			log.info("Clicked on Shopping list link in Home page");
+			
 		sl.addNewShoppingList(SLName);
-			log.info("Added a new shopping list");
+			
 		sl.addItems2SL(item1, quantity1);
-			log.info("Item added to shopping list");
+			
 		sl.addItems2SL(item2, quantity2);
-			log.info("Item added to shopping list");
+			
 		sl.addItems2SL(item3, quantity3);
-			log.info("Item added to shopping list");
 			
 		Thread.sleep(3000);
 		int slSize = sl.SLSize();
 		
 		Assert.assertTrue(slSize==3);
 		
+		} catch (InterruptedException ie) {
+			log.info(ie.getMessage());		
+		} catch (IOException ioe) {
+			log.info(ioe.getMessage());		
+		} catch (XPathExpressionException xee) {
+			log.info(xee.getMessage());		
+		} catch (ParserConfigurationException pce) {
+			log.info(pce.getMessage());		
+		} catch (SAXException saxe) {
+			log.info(saxe.getMessage());		
+		} catch (Exception e) {
+			log.info(e.getMessage());		
+		}
 			
 	}
 	
-	@Test(enabled=true, priority=6)
-	public void AddnEditItemsInShoppingList() throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException{
+	@Test(enabled=true, priority=8)
+	public void AddnEditItemsInShoppingList(){
 		
+		try{
 		Map<String, String> AddnEditItems2newSL = readxml.getUserData("TestData.xml", "carded-user");
 		String userId = AddnEditItems2newSL.get("UserName");
 		String password = AddnEditItems2newSL.get("password");
@@ -113,38 +149,53 @@ public class ShoppingLists extends SuiteBase{
 		String quantity3 = AddnEditItems2newSL.get("quantity3");
 
 		cubHome = new CubHome(_driver);
-			log.info("cubHome obj instantiated");
+			
+			log.info("Test Data Used >>>>>>>");
+			log.info("User Name : " + userId);
+			log.info("Password : " + password);
+			
 		cubHome.clickSignInLink();
-			log.info("SignIn Link Clicked");
+			
 		cubHome.enterLoginDetails(userId, password);
-			log.info("Entered login Details");
+			
 		cubHome.clickSignInButton();
-			log.info("SignInButton Clicked");
 			
 		sl=new ShoppingListPage(_driver);
 		
 		sl.clickOnMyListInMyToolsHomePage();
-			log.info("Clicked on Shopping list link in Home page");
+			
 		sl.addNewShoppingList(SLName);
-			log.info("Added a new shopping list");
+			
 		sl.addItems2SL(item1, quantity1);
-			log.info("Item added to shopping list");
+			
 		sl.addItems2SL(item2, quantity2);
-			log.info("Item added to shopping list");
+			
 		sl.addItems2SL(item3, quantity3);
-			log.info("Item added to shopping list");
 			
 		Thread.sleep(3000);
 		boolean result = sl.edit1stAddedSLItem(_driver, item1upd, quantity1upd);
 		
 		Assert.assertTrue(result);
 		
-				
+		} catch (InterruptedException ie) {
+			log.info(ie.getMessage());		
+		} catch (IOException ioe) {
+			log.info(ioe.getMessage());		
+		} catch (XPathExpressionException xee) {
+			log.info(xee.getMessage());		
+		} catch (ParserConfigurationException pce) {
+			log.info(pce.getMessage());		
+		} catch (SAXException saxe) {
+			log.info(saxe.getMessage());		
+		} catch (Exception e) {
+			log.info(e.getMessage());		
+		}		
 	}
 	
-	@Test(enabled=true, priority=4)
-	public void deleteItemFromSL() throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException{
+	@Test(enabled=true, priority=9)
+	public void deleteItemFromSL(){
 		
+		try {
 		Map<String, String> AddItems2newSL = readxml.getUserData("TestData.xml", "carded-user");
 		String userId = AddItems2newSL.get("UserName");
 		String password = AddItems2newSL.get("password");
@@ -154,22 +205,23 @@ public class ShoppingLists extends SuiteBase{
 		
 
 		cubHome = new CubHome(_driver);
-			log.info("cubHome obj instantiated");
+			log.info("Test Data Used >>>>>>>");
+			log.info("User Name : " + userId);
+			log.info("Password : " + password);
+			
 		cubHome.clickSignInLink();
-			log.info("SignIn Link Clicked");
+			
 		cubHome.enterLoginDetails(userId, password);
-			log.info("Entered login Details");
+			
 		cubHome.clickSignInButton();
-			log.info("SignInButton Clicked");
 			
 		sl=new ShoppingListPage(_driver);
 		
 		sl.clickOnMyListInMyToolsHomePage();
-			log.info("Clicked on Shopping list link in Home page");
+			
 		sl.addNewShoppingList(SLName);
-			log.info("Added a new shopping list");
+			
 		sl.addItems2SL(item1, quantity1);
-			log.info("Item added to shopping list");
 		
 		sl.deleteLastSLItem(_driver);
 			
@@ -178,11 +230,24 @@ public class ShoppingLists extends SuiteBase{
 		
 		Assert.assertTrue(slSize==0);
 		
-		
+		} catch (InterruptedException ie) {
+			log.info(ie.getMessage());		
+		} catch (IOException ioe) {
+			log.info(ioe.getMessage());		
+		} catch (XPathExpressionException xee) {
+			log.info(xee.getMessage());		
+		} catch (ParserConfigurationException pce) {
+			log.info(pce.getMessage());		
+		} catch (SAXException saxe) {
+			log.info(saxe.getMessage());		
+		} catch (Exception e) {
+			log.info(e.getMessage());		
+		}
 	}
 	
-	@Test(enabled=true, priority=4)
-	public void testClearList() throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException{
+	@Test(enabled=true, priority=10)
+	public void testClearList() {
+		try{
 		
 		Map<String, String> AddItems2newSL = readxml.getUserData("TestData.xml", "carded-user");
 		String userId = AddItems2newSL.get("UserName");
@@ -193,22 +258,23 @@ public class ShoppingLists extends SuiteBase{
 		
 
 		cubHome = new CubHome(_driver);
-			log.info("cubHome obj instantiated");
+			log.info("Test Data Used >>>>>>>");
+			log.info("User Name : " + userId);
+			log.info("Password : " + password);
+			
 		cubHome.clickSignInLink();
-			log.info("SignIn Link Clicked");
+			
 		cubHome.enterLoginDetails(userId, password);
-			log.info("Entered login Details");
+			
 		cubHome.clickSignInButton();
-			log.info("SignInButton Clicked");
 			
 		sl=new ShoppingListPage(_driver);
 		
 		sl.clickOnMyListInMyToolsHomePage();
-			log.info("Clicked on Shopping list link in Home page");
+			
 		sl.addNewShoppingList(SLName);
-			log.info("Added a new shopping list");
+			
 		sl.addItems2SL(item1, quantity1);
-			log.info("Item added to shopping list");
 		
 		sl.clearList();
 			
@@ -217,7 +283,19 @@ public class ShoppingLists extends SuiteBase{
 		
 		Assert.assertTrue(slSize==0);
 		
-		
+		} catch (InterruptedException ie) {
+			log.info(ie.getMessage());		
+		} catch (IOException ioe) {
+			log.info(ioe.getMessage());		
+		} catch (XPathExpressionException xee) {
+			log.info(xee.getMessage());		
+		} catch (ParserConfigurationException pce) {
+			log.info(pce.getMessage());		
+		} catch (SAXException saxe) {
+			log.info(saxe.getMessage());		
+		} catch (Exception e) {
+			log.info(e.getMessage());		
+		}
 		
 	}
 }

@@ -2,17 +2,20 @@ package com.test.regression.cub.pages;
 
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.test.regression.cub.utils.Logg;
 import com.test.regression.cub.utils.SuiteBase;
 
 public class MyeCouponsPage extends SuiteBase{
 	
 	WebDriver _driver;
+	Logger log = Logg.createLogger();
 	
 	public MyeCouponsPage(WebDriver driver) {
 		super();
@@ -35,6 +38,8 @@ public class MyeCouponsPage extends SuiteBase{
 		
 		Thread.sleep(5000);
 		_MyECoupons.click();
+		
+		log.info("Clicked on My eCoupons in Home page");
 	    
 	}
 	
