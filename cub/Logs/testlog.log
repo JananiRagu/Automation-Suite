@@ -1,713 +1,568 @@
-2016-07-12 15:41:48,987 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 15:41:49,007 - com.test.regression.cub.utils.Logg -INFO - Starting validLogin ................
-2016-07-12 15:41:49,010 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 15:42:04,309 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-12 15:42:04,769 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
-2016-07-12 15:42:04,769 - com.test.regression.cub.utils.Logg -INFO - User Name : janani.ragu@supervalu.com
-2016-07-12 15:42:04,770 - com.test.regression.cub.utils.Logg -INFO - Password : password
-2016-07-12 15:42:05,468 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
-2016-07-12 15:42:06,470 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
-2016-07-12 15:42:06,672 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
-2016-07-12 15:42:12,289 - com.test.regression.cub.utils.Logg -INFO - LogOut Button Status : true
-2016-07-12 15:42:16,983 - com.test.regression.cub.utils.Logg -INFO - validLogin execution Complete.............
-2016-07-12 15:42:16,984 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 15:42:16,985 - com.test.regression.cub.utils.Logg -INFO - Starting inValidLogin ................
-2016-07-12 15:42:16,985 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 15:42:30,131 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-12 15:42:30,173 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
-2016-07-12 15:42:30,174 - com.test.regression.cub.utils.Logg -INFO - User Nameankusha10@gmail.com
-2016-07-12 15:42:30,178 - com.test.regression.cub.utils.Logg -INFO - PasswordAn55333
-2016-07-12 15:42:30,617 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
-2016-07-12 15:42:31,665 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
-2016-07-12 15:42:31,904 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
-2016-07-12 15:42:52,911 - com.test.regression.cub.utils.Logg -INFO - Password Incorrect Text Status : true
-2016-07-12 15:42:56,843 - com.test.regression.cub.utils.Logg -INFO - inValidLogin execution Complete.............
-2016-07-12 15:42:57,091 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 15:42:57,091 - com.test.regression.cub.utils.Logg -INFO - Starting validSignUp_noCard ................
-2016-07-12 15:42:57,092 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 15:43:13,939 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-12 15:43:13,968 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
-2016-07-12 15:43:13,969 - com.test.regression.cub.utils.Logg -INFO - User Name : sujuly12@cub.com
-2016-07-12 15:43:13,969 - com.test.regression.cub.utils.Logg -INFO - Password : password
-2016-07-12 15:43:16,219 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
-2016-07-12 15:43:17,978 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
-2016-07-12 15:43:36,099 - com.test.regression.cub.utils.Logg -INFO - Selected 'No, I dont want card' option
-2016-07-12 15:43:36,514 - com.test.regression.cub.utils.Logg -INFO - Clicked on Continue Button
-2016-07-12 15:43:42,615 - com.test.regression.cub.utils.Logg -INFO - validSignUp_noCard execution Complete.............
-2016-07-12 15:43:42,617 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 15:43:42,617 - com.test.regression.cub.utils.Logg -INFO - Starting validSignUp_yesIHaveOne ................
-2016-07-12 15:43:42,617 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 15:43:56,851 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-12 15:43:56,880 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
-2016-07-12 15:43:56,881 - com.test.regression.cub.utils.Logg -INFO - User Name : suyjuly12@cub.com
-2016-07-12 15:43:56,881 - com.test.regression.cub.utils.Logg -INFO - Password : password
-2016-07-12 15:43:56,881 - com.test.regression.cub.utils.Logg -INFO - Last Name : Test
-2016-07-12 15:43:56,881 - com.test.regression.cub.utils.Logg -INFO - Rewards Number : 48630936861
-2016-07-12 15:43:57,622 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
-2016-07-12 15:43:59,176 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
-2016-07-12 15:44:15,736 - com.test.regression.cub.utils.Logg -INFO - Selected 'Yes, I have a card' option
-2016-07-12 15:44:15,988 - com.test.regression.cub.utils.Logg -INFO - Clicked on Continue Button
-2016-07-12 15:44:17,561 - com.test.regression.cub.utils.Logg -INFO - Entered existing reward card details for linking a card
-2016-07-12 15:44:21,084 - com.test.regression.cub.utils.Logg -INFO - validSignUp_yesIHaveOne execution Complete.............
-2016-07-12 15:44:21,091 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 15:44:21,095 - com.test.regression.cub.utils.Logg -INFO - Starting validSignUp_noCardButWantOne ................
-2016-07-12 15:44:21,095 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 15:44:43,005 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-12 15:44:43,025 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
-2016-07-12 15:44:43,026 - com.test.regression.cub.utils.Logg -INFO - User Name : suwjuly12@cub.com
-2016-07-12 15:44:43,026 - com.test.regression.cub.utils.Logg -INFO - Password : password
-2016-07-12 15:44:44,019 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
-2016-07-12 15:44:45,023 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
-2016-07-12 15:45:02,505 - com.test.regression.cub.utils.Logg -INFO - Selected 'No, But I want one' option
-2016-07-12 15:45:02,770 - com.test.regression.cub.utils.Logg -INFO - Clicked on Continue Button
-2016-07-12 15:45:07,414 - com.test.regression.cub.utils.Logg -INFO - Entered the Contact Information details..
-2016-07-12 15:45:10,100 - com.test.regression.cub.utils.Logg -INFO - Clicked on Use this address button on Address Verification
-2016-07-12 15:45:13,976 - com.test.regression.cub.utils.Logg -INFO - validSignUp_noCardButWantOne execution Complete.............
-2016-07-12 16:25:39,084 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 16:25:39,091 - com.test.regression.cub.utils.Logg -INFO - Starting createShoppingList ................
-2016-07-12 16:25:39,092 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 16:25:54,163 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-12 16:25:54,503 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
-2016-07-12 16:25:54,504 - com.test.regression.cub.utils.Logg -INFO - User Name : sltesting@cub.com
-2016-07-12 16:25:54,504 - com.test.regression.cub.utils.Logg -INFO - Password : password
-2016-07-12 16:25:55,190 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
-2016-07-12 16:25:56,301 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
-2016-07-12 16:25:56,497 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
-2016-07-12 16:26:08,648 - com.test.regression.cub.utils.Logg -INFO - Selected My List in My Tools dropdown
-2016-07-12 16:26:20,771 - com.test.regression.cub.utils.Logg -INFO - Created New Shopping List
-2016-07-12 16:26:25,637 - com.test.regression.cub.utils.Logg -INFO - createShoppingList execution Complete.............
-2016-07-12 16:26:25,638 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 16:26:25,638 - com.test.regression.cub.utils.Logg -INFO - Starting Add3Items2ShoppingList ................
-2016-07-12 16:26:25,639 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 16:26:38,664 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-12 16:26:38,703 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
-2016-07-12 16:26:38,713 - com.test.regression.cub.utils.Logg -INFO - User Name : sltesting@cub.com
-2016-07-12 16:26:38,714 - com.test.regression.cub.utils.Logg -INFO - Password : password
-2016-07-12 16:26:39,110 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
-2016-07-12 16:26:40,356 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
-2016-07-12 16:26:40,567 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
-2016-07-12 16:26:52,494 - com.test.regression.cub.utils.Logg -INFO - Selected My List in My Tools dropdown
-2016-07-12 16:27:02,866 - com.test.regression.cub.utils.Logg -INFO - Created New Shopping List
-2016-07-12 16:27:04,122 - com.test.regression.cub.utils.Logg -INFO - Added 2 items to Shopping list
-2016-07-12 16:27:04,865 - com.test.regression.cub.utils.Logg -INFO - Added 2 items to Shopping list
-2016-07-12 16:27:05,351 - com.test.regression.cub.utils.Logg -INFO - Added 2 items to Shopping list
-2016-07-12 16:27:13,378 - com.test.regression.cub.utils.Logg -INFO - Add3Items2ShoppingList execution Complete.............
-2016-07-12 16:27:13,381 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 16:27:13,381 - com.test.regression.cub.utils.Logg -INFO - Starting AddnEditItemsInShoppingList ................
-2016-07-12 16:27:13,381 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 16:27:26,394 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-12 16:27:26,416 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
-2016-07-12 16:27:26,417 - com.test.regression.cub.utils.Logg -INFO - User Name : sltesting@cub.com
-2016-07-12 16:27:26,417 - com.test.regression.cub.utils.Logg -INFO - Password : password
-2016-07-12 16:27:26,801 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
-2016-07-12 16:27:28,207 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
-2016-07-12 16:27:28,457 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
-2016-07-12 16:27:40,839 - com.test.regression.cub.utils.Logg -INFO - Selected My List in My Tools dropdown
-2016-07-12 16:27:51,643 - com.test.regression.cub.utils.Logg -INFO - Created New Shopping List
-2016-07-12 16:27:52,418 - com.test.regression.cub.utils.Logg -INFO - Added 2 items to Shopping list
-2016-07-12 16:27:52,923 - com.test.regression.cub.utils.Logg -INFO - Added 2 items to Shopping list
-2016-07-12 16:27:53,343 - com.test.regression.cub.utils.Logg -INFO - Added 2 items to Shopping list
-2016-07-12 16:28:07,962 - com.test.regression.cub.utils.Logg -INFO - Updated Shopping list item name and quantity
-2016-07-12 16:28:13,141 - com.test.regression.cub.utils.Logg -INFO - AddnEditItemsInShoppingList execution Complete.............
-2016-07-12 16:28:13,144 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 16:28:13,144 - com.test.regression.cub.utils.Logg -INFO - Starting deleteItemFromSL ................
-2016-07-12 16:28:13,144 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 16:28:27,571 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-12 16:28:27,606 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
-2016-07-12 16:28:27,606 - com.test.regression.cub.utils.Logg -INFO - User Name : sltesting@cub.com
-2016-07-12 16:28:27,609 - com.test.regression.cub.utils.Logg -INFO - Password : password
-2016-07-12 16:28:28,130 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
-2016-07-12 16:28:29,714 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
-2016-07-12 16:28:29,996 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
-2016-07-12 16:28:42,926 - com.test.regression.cub.utils.Logg -INFO - Selected My List in My Tools dropdown
-2016-07-12 16:28:53,161 - com.test.regression.cub.utils.Logg -INFO - Created New Shopping List
-2016-07-12 16:28:53,881 - com.test.regression.cub.utils.Logg -INFO - Added 2 items to Shopping list
-2016-07-12 16:28:54,618 - com.test.regression.cub.utils.Logg -INFO - Deleted the last item from Shopping list
-2016-07-12 16:29:40,744 - com.test.regression.cub.utils.Logg -INFO - deleteItemFromSL execution Complete.............
-2016-07-12 16:29:40,745 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 16:29:40,746 - com.test.regression.cub.utils.Logg -INFO - Starting testClearList ................
-2016-07-12 16:29:40,746 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 16:29:54,429 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-12 16:29:54,445 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
-2016-07-12 16:29:54,446 - com.test.regression.cub.utils.Logg -INFO - User Name : sltesting@cub.com
-2016-07-12 16:29:54,446 - com.test.regression.cub.utils.Logg -INFO - Password : password
-2016-07-12 16:29:54,974 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
-2016-07-12 16:29:56,311 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
-2016-07-12 16:29:56,523 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
-2016-07-12 16:30:08,747 - com.test.regression.cub.utils.Logg -INFO - Selected My List in My Tools dropdown
-2016-07-12 16:30:21,958 - com.test.regression.cub.utils.Logg -INFO - Created New Shopping List
-2016-07-12 16:30:22,615 - com.test.regression.cub.utils.Logg -INFO - Added 2 items to Shopping list
-2016-07-12 16:30:22,797 - com.test.regression.cub.utils.Logg -INFO - Cleared Shopping list...
-2016-07-12 16:31:12,008 - com.test.regression.cub.utils.Logg -INFO - testClearList execution Complete.............
-2016-07-12 17:29:38,652 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 17:29:38,661 - com.test.regression.cub.utils.Logg -INFO - Starting addCouponForNoCardNewUser ................
-2016-07-12 17:29:38,661 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 17:29:53,758 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-12 17:29:53,999 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
-2016-07-12 17:29:54,000 - com.test.regression.cub.utils.Logg -INFO - User Name : addCouponForNoCardNewUser10@cub.com
-2016-07-12 17:29:54,005 - com.test.regression.cub.utils.Logg -INFO - Password : password
-2016-07-12 17:29:54,459 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
-2016-07-12 17:29:56,218 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
-2016-07-12 17:30:14,105 - com.test.regression.cub.utils.Logg -INFO - Didnt Select any option in Rewards Card popup, Just Closed the popup
-2016-07-12 17:30:24,367 - com.test.regression.cub.utils.Logg -INFO - element not visible
+2016-07-13 14:56:23,299 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 14:56:23,306 - com.test.regression.cub.utils.Logg -INFO - Starting validLogin ................
+2016-07-13 14:56:23,307 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 14:56:44,473 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 14:56:44,919 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-07-13 14:56:44,920 - com.test.regression.cub.utils.Logg -INFO - User Name : sltesting@cub.com
+2016-07-13 14:56:44,921 - com.test.regression.cub.utils.Logg -INFO - Password : password
+2016-07-13 14:56:45,370 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 14:56:46,953 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 14:56:47,254 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 14:56:54,914 - com.test.regression.cub.utils.Logg -INFO - LogOut Button Status : true
+2016-07-13 14:57:00,773 - com.test.regression.cub.utils.Logg -INFO - validLogin execution Complete.............
+2016-07-13 14:57:00,774 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 14:57:00,775 - com.test.regression.cub.utils.Logg -INFO - Starting inValidLogin ................
+2016-07-13 14:57:00,775 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 14:57:22,672 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 14:57:22,707 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-07-13 14:57:22,707 - com.test.regression.cub.utils.Logg -INFO - User Nameankusha10@gmail.com
+2016-07-13 14:57:22,707 - com.test.regression.cub.utils.Logg -INFO - PasswordAn55333
+2016-07-13 14:57:23,421 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 14:57:24,273 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 14:57:24,535 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 14:57:29,104 - com.test.regression.cub.utils.Logg -INFO - Password Incorrect Text Status : true
+2016-07-13 14:57:31,884 - com.test.regression.cub.utils.Logg -INFO - inValidLogin execution Complete.............
+2016-07-13 14:57:32,187 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 14:57:32,188 - com.test.regression.cub.utils.Logg -INFO - Starting validSignUp_noCard ................
+2016-07-13 14:57:32,188 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 14:57:50,430 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 14:57:50,462 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-07-13 14:57:50,464 - com.test.regression.cub.utils.Logg -INFO - User Name : sujuly13_1@cub.com
+2016-07-13 14:57:50,464 - com.test.regression.cub.utils.Logg -INFO - Password : password
+2016-07-13 14:57:51,083 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
+2016-07-13 14:57:52,290 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
+2016-07-13 14:58:11,664 - com.test.regression.cub.utils.Logg -INFO - Selected 'No, I dont want card' option
+2016-07-13 14:58:12,046 - com.test.regression.cub.utils.Logg -INFO - Clicked on Continue Button
+2016-07-13 14:58:16,083 - com.test.regression.cub.utils.Logg -INFO - validSignUp_noCard execution Complete.............
+2016-07-13 14:58:16,084 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 14:58:16,085 - com.test.regression.cub.utils.Logg -INFO - Starting validSignUp_yesIHaveOne ................
+2016-07-13 14:58:16,085 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 14:58:38,688 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 14:58:38,749 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-07-13 14:58:38,749 - com.test.regression.cub.utils.Logg -INFO - User Name : suyjuly13_1@cub.com
+2016-07-13 14:58:38,749 - com.test.regression.cub.utils.Logg -INFO - Password : password
+2016-07-13 14:58:38,750 - com.test.regression.cub.utils.Logg -INFO - Last Name : Test
+2016-07-13 14:58:38,750 - com.test.regression.cub.utils.Logg -INFO - Rewards Number : 48630936861
+2016-07-13 14:58:39,503 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
+2016-07-13 14:58:41,054 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
+2016-07-13 14:58:58,756 - com.test.regression.cub.utils.Logg -INFO - Selected 'Yes, I have a card' option
+2016-07-13 14:58:59,011 - com.test.regression.cub.utils.Logg -INFO - Clicked on Continue Button
+2016-07-13 14:59:00,401 - com.test.regression.cub.utils.Logg -INFO - Entered existing reward card details for linking a card
+2016-07-13 14:59:04,759 - com.test.regression.cub.utils.Logg -INFO - validSignUp_yesIHaveOne execution Complete.............
+2016-07-13 14:59:04,760 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 14:59:04,763 - com.test.regression.cub.utils.Logg -INFO - Starting validSignUp_noCardButWantOne ................
+2016-07-13 14:59:04,764 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 14:59:23,055 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 14:59:23,082 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-07-13 14:59:23,082 - com.test.regression.cub.utils.Logg -INFO - User Name : suwjuly13_1@cub.com
+2016-07-13 14:59:23,083 - com.test.regression.cub.utils.Logg -INFO - Password : password
+2016-07-13 14:59:23,857 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
+2016-07-13 14:59:25,176 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
+2016-07-13 14:59:44,772 - com.test.regression.cub.utils.Logg -INFO - Selected 'No, But I want one' option
+2016-07-13 14:59:45,009 - com.test.regression.cub.utils.Logg -INFO - Clicked on Continue Button
+2016-07-13 14:59:50,226 - com.test.regression.cub.utils.Logg -INFO - Entered the Contact Information details..
+2016-07-13 14:59:51,847 - com.test.regression.cub.utils.Logg -INFO - Clicked on Use this address button on Address Verification
+2016-07-13 15:00:00,754 - com.test.regression.cub.utils.Logg -INFO - validSignUp_noCardButWantOne execution Complete.............
+2016-07-13 15:00:01,061 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:00:01,067 - com.test.regression.cub.utils.Logg -INFO - Starting createShoppingList ................
+2016-07-13 15:00:01,068 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:01:03,093 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:01:03,123 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-07-13 15:01:03,123 - com.test.regression.cub.utils.Logg -INFO - User Name : sltesting@cub.com
+2016-07-13 15:01:03,124 - com.test.regression.cub.utils.Logg -INFO - Password : password
+2016-07-13 15:01:06,287 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:01:22,266 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:01:23,002 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:01:47,286 - com.test.regression.cub.utils.Logg -INFO - Selected My List in My Tools dropdown
+2016-07-13 15:02:14,416 - com.test.regression.cub.utils.Logg -INFO - Created New Shopping List
+2016-07-13 15:02:18,979 - com.test.regression.cub.utils.Logg -INFO - createShoppingList execution Complete.............
+2016-07-13 15:02:18,980 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:02:18,981 - com.test.regression.cub.utils.Logg -INFO - Starting Add3Items2ShoppingList ................
+2016-07-13 15:02:18,982 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:02:38,538 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:02:38,557 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-07-13 15:02:38,557 - com.test.regression.cub.utils.Logg -INFO - User Name : sltesting@cub.com
+2016-07-13 15:02:38,557 - com.test.regression.cub.utils.Logg -INFO - Password : password
+2016-07-13 15:02:39,577 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:02:42,701 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:02:42,965 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:02:54,952 - com.test.regression.cub.utils.Logg -INFO - Selected My List in My Tools dropdown
+2016-07-13 15:03:07,588 - com.test.regression.cub.utils.Logg -INFO - Created New Shopping List
+2016-07-13 15:03:10,216 - com.test.regression.cub.utils.Logg -INFO - Added 2 items to Shopping list
+2016-07-13 15:03:11,475 - com.test.regression.cub.utils.Logg -INFO - Added 2 items to Shopping list
+2016-07-13 15:03:11,921 - com.test.regression.cub.utils.Logg -INFO - Added 2 items to Shopping list
+2016-07-13 15:03:18,269 - com.test.regression.cub.utils.Logg -INFO - Add3Items2ShoppingList execution Complete.............
+2016-07-13 15:03:18,271 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:03:18,271 - com.test.regression.cub.utils.Logg -INFO - Starting AddnEditItemsInShoppingList ................
+2016-07-13 15:03:18,271 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:03:36,671 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:03:36,702 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-07-13 15:03:36,702 - com.test.regression.cub.utils.Logg -INFO - User Name : sltesting@cub.com
+2016-07-13 15:03:36,702 - com.test.regression.cub.utils.Logg -INFO - Password : password
+2016-07-13 15:03:37,286 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:03:38,300 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:03:38,580 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:03:51,247 - com.test.regression.cub.utils.Logg -INFO - Selected My List in My Tools dropdown
+2016-07-13 15:04:03,814 - com.test.regression.cub.utils.Logg -INFO - Created New Shopping List
+2016-07-13 15:04:04,792 - com.test.regression.cub.utils.Logg -INFO - Added 2 items to Shopping list
+2016-07-13 15:04:05,514 - com.test.regression.cub.utils.Logg -INFO - Added 2 items to Shopping list
+2016-07-13 15:04:05,983 - com.test.regression.cub.utils.Logg -INFO - Added 2 items to Shopping list
+2016-07-13 15:04:32,597 - com.test.regression.cub.utils.Logg -INFO - Updated Shopping list item name and quantity
+2016-07-13 15:04:38,995 - com.test.regression.cub.utils.Logg -INFO - AddnEditItemsInShoppingList execution Complete.............
+2016-07-13 15:04:38,996 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:04:38,996 - com.test.regression.cub.utils.Logg -INFO - Starting deleteItemFromSL ................
+2016-07-13 15:04:38,996 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:05:19,101 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:05:19,128 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-07-13 15:05:19,129 - com.test.regression.cub.utils.Logg -INFO - User Name : sltesting@cub.com
+2016-07-13 15:05:19,129 - com.test.regression.cub.utils.Logg -INFO - Password : password
+2016-07-13 15:05:23,650 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:05:26,249 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:05:26,471 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:05:37,809 - com.test.regression.cub.utils.Logg -INFO - Selected My List in My Tools dropdown
+2016-07-13 15:05:51,455 - com.test.regression.cub.utils.Logg -INFO - Created New Shopping List
+2016-07-13 15:05:52,578 - com.test.regression.cub.utils.Logg -INFO - Added 2 items to Shopping list
+2016-07-13 15:05:53,346 - com.test.regression.cub.utils.Logg -INFO - Deleted the last item from Shopping list
+2016-07-13 15:06:40,237 - com.test.regression.cub.utils.Logg -INFO - deleteItemFromSL execution Complete.............
+2016-07-13 15:06:40,239 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:06:40,240 - com.test.regression.cub.utils.Logg -INFO - Starting testClearList ................
+2016-07-13 15:06:40,244 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:06:57,758 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:06:57,777 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-07-13 15:06:57,777 - com.test.regression.cub.utils.Logg -INFO - User Name : sltesting@cub.com
+2016-07-13 15:06:57,777 - com.test.regression.cub.utils.Logg -INFO - Password : password
+2016-07-13 15:06:58,525 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:06:59,354 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:06:59,552 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:07:14,642 - com.test.regression.cub.utils.Logg -INFO - Selected My List in My Tools dropdown
+2016-07-13 15:07:29,884 - com.test.regression.cub.utils.Logg -INFO - Created New Shopping List
+2016-07-13 15:07:30,797 - com.test.regression.cub.utils.Logg -INFO - Added 2 items to Shopping list
+2016-07-13 15:07:31,244 - com.test.regression.cub.utils.Logg -INFO - Cleared Shopping list...
+2016-07-13 15:08:18,254 - com.test.regression.cub.utils.Logg -INFO - testClearList execution Complete.............
+2016-07-13 15:08:18,691 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:08:18,691 - com.test.regression.cub.utils.Logg -INFO - Starting aboutUs ................
+2016-07-13 15:08:18,692 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:08:37,913 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:08:44,151 - com.test.regression.cub.utils.Logg -INFO - AboutUs Navigation - Success 
+2016-07-13 15:08:48,050 - com.test.regression.cub.utils.Logg -INFO - aboutUs execution Complete.............
+2016-07-13 15:08:48,052 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:08:48,052 - com.test.regression.cub.utils.Logg -INFO - Starting Careers ................
+2016-07-13 15:08:48,052 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:09:05,270 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:09:15,624 - com.test.regression.cub.utils.Logg -INFO - Careers Navigation - Success 
+2016-07-13 15:09:18,577 - com.test.regression.cub.utils.Logg -INFO - Careers execution Complete.............
+2016-07-13 15:09:18,579 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:09:18,580 - com.test.regression.cub.utils.Logg -INFO - Starting Recalls ................
+2016-07-13 15:09:18,580 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:09:35,453 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:09:41,952 - com.test.regression.cub.utils.Logg -INFO - Product Recalls Navigation - Success 
+2016-07-13 15:09:45,695 - com.test.regression.cub.utils.Logg -INFO - Recalls execution Complete.............
+2016-07-13 15:09:45,696 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:09:45,697 - com.test.regression.cub.utils.Logg -INFO - Starting PrivacyPolicy ................
+2016-07-13 15:09:45,697 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:10:02,375 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:10:08,605 - com.test.regression.cub.utils.Logg -INFO - PrivacyPolicy Navigation - Success 
+2016-07-13 15:10:15,594 - com.test.regression.cub.utils.Logg -INFO - PrivacyPolicy execution Complete.............
+2016-07-13 15:10:15,595 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:10:15,596 - com.test.regression.cub.utils.Logg -INFO - Starting TermsAndConditions ................
+2016-07-13 15:10:15,596 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:10:31,584 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:10:37,084 - com.test.regression.cub.utils.Logg -INFO - Terms And Conditions Navigation - Success 
+2016-07-13 15:10:41,077 - com.test.regression.cub.utils.Logg -INFO - TermsAndConditions execution Complete.............
+2016-07-13 15:10:41,103 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:10:41,103 - com.test.regression.cub.utils.Logg -INFO - Starting CustomerService ................
+2016-07-13 15:10:41,103 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:11:00,382 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:11:09,043 - com.test.regression.cub.utils.Logg -INFO - Customer Service Navigation- Success 
+2016-07-13 15:11:12,458 - com.test.regression.cub.utils.Logg -INFO - CustomerService execution Complete.............
+2016-07-13 15:11:12,460 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:11:12,460 - com.test.regression.cub.utils.Logg -INFO - Starting aboutUsSignedInUser ................
+2016-07-13 15:11:12,460 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:11:28,040 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:11:28,048 - com.test.regression.cub.utils.Logg -INFO - User Name : sltesting@cub.com
+2016-07-13 15:11:28,048 - com.test.regression.cub.utils.Logg -INFO - Password : password
+2016-07-13 15:11:28,048 - com.test.regression.cub.utils.Logg -INFO - Cub Home page is launched
+2016-07-13 15:11:28,972 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:11:30,018 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:11:30,251 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:11:30,252 - com.test.regression.cub.utils.Logg -INFO - User Signed In
+2016-07-13 15:11:45,031 - com.test.regression.cub.utils.Logg -INFO - AboutUs Navigation - Success 
+2016-07-13 15:11:48,310 - com.test.regression.cub.utils.Logg -INFO - aboutUsSignedInUser execution Complete.............
+2016-07-13 15:11:48,311 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:11:48,312 - com.test.regression.cub.utils.Logg -INFO - Starting CareersSignedInUser ................
+2016-07-13 15:11:48,313 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:12:04,957 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:12:04,992 - com.test.regression.cub.utils.Logg -INFO - User Name : sltesting@cub.com
+2016-07-13 15:12:04,993 - com.test.regression.cub.utils.Logg -INFO - Password : password
+2016-07-13 15:12:04,993 - com.test.regression.cub.utils.Logg -INFO - Cub Home page is launched
+2016-07-13 15:12:05,448 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:12:06,535 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:12:06,773 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:12:06,773 - com.test.regression.cub.utils.Logg -INFO - User Signed In
+2016-07-13 15:12:17,729 - com.test.regression.cub.utils.Logg -INFO - Careers Navigation - Success 
+2016-07-13 15:12:21,155 - com.test.regression.cub.utils.Logg -INFO - CareersSignedInUser execution Complete.............
+2016-07-13 15:12:21,157 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:12:21,157 - com.test.regression.cub.utils.Logg -INFO - Starting RecallsSignedInUser ................
+2016-07-13 15:12:21,158 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:12:36,760 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:12:36,785 - com.test.regression.cub.utils.Logg -INFO - User Name : sltesting@cub.com
+2016-07-13 15:12:36,785 - com.test.regression.cub.utils.Logg -INFO - Password : password
+2016-07-13 15:12:36,785 - com.test.regression.cub.utils.Logg -INFO - Cub Home page is launched
+2016-07-13 15:12:37,872 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:12:37,872 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:12:38,552 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:12:38,553 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:12:38,857 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:12:38,857 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:12:38,858 - com.test.regression.cub.utils.Logg -INFO - Entered all details and clicked on Sign In Button
+2016-07-13 15:12:38,858 - com.test.regression.cub.utils.Logg -INFO - User Signed In
+2016-07-13 15:12:53,678 - com.test.regression.cub.utils.Logg -INFO - Product Recalls Navigation - Success 
+2016-07-13 15:12:57,299 - com.test.regression.cub.utils.Logg -INFO - RecallsSignedInUser execution Complete.............
+2016-07-13 15:12:57,300 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:12:57,300 - com.test.regression.cub.utils.Logg -INFO - Starting PrivacyPolicySignedInUser ................
+2016-07-13 15:12:57,300 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:13:15,284 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:13:15,308 - com.test.regression.cub.utils.Logg -INFO - User Name : sltesting@cub.com
+2016-07-13 15:13:15,309 - com.test.regression.cub.utils.Logg -INFO - Password : password
+2016-07-13 15:13:15,309 - com.test.regression.cub.utils.Logg -INFO - Cub Home page is launched
+2016-07-13 15:13:17,537 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:13:17,538 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:13:18,185 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:13:18,186 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:13:18,437 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:13:18,437 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:13:18,437 - com.test.regression.cub.utils.Logg -INFO - Entered all details and clicked on Sign In Button
+2016-07-13 15:13:18,439 - com.test.regression.cub.utils.Logg -INFO - User Signed In
+2016-07-13 15:13:35,970 - com.test.regression.cub.utils.Logg -INFO - PrivacyPolicy Navigation - Success 
+2016-07-13 15:13:42,011 - com.test.regression.cub.utils.Logg -INFO - PrivacyPolicySignedInUser execution Complete.............
+2016-07-13 15:13:42,014 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:13:42,014 - com.test.regression.cub.utils.Logg -INFO - Starting TermsAndConditionsSignedInUser ................
+2016-07-13 15:13:42,014 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:14:05,907 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:14:05,946 - com.test.regression.cub.utils.Logg -INFO - User Name : sltesting@cub.com
+2016-07-13 15:14:05,946 - com.test.regression.cub.utils.Logg -INFO - Password : password
+2016-07-13 15:14:05,946 - com.test.regression.cub.utils.Logg -INFO - Cub Home page is launched
+2016-07-13 15:14:06,610 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:14:06,611 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:14:08,104 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:14:08,104 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:14:10,625 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:14:10,626 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:14:10,626 - com.test.regression.cub.utils.Logg -INFO - Entered all details and clicked on Sign In Button
+2016-07-13 15:14:10,627 - com.test.regression.cub.utils.Logg -INFO - User Signed In
+2016-07-13 15:14:25,300 - com.test.regression.cub.utils.Logg -INFO - Terms And Conditions Navigation - Success 
+2016-07-13 15:14:28,593 - com.test.regression.cub.utils.Logg -INFO - TermsAndConditionsSignedInUser execution Complete.............
+2016-07-13 15:14:28,595 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:14:28,595 - com.test.regression.cub.utils.Logg -INFO - Starting CustomerServiceSignedInUser ................
+2016-07-13 15:14:28,628 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:14:45,237 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:14:45,268 - com.test.regression.cub.utils.Logg -INFO - User Name : sltesting@cub.com
+2016-07-13 15:14:45,268 - com.test.regression.cub.utils.Logg -INFO - Password : password
+2016-07-13 15:14:45,268 - com.test.regression.cub.utils.Logg -INFO - Cub Home page is launched
+2016-07-13 15:14:46,086 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:14:46,086 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:14:47,003 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:14:47,004 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:14:47,222 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:14:47,222 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:14:47,223 - com.test.regression.cub.utils.Logg -INFO - Entered all details and clicked on Sign In Button
+2016-07-13 15:14:47,223 - com.test.regression.cub.utils.Logg -INFO - User Signed In
+2016-07-13 15:15:05,775 - com.test.regression.cub.utils.Logg -INFO - Customer Service Navigation- Success 
+2016-07-13 15:15:10,118 - com.test.regression.cub.utils.Logg -INFO - CustomerServiceSignedInUser execution Complete.............
+2016-07-13 15:15:10,119 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:15:10,121 - com.test.regression.cub.utils.Logg -INFO - Starting WeeklyAdTile ................
+2016-07-13 15:15:10,121 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:15:29,269 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:15:50,517 - com.test.regression.cub.utils.Logg -INFO - Navigation of WeeklyAd Tile in Home page - Success 
+2016-07-13 15:15:53,895 - com.test.regression.cub.utils.Logg -INFO - WeeklyAdTile execution Complete.............
+2016-07-13 15:15:53,896 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:15:53,896 - com.test.regression.cub.utils.Logg -INFO - Starting CouponTile ................
+2016-07-13 15:15:53,896 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:16:18,270 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:16:26,764 - com.test.regression.cub.utils.Logg -INFO - Navigation of Coupon Tile in Home page - Success 
+2016-07-13 15:16:29,600 - com.test.regression.cub.utils.Logg -INFO - CouponTile execution Complete.............
+2016-07-13 15:16:29,601 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:16:29,601 - com.test.regression.cub.utils.Logg -INFO - Starting CakesandPartyTile ................
+2016-07-13 15:16:29,601 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:16:47,790 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:16:51,518 - com.test.regression.cub.utils.Logg -INFO - Navigation of Cakes and Party Tile in Home page - Success 
+2016-07-13 15:16:55,134 - com.test.regression.cub.utils.Logg -INFO - CakesandPartyTile execution Complete.............
+2016-07-13 15:16:55,136 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:16:55,136 - com.test.regression.cub.utils.Logg -INFO - Starting CubRewardsTile ................
+2016-07-13 15:16:55,137 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:17:13,423 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:17:19,336 - com.test.regression.cub.utils.Logg -INFO - Navigation of Cub Rewards Tile  in Home page - Success 
+2016-07-13 15:17:25,656 - com.test.regression.cub.utils.Logg -INFO - CubRewardsTile execution Complete.............
+2016-07-13 15:17:25,657 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:17:25,657 - com.test.regression.cub.utils.Logg -INFO - Starting WeeklyAdTileSignedInUser ................
+2016-07-13 15:17:25,657 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:17:46,183 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:17:46,200 - com.test.regression.cub.utils.Logg -INFO - User Name : sltesting@cub.com
+2016-07-13 15:17:46,207 - com.test.regression.cub.utils.Logg -INFO - Password : password
+2016-07-13 15:17:46,208 - com.test.regression.cub.utils.Logg -INFO - Cub Home page is launched
+2016-07-13 15:17:46,908 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:17:46,910 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:17:47,603 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:17:47,603 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:17:47,867 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:17:47,868 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:17:47,868 - com.test.regression.cub.utils.Logg -INFO - Entered all details and clicked on Sign In Button
+2016-07-13 15:17:47,868 - com.test.regression.cub.utils.Logg -INFO - User Signed In
+2016-07-13 15:18:23,943 - com.test.regression.cub.utils.Logg -INFO - Navigation of WeeklyAd Tile in Home page - Success 
+2016-07-13 15:18:28,853 - com.test.regression.cub.utils.Logg -INFO - WeeklyAdTileSignedInUser execution Complete.............
+2016-07-13 15:18:28,854 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:18:28,854 - com.test.regression.cub.utils.Logg -INFO - Starting CouponTileSignedInUser ................
+2016-07-13 15:18:28,854 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:18:47,268 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:18:47,287 - com.test.regression.cub.utils.Logg -INFO - User Name : sltesting@cub.com
+2016-07-13 15:18:47,288 - com.test.regression.cub.utils.Logg -INFO - Password : password
+2016-07-13 15:18:47,288 - com.test.regression.cub.utils.Logg -INFO - Cub Home page is launched
+2016-07-13 15:18:47,799 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:18:47,800 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:18:48,761 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:18:48,761 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:18:49,003 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:18:49,003 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:18:49,003 - com.test.regression.cub.utils.Logg -INFO - Entered all details and clicked on Sign In Button
+2016-07-13 15:18:49,004 - com.test.regression.cub.utils.Logg -INFO - User Signed In
+2016-07-13 15:19:06,654 - com.test.regression.cub.utils.Logg -INFO - Navigation of Coupon Tile in Home page - Success 
+2016-07-13 15:19:11,695 - com.test.regression.cub.utils.Logg -INFO - CouponTileSignedInUser execution Complete.............
+2016-07-13 15:19:11,696 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:19:11,696 - com.test.regression.cub.utils.Logg -INFO - Starting CakesandPartyTileSignedInUser ................
+2016-07-13 15:19:11,696 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:19:30,517 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:19:30,560 - com.test.regression.cub.utils.Logg -INFO - User Name : sltesting@cub.com
+2016-07-13 15:19:30,561 - com.test.regression.cub.utils.Logg -INFO - Password : password
+2016-07-13 15:19:30,561 - com.test.regression.cub.utils.Logg -INFO - Cub Home page is launched
+2016-07-13 15:19:33,686 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:19:33,686 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:19:34,822 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:19:34,823 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:19:35,090 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:19:35,090 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:19:35,090 - com.test.regression.cub.utils.Logg -INFO - Entered all details and clicked on Sign In Button
+2016-07-13 15:19:35,091 - com.test.regression.cub.utils.Logg -INFO - User Signed In
+2016-07-13 15:19:48,086 - com.test.regression.cub.utils.Logg -INFO - Navigation of Cakes and Party Tile in Home page - Success 
+2016-07-13 15:19:51,565 - com.test.regression.cub.utils.Logg -INFO - CakesandPartyTileSignedInUser execution Complete.............
+2016-07-13 15:19:51,566 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:19:51,566 - com.test.regression.cub.utils.Logg -INFO - Starting CubRewardsTileSignedInUser ................
+2016-07-13 15:19:51,566 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:20:08,379 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:20:08,392 - com.test.regression.cub.utils.Logg -INFO - User Name : sltesting@cub.com
+2016-07-13 15:20:08,392 - com.test.regression.cub.utils.Logg -INFO - Password : password
+2016-07-13 15:20:08,392 - com.test.regression.cub.utils.Logg -INFO - Cub Home page is launched
+2016-07-13 15:20:10,930 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:20:10,930 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:20:13,334 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:20:13,334 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:20:13,521 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:20:13,521 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:20:13,521 - com.test.regression.cub.utils.Logg -INFO - Entered all details and clicked on Sign In Button
+2016-07-13 15:20:13,521 - com.test.regression.cub.utils.Logg -INFO - User Signed In
+2016-07-13 15:20:28,817 - com.test.regression.cub.utils.Logg -INFO - Navigation of Cub Rewards Tile  in Home page - Success 
+2016-07-13 15:20:33,607 - com.test.regression.cub.utils.Logg -INFO - CubRewardsTileSignedInUser execution Complete.............
+2016-07-13 15:20:34,229 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:20:34,230 - com.test.regression.cub.utils.Logg -INFO - Starting ChangePwdValid ................
+2016-07-13 15:20:34,230 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:20:50,381 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:20:50,429 - com.test.regression.cub.utils.Logg -INFO - Cub Home page is launched
+2016-07-13 15:20:51,028 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:20:51,028 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:20:51,945 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:20:51,945 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:20:52,176 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:20:52,177 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:20:52,177 - com.test.regression.cub.utils.Logg -INFO - Entered all details and clicked on Sign In Button
+2016-07-13 15:20:52,177 - com.test.regression.cub.utils.Logg -INFO - User Signed In
+2016-07-13 15:21:17,598 - com.test.regression.cub.utils.Logg -INFO - Cub Home page is launched
+2016-07-13 15:21:23,126 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:21:23,127 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:21:23,937 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:21:23,937 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:21:24,185 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:21:24,185 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:21:24,185 - com.test.regression.cub.utils.Logg -INFO - Entered all details and clicked on Sign In Button
+2016-07-13 15:21:24,185 - com.test.regression.cub.utils.Logg -INFO - User Signed In
+2016-07-13 15:21:30,516 - com.test.regression.cub.utils.Logg -INFO - LogOut Button Status : true
+2016-07-13 15:21:30,517 - com.test.regression.cub.utils.Logg -INFO - Password Changed successfully
+2016-07-13 15:21:42,913 - com.test.regression.cub.utils.Logg -INFO - unknown error: Element is not clickable at point (907, 87). Other element would receive the click: <div class="ss-overlay" style="display: block;"></div>
   (Session info: chrome=51.0.2704.103)
   (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 34 milliseconds
+Command duration or timeout: 72 milliseconds
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir641932_29092}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 5f60a49884290df4ba7825c9ba22aa18
-2016-07-12 17:30:28,787 - com.test.regression.cub.utils.Logg -INFO - addCouponForNoCardNewUser execution Complete.............
-2016-07-12 17:38:02,524 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 17:38:02,531 - com.test.regression.cub.utils.Logg -INFO - Starting addCouponForNoCardNewUser ................
-2016-07-12 17:38:02,532 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 17:38:19,854 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-12 17:38:20,278 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
-2016-07-12 17:38:20,279 - com.test.regression.cub.utils.Logg -INFO - User Name : addCouponForNoCardNewUser11@cub.com
-2016-07-12 17:38:20,279 - com.test.regression.cub.utils.Logg -INFO - Password : password
-2016-07-12 17:38:20,710 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
-2016-07-12 17:38:22,214 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
-2016-07-12 17:38:40,897 - com.test.regression.cub.utils.Logg -INFO - Didnt Select any option in Rewards Card popup, Just Closed the popup
-2016-07-12 17:38:56,873 - com.test.regression.cub.utils.Logg -INFO - In Coupons page now..
-2016-07-12 17:38:59,215 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 17:38:59,216 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 17:39:04,393 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[1]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-12 17:39:04,394 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-12 17:39:11,287 - com.test.regression.cub.utils.Logg -INFO - Entered Cardless id
-2016-07-12 17:39:11,296 - com.test.regression.cub.utils.Logg -INFO - Entered Cardless Id Details
-2016-07-12 17:39:19,277 - com.test.regression.cub.utils.Logg -INFO - Clicked on Continue in Congrats popup
-2016-07-12 17:39:19,392 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : save $0.75
-2016-07-12 17:39:19,393 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $0.75
-2016-07-12 17:39:19,476 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 17:39:19,476 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 17:39:24,577 - com.test.regression.cub.utils.Logg -INFO - unknown error: Element is not clickable at point (931, 654). Other element would receive the click: <div class="ss-overlay" style="display: block;"></div>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir731536_22148}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 72f3b6e492cf64a6a0dcfaf613a41d02
+2016-07-13 15:21:46,655 - com.test.regression.cub.utils.Logg -INFO - ChangePwdValid execution Complete.............
+2016-07-13 15:21:46,656 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:21:46,656 - com.test.regression.cub.utils.Logg -INFO - Starting ChangePwdWrongOldPwd ................
+2016-07-13 15:21:46,656 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:22:03,116 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:22:03,128 - com.test.regression.cub.utils.Logg -INFO - Cub Home page is launched
+2016-07-13 15:22:03,747 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:22:03,747 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:22:04,910 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:22:04,910 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:22:05,106 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:22:05,107 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:22:05,107 - com.test.regression.cub.utils.Logg -INFO - Entered all details and clicked on Sign In Button
+2016-07-13 15:22:05,107 - com.test.regression.cub.utils.Logg -INFO - User Signed In
+2016-07-13 15:22:24,717 - com.test.regression.cub.utils.Logg -INFO - Error is displayed when user wrong Old Passwordy
+2016-07-13 15:22:28,368 - com.test.regression.cub.utils.Logg -INFO - ChangePwdWrongOldPwd execution Complete.............
+2016-07-13 15:22:28,371 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:22:28,371 - com.test.regression.cub.utils.Logg -INFO - Starting ChangePwdSpace ................
+2016-07-13 15:22:28,372 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:22:44,098 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:22:44,146 - com.test.regression.cub.utils.Logg -INFO - Cub Home page is launched
+2016-07-13 15:22:45,101 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:22:45,101 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:22:45,955 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:22:45,955 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:22:46,172 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:22:46,173 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:22:46,173 - com.test.regression.cub.utils.Logg -INFO - Entered all details and clicked on Sign In Button
+2016-07-13 15:22:46,173 - com.test.regression.cub.utils.Logg -INFO - User Signed In
+2016-07-13 15:23:12,765 - com.test.regression.cub.utils.Logg -INFO - Error is displayed when user uses space in new password field
+2016-07-13 15:23:15,669 - com.test.regression.cub.utils.Logg -INFO - ChangePwdSpace execution Complete.............
+2016-07-13 15:23:15,669 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:23:15,670 - com.test.regression.cub.utils.Logg -INFO - Starting ChangePwdLengthyPwd ................
+2016-07-13 15:23:15,670 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:23:32,685 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:23:32,739 - com.test.regression.cub.utils.Logg -INFO - Cub Home page is launched
+2016-07-13 15:23:33,234 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:23:33,235 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:23:34,033 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:23:34,033 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:23:34,290 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:23:34,290 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:23:34,290 - com.test.regression.cub.utils.Logg -INFO - Entered all details and clicked on Sign In Button
+2016-07-13 15:23:34,290 - com.test.regression.cub.utils.Logg -INFO - User Signed In
+2016-07-13 15:24:04,197 - com.test.regression.cub.utils.Logg -INFO - Cub Home page is launched
+2016-07-13 15:24:15,010 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:24:15,011 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:24:17,946 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:24:17,946 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:24:18,160 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:24:18,160 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:24:18,160 - com.test.regression.cub.utils.Logg -INFO - Entered all details and clicked on Sign In Button
+2016-07-13 15:24:18,160 - com.test.regression.cub.utils.Logg -INFO - User Signed In
+2016-07-13 15:24:23,930 - com.test.regression.cub.utils.Logg -INFO - LogOut Button Status : true
+2016-07-13 15:24:23,931 - com.test.regression.cub.utils.Logg -INFO - Password field is accepting only 18 digits
+2016-07-13 15:24:45,857 - com.test.regression.cub.utils.Logg -INFO - ChangePwdLengthyPwd execution Complete.............
+2016-07-13 15:24:45,858 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:24:45,858 - com.test.regression.cub.utils.Logg -INFO - Starting ChangePwdShortPwd ................
+2016-07-13 15:24:45,858 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:25:02,789 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:25:02,803 - com.test.regression.cub.utils.Logg -INFO - Cub Home page is launched
+2016-07-13 15:25:03,382 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:25:03,382 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:25:04,399 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:25:04,399 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:25:04,746 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:25:04,746 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:25:04,746 - com.test.regression.cub.utils.Logg -INFO - Entered all details and clicked on Sign In Button
+2016-07-13 15:25:04,747 - com.test.regression.cub.utils.Logg -INFO - User Signed In
+2016-07-13 15:25:23,340 - com.test.regression.cub.utils.Logg -INFO - Error is displayed when user uses short password in new password field
+2016-07-13 15:25:27,079 - com.test.regression.cub.utils.Logg -INFO - ChangePwdShortPwd execution Complete.............
+2016-07-13 15:25:27,080 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:25:27,080 - com.test.regression.cub.utils.Logg -INFO - Starting ChangePwdDifferentNewPwds ................
+2016-07-13 15:25:27,080 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:25:42,946 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:25:42,983 - com.test.regression.cub.utils.Logg -INFO - Cub Home page is launched
+2016-07-13 15:25:43,946 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:25:43,946 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:25:45,058 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:25:45,059 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:25:45,280 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:25:45,280 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:25:45,280 - com.test.regression.cub.utils.Logg -INFO - Entered all details and clicked on Sign In Button
+2016-07-13 15:25:45,281 - com.test.regression.cub.utils.Logg -INFO - User Signed In
+2016-07-13 15:26:04,535 - com.test.regression.cub.utils.Logg -INFO - Error is displayed when user uses different passwords in new password fields
+2016-07-13 15:26:09,076 - com.test.regression.cub.utils.Logg -INFO - ChangePwdDifferentNewPwds execution Complete.............
+2016-07-13 15:26:09,418 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:26:09,423 - com.test.regression.cub.utils.Logg -INFO - Starting setStoreGuestZipCode ................
+2016-07-13 15:26:09,423 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:26:29,753 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:26:55,937 - com.test.regression.cub.utils.Logg -INFO - Store Locations Page-Success
+2016-07-13 15:26:59,482 - com.test.regression.cub.utils.Logg -INFO - setStoreGuestZipCode execution Complete.............
+2016-07-13 15:26:59,483 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:26:59,483 - com.test.regression.cub.utils.Logg -INFO - Starting setStoreGuestCityState ................
+2016-07-13 15:26:59,483 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:27:17,827 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:27:17,856 - com.test.regression.cub.utils.Logg -INFO - Find a Store page is launched
+2016-07-13 15:27:46,532 - com.test.regression.cub.utils.Logg -INFO - Store Locations Page-Success
+2016-07-13 15:27:54,798 - com.test.regression.cub.utils.Logg -INFO - setStoreGuestCityState execution Complete.............
+2016-07-13 15:27:54,799 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:27:54,799 - com.test.regression.cub.utils.Logg -INFO - Starting setStoreAuthorizedZipcode ................
+2016-07-13 15:27:54,799 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:28:13,416 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:28:13,469 - com.test.regression.cub.utils.Logg -INFO - User Name : sltesting@cub.com
+2016-07-13 15:28:13,469 - com.test.regression.cub.utils.Logg -INFO - Password : password
+2016-07-13 15:28:13,470 - com.test.regression.cub.utils.Logg -INFO - Cub Home page is launched
+2016-07-13 15:28:14,272 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:28:17,225 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:28:17,484 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:28:22,583 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:28:22,583 - com.test.regression.cub.utils.Logg -INFO - Entered all details and clicked on Sign In Button
+2016-07-13 15:28:27,582 - com.test.regression.cub.utils.Logg -INFO - Find a Store page is launched
+2016-07-13 15:28:33,727 - com.test.regression.cub.utils.Logg -INFO - Entered Zip Code details
+2016-07-13 15:28:34,299 - com.test.regression.cub.utils.Logg -INFO - Search button is CLicked
+2016-07-13 15:28:47,192 - com.test.regression.cub.utils.Logg -INFO - Store Locations page is displayed
+2016-07-13 15:29:29,563 - com.test.regression.cub.utils.Logg -INFO - no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='store-search-result']/tbody/tr[1]/td[4]/div/a"}
   (Session info: chrome=51.0.2704.103)
   (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 58 milliseconds
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir643704_21639}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: dcf0a8cdbb48f75a8bd63c7f48ea0688
-2016-07-12 17:39:30,182 - com.test.regression.cub.utils.Logg -INFO - addCouponForNoCardNewUser execution Complete.............
-2016-07-12 17:42:17,816 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 17:42:17,822 - com.test.regression.cub.utils.Logg -INFO - Starting addCouponForNoCardNewUser ................
-2016-07-12 17:42:17,823 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 17:42:33,239 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-12 17:42:33,322 - com.test.regression.cub.utils.Logg -INFO - Index: 0, Size: 0
-2016-07-12 17:42:38,462 - com.test.regression.cub.utils.Logg -INFO - addCouponForNoCardNewUser execution Complete.............
-2016-07-12 17:43:43,486 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 17:43:43,493 - com.test.regression.cub.utils.Logg -INFO - Starting addCouponForNoCardNewUser ................
-2016-07-12 17:43:43,493 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 17:43:59,266 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-12 17:43:59,348 - com.test.regression.cub.utils.Logg -INFO - Index: 0, Size: 0
-2016-07-12 17:44:04,753 - com.test.regression.cub.utils.Logg -INFO - addCouponForNoCardNewUser execution Complete.............
-2016-07-12 17:44:25,426 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 17:44:25,433 - com.test.regression.cub.utils.Logg -INFO - Starting addCouponForNoCardNewUser ................
-2016-07-12 17:44:25,434 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 17:44:41,876 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-12 17:44:42,056 - com.test.regression.cub.utils.Logg -INFO - Index: 0, Size: 0
-2016-07-12 17:44:46,232 - com.test.regression.cub.utils.Logg -INFO - addCouponForNoCardNewUser execution Complete.............
-2016-07-12 17:47:11,947 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 17:47:11,958 - com.test.regression.cub.utils.Logg -INFO - Starting addCouponForNoCardNewUser ................
-2016-07-12 17:47:11,959 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 17:47:27,486 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-12 17:47:27,863 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
-2016-07-12 17:47:27,863 - com.test.regression.cub.utils.Logg -INFO - User Name : addCouponForNoCardNewUser13@cub.com
-2016-07-12 17:47:27,864 - com.test.regression.cub.utils.Logg -INFO - Password : password
-2016-07-12 17:47:28,120 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
-2016-07-12 17:47:30,346 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
-2016-07-12 17:47:50,993 - com.test.regression.cub.utils.Logg -INFO - Didnt Select any option in Rewards Card popup, Just Closed the popup
-2016-07-12 17:48:06,912 - com.test.regression.cub.utils.Logg -INFO - In Coupons page now..
-2016-07-12 17:48:10,368 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 17:48:10,368 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 17:48:15,543 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[1]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-12 17:48:15,543 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-12 17:48:23,494 - com.test.regression.cub.utils.Logg -INFO - Entered Cardless id
-2016-07-12 17:48:23,504 - com.test.regression.cub.utils.Logg -INFO - Entered Cardless Id Details
-2016-07-12 17:48:30,263 - com.test.regression.cub.utils.Logg -INFO - stale element reference: element is not attached to the page document
-  (Session info: chrome=51.0.2704.103)
-  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 26 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir643240_26737}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d35c0f612ad9fbd611d406b1f699843f
-2016-07-12 17:48:35,572 - com.test.regression.cub.utils.Logg -INFO - addCouponForNoCardNewUser execution Complete.............
-2016-07-12 17:52:01,558 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 17:52:01,564 - com.test.regression.cub.utils.Logg -INFO - Starting addCouponForNoCardNewUser ................
-2016-07-12 17:52:01,565 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 17:52:18,066 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-12 17:52:18,431 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
-2016-07-12 17:52:18,431 - com.test.regression.cub.utils.Logg -INFO - User Name : addCouponForNoCardNewUser14@cub.com
-2016-07-12 17:52:18,431 - com.test.regression.cub.utils.Logg -INFO - Password : password
-2016-07-12 17:52:19,148 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
-2016-07-12 17:52:20,783 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
-2016-07-12 17:52:38,757 - com.test.regression.cub.utils.Logg -INFO - Didnt Select any option in Rewards Card popup, Just Closed the popup
-2016-07-12 17:52:55,331 - com.test.regression.cub.utils.Logg -INFO - In Coupons page now..
-2016-07-12 17:52:57,813 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 17:52:57,813 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 17:53:03,021 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[1]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-12 17:53:03,022 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-12 17:53:09,912 - com.test.regression.cub.utils.Logg -INFO - Entered Cardless id
-2016-07-12 17:53:14,923 - com.test.regression.cub.utils.Logg -INFO - Entered Cardless Id Details
-2016-07-12 17:53:20,079 - com.test.regression.cub.utils.Logg -INFO - Clicked on Continue in Congrats popup
-2016-07-12 17:53:20,427 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : save $0.75
-2016-07-12 17:53:20,427 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $0.75
-2016-07-12 17:53:20,494 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 17:53:20,494 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 17:53:25,642 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[2]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-12 17:53:25,646 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-12 17:53:25,723 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : save $0.30
-2016-07-12 17:53:25,723 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $0.30
-2016-07-12 17:53:25,769 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 17:53:25,769 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 17:53:30,920 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[3]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-12 17:53:30,922 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-12 17:53:30,997 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : save $0.10
-2016-07-12 17:53:30,997 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $0.10
-2016-07-12 17:53:31,049 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 17:53:31,050 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 17:53:36,153 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[4]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-12 17:53:36,155 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-12 17:53:36,219 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : save $5.00
-2016-07-12 17:53:36,220 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $5.00
-2016-07-12 17:53:46,502 - com.test.regression.cub.utils.Logg -INFO - element not visible
-  (Session info: chrome=51.0.2704.103)
-  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 31 milliseconds
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir644476_28135}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 855b514c52a1b54569006e49a9de2ba7
-2016-07-12 17:53:51,676 - com.test.regression.cub.utils.Logg -INFO - addCouponForNoCardNewUser execution Complete.............
-2016-07-12 17:55:50,550 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 17:55:50,558 - com.test.regression.cub.utils.Logg -INFO - Starting addCouponForNoCardNewUser ................
-2016-07-12 17:55:50,558 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 17:56:06,474 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-12 17:56:06,835 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
-2016-07-12 17:56:06,841 - com.test.regression.cub.utils.Logg -INFO - User Name : NoCardNewUser15@cub.com
-2016-07-12 17:56:06,842 - com.test.regression.cub.utils.Logg -INFO - Password : password
-2016-07-12 17:56:07,403 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
-2016-07-12 17:56:10,036 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
-2016-07-12 17:56:31,882 - com.test.regression.cub.utils.Logg -INFO - Didnt Select any option in Rewards Card popup, Just Closed the popup
-2016-07-12 17:56:42,624 - com.test.regression.cub.utils.Logg -INFO - In Coupons page now..
-2016-07-12 17:57:02,709 - com.test.regression.cub.utils.Logg -INFO - no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='coupon-list']/div[1]/div/div/div[1]"}
-  (Session info: chrome=51.0.2704.103)
-  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.07 seconds
+Command duration or timeout: 20.22 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir645896_24341}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: e7a20803c30c841a5ba43bdb0163d0aa
-*** Element info: {Using=xpath, value=//div[@class='coupon-list']/div[1]/div/div/div[1]}
-2016-07-12 17:57:08,252 - com.test.regression.cub.utils.Logg -INFO - addCouponForNoCardNewUser execution Complete.............
-2016-07-12 17:57:26,170 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 17:57:26,177 - com.test.regression.cub.utils.Logg -INFO - Starting addCouponForNoCardNewUser ................
-2016-07-12 17:57:26,178 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 17:57:41,631 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-12 17:57:41,983 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
-2016-07-12 17:57:41,984 - com.test.regression.cub.utils.Logg -INFO - User Name : NoCardNewUser16@cub.com
-2016-07-12 17:57:41,984 - com.test.regression.cub.utils.Logg -INFO - Password : password
-2016-07-12 17:57:42,281 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
-2016-07-12 17:57:43,809 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
-2016-07-12 17:58:06,998 - com.test.regression.cub.utils.Logg -INFO - Didnt Select any option in Rewards Card popup, Just Closed the popup
-2016-07-12 17:58:23,762 - com.test.regression.cub.utils.Logg -INFO - In Coupons page now..
-2016-07-12 17:58:27,778 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 17:58:27,778 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 17:58:32,941 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[1]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-12 17:58:32,941 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-12 17:58:40,559 - com.test.regression.cub.utils.Logg -INFO - Entered Cardless id
-2016-07-12 17:58:45,565 - com.test.regression.cub.utils.Logg -INFO - Entered Cardless Id Details
-2016-07-12 17:58:50,668 - com.test.regression.cub.utils.Logg -INFO - Clicked on Continue in Congrats popup
-2016-07-12 17:58:50,948 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : save $0.75
-2016-07-12 17:58:50,948 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $0.75
-2016-07-12 17:58:51,128 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 17:58:51,128 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 17:58:56,254 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[2]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-12 17:58:56,257 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-12 17:58:56,330 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : save $0.30
-2016-07-12 17:58:56,330 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $0.30
-2016-07-12 17:58:56,397 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 17:58:56,398 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 17:59:01,547 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[3]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-12 17:59:01,550 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-12 17:59:01,636 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : save $0.10
-2016-07-12 17:59:01,636 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $0.10
-2016-07-12 17:59:01,691 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 17:59:01,692 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 17:59:06,842 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[4]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-12 17:59:06,844 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-12 17:59:06,914 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : save $5.00
-2016-07-12 17:59:06,914 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $5.00
-2016-07-12 17:59:24,518 - com.test.regression.cub.utils.Logg -INFO - Clicked on My eCoupons in Home page
-2016-07-12 17:59:24,519 - com.test.regression.cub.utils.Logg -INFO - Validating whether the added coupon is in My eCoupons page
-2016-07-12 17:59:29,260 - com.test.regression.cub.utils.Logg -INFO - addCouponForNoCardNewUser execution Complete.............
-2016-07-12 23:10:10,014 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 23:10:10,021 - com.test.regression.cub.utils.Logg -INFO - Starting addCouponForNoCardNewUser ................
-2016-07-12 23:10:10,021 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 23:10:24,770 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-12 23:10:25,044 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
-2016-07-12 23:10:25,045 - com.test.regression.cub.utils.Logg -INFO - User Name : NoCardNewUser17@cub.com
-2016-07-12 23:10:25,045 - com.test.regression.cub.utils.Logg -INFO - Password : password
-2016-07-12 23:10:26,719 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
-2016-07-12 23:10:28,859 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
-2016-07-12 23:10:52,258 - com.test.regression.cub.utils.Logg -INFO - Didnt Select any option in Rewards Card popup, Just Closed the popup
-2016-07-12 23:11:09,263 - com.test.regression.cub.utils.Logg -INFO - In Coupons page now..
-2016-07-12 23:11:10,511 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 23:11:10,512 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 23:11:15,672 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[1]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-12 23:11:15,672 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-12 23:11:23,695 - com.test.regression.cub.utils.Logg -INFO - Entered Cardless id
-2016-07-12 23:11:28,705 - com.test.regression.cub.utils.Logg -INFO - Entered Cardless Id Details
-2016-07-12 23:11:33,912 - com.test.regression.cub.utils.Logg -INFO - Clicked on Continue in Congrats popup
-2016-07-12 23:11:34,123 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : save $0.75
-2016-07-12 23:11:34,123 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $0.75
-2016-07-12 23:11:34,212 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 23:11:34,213 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 23:11:39,394 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[2]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-12 23:11:39,398 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-12 23:11:39,516 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : save $0.30
-2016-07-12 23:11:39,517 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $0.30
-2016-07-12 23:11:39,606 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 23:11:39,607 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 23:11:44,820 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[4]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-12 23:11:44,823 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-12 23:11:44,910 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : save $5.00
-2016-07-12 23:11:44,910 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $5.00
-2016-07-12 23:11:44,986 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 23:11:44,987 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 23:11:50,174 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[8]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-12 23:11:50,175 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-12 23:11:50,249 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : save $3.00
-2016-07-12 23:11:50,250 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $3.00
-2016-07-12 23:12:06,127 - com.test.regression.cub.utils.Logg -INFO - Clicked on My eCoupons in Home page
-2016-07-12 23:12:06,128 - com.test.regression.cub.utils.Logg -INFO - Validating whether the added coupon is in My eCoupons page
-2016-07-12 23:12:33,865 - com.test.regression.cub.utils.Logg -INFO - addCouponForNoCardNewUser execution Complete.............
-2016-07-12 23:16:11,342 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 23:16:11,351 - com.test.regression.cub.utils.Logg -INFO - Starting addCouponForNoCardNewUser ................
-2016-07-12 23:16:11,351 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 23:16:26,412 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-12 23:16:26,877 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
-2016-07-12 23:16:26,878 - com.test.regression.cub.utils.Logg -INFO - User Name : NoCardNewUser18@cub.com
-2016-07-12 23:16:26,878 - com.test.regression.cub.utils.Logg -INFO - Password : password
-2016-07-12 23:16:27,318 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
-2016-07-12 23:16:29,371 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
-2016-07-12 23:16:56,777 - com.test.regression.cub.utils.Logg -INFO - Didnt Select any option in Rewards Card popup, Just Closed the popup
-2016-07-12 23:17:13,177 - com.test.regression.cub.utils.Logg -INFO - In Coupons page now..
-2016-07-12 23:17:16,423 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 23:17:16,424 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 23:17:21,626 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[1]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-12 23:17:21,627 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-12 23:17:29,154 - com.test.regression.cub.utils.Logg -INFO - Entered Cardless id
-2016-07-12 23:17:34,163 - com.test.regression.cub.utils.Logg -INFO - Entered Cardless Id Details
-2016-07-12 23:17:39,266 - com.test.regression.cub.utils.Logg -INFO - element not visible
-  (Session info: chrome=51.0.2704.103)
-  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 38 milliseconds
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir657496_27378}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 1769430bc9cdad064d29816af54eb725
-2016-07-12 23:17:44,320 - com.test.regression.cub.utils.Logg -INFO - addCouponForNoCardNewUser execution Complete.............
-2016-07-12 23:18:56,551 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 23:18:56,558 - com.test.regression.cub.utils.Logg -INFO - Starting addCouponForNoCardNewUser ................
-2016-07-12 23:18:56,558 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 23:19:11,282 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-12 23:19:11,612 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
-2016-07-12 23:19:11,612 - com.test.regression.cub.utils.Logg -INFO - User Name : NoCardNewUser19@cub.com
-2016-07-12 23:19:11,613 - com.test.regression.cub.utils.Logg -INFO - Password : password
-2016-07-12 23:19:12,095 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
-2016-07-12 23:19:13,752 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
-2016-07-12 23:19:42,482 - com.test.regression.cub.utils.Logg -INFO - Didnt Select any option in Rewards Card popup, Just Closed the popup
-2016-07-12 23:19:57,561 - com.test.regression.cub.utils.Logg -INFO - In Coupons page now..
-2016-07-12 23:20:01,243 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 23:20:01,244 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 23:20:06,385 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[1]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-12 23:20:06,385 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-12 23:20:15,459 - com.test.regression.cub.utils.Logg -INFO - Entered Cardless id
-2016-07-12 23:20:20,462 - com.test.regression.cub.utils.Logg -INFO - Entered Cardless Id Details
-2016-07-12 23:20:25,699 - com.test.regression.cub.utils.Logg -INFO - Clicked on Continue in Congrats popup
-2016-07-12 23:20:25,888 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : save $0.75
-2016-07-12 23:20:25,889 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $0.75
-2016-07-12 23:20:25,958 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 23:20:25,959 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 23:20:31,122 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[2]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-12 23:20:31,126 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-12 23:20:31,193 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : save $0.30
-2016-07-12 23:20:31,193 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $0.30
-2016-07-12 23:20:31,249 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 23:20:31,249 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 23:20:36,424 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[4]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-12 23:20:36,426 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-12 23:20:36,510 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : save $5.00
-2016-07-12 23:20:36,510 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $5.00
-2016-07-12 23:20:36,570 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 23:20:36,570 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 23:20:41,754 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[9]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-12 23:20:41,754 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-12 23:20:41,845 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : 2 for 11.00 Save up to $2.49 ea.
-2016-07-12 23:20:41,845 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : 2 for 11.00 Save up to $2.49 ea.
-2016-07-12 23:20:55,429 - com.test.regression.cub.utils.Logg -INFO - Clicked on My eCoupons in Home page
-2016-07-12 23:20:55,430 - com.test.regression.cub.utils.Logg -INFO - Validating whether the added coupon is in My eCoupons page
-2016-07-12 23:21:15,081 - com.test.regression.cub.utils.Logg -INFO - No. of coupons in eCoupons page is : 4
-2016-07-12 23:21:19,781 - com.test.regression.cub.utils.Logg -INFO - addCouponForNoCardNewUser execution Complete.............
-2016-07-12 23:26:54,704 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 23:26:54,712 - com.test.regression.cub.utils.Logg -INFO - Starting addCouponForNoCardNewUser ................
-2016-07-12 23:26:54,712 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 23:27:09,448 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-12 23:27:09,790 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
-2016-07-12 23:27:09,791 - com.test.regression.cub.utils.Logg -INFO - User Name : NoCardNewUser20@cub.com
-2016-07-12 23:27:09,791 - com.test.regression.cub.utils.Logg -INFO - Password : password
-2016-07-12 23:27:10,733 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
-2016-07-12 23:27:12,479 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
-2016-07-12 23:27:30,521 - com.test.regression.cub.utils.Logg -INFO - Didnt Select any option in Rewards Card popup, Just Closed the popup
-2016-07-12 23:27:46,037 - com.test.regression.cub.utils.Logg -INFO - In Coupons page now..
-2016-07-12 23:27:49,222 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 23:27:49,223 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 23:27:54,368 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[1]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-12 23:27:54,368 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-12 23:28:01,769 - com.test.regression.cub.utils.Logg -INFO - Entered Cardless id
-2016-07-12 23:28:06,782 - com.test.regression.cub.utils.Logg -INFO - Entered Cardless Id Details
-2016-07-12 23:28:11,899 - com.test.regression.cub.utils.Logg -INFO - Clicked on Continue in Congrats popup
-2016-07-12 23:28:12,210 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : save $0.75
-2016-07-12 23:28:12,211 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $0.75
-2016-07-12 23:28:12,300 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 23:28:12,300 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 23:28:17,460 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[2]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-12 23:28:17,463 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-12 23:28:17,569 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : save $0.30
-2016-07-12 23:28:17,569 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $0.30
-2016-07-12 23:28:17,623 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 23:28:17,623 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 23:28:22,822 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[4]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-12 23:28:22,824 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-12 23:28:22,917 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : save $5.00
-2016-07-12 23:28:22,917 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $5.00
-2016-07-12 23:28:22,972 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 23:28:22,973 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 23:28:28,206 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[9]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-12 23:28:28,207 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-12 23:28:28,314 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : 2 for 11.00 Save up to $2.49 ea.
-2016-07-12 23:28:28,314 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : 2 for 11.00 Save up to $2.49 ea.
-2016-07-12 23:28:33,697 - com.test.regression.cub.utils.Logg -INFO - element not visible
-  (Session info: chrome=51.0.2704.103)
-  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 30 milliseconds
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir659372_11616}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a8a66a06e91ee6bb92c06c210849ac13
-2016-07-12 23:28:39,234 - com.test.regression.cub.utils.Logg -INFO - addCouponForNoCardNewUser execution Complete.............
-2016-07-12 23:35:12,474 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 23:35:12,480 - com.test.regression.cub.utils.Logg -INFO - Starting addCouponForNoCardNewUser ................
-2016-07-12 23:35:12,481 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 23:35:30,475 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-12 23:35:30,893 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
-2016-07-12 23:35:30,903 - com.test.regression.cub.utils.Logg -INFO - User Name : NoCardNewUser21@cub.com
-2016-07-12 23:35:30,903 - com.test.regression.cub.utils.Logg -INFO - Password : password
-2016-07-12 23:35:31,619 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
-2016-07-12 23:35:33,326 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
-2016-07-12 23:35:51,603 - com.test.regression.cub.utils.Logg -INFO - Didnt Select any option in Rewards Card popup, Just Closed the popup
-2016-07-12 23:36:08,309 - com.test.regression.cub.utils.Logg -INFO - In Coupons page now..
-2016-07-12 23:36:11,522 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 23:36:11,522 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 23:36:16,679 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[1]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-12 23:36:16,679 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-12 23:36:24,862 - com.test.regression.cub.utils.Logg -INFO - Entered Cardless id
-2016-07-12 23:36:29,872 - com.test.regression.cub.utils.Logg -INFO - Entered Cardless Id Details
-2016-07-12 23:36:35,233 - com.test.regression.cub.utils.Logg -INFO - Clicked on Continue in Congrats popup
-2016-07-12 23:36:35,390 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : save $0.75
-2016-07-12 23:36:35,391 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $0.75
-2016-07-12 23:36:35,462 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 23:36:35,463 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 23:36:40,644 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[2]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-12 23:36:40,648 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-12 23:36:40,751 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : save $0.30
-2016-07-12 23:36:40,751 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $0.30
-2016-07-12 23:36:40,800 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 23:36:40,801 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 23:36:45,991 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[4]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-12 23:36:45,993 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-12 23:36:46,101 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : save $5.00
-2016-07-12 23:36:46,101 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $5.00
-2016-07-12 23:36:46,172 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 23:36:46,173 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 23:36:51,338 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[9]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-12 23:36:51,339 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-12 23:36:51,418 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : 2 for 11.00 Save up to $2.49 ea.
-2016-07-12 23:36:51,418 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : 2 for 11.00 Save up to $2.49 ea.
-2016-07-12 23:36:58,196 - com.test.regression.cub.utils.Logg -INFO - Clicked on My eCoupons in Home page
-2016-07-12 23:36:58,197 - com.test.regression.cub.utils.Logg -INFO - Validating whether the added coupon is in My eCoupons page
-2016-07-12 23:36:58,271 - com.test.regression.cub.utils.Logg -INFO - No. of coupons in eCoupons page is : 4
-2016-07-12 23:37:04,277 - com.test.regression.cub.utils.Logg -INFO - addCouponForNoCardNewUser execution Complete.............
-2016-07-12 23:49:38,859 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 23:49:38,867 - com.test.regression.cub.utils.Logg -INFO - Starting addCouponForWantOneNewUser ................
-2016-07-12 23:49:38,867 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 23:49:55,505 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-12 23:49:56,224 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
-2016-07-12 23:49:56,224 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
-2016-07-12 23:49:56,226 - com.test.regression.cub.utils.Logg -INFO - User Name : wantcarduser1@cub.com
-2016-07-12 23:49:56,226 - com.test.regression.cub.utils.Logg -INFO - Password : password
-2016-07-12 23:49:58,293 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
-2016-07-12 23:50:15,829 - com.test.regression.cub.utils.Logg -INFO - Selected 'No, But I want one' option
-2016-07-12 23:50:16,058 - com.test.regression.cub.utils.Logg -INFO - Clicked on Continue Button
-2016-07-12 23:50:21,038 - com.test.regression.cub.utils.Logg -INFO - Entered the Contact Information details..
-2016-07-12 23:50:22,599 - com.test.regression.cub.utils.Logg -INFO - Clicked on Use this address button on Address Verification
-2016-07-12 23:50:27,744 - com.test.regression.cub.utils.Logg -INFO - unknown error: Element is not clickable at point (1128, 87). Other element would receive the click: <div class="ss-overlay" style="display: block;"></div>
-  (Session info: chrome=51.0.2704.103)
-  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 85 milliseconds
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir664764_31633}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: fafec45e2f4c5410d321984e0b53d352
-2016-07-12 23:50:32,203 - com.test.regression.cub.utils.Logg -INFO - addCouponForWantOneNewUser execution Complete.............
-2016-07-12 23:52:31,415 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 23:52:31,421 - com.test.regression.cub.utils.Logg -INFO - Starting addCouponForWantOneNewUser ................
-2016-07-12 23:52:31,422 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 23:52:53,906 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-12 23:52:54,588 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
-2016-07-12 23:52:54,588 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
-2016-07-12 23:52:54,589 - com.test.regression.cub.utils.Logg -INFO - User Name : wantcarduser2@cub.com
-2016-07-12 23:52:54,589 - com.test.regression.cub.utils.Logg -INFO - Password : password
-2016-07-12 23:52:56,939 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
-2016-07-12 23:53:14,128 - com.test.regression.cub.utils.Logg -INFO - Selected 'No, But I want one' option
-2016-07-12 23:53:14,375 - com.test.regression.cub.utils.Logg -INFO - Clicked on Continue Button
-2016-07-12 23:53:19,777 - com.test.regression.cub.utils.Logg -INFO - Entered the Contact Information details..
-2016-07-12 23:53:21,597 - com.test.regression.cub.utils.Logg -INFO - Clicked on Use this address button on Address Verification
-2016-07-12 23:53:27,716 - com.test.regression.cub.utils.Logg -INFO - unknown error: Element is not clickable at point (1128, 87). Other element would receive the click: <div class="ss-overlay" style="display: block;"></div>
-  (Session info: chrome=51.0.2704.103)
-  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 65 milliseconds
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir665596_1912}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 5ed547350130993415b35e779a9c6535
-2016-07-12 23:53:33,124 - com.test.regression.cub.utils.Logg -INFO - addCouponForWantOneNewUser execution Complete.............
-2016-07-12 23:55:48,314 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 23:55:48,347 - com.test.regression.cub.utils.Logg -INFO - Starting addCouponForWantOneNewUser ................
-2016-07-12 23:55:48,348 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 23:56:05,375 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-12 23:56:06,015 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
-2016-07-12 23:56:06,016 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
-2016-07-12 23:56:06,018 - com.test.regression.cub.utils.Logg -INFO - User Name : wantcarduser3@cub.com
-2016-07-12 23:56:06,018 - com.test.regression.cub.utils.Logg -INFO - Password : password
-2016-07-12 23:56:09,680 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
-2016-07-12 23:56:33,950 - com.test.regression.cub.utils.Logg -INFO - Selected 'No, But I want one' option
-2016-07-12 23:56:34,238 - com.test.regression.cub.utils.Logg -INFO - Clicked on Continue Button
-2016-07-12 23:56:40,751 - com.test.regression.cub.utils.Logg -INFO - Entered the Contact Information details..
-2016-07-12 23:56:42,358 - com.test.regression.cub.utils.Logg -INFO - Clicked on Use this address button on Address Verification
-2016-07-12 23:57:10,510 - com.test.regression.cub.utils.Logg -INFO - In Coupons page now..
-2016-07-12 23:57:12,860 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-12 23:57:12,860 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-12 23:57:18,015 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[1]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-12 23:57:18,016 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-12 23:57:18,103 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : save $0.75
-2016-07-12 23:57:18,103 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $0.75
-2016-07-12 23:57:26,339 - com.test.regression.cub.utils.Logg -INFO - Clicked on My eCoupons in Home page
-2016-07-12 23:57:26,340 - com.test.regression.cub.utils.Logg -INFO - Validating whether the added coupon is in My eCoupons page
-2016-07-12 23:57:46,497 - com.test.regression.cub.utils.Logg -INFO - no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='coupon-list']/div[3]/div/div/div[1]"}
-  (Session info: chrome=51.0.2704.103)
-  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.05 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir665156_22760}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 15523b8b1a401cc28a30faa259907a9a
-*** Element info: {Using=xpath, value=//div[@class='coupon-list']/div[3]/div/div/div[1]}
-2016-07-12 23:57:52,033 - com.test.regression.cub.utils.Logg -INFO - addCouponForWantOneNewUser execution Complete.............
-2016-07-12 23:59:39,793 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 23:59:39,801 - com.test.regression.cub.utils.Logg -INFO - Starting addCouponForWantOneNewUser ................
-2016-07-12 23:59:39,801 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-12 23:59:57,397 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-12 23:59:58,110 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
-2016-07-12 23:59:58,110 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
-2016-07-12 23:59:58,111 - com.test.regression.cub.utils.Logg -INFO - User Name : wantcarduser4@cub.com
-2016-07-12 23:59:58,111 - com.test.regression.cub.utils.Logg -INFO - Password : password
-2016-07-12 23:59:59,578 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
-2016-07-13 00:00:21,133 - com.test.regression.cub.utils.Logg -INFO - Selected 'No, But I want one' option
-2016-07-13 00:00:24,577 - com.test.regression.cub.utils.Logg -INFO - Clicked on Continue Button
-2016-07-13 00:00:30,782 - com.test.regression.cub.utils.Logg -INFO - Entered the Contact Information details..
-2016-07-13 00:00:32,476 - com.test.regression.cub.utils.Logg -INFO - Clicked on Use this address button on Address Verification
-2016-07-13 00:00:54,804 - com.test.regression.cub.utils.Logg -INFO - In Coupons page now..
-2016-07-13 00:00:57,406 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-13 00:00:57,407 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-13 00:01:02,600 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[1]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-13 00:01:02,608 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-13 00:01:02,680 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : save $0.75
-2016-07-13 00:01:02,680 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $0.75
-2016-07-13 00:01:02,744 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-13 00:01:02,744 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-13 00:01:09,198 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[3]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-13 00:01:09,202 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-13 00:01:09,900 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : save $0.10
-2016-07-13 00:01:09,901 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $0.10
-2016-07-13 00:01:10,499 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-13 00:01:10,499 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-13 00:01:15,720 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[9]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-13 00:01:15,722 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-13 00:01:15,839 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : 2 for 11.00 Save up to $2.49 ea.
-2016-07-13 00:01:15,839 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : 2 for 11.00 Save up to $2.49 ea.
-2016-07-13 00:01:22,766 - com.test.regression.cub.utils.Logg -INFO - Clicked on My eCoupons in Home page
-2016-07-13 00:01:22,770 - com.test.regression.cub.utils.Logg -INFO - Validating whether the added coupon is in My eCoupons page
-2016-07-13 00:01:22,808 - com.test.regression.cub.utils.Logg -INFO - No. of coupons in eCoupons page is : 3
-2016-07-13 00:01:28,599 - com.test.regression.cub.utils.Logg -INFO - addCouponForWantOneNewUser execution Complete.............
-2016-07-13 00:14:31,217 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-13 00:14:31,224 - com.test.regression.cub.utils.Logg -INFO - Starting addCouponForWantOneNewUser ................
-2016-07-13 00:14:31,225 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-13 00:14:51,438 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-13 00:14:52,500 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
-2016-07-13 00:14:52,500 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
-2016-07-13 00:14:52,501 - com.test.regression.cub.utils.Logg -INFO - User Name : wantcarduser4@cub.com
-2016-07-13 00:14:52,501 - com.test.regression.cub.utils.Logg -INFO - Password : password
-2016-07-13 00:14:54,141 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
-2016-07-13 00:15:07,030 - com.test.regression.cub.utils.Logg -INFO - 
-2016-07-13 00:15:52,512 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-13 00:15:52,519 - com.test.regression.cub.utils.Logg -INFO - Starting addCouponForWantOneNewUser ................
-2016-07-13 00:15:52,519 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
-2016-07-13 00:16:10,796 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
-2016-07-13 00:16:12,523 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
-2016-07-13 00:16:12,524 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
-2016-07-13 00:16:12,524 - com.test.regression.cub.utils.Logg -INFO - User Name : wantcarduser5@cub.com
-2016-07-13 00:16:12,524 - com.test.regression.cub.utils.Logg -INFO - Password : password
-2016-07-13 00:16:14,163 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
-2016-07-13 00:16:38,528 - com.test.regression.cub.utils.Logg -INFO - Selected 'No, But I want one' option
-2016-07-13 00:16:38,769 - com.test.regression.cub.utils.Logg -INFO - Clicked on Continue Button
-2016-07-13 00:16:43,656 - com.test.regression.cub.utils.Logg -INFO - Entered the Contact Information details..
-2016-07-13 00:16:45,593 - com.test.regression.cub.utils.Logg -INFO - Clicked on Use this address button on Address Verification
-2016-07-13 00:17:09,669 - com.test.regression.cub.utils.Logg -INFO - In Coupons page now..
-2016-07-13 00:17:11,833 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-13 00:17:11,833 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-13 00:17:17,012 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[1]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-13 00:17:17,013 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-13 00:17:17,193 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : save $0.75
-2016-07-13 00:17:17,194 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $0.75
-2016-07-13 00:17:17,279 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-13 00:17:17,279 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-13 00:17:22,503 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[3]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-13 00:17:22,508 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-13 00:17:22,646 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : save $0.10
-2016-07-13 00:17:22,646 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $0.10
-2016-07-13 00:17:22,836 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
-2016-07-13 00:17:22,837 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
-2016-07-13 00:17:28,081 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[9]/div/div/div[2]/button[text()='+ Add Item']
-2016-07-13 00:17:28,083 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
-2016-07-13 00:17:28,173 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page : 2 for 11.00 Save up to $2.49 ea.
-2016-07-13 00:17:28,173 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : 2 for 11.00 Save up to $2.49 ea.
-2016-07-13 00:17:36,031 - com.test.regression.cub.utils.Logg -INFO - Clicked on My eCoupons in Home page
-2016-07-13 00:17:36,032 - com.test.regression.cub.utils.Logg -INFO - Validating whether the added coupon is in My eCoupons page
-2016-07-13 00:17:36,066 - com.test.regression.cub.utils.Logg -INFO - No. of coupons in eCoupons page is : 3
-2016-07-13 00:17:42,154 - com.test.regression.cub.utils.Logg -INFO - addCouponForWantOneNewUser execution Complete.............
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir734292_21425}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f7570eb43467b27cad3ca9efe18f06ca
+*** Element info: {Using=xpath, value=//*[@id='store-search-result']/tbody/tr[1]/td[4]/div/a}
+2016-07-13 15:29:33,635 - com.test.regression.cub.utils.Logg -INFO - setStoreAuthorizedZipcode execution Complete.............
+2016-07-13 15:29:33,636 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:29:33,636 - com.test.regression.cub.utils.Logg -INFO - Starting setStoreAuthorizedCityState ................
+2016-07-13 15:29:33,636 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:29:52,308 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:29:52,330 - com.test.regression.cub.utils.Logg -INFO - User Name : sltesting@cub.com
+2016-07-13 15:29:52,331 - com.test.regression.cub.utils.Logg -INFO - Password : password
+2016-07-13 15:29:52,331 - com.test.regression.cub.utils.Logg -INFO - Cub Home page is launched
+2016-07-13 15:29:53,316 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 15:29:54,118 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 15:29:54,358 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 15:30:04,366 - com.test.regression.cub.utils.Logg -INFO - Find a Store page is launched
+2016-07-13 15:30:15,544 - com.test.regression.cub.utils.Logg -INFO - Find a Store page is launched
+2016-07-13 15:30:15,850 - com.test.regression.cub.utils.Logg -INFO - Entered City name details
+2016-07-13 15:30:15,999 - com.test.regression.cub.utils.Logg -INFO - Entered State name details
+2016-07-13 15:30:28,753 - com.test.regression.cub.utils.Logg -INFO - Search button is CLicked
+2016-07-13 15:30:28,753 - com.test.regression.cub.utils.Logg -INFO - Store Locations page is displayed
+2016-07-13 15:30:39,124 - com.test.regression.cub.utils.Logg -INFO - My Store is set
+2016-07-13 15:30:47,911 - com.test.regression.cub.utils.Logg -INFO - setStoreAuthorizedCityState execution Complete.............
+2016-07-13 15:30:47,913 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:30:47,913 - com.test.regression.cub.utils.Logg -INFO - Starting Miles20 ................
+2016-07-13 15:30:47,913 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:31:13,426 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:31:13,440 - com.test.regression.cub.utils.Logg -INFO - Find a Store page is launched
+2016-07-13 15:32:01,501 - com.test.regression.cub.utils.Logg -INFO - Miles20 execution Complete.............
+2016-07-13 15:32:01,505 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:32:01,506 - com.test.regression.cub.utils.Logg -INFO - Starting Miles50 ................
+2016-07-13 15:32:01,506 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:32:22,537 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:32:22,545 - com.test.regression.cub.utils.Logg -INFO - Find a Store page is launched
+2016-07-13 15:32:59,765 - com.test.regression.cub.utils.Logg -INFO - Miles50 execution Complete.............
+2016-07-13 15:32:59,768 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:32:59,768 - com.test.regression.cub.utils.Logg -INFO - Starting changeStoreFromDifferentPages ................
+2016-07-13 15:32:59,768 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:33:16,499 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:33:16,508 - com.test.regression.cub.utils.Logg -INFO - Find a Store page is launched
+2016-07-13 15:33:58,205 - com.test.regression.cub.utils.Logg -INFO - changeStoreFromDifferentPages execution Complete.............
+2016-07-13 15:33:58,206 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:33:58,207 - com.test.regression.cub.utils.Logg -INFO - Starting StoresbyState ................
+2016-07-13 15:33:58,207 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 15:34:16,187 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 15:34:16,189 - com.test.regression.cub.utils.Logg -INFO - Find a Store page is launched
+2016-07-13 15:34:35,526 - com.test.regression.cub.utils.Logg -INFO - Store Locations Page-Success
+2016-07-13 15:34:37,526 - com.test.regression.cub.utils.Logg -INFO - Find a Store page is launched
+2016-07-13 15:34:54,173 - com.test.regression.cub.utils.Logg -INFO - Store Locations Page-Success
+2016-07-13 15:35:01,001 - com.test.regression.cub.utils.Logg -INFO - StoresbyState execution Complete.............

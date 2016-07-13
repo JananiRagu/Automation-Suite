@@ -41,7 +41,7 @@
 <!-- Change the UserName everytime -->	
 					
 <user userid="new-user-1">
-<UserName>sujuly12@cub.com</UserName>
+<UserName>sujuly13_1@cub.com</UserName>
 <password>password</password>
 </user>
 
@@ -50,7 +50,7 @@
 <!-- Change the UserName and cardless id everytime -->
 
 <user userid="new-user-2">
-<UserName>suwjuly12@cub.com</UserName>
+<UserName>suwjuly13_1@cub.com</UserName>
 <password>password</password>
 <firstname>test</firstname>
 <lastname>want</lastname>
@@ -61,8 +61,8 @@
 <zipcode>58963</zipcode>
 <homephone>8523697410</homephone>
 <mobilephone>7410254863</mobilephone>
-<cardlessid>75395148620</cardlessid>
-<wantedCoupons>1,3,9</wantedCoupons>
+<cardlessid>75395148621</cardlessid>
+<wantedCoupons>1,3,5,9</wantedCoupons>
 </user>
 
 
@@ -70,12 +70,13 @@
 <!-- Change the UserName everytime -->
 
 <user userid="new-user-3">
-<UserName>suyjuly12@cub.com</UserName>
+<UserName>suyjuly13_1@cub.com</UserName>
 <password>password</password>
 <lastname>Test</lastname>
 <rewardsnumber>48630936861</rewardsnumber>
 </user>
 
+						<!-- Data Used for Find A Store Testing -->
 
 <user userid="new-user-4">
 <ZipCode>55434</ZipCode>
@@ -83,10 +84,13 @@
 <State>MN</State>
 </user>
 
-
+						<!-- Data Used for Change Password Testing -->
+						
+<!-- Change and provide a valid UserName,password everytime -->
 
 <user userid="user-to-change-pwd">
-<UserName>july11test@cub.com</UserName>
+
+<UserName>chgpwd1@cub.com</UserName>
 <oldpassword>password</oldpassword>
 
 <wrongoldpassword>pass11word</wrongoldpassword>
@@ -107,7 +111,7 @@
 <!-- Change the UserName, cardlessid7, cardlessid4 and wantedCoupons -->
 
 <user userid="new-user-coupon1">
-<UserName>NoCardNewUser21@cub.com</UserName>
+<UserName>NoCardNewUser22@cub.com</UserName>
 <password>password</password>
 <firstname>addCoupon</firstname>
 <lastname>NoCardNewUser</lastname>
@@ -119,14 +123,14 @@
 <homephone>8523697410</homephone>
 <mobilephone>7410254863</mobilephone>
 <cardlessid7>7412369</cardlessid7>
-<cardlessid4>1008</cardlessid4>
+<cardlessid4>1009</cardlessid4>
 <wantedCoupons>1,2,4,9</wantedCoupons>
 </user>
 
 <!-- Change the UserName and cardless id everytime -->
 
 <user userid="new-user-coupon2">
-<UserName>wantcarduser5@cub.com</UserName>
+<UserName>wantcarduser6@cub.com</UserName>
 <password>password</password>
 <firstname>test</firstname>
 <lastname>want</lastname>
@@ -137,7 +141,7 @@
 <zipcode>58963</zipcode>
 <homephone>8523697410</homephone>
 <mobilephone>7410254863</mobilephone>
-<cardlessid>78524567534</cardlessid>
+<cardlessid>78524567535</cardlessid>
 <wantedCoupons>1,3,9</wantedCoupons>
 </user>
 
