@@ -55,17 +55,23 @@ public class ShoppingLists extends SuiteBase{
 		Assert.assertTrue(result);
 		
 		} catch (InterruptedException ie) {
-			log.info(ie.getMessage());		
+			log.info(ie.getMessage());
+			Assert.fail("Caught Interrupted Exception");
 		} catch (IOException ioe) {
-			log.info(ioe.getMessage());		
+			log.info(ioe.getMessage());	
+			Assert.fail("Caught IOException Exception");
 		} catch (XPathExpressionException xee) {
-			log.info(xee.getMessage());		
+			log.info(xee.getMessage());	
+			Assert.fail("Caught XPathExpressionException Exception");
 		} catch (ParserConfigurationException pce) {
-			log.info(pce.getMessage());		
+			log.info(pce.getMessage());
+			Assert.fail("Caught ParserConfigurationException Exception");
 		} catch (SAXException saxe) {
-			log.info(saxe.getMessage());		
+			log.info(saxe.getMessage());
+			Assert.fail("Caught SAXException Exception");
 		} catch (Exception e) {
-			log.info(e.getMessage());		
+			log.info(e.getMessage());
+			Assert.fail(e.getLocalizedMessage());
 		}
 		
 	}
@@ -116,17 +122,23 @@ public class ShoppingLists extends SuiteBase{
 		Assert.assertTrue(slSize==3);
 		
 		} catch (InterruptedException ie) {
-			log.info(ie.getMessage());		
+			log.info(ie.getMessage());
+			Assert.fail("Caught Interrupted Exception");
 		} catch (IOException ioe) {
-			log.info(ioe.getMessage());		
+			log.info(ioe.getMessage());	
+			Assert.fail("Caught IOException Exception");
 		} catch (XPathExpressionException xee) {
-			log.info(xee.getMessage());		
+			log.info(xee.getMessage());	
+			Assert.fail("Caught XPathExpressionException Exception");
 		} catch (ParserConfigurationException pce) {
-			log.info(pce.getMessage());		
+			log.info(pce.getMessage());
+			Assert.fail("Caught ParserConfigurationException Exception");
 		} catch (SAXException saxe) {
-			log.info(saxe.getMessage());		
+			log.info(saxe.getMessage());
+			Assert.fail("Caught SAXException Exception");
 		} catch (Exception e) {
-			log.info(e.getMessage());		
+			log.info(e.getMessage());
+			Assert.fail(e.getLocalizedMessage());
 		}
 			
 	}
@@ -178,17 +190,23 @@ public class ShoppingLists extends SuiteBase{
 		Assert.assertTrue(result);
 		
 		} catch (InterruptedException ie) {
-			log.info(ie.getMessage());		
+			log.info(ie.getMessage());
+			Assert.fail("Caught Interrupted Exception");
 		} catch (IOException ioe) {
-			log.info(ioe.getMessage());		
+			log.info(ioe.getMessage());	
+			Assert.fail("Caught IOException Exception");
 		} catch (XPathExpressionException xee) {
-			log.info(xee.getMessage());		
+			log.info(xee.getMessage());	
+			Assert.fail("Caught XPathExpressionException Exception");
 		} catch (ParserConfigurationException pce) {
-			log.info(pce.getMessage());		
+			log.info(pce.getMessage());
+			Assert.fail("Caught ParserConfigurationException Exception");
 		} catch (SAXException saxe) {
-			log.info(saxe.getMessage());		
+			log.info(saxe.getMessage());
+			Assert.fail("Caught SAXException Exception");
 		} catch (Exception e) {
-			log.info(e.getMessage());		
+			log.info(e.getMessage());
+			Assert.fail(e.getLocalizedMessage());
 		}		
 	}
 	
@@ -231,17 +249,23 @@ public class ShoppingLists extends SuiteBase{
 		Assert.assertTrue(slSize==0);
 		
 		} catch (InterruptedException ie) {
-			log.info(ie.getMessage());		
+			log.info(ie.getMessage());
+			Assert.fail("Caught Interrupted Exception");
 		} catch (IOException ioe) {
-			log.info(ioe.getMessage());		
+			log.info(ioe.getMessage());	
+			Assert.fail("Caught IOException Exception");
 		} catch (XPathExpressionException xee) {
-			log.info(xee.getMessage());		
+			log.info(xee.getMessage());	
+			Assert.fail("Caught XPathExpressionException Exception");
 		} catch (ParserConfigurationException pce) {
-			log.info(pce.getMessage());		
+			log.info(pce.getMessage());
+			Assert.fail("Caught ParserConfigurationException Exception");
 		} catch (SAXException saxe) {
-			log.info(saxe.getMessage());		
+			log.info(saxe.getMessage());
+			Assert.fail("Caught SAXException Exception");
 		} catch (Exception e) {
-			log.info(e.getMessage());		
+			log.info(e.getMessage());
+			Assert.fail(e.getLocalizedMessage());
 		}
 	}
 	
@@ -284,17 +308,23 @@ public class ShoppingLists extends SuiteBase{
 		Assert.assertTrue(slSize==0);
 		
 		} catch (InterruptedException ie) {
-			log.info(ie.getMessage());		
+			log.info(ie.getMessage());
+			Assert.fail("Caught Interrupted Exception");
 		} catch (IOException ioe) {
-			log.info(ioe.getMessage());		
+			log.info(ioe.getMessage());	
+			Assert.fail("Caught IOException Exception");
 		} catch (XPathExpressionException xee) {
-			log.info(xee.getMessage());		
+			log.info(xee.getMessage());	
+			Assert.fail("Caught XPathExpressionException Exception");
 		} catch (ParserConfigurationException pce) {
-			log.info(pce.getMessage());		
+			log.info(pce.getMessage());
+			Assert.fail("Caught ParserConfigurationException Exception");
 		} catch (SAXException saxe) {
-			log.info(saxe.getMessage());		
+			log.info(saxe.getMessage());
+			Assert.fail("Caught SAXException Exception");
 		} catch (Exception e) {
-			log.info(e.getMessage());		
+			log.info(e.getMessage());
+			Assert.fail(e.getLocalizedMessage());
 		}
 		
 	}

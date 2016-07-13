@@ -87,7 +87,7 @@ public class Coupons extends SuiteBase{
 	
 	
 	
-	@Test(priority=12, enabled=true)
+	@Test(priority=12, enabled=false)
 	public void addCouponForWantOneNewUser() {
 		try {
 		Map<String, String> addCouponForWantOneNewUserData = readxml.getUserData("TestData.xml", "new-user-coupon2");

@@ -43,6 +43,57 @@ public class FindAStorePage extends SuiteBase{
 	@FindBy(xpath = "//*[@id='store-search-result']/tbody/tr[1]/td[4]/div/a")
 	private WebElement _Makethismystore;
 	
+	//Header
+	@FindBy(xpath = "//a[text()='Savings']")
+	private WebElement _Savings;
+	
+	@FindBy(xpath = "//a[text()='Departments']")
+	private WebElement _Departments;
+	
+	//Change store in different pages
+	@FindBy(xpath = "//*[@id='store-name']/span/a")
+	private WebElement _clickchange;
+	
+	@FindBy(xpath = "//*[@id='layout']/div[2]/div[2]/div[1]/form/div/input")
+	private WebElement _zipcodebox;
+	
+	@FindBy(xpath = "//*[@id='layout']/div[2]/div[2]/div[1]/form/button")
+	private WebElement _clicksearch;
+	
+	@FindBy(xpath = "//*[@id='layout']/div[2]/div[2]/section/ul/a[2]")
+	private WebElement _selectclickstore;
+	
+	@FindBy(xpath = "//*[@id='layout']/div[2]/div[2]/section/ul/a[2]/ul/li[1]")
+	private WebElement _AddressLine;
+	
+	
+	@FindBy(xpath = "//*[@id='layout']/div[2]/div[2]/section/button")
+	private WebElement _clickusestore;
+	
+	@FindBy(xpath = "//*[@id='store-name']/a")
+	private WebElement _checkstorename;
+	
+	//Clicking on View Stores by State
+	
+	@FindBy(xpath = "//*[@id='find-view-states']/ul/li[1]/a")
+	private WebElement _clickstate1;
+	
+	@FindBy(xpath = "//*[@id='find-view-states']/ul/li[2]/a")
+	private WebElement _clickstate2;
+	
+	@FindBy(xpath = "//*[@id='store-search-result']/tbody/tr[2]/td[4]/div/a")
+	private WebElement _MakeStore;
+	
+	@FindBy(xpath="//*[@id='store-search-result']/tbody/tr[1]/td[4]/div/a")
+	private WebElement _setstore1;
+
+	@FindBy(xpath="//*[@id='store-search-result']/tbody/tr[2]/td[4]/div/a")
+	private WebElement _setstore2;
+	
+	@FindBy(xpath = "//*[@id='nav-acct-findastore']/a")
+	private WebElement _FAS;
+	
+	
 	public void clickFindAStore() {
 		_FindAStore.click();
 	}
@@ -68,12 +119,7 @@ public class FindAStorePage extends SuiteBase{
 		result=Integer.parseInt(lastWord);
 		return result;
 	}
-	//Header
-	@FindBy(xpath = "//a[text()='Savings']")
-	private WebElement _Savings;
-	
-	@FindBy(xpath = "//a[text()='Departments']")
-	private WebElement _Departments;
+
 	//Method
 	public void clickOnSavings()
 	{
@@ -86,28 +132,7 @@ public class FindAStorePage extends SuiteBase{
 	_Departments.click();
 	}
 	
-	//Change store in different pages
-	@FindBy(xpath = "//*[@id='store-name']/span/a")
-	private WebElement _clickchange;
-	
-	@FindBy(xpath = "//*[@id='layout']/div[2]/div[2]/div[1]/form/div/input")
-	private WebElement _zipcodebox;
-	
-	@FindBy(xpath = "//*[@id='layout']/div[2]/div[2]/div[1]/form/button")
-	private WebElement _clicksearch;
-	
-	@FindBy(xpath = "//*[@id='layout']/div[2]/div[2]/section/ul/a[2]")
-	private WebElement _selectclickstore;
-	
-	@FindBy(xpath = "//*[@id='layout']/div[2]/div[2]/section/ul/a[2]/ul/li[1]")
-	private WebElement _AddressLine;
-	
-	
-	@FindBy(xpath = "//*[@id='layout']/div[2]/div[2]/section/button")
-	private WebElement _clickusestore;
-	
-	@FindBy(xpath = "//*[@id='store-name']/a")
-	private WebElement _checkstorename;
+
 	
 	//Method
 	public void clickOnChange()
@@ -140,16 +165,6 @@ public class FindAStorePage extends SuiteBase{
 		return Add2;
 	}
 	
-	//Clicking on View Stores by State
-	
-	@FindBy(xpath = "//*[@id='find-view-states']/ul/li[1]/a")
-	private WebElement _clickstate1;
-	
-	@FindBy(xpath = "//*[@id='find-view-states']/ul/li[2]/a")
-	private WebElement _clickstate2;
-	
-	@FindBy(xpath = "//*[@id='store-search-result']/tbody/tr[2]/td[4]/div/a")
-	private WebElement _MakeStore;
 	
 	//Method
 	public void ClickState1()
@@ -165,5 +180,18 @@ public class FindAStorePage extends SuiteBase{
 	{
 		_MakeStore.click();
 	}
+	
+	public void ClickStore1()
+	{
+	_setstore1.click();
+	}
+	public void ClickStore2()
+	{
+	_setstore2.click();
+	}
+	
+	public void clickFAS() {
+		_FAS.click();
+		}
 }
 

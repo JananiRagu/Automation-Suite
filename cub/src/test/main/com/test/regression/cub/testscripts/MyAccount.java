@@ -28,9 +28,9 @@ public class MyAccount extends SuiteBase
 
 // Change password successfully
 	
-	@Test(priority=1,enabled=true)
-	public void ChangePwdValid()throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException {
-		
+	@Test(priority=42,enabled=true)
+	public void ChangePwdValid() {
+		try{
 		// Retrieving test data for valid login
 		Map<String, String> ChangePwdValidData = readxml.getUserData("TestData.xml", "user-to-change-pwd");
 		String userId = ChangePwdValidData.get("UserName");
@@ -85,14 +85,33 @@ public class MyAccount extends SuiteBase
 	cubHome.clickOnLogOutLink();
 	
 	Assert.assertTrue(result);
+		} catch (InterruptedException ie) {
+			log.info(ie.getMessage());
+			Assert.fail("Caught Interrupted Exception");
+		} catch (IOException ioe) {
+			log.info(ioe.getMessage());	
+			Assert.fail("Caught IOException Exception");
+		} catch (XPathExpressionException xee) {
+			log.info(xee.getMessage());	
+			Assert.fail("Caught XPathExpressionException Exception");
+		} catch (ParserConfigurationException pce) {
+			log.info(pce.getMessage());
+			Assert.fail("Caught ParserConfigurationException Exception");
+		} catch (SAXException saxe) {
+			log.info(saxe.getMessage());
+			Assert.fail("Caught SAXException Exception");
+		} catch (Exception e) {
+			log.info(e.getMessage());
+			Assert.fail(e.getLocalizedMessage());
+		}
 	}	
 
 
 //  Validating if Error is displayed when user wrong Old Password
 	
-	@Test(priority=2,enabled=true)
-	public void ChangePwdWrongOldPwd()throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException {
-		
+	@Test(priority=43,enabled=true)
+	public void ChangePwdWrongOldPwd() {
+		try{
 		// Retrieving test data for valid login
 		Map<String, String> ChangePwdValidData = readxml.getUserData("TestData.xml", "user-to-change-pwd");
 		String userId = ChangePwdValidData.get("UserName");
@@ -126,14 +145,33 @@ public class MyAccount extends SuiteBase
 		Assert.assertTrue(result);
 		System.out.println("Error is displayed when user wrong Old Password");
 		log.info("Error is displayed when user wrong Old Passwordy");
+		} catch (InterruptedException ie) {
+			log.info(ie.getMessage());
+			Assert.fail("Caught Interrupted Exception");
+		} catch (IOException ioe) {
+			log.info(ioe.getMessage());	
+			Assert.fail("Caught IOException Exception");
+		} catch (XPathExpressionException xee) {
+			log.info(xee.getMessage());	
+			Assert.fail("Caught XPathExpressionException Exception");
+		} catch (ParserConfigurationException pce) {
+			log.info(pce.getMessage());
+			Assert.fail("Caught ParserConfigurationException Exception");
+		} catch (SAXException saxe) {
+			log.info(saxe.getMessage());
+			Assert.fail("Caught SAXException Exception");
+		} catch (Exception e) {
+			log.info(e.getMessage());
+			Assert.fail(e.getLocalizedMessage());
+		}
 						
 	}
 	
 //  Validating if Error is displayed when user uses space in new password field
 	
-	@Test(priority=3,enabled=true)
-	public void ChangePwdSpace()throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException {
-		
+	@Test(priority=44,enabled=true)
+	public void ChangePwdSpace() {
+		try{
 		// Retrieving test data for valid login
 		Map<String, String> ChangePwdValidData = readxml.getUserData("TestData.xml", "user-to-change-pwd");
 		String userId = ChangePwdValidData.get("UserName");
@@ -166,14 +204,33 @@ public class MyAccount extends SuiteBase
 		Assert.assertTrue(result);
 		System.out.println("Error is displayed when user uses space in new password field");
 		log.info("Error is displayed when user uses space in new password field");
-						
+				
+		} catch (InterruptedException ie) {
+			log.info(ie.getMessage());
+			Assert.fail("Caught Interrupted Exception");
+		} catch (IOException ioe) {
+			log.info(ioe.getMessage());	
+			Assert.fail("Caught IOException Exception");
+		} catch (XPathExpressionException xee) {
+			log.info(xee.getMessage());	
+			Assert.fail("Caught XPathExpressionException Exception");
+		} catch (ParserConfigurationException pce) {
+			log.info(pce.getMessage());
+			Assert.fail("Caught ParserConfigurationException Exception");
+		} catch (SAXException saxe) {
+			log.info(saxe.getMessage());
+			Assert.fail("Caught SAXException Exception");
+		} catch (Exception e) {
+			log.info(e.getMessage());
+			Assert.fail(e.getLocalizedMessage());
+		}
 	}
 
 //  Validating if system is not accepting lengthy password in new password field
 	
-	@Test(priority=4,enabled=true)
-	public void ChangePwdLengthyPwd()throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException {
-		
+	@Test(priority=45,enabled=true)
+	public void ChangePwdLengthyPwd() {
+		try{
 		// Retrieving test data for valid login
 		Map<String, String> ChangePwdValidData = readxml.getUserData("TestData.xml", "user-to-change-pwd");
 		String userId = ChangePwdValidData.get("UserName");
@@ -231,15 +288,34 @@ public class MyAccount extends SuiteBase
 	cubHome.clickOnLogOutLink();
 	
 	Assert.assertTrue(result);
+		} catch (InterruptedException ie) {
+			log.info(ie.getMessage());
+			Assert.fail("Caught Interrupted Exception");
+		} catch (IOException ioe) {
+			log.info(ioe.getMessage());	
+			Assert.fail("Caught IOException Exception");
+		} catch (XPathExpressionException xee) {
+			log.info(xee.getMessage());	
+			Assert.fail("Caught XPathExpressionException Exception");
+		} catch (ParserConfigurationException pce) {
+			log.info(pce.getMessage());
+			Assert.fail("Caught ParserConfigurationException Exception");
+		} catch (SAXException saxe) {
+			log.info(saxe.getMessage());
+			Assert.fail("Caught SAXException Exception");
+		} catch (Exception e) {
+			log.info(e.getMessage());
+			Assert.fail(e.getLocalizedMessage());
+		}
 						
 	}
 	
 
 //  Validating if Error is displayed when user uses short password in new password field
 	
-	@Test(priority=5,enabled=true)
-	public void ChangePwdShortPwd()throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException {
-		
+	@Test(priority=46,enabled=true)
+	public void ChangePwdShortPwd(){
+		try{
 		// Retrieving test data for valid login
 		Map<String, String> ChangePwdValidData = readxml.getUserData("TestData.xml", "user-to-change-pwd");
 		String userId = ChangePwdValidData.get("UserName");
@@ -273,16 +349,34 @@ public class MyAccount extends SuiteBase
 		System.out.println("Error is displayed when user uses short password in new password field");
 		log.info("Error is displayed when user uses short password in new password field");
 		
-		
+		} catch (InterruptedException ie) {
+			log.info(ie.getMessage());
+			Assert.fail("Caught Interrupted Exception");
+		} catch (IOException ioe) {
+			log.info(ioe.getMessage());	
+			Assert.fail("Caught IOException Exception");
+		} catch (XPathExpressionException xee) {
+			log.info(xee.getMessage());	
+			Assert.fail("Caught XPathExpressionException Exception");
+		} catch (ParserConfigurationException pce) {
+			log.info(pce.getMessage());
+			Assert.fail("Caught ParserConfigurationException Exception");
+		} catch (SAXException saxe) {
+			log.info(saxe.getMessage());
+			Assert.fail("Caught SAXException Exception");
+		} catch (Exception e) {
+			log.info(e.getMessage());
+			Assert.fail(e.getLocalizedMessage());
+		}
 	}
 	
 
 
 //  Validating if Error is displayed when user uses different passwords in new password fields
 	
-	@Test(priority=6,enabled=true)
-	public void ChangePwdDifferentNewPwds()throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException {
-		
+	@Test(priority=47,enabled=true)
+	public void ChangePwdDifferentNewPwds() {
+		try{
 		// Retrieving test data for valid login
 		Map<String, String> ChangePwdValidData = readxml.getUserData("TestData.xml", "user-to-change-pwd");
 		String userId = ChangePwdValidData.get("UserName");
@@ -316,7 +410,26 @@ public class MyAccount extends SuiteBase
 		Assert.assertTrue(result);
 		System.out.println("Error is displayed when user uses different passwords in new password fields");
 		log.info("Error is displayed when user uses different passwords in new password fields");
-							
+				
+		} catch (InterruptedException ie) {
+			log.info(ie.getMessage());
+			Assert.fail("Caught Interrupted Exception");
+		} catch (IOException ioe) {
+			log.info(ioe.getMessage());	
+			Assert.fail("Caught IOException Exception");
+		} catch (XPathExpressionException xee) {
+			log.info(xee.getMessage());	
+			Assert.fail("Caught XPathExpressionException Exception");
+		} catch (ParserConfigurationException pce) {
+			log.info(pce.getMessage());
+			Assert.fail("Caught ParserConfigurationException Exception");
+		} catch (SAXException saxe) {
+			log.info(saxe.getMessage());
+			Assert.fail("Caught SAXException Exception");
+		} catch (Exception e) {
+			log.info(e.getMessage());
+			Assert.fail(e.getLocalizedMessage());
+		}
 	}
 		
 }

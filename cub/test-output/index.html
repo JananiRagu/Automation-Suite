@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -53,7 +53,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">7 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,41 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">44 methods, 5 failed,   39 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.MyAccount" hash-for-method="ChangePwdValid">ChangePwdValid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.FindAStore" hash-for-method="changeStoreFromDifferentPages">changeStoreFromDifferentPages</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.ShoppingLists" hash-for-method="createShoppingList">createShoppingList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.FindAStore" hash-for-method="setStoreAuthorizedCityState">setStoreAuthorizedCityState</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.FindAStore" hash-for-method="setStoreAuthorizedZipcode">setStoreAuthorizedZipcode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,7 +135,197 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.Coupons" hash-for-method="addCouponForWantOneNewUser">addCouponForWantOneNewUser</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.ShoppingLists" hash-for-method="Add3Items2ShoppingList">Add3Items2ShoppingList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.ShoppingLists" hash-for-method="AddnEditItemsInShoppingList">AddnEditItemsInShoppingList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.HeaderFooterNavigation" hash-for-method="CakesandPartyTile">CakesandPartyTile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.HeaderFooterNavigation" hash-for-method="CakesandPartyTileSignedInUser">CakesandPartyTileSignedInUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.HeaderFooterNavigation" hash-for-method="Careers">Careers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.HeaderFooterNavigation" hash-for-method="CareersSignedInUser">CareersSignedInUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.MyAccount" hash-for-method="ChangePwdDifferentNewPwds">ChangePwdDifferentNewPwds</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.MyAccount" hash-for-method="ChangePwdLengthyPwd">ChangePwdLengthyPwd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.MyAccount" hash-for-method="ChangePwdShortPwd">ChangePwdShortPwd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.MyAccount" hash-for-method="ChangePwdSpace">ChangePwdSpace</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.MyAccount" hash-for-method="ChangePwdWrongOldPwd">ChangePwdWrongOldPwd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.HeaderFooterNavigation" hash-for-method="CouponTile">CouponTile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.HeaderFooterNavigation" hash-for-method="CouponTileSignedInUser">CouponTileSignedInUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.HeaderFooterNavigation" hash-for-method="CubRewardsTile">CubRewardsTile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.HeaderFooterNavigation" hash-for-method="CubRewardsTileSignedInUser">CubRewardsTileSignedInUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.HeaderFooterNavigation" hash-for-method="CustomerService">CustomerService</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.HeaderFooterNavigation" hash-for-method="CustomerServiceSignedInUser">CustomerServiceSignedInUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.FindAStore" hash-for-method="Miles20">Miles20</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.FindAStore" hash-for-method="Miles50">Miles50</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.HeaderFooterNavigation" hash-for-method="PrivacyPolicy">PrivacyPolicy</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.HeaderFooterNavigation" hash-for-method="PrivacyPolicySignedInUser">PrivacyPolicySignedInUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.HeaderFooterNavigation" hash-for-method="Recalls">Recalls</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.HeaderFooterNavigation" hash-for-method="RecallsSignedInUser">RecallsSignedInUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.FindAStore" hash-for-method="StoresbyState">StoresbyState</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.HeaderFooterNavigation" hash-for-method="TermsAndConditions">TermsAndConditions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.HeaderFooterNavigation" hash-for-method="TermsAndConditionsSignedInUser">TermsAndConditionsSignedInUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.HeaderFooterNavigation" hash-for-method="WeeklyAdTile">WeeklyAdTile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.HeaderFooterNavigation" hash-for-method="WeeklyAdTileSignedInUser">WeeklyAdTileSignedInUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.HeaderFooterNavigation" hash-for-method="aboutUs">aboutUs</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.HeaderFooterNavigation" hash-for-method="aboutUsSignedInUser">aboutUsSignedInUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.ShoppingLists" hash-for-method="deleteItemFromSL">deleteItemFromSL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.SignIn" hash-for-method="inValidLogin">inValidLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.FindAStore" hash-for-method="setStoreGuestCityState">setStoreGuestCityState</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.FindAStore" hash-for-method="setStoreGuestZipCode">setStoreGuestZipCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.ShoppingLists" hash-for-method="testClearList">testClearList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.SignIn" hash-for-method="validLogin">validLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.SignUp" hash-for-method="validSignUp_noCard">validSignUp_noCard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.SignUp" hash-for-method="validSignUp_noCardButWantOne">validSignUp_noCardButWantOne</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.regression.cub.testscripts.SignUp" hash-for-method="validSignUp_yesIHaveOne">validSignUp_yesIHaveOne</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -116,17 +340,583 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.test.regression.cub.testscripts.Coupons</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.test.regression.cub.testscripts.FindAStore</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addCouponForWantOneNewUser">
-                  </a> <!-- addCouponForWantOneNewUser -->
-                  <span class="method-name">addCouponForWantOneNewUser</span>
+                  <a name="changeStoreFromDifferentPages">
+                  </a> <!-- changeStoreFromDifferentPages -->
+                  <span class="method-name">changeStoreFromDifferentPages</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [true] but found [false]
+	at com.test.regression.cub.testscripts.FindAStore.changeStoreFromDifferentPages(FindAStore.java:427)
+... Removed 28 stack frames<br/> java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.test.regression.cub.testscripts.FindAStore.changeStoreFromDifferentPages(FindAStore.java:427)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:75)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:46)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertTrue(Assert.java:42)<br>org.testng.Assert.assertTrue(Assert.java:52)<br>com.test.regression.cub.testscripts.FindAStore.changeStoreFromDifferentPages(FindAStore.java:427)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:75)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:46)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setStoreAuthorizedCityState">
+                  </a> <!-- setStoreAuthorizedCityState -->
+                  <span class="method-name">setStoreAuthorizedCityState</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [Cub Foods - Store Search Results] but found [Cub Foods - View Store]
+	at com.test.regression.cub.testscripts.FindAStore.setStoreAuthorizedCityState(FindAStore.java:253)
+... Removed 29 stack frames<br/> java.lang.AssertionError: expected [Cub Foods - Store Search Results] but found [Cub Foods - View Store]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.test.regression.cub.testscripts.FindAStore.setStoreAuthorizedCityState(FindAStore.java:253)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:75)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:46)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:176)<br>org.testng.Assert.assertEquals(Assert.java:186)<br>com.test.regression.cub.testscripts.FindAStore.setStoreAuthorizedCityState(FindAStore.java:253)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:75)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:46)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setStoreAuthorizedZipcode">
+                  </a> <!-- setStoreAuthorizedZipcode -->
+                  <span class="method-name">setStoreAuthorizedZipcode</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;store-search-result&apos;]/tbody/tr[1]/td[4]/div/a&quot;}
+  (Session info: chrome=51.0.2704.103)
+  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.22 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;SDEVPCSVU7112&apos;, ip: &apos;10.15.142.48&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir734292_21425}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f7570eb43467b27cad3ca9efe18f06ca
+*** Element info: {Using=xpath, value=//*[@id=&apos;store-search-result&apos;]/tbody/tr[1]/td[4]/div/a}
+	at com.test.regression.cub.testscripts.FindAStore.setStoreAuthorizedZipcode(FindAStore.java:192)
+... Removed 25 stack frames<br/> java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;store-search-result&apos;]/tbody/tr[1]/td[4]/div/a&quot;}
+  (Session info: chrome=51.0.2704.103)
+  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.22 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;SDEVPCSVU7112&apos;, ip: &apos;10.15.142.48&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir734292_21425}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f7570eb43467b27cad3ca9efe18f06ca
+*** Element info: {Using=xpath, value=//*[@id=&apos;store-search-result&apos;]/tbody/tr[1]/td[4]/div/a}
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.test.regression.cub.testscripts.FindAStore.setStoreAuthorizedZipcode(FindAStore.java:192)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:75)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:46)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>com.test.regression.cub.testscripts.FindAStore.setStoreAuthorizedZipcode(FindAStore.java:192)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:75)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:46)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.test.regression.cub.testscripts.ShoppingLists</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createShoppingList">
+                  </a> <!-- createShoppingList -->
+                  <span class="method-name">createShoppingList</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [true] but found [false]
+	at com.test.regression.cub.testscripts.ShoppingLists.createShoppingList(ShoppingLists.java:55)
+... Removed 28 stack frames<br/> java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.test.regression.cub.testscripts.ShoppingLists.createShoppingList(ShoppingLists.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:75)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:46)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertTrue(Assert.java:42)<br>org.testng.Assert.assertTrue(Assert.java:52)<br>com.test.regression.cub.testscripts.ShoppingLists.createShoppingList(ShoppingLists.java:55)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:75)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:46)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.test.regression.cub.testscripts.MyAccount</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChangePwdValid">
+                  </a> <!-- ChangePwdValid -->
+                  <span class="method-name">ChangePwdValid</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: unknown error: Element is not clickable at point (907, 87). Other element would receive the click: &lt;div class=&quot;ss-overlay&quot; style=&quot;display: block;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=51.0.2704.103)
+  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 72 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;SDEVPCSVU7112&apos;, ip: &apos;10.15.142.48&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir731536_22148}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 72f3b6e492cf64a6a0dcfaf613a41d02
+	at com.test.regression.cub.testscripts.MyAccount.ChangePwdValid(MyAccount.java:105)
+... Removed 25 stack frames<br/> java.lang.AssertionError: unknown error: Element is not clickable at point (907, 87). Other element would receive the click: &lt;div class=&quot;ss-overlay&quot; style=&quot;display: block;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=51.0.2704.103)
+  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 72 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;SDEVPCSVU7112&apos;, ip: &apos;10.15.142.48&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir731536_22148}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 72f3b6e492cf64a6a0dcfaf613a41d02
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.test.regression.cub.testscripts.MyAccount.ChangePwdValid(MyAccount.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:75)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:46)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>com.test.regression.cub.testscripts.MyAccount.ChangePwdValid(MyAccount.java:105)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:75)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:46)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.regression.cub.testscripts.SignIn</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="inValidLogin">
+                  </a> <!-- inValidLogin -->
+                  <span class="method-name">inValidLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLogin">
+                  </a> <!-- validLogin -->
+                  <span class="method-name">validLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.regression.cub.testscripts.FindAStore</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Miles20">
+                  </a> <!-- Miles20 -->
+                  <span class="method-name">Miles20</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Miles50">
+                  </a> <!-- Miles50 -->
+                  <span class="method-name">Miles50</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="StoresbyState">
+                  </a> <!-- StoresbyState -->
+                  <span class="method-name">StoresbyState</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setStoreGuestCityState">
+                  </a> <!-- setStoreGuestCityState -->
+                  <span class="method-name">setStoreGuestCityState</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setStoreGuestZipCode">
+                  </a> <!-- setStoreGuestZipCode -->
+                  <span class="method-name">setStoreGuestZipCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.regression.cub.testscripts.SignUp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validSignUp_noCard">
+                  </a> <!-- validSignUp_noCard -->
+                  <span class="method-name">validSignUp_noCard</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validSignUp_noCardButWantOne">
+                  </a> <!-- validSignUp_noCardButWantOne -->
+                  <span class="method-name">validSignUp_noCardButWantOne</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validSignUp_yesIHaveOne">
+                  </a> <!-- validSignUp_yesIHaveOne -->
+                  <span class="method-name">validSignUp_yesIHaveOne</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.regression.cub.testscripts.ShoppingLists</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Add3Items2ShoppingList">
+                  </a> <!-- Add3Items2ShoppingList -->
+                  <span class="method-name">Add3Items2ShoppingList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddnEditItemsInShoppingList">
+                  </a> <!-- AddnEditItemsInShoppingList -->
+                  <span class="method-name">AddnEditItemsInShoppingList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteItemFromSL">
+                  </a> <!-- deleteItemFromSL -->
+                  <span class="method-name">deleteItemFromSL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClearList">
+                  </a> <!-- testClearList -->
+                  <span class="method-name">testClearList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.regression.cub.testscripts.HeaderFooterNavigation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CakesandPartyTile">
+                  </a> <!-- CakesandPartyTile -->
+                  <span class="method-name">CakesandPartyTile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CakesandPartyTileSignedInUser">
+                  </a> <!-- CakesandPartyTileSignedInUser -->
+                  <span class="method-name">CakesandPartyTileSignedInUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Careers">
+                  </a> <!-- Careers -->
+                  <span class="method-name">Careers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CareersSignedInUser">
+                  </a> <!-- CareersSignedInUser -->
+                  <span class="method-name">CareersSignedInUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CouponTile">
+                  </a> <!-- CouponTile -->
+                  <span class="method-name">CouponTile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CouponTileSignedInUser">
+                  </a> <!-- CouponTileSignedInUser -->
+                  <span class="method-name">CouponTileSignedInUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CubRewardsTile">
+                  </a> <!-- CubRewardsTile -->
+                  <span class="method-name">CubRewardsTile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CubRewardsTileSignedInUser">
+                  </a> <!-- CubRewardsTileSignedInUser -->
+                  <span class="method-name">CubRewardsTileSignedInUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CustomerService">
+                  </a> <!-- CustomerService -->
+                  <span class="method-name">CustomerService</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CustomerServiceSignedInUser">
+                  </a> <!-- CustomerServiceSignedInUser -->
+                  <span class="method-name">CustomerServiceSignedInUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PrivacyPolicy">
+                  </a> <!-- PrivacyPolicy -->
+                  <span class="method-name">PrivacyPolicy</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PrivacyPolicySignedInUser">
+                  </a> <!-- PrivacyPolicySignedInUser -->
+                  <span class="method-name">PrivacyPolicySignedInUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Recalls">
+                  </a> <!-- Recalls -->
+                  <span class="method-name">Recalls</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RecallsSignedInUser">
+                  </a> <!-- RecallsSignedInUser -->
+                  <span class="method-name">RecallsSignedInUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TermsAndConditions">
+                  </a> <!-- TermsAndConditions -->
+                  <span class="method-name">TermsAndConditions</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TermsAndConditionsSignedInUser">
+                  </a> <!-- TermsAndConditionsSignedInUser -->
+                  <span class="method-name">TermsAndConditionsSignedInUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WeeklyAdTile">
+                  </a> <!-- WeeklyAdTile -->
+                  <span class="method-name">WeeklyAdTile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WeeklyAdTileSignedInUser">
+                  </a> <!-- WeeklyAdTileSignedInUser -->
+                  <span class="method-name">WeeklyAdTileSignedInUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="aboutUs">
+                  </a> <!-- aboutUs -->
+                  <span class="method-name">aboutUs</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="aboutUsSignedInUser">
+                  </a> <!-- aboutUsSignedInUser -->
+                  <span class="method-name">aboutUsSignedInUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.regression.cub.testscripts.MyAccount</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChangePwdDifferentNewPwds">
+                  </a> <!-- ChangePwdDifferentNewPwds -->
+                  <span class="method-name">ChangePwdDifferentNewPwds</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChangePwdLengthyPwd">
+                  </a> <!-- ChangePwdLengthyPwd -->
+                  <span class="method-name">ChangePwdLengthyPwd</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChangePwdShortPwd">
+                  </a> <!-- ChangePwdShortPwd -->
+                  <span class="method-name">ChangePwdShortPwd</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChangePwdSpace">
+                  </a> <!-- ChangePwdSpace -->
+                  <span class="method-name">ChangePwdSpace</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChangePwdWrongOldPwd">
+                  </a> <!-- ChangePwdWrongOldPwd -->
+                  <span class="method-name">ChangePwdWrongOldPwd</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -141,11 +931,41 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; parallel=&quot;none&quot;&gt;
+  &lt;test name=&quot;Sign In - Testing&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.test.regression.cub.testscripts.SignIn&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Sign In - Testing --&gt;
+  &lt;test name=&quot;Sign Up - Testing&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.test.regression.cub.testscripts.SignUp&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Sign Up - Testing --&gt;
+  &lt;test name=&quot;Shopping List - Testing&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.test.regression.cub.testscripts.ShoppingLists&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Shopping List - Testing --&gt;
+  &lt;test name=&quot;Header Footer Navigation - Testing&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.test.regression.cub.testscripts.HeaderFooterNavigation&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Header Footer Navigation - Testing --&gt;
   &lt;test name=&quot;Coupons - Testing&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.test.regression.cub.testscripts.Coupons&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Coupons - Testing --&gt;
+  &lt;test name=&quot;My Account- Testing&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.test.regression.cub.testscripts.MyAccount&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- My Account- Testing --&gt;
+  &lt;test name=&quot;Find a Store - Testing&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.test.regression.cub.testscripts.FindAStore&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Find a Store - Testing --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -157,7 +977,25 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
+                <span class="test-name">Sign In - Testing (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Sign Up - Testing (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Shopping List - Testing (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Header Footer Navigation - Testing (1 class)</span>
+              </li>
+              <li>
                 <span class="test-name">Coupons - Testing (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">My Account- Testing (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Find a Store - Testing (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -183,16 +1021,188 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(44);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addCouponForWantOneNewUser')
-data.setCell(0, 2, 'com.test.regression.cub.testscripts.Coupons')
-data.setCell(0, 3, 85272);
+data.setCell(0, 1, 'deleteItemFromSL')
+data.setCell(0, 2, 'com.test.regression.cub.testscripts.ShoppingLists')
+data.setCell(0, 3, 77527);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testClearList')
+data.setCell(1, 2, 'com.test.regression.cub.testscripts.ShoppingLists')
+data.setCell(1, 3, 76701);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'setStoreAuthorizedZipcode')
+data.setCell(2, 2, 'com.test.regression.cub.testscripts.FindAStore')
+data.setCell(2, 3, 76147);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'createShoppingList')
+data.setCell(3, 2, 'com.test.regression.cub.testscripts.ShoppingLists')
+data.setCell(3, 3, 71725);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'ChangePwdLengthyPwd')
+data.setCell(4, 2, 'com.test.regression.cub.testscripts.MyAccount')
+data.setCell(4, 3, 68107);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'AddnEditItemsInShoppingList')
+data.setCell(5, 2, 'com.test.regression.cub.testscripts.ShoppingLists')
+data.setCell(5, 3, 55927);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'ChangePwdValid')
+data.setCell(6, 2, 'com.test.regression.cub.testscripts.MyAccount')
+data.setCell(6, 3, 52533);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'setStoreAuthorizedCityState')
+data.setCell(7, 2, 'com.test.regression.cub.testscripts.FindAStore')
+data.setCell(7, 3, 51822);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'Miles20')
+data.setCell(8, 2, 'com.test.regression.cub.testscripts.FindAStore')
+data.setCell(8, 3, 44083);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'StoresbyState')
+data.setCell(9, 2, 'com.test.regression.cub.testscripts.FindAStore')
+data.setCell(9, 3, 39987);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'WeeklyAdTileSignedInUser')
+data.setCell(10, 2, 'com.test.regression.cub.testscripts.HeaderFooterNavigation')
+data.setCell(10, 3, 37760);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'Add3Items2ShoppingList')
+data.setCell(11, 2, 'com.test.regression.cub.testscripts.ShoppingLists')
+data.setCell(11, 3, 36729);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'changeStoreFromDifferentPages')
+data.setCell(12, 2, 'com.test.regression.cub.testscripts.FindAStore')
+data.setCell(12, 3, 35254);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'Miles50')
+data.setCell(13, 2, 'com.test.regression.cub.testscripts.FindAStore')
+data.setCell(13, 3, 34019);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'validSignUp_noCardButWantOne')
+data.setCell(14, 2, 'com.test.regression.cub.testscripts.SignUp')
+data.setCell(14, 3, 33958);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'setStoreGuestCityState')
+data.setCell(15, 2, 'com.test.regression.cub.testscripts.FindAStore')
+data.setCell(15, 3, 28706);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'ChangePwdSpace')
+data.setCell(16, 2, 'com.test.regression.cub.testscripts.MyAccount')
+data.setCell(16, 3, 28664);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'setStoreGuestZipCode')
+data.setCell(17, 2, 'com.test.regression.cub.testscripts.FindAStore')
+data.setCell(17, 3, 26185);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'validSignUp_yesIHaveOne')
+data.setCell(18, 2, 'com.test.regression.cub.testscripts.SignUp')
+data.setCell(18, 3, 21925);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'validSignUp_noCard')
+data.setCell(19, 2, 'com.test.regression.cub.testscripts.SignUp')
+data.setCell(19, 3, 21843);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'ChangePwdWrongOldPwd')
+data.setCell(20, 2, 'com.test.regression.cub.testscripts.MyAccount')
+data.setCell(20, 3, 21602);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'ChangePwdDifferentNewPwds')
+data.setCell(21, 2, 'com.test.regression.cub.testscripts.MyAccount')
+data.setCell(21, 3, 21589);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'WeeklyAdTile')
+data.setCell(22, 2, 'com.test.regression.cub.testscripts.HeaderFooterNavigation')
+data.setCell(22, 3, 21249);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'PrivacyPolicySignedInUser')
+data.setCell(23, 2, 'com.test.regression.cub.testscripts.HeaderFooterNavigation')
+data.setCell(23, 3, 20686);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'ChangePwdShortPwd')
+data.setCell(24, 2, 'com.test.regression.cub.testscripts.MyAccount')
+data.setCell(24, 3, 20551);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'CustomerServiceSignedInUser')
+data.setCell(25, 2, 'com.test.regression.cub.testscripts.HeaderFooterNavigation')
+data.setCell(25, 3, 20538);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'CubRewardsTileSignedInUser')
+data.setCell(26, 2, 'com.test.regression.cub.testscripts.HeaderFooterNavigation')
+data.setCell(26, 3, 20437);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'TermsAndConditionsSignedInUser')
+data.setCell(27, 2, 'com.test.regression.cub.testscripts.HeaderFooterNavigation')
+data.setCell(27, 3, 19393);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'CouponTileSignedInUser')
+data.setCell(28, 2, 'com.test.regression.cub.testscripts.HeaderFooterNavigation')
+data.setCell(28, 3, 19386);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'CakesandPartyTileSignedInUser')
+data.setCell(29, 2, 'com.test.regression.cub.testscripts.HeaderFooterNavigation')
+data.setCell(29, 3, 17569);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'aboutUsSignedInUser')
+data.setCell(30, 2, 'com.test.regression.cub.testscripts.HeaderFooterNavigation')
+data.setCell(30, 3, 16991);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'RecallsSignedInUser')
+data.setCell(31, 2, 'com.test.regression.cub.testscripts.HeaderFooterNavigation')
+data.setCell(31, 3, 16919);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'CareersSignedInUser')
+data.setCell(32, 2, 'com.test.regression.cub.testscripts.HeaderFooterNavigation')
+data.setCell(32, 3, 12771);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'validLogin')
+data.setCell(33, 2, 'com.test.regression.cub.testscripts.SignIn')
+data.setCell(33, 3, 10444);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'Careers')
+data.setCell(34, 2, 'com.test.regression.cub.testscripts.HeaderFooterNavigation')
+data.setCell(34, 3, 10354);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'CustomerService')
+data.setCell(35, 2, 'com.test.regression.cub.testscripts.HeaderFooterNavigation')
+data.setCell(35, 3, 8661);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'CouponTile')
+data.setCell(36, 2, 'com.test.regression.cub.testscripts.HeaderFooterNavigation')
+data.setCell(36, 3, 8494);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'Recalls')
+data.setCell(37, 2, 'com.test.regression.cub.testscripts.HeaderFooterNavigation')
+data.setCell(37, 3, 6499);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'inValidLogin')
+data.setCell(38, 2, 'com.test.regression.cub.testscripts.SignIn')
+data.setCell(38, 3, 6430);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'aboutUs')
+data.setCell(39, 2, 'com.test.regression.cub.testscripts.HeaderFooterNavigation')
+data.setCell(39, 3, 6238);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'PrivacyPolicy')
+data.setCell(40, 2, 'com.test.regression.cub.testscripts.HeaderFooterNavigation')
+data.setCell(40, 3, 6230);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'CubRewardsTile')
+data.setCell(41, 2, 'com.test.regression.cub.testscripts.HeaderFooterNavigation')
+data.setCell(41, 3, 5907);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'TermsAndConditions')
+data.setCell(42, 2, 'com.test.regression.cub.testscripts.HeaderFooterNavigation')
+data.setCell(42, 3, 5501);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'CakesandPartyTile')
+data.setCell(43, 2, 'com.test.regression.cub.testscripts.HeaderFooterNavigation')
+data.setCell(43, 3, 3728);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 20 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -207,7 +1217,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -216,6 +1226,8 @@ return data;
                 <span class="ignored-method-name">addCouponForAuthorizedUser</span>
                 <br/>
                 <span class="ignored-method-name">addCouponForNoCardNewUser</span>
+                <br/>
+                <span class="ignored-method-name">addCouponForWantOneNewUser</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -227,22 +1239,735 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.test.regression.cub.testscripts.Coupons</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.test.regression.cub.testscripts.SignIn</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.Coupons.addCouponForWantOneNewUser())</span>
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.SignIn.validLogin())</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">addCouponForWantOneNewUser</span>
-                <span class="method-start">18401 ms</span>
+                <span class="method-name">validLogin</span>
+                <span class="method-start">21289 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">breakDown([TestResult name=addCouponForWantOneNewUser status=SUCCESS method=Coupons.addCouponForWantOneNewUser...)</span>
-                <span class="method-start">103675 ms</span>
+                <span class="method-name">breakDown([TestResult name=validLogin status=SUCCESS method=SignIn.validLogin()[pri:0, instance:com.test.regre...)</span>
+                <span class="method-start">31735 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
-                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.Coupons.addCouponForWantOneNewUser())</span>
-                <span class="method-start">103675 ms</span>
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.SignIn.validLogin())</span>
+                <span class="method-start">31736 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.SignIn.inValidLogin())</span>
+                <span class="method-start">37589 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">inValidLogin</span>
+                <span class="method-start">59489 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=inValidLogin status=SUCCESS method=SignIn.inValidLogin()[pri:0, instance:com.test.r...)</span>
+                <span class="method-start">65922 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.SignIn.inValidLogin())</span>
+                <span class="method-start">65922 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.regression.cub.testscripts.SignUp</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.SignUp.validSignUp_noCard())</span>
+                <span class="method-start">69001 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validSignUp_noCard</span>
+                <span class="method-start">87246 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=validSignUp_noCard status=SUCCESS method=SignUp.validSignUp_noCard()[pri:0, instanc...)</span>
+                <span class="method-start">109095 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.SignUp.validSignUp_noCard())</span>
+                <span class="method-start">109095 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.SignUp.validSignUp_yesIHaveOne())</span>
+                <span class="method-start">112899 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validSignUp_yesIHaveOne</span>
+                <span class="method-start">135504 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=validSignUp_yesIHaveOne status=SUCCESS method=SignUp.validSignUp_yesIHaveOne()[pri:...)</span>
+                <span class="method-start">157433 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.SignUp.validSignUp_yesIHaveOne())</span>
+                <span class="method-start">157433 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.SignUp.validSignUp_noCardButWantOne())</span>
+                <span class="method-start">161575 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validSignUp_noCardButWantOne</span>
+                <span class="method-start">179870 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=validSignUp_noCardButWantOne status=SUCCESS method=SignUp.validSignUp_noCardButWant...)</span>
+                <span class="method-start">213836 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.SignUp.validSignUp_noCardButWantOne())</span>
+                <span class="method-start">213836 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.regression.cub.testscripts.ShoppingLists</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.ShoppingLists.createShoppingList())</span>
+                <span class="method-start">217876 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createShoppingList</span>
+                <span class="method-start">279909 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=createShoppingList status=FAILURE method=ShoppingLists.createShoppingList()[pri:0, ...)</span>
+                <span class="method-start">351648 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.ShoppingLists.createShoppingList())</span>
+                <span class="method-start">352133 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.ShoppingLists.Add3Items2ShoppingList())</span>
+                <span class="method-start">355795 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Add3Items2ShoppingList</span>
+                <span class="method-start">375353 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=Add3Items2ShoppingList status=SUCCESS method=ShoppingLists.Add3Items2ShoppingList()...)</span>
+                <span class="method-start">412084 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.ShoppingLists.Add3Items2ShoppingList())</span>
+                <span class="method-start">412084 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.ShoppingLists.AddnEditItemsInShoppingList())</span>
+                <span class="method-start">415086 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">AddnEditItemsInShoppingList</span>
+                <span class="method-start">433486 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=AddnEditItemsInShoppingList status=SUCCESS method=ShoppingLists.AddnEditItemsInShop...)</span>
+                <span class="method-start">489414 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.ShoppingLists.AddnEditItemsInShoppingList())</span>
+                <span class="method-start">489414 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.ShoppingLists.deleteItemFromSL())</span>
+                <span class="method-start">495811 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteItemFromSL</span>
+                <span class="method-start">535917 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=deleteItemFromSL status=SUCCESS method=ShoppingLists.deleteItemFromSL()[pri:0, inst...)</span>
+                <span class="method-start">613445 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.ShoppingLists.deleteItemFromSL())</span>
+                <span class="method-start">613445 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.ShoppingLists.testClearList())</span>
+                <span class="method-start">617052 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testClearList</span>
+                <span class="method-start">634574 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=testClearList status=SUCCESS method=ShoppingLists.testClearList()[pri:0, instance:c...)</span>
+                <span class="method-start">711278 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.ShoppingLists.testClearList())</span>
+                <span class="method-start">711278 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.regression.cub.testscripts.HeaderFooterNavigation</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.aboutUs())</span>
+                <span class="method-start">715506 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">aboutUs</span>
+                <span class="method-start">734729 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=aboutUs status=SUCCESS method=HeaderFooterNavigation.aboutUs()[pri:0, instance:com....)</span>
+                <span class="method-start">740969 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.aboutUs())</span>
+                <span class="method-start">740969 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.Careers())</span>
+                <span class="method-start">744866 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Careers</span>
+                <span class="method-start">762086 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=Careers status=SUCCESS method=HeaderFooterNavigation.Careers()[pri:0, instance:com....)</span>
+                <span class="method-start">772443 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.Careers())</span>
+                <span class="method-start">772443 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.Recalls())</span>
+                <span class="method-start">775394 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Recalls</span>
+                <span class="method-start">792269 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=Recalls status=SUCCESS method=HeaderFooterNavigation.Recalls()[pri:0, instance:com....)</span>
+                <span class="method-start">798769 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.Recalls())</span>
+                <span class="method-start">798769 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.PrivacyPolicy())</span>
+                <span class="method-start">802511 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">PrivacyPolicy</span>
+                <span class="method-start">819190 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=PrivacyPolicy status=SUCCESS method=HeaderFooterNavigation.PrivacyPolicy()[pri:0, i...)</span>
+                <span class="method-start">825421 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.PrivacyPolicy())</span>
+                <span class="method-start">825421 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.TermsAndConditions())</span>
+                <span class="method-start">832410 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TermsAndConditions</span>
+                <span class="method-start">848399 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=TermsAndConditions status=SUCCESS method=HeaderFooterNavigation.TermsAndConditions(...)</span>
+                <span class="method-start">853900 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.TermsAndConditions())</span>
+                <span class="method-start">853901 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.CustomerService())</span>
+                <span class="method-start">857893 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CustomerService</span>
+                <span class="method-start">877197 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=CustomerService status=SUCCESS method=HeaderFooterNavigation.CustomerService()[pri:...)</span>
+                <span class="method-start">885861 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.CustomerService())</span>
+                <span class="method-start">885862 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.aboutUsSignedInUser())</span>
+                <span class="method-start">889274 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">aboutUsSignedInUser</span>
+                <span class="method-start">904856 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=aboutUsSignedInUser status=SUCCESS method=HeaderFooterNavigation.aboutUsSignedInUse...)</span>
+                <span class="method-start">921849 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.aboutUsSignedInUser())</span>
+                <span class="method-start">921849 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.CareersSignedInUser())</span>
+                <span class="method-start">925126 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CareersSignedInUser</span>
+                <span class="method-start">941773 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=CareersSignedInUser status=SUCCESS method=HeaderFooterNavigation.CareersSignedInUse...)</span>
+                <span class="method-start">954545 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.CareersSignedInUser())</span>
+                <span class="method-start">954545 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.RecallsSignedInUser())</span>
+                <span class="method-start">957972 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">RecallsSignedInUser</span>
+                <span class="method-start">973575 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=RecallsSignedInUser status=SUCCESS method=HeaderFooterNavigation.RecallsSignedInUse...)</span>
+                <span class="method-start">990494 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.RecallsSignedInUser())</span>
+                <span class="method-start">990495 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.PrivacyPolicySignedInUser())</span>
+                <span class="method-start">994115 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">PrivacyPolicySignedInUser</span>
+                <span class="method-start">1012099 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=PrivacyPolicySignedInUser status=SUCCESS method=HeaderFooterNavigation.PrivacyPolic...)</span>
+                <span class="method-start">1032786 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.PrivacyPolicySignedInUser())</span>
+                <span class="method-start">1032786 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.TermsAndConditionsSignedInUse...)</span>
+                <span class="method-start">1038827 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TermsAndConditionsSignedInUser</span>
+                <span class="method-start">1062723 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=TermsAndConditionsSignedInUser status=SUCCESS method=HeaderFooterNavigation.TermsAn...)</span>
+                <span class="method-start">1082118 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.TermsAndConditionsSignedInUse...)</span>
+                <span class="method-start">1082119 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.CustomerServiceSignedInUser())</span>
+                <span class="method-start">1085409 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CustomerServiceSignedInUser</span>
+                <span class="method-start">1102053 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=CustomerServiceSignedInUser status=SUCCESS method=HeaderFooterNavigation.CustomerSe...)</span>
+                <span class="method-start">1122594 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.CustomerServiceSignedInUser())</span>
+                <span class="method-start">1122597 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.WeeklyAdTile())</span>
+                <span class="method-start">1126933 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">WeeklyAdTile</span>
+                <span class="method-start">1146084 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=WeeklyAdTile status=SUCCESS method=HeaderFooterNavigation.WeeklyAdTile()[pri:0, ins...)</span>
+                <span class="method-start">1167334 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.WeeklyAdTile())</span>
+                <span class="method-start">1167335 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.CouponTile())</span>
+                <span class="method-start">1170711 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CouponTile</span>
+                <span class="method-start">1195086 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=CouponTile status=SUCCESS method=HeaderFooterNavigation.CouponTile()[pri:0, instanc...)</span>
+                <span class="method-start">1203586 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.CouponTile())</span>
+                <span class="method-start">1203586 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.CakesandPartyTile())</span>
+                <span class="method-start">1206416 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CakesandPartyTile</span>
+                <span class="method-start">1224605 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=CakesandPartyTile status=SUCCESS method=HeaderFooterNavigation.CakesandPartyTile()[...)</span>
+                <span class="method-start">1228334 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.CakesandPartyTile())</span>
+                <span class="method-start">1228335 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.CubRewardsTile())</span>
+                <span class="method-start">1231951 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CubRewardsTile</span>
+                <span class="method-start">1250244 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=CubRewardsTile status=SUCCESS method=HeaderFooterNavigation.CubRewardsTile()[pri:0,...)</span>
+                <span class="method-start">1256152 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.CubRewardsTile())</span>
+                <span class="method-start">1256152 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.WeeklyAdTileSignedInUser())</span>
+                <span class="method-start">1262472 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">WeeklyAdTileSignedInUser</span>
+                <span class="method-start">1282999 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=WeeklyAdTileSignedInUser status=SUCCESS method=HeaderFooterNavigation.WeeklyAdTileS...)</span>
+                <span class="method-start">1320760 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.WeeklyAdTileSignedInUser())</span>
+                <span class="method-start">1320760 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.CouponTileSignedInUser())</span>
+                <span class="method-start">1325668 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CouponTileSignedInUser</span>
+                <span class="method-start">1344084 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=CouponTileSignedInUser status=SUCCESS method=HeaderFooterNavigation.CouponTileSigne...)</span>
+                <span class="method-start">1363470 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.CouponTileSignedInUser())</span>
+                <span class="method-start">1363470 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.CakesandPartyTileSignedInUser...)</span>
+                <span class="method-start">1368510 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CakesandPartyTileSignedInUser</span>
+                <span class="method-start">1387332 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=CakesandPartyTileSignedInUser status=SUCCESS method=HeaderFooterNavigation.Cakesand...)</span>
+                <span class="method-start">1404902 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.CakesandPartyTileSignedInUser...)</span>
+                <span class="method-start">1404902 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.CubRewardsTileSignedInUser())</span>
+                <span class="method-start">1408381 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CubRewardsTileSignedInUser</span>
+                <span class="method-start">1425195 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=CubRewardsTileSignedInUser status=SUCCESS method=HeaderFooterNavigation.CubRewardsT...)</span>
+                <span class="method-start">1445633 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.HeaderFooterNavigation.CubRewardsTileSignedInUser())</span>
+                <span class="method-start">1445633 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.regression.cub.testscripts.MyAccount</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.MyAccount.ChangePwdValid())</span>
+                <span class="method-start">1451044 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ChangePwdValid</span>
+                <span class="method-start">1467196 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=ChangePwdValid status=FAILURE method=MyAccount.ChangePwdValid()[pri:0, instance:com...)</span>
+                <span class="method-start">1519730 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.MyAccount.ChangePwdValid())</span>
+                <span class="method-start">1520193 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.MyAccount.ChangePwdWrongOldPwd())</span>
+                <span class="method-start">1523471 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ChangePwdWrongOldPwd</span>
+                <span class="method-start">1539931 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=ChangePwdWrongOldPwd status=SUCCESS method=MyAccount.ChangePwdWrongOldPwd()[pri:0, ...)</span>
+                <span class="method-start">1561536 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.MyAccount.ChangePwdWrongOldPwd())</span>
+                <span class="method-start">1561537 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.MyAccount.ChangePwdSpace())</span>
+                <span class="method-start">1565186 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ChangePwdSpace</span>
+                <span class="method-start">1580916 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=ChangePwdSpace status=SUCCESS method=MyAccount.ChangePwdSpace()[pri:0, instance:com...)</span>
+                <span class="method-start">1609582 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.MyAccount.ChangePwdSpace())</span>
+                <span class="method-start">1609582 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.MyAccount.ChangePwdLengthyPwd())</span>
+                <span class="method-start">1612484 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ChangePwdLengthyPwd</span>
+                <span class="method-start">1629501 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=ChangePwdLengthyPwd status=SUCCESS method=MyAccount.ChangePwdLengthyPwd()[pri:0, in...)</span>
+                <span class="method-start">1697609 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.MyAccount.ChangePwdLengthyPwd())</span>
+                <span class="method-start">1697609 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.MyAccount.ChangePwdShortPwd())</span>
+                <span class="method-start">1702673 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ChangePwdShortPwd</span>
+                <span class="method-start">1719605 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=ChangePwdShortPwd status=SUCCESS method=MyAccount.ChangePwdShortPwd()[pri:0, instan...)</span>
+                <span class="method-start">1740156 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.MyAccount.ChangePwdShortPwd())</span>
+                <span class="method-start">1740157 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.MyAccount.ChangePwdDifferentNewPwds())</span>
+                <span class="method-start">1743895 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ChangePwdDifferentNewPwds</span>
+                <span class="method-start">1759762 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=ChangePwdDifferentNewPwds status=SUCCESS method=MyAccount.ChangePwdDifferentNewPwds...)</span>
+                <span class="method-start">1781351 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.MyAccount.ChangePwdDifferentNewPwds())</span>
+                <span class="method-start">1781351 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.regression.cub.testscripts.FindAStore</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.FindAStore.setStoreGuestZipCode())</span>
+                <span class="method-start">1786233 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">setStoreGuestZipCode</span>
+                <span class="method-start">1806568 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=setStoreGuestZipCode status=SUCCESS method=FindAStore.setStoreGuestZipCode()[pri:0,...)</span>
+                <span class="method-start">1832753 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.FindAStore.setStoreGuestZipCode())</span>
+                <span class="method-start">1832754 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.FindAStore.setStoreGuestCityState())</span>
+                <span class="method-start">1836298 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">setStoreGuestCityState</span>
+                <span class="method-start">1854642 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=setStoreGuestCityState status=SUCCESS method=FindAStore.setStoreGuestCityState()[pr...)</span>
+                <span class="method-start">1883352 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.FindAStore.setStoreGuestCityState())</span>
+                <span class="method-start">1883352 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.FindAStore.setStoreAuthorizedZipcode())</span>
+                <span class="method-start">1891614 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setStoreAuthorizedZipcode</span>
+                <span class="method-start">1910232 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=setStoreAuthorizedZipcode status=FAILURE method=FindAStore.setStoreAuthorizedZipcod...)</span>
+                <span class="method-start">1986380 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.FindAStore.setStoreAuthorizedZipcode())</span>
+                <span class="method-start">1986946 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.FindAStore.setStoreAuthorizedCityState())</span>
+                <span class="method-start">1990451 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setStoreAuthorizedCityState</span>
+                <span class="method-start">2009124 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=setStoreAuthorizedCityState status=FAILURE method=FindAStore.setStoreAuthorizedCity...)</span>
+                <span class="method-start">2060951 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.FindAStore.setStoreAuthorizedCityState())</span>
+                <span class="method-start">2061244 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.FindAStore.Miles20())</span>
+                <span class="method-start">2064727 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Miles20</span>
+                <span class="method-start">2090241 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=Miles20 status=SUCCESS method=FindAStore.Miles20()[pri:0, instance:com.test.regress...)</span>
+                <span class="method-start">2134325 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.FindAStore.Miles20())</span>
+                <span class="method-start">2134325 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.FindAStore.Miles50())</span>
+                <span class="method-start">2138320 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Miles50</span>
+                <span class="method-start">2159353 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=Miles50 status=SUCCESS method=FindAStore.Miles50()[pri:0, instance:com.test.regress...)</span>
+                <span class="method-start">2193373 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.FindAStore.Miles50())</span>
+                <span class="method-start">2193373 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.FindAStore.changeStoreFromDifferentPages())</span>
+                <span class="method-start">2196583 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">changeStoreFromDifferentPages</span>
+                <span class="method-start">2213315 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=changeStoreFromDifferentPages status=FAILURE method=FindAStore.changeStoreFromDiffe...)</span>
+                <span class="method-start">2248571 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.FindAStore.changeStoreFromDifferentPages())</span>
+                <span class="method-start">2249494 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization(public void com.test.regression.cub.testscripts.FindAStore.StoresbyState())</span>
+                <span class="method-start">2255021 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">StoresbyState</span>
+                <span class="method-start">2273002 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">breakDown([TestResult name=StoresbyState status=SUCCESS method=FindAStore.StoresbyState()[pri:0, instance:com....)</span>
+                <span class="method-start">2312998 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver(public void com.test.regression.cub.testscripts.FindAStore.StoresbyState())</span>
+                <span class="method-start">2312998 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

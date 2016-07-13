@@ -33,39 +33,63 @@ public class FindAStore extends SuiteBase {
 	ReadXML readxml = new ReadXML();
 	
 	
-	//GUEST USER SELECTING STORE
-		/*@Test(priority=1)
-		public void ZipCodeUser() throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException
+	//Guest User setting a Store with Zipcode
+	
+		@Test(priority=14, enabled=true)
+		public void setStoreGuestZipCode() 
 		{
+			try{
+			
 			Map<String, String> StoreData = readxml.getUserData("TestData.xml", "new-user-4");
 			String zipcode = StoreData.get("ZipCode");
 			
-			findastore = new FindAStore(_driver);
-			
-			log.info("Find a Store page is launched");
+			findastore = new FindAStorePage(_driver);
+		
 			findastore.clickFindAStore();
 			findastore.enterZipCode(zipcode);
 	
 			findastore.clicksearchbutton();
 		
 			findastore.clickMakemyStore();
-			String title=_driver.getTitle();
-			System.out.println(title);
+				String title=_driver.getTitle();
+				System.out.println(title);
+			
 			Assert.assertEquals("Cub Foods - View Store", title);
-			log.info("Store Locations Page-Success" );
-			closeDriver(_driver);
+			
+				log.info("Store Locations Page-Success" );
+			
+			} catch (IOException ioe) {
+				log.info(ioe.getMessage());	
+				Assert.fail("Caught IOException Exception");
+			} catch (XPathExpressionException xee) {
+				log.info(xee.getMessage());	
+				Assert.fail("Caught XPathExpressionException Exception");
+			} catch (ParserConfigurationException pce) {
+				log.info(pce.getMessage());
+				Assert.fail("Caught ParserConfigurationException Exception");
+			} catch (SAXException saxe) {
+				log.info(saxe.getMessage());
+				Assert.fail("Caught SAXException Exception");
+			} catch (Exception e) {
+				log.info(e.getMessage());
+				Assert.fail(e.getLocalizedMessage());
+			}
 			
 		}
-		@Test(priority=2)
-		public void CityName() throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException
+		
+		
+		@Test(priority=15 , enabled=true)
+		public void setStoreGuestCityState() 
 		{
+			try{
+				
 			Map<String, String> StoreData = readxml.getUserData("TestData.xml", "new-user-4");
 			String cityname = StoreData.get("CityName");
 			String state = StoreData.get("State");
 			
-			findastore = new FindAStore(_driver);
+			findastore = new FindAStorePage(_driver);
 			
-			log.info("Find a Store page is launched");
+				log.info("Find a Store page is launched");
 			findastore.clickFindAStore();
 			findastore.entercity(cityname);
 			
@@ -74,277 +98,196 @@ public class FindAStore extends SuiteBase {
 			findastore.clicksearchbutton();
 			
 			findastore.clickMakemyStore();
-			String title=_driver.getTitle();
-			System.out.println(title);
+				String title=_driver.getTitle();
+				System.out.println(title);
 			Assert.assertEquals("Cub Foods - View Store", title);
-			log.info("Store Locations Page-Success" );	
+				log.info("Store Locations Page-Success" );	
 			
+			} catch (IOException ioe) {
+				log.info(ioe.getMessage());	
+				Assert.fail("Caught IOException Exception");
+			} catch (XPathExpressionException xee) {
+				log.info(xee.getMessage());	
+				Assert.fail("Caught XPathExpressionException Exception");
+			} catch (ParserConfigurationException pce) {
+				log.info(pce.getMessage());
+				Assert.fail("Caught ParserConfigurationException Exception");
+			} catch (SAXException saxe) {
+				log.info(saxe.getMessage());
+				Assert.fail("Caught SAXException Exception");
+			} catch (Exception e) {
+				log.info(e.getMessage());
+				Assert.fail(e.getLocalizedMessage());
+			}
 		}
 		
 		//SIGN IN User with ZIPCODE
 		
-		@Test(priority=3)
-		public void validLogin()throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException {
-			
-			// Retrieving test data for valid login
-			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "carded-user");
-			String userId = validLogin.get("UserName");
-			String password = validLogin.get("password");
-			Map<String, String> StoreData = readxml.getUserData("TestData.xml", "new-user-4");
-			String zipcode = StoreData.get("ZipCode");
-			
-			cubHome = new CubHome(_driver);
-			
-				log.info("User Name : " + userId);
-				log.info("Password : " + password);
-				log.info("Cub Home page is launched");
-			cubHome.clickSignInLink();
-				log.info("SignIn Link Clicked");
-			cubHome.enterLoginDetails(userId, password);
-				log.info("Entered login Details");
-			cubHome.clickSignInButton();
-				log.info("SignInButton Clicked");
-				log.info("Entered all details and clicked on Sign In Button");
+		@Test(priority=16, enabled=true)
+		public void setStoreAuthorizedZipcode() {
+
+		try{
 				
-				findastore = new FindAStore(_driver);
-				Thread.sleep(5000);
-				log.info("Find a Store page is launched");
-				
-				WebElement element = _driver.findElement(By.xpath("//a[text()='Find a Store']"));
-				
-				element.click();
+		// Retrieving test data for valid login
+		Map<String, String> validLogin = readxml.getUserData("TestData.xml", "carded-user");
+		String userId = validLogin.get("UserName");
+		String password = validLogin.get("password");
+		Map<String, String> StoreData = readxml.getUserData("TestData.xml", "new-user-4");
+		String zipcode = StoreData.get("ZipCode");
+
+		cubHome = new CubHome(_driver);
+
+			log.info("User Name : " + userId);
+			log.info("Password : " + password);
+			log.info("Cub Home page is launched");
+		cubHome.clickSignInLink();
+			
+		cubHome.enterLoginDetails(userId, password);
 		
-				findastore.clickFindAStore();
-				findastore.enterZipCode(zipcode);
+		cubHome.clickSignInButton();
+			Thread.sleep(5000);
+			log.info("SignInButton Clicked");
+			log.info("Entered all details and clicked on Sign In Button");
+
+		findastore = new FindAStorePage(_driver);
+			Thread.sleep(5000);
+			log.info("Find a Store page is launched");
+
+		findastore.clickFAS();
+			log.info("Entered Zip Code details");
+		findastore.enterZipCode(zipcode);
+			log.info("Search button is CLicked");
+		findastore.clicksearchbutton();
+			log.info("Store Locations page is displayed");
+			Thread.sleep(5000);
+		findastore.ClickStore1();
+
+			Thread.sleep(5000);
+		findastore.clickMakemyStore();
+			log.info("My Store is set");
 		
-				findastore.clicksearchbutton();
-			
-				findastore.clickMakemyStore();
-				String title=_driver.getTitle();
-			System.out.println(title);
-			Assert.assertEquals("Cub Foods - View Store", title);
-			log.info("Store Locations Page-Success" );
-				closeDriver(_driver);
-		}
-		
-		//SIGN IN User with CITY and STATE
-		
-		@Test(priority=4)
-		public void validLoginCity()throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException {
-			
-			// Retrieving test data for valid login
-			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "carded-user");
-			String userId = validLogin.get("UserName");
-			String password = validLogin.get("password");
-			Map<String, String> StoreData = readxml.getUserData("TestData.xml", "new-user-4");
-			String cityname = StoreData.get("CityName");
-			String state = StoreData.get("State");
-			
-			cubHome = new CubHome(_driver);
-			
-				log.info("User Name : " + userId);
-				log.info("Password : " + password);
-				log.info("Cub Home page is launched");
-			cubHome.clickSignInLink();
-				log.info("SignIn Link Clicked");
-			cubHome.enterLoginDetails(userId, password);
-				log.info("Entered login Details");
-			cubHome.clickSignInButton();
-				log.info("SignInButton Clicked");
-				log.info("Entered all details and clicked on Sign In Button");
-				
-				findastore = new FindAStore(_driver);
-				Thread.sleep(5000);
-				log.info("Find a Store page is launched");
-				
-				WebElement element = _driver.findElement(By.xpath("//a[text()='Find a Store']"));
-				
-				element.click();
-				findastore = new FindAStore(_driver);
-				
-				log.info("Find a Store page is launched");
-				findastore.clickFindAStore();
-				findastore.entercity(cityname);
-				
-				findastore.selectstate(state);
-				
-				findastore.clicksearchbutton();
-				
-				findastore.clickMakemyStore();	
-				
+			Thread.sleep(5000);
 			String title=_driver.getTitle();
 			System.out.println(title);
-			Assert.assertEquals("Cub Foods - View Store", title);
+		Assert.assertEquals("Cub Foods - View Store", title);
 			log.info("Store Locations Page-Success" );
-			closeDriver(_driver);
-	}*/
-		
-/*	//SIGN IN USER for 20 Miles
-		@Test(priority=5)
-		public void UserFor20Miles()throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException {
-			
-			// Retrieving test data for valid login
-			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "carded-user");
-			String userId = validLogin.get("UserName");
-			String password = validLogin.get("password");
-			Map<String, String> StoreData = readxml.getUserData("TestData.xml", "new-user-4");
-			String cityname = StoreData.get("CityName");
-			String state = StoreData.get("State");
-			
-			cubHome = new CubHome(_driver);
-			
-				log.info("User Name : " + userId);
-				log.info("Password : " + password);
-				log.info("Cub Home page is launched");
-			cubHome.clickSignInLink();
-				log.info("SignIn Link Clicked");
-			cubHome.enterLoginDetails(userId, password);
-				log.info("Entered login Details");
-			cubHome.clickSignInButton();
-				log.info("SignInButton Clicked");
-				log.info("Entered all details and clicked on Sign In Button");
-				
-				findastore = new FindAStore(_driver);
-				Thread.sleep(5000);
-				log.info("Find a Store page is launched");
-				
-				WebElement element = _driver.findElement(By.xpath("//a[text()='Find a Store']"));
-				element.click();
-				
-				log.info("Find a Store page is launched");
-				findastore.clickFindAStore();
-				findastore.entercity(cityname);
-				
-				findastore.selectstate(state);
-				
-				Select sel = new Select(_driver.findElement(By.id("find-radius")));
-			       sel.selectByVisibleText("20 Miles");
-			       
-				findastore.clicksearchbutton();
-				
-				findastore.clickMakemyStore();	
-				Thread.sleep(2000);
-				String title=_driver.getTitle();
-			System.out.println(title);
-			Assert.assertEquals("Cub Foods - View Store", title);
-			log.info("Store Locations Page-Success" );
-				closeDriver(_driver);
+
+		} catch (InterruptedException ie) {
+			log.info(ie.getMessage());
+			Assert.fail("Caught Interrupted Exception");
+		} catch (IOException ioe) {
+			log.info(ioe.getMessage());	
+			Assert.fail("Caught IOException Exception");
+		} catch (XPathExpressionException xee) {
+			log.info(xee.getMessage());	
+			Assert.fail("Caught XPathExpressionException Exception");
+		} catch (ParserConfigurationException pce) {
+			log.info(pce.getMessage());
+			Assert.fail("Caught ParserConfigurationException Exception");
+		} catch (SAXException saxe) {
+			log.info(saxe.getMessage());
+			Assert.fail("Caught SAXException Exception");
+		} catch (Exception e) {
+			log.info(e.getMessage());
+			Assert.fail(e.getLocalizedMessage());
 		}
 		
-		//SIGN IN USER for 50 Miles
+	}
+
 		
-		@Test(priority=6)
-		public void UserFor50Miles()throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException {
-			
-			// Retrieving test data for valid login
-			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "carded-user");
-			String userId = validLogin.get("UserName");
-			String password = validLogin.get("password");
-			Map<String, String> StoreData = readxml.getUserData("TestData.xml", "new-user-4");
-			String cityname = StoreData.get("CityName");
-			String state = StoreData.get("State");
-			
-			cubHome = new CubHome(_driver);
-			
-				log.info("User Name : " + userId);
-				log.info("Password : " + password);
-				log.info("Cub Home page is launched");
-			cubHome.clickSignInLink();
-				log.info("SignIn Link Clicked");
-			cubHome.enterLoginDetails(userId, password);
-				log.info("Entered login Details");
-			cubHome.clickSignInButton();
-				log.info("SignInButton Clicked");
-				log.info("Entered all details and clicked on Sign In Button");
+		//SIGN IN User with CITY and 11:16 AM 
+		@Test(priority=17,enabled=true)
+		public void setStoreAuthorizedCityState() {
+
+			try{
 				
-				findastore = new FindAStore(_driver);
-				Thread.sleep(5000);
-				log.info("Find a Store page is launched");
-				
-				WebElement element = _driver.findElement(By.xpath("//a[text()='Find a Store']"));
-				element.click();
-				
-				log.info("Find a Store page is launched");
-				findastore.clickFindAStore();
-				findastore.entercity(cityname);
-				
-				findastore.selectstate(state);
-				
-				Select sel = new Select(_driver.findElement(By.id("find-radius")));
-			       sel.selectByVisibleText("50 Miles");
-			       
-				findastore.clicksearchbutton();
-				
-				findastore.clickMakemyStore();	
-				Thread.sleep(2000);
-				String title=_driver.getTitle();
+		// Retrieving test data for valid login
+		Map<String, String> validLogin = readxml.getUserData("TestData.xml", "carded-user");
+		String userId = validLogin.get("UserName");
+		String password = validLogin.get("password");
+		Map<String, String> StoreData = readxml.getUserData("TestData.xml", "new-user-4");
+		String cityname = StoreData.get("CityName");
+		String state = StoreData.get("State");
+
+
+		cubHome = new CubHome(_driver);
+
+		log.info("User Name : " + userId);
+		log.info("Password : " + password);
+		log.info("Cub Home page is launched");
+		cubHome.clickSignInLink();
+		
+		cubHome.enterLoginDetails(userId, password);
+		
+		cubHome.clickSignInButton();
+
+		findastore = new FindAStorePage(_driver);
+			Thread.sleep(10000);
+			log.info("Find a Store page is launched");
+			Thread.sleep(5000);
+
+		findastore.clickFAS();
+
+			log.info("Find a Store page is launched");
+
+		findastore.entercity(cityname);
+			log.info("Entered City name details");
+
+		findastore.selectstate(state);
+			log.info("Entered State name details");
+
+		findastore.clicksearchbutton();
+			log.info("Search button is CLicked");
+			log.info("Store Locations page is displayed");
+
+			Thread.sleep(5000);
+		findastore.ClickStore2();
+		
+		Thread.sleep(5000);
+			log.info("My Store is set");
+		
+		Thread.sleep(5000);
+
+			String title=_driver.getTitle();
 			System.out.println(title);
-			Assert.assertEquals("Cub Foods - View Store", title);
+		Assert.assertEquals("Cub Foods - View Store", title);
 			log.info("Store Locations Page-Success" );
-				closeDriver(_driver);
+
+			} catch (InterruptedException ie) {
+				log.info(ie.getMessage());
+				Assert.fail("Caught Interrupted Exception");
+			} catch (IOException ioe) {
+				log.info(ioe.getMessage());	
+				Assert.fail("Caught IOException Exception");
+			} catch (XPathExpressionException xee) {
+				log.info(xee.getMessage());	
+				Assert.fail("Caught XPathExpressionException Exception");
+			} catch (ParserConfigurationException pce) {
+				log.info(pce.getMessage());
+				Assert.fail("Caught ParserConfigurationException Exception");
+			} catch (SAXException saxe) {
+				log.info(saxe.getMessage());
+				Assert.fail("Caught SAXException Exception");
+			} catch (Exception e) {
+				log.info(e.getMessage());
+				Assert.fail(e.getLocalizedMessage());
+			}
 		}
-		
-		//SIGN IN USER for 100 Miles
-		
-		@Test(priority=7)
-		public void UserFor100Miles()throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException {
-			
-			// Retrieving test data for valid login
-			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "carded-user");
-			String userId = validLogin.get("UserName");
-			String password = validLogin.get("password");
-			Map<String, String> StoreData = readxml.getUserData("TestData.xml", "new-user-4");
-			String cityname = StoreData.get("CityName");
-			String state = StoreData.get("State");
-			
-			cubHome = new CubHome(_driver);
-			
-				log.info("User Name : " + userId);
-				log.info("Password : " + password);
-				log.info("Cub Home page is launched");
-			cubHome.clickSignInLink();
-				log.info("SignIn Link Clicked");
-			cubHome.enterLoginDetails(userId, password);
-				log.info("Entered login Details");
-			cubHome.clickSignInButton();
-				log.info("SignInButton Clicked");
-				log.info("Entered all details and clicked on Sign In Button");
-				
-				findastore = new FindAStore(_driver);
-				Thread.sleep(5000);
-				log.info("Find a Store page is launched");
-				
-				WebElement element = _driver.findElement(By.xpath("//a[text()='Find a Store']"));
-				element.click();
-				
-				log.info("Find a Store page is launched");
-				findastore.clickFindAStore();
-				findastore.entercity(cityname);
-				
-				findastore.selectstate(state);
-				
-				Select sel = new Select(_driver.findElement(By.id("find-radius")));
-			       sel.selectByVisibleText("100 Miles");
-			       
-				findastore.clicksearchbutton();
-				
-				findastore.clickMakemyStore();	
-				Thread.sleep(2000);
-				closeDriver(_driver);
-		}*/
-		
+
+
 		//Checking miles
 		
-		/*@Test(priority=8)
+		@Test(priority=18, enabled=true)
 		
-		public void Miles20() throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException
+		public void Miles20() 
 		{
+			try{
 			Map<String, String> StoreData = readxml.getUserData("TestData.xml", "new-user-4");
 			String zipcode = StoreData.get("ZipCode");
 			int results=0;
-			findastore = new FindAStore(_driver);
+			findastore = new FindAStorePage(_driver);
 			
-			log.info("Find a Store page is launched");
+				log.info("Find a Store page is launched");
 			findastore.clickFindAStore();
 			findastore.enterZipCode(zipcode);
 			Select sel1 = new Select(_driver.findElement(By.id("find-radius")));
@@ -367,18 +310,39 @@ public class FindAStore extends SuiteBase {
 		    	 Assert.assertTrue(false);
 		    	 System.out.println("Fail");
 		     }
-			//findastore.clickMakemyStore();
-			closeDriver(_driver);
+		     
+			} catch (InterruptedException ie) {
+				log.info(ie.getMessage());
+				Assert.fail("Caught Interrupted Exception");
+			} catch (IOException ioe) {
+				log.info(ioe.getMessage());	
+				Assert.fail("Caught IOException Exception");
+			} catch (XPathExpressionException xee) {
+				log.info(xee.getMessage());	
+				Assert.fail("Caught XPathExpressionException Exception");
+			} catch (ParserConfigurationException pce) {
+				log.info(pce.getMessage());
+				Assert.fail("Caught ParserConfigurationException Exception");
+			} catch (SAXException saxe) {
+				log.info(saxe.getMessage());
+				Assert.fail("Caught SAXException Exception");
+			} catch (Exception e) {
+				log.info(e.getMessage());
+				Assert.fail(e.getLocalizedMessage());
+			}
+			
 			}
 		
-@Test(priority=9)
+		@Test(priority=19, enabled=true)
 		
-		public void Miles50() throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException
+		public void Miles50()
 		{
+			try{
+				
 			Map<String, String> StoreData = readxml.getUserData("TestData.xml", "new-user-4");
 			String zipcode = StoreData.get("ZipCode");
 			int results=0;
-			findastore = new FindAStore(_driver);
+			findastore = new FindAStorePage(_driver);
 			
 			log.info("Find a Store page is launched");
 			findastore.clickFindAStore();
@@ -403,21 +367,41 @@ public class FindAStore extends SuiteBase {
 		    	 Assert.assertTrue(false);
 		    	 System.out.println("Fail");
 		     }
-			//findastore.clickMakemyStore();
-			closeDriver(_driver);
-			}*/
+			} catch (InterruptedException ie) {
+				log.info(ie.getMessage());
+				Assert.fail("Caught Interrupted Exception");
+			} catch (IOException ioe) {
+				log.info(ioe.getMessage());	
+				Assert.fail("Caught IOException Exception");
+			} catch (XPathExpressionException xee) {
+				log.info(xee.getMessage());	
+				Assert.fail("Caught XPathExpressionException Exception");
+			} catch (ParserConfigurationException pce) {
+				log.info(pce.getMessage());
+				Assert.fail("Caught ParserConfigurationException Exception");
+			} catch (SAXException saxe) {
+				log.info(saxe.getMessage());
+				Assert.fail("Caught SAXException Exception");
+			} catch (Exception e) {
+				log.info(e.getMessage());
+				Assert.fail(e.getLocalizedMessage());
+			}
+		
+			}
 
 //Check for Change store option present in Savings page for GUEST USER
 
-/*	@Test(priority=10)
+	@Test(priority=20, enabled=true)
 	
-	public void ChangeStore() throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException
+	public void changeStoreFromDifferentPages() 
 	{
+		try{
+			
 		Map<String, String> StoreData = readxml.getUserData("TestData.xml", "new-user-4");
 		String zipcode = StoreData.get("ZipCode");
 		String Add1=null;
 		String Add2=null;
-		findastore = new FindAStore(_driver);
+		findastore = new FindAStorePage(_driver);
 		
 		log.info("Find a Store page is launched");
 		findastore.clickOnSavings();
@@ -442,13 +426,33 @@ public class FindAStore extends SuiteBase {
 	       
 	     Assert.assertTrue(Address1.equals(Address2));
 	      System.out.println("pass");
-		closeDriver(_driver);
-		}*/
+		} catch (InterruptedException ie) {
+			log.info(ie.getMessage());
+			Assert.fail("Caught Interrupted Exception");
+		} catch (IOException ioe) {
+			log.info(ioe.getMessage());	
+			Assert.fail("Caught IOException Exception");
+		} catch (XPathExpressionException xee) {
+			log.info(xee.getMessage());	
+			Assert.fail("Caught XPathExpressionException Exception");
+		} catch (ParserConfigurationException pce) {
+			log.info(pce.getMessage());
+			Assert.fail("Caught ParserConfigurationException Exception");
+		} catch (SAXException saxe) {
+			log.info(saxe.getMessage());
+			Assert.fail("Caught SAXException Exception");
+		} catch (Exception e) {
+			log.info(e.getMessage());
+			Assert.fail(e.getLocalizedMessage());
+		}
+	}
 
 //Clicking on View Stores by State
-	@Test(priority=11)
-	public void StoresbyState() throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException
+	@Test(priority=21, enabled=true)
+	public void StoresbyState() 
 	{
+		try{
+			
 		findastore = new FindAStorePage(_driver);
 		//State1
 		log.info("Find a Store page is launched");
@@ -477,7 +481,14 @@ public class FindAStore extends SuiteBase {
 		Assert.assertEquals("Cub Foods - View Store", title1);
 		log.info("Store Locations Page-Success" );
 		Thread.sleep(2000);
-			
+		
+		} catch (InterruptedException ie) {
+			log.info(ie.getMessage());
+			Assert.fail("Caught Interrupted Exception");
+		} catch (Exception e) {
+			log.info(e.getMessage());
+			Assert.fail(e.getLocalizedMessage());
+		}
 	}
 		
 	}
