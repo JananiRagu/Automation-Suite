@@ -48,7 +48,7 @@ public class MyAccount extends SuiteBase
 		log.info("SignInButton Clicked");
 		log.info("Entered all details and clicked on Sign In Button");
 		log.info("User Signed In");
-			
+		Thread.sleep(5000);	
 	myAccount = new MyAccountPage(_driver);
 	Thread.sleep(5000);
 	myAccount.clickOnMyAccountUnderMyTools();
@@ -111,7 +111,7 @@ public class MyAccount extends SuiteBase
 		log.info("SignInButton Clicked");
 		log.info("Entered all details and clicked on Sign In Button");
 		log.info("User Signed In");
-			
+		Thread.sleep(5000);	
 		myAccount = new MyAccountPage(_driver);
 		Thread.sleep(5000);
 		myAccount.clickOnMyAccountUnderMyTools();
@@ -151,7 +151,7 @@ public class MyAccount extends SuiteBase
 		log.info("SignInButton Clicked");
 		log.info("Entered all details and clicked on Sign In Button");
 		log.info("User Signed In");
-			
+		Thread.sleep(5000);
 		myAccount = new MyAccountPage(_driver);
 		Thread.sleep(5000);
 		myAccount.clickOnMyAccountUnderMyTools();
@@ -192,7 +192,7 @@ public class MyAccount extends SuiteBase
 		log.info("SignInButton Clicked");
 		log.info("Entered all details and clicked on Sign In Button");
 		log.info("User Signed In");
-			
+		Thread.sleep(5000);
 		myAccount = new MyAccountPage(_driver);
 		Thread.sleep(5000);
 		myAccount.clickOnMyAccountUnderMyTools();
@@ -257,7 +257,7 @@ public class MyAccount extends SuiteBase
 		log.info("SignInButton Clicked");
 		log.info("Entered all details and clicked on Sign In Button");
 		log.info("User Signed In");
-			
+		Thread.sleep(5000);	
 		myAccount = new MyAccountPage(_driver);
 		Thread.sleep(5000);
 		myAccount.clickOnMyAccountUnderMyTools();
@@ -301,7 +301,7 @@ public class MyAccount extends SuiteBase
 		log.info("SignInButton Clicked");
 		log.info("Entered all details and clicked on Sign In Button");
 		log.info("User Signed In");
-			
+		Thread.sleep(5000);
 		myAccount = new MyAccountPage(_driver);
 		Thread.sleep(5000);
 		myAccount.clickOnMyAccountUnderMyTools();
