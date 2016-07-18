@@ -41,7 +41,7 @@
 <!-- Change the UserName everytime -->	
 					
 <user userid="new-user-1">
-<UserName>sujuly13_1@cub.com</UserName>
+<UserName>sujuly13_2@cub.com</UserName>
 <password>password</password>
 </user>
 
@@ -50,7 +50,7 @@
 <!-- Change the UserName and cardless id everytime -->
 
 <user userid="new-user-2">
-<UserName>suwjuly13_1@cub.com</UserName>
+<UserName>suwjuly13_2@cub.com</UserName>
 <password>password</password>
 <firstname>test</firstname>
 <lastname>want</lastname>
@@ -61,7 +61,7 @@
 <zipcode>58963</zipcode>
 <homephone>8523697410</homephone>
 <mobilephone>7410254863</mobilephone>
-<cardlessid>75395148621</cardlessid>
+<cardlessid>75395148622</cardlessid>
 <wantedCoupons>1,3,5,9</wantedCoupons>
 </user>
 
@@ -70,7 +70,7 @@
 <!-- Change the UserName everytime -->
 
 <user userid="new-user-3">
-<UserName>suyjuly13_1@cub.com</UserName>
+<UserName>suyjuly13_2@cub.com</UserName>
 <password>password</password>
 <lastname>Test</lastname>
 <rewardsnumber>48630936861</rewardsnumber>

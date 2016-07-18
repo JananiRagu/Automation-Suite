@@ -566,3 +566,68 @@ Session ID: f7570eb43467b27cad3ca9efe18f06ca
 2016-07-13 15:34:37,526 - com.test.regression.cub.utils.Logg -INFO - Find a Store page is launched
 2016-07-13 15:34:54,173 - com.test.regression.cub.utils.Logg -INFO - Store Locations Page-Success
 2016-07-13 15:35:01,001 - com.test.regression.cub.utils.Logg -INFO - StoresbyState execution Complete.............
+2016-07-13 18:47:48,207 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 18:47:48,355 - com.test.regression.cub.utils.Logg -INFO - Starting validLogin ................
+2016-07-13 18:47:48,360 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 18:48:09,916 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 18:48:10,380 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-07-13 18:48:10,381 - com.test.regression.cub.utils.Logg -INFO - User Name : sltesting@cub.com
+2016-07-13 18:48:10,381 - com.test.regression.cub.utils.Logg -INFO - Password : password
+2016-07-13 18:48:12,322 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 18:48:14,269 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 18:48:14,504 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 18:48:20,831 - com.test.regression.cub.utils.Logg -INFO - LogOut Button Status : true
+2016-07-13 18:48:26,731 - com.test.regression.cub.utils.Logg -INFO - validLogin execution Complete.............
+2016-07-13 18:48:26,733 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 18:48:26,734 - com.test.regression.cub.utils.Logg -INFO - Starting inValidLogin ................
+2016-07-13 18:48:26,734 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 18:48:44,258 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 18:48:44,297 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-07-13 18:48:44,298 - com.test.regression.cub.utils.Logg -INFO - User Nameankusha10@gmail.com
+2016-07-13 18:48:44,301 - com.test.regression.cub.utils.Logg -INFO - PasswordAn55333
+2016-07-13 18:48:45,124 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-07-13 18:48:46,350 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-07-13 18:48:46,692 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-07-13 18:48:52,820 - com.test.regression.cub.utils.Logg -INFO - Password Incorrect Text Status : true
+2016-07-13 18:48:56,871 - com.test.regression.cub.utils.Logg -INFO - inValidLogin execution Complete.............
+2016-07-13 18:48:57,195 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 18:48:57,195 - com.test.regression.cub.utils.Logg -INFO - Starting validSignUp_noCard ................
+2016-07-13 18:48:57,198 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 18:49:18,324 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 18:49:18,362 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-07-13 18:49:18,363 - com.test.regression.cub.utils.Logg -INFO - User Name : sujuly13_2@cub.com
+2016-07-13 18:49:18,364 - com.test.regression.cub.utils.Logg -INFO - Password : password
+2016-07-13 18:49:20,209 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
+2016-07-13 18:49:22,349 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
+2016-07-13 18:49:46,096 - com.test.regression.cub.utils.Logg -INFO - Selected 'No, I dont want card' option
+2016-07-13 18:49:46,684 - com.test.regression.cub.utils.Logg -INFO - Clicked on Continue Button
+2016-07-13 18:49:52,252 - com.test.regression.cub.utils.Logg -INFO - validSignUp_noCard execution Complete.............
+2016-07-13 18:49:52,255 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 18:49:52,256 - com.test.regression.cub.utils.Logg -INFO - Starting validSignUp_yesIHaveOne ................
+2016-07-13 18:49:52,256 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 18:50:11,003 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 18:50:11,044 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-07-13 18:50:11,052 - com.test.regression.cub.utils.Logg -INFO - User Name : suyjuly13_2@cub.com
+2016-07-13 18:50:11,052 - com.test.regression.cub.utils.Logg -INFO - Password : password
+2016-07-13 18:50:11,053 - com.test.regression.cub.utils.Logg -INFO - Last Name : Test
+2016-07-13 18:50:11,053 - com.test.regression.cub.utils.Logg -INFO - Rewards Number : 48630936861
+2016-07-13 18:50:11,803 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
+2016-07-13 18:50:13,878 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
+2016-07-13 18:50:39,840 - com.test.regression.cub.utils.Logg -INFO - Selected 'Yes, I have a card' option
+2016-07-13 18:50:40,091 - com.test.regression.cub.utils.Logg -INFO - Clicked on Continue Button
+2016-07-13 18:50:41,673 - com.test.regression.cub.utils.Logg -INFO - Entered existing reward card details for linking a card
+2016-07-13 18:50:46,573 - com.test.regression.cub.utils.Logg -INFO - validSignUp_yesIHaveOne execution Complete.............
+2016-07-13 18:50:46,582 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 18:50:46,590 - com.test.regression.cub.utils.Logg -INFO - Starting validSignUp_noCardButWantOne ................
+2016-07-13 18:50:46,590 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-07-13 18:51:05,320 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-07-13 18:51:05,339 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-07-13 18:51:05,339 - com.test.regression.cub.utils.Logg -INFO - User Name : suwjuly13_2@cub.com
+2016-07-13 18:51:05,340 - com.test.regression.cub.utils.Logg -INFO - Password : password
+2016-07-13 18:51:06,133 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
+2016-07-13 18:51:10,414 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
+2016-07-13 18:51:26,530 - com.test.regression.cub.utils.Logg -INFO - Selected 'No, But I want one' option
+2016-07-13 18:51:26,880 - com.test.regression.cub.utils.Logg -INFO - Clicked on Continue Button
+2016-07-13 18:51:33,616 - com.test.regression.cub.utils.Logg -INFO - Entered the Contact Information details..
+2016-07-13 18:51:35,582 - com.test.regression.cub.utils.Logg -INFO - Clicked on Use this address button on Address Verification
+2016-07-13 18:51:45,102 - com.test.regression.cub.utils.Logg -INFO - validSignUp_noCardButWantOne execution Complete.............

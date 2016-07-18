@@ -13,7 +13,7 @@
     	<class name="com.test.regression.cub.testscripts.SignUp"> </class>  
     </classes>
 </test> 
-
+<!-- 
 <test name="Shopping List - Testing">
     <classes> 
     	<class name="com.test.regression.cub.testscripts.ShoppingLists"> </class> 
@@ -44,5 +44,5 @@
     	<class name="com.test.regression.cub.testscripts.FindAStore"> </class> 
     </classes>
 </test>
-
+-->
 </suite> 
