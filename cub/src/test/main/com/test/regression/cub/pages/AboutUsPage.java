@@ -1,16 +1,19 @@
 package com.test.regression.cub.pages;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.test.regression.cub.utils.Logg;
 import com.test.regression.cub.utils.SuiteBase;
 
 public class AboutUsPage extends SuiteBase{
 	
 	WebDriver _driver;
+	Logger log = Logg.createLogger();
 	
 	public AboutUsPage(WebDriver driver) {
 		super();
@@ -69,10 +72,12 @@ public class AboutUsPage extends SuiteBase{
 	
 //Methods to click ABOUT Header tab
 	
-	public void clickOnAbout() 
+	public void clickOnAbout() throws InterruptedException 
 	{
 		 waitFor(_About);
 		_About.click();
+		log.info(" Clicked About Tab");
+		Thread.sleep(5000);
 	}
 	
 	
@@ -82,66 +87,77 @@ public class AboutUsPage extends SuiteBase{
 	{
 		waitFor(_AboutSuperValu);
 		_AboutSuperValu.click();
+		log.info(" Clicked About SuperValu Tab in About Us page");
 	}
 	
 	public void clickOnInvestorInformation()
 	{
 		waitFor(_InvestorInformation);
 		_InvestorInformation.click();
+		log.info(" Clicked Investor Information Tab in About Us page");
 	}
 	
 	public void clickOnCareersJobOpportunities()
 	{
 		waitFor(_CareersJobOpportunities);
 		_CareersJobOpportunities.click();
+		log.info(" Clicked Careers Job Opportunities Tab in About Us page");
 	}
 	
 	public void clickOnInYourCommunity()
 	{
 		waitFor(_InYourCommunity);
 		_InYourCommunity.click();
+		log.info(" Clicked In Your Community Tab in About Us page");
 	}
 	
 	public void clickOnSustainability()
 	{
 		waitFor(_Sustainability);
 		_Sustainability.click();
+		log.info(" Clicked Sustainability Tab in About Us page");
 	}
 	
 	public void clickOnVendorInformation()
 	{
 		waitFor(_VendorInformation);
 		_VendorInformation.click();
+		log.info(" Clicked Vendor Information Tab in About Us page");
 	}
 	
 	public void clickOnProductRecalls()
 	{
 		waitFor(_ProductRecalls);
 		_ProductRecalls.click();
+		log.info(" Clicked Product Recalls Tab in About Us page");
 	}
 	
 	public void clickOnSatisfactionGuarantee()
 	{
 		waitFor(_SatisfactionGuarantee);
 		_SatisfactionGuarantee.click();
+		log.info(" Clicked Satisfaction Guarantee Tab in About Us page");
 	}
 	
 	public void clickOnPrivacyPolicy()
 	{
 		waitFor(_PrivacyPolicy);
 		 _PrivacyPolicy.click();
+		 log.info(" Clicked PrivacyPolicy Tab in About Us page");
 	}
 	
 	public void clickOnTermsofUse()
 	{
 		waitFor(_TermsofUse);
 		_TermsofUse.click();
+		log.info(" Clicked Terms of Use Tab in About Us page");
 	}
 	
 	public void clickOnSitemap()
 	{
 		waitFor(_Sitemap);
 		_Sitemap.click();
+		log.info(" Clicked Sitemap Tab in About Us page");
 	}
 	
 	
@@ -149,18 +165,21 @@ public class AboutUsPage extends SuiteBase{
 	{
 		waitFor(_CreditCardChipTechnology);
 		_CreditCardChipTechnology.click();
+		log.info(" Clicked Credit Card Chip Technology Tab in About Us page");
 	}
 	
 	public void clickOnNoticeOfPrivacyPractices()
 	{
 		waitFor(_NoticeOfPrivacyPractices);
 		_NoticeOfPrivacyPractices.click();
+		log.info(" Clicked Notice Of Privacy Practices Tab in About Us page");
 	}
 	
 	public void clickOnCustomerService()
 	{
 		waitFor(_CustomerService);
 		_CustomerService.click();
+		log.info(" Clicked Customer Service Tab in About Us page");
 	}
 	
 }

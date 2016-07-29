@@ -58,7 +58,7 @@ public class SuiteBase {
 	   log.info("***************************************************************");
 	   
     	 _driver = InitializeDriver(Constant.browser_name);
-    	 _driver.get(Constant.URL);
+    	 	 _driver.get(Constant.URL);
     	 
     	 log.info("Launched "+ Constant.URL + " Successfully!");
          

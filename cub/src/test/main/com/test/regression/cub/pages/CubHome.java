@@ -131,7 +131,18 @@ public class CubHome extends SuiteBase{
 			@FindBy(xpath = "(//a[text()='My Cub Rewards'])[2]")
 			private WebElement _CubRewardsTile;
 			
+	// Close POP UP
 			
+			@FindBy(xpath = "//*[@id='layout']/div[2]/div[2]/a")
+			private WebElement _closePopUp;
+			
+			public void clickOnClosePopUp() throws InterruptedException
+			{
+				waitFor(_closePopUp);
+				_closePopUp.click();
+				log.info("Pop up closed successfully..");
+				Thread.sleep(5000);
+		     }
 	
 	//Method to click on Logo
 	
@@ -271,6 +282,7 @@ public class CubHome extends SuiteBase{
 		_signInLink.click();
 		
 		log.info("SignIn Link Clicked");
+	
 		
 	}
 	
@@ -283,11 +295,13 @@ public class CubHome extends SuiteBase{
 		log.info("Entered login Details");
 	}
 	
-	public void clickSignInButton(){
+	public void clickSignInButton() throws InterruptedException
+	{
 		waitFor(_signInButton);
 		_signInButton.click();
 		
 		log.info("SignInButton Clicked");
+		Thread.sleep(5000);
 	}
 	
 

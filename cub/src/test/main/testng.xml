@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="none">
   
+  <!--
 <test name="Sign In - Testing">
     <classes> 
     	<class name="com.test.regression.cub.testscripts.SignIn"> </class> 
@@ -30,19 +31,32 @@
     <classes> 
     	<class name="com.test.regression.cub.testscripts.Coupons"> </class> 
     </classes>
-</test>
+</test> -->
  
 <test name="My Account- Testing">
     <classes> 
     	<class name="com.test.regression.cub.testscripts.MyAccount"> </class> 
     </classes>
 </test>
- 
 
+ 
+<test name="SiteMap Navigation- Testing">
+    <classes> 
+    	<class name="com.test.regression.cub.testscripts.SiteMap"> </class> 
+    </classes>
+</test>
+ 
+<!--
 <test name="Find a Store - Testing">
     <classes> 
     	<class name="com.test.regression.cub.testscripts.FindAStore"> </class> 
     </classes>
 </test>
+
+<test name="SiteMap Navigation - Testing">
+    <classes> 
+    	<class name="com.test.regression.cub.testscripts.SiteMapNavigation"> </class> 
+    </classes>
+</test>   -->
 
 </suite> 
