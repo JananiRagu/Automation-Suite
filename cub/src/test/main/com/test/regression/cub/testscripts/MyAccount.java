@@ -48,7 +48,14 @@ public class MyAccount extends SuiteBase
 	cubHome.clickSignInLink();
 	cubHome.enterLoginDetails(userId, oldPwd);
 	cubHome.clickSignInButton();
+<<<<<<< HEAD
 	
+=======
+		log.info("SignInButton Clicked");
+		log.info("Entered all details and clicked on Sign In Button");
+		log.info("User Signed In");
+		Thread.sleep(5000);	
+>>>>>>> 8133ebbbad1bc474a5ecb1e0181ba7542e96bf8a
 	myAccount = new MyAccountPage(_driver);
 		
 	 
@@ -122,8 +129,18 @@ public class MyAccount extends SuiteBase
 		cubHome.clickSignInLink();
 	cubHome.enterLoginDetails(userId, oldPwd1);
 	cubHome.clickSignInButton();
+<<<<<<< HEAD
 	myAccount = new MyAccountPage(_driver);
 	myAccount.clickOnMyAccountUnderMyTools(_driver);
+=======
+		log.info("SignInButton Clicked");
+		log.info("Entered all details and clicked on Sign In Button");
+		log.info("User Signed In");
+		Thread.sleep(5000);	
+		myAccount = new MyAccountPage(_driver);
+		Thread.sleep(5000);
+		myAccount.clickOnMyAccountUnderMyTools();
+>>>>>>> 8133ebbbad1bc474a5ecb1e0181ba7542e96bf8a
 		myAccount.clickOnChangePwdLink();
 		myAccount.enterPwdDetails(oldPwd2, newPwd);
 		Thread.sleep(5000);
@@ -177,11 +194,21 @@ public class MyAccount extends SuiteBase
 	cubHome.enterLoginDetails(userId, oldPwd);
 	
 	cubHome.clickSignInButton();
+<<<<<<< HEAD
 		
 	myAccount = new MyAccountPage(_driver);
 	
 	 
 		myAccount.clickOnMyAccountUnderMyTools(_driver);
+=======
+		log.info("SignInButton Clicked");
+		log.info("Entered all details and clicked on Sign In Button");
+		log.info("User Signed In");
+		Thread.sleep(5000);
+		myAccount = new MyAccountPage(_driver);
+		Thread.sleep(5000);
+		myAccount.clickOnMyAccountUnderMyTools();
+>>>>>>> 8133ebbbad1bc474a5ecb1e0181ba7542e96bf8a
 		myAccount.clickOnChangePwdLink();
 		myAccount.enterPwdDetails(oldPwd, newPwd);
 		Thread.sleep(5000);
@@ -233,10 +260,20 @@ public class MyAccount extends SuiteBase
 	cubHome.enterLoginDetails(userId, oldPwd);
 		
 	cubHome.clickSignInButton();
+<<<<<<< HEAD
 	myAccount = new MyAccountPage(_driver);
 	
 	 
 		myAccount.clickOnMyAccountUnderMyTools(_driver);
+=======
+		log.info("SignInButton Clicked");
+		log.info("Entered all details and clicked on Sign In Button");
+		log.info("User Signed In");
+		Thread.sleep(5000);
+		myAccount = new MyAccountPage(_driver);
+		Thread.sleep(5000);
+		myAccount.clickOnMyAccountUnderMyTools();
+>>>>>>> 8133ebbbad1bc474a5ecb1e0181ba7542e96bf8a
 		myAccount.clickOnChangePwdLink();
 		myAccount.enterPwdDetails(oldPwd, newPwd);
 		Thread.sleep(5000);
@@ -311,10 +348,20 @@ public class MyAccount extends SuiteBase
 	cubHome.enterLoginDetails(userId, oldPwd);
 	
 	cubHome.clickSignInButton();
+<<<<<<< HEAD
 	myAccount = new MyAccountPage(_driver);
 	
 	 
 		myAccount.clickOnMyAccountUnderMyTools(_driver);
+=======
+		log.info("SignInButton Clicked");
+		log.info("Entered all details and clicked on Sign In Button");
+		log.info("User Signed In");
+		Thread.sleep(5000);	
+		myAccount = new MyAccountPage(_driver);
+		Thread.sleep(5000);
+		myAccount.clickOnMyAccountUnderMyTools();
+>>>>>>> 8133ebbbad1bc474a5ecb1e0181ba7542e96bf8a
 		myAccount.clickOnChangePwdLink();
 		myAccount.enterPwdDetails(oldPwd, newPwd);
 		Thread.sleep(5000);
@@ -365,10 +412,20 @@ public class MyAccount extends SuiteBase
 	cubHome.clickSignInLink();
 	cubHome.enterLoginDetails(userId, oldPwd);
 	cubHome.clickSignInButton();
+<<<<<<< HEAD
 	myAccount = new MyAccountPage(_driver);
 	
 	 
 		myAccount.clickOnMyAccountUnderMyTools(_driver);
+=======
+		log.info("SignInButton Clicked");
+		log.info("Entered all details and clicked on Sign In Button");
+		log.info("User Signed In");
+		Thread.sleep(5000);
+		myAccount = new MyAccountPage(_driver);
+		Thread.sleep(5000);
+		myAccount.clickOnMyAccountUnderMyTools();
+>>>>>>> 8133ebbbad1bc474a5ecb1e0181ba7542e96bf8a
 		myAccount.clickOnChangePwdLink();
 		myAccount.enterDiffPwdDetails(oldPwd, newPwd1, newPwd2);
 		Thread.sleep(5000);

@@ -31,6 +31,7 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<<<<<<< HEAD
 <tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">147.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
@@ -42,5 +43,278 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <h2 id="m1">com.test.regression.cub.testscripts.HeaderFooterNavigation:TilesNavigationGuestUser</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m2">com.test.regression.cub.testscripts.HeaderFooterNavigation:TilesNavigationSignedInUser</h2>
+=======
+<tr><td style="text-align:left;padding-right:2em">Sign In - Testing</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">46.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Sign Up - Testing</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">104.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Shopping List - Testing</td><td class="numi">5</td><td class="numi">5</td><td class="numi">0</td><td class="numi">0</td><td class="numi">250.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Header Footer Navigation - Testing</td><td class="numi">17</td><td class="numi">17</td><td class="numi">0</td><td class="numi_attn">3</td><td class="numi">384.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Coupons - Testing</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">80.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">My Account- Testing</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">4</td><td class="numi">235.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Find a Store - Testing</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">29.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">31</td><td class="numi">31</td><td class="numi">0</td><td class="numi_attn">7</td><td class="numi">1,131.8 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Sign In - Testing &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">com.test.regression.cub.testscripts.SignIn</td><td><a href="#m1"><b>validLogin</b>  </a></td><td class="numi">1</td><td>1468406994896</td><td class="numi">7782</td></tr><tr class="passedodd"><td><a href="#m2"><b>inValidLogin</b>  </a></td><td class="numi">1</td><td>1468407013310</td><td class="numi">17231</td></tr>
+<tr><th colspan="4">Sign Up - Testing &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="3">com.test.regression.cub.testscripts.SignUp</td><td><a href="#m3"><b>validSignUp_noCard</b>  </a></td><td class="numi">1</td><td>1468407041748</td><td class="numi">21875</td></tr><tr class="passedodd"><td><a href="#m4"><b>validSignUp_yesIHaveOne</b>  </a></td><td class="numi">1</td><td>1468407073935</td><td class="numi">19612</td></tr><tr class="passedodd"><td><a href="#m5"><b>validSignUp_noCardButWantOne</b>  </a></td><td class="numi">1</td><td>1468407104491</td><td class="numi">30738</td></tr>
+<tr><th colspan="4">Shopping List - Testing &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="5">com.test.regression.cub.testscripts.ShoppingLists</td><td><a href="#m6"><b>createShoppingList</b>  </a></td><td class="numi">1</td><td>1468407146122</td><td class="numi">17846</td></tr><tr class="passedodd"><td><a href="#m7"><b>Add3Items2ShoppingList</b>  </a></td><td class="numi">1</td><td>1468407173617</td><td class="numi">22156</td></tr><tr class="passedodd"><td><a href="#m8"><b>AddnEditItemsInShoppingList</b>  </a></td><td class="numi">1</td><td>1468407205581</td><td class="numi">29396</td></tr><tr class="passedodd"><td><a href="#m9"><b>deleteItemFromSL</b>  </a></td><td class="numi">1</td><td>1468407246541</td><td class="numi">62336</td></tr><tr class="passedodd"><td><a href="#m10"><b>testClearList</b>  </a></td><td class="numi">1</td><td>1468407318755</td><td class="numi">66366</td></tr>
+<tr><th colspan="4">Header Footer Navigation - Testing &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="3">com.test.regression.cub.testscripts.HeaderFooterNavigation</td><td><a href="#m11"><b>PrivacyPolicySignedInUser</b>  </a></td><td class="numi">1</td><td>1468407607098</td><td class="numi">13736</td></tr><tr class="failedodd"><td><a href="#m12"><b>TermsAndConditionsSignedInUser</b>  </a></td><td class="numi">1</td><td>1468407631505</td><td class="numi">12276</td></tr><tr class="failedodd"><td><a href="#m13"><b>CouponTileSignedInUser</b>  </a></td><td class="numi">1</td><td>1468407710701</td><td class="numi">11882</td></tr>
+<tr><th colspan="4">Header Footer Navigation - Testing &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="17">com.test.regression.cub.testscripts.HeaderFooterNavigation</td><td><a href="#m14"><b>aboutUs</b>  </a></td><td class="numi">1</td><td>1468407394925</td><td class="numi">2223</td></tr><tr class="passedodd"><td><a href="#m15"><b>Careers</b>  </a></td><td class="numi">1</td><td>1468407406536</td><td class="numi">2143</td></tr><tr class="passedodd"><td><a href="#m16"><b>Recalls</b>  </a></td><td class="numi">1</td><td>1468407418085</td><td class="numi">2024</td></tr><tr class="passedodd"><td><a href="#m17"><b>PrivacyPolicy</b>  </a></td><td class="numi">1</td><td>1468407429722</td><td class="numi">2174</td></tr><tr class="passedodd"><td><a href="#m18"><b>TermsAndConditions</b>  </a></td><td class="numi">1</td><td>1468407443164</td><td class="numi">2103</td></tr><tr class="passedodd"><td><a href="#m19"><b>CustomerService</b>  </a></td><td class="numi">1</td><td>1468407454669</td><td class="numi">3768</td></tr><tr class="passedodd"><td><a href="#m20"><b>WeeklyAdTile</b>  </a></td><td class="numi">1</td><td>1468407467852</td><td class="numi">6841</td></tr><tr class="passedodd"><td><a href="#m21"><b>CouponTile</b>  </a></td><td class="numi">1</td><td>1468407485585</td><td class="numi">4050</td></tr><tr class="passedodd"><td><a href="#m22"><b>CakesandPartyTile</b>  </a></td><td class="numi">1</td><td>1468407501006</td><td class="numi">3237</td></tr><tr class="passedodd"><td><a href="#m23"><b>CubRewardsTile</b>  </a></td><td class="numi">1</td><td>1468407511961</td><td class="numi">2364</td></tr><tr class="passedodd"><td><a href="#m24"><b>aboutUsSignedInUser</b>  </a></td><td class="numi">1</td><td>1468407523898</td><td class="numi">20303</td></tr><tr class="passedodd"><td><a href="#m25"><b>CareersSignedInUser</b>  </a></td><td class="numi">1</td><td>1468407552695</td><td class="numi">15215</td></tr><tr class="passedodd"><td><a href="#m26"><b>RecallsSignedInUser</b>  </a></td><td class="numi">1</td><td>1468407577945</td><td class="numi">15259</td></tr><tr class="passedodd"><td><a href="#m27"><b>CustomerServiceSignedInUser</b>  </a></td><td class="numi">1</td><td>1468407654274</td><td class="numi">16850</td></tr><tr class="passedodd"><td><a href="#m28"><b>WeeklyAdTileSignedInUser</b>  </a></td><td class="numi">1</td><td>1468407681178</td><td class="numi">20408</td></tr><tr class="passedodd"><td><a href="#m29"><b>CakesandPartyTileSignedInUser</b>  </a></td><td class="numi">1</td><td>1468407732062</td><td class="numi">13974</td></tr><tr class="passedodd"><td><a href="#m30"><b>CubRewardsTileSignedInUser</b>  </a></td><td class="numi">1</td><td>1468407755206</td><td class="numi">14516</td></tr>
+<tr><th colspan="4">Coupons - Testing &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">com.test.regression.cub.testscripts.Coupons</td><td><a href="#m31"><b>addCouponForWantOneNewUser</b>  </a></td><td class="numi">1</td><td>1468407778816</td><td class="numi">71722</td></tr>
+<tr><th colspan="4">My Account- Testing &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="4">com.test.regression.cub.testscripts.MyAccount</td><td><a href="#m32"><b>ChangePwdValid</b>  </a></td><td class="numi">1</td><td>1468407859953</td><td class="numi">47957</td></tr><tr class="failedodd"><td><a href="#m33"><b>ChangePwdLengthyPwd</b>  </a></td><td class="numi">1</td><td>1468407979421</td><td class="numi">27347</td></tr><tr class="failedodd"><td><a href="#m34"><b>ChangePwdShortPwd</b>  </a></td><td class="numi">1</td><td>1468408018223</td><td class="numi">37467</td></tr><tr class="failedodd"><td><a href="#m35"><b>ChangePwdDifferentNewPwds</b>  </a></td><td class="numi">1</td><td>1468408068331</td><td class="numi">13984</td></tr>
+<tr><th colspan="4">My Account- Testing &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">com.test.regression.cub.testscripts.MyAccount</td><td><a href="#m36"><b>ChangePwdWrongOldPwd</b>  </a></td><td class="numi">1</td><td>1468407917819</td><td class="numi">21424</td></tr><tr class="passedodd"><td><a href="#m37"><b>ChangePwdSpace</b>  </a></td><td class="numi">1</td><td>1468407948270</td><td class="numi">22120</td></tr>
+<tr><th colspan="4">Find a Store - Testing &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">com.test.regression.cub.testscripts.FindAStore</td><td><a href="#m38"><b>StoresbyState</b>  </a></td><td class="numi">1</td><td>1468408094949</td><td class="numi">20577</td></tr>
+</table>
+<h1>Sign In - Testing</h1>
+<h2 id="m1">com.test.regression.cub.testscripts.SignIn:validLogin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.test.regression.cub.testscripts.SignIn:inValidLogin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Sign Up - Testing</h1>
+<h2 id="m3">com.test.regression.cub.testscripts.SignUp:validSignUp_yesIHaveOne</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.test.regression.cub.testscripts.SignUp:validSignUp_noCard</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.test.regression.cub.testscripts.SignUp:validSignUp_noCardButWantOne</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Shopping List - Testing</h1>
+<h2 id="m6">com.test.regression.cub.testscripts.ShoppingLists:createShoppingList</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.test.regression.cub.testscripts.ShoppingLists:Add3Items2ShoppingList</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.test.regression.cub.testscripts.ShoppingLists:testClearList</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.test.regression.cub.testscripts.ShoppingLists:deleteItemFromSL</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">com.test.regression.cub.testscripts.ShoppingLists:AddnEditItemsInShoppingList</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Header Footer Navigation - Testing</h1>
+<h2 id="m11">com.test.regression.cub.testscripts.HeaderFooterNavigation:PrivacyPolicySignedInUser</h2>
+<div style="padding-left:3em">
+<p>unknown error: Element is not clickable at point (497, 656). Other element would receive the click: &lt;div class=&quot;ss-overlay&quot; style=&quot;display: block;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=51.0.2704.106)
+  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 66 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;sdwvpctcs2813&apos;, ip: &apos;10.15.11.210&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\hxdxa4\AppData\Local\Temp\scoped_dir7272_20283}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.106, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: af07b1b2fdd8d0e0877f546d90598ed6</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+<br/>at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+<br/>at com.sun.proxy.$Proxy7.click(Unknown Source)
+<br/>at com.test.regression.cub.pages.CubHome.clickPrivacyPolicy(CubHome.java:217)
+<br/>at com.test.regression.cub.testscripts.HeaderFooterNavigation.PrivacyPolicySignedInUser(HeaderFooterNavigation.java:211)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">com.test.regression.cub.testscripts.HeaderFooterNavigation:CouponTileSignedInUser</h2>
+<div style="padding-left:3em">
+<p>expected [Cub Foods - MN &amp; IL Grocery Stores | Cub Foods] but found [Cub Foods - View Coupons | MN &amp; IL Grocery Store | Cub Foods]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at com.test.regression.cub.testscripts.HeaderFooterNavigation.CouponTileSignedInUser(HeaderFooterNavigation.java:384)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">com.test.regression.cub.testscripts.HeaderFooterNavigation:TermsAndConditionsSignedInUser</h2>
+<div style="padding-left:3em">
+<p>unknown error: Element is not clickable at point (574, 656). Other element would receive the click: &lt;div class=&quot;ss-overlay&quot; style=&quot;display: block;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=51.0.2704.106)
+  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 60 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;sdwvpctcs2813&apos;, ip: &apos;10.15.11.210&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\hxdxa4\AppData\Local\Temp\scoped_dir6288_6901}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.106, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 162cceb1ad272b82189f271481fbb313</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+<br/>at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+<br/>at com.sun.proxy.$Proxy7.click(Unknown Source)
+<br/>at com.test.regression.cub.pages.CubHome.clickTermsOfUse(CubHome.java:224)
+<br/>at com.test.regression.cub.testscripts.HeaderFooterNavigation.TermsAndConditionsSignedInUser(HeaderFooterNavigation.java:241)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">com.test.regression.cub.testscripts.HeaderFooterNavigation:CakesandPartyTile</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">com.test.regression.cub.testscripts.HeaderFooterNavigation:RecallsSignedInUser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">com.test.regression.cub.testscripts.HeaderFooterNavigation:CakesandPartyTileSignedInUser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">com.test.regression.cub.testscripts.HeaderFooterNavigation:PrivacyPolicy</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">com.test.regression.cub.testscripts.HeaderFooterNavigation:aboutUs</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">com.test.regression.cub.testscripts.HeaderFooterNavigation:Recalls</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">com.test.regression.cub.testscripts.HeaderFooterNavigation:CustomerServiceSignedInUser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">com.test.regression.cub.testscripts.HeaderFooterNavigation:Careers</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">com.test.regression.cub.testscripts.HeaderFooterNavigation:CubRewardsTile</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">com.test.regression.cub.testscripts.HeaderFooterNavigation:TermsAndConditions</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">com.test.regression.cub.testscripts.HeaderFooterNavigation:CustomerService</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">com.test.regression.cub.testscripts.HeaderFooterNavigation:WeeklyAdTileSignedInUser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">com.test.regression.cub.testscripts.HeaderFooterNavigation:CubRewardsTileSignedInUser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">com.test.regression.cub.testscripts.HeaderFooterNavigation:aboutUsSignedInUser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m28">com.test.regression.cub.testscripts.HeaderFooterNavigation:CouponTile</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">com.test.regression.cub.testscripts.HeaderFooterNavigation:WeeklyAdTile</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">com.test.regression.cub.testscripts.HeaderFooterNavigation:CareersSignedInUser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Coupons - Testing</h1>
+<h2 id="m31">com.test.regression.cub.testscripts.Coupons:addCouponForWantOneNewUser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>My Account- Testing</h1>
+<h2 id="m32">com.test.regression.cub.testscripts.MyAccount:ChangePwdLengthyPwd</h2>
+<div style="padding-left:3em">
+<p>unknown error: Element is not clickable at point (908, 87). Other element would receive the click: &lt;div class=&quot;ss-overlay&quot; style=&quot;display: block;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=51.0.2704.106)
+  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 86 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;sdwvpctcs2813&apos;, ip: &apos;10.15.11.210&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\hxdxa4\AppData\Local\Temp\scoped_dir4612_19631}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.106, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 120cb0f8d85ce55c56dbf6ed25a5dbbd</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+<br/>at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+<br/>at com.sun.proxy.$Proxy7.click(Unknown Source)
+<br/>at com.test.regression.cub.pages.CubHome.clickOnLogOutLink(CubHome.java:149)
+<br/>at com.test.regression.cub.testscripts.MyAccount.ChangePwdLengthyPwd(MyAccount.java:206)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m33">com.test.regression.cub.testscripts.MyAccount:ChangePwdDifferentNewPwds</h2>
+<div style="padding-left:3em">
+<p>null</p>
+sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+<br/>at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+<br/>at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:127)
+<br/>at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:131)
+<br/>at com.test.regression.cub.pages.MyAccountPage.clickOnMyAccountUnderMyTools(MyAccountPage.java:35)
+<br/>at com.test.regression.cub.testscripts.MyAccount.ChangePwdDifferentNewPwds(MyAccount.java:307)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m34">com.test.regression.cub.testscripts.MyAccount:ChangePwdShortPwd</h2>
+<div style="padding-left:3em">
+<p>null</p>
+sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+<br/>at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+<br/>at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:127)
+<br/>at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:131)
+<br/>at com.test.regression.cub.pages.MyAccountPage.clickOnMyAccountUnderMyTools(MyAccountPage.java:35)
+<br/>at com.test.regression.cub.testscripts.MyAccount.ChangePwdShortPwd(MyAccount.java:263)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m35">com.test.regression.cub.testscripts.MyAccount:ChangePwdValid</h2>
+<div style="padding-left:3em">
+<p>unknown error: Element is not clickable at point (908, 87). Other element would receive the click: &lt;div class=&quot;ss-overlay&quot; style=&quot;display: block;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=51.0.2704.106)
+  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 83 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;sdwvpctcs2813&apos;, ip: &apos;10.15.11.210&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\hxdxa4\AppData\Local\Temp\scoped_dir7768_29660}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.106, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b31bcfc7e7375d56c429a73b1683d46f</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+<br/>at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+<br/>at com.sun.proxy.$Proxy7.click(Unknown Source)
+<br/>at com.test.regression.cub.pages.CubHome.clickOnLogOutLink(CubHome.java:149)
+<br/>at com.test.regression.cub.testscripts.MyAccount.ChangePwdValid(MyAccount.java:85)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m36">com.test.regression.cub.testscripts.MyAccount:ChangePwdWrongOldPwd</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m37">com.test.regression.cub.testscripts.MyAccount:ChangePwdSpace</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Find a Store - Testing</h1>
+<h2 id="m38">com.test.regression.cub.testscripts.FindAStore:StoresbyState</h2>
+>>>>>>> 8133ebbbad1bc474a5ecb1e0181ba7542e96bf8a
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

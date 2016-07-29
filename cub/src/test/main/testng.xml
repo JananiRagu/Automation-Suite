@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="none">
+<<<<<<< HEAD
   
   <!--
+=======
+   
+>>>>>>> 8133ebbbad1bc474a5ecb1e0181ba7542e96bf8a
 <test name="Sign In - Testing">
     <classes> 
     	<class name="com.test.regression.cub.testscripts.SignIn"> </class> 
@@ -26,13 +30,22 @@
     	<class name="com.test.regression.cub.testscripts.HeaderFooterNavigation"> </class> 
     </classes>
 </test> 
+<<<<<<< HEAD
   	
+=======
+   	
+>>>>>>> 8133ebbbad1bc474a5ecb1e0181ba7542e96bf8a
 <test name="Coupons - Testing">
     <classes> 
     	<class name="com.test.regression.cub.testscripts.Coupons"> </class> 
     </classes>
+<<<<<<< HEAD
 </test> -->
  
+=======
+</test>
+
+>>>>>>> 8133ebbbad1bc474a5ecb1e0181ba7542e96bf8a
 <test name="My Account- Testing">
     <classes> 
     	<class name="com.test.regression.cub.testscripts.MyAccount"> </class> 
@@ -53,10 +66,13 @@
     </classes>
 </test>
 
+<<<<<<< HEAD
 <test name="SiteMap Navigation - Testing">
     <classes> 
     	<class name="com.test.regression.cub.testscripts.SiteMapNavigation"> </class> 
     </classes>
 </test>   -->
 
+=======
+>>>>>>> 8133ebbbad1bc474a5ecb1e0181ba7542e96bf8a
 </suite> 
