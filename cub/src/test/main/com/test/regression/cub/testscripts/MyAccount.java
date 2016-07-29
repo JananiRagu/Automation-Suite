@@ -33,7 +33,7 @@ public class MyAccount extends SuiteBase
 
 // Change password successfully
 	
-	@Test(priority=42,enabled=false)
+	@Test(priority=42,enabled=true)
 	public void ChngPwdValid() {
 		try{
 		// Retrieving test data for valid login
@@ -48,14 +48,6 @@ public class MyAccount extends SuiteBase
 	cubHome.clickSignInLink();
 	cubHome.enterLoginDetails(userId, oldPwd);
 	cubHome.clickSignInButton();
-<<<<<<< HEAD
-	
-=======
-		log.info("SignInButton Clicked");
-		log.info("Entered all details and clicked on Sign In Button");
-		log.info("User Signed In");
-		Thread.sleep(5000);	
->>>>>>> 8133ebbbad1bc474a5ecb1e0181ba7542e96bf8a
 	myAccount = new MyAccountPage(_driver);
 		
 	 
@@ -114,7 +106,7 @@ public class MyAccount extends SuiteBase
 
 //  Validating if Error is displayed when user wrong Old Password
 	
-	@Test(priority=43,enabled=false)
+	@Test(priority=43,enabled=true)
 	public void ChngPwdWrongOldPwd() {
 		try{
 		// Retrieving test data for valid login
@@ -129,18 +121,10 @@ public class MyAccount extends SuiteBase
 		cubHome.clickSignInLink();
 	cubHome.enterLoginDetails(userId, oldPwd1);
 	cubHome.clickSignInButton();
-<<<<<<< HEAD
+
 	myAccount = new MyAccountPage(_driver);
 	myAccount.clickOnMyAccountUnderMyTools(_driver);
-=======
-		log.info("SignInButton Clicked");
-		log.info("Entered all details and clicked on Sign In Button");
-		log.info("User Signed In");
-		Thread.sleep(5000);	
-		myAccount = new MyAccountPage(_driver);
-		Thread.sleep(5000);
-		myAccount.clickOnMyAccountUnderMyTools();
->>>>>>> 8133ebbbad1bc474a5ecb1e0181ba7542e96bf8a
+
 		myAccount.clickOnChangePwdLink();
 		myAccount.enterPwdDetails(oldPwd2, newPwd);
 		Thread.sleep(5000);
@@ -177,7 +161,7 @@ public class MyAccount extends SuiteBase
 	
 //  Validating if Error is displayed when user uses space in new password field
 	
-	@Test(priority=44,enabled=false)
+	@Test(priority=44,enabled=true)
 	public void ChngPwdSpace() {
 		try{
 		// Retrieving test data for valid login
@@ -192,23 +176,13 @@ public class MyAccount extends SuiteBase
 	cubHome.clickSignInLink();
 		
 	cubHome.enterLoginDetails(userId, oldPwd);
-	
-	cubHome.clickSignInButton();
-<<<<<<< HEAD
-		
+     cubHome.clickSignInButton();	
+
 	myAccount = new MyAccountPage(_driver);
 	
 	 
 		myAccount.clickOnMyAccountUnderMyTools(_driver);
-=======
-		log.info("SignInButton Clicked");
-		log.info("Entered all details and clicked on Sign In Button");
-		log.info("User Signed In");
-		Thread.sleep(5000);
-		myAccount = new MyAccountPage(_driver);
-		Thread.sleep(5000);
-		myAccount.clickOnMyAccountUnderMyTools();
->>>>>>> 8133ebbbad1bc474a5ecb1e0181ba7542e96bf8a
+
 		myAccount.clickOnChangePwdLink();
 		myAccount.enterPwdDetails(oldPwd, newPwd);
 		Thread.sleep(5000);
@@ -242,7 +216,7 @@ public class MyAccount extends SuiteBase
 
 //  Validating if system is not accepting lengthy password in new password field
 	
-	@Test(priority=45,enabled=false)
+	@Test(priority=45,enabled=true)
 	public void ChngPwdLengthyPwd() {
 		try{
 		// Retrieving test data for valid login
@@ -260,20 +234,12 @@ public class MyAccount extends SuiteBase
 	cubHome.enterLoginDetails(userId, oldPwd);
 		
 	cubHome.clickSignInButton();
-<<<<<<< HEAD
+
 	myAccount = new MyAccountPage(_driver);
 	
 	 
 		myAccount.clickOnMyAccountUnderMyTools(_driver);
-=======
-		log.info("SignInButton Clicked");
-		log.info("Entered all details and clicked on Sign In Button");
-		log.info("User Signed In");
-		Thread.sleep(5000);
-		myAccount = new MyAccountPage(_driver);
-		Thread.sleep(5000);
-		myAccount.clickOnMyAccountUnderMyTools();
->>>>>>> 8133ebbbad1bc474a5ecb1e0181ba7542e96bf8a
+
 		myAccount.clickOnChangePwdLink();
 		myAccount.enterPwdDetails(oldPwd, newPwd);
 		Thread.sleep(5000);
@@ -332,7 +298,7 @@ public class MyAccount extends SuiteBase
 
 //  Validating if Error is displayed when user uses short password in new password field
 	
-	@Test(priority=46,enabled=false)
+	@Test(priority=46,enabled=true)
 	public void ChngPwdShortPwd(){
 		try{
 		// Retrieving test data for valid login
@@ -348,20 +314,11 @@ public class MyAccount extends SuiteBase
 	cubHome.enterLoginDetails(userId, oldPwd);
 	
 	cubHome.clickSignInButton();
-<<<<<<< HEAD
+
 	myAccount = new MyAccountPage(_driver);
 	
 	 
 		myAccount.clickOnMyAccountUnderMyTools(_driver);
-=======
-		log.info("SignInButton Clicked");
-		log.info("Entered all details and clicked on Sign In Button");
-		log.info("User Signed In");
-		Thread.sleep(5000);	
-		myAccount = new MyAccountPage(_driver);
-		Thread.sleep(5000);
-		myAccount.clickOnMyAccountUnderMyTools();
->>>>>>> 8133ebbbad1bc474a5ecb1e0181ba7542e96bf8a
 		myAccount.clickOnChangePwdLink();
 		myAccount.enterPwdDetails(oldPwd, newPwd);
 		Thread.sleep(5000);
@@ -396,7 +353,7 @@ public class MyAccount extends SuiteBase
 
 //  Validating if Error is displayed when user uses different passwords in new password fields
 	
-	@Test(priority=47,enabled=false)
+	@Test(priority=47,enabled=true)
 	public void ChngPwdDifferentNewPwds() {
 		try{
 		// Retrieving test data for valid login
@@ -412,20 +369,10 @@ public class MyAccount extends SuiteBase
 	cubHome.clickSignInLink();
 	cubHome.enterLoginDetails(userId, oldPwd);
 	cubHome.clickSignInButton();
-<<<<<<< HEAD
+
 	myAccount = new MyAccountPage(_driver);
-	
-	 
+		 
 		myAccount.clickOnMyAccountUnderMyTools(_driver);
-=======
-		log.info("SignInButton Clicked");
-		log.info("Entered all details and clicked on Sign In Button");
-		log.info("User Signed In");
-		Thread.sleep(5000);
-		myAccount = new MyAccountPage(_driver);
-		Thread.sleep(5000);
-		myAccount.clickOnMyAccountUnderMyTools();
->>>>>>> 8133ebbbad1bc474a5ecb1e0181ba7542e96bf8a
 		myAccount.clickOnChangePwdLink();
 		myAccount.enterDiffPwdDetails(oldPwd, newPwd1, newPwd2);
 		Thread.sleep(5000);
@@ -621,7 +568,7 @@ public class MyAccount extends SuiteBase
 //  Updating Contact Info with Invalid First Name
 	
 
-	@Test(priority=49,enabled=false)
+	@Test(priority=49,enabled=true)
 	public void ChngContInfoInvalidFirstName() {
 		
 		try{
@@ -709,7 +656,7 @@ public class MyAccount extends SuiteBase
 //  Updating Contact Info with Invalid Last Name
 	
 
-	@Test(priority=50,enabled=false)
+	@Test(priority=50,enabled=true)
 	public void ChngContInfoInvalidLastName() {
 		
 		try{
@@ -798,7 +745,7 @@ public class MyAccount extends SuiteBase
 //  Updating Contact Info with Invalid ZIP
 	
 
-	@Test(priority=51,enabled=false)
+	@Test(priority=51,enabled=true)
 	public void ChngContInfoInvalidZIP() {
 		
 		try{
@@ -909,7 +856,7 @@ public class MyAccount extends SuiteBase
 //  Updating Contact Info with Invalid City Name
 	
 
-	@Test(priority=52,enabled=false)
+	@Test(priority=52,enabled=true)
 	public void ChngContInfoInvalidCity() {
 		
 		try{
@@ -998,7 +945,7 @@ public class MyAccount extends SuiteBase
 //  Updating Contact Info with Invalid Mobile Number
 	
 
-	@Test(priority=53,enabled=false)
+	@Test(priority=53,enabled=true)
 	public void ChngContInfoInvalidMobileNumber() {
 		
 		try{
@@ -1089,7 +1036,7 @@ public class MyAccount extends SuiteBase
 //  Updating Contact Info with Invalid Mobile Number
 	
 
-	@Test(priority=53,enabled=false)
+	@Test(priority=53,enabled=true)
 	public void ChngContInfoInvalidHomeNumber() {
 		
 		try{
@@ -1179,7 +1126,7 @@ public class MyAccount extends SuiteBase
 	
 //  Updating Contact Info with No Address
 
-	@Test(priority=53,enabled=false)
+	@Test(priority=53,enabled=true)
 	public void ChngContInfoNullAddress() {
 		
 		try{
@@ -1247,7 +1194,7 @@ public class MyAccount extends SuiteBase
 	
 //  Clicking on Privacy Policy link in Update Contact information pop up in My Account page
 
-	@Test(priority=54,enabled=false)
+	@Test(priority=54,enabled=true)
 	public void PPLinkInUpdateContactInfoPopUp() {
 		
 		try{

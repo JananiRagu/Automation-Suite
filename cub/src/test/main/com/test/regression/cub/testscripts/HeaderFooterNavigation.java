@@ -26,7 +26,7 @@ public class HeaderFooterNavigation extends SuiteBase{
 	
 // Footer link navigations
 		
-	@Test(priority=1,enabled=false)
+	@Test(priority=1,enabled=true)
 	public void FooterLinksGuestUser()
 	{
 		cubHome = new CubHome(_driver);
@@ -74,7 +74,7 @@ public class HeaderFooterNavigation extends SuiteBase{
 	
 	// Footer link navigations for Logged in Users
 		
-	@Test(priority=1,enabled=false)
+	@Test(priority=1,enabled=true)
 	public void FooterLinksSignedInUser()
 	{
 		
