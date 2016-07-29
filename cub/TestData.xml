@@ -1,47 +1,68 @@
-<!-- Data Sets Used for Test Scripts to run -->
-
-
+																<!-- Test Data Factory -->
 <TestData>
 
 
+						<!-- Authorized Users List................. -->
+						
 						<!-- Data Used for Valid SignIn , Shopping Lists Testing -->
 						
-<user userid="carded-user">
-<UserName>sltesting@cub.com</UserName>
-<password>password</password>
-<SLName>list1</SLName>
+<authorizedUsers>
+						
+<user userid="authorized-user-1">
+<UserName>louie4test@cub.com</UserName>
+<password>@testing</password>
+<SLName>List Created From Automation</SLName>
 <item1>litchi</item1>
 <quantity1>10 kgs</quantity1>
-<item1update>litcheeeeeeeeee</item1update>
-<quantity1update>123456789 kgsssss</quantity1update>
-<item2>carrot</item2>
-<quantity2>100000100</quantity2>
-<item3>fish</item3>
-<quantity3>two</quantity3>
+<item1update>litchi-updated</item1update>
+<quantity1update>twenty pieces</quantity1update>
+<item2>butter</item2>
+<quantity2>amul 2</quantity2>
+<item3>pasta</item3>
+<quantity3>1 pkt</quantity3>
 </user>
 
-<user userid="carded-user1">
-<UserName>july5@cub.com</UserName>
-<password>password</password>
-<wantedCoupon>8</wantedCoupon>
+<user userid="authorized-user-2">
+<UserName>trix4supervalu@cub.com</UserName>
+<password>trix@test</password>
+<wantedCoupon>1</wantedCoupon>
 </user>
+
+</authorizedUsers>
+						<!-- End of Authorized Users List................. -->
+						
+						
+<!-- ========================================================================================================================================= -->		
+
+						<!-- Invalid Users List................. -->			
 
 						<!-- Data Used for In-Valid SignIn Testing -->
+						
+<invalidUsers>
 
-<user userid="invalid-user">
-<UserName>ankusha10@gmail.com</UserName>
+<user userid="invalid-user-1">
+<UserName>test33@mailinator.com</UserName>
 <password>An55333</password>
 </user>
 
+</invalidUsers>
+
+						<!-- End of Invalid Users List................. -->
+						
+						
+<!-- ========================================================================================================================================= -->	
+
+						<!-- New Users List................. -->
+
 						<!-- Data Used for Sign Up Testing -->
 						
-
+<newUsers>
 
 <!-- Used for Sign Up no card scenario -->
 <!-- Change the UserName everytime -->	
 					
 <user userid="new-user-1">
-<UserName>sujuly13_2@cub.com</UserName>
+<UserName>newuser1_1@cub.com</UserName>
 <password>password</password>
 </user>
 
@@ -50,7 +71,57 @@
 <!-- Change the UserName and cardless id everytime -->
 
 <user userid="new-user-2">
-<UserName>suwjuly13_2@cub.com</UserName>
+<UserName>newuser2_1@cub.com</UserName>
+<password>password</password>
+<firstname>new</firstname>
+<lastname>user</lastname>
+<address1>123 cedar ave</address1>
+<address2>test</address2>
+<city>Eden Prairie</city>
+<state>MN</state>
+<zipcode>58963</zipcode>
+<homephone>8523697410</homephone>
+<mobilephone>7410254863</mobilephone>
+<cardlessid>00963010001</cardlessid>
+<wantedCoupons>1,3,5,9</wantedCoupons>
+</user>
+
+
+<!-- Used for Sign Up Yes, I have card scenario -->
+<!-- Change the UserName everytime -->
+
+<user userid="new-user-3">
+<UserName>newuser3_1@cub.com</UserName>
+<password>password</password>
+<lastname>Test</lastname>
+<rewardsnumber>48630936861</rewardsnumber>
+</user>
+
+
+						<!-- Data Used for Coupons Testing -->
+
+<!-- Change the UserName, cardlessid7, cardlessid4 and wantedCoupons -->
+
+<user userid="new-user-4">
+<UserName>newuser4_1@cub.com</UserName>
+<password>password</password>
+<firstname>addCoupon</firstname>
+<lastname>NoCardNewUser</lastname>
+<address1>123 cedar Road</address1>
+<address2>test</address2>
+<city>Minneapolis</city>
+<state>MN</state>
+<zipcode>58963</zipcode>
+<homephone>8523697410</homephone>
+<mobilephone>7410254863</mobilephone>
+<cardlessid>00852010001</cardlessid>
+<wantedCoupons>2,4,9</wantedCoupons>
+</user>
+
+<!-- Change the UserName and cardless id everytime -->
+
+<user userid="new-user-5">
+<UserName>newuser5_1@cub.com</UserName>
 <password>password</password>
 <firstname>test</firstname>
 <lastname>want</lastname>
@@ -61,34 +132,71 @@
 <zipcode>58963</zipcode>
 <homephone>8523697410</homephone>
 <mobilephone>7410254863</mobilephone>
-<cardlessid>75395148622</cardlessid>
-<wantedCoupons>1,3,5,9</wantedCoupons>
+<cardlessid>00741010001</cardlessid>
+<wantedCoupons>1,3,9,11</wantedCoupons>
 </user>
 
+<!-- Change the UserName and cardless id everytime -->
 
-<!-- Used for Sign Up Yes, I have card scenario -->
-<!-- Change the UserName everytime -->
-
-<user userid="new-user-3">
-<UserName>suyjuly13_2@cub.com</UserName>
+<user userid="new-user-6">
+<UserName>newuser6_1@cub.com</UserName>
 <password>password</password>
-<lastname>Test</lastname>
-<rewardsnumber>48630936861</rewardsnumber>
+<firstname>test</firstname>
+<lastname>want</lastname>
+<address1>123 cedar ave</address1>
+<address2>test</address2>
+<city>Eden Prairie</city>
+<state>MN</state>
+<zipcode>58963</zipcode>
+<homephone>8523697410</homephone>
+<mobilephone>7410254863</mobilephone>
+<cardlessid>00789010001</cardlessid>
+<wantedCoupons>2,5,8</wantedCoupons>
 </user>
+
+<!-- Change the UserName and cardless id everytime -->
+
+<user userid="new-user-7">
+<UserName>newuser7_1@cub.com</UserName>
+<password>password</password>
+<firstname>test</firstname>
+<lastname>want</lastname>
+<address1>123 cedar ave</address1>
+<address2>test</address2>
+<city>Eden Prairie</city>
+<state>MN</state>
+<zipcode>58963</zipcode>
+<homephone>8523697410</homephone>
+<mobilephone>7410254863</mobilephone>
+<cardlessid>00456010001</cardlessid>
+<wantedCoupons>10,2,4,1,6</wantedCoupons>
+</user>
+
+</newUsers>
+
+						<!-- End of New Users List................. -->
+						
+						
+<!-- ========================================================================================================================================= -->	
+
+<others>
 
 						<!-- Data Used for Find A Store Testing -->
 
-<user userid="new-user-4">
+<user userid="fas-user-1">
 <ZipCode>55434</ZipCode>
 <CityName>Central Ave Ne Blaine</CityName>
 <State>MN</State>
 </user>
 
+<!-- ========================================================================================================================================= -->	
+
+
 						<!-- Data Used for Change Password Testing -->
 						
 <!-- Change and provide a valid UserName,password everytime -->
 
-<user userid="user-to-change-pwd">
+<user userid="change-pwd-user-1">
 
 <UserName>chgpwd1@cub.com</UserName>
 <oldpassword>password</oldpassword>
@@ -104,45 +212,8 @@
 <spacepassword>f v m m h</spacepassword>
 </user>
 
+</others>
 
-
-						<!-- Data Used for Coupons Testing -->
-
-<!-- Change the UserName, cardlessid7, cardlessid4 and wantedCoupons -->
-
-<user userid="new-user-coupon1">
-<UserName>NoCardNewUser22@cub.com</UserName>
-<password>password</password>
-<firstname>addCoupon</firstname>
-<lastname>NoCardNewUser</lastname>
-<address1>123 cedar Road</address1>
-<address2>test</address2>
-<city>Minneapolis</city>
-<state>MN</state>
-<zipcode>58963</zipcode>
-<homephone>8523697410</homephone>
-<mobilephone>7410254863</mobilephone>
-<cardlessid7>7412369</cardlessid7>
-<cardlessid4>1009</cardlessid4>
-<wantedCoupons>1,2,4,9</wantedCoupons>
-</user>
-
-<!-- Change the UserName and cardless id everytime -->
-
-<user userid="new-user-coupon2">
-<UserName>wantcarduser6@cub.com</UserName>
-<password>password</password>
-<firstname>test</firstname>
-<lastname>want</lastname>
-<address1>123 cedar ave</address1>
-<address2>test</address2>
-<city>Eden Prairie</city>
-<state>MN</state>
-<zipcode>58963</zipcode>
-<homephone>8523697410</homephone>
-<mobilephone>7410254863</mobilephone>
-<cardlessid>78524567535</cardlessid>
-<wantedCoupons>1,3,9</wantedCoupons>
-</user>
+<!-- ========================================================================================================================================= -->	
 
 </TestData> 

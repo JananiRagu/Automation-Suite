@@ -290,6 +290,16 @@ public class CubHome extends SuiteBase{
 		log.info("SignInButton Clicked");
 	}
 	
+	public void completeSignIn(String UserName, String Password) throws InterruptedException{
+		
+		clickSignInLink();
+		
+		enterLoginDetails(UserName, Password);
+		
+		clickSignInButton();
+		Thread.sleep(5000);
+	}
+	
 
 	public boolean isLogOutButtonPresent(){
 				

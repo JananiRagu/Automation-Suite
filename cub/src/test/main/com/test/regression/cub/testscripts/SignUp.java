@@ -9,6 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.xml.sax.SAXException;
 import com.test.regression.cub.pages.CubHome;
+import com.test.regression.cub.pages.MyAccountPage;
 import com.test.regression.cub.pages.SignUpPage;
 import com.test.regression.cub.utils.*;
 
@@ -19,6 +20,7 @@ public class SignUp extends SuiteBase{
 	ReadXML readxml = new ReadXML();
 	CubHome cubHome;
 	SignUpPage signUpPage;
+	MyAccountPage map;
 
 	@Test(priority=3, enabled=true)
 	public void validSignUp_noCard(){
@@ -42,7 +44,15 @@ public class SignUp extends SuiteBase{
 			
 		signUpPage.clickContinueButton();
 		
-		Assert.assertTrue(signUpPage.isLogOutButtonPresent());	
+		map = new MyAccountPage(_driver);
+		
+		map.clickOnMyAccountUnderMyTools(_driver);
+		
+		String username = map.getSignedInUsername();
+		
+		boolean result = username.equalsIgnoreCase(userId);
+		
+		Assert.assertTrue(result);	
 		
 		} catch (InterruptedException ie) {
 			log.info(ie.getMessage());
@@ -92,7 +102,17 @@ public class SignUp extends SuiteBase{
 		signUpPage.clickContinueButton();
 		signUpPage.addRewardsCard_EnterDetails(lastName, rewardsNum);
 		
-		Assert.assertTrue(signUpPage.isLogOutButtonPresent());
+		
+		map = new MyAccountPage(_driver);
+		
+		map.clickOnMyAccountUnderMyTools(_driver);
+		
+		String username = map.getSignedInUsername();
+		
+		boolean result = username.equalsIgnoreCase(userId);
+		
+		Assert.assertTrue(result);
+		
 		
 		} catch (InterruptedException ie) {
 			log.info(ie.getMessage());
@@ -151,7 +171,15 @@ public class SignUp extends SuiteBase{
 			
 		signUpPage.clickUseThisAddressButton();
 		
-		Assert.assertTrue(signUpPage.isLogOutButtonPresent());
+		map = new MyAccountPage(_driver);
+		
+		map.clickOnMyAccountUnderMyTools(_driver);
+		
+		String username = map.getSignedInUsername();
+		
+		boolean result = username.equalsIgnoreCase(userId);
+		
+		Assert.assertTrue(result);
 		
 		} catch (InterruptedException ie) {
 			log.info(ie.getMessage());

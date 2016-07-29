@@ -9,6 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.xml.sax.SAXException;
 import com.test.regression.cub.pages.CubHome;
+import com.test.regression.cub.pages.MyAccountPage;
 import com.test.regression.cub.utils.Logg;
 import com.test.regression.cub.utils.ReadXML;
 import com.test.regression.cub.utils.SuiteBase;
@@ -16,6 +17,8 @@ import com.test.regression.cub.utils.SuiteBase;
 public class SignIn extends SuiteBase {
 
 	CubHome cubHome;
+	
+	MyAccountPage map;
 	Logger log = Logg.createLogger();
 	ReadXML readxml = new ReadXML();
 
@@ -25,7 +28,7 @@ public class SignIn extends SuiteBase {
 		try {
 			
 		// Retrieving test data for valid login
-		Map<String, String> validLogin = readxml.getUserData("TestData.xml", "carded-user");
+		Map<String, String> validLogin = readxml.getUserData("TestData.xml", "authorized-user-1");
 		String userId = validLogin.get("UserName");
 		String password = validLogin.get("password");
 
@@ -40,7 +43,13 @@ public class SignIn extends SuiteBase {
 
 		cubHome.clickSignInButton();
 		
-		boolean result = cubHome.isLogOutButtonPresent();
+		map = new MyAccountPage(_driver);
+		
+		map.clickOnMyAccountUnderMyTools(_driver);
+		
+		String username = map.getSignedInUsername();
+		
+		boolean result = username.equalsIgnoreCase(userId);
 		System.out.println("Result is " + result);
 		Assert.assertTrue(result);
 		
@@ -65,12 +74,12 @@ public class SignIn extends SuiteBase {
 		}
 	}
 	
-	@Test(priority=2,enabled=true) 
+	@Test(priority=2,enabled=false) 
 	  public void inValidLogin(){
 		
 		try {
 		// Retrieving test data for valid login
-		Map<String, String> invalidLogin = readxml.getUserData("TestData.xml", "invalid-user");
+		Map<String, String> invalidLogin = readxml.getUserData("TestData.xml", "invalid-user-1");
 		String userId = invalidLogin.get("UserName");
 		String password = invalidLogin.get("password");
 

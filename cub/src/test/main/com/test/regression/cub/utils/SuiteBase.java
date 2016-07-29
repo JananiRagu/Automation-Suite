@@ -10,7 +10,9 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -18,12 +20,20 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+
 import com.test.regression.cub.utils.Constant;
 
 public class SuiteBase {	
 	
 	Logger log = Logg.createLogger();
 	protected static WebDriver _driver;
+	
+	@BeforeSuite(alwaysRun = true)
+	public void DataSetUp(){
+		UpdateXML dataUpdateObj = new UpdateXML();
+		dataUpdateObj.updateTestData();
+	}
  
 	@AfterMethod
 	public void closeDriver(Method method)
@@ -69,7 +79,10 @@ public class SuiteBase {
  		 		 
  		  if(browser.equalsIgnoreCase("firefox")) {
  			 		  
- 			  _driver = new FirefoxDriver();                  
+ 			
+ 			 //System.setProperty("webdriver.firefox.driver", "./exeFiles/firefox.exe");
+ 			  _driver = new FirefoxDriver(); 
+ 			 //System.out.println("Firefox properties ::: " +System.getProperty("webdriver.firefox.driver")); */
  		 
  		  }else if(browser.equalsIgnoreCase("chrome")){
  			  
