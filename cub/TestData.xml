@@ -97,6 +97,105 @@
 <rewardsnumber>48630936861</rewardsnumber>
 </user>
 
+<UserName>suqyjulyq12qq@cub.com</UserName>
+<password>password</password>
+<lastname>Test</lastname>
+<UserName>chgpwd1@cub.com</UserName>
+<wrongoldpassword>pass11word</wrongoldpassword>
+
+						<!-- Data Used for Updating Contact Information in My Account Testing -->
+						
+<!-- Change and provide a valid UserName,password everytime -->
+
+<user userid="user-to-update-contact-info">
+
+<UserName>testcomm@cub.com</UserName>
+<password>password</password>
+
+<firstname>First</firstname>
+<firstnamecp>Communicationpreffn</firstnamecp>
+<firstnameagain>UpdateFirstName</firstnameagain>
+<firstnamenumbers>t123</firstnamenumbers>
+<firstnamespecialCharacters>t@%!</firstnamespecialCharacters>
+
+<lastname>Test</lastname>
+<lastnamenumbers>t12q3q</lastnamenumbers>
+<lastnamespecialCharacters>tq@%!sd</lastnamespecialCharacters>
+
+<address1>123 cedar ave</address1>
+
+<address2>test</address2>
+
+<city>Eden Prairie</city>
+<citynumber>w1w12</citynumber>
+<cityspecialchar>as!#s</cityspecialchar>
+
+<state>MN</state>
+<state1>CO</state1>
+
+<zipcode>55123</zipcode>
+<zipcodespace>2 2 </zipcodespace>
+<zipcodealphabets>w1w12</zipcodealphabets>
+<zipcodespecialchar>1!#4</zipcodespecialchar>
+<zipcodelessdigits>56</zipcodelessdigits>
+
+<homephone>8523697410</homephone>
+<homephonealphabets>7a102g48l3</homephonealphabets>
+<homephonespace>7 10 54 63</homephonespace>
+<homephonespecialchar>2#46)65!23</homephonespecialchar>
+
+<mobilephone>7410254863</mobilephone>
+<mobilephonealphabets>7a102g48l3</mobilephonealphabets>
+<mobilephonespace>7 10 54 63</mobilephonespace>
+<mobilephonespecialchar>2#46)65!23</mobilephonespecialchar>
+
+<cardlessid>75395148621</cardlessid>
+
+</user>
+
+
+						<!-- Data Used for Updating Communication Preferences Information in My Account Testing -->
+						
+<user userid="user-to-update-comm-pref">
+
+<UserName>testcomm@cub.com</UserName>
+<password>password</password>
+
+<validemail>test@cub.com</validemail>
+<invalidemail>test12</invalidemail>
+
+<mobilephone>7410254863</mobilephone>
+<mobilephonealphabets>7a102g48l3</mobilephonealphabets>
+<mobilephonespace>7 10 54 63</mobilephonespace>
+<mobilephonespecialchar>2#46)65!23</mobilephonespecialchar>
+
+<firstname>Communicationpreffn</firstname>
+<firstnameagain>Updatefirstname</firstnameagain>
+<firstnamenumbers>t123</firstnamenumbers>
+<firstnamespecialCharacters>t@%!</firstnamespecialCharacters>
+
+<lastname>Test</lastname>
+<lastnamenumbers>t12q3q</lastnamenumbers>
+<lastnamespecialCharacters>tq@%!sd</lastnamespecialCharacters>
+
+<address1>123 cedar ave</address1>
+
+<address2>test</address2>
+
+<city>Eden Prairie</city>
+<citynumber>w1w12</citynumber>
+<cityspecialchar>as!#s</cityspecialchar>
+
+<state>MN</state>
+<state1>CO</state1>
+
+<zipcode>55123</zipcode>
+<zipcodespace>2 2 </zipcodespace>
+<zipcodealphabets>w1w12</zipcodealphabets>
+<zipcodespecialchar>1!#4</zipcodespecialchar>
+<zipcodelessdigits>56</zipcodelessdigits>
+
+</user>
 
 						<!-- Data Used for Coupons Testing -->
 
