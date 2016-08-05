@@ -48,6 +48,9 @@ public class CouponPage extends SuiteBase{
 	@FindAll({@FindBy(xpath = "//button[text()='+ Add Item']")})
 	private List<WebElement> _addItemButton;
 	
+	@FindBy(xpath = "//button[text()='+ Add Item']")
+	private WebElement _addItemButtonCouponDetail;
+	
 	@FindAll({@FindBy(xpath = "//div[@class='coupon-list']/div")})
 	private List<WebElement> _allCoupons;
 	
@@ -88,13 +91,30 @@ public class CouponPage extends SuiteBase{
 	@FindBy(xpath = "//*[@id='panel2-1']/a")
 	private WebElement _topButton;
 	
+	@FindBy(xpath = "//a[text()='Coupon Details']")
+	private WebElement _couponDetailsLink;
+	
+	@FindBy(xpath = "//div[@class='coupon-details-tab-container']/ul/li[1]/div")
+	private WebElement _couponDetailsLinkTriangle;
+	
+	@FindBy(xpath = "//a[text()='Terms & Conditions']")
+	private WebElement _tNcLink;
+	
+	@FindBy(xpath = "//div[@class='coupon-details-tab-container']/ul/li[2]/div")
+	private WebElement _tNcLinkTriangle;
+	
+	@FindBy(xpath = "//div[@class='coupon-details large-8 medium-8 small-8 column']/h3[2]")
+	private WebElement _couponNameFromCouponDetailsPage;
+	
+	@FindBy(xpath = "//*[@id='coupon-category']")
+	private WebElement _categoryDropdownInCouponsPage;
+	
+	@FindBy(xpath = "//input[@class='coupon-search']")
+	private WebElement _searchBoxInCouponsPage;
+	
 	public void clickOnCouponsInMyToolsHomePage(WebDriver driver) throws InterruptedException{
 		
-		/*Thread.sleep(6000);
-		_MyToolsLink.click();
-		
-		Thread.sleep(5000);
-		_Coupons.click();*/
+		log.info("...Inside clickOnCouponsInMyToolsHomePage method...");
 		
 		driver.navigate().to(Constant.URL+"savings/coupons.html");
 		log.info("Clicked on Coupons in Home page");
@@ -102,13 +122,16 @@ public class CouponPage extends SuiteBase{
 	}
 	
 	public boolean chkIfFlipp(WebDriver driver, String wantedCouponNo){
-		System.out.println("Inside chkIfFlipp method");
+		
+		System.out.println("...Inside chkIfFlipp method...");
+		
 		String temp1 = "//div[@class='coupon-list']/div[";
 		String temp2 = "]/div/div/div[1]";
 		
 		String wantedAddItemButton = temp1+wantedCouponNo+temp2;
 		
 		String couponClassName = driver.findElement(By.xpath(wantedAddItemButton)).getAttribute("class");
+		
 		if(couponClassName.equalsIgnoreCase("coupon-badge")){
 			log.info("Coupon is Flippp!");
 			return true;
@@ -121,34 +144,41 @@ public class CouponPage extends SuiteBase{
 	
 	public void addNthFlippCoupon(WebDriver driver, String couponNo) throws InterruptedException{
 		
-		System.out.println("Inside addNthFlippCoupon method");
+				
+		System.out.println("...Inside addNthFlippCoupon method...");
 		
-		System.out.println("Inside addNthFlippCoupon method");
 		String temp1 = "//div[@class='coupon-list']/div[";
 		String temp2 = "]/div/div/div[3]/button[text()='+ Add Item']";
 		
 		String wantedAddItemButton = temp1+couponNo+temp2;
 		log.info("Trying to Add this coupon" + wantedAddItemButton);
+		
 		Thread.sleep(5000);
+		
 		driver.findElement(By.xpath(wantedAddItemButton)).click();
 		log.info("Added this coupon successfully : " + wantedAddItemButton);	
 	}
 	
 	public void addNthInmarCoupon(WebDriver driver, String couponNo) throws InterruptedException{
-		System.out.println("Inside addNthInmarCoupon method");
+		
+		System.out.println("...Inside addNthInmarCoupon method...");
+		
 		String temp1 = "//div[@class='coupon-list']/div[";
 		String temp2 = "]/div/div/div[2]/button[text()='+ Add Item']";
 		
 		String wantedAddItemButton = temp1+couponNo+temp2;
 		System.out.println("Trying to Add this coupon" + wantedAddItemButton);
+		
 		Thread.sleep(5000);
+		
 		driver.findElement(By.xpath(wantedAddItemButton)).click();
 		log.info("Added this coupon successfully : " + wantedAddItemButton);		
 	}
 
 	public String getNthFlippCouponName(WebDriver driver, String couponNo){
 		
-		System.out.println("Inside getNthFlippCouponName method");
+		System.out.println("...Inside getNthFlippCouponName method...");
+		
 		String temp1 = "//div[@class='coupon-list']/div[";
 		String temp2 = "]/div/div/div[2]/div[2]/h3/a";
 		
@@ -157,14 +187,16 @@ public class CouponPage extends SuiteBase{
 		WebElement wantedCouponNameElement = driver.findElement(By.xpath(wantedCouponNameXpath));
 		
 		String wantedCouponName = wantedCouponNameElement.getText();
-		log.info("Coupon name in Coupons page : " + wantedCouponName);
+		log.info("Coupon name in Coupons page which i am trying to add: " + wantedCouponName);
+		
 		return wantedCouponName;
 		
 	}
 	
 	public String getNthInmarCouponName(WebDriver driver, String couponNo){
 		
-		System.out.println("Inside getNthInmarCouponName method");
+		System.out.println("...Inside getNthInmarCouponName method...");
+		
 		String temp1 = "//div[@class='coupon-list']/div[";
 		String temp2 = "]/div/div/div[1]/div[2]/h3/a";
 		
@@ -173,37 +205,31 @@ public class CouponPage extends SuiteBase{
 		WebElement wantedCouponNameElement = driver.findElement(By.xpath(wantedCouponNameXpath));
 		
 		String wantedCouponName = wantedCouponNameElement.getText();
-		log.info("Coupon name in Coupons page : " + wantedCouponName);
+		log.info("Coupon name in Coupons page which i am trying to add: " + wantedCouponName);
+		
 		return wantedCouponName;
 		
 	}
 	
 	public void scrollPageDown(WebDriver driver) throws InterruptedException{
 		
-		/*//JavascriptExecutor jsx = (JavascriptExecutor)driver;
-		//jsx.executeScript("window.scrollBy(0,450)", "");
-		System.out.println("Inside scrollPageDown method..");
+		log.info("...Inside scrollPageDown method...");
 		
-		Actions action = new Actions(driver);
-		
-		for(int count=0;count<4;count++){
-			Thread.sleep(5000);
-			action.sendKeys(Keys.PAGE_DOWN);
-		}
-		Thread.sleep(5000);*/
-		
-			JavascriptExecutor js = (JavascriptExecutor)driver;
+		JavascriptExecutor js = (JavascriptExecutor)driver;
 		   boolean reachedbottom = Boolean.parseBoolean(js.executeScript("return $(document).height() == ($(window).height() + $(window).scrollTop());").toString());
 
-		    while (!reachedbottom) {
+		   while (!reachedbottom) {
 		        ((JavascriptExecutor) driver).executeScript("window.scrollBy(0,800)", "");
 		        try {
 		            reachedbottom=Boolean.parseBoolean(js.executeScript("return $(document).height() == ($(window).height() + $(window).scrollTop());").toString());
-		            //WebElement element = driver.findElement(By.xpath("//*[@id='http://static3.jassets.com/p/The-Indian-Garage-Co.-Checks-Red-Casual-Shirt-2889-679124-1-catalog.jpg']/img"));
+		            
 		            Wait<WebDriver> wait_element = new WebDriverWait(driver, 5);
+		            
 		            wait_element.until(ExpectedConditions.elementToBeClickable(_moreCouponsButton));
+		            
 		            _moreCouponsButton.click();
 		            System.out.println("!!!!!!!!!!!!!!At Last Get Success!!!!!!!!!!!!!!!!");
+		            
 		            break;
 		        } catch (Exception ex) {
 		            
@@ -220,19 +246,23 @@ public class CouponPage extends SuiteBase{
 	}
 	
 	public int loadCompleteCouponsPage(WebDriver driver) throws InterruptedException{
-		System.out.println("Inside loadCompleteCouponsPage method");
-		//boolean moreCouponsButtonPresence = _moreCouponsButton.isDisplayed();
+		
+		System.out.println("...Inside loadCompleteCouponsPage method...");
+		
 		
 		scrollPageDown(driver);
 		
 		scrollPageDown(driver);
 		
 		scrollPageDown(driver);
+		
 		do{
 			
 			clickMoreCouponsButton();
 			Thread.sleep(9000);
+			
 			System.out.println("more coupons presence : " + _moreCouponsButton.isDisplayed());
+			
 		}while(_moreCouponsButton.isDisplayed());
 		
 		int totalNoOfCoupons = _allCoupons.size();
@@ -242,13 +272,18 @@ public class CouponPage extends SuiteBase{
 	}
 	
 	public int noOfAddItemButtons() throws InterruptedException{
+		
+		log.info("...Inside noOfAddItemButtons method...");
+		
 		Thread.sleep(5000);
 		int totalNoOfCoupons = _addItemButton.size();
+		
 		return totalNoOfCoupons;
 	}
 	
 	public void enterCardlessId(String cardlessIdFirst7, String cardlessIdLast4) throws InterruptedException{
-		System.out.println("Inside enterCardlessId method");
+		
+		System.out.println("...Inside enterCardlessId method...");
 		
 		waitFor(_first7DigitsCardlessId);
 		_first7DigitsCardlessId.clear();
@@ -258,9 +293,6 @@ public class CouponPage extends SuiteBase{
 		_last4DigitsCardlessId.clear();
 		_last4DigitsCardlessId.sendKeys(cardlessIdLast4);
 		
-		/*Thread.sleep(5000);
-		waitFor(_continueButtonInCardlessIdPopUp);
-		_continueButtonInCardlessIdPopUp.click();*/
 		
 		log.info("Entered Cardless id");
 		Thread.sleep(5000);
@@ -268,18 +300,19 @@ public class CouponPage extends SuiteBase{
 	
 	public void clickContinueInAddCardlessIdPopup() throws InterruptedException{
 		
-		System.out.println("Inside clickContinueInAddCardlessIdPopup method");
-		//waitFor(_continueAfterAddingCardlessId);
+		System.out.println("...Inside clickContinueInAddCardlessIdPopup method...");
+		
 		Thread.sleep(5000);
 		_continueButtonInCardlessIdPopUp.click();
+		
 		Thread.sleep(5000);
 		log.info("Clicked on Continue in Add Cardless id popup");
 	}
 	
 	public void clickContinueAfterAddingCardlessIdCongratsPopup() throws InterruptedException{
 		
-		System.out.println("Inside clickContinueAfterAddingCardlessIdCongratsPopup method");
-		//waitFor(_continueAfterAddingCardlessId);
+		System.out.println("...Inside clickContinueAfterAddingCardlessIdCongratsPopup method...");
+	
 		Thread.sleep(5000);
 		_continueAfterAddingCardlessId.click();
 		
@@ -288,7 +321,7 @@ public class CouponPage extends SuiteBase{
 	
 	public void clickNotNowInCardlessIdPopup() throws InterruptedException{
 		
-		System.out.println("Inside clickNotNowInCardlessIdPopup method");
+		System.out.println("...Inside clickNotNowInCardlessIdPopup method...");
 		Thread.sleep(5000);
 		_notNowInAddCardlessIdPopup.click();
 		
@@ -297,7 +330,7 @@ public class CouponPage extends SuiteBase{
 	
 	public int totalNoOfCoupons(){
 		
-		System.out.println("Inside totalNoOfCoupons method");
+		System.out.println("...Inside totalNoOfCoupons method...");
 		String couponCountMsg = _noOfCouponsMsgInCouponsPage.getText();
 		
 		List<String> temp = Arrays.asList(couponCountMsg.split("\\s"));
@@ -310,7 +343,22 @@ public class CouponPage extends SuiteBase{
 		
 	}
 	
+		public boolean getSelectedCategory(String SelectedCategory){
+		
+		System.out.println("...Inside getSelectedCategory method...");
+		String couponCountMsg = _noOfCouponsMsgInCouponsPage.getText();
+		
+		if(couponCountMsg.contains(SelectedCategory))
+			return true;
+		else
+			return false;
+			
+		
+	}
+	
 	public void addListOfCoupons(List<String> otherWantedCoupons) throws InterruptedException{
+		
+		System.out.println("...Inside addListOfCoupons method...");
 		
 		for(String wantedCouponNumber : otherWantedCoupons){
 			
@@ -341,6 +389,8 @@ public class CouponPage extends SuiteBase{
 	}
 	
 	public void addSingleCouponWithCardlessId(String firstWantedCoupon, String cardlessId7, String cardlessId4) throws InterruptedException{
+		
+		System.out.println("...Inside addSingleCouponWithCardlessId method...");
 		
 		boolean isFirstCouponFlipp = chkIfFlipp(_driver, firstWantedCoupon);
 		System.out.println("isCouponFlipp value is "+ isFirstCouponFlipp);
@@ -375,7 +425,9 @@ public class CouponPage extends SuiteBase{
 
 	public void addSingleCouponWithNotNowInCardlessIdPopup(String firstWantedCoupon, String cardlessId7,
 			String cardlessId4) throws InterruptedException {
-		// TODO Auto-generated method stub
+		
+		System.out.println("...Inside addSingleCouponWithNotNowInCardlessIdPopup method...");
+		
 		boolean isFirstCouponFlipp = chkIfFlipp(_driver, firstWantedCoupon);
 		System.out.println("isCouponFlipp value is "+ isFirstCouponFlipp);
 		
@@ -408,6 +460,8 @@ public class CouponPage extends SuiteBase{
 	
 	public String addSingleCoupon(WebDriver driver, String wantedCouponNumber) throws InterruptedException{
 	
+		System.out.println("...Inside addSingleCoupon method...");
+		
 		boolean isCouponFlipp = chkIfFlipp(driver, wantedCouponNumber);
 		
 		System.out.println("isCouponFlipp value : "+ isCouponFlipp);
@@ -431,8 +485,36 @@ public class CouponPage extends SuiteBase{
 		
 		return addedCouponName;
 	}
+	
+	public void navigateToCouponDetailPage(WebDriver driver, String  wantedCouponNumber) throws InterruptedException{
+		
+		System.out.println("...Inside navigateToCouponDetailPage method...");
+		
+		Thread.sleep(5000);
+		String temp1 = "//div[@class='coupon-list']/div[";
+		String temp2 = "]/div/div/div[1]/div[2]/h3/a";
+		
+		String wantedCn = temp1+wantedCouponNumber+temp2;
+		WebElement wantedCoupon = driver.findElement(By.xpath(wantedCn));
+		waitFor(wantedCoupon);
+		wantedCoupon.click();
+		log.info("Clicked on "+wantedCoupon+" in Coupons Page");
+	}
+	
+	public void clickOnAddItemInCouponDetailsPage() throws InterruptedException{
+		
+		System.out.println("...Inside clickOnAddItemInCouponDetailsPage method...");
+		
+		Thread.sleep(5000);
+		waitFor(_addItemButtonCouponDetail);
+		_addItemButtonCouponDetail.click();
+		
+		log.info("Clicked on Add Item Button in Coupon Details Page");
+	}
 
 	public List<String> getCouponNamesOnDisplayOrder(WebDriver driver) throws InterruptedException {
+		
+		System.out.println("...Inside getCouponNamesOnDisplayOrder method...");
 		
 		Thread.sleep(5000);
 		String temp1 = "//div[@class='coupon-list']/div[";
@@ -457,8 +539,6 @@ public class CouponPage extends SuiteBase{
 				log.info("Some coupon is missing");
 				wantedCouponName = driver.findElement(By.xpath(wantedCouponwithExpiryFlag));
 			}
-			/*WebDriverWait wait = new WebDriverWait(driver, 30);
-			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(wantedCoupon)));*/
 			
 			WebDriverWait wait = new WebDriverWait(driver, 30);
 			wait.until(ExpectedConditions.visibilityOf(wantedCouponName));
@@ -476,18 +556,7 @@ public class CouponPage extends SuiteBase{
 
 	public boolean chkAlphabeticalOrder(List<String> couponDisplayOrder) {
 		
-		System.out.println("Inside chkAlphabeticalOrder method...");
-		/*String previousFirstLetter = "";
-		String currentFirstLetter;
-		
-		for (final String current : couponDisplayOrder){
-			currentFirstLetter = String.valueOf(current.charAt(0));
-			if(currentFirstLetter.compareTo(previousFirstLetter) < 0 )
-		
-				return false;
-			previousFirstLetter = currentFirstLetter;
-		}
-		return true;*/
+		System.out.println("...Inside chkAlphabeticalOrder method...");
 		
 		List<String> couponExpiryDateOrderFirstLetters = new LinkedList<String>();
 		String currentFirstLetter;
@@ -501,12 +570,16 @@ public class CouponPage extends SuiteBase{
 			System.out.println(cur);
 		}
 		
-	boolean sorted=Ordering.natural().isOrdered(couponExpiryDateOrderFirstLetters);
-	System.out.println("Final Return Value of chkAlphabeticalOrder method :: "+ sorted);
+		boolean sorted=Ordering.natural().isOrdered(couponExpiryDateOrderFirstLetters);
+		System.out.println("Final Return Value of chkAlphabeticalOrder method :: "+ sorted);
+		
 	return sorted;
 	}
 	
 	public void selectValueFromCouponSortChkBox(String value) throws InterruptedException{
+		
+		System.out.println("...Inside selectValueFromCouponSortChkBox method...");
+		
 		Select couponSortValues = new Select(_couponSortChkBox);
 		couponSortValues.selectByVisibleText(value);
 		System.out.println("Coupons are now sorted with " + value + " ............................................................");
@@ -514,6 +587,9 @@ public class CouponPage extends SuiteBase{
 	}
 
 	public List<String> getEndDatesOnExpiryDate(WebDriver driver) throws InterruptedException {
+		
+		System.out.println("...Inside getEndDatesOnExpiryDate method...");
+		
 		String temp1 = "//div[@class='coupon-list']/div[";
 		String temp2 = "]/div/div/div[2]/div[2]/h3/a";
 		
@@ -546,6 +622,9 @@ public class CouponPage extends SuiteBase{
 	}
 
 	public boolean chkExpiryDateOrder(List<String> couponExpiryDateOrder) {
+		
+		System.out.println("...Inside chkExpiryDateOrder method...");
+		
 		String previous = "";
 		
 		for (final String current : couponExpiryDateOrder){
@@ -558,21 +637,94 @@ public class CouponPage extends SuiteBase{
 	}
 
 	public boolean compare2lists(List<String> couponItemDisplayOrder, List<String> couponExpiryDateOrder) {
+		
+		System.out.println("...Inside compare2lists method...");
 	
 		boolean result = couponItemDisplayOrder.equals(couponExpiryDateOrder);
 		return result;
 	}
 	
 	public void clcikOnTopButton(){
+		
+		System.out.println("...Inside clcikOnTopButton method...");
+		
 		waitFor(_topButton);
 		_topButton.click();
 	}
 	
 	public int couponCount() throws InterruptedException{
+		
+		System.out.println("...Inside couponCount method...");
+		
 		Thread.sleep(5000);
 		int returnValue = _allCoupons.size();
 		
 		return returnValue;
+		
+	}
+	
+	public boolean clickCouponDetailsLink(){
+		
+		System.out.println("...Inside clickCouponDetailsLink method...");
+		
+		waitFor(_couponDetailsLink);
+		_couponDetailsLink.click();
+		
+		String temp = _couponDetailsLinkTriangle.getAttribute("class");
+		
+		if(temp.equalsIgnoreCase("triangle"))
+			return true;
+		else
+			return false;
+	}
+	
+	public boolean clickTermsNConditionsLink(){
+		
+		System.out.println("...Inside clickTermsNConditionsLink method...");
+		
+		waitFor(_tNcLink);
+		_tNcLink.click();
+		
+		String temp = _tNcLinkTriangle.getAttribute("class");
+		
+		if(temp.equalsIgnoreCase("triangle"))
+			return true;
+		else
+			return false;
+	}
+	
+	public String getCouponNameFromCouponDetailsPage(){
+		
+		System.out.println("...Inside getCouponNameFromCouponDetailsPage method...");
+		
+		waitFor(_couponNameFromCouponDetailsPage);
+		String couponName = _couponNameFromCouponDetailsPage.getText();
+		
+		return couponName;
+	}
+	
+	public void selectCatergory(String categoryToBeSelected) throws InterruptedException{
+		
+		System.out.println("...Inside selectCatergory method...");
+		
+		waitFor(_categoryDropdownInCouponsPage);
+		
+		Select categoryDrpDown = new Select(_categoryDropdownInCouponsPage);
+		categoryDrpDown.selectByVisibleText(categoryToBeSelected);
+		
+		Thread.sleep(5000);
+	}
+	
+	public void searchForAnItemInCoupons(String searchItem) throws InterruptedException{
+		
+		System.out.println("...Inside searchForAnItemInCoupons method...");
+		
+		waitFor(_searchBoxInCouponsPage);
+		
+		_searchBoxInCouponsPage.sendKeys(searchItem);
+		_searchBoxInCouponsPage.sendKeys(Keys.ENTER);
+		
+		Thread.sleep(5000);
 		
 	}
 	

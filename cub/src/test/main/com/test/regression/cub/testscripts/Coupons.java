@@ -35,22 +35,23 @@ public class Coupons extends SuiteBase{
 	ReadXML readxml = new ReadXML();
 	
 	@Test(priority=11, enabled=false)
-	public void addCouponForAuthorizedUser() throws XPathExpressionException, ParserConfigurationException, SAXException, IOException, InterruptedException{
-		
+	public void addCouponForAuthorizedUser() {
+		try{
 		Map<String, String> newSL = readxml.getUserData("TestData.xml", "authorized-user-2");
 		String userId = newSL.get("UserName");
 		String password = newSL.get("password");
-		String wantedCouponNumber = newSL.get("wantedCoupon");
+		String wantedCouponNumber = newSL.get("CouponToAdd");
 		
 		cubHome = new CubHome(_driver);
 		
+		try{
 		cubHome.completeSignIn(userId, password);
 			log.info("Signed In Successfully");
 		
 			Thread.sleep(5000);
 		cp = new CouponPage(_driver);
 		
-		try{
+		
 			cp.clickOnCouponsInMyToolsHomePage(_driver);
 			
 			cp.loadCompleteCouponsPage(_driver);
@@ -72,6 +73,25 @@ public class Coupons extends SuiteBase{
 		
 		System.out.println("Result is " + result);
 		Assert.assertTrue(result);
+		} catch (InterruptedException ie) {
+			log.info(ie.getMessage());
+			Assert.fail("Caught Interrupted Exception");
+		} catch (IOException ioe) {
+			log.info(ioe.getMessage());	
+			Assert.fail("Caught IOException Exception");
+		} catch (XPathExpressionException xee) {
+			log.info(xee.getMessage());	
+			Assert.fail("Caught XPathExpressionException Exception");
+		} catch (ParserConfigurationException pce) {
+			log.info(pce.getMessage());
+			Assert.fail("Caught ParserConfigurationException Exception");
+		} catch (SAXException saxe) {
+			log.info(saxe.getMessage());
+			Assert.fail("Caught SAXException Exception");
+		} catch (Exception e) {
+			log.info(e.getMessage());
+			Assert.fail(e.getLocalizedMessage());
+		}
 		
 	} 
 	
@@ -97,7 +117,7 @@ public class Coupons extends SuiteBase{
 		String addedCouponName = null;
 		
 		signUpPage = new SignUpPage(_driver);
-		
+		try{
 		signUpPage.clickSignUpLink();
 			log.info("Test Data Used >>>>>>>");
 			log.info("User Name : " + userId);
@@ -114,7 +134,7 @@ public class Coupons extends SuiteBase{
 		
 		cp = new CouponPage(_driver);
 		
-		try{
+		
 			//cubHome.clickCouponTile(_driver);	
 			cp.clickOnCouponsInMyToolsHomePage(_driver);
 
@@ -196,7 +216,7 @@ public class Coupons extends SuiteBase{
 	// Sign Up for an account just by closing the Rewards Card pop up
 	// So, it will prompt for card-less id while trying to add coupon
 			
-	@Test(priority=13, enabled=true)
+	@Test(priority=13, enabled=false)
 	public void addCouponForNoCardNewUser() {
 		
 		try {
@@ -217,7 +237,7 @@ public class Coupons extends SuiteBase{
 			log.info("Test Data Used >>>>>>>");
 			log.info("User Name : " + userId);
 			log.info("Password : " + password);
-		
+			try{
 		signUpPage.clickSignUpLink();
 			
 		signUpPage.enterSignUpDetails(userId,password);
@@ -227,7 +247,7 @@ public class Coupons extends SuiteBase{
 			
 		cp = new CouponPage(_driver);
 		
-		try{
+		
 			cp.clickOnCouponsInMyToolsHomePage(_driver);
 			//cp.loadCompleteCouponsPage(_driver);
 			//log.info("Coupons Page is loaded fully");
@@ -358,7 +378,7 @@ public class Coupons extends SuiteBase{
 			log.info("Test Data Used >>>>>>>");
 			log.info("User Name : " + userId);
 			log.info("Password : " + password);
-		
+			try{
 		signUpPage.clickSignUpLink();
 			
 		signUpPage.enterSignUpDetails(userId,password);
@@ -368,7 +388,7 @@ public class Coupons extends SuiteBase{
 			
 		cp = new CouponPage(_driver);
 		
-		try{
+		
 			cp.clickOnCouponsInMyToolsHomePage(_driver);
 			//cp.loadCompleteCouponsPage(_driver);
 			//log.info("Coupons Page is loaded fully");
@@ -563,6 +583,146 @@ public class Coupons extends SuiteBase{
 		
 	}
 	
+	
+	
+	@Test(priority=11, enabled=false)
+	public void addCouponFromCouponDetailsPageForAuthorizedUser() {
+		try{
+		Map<String, String> newSL = readxml.getUserData("TestData.xml", "authorized-user-3");
+		String userId = newSL.get("UserName");
+		String password = newSL.get("password");
+		String wantedCouponNumber = newSL.get("CouponToAdd");
+		
+		SoftAssert sa = new SoftAssert();
+		
+		cubHome = new CubHome(_driver);
+		
+		try{
+		cubHome.completeSignIn(userId, password);
+			log.info("Signed In Successfully");
+		
+			Thread.sleep(5000);
+		cp = new CouponPage(_driver);
+		
+		
+			cp.clickOnCouponsInMyToolsHomePage(_driver);
+			
+			//cp.loadCompleteCouponsPage(_driver);
+			//log.info("Coupons Page is loaded fully");
+		
+			Thread.sleep(5000);
+			
+		cp.navigateToCouponDetailPage(_driver, wantedCouponNumber);
+		
+		
+		cp.clickOnAddItemInCouponDetailsPage();
+		
+		String addedCouponName = cp.getCouponNameFromCouponDetailsPage();
+		
+		boolean result1 = cp.clickCouponDetailsLink();
+		
+		sa.assertTrue(result1, "Coupon details tab is not high-lighted on Coupon  Details Page");
+		
+		boolean result2 = cp.clickTermsNConditionsLink();
+		
+		sa.assertTrue(result2, "Terms and Conditions tab is not high-lighted on Coupon  Details Page");
+		
+		
+		Thread.sleep(5000);
+		ecp = new MyeCouponsPage(_driver);
+		
+		ecp.clickOnMyeCouponsInMyToolsHomePage(_driver);
+		
+		Thread.sleep(5000);
+		boolean result = ecp.isCouponPresent(addedCouponName);
+		
+		System.out.println("Result is " + result);
+		
+		sa.assertTrue(result, "Unable to add coupon from Coupon Details Page");
+		
+		}catch(UnhandledAlertException al){
+			_driver.switchTo().alert().accept();
+		}
+		
+		sa.assertAll();
+		} catch (InterruptedException ie) {
+			log.info(ie.getMessage());
+			Assert.fail("Caught Interrupted Exception");
+		} catch (IOException ioe) {
+			log.info(ioe.getMessage());	
+			Assert.fail("Caught IOException Exception");
+		} catch (XPathExpressionException xee) {
+			log.info(xee.getMessage());	
+			Assert.fail("Caught XPathExpressionException Exception");
+		} catch (ParserConfigurationException pce) {
+			log.info(pce.getMessage());
+			Assert.fail("Caught ParserConfigurationException Exception");
+		} catch (SAXException saxe) {
+			log.info(saxe.getMessage());
+			Assert.fail("Caught SAXException Exception");
+		} catch (Exception e) {
+			log.info(e.getMessage());
+			Assert.fail(e.getLocalizedMessage());
+		}
+		
+	} 
+	
+	@Test(priority=12, enabled=true)
+	public void categoryTestInCoupons() {
+		
+		try{
+		cp = new CouponPage(_driver);
+		
+		
+		try{
+			cp.clickOnCouponsInMyToolsHomePage(_driver);
+			
+		}catch(UnhandledAlertException al){
+			_driver.switchTo().alert().accept();
+		} 
+		
+		String wantedCategory = "General";
+		
+		cp.selectCatergory(wantedCategory);
+		
+		boolean result = cp.getSelectedCategory(wantedCategory);
+		
+		Assert.assertTrue(result);
+		}
+		catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
+	}
+	
+
+	@Test(priority=11, enabled=true)
+	public void searchTestInCoupons() {
+		
+		try{
+		cp = new CouponPage(_driver);
+		
+		
+		try{
+			cp.clickOnCouponsInMyToolsHomePage(_driver);
+			
+		}catch(UnhandledAlertException al){
+			_driver.switchTo().alert().accept();
+		} 
+		
+		String wantedSearchText = "save";
+		
+		cp.searchForAnItemInCoupons(wantedSearchText);
+		
+		boolean result = cp.getSelectedCategory(wantedSearchText);
+		
+		Assert.assertTrue(result);
+		}
+		catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
+	}
 	
 	}
 	

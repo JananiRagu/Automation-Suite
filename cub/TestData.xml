@@ -1,5 +1,4 @@
-																<!-- Test Data Factory -->
-<TestData>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!-- Test Data Factory --><TestData>
 
 
 						<!-- Authorized Users List................. -->
@@ -25,7 +24,13 @@
 <user userid="authorized-user-2">
 <UserName>trix4supervalu@cub.com</UserName>
 <password>trix@test</password>
-<wantedCoupon>1</wantedCoupon>
+<CouponToAdd>60</CouponToAdd>
+</user>
+
+<user userid="authorized-user-3">
+<UserName>tom4supervalu@cub.com</UserName>
+<password>tom@test</password>
+<CouponToAdd>9</CouponToAdd>
 </user>
 
 </authorizedUsers>
@@ -62,7 +67,7 @@
 <!-- Change the UserName everytime -->	
 					
 <user userid="new-user-1">
-<UserName>newuser1_1@cub.com</UserName>
+<UserName>newuser1_60@cub.com</UserName>
 <password>password</password>
 </user>
 
@@ -71,7 +76,7 @@
 <!-- Change the UserName and cardless id everytime -->
 
 <user userid="new-user-2">
-<UserName>newuser2_1@cub.com</UserName>
+<UserName>newuser2_60@cub.com</UserName>
 <password>password</password>
 <firstname>new</firstname>
 <lastname>user</lastname>
@@ -82,7 +87,7 @@
 <zipcode>58963</zipcode>
 <homephone>8523697410</homephone>
 <mobilephone>7410254863</mobilephone>
-<cardlessid>00963010001</cardlessid>
+<cardlessid>70963010058</cardlessid>
 <wantedCoupons>1,3,5,9</wantedCoupons>
 </user>
 
@@ -91,17 +96,163 @@
 <!-- Change the UserName everytime -->
 
 <user userid="new-user-3">
-<UserName>newuser3_1@cub.com</UserName>
+<UserName>newuser3_60@cub.com</UserName>
 <password>password</password>
 <lastname>Test</lastname>
 <rewardsnumber>48630936861</rewardsnumber>
 </user>
 
+
+
+						<!-- Data Used for Coupons Testing -->
+
+<!-- Change the UserName, cardlessid7, cardlessid4 and wantedCoupons -->
+
+<user userid="new-user-4">
+<UserName>newuser4_60@cub.com</UserName>
+<password>password</password>
+<firstname>addCoupon</firstname>
+<lastname>NoCardNewUser</lastname>
+<address1>123 cedar Road</address1>
+<address2>test</address2>
+<city>Minneapolis</city>
+<state>MN</state>
+<zipcode>58963</zipcode>
+<homephone>8523697410</homephone>
+<mobilephone>7410254863</mobilephone>
+<cardlessid>50852010058</cardlessid>
+<wantedCoupons>2,4,9</wantedCoupons>
+</user>
+
+<!-- Change the UserName and cardless id everytime -->
+
+<user userid="new-user-5">
+<UserName>newuser5_60@cub.com</UserName>
+<password>password</password>
+<firstname>test</firstname>
+<lastname>want</lastname>
+<address1>123 cedar ave</address1>
+<address2>test</address2>
+<city>Eden Prairie</city>
+<state>MN</state>
+<zipcode>58963</zipcode>
+<homephone>8523697410</homephone>
+<mobilephone>7410254863</mobilephone>
+<cardlessid>30741010058</cardlessid>
+<wantedCoupons>1,3,9,11</wantedCoupons>
+</user>
+
+<!-- Change the UserName and cardless id everytime -->
+
+<user userid="new-user-6">
+<UserName>newuser6_60@cub.com</UserName>
+<password>password</password>
+<firstname>test</firstname>
+<lastname>want</lastname>
+<address1>123 cedar ave</address1>
+<address2>test</address2>
+<city>Eden Prairie</city>
+<state>MN</state>
+<zipcode>58963</zipcode>
+<homephone>8523697410</homephone>
+<mobilephone>7410254863</mobilephone>
+<cardlessid>20789010058</cardlessid>
+<wantedCoupons>2,5,8</wantedCoupons>
+</user>
+
+<!-- Change the UserName and cardless id everytime -->
+
+<user userid="new-user-7">
+<UserName>newuser7_60@cub.com</UserName>
+<password>password</password>
+<firstname>test</firstname>
+<lastname>want</lastname>
+<address1>123 cedar ave</address1>
+<address2>test</address2>
+<city>Eden Prairie</city>
+<state>MN</state>
+<zipcode>58963</zipcode>
+<homephone>8523697410</homephone>
+<mobilephone>7410254863</mobilephone>
+<cardlessid>40456010058</cardlessid>
+<wantedCoupons>10,2,4,1,6</wantedCoupons>
+</user>
+
+<user userid="new-user-8">
+<UserName>newuser8_26@cub.com</UserName>
+<password>password</password>
+</user>
+
+<user userid="new-user-9">
+<UserName>newuser9_25@cub.com</UserName>
+<password>password</password>
+</user>
+
+<user userid="new-user-10">
+<UserName>newuser10_12@cub.com</UserName>
+<password>password</password>
+<firstname>test</firstname>
+<lastname>want</lastname>
+<address1>123 cedar ave</address1>
+<address2>test</address2>
+<city>Eden Prairie</city>
+<state>MN</state>
+<zipcode>58963</zipcode>
+<homephone>8523697410</homephone>
+<mobilephone>7410254863</mobilephone>
+<cardlessid>15456010058</cardlessid>
+<wantedCoupons>10,2,4,1,6</wantedCoupons>
+</user>
+
+</newUsers>
+
+						<!-- End of New Users List................. -->
+						
+						
+<!-- ========================================================================================================================================= -->	
+
+<others>
+
+						<!-- Data Used for Find A Store Testing -->
+
+<user userid="fas-user-1">
+<ZipCode>55434</ZipCode>
+<CityName>Central Ave Ne Blaine</CityName>
+<State>MN</State>
+</user>
+
+<!-- ========================================================================================================================================= -->	
+
+
+						<!-- Data Used for Change Password Testing -->
+						
+<!-- Change and provide a valid UserName,password everytime -->
+
+
+
+<user userid="change-pwd-user-1">
+
+<UserName>chgpwd1@cub.com</UserName>
+<oldpassword>password</oldpassword>
+
+<wrongoldpassword>pass11word</wrongoldpassword>
+<newpassword>changepassword</newpassword>
+<diffnewpassword>changepassword</diffnewpassword>
+
+<lengthypasswordreset>jsghdwhgendxhiweghxd</lengthypasswordreset>
+<lengthypassword>jsghdwhgendxhiweghxdihgexdfsdgkgiuxdjkseui</lengthypassword>
+
+<shortpassword>aa</shortpassword>
+<spacepassword>f v m m h</spacepassword>
+</user>
+
+<user userid="change-pwd-user-2">
 <UserName>suqyjulyq12qq@cub.com</UserName>
 <password>password</password>
 <lastname>Test</lastname>
 <UserName>chgpwd1@cub.com</UserName>
 <wrongoldpassword>pass11word</wrongoldpassword>
+</user>
 
 						<!-- Data Used for Updating Contact Information in My Account Testing -->
 						
@@ -197,122 +348,8 @@
 
 </user>
 
-						<!-- Data Used for Coupons Testing -->
-
-<!-- Change the UserName, cardlessid7, cardlessid4 and wantedCoupons -->
-
-<user userid="new-user-4">
-<UserName>newuser4_1@cub.com</UserName>
-<password>password</password>
-<firstname>addCoupon</firstname>
-<lastname>NoCardNewUser</lastname>
-<address1>123 cedar Road</address1>
-<address2>test</address2>
-<city>Minneapolis</city>
-<state>MN</state>
-<zipcode>58963</zipcode>
-<homephone>8523697410</homephone>
-<mobilephone>7410254863</mobilephone>
-<cardlessid>00852010001</cardlessid>
-<wantedCoupons>2,4,9</wantedCoupons>
-</user>
-
-<!-- Change the UserName and cardless id everytime -->
-
-<user userid="new-user-5">
-<UserName>newuser5_1@cub.com</UserName>
-<password>password</password>
-<firstname>test</firstname>
-<lastname>want</lastname>
-<address1>123 cedar ave</address1>
-<address2>test</address2>
-<city>Eden Prairie</city>
-<state>MN</state>
-<zipcode>58963</zipcode>
-<homephone>8523697410</homephone>
-<mobilephone>7410254863</mobilephone>
-<cardlessid>00741010001</cardlessid>
-<wantedCoupons>1,3,9,11</wantedCoupons>
-</user>
-
-<!-- Change the UserName and cardless id everytime -->
-
-<user userid="new-user-6">
-<UserName>newuser6_1@cub.com</UserName>
-<password>password</password>
-<firstname>test</firstname>
-<lastname>want</lastname>
-<address1>123 cedar ave</address1>
-<address2>test</address2>
-<city>Eden Prairie</city>
-<state>MN</state>
-<zipcode>58963</zipcode>
-<homephone>8523697410</homephone>
-<mobilephone>7410254863</mobilephone>
-<cardlessid>00789010001</cardlessid>
-<wantedCoupons>2,5,8</wantedCoupons>
-</user>
-
-<!-- Change the UserName and cardless id everytime -->
-
-<user userid="new-user-7">
-<UserName>newuser7_1@cub.com</UserName>
-<password>password</password>
-<firstname>test</firstname>
-<lastname>want</lastname>
-<address1>123 cedar ave</address1>
-<address2>test</address2>
-<city>Eden Prairie</city>
-<state>MN</state>
-<zipcode>58963</zipcode>
-<homephone>8523697410</homephone>
-<mobilephone>7410254863</mobilephone>
-<cardlessid>00456010001</cardlessid>
-<wantedCoupons>10,2,4,1,6</wantedCoupons>
-</user>
-
-</newUsers>
-
-						<!-- End of New Users List................. -->
-						
-						
-<!-- ========================================================================================================================================= -->	
-
-<others>
-
-						<!-- Data Used for Find A Store Testing -->
-
-<user userid="fas-user-1">
-<ZipCode>55434</ZipCode>
-<CityName>Central Ave Ne Blaine</CityName>
-<State>MN</State>
-</user>
-
-<!-- ========================================================================================================================================= -->	
-
-
-						<!-- Data Used for Change Password Testing -->
-						
-<!-- Change and provide a valid UserName,password everytime -->
-
-<user userid="change-pwd-user-1">
-
-<UserName>chgpwd1@cub.com</UserName>
-<oldpassword>password</oldpassword>
-
-<wrongoldpassword>pass11word</wrongoldpassword>
-<newpassword>changepassword</newpassword>
-<diffnewpassword>changepassword</diffnewpassword>
-
-<lengthypasswordreset>jsghdwhgendxhiweghxd</lengthypasswordreset>
-<lengthypassword>jsghdwhgendxhiweghxdihgexdfsdgkgiuxdjkseui</lengthypassword>
-
-<shortpassword>aa</shortpassword>
-<spacepassword>f v m m h</spacepassword>
-</user>
-
 </others>
 
 <!-- ========================================================================================================================================= -->	
 
-</TestData> 
+</TestData>

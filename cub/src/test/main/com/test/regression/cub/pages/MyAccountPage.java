@@ -27,7 +27,6 @@ public class MyAccountPage extends SuiteBase{
 	WebDriver _driver;
 	Logger log = Logg.createLogger();
 
-	Logger log = Logg.createLogger();
 	
 	public MyAccountPage(WebDriver driver) {
 		super();
@@ -55,9 +54,7 @@ public void clickOnMyAccountUnderMyTools(WebDriver driver) throws InterruptedExc
 		 _MyToolsLink.click();
 		  waitFor(_MyAccount);
 		_MyAccount.click();*/
-	
-	driver.navigate().to(Constant.URL+"tools/view-account.html");
-	log.info("Clicked on Coupons in Home page");
+
 	
 		Thread.sleep(10000);
 		driver.navigate().to(Constant.URL+"tools/view-account.html");

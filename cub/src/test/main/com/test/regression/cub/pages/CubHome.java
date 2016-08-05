@@ -47,6 +47,27 @@ public class CubHome extends SuiteBase{
 	@FindBy(xpath = "//a[text()='I forgot my password']")
 	private WebElement _forgotPwd;
 	
+	@FindBy(xpath = "//input[@class='ss-email-input']")
+	private WebElement _EmailInForgotPassword;
+	
+	@FindBy(xpath = "//button[text()='Get my password']")
+	private WebElement _getMyPasswordButton;
+	
+	@FindBy(xpath = "//span[text()='Whoops!']")
+	private WebElement _errorMsgInForgotPassword;
+	
+	@FindBy(xpath = "//button[text()='OK']")
+	private WebElement _okButtonInForgotpassword;
+	
+	@FindBy(xpath = "//a[text()='Go back']")
+	private WebElement _goBackLinkInForgotPassword;
+	
+	@FindBy(xpath = "//div[@class='ss-signup-container ss-inner-container ss-alt-container']")
+	private WebElement _signUpPopup;
+	
+	@FindBy(xpath = "//div[@class='ss-login-container ss-inner-container ss-alt-container']")
+	private WebElement _signInPopup;
+	
 	@FindBy(xpath = "//a[text()='Sign up!']")
 	private WebElement _signUp;
 	
@@ -136,14 +157,48 @@ public class CubHome extends SuiteBase{
 			@FindBy(xpath = "//*[@id='layout']/div[2]/div[2]/a")
 			private WebElement _closePopUp;
 			
+			@FindBy(xpath = "//a[@class='ss-close-button']")
+			private WebElement _closeSignInPopup;
+			
 			public void clickOnClosePopUp() throws InterruptedException
 			{
-				waitFor(_closePopUp);
-				_closePopUp.click();
+				waitFor(_closeSignInPopup);
+				_closeSignInPopup.click();
 				log.info("Pop up closed successfully..");
 				Thread.sleep(5000);
+				
+				
 		     }
 	
+			public boolean isSignInPopupPresent(){
+				
+				if(_closeSignInPopup.isDisplayed())
+					return true;
+				else
+					return false;
+			}
+			
+			public boolean signUpPopupPresence(){
+				if(_signUpPopup.isDisplayed())
+					return true;
+				else
+					return false;
+			}
+			
+			public boolean signInPopupPresence(){
+				if(_signInPopup.isDisplayed())
+					return true;
+				else
+					return false;
+			}
+			
+			public void clickSignUpLinkInSignInPopup() throws InterruptedException{
+				waitFor(_signUp);
+				_signUp.click();
+				
+				log.info("Clicked on SignIn Link in SignUp popup..");
+			}
+			
 	//Method to click on Logo
 	
 	public void clickOnLogo(){
@@ -288,8 +343,11 @@ public class CubHome extends SuiteBase{
 	
 	public void enterLoginDetails(String UserName, String Password){
 		waitFor(_userName);
+		_userName.clear();
 		_userName.sendKeys(UserName);
+		
 		waitFor(_password);
+		_password.clear();
 		_password.sendKeys(Password);
 		
 		log.info("Entered login Details");
@@ -297,6 +355,8 @@ public class CubHome extends SuiteBase{
 	
 	public void clickSignInButton() throws InterruptedException
 	{
+		Thread.sleep(5000);
+		
 		waitFor(_signInButton);
 		_signInButton.click();
 		
@@ -338,6 +398,26 @@ public class CubHome extends SuiteBase{
 		
 	}
 	
+	
+	public void clickOnForgotPassword(){
+		waitFor(_forgotPwd);
+		_forgotPwd.click();
+	}
+	
+	public boolean enterEmailInForgotPasswordPopupNValidate(String email){
+		waitFor(_EmailInForgotPassword);
+		_EmailInForgotPassword.clear();
+		_EmailInForgotPassword.sendKeys(email);
+		_getMyPasswordButton.click();
+		
+		if(_errorMsgInForgotPassword.isDisplayed())
+			return false;
+		else {
+			waitFor(_okButtonInForgotpassword);
+			_okButtonInForgotpassword.click();
+			return true;
+		}
+	}
 	
 	public void clickAssociates()
 	{

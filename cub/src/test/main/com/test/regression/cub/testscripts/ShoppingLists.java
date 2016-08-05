@@ -2,12 +2,16 @@ package com.test.regression.cub.testscripts;
 
 import java.io.IOException;
 import java.util.Map;
+
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.xpath.XPathExpressionException;
+
 import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import org.xml.sax.SAXException;
+
 import com.test.regression.cub.pages.CubHome;
 import com.test.regression.cub.pages.ShoppingListPage;
 import com.test.regression.cub.utils.Logg;
@@ -22,7 +26,7 @@ public class ShoppingLists extends SuiteBase{
 	Logger log = Logg.createLogger();
 	ReadXML readxml = new ReadXML();
 	
-	@Test(enabled=true, priority=6)
+	@Test(enabled=false, priority=6)
 	public void createShoppingList(){
 		
 		try{
@@ -76,7 +80,7 @@ public class ShoppingLists extends SuiteBase{
 		
 	}
 	
-	@Test(enabled=true, priority=7)
+	@Test(enabled=false, priority=7)
 	public void Add3Items2ShoppingList(){
 		
 		try{
@@ -147,7 +151,10 @@ public class ShoppingLists extends SuiteBase{
 	public void AddnEditItemsInShoppingList(){
 		
 		try{
-		Map<String, String> AddnEditItems2newSL = readxml.getUserData("TestData.xml", "carded-user");
+			
+			SoftAssert sa = new SoftAssert();
+			
+		Map<String, String> AddnEditItems2newSL = readxml.getUserData("TestData.xml", "authorized-user-1");
 		String userId = AddnEditItems2newSL.get("UserName");
 		String password = AddnEditItems2newSL.get("password");
 		String SLName = AddnEditItems2newSL.get("SLName");
@@ -177,17 +184,41 @@ public class ShoppingLists extends SuiteBase{
 		sl.clickOnMyListInMyToolsHomePage();
 			
 		sl.addNewShoppingList(SLName);
+		
+		boolean result = sl.verifyNewAddedShoppingListName(SLName);
+		sa.assertTrue(result, "New Shopping list is not created");
 			
 		sl.addItems2SL(item1, quantity1);
 			
 		sl.addItems2SL(item2, quantity2);
 			
 		sl.addItems2SL(item3, quantity3);
+		
+		Thread.sleep(3000);
+		int slSize = sl.SLSize();
+		
+		sa.assertTrue(slSize==3, "Oops! Not all items are added to Shopping List");
 			
 		Thread.sleep(3000);
-		boolean result = sl.edit1stAddedSLItem(_driver, item1upd, quantity1upd);
+		boolean result1 = sl.edit1stAddedSLItem(_driver, item1upd, quantity1upd);
 		
-		Assert.assertTrue(result);
+		sa.assertTrue(result1, "Not able to edit the added Shopping list item..");
+		
+		sl.deleteLastSLItem(_driver);
+		
+		Thread.sleep(3000);
+		int slSizeUpd = sl.SLSize();
+		
+		sa.assertTrue(slSizeUpd==2, "Unable to delete Shopping List item..");
+		
+		sl.clearList();
+		
+		Thread.sleep(3000);
+		int slSizeAfterDelete = sl.SLSize();
+		
+		sa.assertTrue(slSizeAfterDelete==0, "Clear List is not working as expected..");
+		
+		sa.assertAll();
 		
 		} catch (InterruptedException ie) {
 			log.info(ie.getMessage());
@@ -210,7 +241,7 @@ public class ShoppingLists extends SuiteBase{
 		}		
 	}
 	
-	@Test(enabled=true, priority=9)
+	@Test(enabled=false, priority=9)
 	public void deleteItemFromSL(){
 		
 		try {
@@ -269,7 +300,7 @@ public class ShoppingLists extends SuiteBase{
 		}
 	}
 	
-	@Test(enabled=true, priority=10)
+	@Test(enabled=false, priority=10)
 	public void testClearList() {
 		try{
 		
@@ -328,4 +359,72 @@ public class ShoppingLists extends SuiteBase{
 		}
 		
 	}
+	
+	@Test(enabled=false, priority=7)
+	public void slOtherPagesWidget(){
+		
+		try{
+		Map<String, String> AddItems2newSL = readxml.getUserData("TestData.xml", "carded-user");
+		String userId = AddItems2newSL.get("UserName");
+		String password = AddItems2newSL.get("password");
+		String SLName = AddItems2newSL.get("SLName");
+		String item1 = AddItems2newSL.get("item1");
+		String quantity1 = AddItems2newSL.get("quantity1");
+		String item2 = AddItems2newSL.get("item2");
+		String quantity2 = AddItems2newSL.get("quantity2");
+		String item3 = AddItems2newSL.get("item3");
+		String quantity3 = AddItems2newSL.get("quantity3");
+
+		cubHome = new CubHome(_driver);
+		
+			log.info("Test Data Used >>>>>>>");
+			log.info("User Name : " + userId);
+			log.info("Password : " + password);
+			
+		cubHome.clickSignInLink();
+			
+		cubHome.enterLoginDetails(userId, password);
+			
+		cubHome.clickSignInButton();
+			
+			
+		sl=new ShoppingListPage(_driver);
+		
+		sl.clickOnMyListInMyToolsHomePage();
+			
+		sl.addNewShoppingList(SLName);
+			
+		sl.addItems2SL(item1, quantity1);
+			
+		sl.addItems2SL(item2, quantity2);
+			
+		sl.addItems2SL(item3, quantity3);
+			
+		Thread.sleep(3000);
+		int slSize = sl.SLSize();
+		
+		Assert.assertTrue(slSize==3);
+		
+		} catch (InterruptedException ie) {
+			log.info(ie.getMessage());
+			Assert.fail("Caught Interrupted Exception");
+		} catch (IOException ioe) {
+			log.info(ioe.getMessage());	
+			Assert.fail("Caught IOException Exception");
+		} catch (XPathExpressionException xee) {
+			log.info(xee.getMessage());	
+			Assert.fail("Caught XPathExpressionException Exception");
+		} catch (ParserConfigurationException pce) {
+			log.info(pce.getMessage());
+			Assert.fail("Caught ParserConfigurationException Exception");
+		} catch (SAXException saxe) {
+			log.info(saxe.getMessage());
+			Assert.fail("Caught SAXException Exception");
+		} catch (Exception e) {
+			log.info(e.getMessage());
+			Assert.fail(e.getLocalizedMessage());
+		}
+			
+	}
+	
 }
