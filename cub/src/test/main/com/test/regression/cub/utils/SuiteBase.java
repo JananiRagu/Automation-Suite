@@ -58,7 +58,7 @@ public class SuiteBase {
    
        
    @BeforeMethod
-     public void initialization(Method method) {
+     public void initialization(Method method) throws InterruptedException {
 	   
 	   
 	   log.info("***************************************************************");
@@ -75,7 +75,7 @@ public class SuiteBase {
      }
 
  	
- 	public WebDriver InitializeDriver(String browser) {
+ 	public WebDriver InitializeDriver(String browser) throws InterruptedException {
  		 		 
  		  if(browser.equalsIgnoreCase("firefox")) {
  			 		  
@@ -93,23 +93,22 @@ public class SuiteBase {
  		  }
  		  else if (browser.equalsIgnoreCase("ie")) { 
  		 
- 			  // Here I am setting up the path for my IEDriver
- 			  //File file = new File("C:\\Program Files\\Internet Explorer\\iexplore.exe");
  			 
  			 DesiredCapabilities capabilitiesIE = DesiredCapabilities.internetExplorer();
  			  capabilitiesIE.setCapability(
  			      InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
  			      capabilitiesIE.setCapability("nativeEvents", false);
- 			      capabilitiesIE.setCapability("initialBrowserUrl", "https://www.google.com");
- 			      System.setProperty("webdriver.ie.driver","./exeFiles/IE11.exe");
- 			      System.out.println(System.getProperty("webdriver.ie.driver"));
- 			      System.out.println("ie abt to initialize.....");
+ 			     capabilitiesIE.setCapability("ie.ensureCleanSession", true);
+ 			  
+ 			 System.setProperty("webdriver.ie.driver","./exeFiles/IEDriverServer.exe");
  			   _driver = new InternetExplorerDriver(capabilitiesIE);
  		 
  			  /*System.setProperty("webdriver.ie.driver", "./exe/iexplore.exe");*/
  			  
  			  //_driver = new InternetExplorerDriver();
  			  System.out.println("Initialized IE!!!");
+ 			  Thread.sleep(5000);
+ 			  
  			  
  		 
  		  } 

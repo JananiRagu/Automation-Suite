@@ -59,6 +59,23 @@ public class ShoppingListPage extends SuiteBase{
 	@FindBy(xpath = "//button[@id='clear-list-top']")
 	private WebElement _clearListLink;
 	
+	@FindBy(xpath = "//div[@class='widget-icon-inner']/div/p[2]/a[text()='Sign In']")
+	private WebElement _signInLinkInSLWidget;
+	
+	@FindBy(xpath = "//div[@class='widget-icon-inner']/div/p[2]/a[text()='Sign Up']")
+	private WebElement _signUpLinkInSLWidget;
+	
+	public void clickSignInInSLWidget(){
+		
+		waitFor(_signInLinkInSLWidget);
+		_signInLinkInSLWidget.click();
+	}
+	
+	public void clickSignUpInSLWidget(){
+		
+		waitFor(_signUpLinkInSLWidget);
+		_signUpLinkInSLWidget.click();
+	}
 	
 	public void clickOnShoppingListButtonHomePage(){
 		waitFor(_shoppingListButton);
