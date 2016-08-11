@@ -87,7 +87,7 @@ public class CommunicationPref  extends SuiteBase
 	}	
 	
 
-	@Test(priority=56,enabled=true)
+	@Test(priority=56,enabled=false)
 	public void ChngCommPrefMobileSuccess() {
 		
 		try{
@@ -148,7 +148,7 @@ public class CommunicationPref  extends SuiteBase
 		}
 	}
 	
-	@Test(priority=57,enabled=true)
+	@Test(priority=57,enabled=false)
 	public void ChngCommPrefAddressSuccess() {
 		
 		try{
@@ -226,7 +226,7 @@ public class CommunicationPref  extends SuiteBase
 	}
 	
 
-	@Test(priority=58,enabled=true)
+	@Test(priority=58,enabled=false)
 	public void CommPrefUncheckAll()
 	 {
 		
@@ -288,7 +288,7 @@ public class CommunicationPref  extends SuiteBase
 	}
 	
 
-	@Test(priority=59,enabled=true)
+	@Test(priority=59,enabled=false)
 	public void CommPrefEmailInvalid()
 	 {
 		
@@ -342,7 +342,7 @@ public class CommunicationPref  extends SuiteBase
 		}
 	}
 	
-	@Test(priority=60,enabled=true)
+	@Test(priority=60,enabled=false)
 	public void CommPrefSMSInvalid()
 	 {
 		
@@ -408,7 +408,7 @@ public class CommunicationPref  extends SuiteBase
 		}
 	}
 	
-	@Test(priority=60,enabled=true)
+	@Test(priority=60,enabled=false)
 	public void CommPrefDirectMailInvalidFN()
 	 {
 		
@@ -482,7 +482,7 @@ public class CommunicationPref  extends SuiteBase
 		}
 	}
 	
-	@Test(priority=62,enabled=true)
+	@Test(priority=62,enabled=false)
 	public void CommPrefDirectMailInvalidLN()
 	 {
 		
@@ -556,7 +556,7 @@ public class CommunicationPref  extends SuiteBase
 		}
 	}
 	
-	@Test(priority=63,enabled=true)
+	@Test(priority=63,enabled=false)
 	public void CommPrefDirectMailInvalidCity()
 	 {
 		
@@ -630,7 +630,7 @@ public class CommunicationPref  extends SuiteBase
 		}
 	}
 	
-	@Test(priority=64,enabled=true)
+	@Test(priority=64,enabled=false)
 	public void CommPrefDirectMailInvalidZIP()
 	 {
 		
@@ -715,7 +715,7 @@ public class CommunicationPref  extends SuiteBase
 	}
 	
 
-	@Test(priority=65,enabled=true)
+	@Test(priority=65,enabled=false)
 	public void CommPrefNullAddress()
 	 {
 
@@ -779,7 +779,7 @@ public class CommunicationPref  extends SuiteBase
 			}
 	 }
 	
-	@Test(priority=66,enabled=true)
+	@Test(priority=66,enabled=false)
 	public void ChngCommPrefAddressEditSuccess() {
 		
 		try{

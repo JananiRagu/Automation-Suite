@@ -30,7 +30,7 @@ public class MyAccount extends SuiteBase
 	
 	Logger log = Logg.createLogger();
 	ReadXML readxml = new ReadXML();
-
+	
 // Change password successfully
 	
 	@Test(priority=42,enabled=true)
@@ -437,8 +437,7 @@ public class MyAccount extends SuiteBase
 		cubHome.clickSignInButton();
 		
 		myAccount = new MyAccountPage(_driver);
-		
-		 
+				 
 		myAccount.clickOnMyAccountUnderMyTools(_driver);
 	    myAccount.clickEditLinkToUpdateContactInfo();
 	    myAccount.clickOnClosePopUp();
@@ -588,6 +587,8 @@ public class MyAccount extends SuiteBase
 		String mobilePhone = Data.get("mobilephone");
 		String nullVariable = "";
 		
+		SoftAssert sa = new SoftAssert();
+		
 		cubHome = new CubHome(_driver);
 			
 		log.info("Cub Home page is launched");
@@ -603,30 +604,18 @@ public class MyAccount extends SuiteBase
 		
 		log.info("Checking for Error is displayed when user enters FirstName with Numbers");
 		myAccount.enterContactInformation(firstNameNumber, lastName, address1, address2, city, state, zip, homePhone, mobilePhone);
-	
-		Thread.sleep(5000);
-				
-		SoftAssert sa = new SoftAssert();
-		
-        boolean result1 =myAccount.isContinueBtnInUpdateContactInfoDisabled();
-	    //sa.assertFalse(result1);
+	    boolean result1 =myAccount.isContinueBtnInUpdateContactInfoDisabled();
 	    sa.assertTrue(result1, "\n Failed for FirstName with Numbers");
 		
-		log.info("Checking for Error is displayed when user enters FirstName with Special Characters");
+	    log.info("Checking for Error is displayed when user enters FirstName with Special Characters");
 		myAccount.enterContactInformation(firstNameSpecialCharacters, lastName, address1, address2, city, state, zip, homePhone, mobilePhone);
-	
-		Thread.sleep(5000);
-				
-        boolean result2 =myAccount.isContinueBtnInUpdateContactInfoDisabled();
+	  boolean result2 =myAccount.isContinueBtnInUpdateContactInfoDisabled();
 	    sa.assertTrue(result2, "\n Failed for FirstName with Special Characters");
 		
 
 		log.info("Checking for Error is displayed when user doesnot enter FirstName");
 		myAccount.enterContactInformation(nullVariable, lastName, address1, address2, city, state, zip, homePhone, mobilePhone);
-	
-		Thread.sleep(5000);
-				
-        boolean result3 =myAccount.isContinueBtnInUpdateContactInfoDisabled();
+	 boolean result3 =myAccount.isContinueBtnInUpdateContactInfoDisabled();
 	    sa.assertTrue(result3, "\n Failed for No FirstName Entered");
 	    
 		 sa.assertAll();
@@ -694,28 +683,19 @@ public class MyAccount extends SuiteBase
 
 		log.info("Checking for Error is displayed when user enters LastName with Special Characters");
 		myAccount.enterContactInformation(firstName, lastNameSpecialCharacters, address1, address2, city, state, zip, homePhone, mobilePhone);
-		myAccount.isContinueBtnInUpdateContactInfoDisabled();
-		Thread.sleep(5000);
-				
-        boolean result2 = myAccount.isContinueBtnInUpdateContactInfoDisabled();
+		  boolean result2 = myAccount.isContinueBtnInUpdateContactInfoDisabled();
 	    sa.assertTrue(result2, "\n Failed for LastName with Special Characters");
 	    
 	    
 		log.info("Checking for Error is displayed when user enters LastName with Numbers");
 		myAccount.enterContactInformation(firstName, lastNameNumber, address1, address2, city, state, zip, homePhone, mobilePhone);
-		myAccount.isContinueBtnInUpdateContactInfoDisabled();
-		Thread.sleep(5000);
-				
-        boolean result1 = myAccount.isContinueBtnInUpdateContactInfoDisabled();
+		  boolean result1 = myAccount.isContinueBtnInUpdateContactInfoDisabled();
          sa.assertTrue(result1, "\n Failed for LastName with Numbers");
 			
 
 		log.info("Checking for Error is displayed when user doesnot enter LastName");
 		myAccount.enterContactInformation(firstName, nullVariable, address1, address2, city, state, zip, homePhone, mobilePhone);
-		myAccount.isContinueBtnInUpdateContactInfoDisabled();
-		Thread.sleep(5000);
-				
-        boolean result3 = myAccount.isContinueBtnInUpdateContactInfoDisabled();
+		boolean result3 = myAccount.isContinueBtnInUpdateContactInfoDisabled();
         sa.assertTrue(result3, "\n Failed for No LastName Entered");
 	    
 		 sa.assertAll();
@@ -785,47 +765,31 @@ public class MyAccount extends SuiteBase
 
 		log.info("Checking for Error is displayed when user enters ZIP with Special Characters");
 		myAccount.enterContactInformation(firstName, lastName, address1, address2, city, state, zipcodespecialchar, homePhone, mobilePhone);
-	
-		Thread.sleep(5000);
-				
-        boolean result2 =myAccount.isContinueBtnInUpdateContactInfoDisabled();
+	 boolean result2 =myAccount.isContinueBtnInUpdateContactInfoDisabled();
 	    sa.assertTrue(result2, "\n Failed for ZIP with Special Characters");
 	    
 	    
 		log.info("Checking for Error is displayed when user enters ZIP with alphabets");
 		myAccount.enterContactInformation(firstName, lastName, address1, address2, city, state, zipcodealphabets, homePhone, mobilePhone);
-	
-		Thread.sleep(5000);
-				
-		
-        boolean result1 =myAccount.isContinueBtnInUpdateContactInfoDisabled();
+	boolean result1 =myAccount.isContinueBtnInUpdateContactInfoDisabled();
 	    sa.assertTrue(result1, "\n Failed for ZIP with alphabets");
 				
 	    
 	  	log.info("Checking for Error is displayed when user enters ZIP with space");
 	  	myAccount.enterContactInformation(firstName, lastName, address1, address2, city, state, zipcodespace, homePhone, mobilePhone);
-	
-	  	Thread.sleep(5000);
-	  				
-	   boolean result3 =myAccount.isContinueBtnInUpdateContactInfoDisabled();
+	 boolean result3 =myAccount.isContinueBtnInUpdateContactInfoDisabled();
 	  	sa.assertTrue(result3, "\n Failed for ZIP with Space");
 	  	  
 
 		log.info("Checking for Error is displayed when user doesnot enter ZIP");
 		myAccount.enterContactInformation(firstName, lastName, address1, address2, city, state, nullVariable, homePhone, mobilePhone);
-	
-		Thread.sleep(5000);
-				
-        boolean result4 =myAccount.isContinueBtnInUpdateContactInfoDisabled();
+	  boolean result4 =myAccount.isContinueBtnInUpdateContactInfoDisabled();
 	    sa.assertTrue(result4, "Failed for No ZIP Entered");
 	  	
 		
 	    log.info("Checking for Error is displayed when user enters less than 5 digits in  ZIP code feild");
 		myAccount.enterContactInformation(firstName, lastName, address1, address2, city, state, zipcodelessdigits, homePhone, mobilePhone);
-	
-		Thread.sleep(5000);
-				
-        boolean result5 =myAccount.isContinueBtnInUpdateContactInfoDisabled();
+	boolean result5 =myAccount.isContinueBtnInUpdateContactInfoDisabled();
 	    sa.assertTrue(result5, "Failed when user enters less than 5 digits in  ZIP code feild");
 	  	
 	    
@@ -894,29 +858,20 @@ public class MyAccount extends SuiteBase
 
 		log.info("Checking for Error is displayed when user enters CITY with Special Characters");
 		myAccount.enterContactInformation(firstName, lastName, address1, address2, cityspecialchar, state, zip, homePhone, mobilePhone);
-	
-		Thread.sleep(5000);
-				
-        boolean result2 =myAccount.isContinueBtnInUpdateContactInfoDisabled();
+	 boolean result2 =myAccount.isContinueBtnInUpdateContactInfoDisabled();
 	    sa.assertTrue(result2, "\n Failed for CITY with Special Characters");
 	    
 	  
 	    log.info("Checking for Error is displayed when user enters CITY with numbers");
 	  	myAccount.enterContactInformation(firstName, lastName, address1, address2, citynumber, state, zip, homePhone, mobilePhone);
-
-	  	Thread.sleep(5000);
-	  				
-	   boolean result3 =myAccount.isContinueBtnInUpdateContactInfoDisabled();
+  boolean result3 =myAccount.isContinueBtnInUpdateContactInfoDisabled();
 	  	sa.assertTrue(result3, "\n Failed for  CITY with numbers");
 	  	    
 
 		log.info("Checking for Error is displayed when user doesnot enter City");
 		myAccount.enterContactInformation(firstName, lastName, address1, address2, nullVariable, state, zip, homePhone, mobilePhone);
-	
-		Thread.sleep(5000);
-				
-        boolean result4 =myAccount.isContinueBtnInUpdateContactInfoDisabled();
-	    sa.assertTrue(result4, "\n Failed for No LastName Entered");
+	 boolean result4 =myAccount.isContinueBtnInUpdateContactInfoDisabled();
+	    sa.assertTrue(result4, "\n Failed for No City Entered");
 	  	
 		 sa.assertAll();
 	
@@ -984,28 +939,22 @@ public class MyAccount extends SuiteBase
 
 	    log.info("Checking for Error is displayed when user enters Mobile Number with Space");
 	  	myAccount.enterContactInformation(firstName, lastName, address1, address2, city, state, zip, homePhone, mobileSpace);
-	 
-	  	Thread.sleep(5000);
-	  				
-	   boolean result1 =myAccount.isUpdateContactInfoPopUpPresent();
+	 myAccount.clickContinueButtonInUpdateContactInfoPopUp();
+	  	  boolean result1 =myAccount.isUpdateContactInfoPopUpPresent();
 	  	sa.assertTrue(result1, "\n Failed for Mobile Number with Space");
 		
 
 		log.info("Checking for Error is displayed when user enters Mobile Number with Special Characters");
 		myAccount.enterContactInformation(firstName, lastName, address1, address2, city, state, zip, homePhone, mobileSplChar);
-		
-		Thread.sleep(5000);
-				
-        boolean result2 =myAccount.isUpdateContactInfoPopUpPresent();
+		 myAccount.clickContinueButtonInUpdateContactInfoPopUp();
+		 boolean result2 =myAccount.isUpdateContactInfoPopUpPresent();
 	    sa.assertTrue(result2, "\n Failed for Mobile Number with Special Characters");
 	    
 	  
 	    log.info("Checking for Error is displayed when user enters Mobile Number with Alphabets");
 	  	myAccount.enterContactInformation(firstName, lastName, address1, address2, city, state, zip, homePhone, mobileAlphabets);
-	 
-	  	Thread.sleep(5000);
-	  				
-	   boolean result3 =myAccount.isUpdateContactInfoPopUpPresent();
+		 myAccount.clickContinueButtonInUpdateContactInfoPopUp();
+	  	 boolean result3 =myAccount.isUpdateContactInfoPopUpPresent();
 	  	sa.assertTrue(result3, "\n Failed for Mobile Number with Alphabets");
 	  		  	
 	      sa.assertAll();
@@ -1074,28 +1023,22 @@ public class MyAccount extends SuiteBase
 
 	    log.info("Checking for Error is displayed when user enters Home Phone Number with Space");
 	  	myAccount.enterContactInformation(firstName, lastName, address1, address2, city, state, zip, homePhoneSpace, mobilePhone);
-	 
-	  	Thread.sleep(5000);
-	  				
-	   boolean result1 =myAccount.isUpdateContactInfoPopUpPresent();
+		 myAccount.clickContinueButtonInUpdateContactInfoPopUp();
+	  	 boolean result1 =myAccount.isUpdateContactInfoPopUpPresent();
 	  	sa.assertTrue(result1, "\n Failed for Home Phone  Number with Space");
 		
 
-		log.info("Checking for Error is displayed when user enters hNumber with Special Characters");
+		log.info("Checking for Error is displayed when user enters  Home Phone Number with Special Characters");
 		myAccount.enterContactInformation(firstName, lastName, address1, address2, city, state, zip, homePhoneSpecialChar, mobilePhone);
-		
-		Thread.sleep(5000);
-				
-        boolean result2 =myAccount.isUpdateContactInfoPopUpPresent();
+		 myAccount.clickContinueButtonInUpdateContactInfoPopUp();
+		 boolean result2 =myAccount.isUpdateContactInfoPopUpPresent();
 	    sa.assertTrue(result2, "\n Failed for Home Phone  Number with Special Characters");
 	    
 	  
 	    log.info("Checking for Error is displayed when user enters Home Phone  Number with Alphabets");
 	  	myAccount.enterContactInformation(firstName, lastName, address1, address2, city, state, zip, homePhoneAlphabets, mobilePhone);
-
-	  	Thread.sleep(5000);
-	  				
-	   boolean result3 =myAccount.isUpdateContactInfoPopUpPresent();
+	  	 myAccount.clickContinueButtonInUpdateContactInfoPopUp();
+	  	  boolean result3 =myAccount.isUpdateContactInfoPopUpPresent();
 	  	sa.assertTrue(result3, "\n Failed for Home Phone  Number with Alphabets");
 	  	
 	      sa.assertAll();
@@ -1161,10 +1104,7 @@ public class MyAccount extends SuiteBase
 
 		log.info("Checking for Error is displayed when user doesnot enter Home Address");
 		myAccount.enterContactInformation(firstName, lastName, nullVariable, address2, city, state, zip, homePhone, mobilePhone);
-
-		Thread.sleep(5000);
-				
-        boolean result =myAccount.isContinueBtnInUpdateContactInfoDisabled();
+ boolean result =myAccount.isContinueBtnInUpdateContactInfoDisabled();
 	    sa.assertTrue(result, "\n Failed for No Address Entered");
 	  	
 	    sa.assertAll();

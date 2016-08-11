@@ -154,7 +154,6 @@ public void clickOnMyAccountUnderMyTools(WebDriver driver) throws InterruptedExc
 		public boolean isSaveButtonInChangePwdPopUpDisabled()
 		{
 		String disabled="ss-submit-button ss-submit-button-disabled";
-		String enabled="ss-submit-button";
 		String actual=_saveButtonInChangePwdPopUp.getAttribute("class");
 		
 		if(actual.equalsIgnoreCase(disabled))
@@ -235,8 +234,9 @@ public void clickOnMyAccountUnderMyTools(WebDriver driver) throws InterruptedExc
 
 //Method to click EDIT link for updating contact information in My Account page
 	
-	public void clickContinueButtonInUpdateContactInfoPopUp()
+	public void clickContinueButtonInUpdateContactInfoPopUp() throws InterruptedException
     {
+		Thread.sleep(5000);
 		waitFor(_continueButtonInUpdateContactInfoPopUp);
 		_continueButtonInUpdateContactInfoPopUp.click();
 		log.info("Clicked Continue Button In Update Contact Info PopUp in My Account Page..");
@@ -317,10 +317,13 @@ public void enterContactInformation(String firstName, String lastName, String ad
 			
 	}
 
+
+
 //Method to check if  "Update your contact information"  pop up is present
 	
-	public boolean isUpdateContactInfoPopUpPresent()
+	public boolean isUpdateContactInfoPopUpPresent() throws InterruptedException
 	{
+		Thread.sleep(5000);
 		  waitFor(_updateContactInfoPopUp);
             return _updateContactInfoPopUp.isDisplayed();
 		
@@ -385,13 +388,11 @@ public void enterContactInformation(String firstName, String lastName, String ad
 	
 	//Method to check if CONTINUE Button is enabled or disabled in Update Contact Info Popup 
 	
-	public boolean isContinueBtnInUpdateContactInfoDisabled()
+	public boolean isContinueBtnInUpdateContactInfoDisabled() throws InterruptedException
 	{
+		Thread.sleep(5000);
 	String disabled="ss-submit-button ss-signup-btn ss-submit-button-disabled";
-
-	String enabled="ss-submit-button ss-signup-btn";
-	
-	String actual=_continueButtonInUpdateContactInfoPopUp.getAttribute("class");
+    String actual=_continueButtonInUpdateContactInfoPopUp.getAttribute("class");
 	
 	if(actual.equalsIgnoreCase(disabled))
 		return true;
@@ -400,7 +401,15 @@ public void enterContactInformation(String firstName, String lastName, String ad
 	
 	}
 	
-	
+//FAS 
+	 @FindBy(xpath = "//*[@class='edit ss-update-store-myaccount']")
+	 private WebElement _editlinkformystore;
+
+	 public void clickeditonmystore(){
+	 waitFor(_editlinkformystore);
+	 _editlinkformystore.click();
+	 } 
+
 	
 }
 

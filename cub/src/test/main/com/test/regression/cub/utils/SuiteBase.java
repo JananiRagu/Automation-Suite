@@ -68,8 +68,9 @@ public class SuiteBase {
  	public WebDriver InitializeDriver(String browser) {
  		 		 
  		  if(browser.equalsIgnoreCase("firefox")) {
- 			 		  
- 			  _driver = new FirefoxDriver();                  
+ 			 	
+ 			 _driver = new FirefoxDriver();
+ 			 System.out.println("Mozilla Launched Successfully!!");
  		 
  		  }else if(browser.equalsIgnoreCase("chrome")){
  			  
@@ -78,29 +79,22 @@ public class SuiteBase {
  			  _driver = new ChromeDriver();
  			  System.out.println("Chrome Launched Successfully!!");
  		  }
+ 		  
  		  else if (browser.equalsIgnoreCase("ie")) { 
- 		 
- 			  // Here I am setting up the path for my IEDriver
- 			  //File file = new File("C:\\Program Files\\Internet Explorer\\iexplore.exe");
- 			 
- 			 DesiredCapabilities capabilitiesIE = DesiredCapabilities.internetExplorer();
- 			  capabilitiesIE.setCapability(
- 			      InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
- 			      capabilitiesIE.setCapability("nativeEvents", false);
- 			      capabilitiesIE.setCapability("initialBrowserUrl", "https://www.google.com");
- 			      System.setProperty("webdriver.ie.driver","./exeFiles/IE11.exe");
- 			      System.out.println(System.getProperty("webdriver.ie.driver"));
- 			      System.out.println("ie abt to initialize.....");
- 			   _driver = new InternetExplorerDriver(capabilitiesIE);
- 		 
- 			  /*System.setProperty("webdriver.ie.driver", "./exe/iexplore.exe");*/
- 			  
- 			  //_driver = new InternetExplorerDriver();
- 			  System.out.println("Initialized IE!!!");
- 			  
- 		 
- 		  } 
- 		_driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+
+
+ 				DesiredCapabilities capabilitiesIE = DesiredCapabilities.internetExplorer();
+ 				  capabilitiesIE.setCapability(
+ 				      InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
+ 				      capabilitiesIE.setCapability("nativeEvents", false);
+ 				      
+ 				  
+ 				System.setProperty("webdriver.ie.driver","./exeFiles/IEDriverServer.exe");
+ 				   _driver = new InternetExplorerDriver(capabilitiesIE);
+
+ 				 System.out.println("Initialized IE!!!");
+ 		   		  }
+	_driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
  		_driver.manage().window().maximize();
  		return _driver;
  		
