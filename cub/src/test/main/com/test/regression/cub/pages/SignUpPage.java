@@ -33,6 +33,9 @@ public class SignUpPage extends SuiteBase{
 	@FindBy(xpath = "//button[text()='Continue']") 
 	private WebElement _continueButton;
 	
+	@FindBy(xpath = "//a[text()='Sign in!']")
+	private WebElement _signInLinkInSignUpPopup;
+	
 	@FindBy(id = "confirm-rewards-no-no")
 	private WebElement _dontWantCardRadio;
 	
@@ -108,6 +111,33 @@ public class SignUpPage extends SuiteBase{
 	@FindBy(xpath = "//div[@class='ss-cardconfirm-container ss-inner-container']/a")
 	private WebElement _closeButtonInRewardsCardPopup;
 	
+	@FindBy(xpath = "//p[text()=' This looks like an invalid email address.']")
+	private WebElement _invalidEmailText;
+	
+	@FindBy(xpath = "//li[text()='6-20 characters long']")
+	private WebElement _invalidPasswordText;
+	
+	@FindBy(xpath = "//a[@class='ss-close-button']")
+	private WebElement _closeSignUpPopup;
+	
+	public void clickOnClosePopUp() throws InterruptedException
+	{
+		waitFor(_closeSignUpPopup);
+		_closeSignUpPopup.click();
+		log.info("Pop up closed successfully..");
+		Thread.sleep(5000);
+		
+		
+     }
+	
+	public boolean isSignUpPopupPresent(){
+		
+		if(_closeSignUpPopup.isDisplayed())
+			return true;
+		else
+			return false;
+	}
+	
 	public void clickSignUpLink() throws InterruptedException{
 		waitFor(_signUpLink);
 		_signUpLink.click();
@@ -115,16 +145,36 @@ public class SignUpPage extends SuiteBase{
 		log.info("Clicked on SignUp Link..");
 	}
 	
+	
+	public void clickSignInLinkInSignUpPopup() throws InterruptedException{
+		waitFor(_signInLinkInSignUpPopup);
+		_signInLinkInSignUpPopup.click();
+		
+		log.info("Clicked on SignIn Link in SignUp popup..");
+	}
+	
 	public void enterSignUpDetails(String UserName, String Password){
 		waitFor(_userName);
+		_userName.clear();
 		_userName.sendKeys(UserName);
 		waitFor(_password);
+		_password.clear();
 		_password.sendKeys(Password);
 		_password.sendKeys(Keys.ENTER);
 		
 		log.info("Entered SignUp Username and Password");
 		
 	}
+	
+	
+	
+	public boolean isInvalidEmailTextPresent(){
+		return _invalidEmailText.isDisplayed();
+	}
+	
+	public boolean isInvalidPasswordTextPresent(){
+		return _invalidPasswordText.isDisplayed();
+	} 
 	
 /*	public void clickContinueButtonNoCheck() throws InterruptedException{
 		
@@ -136,7 +186,7 @@ public class SignUpPage extends SuiteBase{
 	
 	public void clickContinueButton() throws InterruptedException{
 		
-		waitFor(_continueButton);
+		Thread.sleep(5000);
 		
 		System.out.println("Continue Button presence flag :" + _continueButton.isEnabled());
 		
@@ -246,18 +296,46 @@ public class SignUpPage extends SuiteBase{
 	public void addRewardsCard_EnterDetails(String lastname, String CardNum)
 	{
 		log.info("Entering existing Card numder and Last name details for linking a card");
-		
+	
 		_cardlessId1InAddRewardsPopup.clear();
 		_cardlessId2InAddRewardsPopup.clear();
-		waitFor(_lastNameInAddRewardsPopup);
+		waitFor(_logOut);
+		return(_logOut.isDisplayed());
+
+		
+	}
+
+	public void enterUserNameInSignUpPopup(String Username) throws InterruptedException {
+		Thread.sleep(5000);
+		_userName.clear();
+		_userName.sendKeys(Username);
+		_userName.sendKeys(Keys.TAB);
+		
+	}
+	
+	public void enterPasswordInSignUpPopup(String password) throws InterruptedException {
+		Thread.sleep(5000);
+		_password.clear();
+		_password.sendKeys(password);
+		
+		
+	}
+	
+	public void addRewardsCard_EnterDetails(String lastname, String CardNum)
+    {
+           log.info("Entering existing Card numder and Last name details for linking a card");
+           
+           _cardlessId1InAddRewardsPopup.clear();
+           _cardlessId2InAddRewardsPopup.clear();
+           waitFor(_lastNameInAddRewardsPopup);
 		_lastNameInAddRewardsPopup.clear();
-		_lastNameInAddRewardsPopup.sendKeys(lastname);
-		waitFor(_rewardsNumInAddRewardsPopup);
+           _lastNameInAddRewardsPopup.sendKeys(lastname);
+           waitFor(_rewardsNumInAddRewardsPopup);
 		_rewardsNumInAddRewardsPopup.clear();
 		_rewardsNumInAddRewardsPopup.sendKeys(CardNum);
 			
-		log.info("Entered existing Card numder and Last name details for linking a card");
-	}
+           log.info("Entered existing Card numder and Last name details for linking a card");
+    }
 	
 	public void addRewardsCard_CardNumCardlesId(String Cardnumber, String CardlessId)
 	{
@@ -298,12 +376,44 @@ public class SignUpPage extends SuiteBase{
 	}
 	
 	
-	
-	public boolean isLogOutButtonPresent(){
-		waitFor(_logOut);
-		return(_logOut.isDisplayed());
+    
+    public void addRewardsCard_CardNumCardlesId(String Cardnumber, String CardlessId)
+    {
+           log.info("Entering existing reward card number and Cardless Id details for linking a card");
+           
+           String cardless7 = CardlessId.substring(0, 7);
+           String cardless4 = CardlessId.substring(7, 11);
+           _lastNameInAddRewardsPopup.clear();
+           _cardlessId1InAddRewardsPopup.clear();
+           _cardlessId1InAddRewardsPopup.sendKeys(cardless7);
+           _cardlessId2InAddRewardsPopup.clear();
+           _cardlessId2InAddRewardsPopup.sendKeys(cardless4);
+           
+           waitFor(_rewardsNumInAddRewardsPopup);
+           _rewardsNumInAddRewardsPopup.clear();
+           _rewardsNumInAddRewardsPopup.sendKeys(Cardnumber);
+           
+           log.info("Entered existing reward card number and Cardless Id details for linking a card");
+    }
+    
+    public void addRewardsCard_CardlessIdLastname(String lastname, String CardlessId)
+    {
+           log.info("Entering existing Last name and Cardless id details for linking a card");
 
-		
-	}
+           waitFor(_lastNameInAddRewardsPopup);
+           _rewardsNumInAddRewardsPopup.clear();
+           _lastNameInAddRewardsPopup.clear();
+           _lastNameInAddRewardsPopup.sendKeys(lastname);
+           String cardless7 = CardlessId.substring(0, 7);
+           String cardless4 = CardlessId.substring(7, 11);
+           
+           _cardlessId1InAddRewardsPopup.clear();
+           _cardlessId1InAddRewardsPopup.sendKeys(cardless7);
+           _cardlessId2InAddRewardsPopup.clear();
+           _cardlessId2InAddRewardsPopup.sendKeys(cardless4);
+           
+                  log.info("Entered existing Last name and Cardless id details for linking a card");
+    }
+
 	
 }

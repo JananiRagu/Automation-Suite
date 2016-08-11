@@ -10,7 +10,9 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -18,12 +20,20 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+
 import com.test.regression.cub.utils.Constant;
 
 public class SuiteBase {	
 	
 	Logger log = Logg.createLogger();
 	protected static WebDriver _driver;
+	
+	@BeforeSuite(alwaysRun = true)
+	public void DataSetUp(){
+		UpdateXML dataUpdateObj = new UpdateXML();
+		dataUpdateObj.updateTestData();
+	}
  
 	@AfterMethod
 	public void closeDriver(Method method)
@@ -48,7 +58,7 @@ public class SuiteBase {
    
        
    @BeforeMethod
-     public void initialization(Method method) {
+     public void initialization(Method method) throws InterruptedException {
 	   
 	   
 	   log.info("***************************************************************");
@@ -65,10 +75,12 @@ public class SuiteBase {
      }
 
  	
- 	public WebDriver InitializeDriver(String browser) {
+ 	public WebDriver InitializeDriver(String browser) throws InterruptedException {
  		 		 
  		  if(browser.equalsIgnoreCase("firefox")) {
  			 	
+ 			
+ 			 //System.setProperty("webdriver.firefox.driver", "./exeFiles/firefox.exe");
  			 _driver = new FirefoxDriver();
  			 System.out.println("Mozilla Launched Successfully!!");
  		 
@@ -87,7 +99,12 @@ public class SuiteBase {
  				  capabilitiesIE.setCapability(
  				      InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
  				      capabilitiesIE.setCapability("nativeEvents", false);
+ 			     capabilitiesIE.setCapability("ie.ensureCleanSession", true);
+ 			  
+ 			 System.setProperty("webdriver.ie.driver","./exeFiles/IEDriverServer.exe");
  				      
+ 			  Thread.sleep(5000);
+ 			  
  				  
  				System.setProperty("webdriver.ie.driver","./exeFiles/IEDriverServer.exe");
  				   _driver = new InternetExplorerDriver(capabilitiesIE);

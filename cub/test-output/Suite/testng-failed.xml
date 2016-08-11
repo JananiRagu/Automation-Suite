@@ -1,117 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" parallel="none">
-<<<<<<< HEAD
   <test name="Shopping List - Testing(failed)" parallel="none">
     <classes>
       <class name="com.test.regression.cub.testscripts.SignIn">
-=======
-  <test name="Header Footer Navigation - Testing(failed)" parallel="none">
-    <classes>
-      <class name="com.test.regression.cub.testscripts.HeaderFooterNavigation">
-        <methods>
-          <include name="initialization"/>
-          <include name="CouponTileSignedInUser"/>
-          <include name="breakDown"/>
-          <include name="PrivacyPolicySignedInUser"/>
-          <include name="TermsAndConditionsSignedInUser"/>
-          <include name="closeDriver"/>
-        </methods>
-      </class> <!-- com.test.regression.cub.testscripts.HeaderFooterNavigation -->
-      <class name="com.test.regression.cub.testscripts.FindAStore">
-        <methods>
-          <include name="initialization"/>
-          <include name="breakDown"/>
-          <include name="closeDriver"/>
-        </methods>
-      </class> <!-- com.test.regression.cub.testscripts.FindAStore -->
-      <class name="com.test.regression.cub.testscripts.SignIn">
-        <methods>
-          <include name="initialization"/>
-          <include name="breakDown"/>
-          <include name="closeDriver"/>
-        </methods>
-      </class> <!-- com.test.regression.cub.testscripts.SignIn -->
-      <class name="com.test.regression.cub.testscripts.MyAccount">
-        <methods>
-          <include name="initialization"/>
-          <include name="breakDown"/>
-          <include name="closeDriver"/>
-        </methods>
-      </class> <!-- com.test.regression.cub.testscripts.MyAccount -->
-      <class name="com.test.regression.cub.testscripts.SignUp">
-        <methods>
-          <include name="initialization"/>
-          <include name="breakDown"/>
-          <include name="closeDriver"/>
-        </methods>
-      </class> <!-- com.test.regression.cub.testscripts.SignUp -->
-      <class name="com.test.regression.cub.testscripts.ShoppingLists">
-        <methods>
-          <include name="initialization"/>
-          <include name="breakDown"/>
-          <include name="closeDriver"/>
-        </methods>
-      </class> <!-- com.test.regression.cub.testscripts.ShoppingLists -->
-      <class name="com.test.regression.cub.testscripts.Coupons">
-        <methods>
-          <include name="initialization"/>
-          <include name="breakDown"/>
-          <include name="closeDriver"/>
-        </methods>
-      </class> <!-- com.test.regression.cub.testscripts.Coupons -->
-    </classes>
-  </test> <!-- Header Footer Navigation - Testing(failed) -->
-  <test name="My Account- Testing(failed)" parallel="none">
-    <classes>
-      <class name="com.test.regression.cub.testscripts.HeaderFooterNavigation">
-        <methods>
-          <include name="initialization"/>
-          <include name="breakDown"/>
-          <include name="closeDriver"/>
-        </methods>
-      </class> <!-- com.test.regression.cub.testscripts.HeaderFooterNavigation -->
-      <class name="com.test.regression.cub.testscripts.FindAStore">
-        <methods>
-          <include name="initialization"/>
-          <include name="breakDown"/>
-          <include name="closeDriver"/>
-        </methods>
-      </class> <!-- com.test.regression.cub.testscripts.FindAStore -->
-      <class name="com.test.regression.cub.testscripts.MyAccount">
-        <methods>
-          <include name="ChangePwdDifferentNewPwds"/>
-          <include name="initialization"/>
-          <include name="ChangePwdLengthyPwd"/>
-          <include name="breakDown"/>
-          <include name="ChangePwdShortPwd"/>
-          <include name="ChangePwdValid"/>
-          <include name="closeDriver"/>
-        </methods>
-      </class> <!-- com.test.regression.cub.testscripts.MyAccount -->
-      <class name="com.test.regression.cub.testscripts.SignIn">
-        <methods>
-          <include name="initialization"/>
-          <include name="breakDown"/>
-          <include name="closeDriver"/>
-        </methods>
-      </class> <!-- com.test.regression.cub.testscripts.SignIn -->
-      <class name="com.test.regression.cub.testscripts.SignUp">
-        <methods>
-          <include name="initialization"/>
-          <include name="breakDown"/>
-          <include name="closeDriver"/>
-        </methods>
-      </class> <!-- com.test.regression.cub.testscripts.SignUp -->
-      <class name="com.test.regression.cub.testscripts.ShoppingLists">
-        <methods>
-          <include name="initialization"/>
-          <include name="breakDown"/>
-          <include name="closeDriver"/>
-        </methods>
-      </class> <!-- com.test.regression.cub.testscripts.ShoppingLists -->
-      <class name="com.test.regression.cub.testscripts.Coupons">
->>>>>>> 8133ebbbad1bc474a5ecb1e0181ba7542e96bf8a
         <methods>
           <include name="initialization"/>
           <include name="breakDown"/>
@@ -251,9 +143,5 @@
         </methods>
       </class> <!-- com.test.regression.cub.testscripts.MyAccount -->
     </classes>
-<<<<<<< HEAD
   </test> <!-- Find a Store - Testing(failed) -->
-=======
-  </test> <!-- My Account- Testing(failed) -->
->>>>>>> 8133ebbbad1bc474a5ecb1e0181ba7542e96bf8a
 </suite> <!-- Failed suite [Suite] -->

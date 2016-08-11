@@ -3,15 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.test.regression.cub.testscripts.HeaderFooterNavigation">
+      <class name="com.test.regression.cub.HeaderFooterNavigation">
         <methods>
-          <include name="FooterLinksGuestUser"/>
-          <include name="initialization"/>
-          <include name="FooterLinksSignedInUser"/>
           <include name="breakDown"/>
+          <include name="CustomerService"/>
+          <include name="startExtent"/>
           <include name="closeDriver"/>
         </methods>
-      </class> <!-- com.test.regression.cub.testscripts.HeaderFooterNavigation -->
+      </class> <!-- com.test.regression.cub.HeaderFooterNavigation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

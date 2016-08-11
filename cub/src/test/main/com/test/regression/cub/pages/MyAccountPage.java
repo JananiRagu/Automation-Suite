@@ -1,6 +1,7 @@
 package com.test.regression.cub.pages;
 
 import java.rmi.server.SocketSecurityException;
+import org.apache.log4j.Logger;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
@@ -14,6 +15,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
+import com.test.regression.cub.utils.Constant;
+import com.test.regression.cub.utils.Logg;
 import com.sun.jna.StringArray;
 import com.test.regression.cub.utils.Constant;
 import com.test.regression.cub.utils.Logg;
@@ -22,8 +25,8 @@ import com.test.regression.cub.utils.SuiteBase;
 public class MyAccountPage extends SuiteBase{
 	
 	WebDriver _driver;
-
 	Logger log = Logg.createLogger();
+
 	
 	public MyAccountPage(WebDriver driver) {
 		super();
@@ -39,15 +42,19 @@ public class MyAccountPage extends SuiteBase{
 	@FindBy(xpath = "//a[text()='My Account']")
 	private WebElement _MyAccount;
 	
+	@FindBy(xpath = "//div[@class='account-section-details']/div/div[2]/div[@class='value personal current-cardlessid']")
+	private WebElement _cardlessid;
+	
 
 //Method to click on My Account link under My Tools
 	
 public void clickOnMyAccountUnderMyTools(WebDriver driver) throws InterruptedException
 {
-		/* waitFor(_MyToolsLink);
+		/*waitFor(_MyToolsLink);
 		 _MyToolsLink.click();
 		  waitFor(_MyAccount);
-		_MyAccount.click(); */
+		_MyAccount.click();*/
+
 	
 		Thread.sleep(10000);
 		driver.navigate().to(Constant.URL+"tools/view-account.html");
@@ -76,6 +83,9 @@ public void clickOnMyAccountUnderMyTools(WebDriver driver) throws InterruptedExc
 	@FindBy(xpath = "//*[@id='layout']/div[2]/div[2]/a")
 	private WebElement _XInChangePwdPopUp;
 	
+	@FindBy(xpath = "//div[@class='account-section-details acct-info']/div/div/div[2]")
+	private WebElement _signedInAsUserName;
+	
 
 // Xpath for Change pwd Pop up
 		
@@ -103,6 +113,15 @@ public void clickOnMyAccountUnderMyTools(WebDriver driver) throws InterruptedExc
 				_closePopUp.click();
 				log.info("Pop up closed successfully..");
 		     }
+			
+			//FAS 
+			@FindBy(xpath = "//*[@class='edit ss-update-store-myaccount']")
+			private WebElement _editlinkformystore;
+
+			public void clickeditonmystore(){
+			waitFor(_editlinkformystore);
+			_editlinkformystore.click();
+			}
 			
 // Methods in CHANGE PASSWORD pop up My Account page
 
@@ -161,6 +180,25 @@ public void clickOnMyAccountUnderMyTools(WebDriver driver) throws InterruptedExc
 		else
 			return false;
 		
+		}
+
+	public boolean chkCardlessIdPresent() {
+		
+		String cardlessId = _cardlessid.getText();
+		
+		
+		System.out.println("Cardless Id is : " + cardlessId);
+		
+		 if(cardlessId.isEmpty())
+			 return true;
+		else
+			return false;
+	}
+	
+	public String getSignedInUsername(){
+			String username = _signedInAsUserName.getText();
+			
+			return username;
 		}
 		
 	

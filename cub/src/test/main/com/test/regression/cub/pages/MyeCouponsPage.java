@@ -45,7 +45,8 @@ public class MyeCouponsPage extends SuiteBase{
 	    
 	}
 	
-	public boolean isCouponPresent(String couponName){
+	public boolean isCouponPresent(String couponName) throws InterruptedException{
+		Thread.sleep(5000);
 		System.out.println("Inside isCouponPresent method");
 		System.out.println(_myECoupons.size());
 		int count = 0;
@@ -64,7 +65,8 @@ public class MyeCouponsPage extends SuiteBase{
 			return false;
 	}
 	
-	public int noOfECoupons(){
+	public int noOfECoupons() throws InterruptedException{
+		Thread.sleep(7000);
 		int size = _myECoupons.size();
 		log.info("No. of coupons in eCoupons page is : "+ size);
 		return size;
