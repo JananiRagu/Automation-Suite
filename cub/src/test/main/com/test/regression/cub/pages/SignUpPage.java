@@ -293,16 +293,7 @@ public class SignUpPage extends SuiteBase{
 		Thread.sleep(5000);
 	}
 	
-	public void addRewardsCard_EnterDetails(String lastname, String rewardsNum){
-		
-		waitFor(_lastNameInAddRewardsPopup);
-		_lastNameInAddRewardsPopup.sendKeys(lastname);
-		waitFor(_rewardsNumInAddRewardsPopup);
-		_rewardsNumInAddRewardsPopup.sendKeys(rewardsNum);
-		_rewardsNumInAddRewardsPopup.sendKeys(Keys.ENTER);
-		
-		log.info("Entered existing reward card details for linking a card");
-	}
+	
 	
 	public boolean isLogOutButtonPresent(){
 		waitFor(_logOut);
@@ -326,5 +317,60 @@ public class SignUpPage extends SuiteBase{
 		
 		
 	}
+	
+	public void addRewardsCard_EnterDetails(String lastname, String CardNum)
+    {
+           log.info("Entering existing Card numder and Last name details for linking a card");
+           
+           _cardlessId1InAddRewardsPopup.clear();
+           _cardlessId2InAddRewardsPopup.clear();
+           waitFor(_lastNameInAddRewardsPopup);
+           _lastNameInAddRewardsPopup.clear();
+           _lastNameInAddRewardsPopup.sendKeys(lastname);
+           waitFor(_rewardsNumInAddRewardsPopup);
+           _rewardsNumInAddRewardsPopup.clear();
+           _rewardsNumInAddRewardsPopup.sendKeys(CardNum);
+                  
+           log.info("Entered existing Card numder and Last name details for linking a card");
+    }
+    
+    public void addRewardsCard_CardNumCardlesId(String Cardnumber, String CardlessId)
+    {
+           log.info("Entering existing reward card number and Cardless Id details for linking a card");
+           
+           String cardless7 = CardlessId.substring(0, 7);
+           String cardless4 = CardlessId.substring(7, 11);
+           _lastNameInAddRewardsPopup.clear();
+           _cardlessId1InAddRewardsPopup.clear();
+           _cardlessId1InAddRewardsPopup.sendKeys(cardless7);
+           _cardlessId2InAddRewardsPopup.clear();
+           _cardlessId2InAddRewardsPopup.sendKeys(cardless4);
+           
+           waitFor(_rewardsNumInAddRewardsPopup);
+           _rewardsNumInAddRewardsPopup.clear();
+           _rewardsNumInAddRewardsPopup.sendKeys(Cardnumber);
+           
+           log.info("Entered existing reward card number and Cardless Id details for linking a card");
+    }
+    
+    public void addRewardsCard_CardlessIdLastname(String lastname, String CardlessId)
+    {
+           log.info("Entering existing Last name and Cardless id details for linking a card");
+
+           waitFor(_lastNameInAddRewardsPopup);
+           _rewardsNumInAddRewardsPopup.clear();
+           _lastNameInAddRewardsPopup.clear();
+           _lastNameInAddRewardsPopup.sendKeys(lastname);
+           String cardless7 = CardlessId.substring(0, 7);
+           String cardless4 = CardlessId.substring(7, 11);
+           
+           _cardlessId1InAddRewardsPopup.clear();
+           _cardlessId1InAddRewardsPopup.sendKeys(cardless7);
+           _cardlessId2InAddRewardsPopup.clear();
+           _cardlessId2InAddRewardsPopup.sendKeys(cardless4);
+           
+                  log.info("Entered existing Last name and Cardless id details for linking a card");
+    }
+
 	
 }

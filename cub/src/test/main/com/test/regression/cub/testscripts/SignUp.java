@@ -14,6 +14,7 @@ import org.xml.sax.SAXException;
 import com.test.regression.cub.pages.CouponPage;
 import com.test.regression.cub.pages.CubHome;
 import com.test.regression.cub.pages.MyAccountPage;
+import com.test.regression.cub.pages.RewardsCardPage;
 import com.test.regression.cub.pages.ShoppingListPage;
 import com.test.regression.cub.pages.SignUpPage;
 import com.test.regression.cub.pages.WeeklyAdPage;
@@ -30,6 +31,7 @@ public class SignUp extends SuiteBase{
 	ShoppingListPage slObj;
 	MyAccountPage map;
 	CouponPage cp;
+	RewardsCardPage rc;
 
 	@Test(priority=3, enabled=false)
 	public void validSignUp_noCard(){
@@ -705,4 +707,149 @@ public class SignUp extends SuiteBase{
 		}
 	}
 	
+	@Test(priority=4, enabled=true)
+	public void validSignUp_yesIHaveOne_validateRewardsPopup(){
+		
+		try {
+			
+			SoftAssert sa = new SoftAssert();
+			
+		Map<String, String> validSignUpYesIHave = readxml.getUserData("TestData.xml", "new-user-11");
+		String userId = validSignUpYesIHave.get("UserName");
+		String password = validSignUpYesIHave.get("password");
+		
+		Map<String, String> Card = readxml.getUserData("TestData.xml", "user-to-update-contact-info");
+		String cardlessNum = Card.get("cardlessId");
+		String invalidLastName = Card.get("invalidLN");
+		String invalidCardNum = Card.get("invalidCN");
+		String invalidCardlesId = Card.get("invalidCI");
+		String CardNum = Card.get("cardNum");
+		String lastName = Card.get("lastname");
+		String lastNameNumber = Card.get("lastnamenumbers");
+		String lastNameSpecialCharacters = Card.get("lastnamespecialCharacters");
+		String CardNumAlphabets = Card.get("cardnoalphabets");
+		String CardNumSpace = Card.get("cardnospace");
+		String CardNumSplChar = Card.get("cardnosplchar");
+		String cardlessNumlphabets = Card.get("cardlessidalphabets");
+		String cardlessNumSpace = Card.get("cardlessidspace");
+		String cardlessNumSplChar = Card.get("cardlessidsplchar");
+
+		String zip = Card.get("zipcode");
+		String nullVariable = "";
+		
+		
+		signUpPage = new SignUpPage(_driver);
+		
+		rc = new RewardsCardPage(_driver);
+		
+		log.info("Test Data Used >>>>>>>");
+		log.info("User Name : " + userId);
+		log.info("Password : " + password);
+		
+		signUpPage.clickSignUpLink();
+		
+		signUpPage.enterSignUpDetails(userId,password);
+		
+		signUpPage.clickYesHaveCardRadio();
+		signUpPage.clickContinueButton();
+		
+		signUpPage.addRewardsCard_EnterDetails(lastName, nullVariable);
+		boolean result2=rc.isContinueBtnInAddExistngCardDisabled();
+		sa.assertTrue(result2, "\n  Failed: Continue button is enabled  when user enters only Last name while adding existing card..");
+
+		signUpPage.addRewardsCard_EnterDetails(nullVariable, CardNum);
+		boolean result1=rc.isContinueBtnInAddExistngCardDisabled();
+		sa.assertTrue(result1, "\n  Failed: Continue button is enabled  when user enters only Card Number while adding existing card..");
+
+		signUpPage.addRewardsCard_CardlessIdLastname(nullVariable, cardlessNum);
+		boolean result=rc.isContinueBtnInAddExistngCardDisabled();
+		sa.assertTrue(result, "\n  Failed: Continue button is enabled  when user enters only CardLess id while adding existing card..");
+
+		
+
+		signUpPage.addRewardsCard_CardlessIdLastname(lastName, invalidCardlesId);
+		rc.clickContinue();
+		boolean result3=rc.isErrorPresentAddExistnCard();
+		sa.assertTrue(result3, "\n  Failed: No error displayed when user enters invalid cardless id and valid lastname..");
+
+		signUpPage.addRewardsCard_EnterDetails(invalidLastName, CardNum);
+		rc.clickContinue();
+		boolean result22=rc.isErrorPresentAddExistnCard();
+		sa.assertTrue(result22, "\n  Failed: No error displayed when user enters invalid last name and valid  card number..");
+
+		signUpPage.addRewardsCard_CardNumCardlesId(CardNum, invalidCardlesId);
+		rc.clickContinue();
+		boolean result6=rc.isErrorPresentAddExistnCard();
+		sa.assertTrue(result6, "\n  Failed: No error displayed when user enters invalid Cardles id and valid  card number..");
+
+		signUpPage.addRewardsCard_CardNumCardlesId(invalidCardNum, cardlessNum);
+		rc.clickContinue();
+		boolean result16=rc.isErrorPresentAddExistnCard();
+		sa.assertTrue(result16, "\n  Failed: No error displayed when user enters valid Cardles id and invalid card number..");
+
+		signUpPage.addRewardsCard_CardlessIdLastname(invalidLastName, cardlessNum);
+		rc.clickContinue();
+		boolean result13=rc.isErrorPresentAddExistnCard();
+		sa.assertTrue(result13, "\n  Failed: No error displayed when user enters valid cardless id and invalid lastname..");
+
+		signUpPage.addRewardsCard_EnterDetails(lastNameNumber, CardNum);
+		boolean result14=rc.isContinueBtnInAddExistngCardDisabled();
+		sa.assertTrue(result14, "\n  Failed: Continue button is enabled  when user enters digits in Last name feild while adding existing card..");
+
+		signUpPage.addRewardsCard_EnterDetails(lastNameSpecialCharacters, CardNum);
+		boolean result15=rc.isContinueBtnInAddExistngCardDisabled();
+		sa.assertTrue(result15, "\n  Failed: Continue button is enabled  when user enters Special characters in Last name feild while adding existing card..");
+
+		signUpPage.addRewardsCard_EnterDetails(lastName, CardNumAlphabets);
+		boolean result17=rc.isContinueBtnInAddExistngCardDisabled();
+		sa.assertTrue(result17, "\n  Failed: Continue button is enabled  when user enters alphabets in Card number feild while adding existing card..");
+
+		signUpPage.addRewardsCard_EnterDetails(lastName, CardNumSplChar);
+		boolean result18=rc.isContinueBtnInAddExistngCardDisabled();
+		sa.assertTrue(result18, "\n  Failed: Continue button is enabled  when user enters Special characters in Card number feild while adding existing card..");
+
+		signUpPage.addRewardsCard_EnterDetails(lastName, CardNumSpace);
+		boolean result8=rc.isContinueBtnInAddExistngCardDisabled();
+		sa.assertTrue(result8, "\n  Failed: Continue button is enabled  when user enters Spaces in Card number feild while adding existing card..");
+
+		signUpPage.addRewardsCard_CardlessIdLastname(lastName, cardlessNumlphabets);
+		boolean result9=rc.isErrorPresentAddExistnCard();
+		sa.assertTrue(result9, "\n  Failed: Continue button is enabled  when user enters alphabets in Cardles id feild while adding existing card..");
+
+		signUpPage.addRewardsCard_CardlessIdLastname(lastName, cardlessNumSplChar);
+		boolean result19=rc.isErrorPresentAddExistnCard();
+		sa.assertTrue(result19, "\n  Failed: Continue button is enabled  when user enters Special Characters in Cardles id feild while adding existing card..");
+
+		signUpPage.addRewardsCard_CardlessIdLastname(lastName, cardlessNumSpace);
+		boolean result10=rc.isErrorPresentAddExistnCard();
+		sa.assertTrue(result10, "\n  Failed: Continue button is enabled  when user enters Space in Cardles id feild while adding existing card..");
+		
+		signUpPage.addRewardsCard_EnterDetails(lastName, invalidCardNum);
+		rc.clickContinue();
+		boolean result12=rc.isErrorPresentAddExistnCard();
+		sa.assertTrue(result12, "\n  Failed: No error displayed when user enters invalid card number and valid lastname..");
+
+		sa.assertAll(); 
+		
+		} catch (InterruptedException ie) {
+			log.info(ie.getMessage());
+			Assert.fail("Caught Interrupted Exception");
+		} catch (IOException ioe) {
+			log.info(ioe.getMessage());	
+			Assert.fail("Caught IOException Exception");
+		} catch (XPathExpressionException xee) {
+			log.info(xee.getMessage());	
+			Assert.fail("Caught XPathExpressionException Exception");
+		} catch (ParserConfigurationException pce) {
+			log.info(pce.getMessage());
+			Assert.fail("Caught ParserConfigurationException Exception");
+		} catch (SAXException saxe) {
+			log.info(saxe.getMessage());
+			Assert.fail("Caught SAXException Exception");
+		} catch (Exception e) {
+			log.info(e.getMessage());
+			Assert.fail(e.getLocalizedMessage());
+		}
+		
+	}
 }

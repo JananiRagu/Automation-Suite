@@ -7,19 +7,19 @@
     	<class name="com.test.regression.cub.testscripts.SignIn"> </class> 
     </classes>
 </test> 
-
+-->
 <test name="Sign Up - Testing">
     <classes> 
     	<class name="com.test.regression.cub.testscripts.SignUp"> </class>  
     </classes>
 </test> 
--->
+<!-- 
 <test name="Shopping List - Testing">
     <classes> 
     	<class name="com.test.regression.cub.testscripts.ShoppingLists"> </class> 
     </classes>
 </test> 
-<!-- 
+ 
 <test name="Header Footer Navigation - Testing">
     <classes> 
     	<class name="com.test.regression.cub.testscripts.HeaderFooterNavigation"> </class> 
@@ -32,7 +32,7 @@
     </classes>
 </test>
   
-  <test name="My Account- Testing">
+    <test name="My Account- Testing">
     <classes> 
     	<class name="com.test.regression.cub.testscripts.MyAccount"> </class> 
     </classes>

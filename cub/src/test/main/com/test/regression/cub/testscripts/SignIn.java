@@ -275,6 +275,7 @@ public void validLoginFromCouponsPage() {
 		cp.addSingleCoupon(_driver, "1");
 	
 		cubHome = new CubHome(_driver);
+		
 	cubHome.enterLoginDetails(userId, password);
 
 	cubHome.clickSignInButton();

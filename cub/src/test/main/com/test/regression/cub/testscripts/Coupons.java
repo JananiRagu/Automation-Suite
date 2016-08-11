@@ -19,6 +19,7 @@ import com.test.regression.cub.pages.CouponPage;
 import com.test.regression.cub.pages.CubHome;
 import com.test.regression.cub.pages.MyAccountPage;
 import com.test.regression.cub.pages.MyeCouponsPage;
+import com.test.regression.cub.pages.ShoppingListPage;
 import com.test.regression.cub.pages.SignUpPage;
 import com.test.regression.cub.utils.Logg;
 import com.test.regression.cub.utils.ReadXML;
@@ -31,12 +32,15 @@ public class Coupons extends SuiteBase{
 	SignUpPage signUpPage;
 	MyeCouponsPage ecp;
 	MyAccountPage map ;
+	ShoppingListPage slpage;
 	Logger log = Logg.createLogger();
 	ReadXML readxml = new ReadXML();
 	
-	@Test(priority=11, enabled=false)
+	@Test(priority=11, enabled=true)
 	public void addCouponForAuthorizedUser() {
 		try{
+			
+			SoftAssert sa = new SoftAssert();
 		Map<String, String> newSL = readxml.getUserData("TestData.xml", "authorized-user-2");
 		String userId = newSL.get("UserName");
 		String password = newSL.get("password");
@@ -54,7 +58,7 @@ public class Coupons extends SuiteBase{
 		
 			cp.clickOnCouponsInMyToolsHomePage(_driver);
 			
-			cp.loadCompleteCouponsPage(_driver);
+			//cp.loadCompleteCouponsPage(_driver);
 			log.info("Coupons Page is loaded fully");
 		}catch(UnhandledAlertException al){
 			_driver.switchTo().alert().accept();
@@ -62,6 +66,8 @@ public class Coupons extends SuiteBase{
 		
 			
 		String addedCouponName = cp.addSingleCoupon(_driver, wantedCouponNumber);
+		
+		String couponNameInSl = cp.getCouponName(_driver, wantedCouponNumber);
 		
 		Thread.sleep(5000);
 		ecp = new MyeCouponsPage(_driver);
@@ -72,7 +78,18 @@ public class Coupons extends SuiteBase{
 		boolean result = ecp.isCouponPresent(addedCouponName);
 		
 		System.out.println("Result is " + result);
-		Assert.assertTrue(result);
+		sa.assertTrue(result, "Oops! Some problem while adding coupon");
+		
+		slpage = new ShoppingListPage(_driver);
+		
+		slpage.clickOnMyListInMyToolsHomePage(_driver);
+		
+		boolean result2 = slpage.isItemPresentInSL(_driver, couponNameInSl);
+		
+		sa.assertTrue(result2, "Coupon name is not added in Shopping list..");
+		
+		sa.assertAll();
+		
 		} catch (InterruptedException ie) {
 			log.info(ie.getMessage());
 			Assert.fail("Caught Interrupted Exception");
@@ -667,7 +684,7 @@ public class Coupons extends SuiteBase{
 		
 	} 
 	
-	@Test(priority=12, enabled=true)
+	@Test(priority=12, enabled=false)
 	public void categoryTestInCoupons() {
 		
 		try{
@@ -696,7 +713,7 @@ public class Coupons extends SuiteBase{
 	}
 	
 
-	@Test(priority=11, enabled=true)
+	@Test(priority=11, enabled=false)
 	public void searchTestInCoupons() {
 		
 		try{

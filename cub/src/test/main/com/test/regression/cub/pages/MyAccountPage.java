@@ -114,6 +114,15 @@ public void clickOnMyAccountUnderMyTools(WebDriver driver) throws InterruptedExc
 				log.info("Pop up closed successfully..");
 		     }
 			
+			//FAS 
+			@FindBy(xpath = "//*[@class='edit ss-update-store-myaccount']")
+			private WebElement _editlinkformystore;
+
+			public void clickeditonmystore(){
+			waitFor(_editlinkformystore);
+			_editlinkformystore.click();
+			}
+			
 // Methods in CHANGE PASSWORD pop up My Account page
 
 		public void clickOnChangePwdLink()

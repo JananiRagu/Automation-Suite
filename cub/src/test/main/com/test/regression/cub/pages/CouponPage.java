@@ -727,6 +727,39 @@ public class CouponPage extends SuiteBase{
 		Thread.sleep(5000);
 		
 	}
+
+	public String getCouponName(WebDriver driver, String wantedCouponNumber) throws InterruptedException {
+		System.out.println("...Inside getCouponName method...");
+		
+		boolean isCouponFlipp = chkIfFlipp(driver, wantedCouponNumber);
+		
+		System.out.println("isCouponFlipp value : "+ isCouponFlipp);
+		String addedCouponName = null;
+		
+		String temp1 = "//div[@class='coupon-list']/div[";
+		String temp2 = "]/div/div/div[2]/div[2]/p"; //for flipp
+		String temp3 = "]/div/div/div[1]/div[2]/p"; //for Inmar
+		
+		if(isCouponFlipp){
+			
+			String wantedCoupon = temp1+wantedCouponNumber+temp2;
+	
+			addedCouponName  = driver.findElement(By.xpath(wantedCoupon)).getText();
+			
+			log.info("Got Flipp Coupon Name");
+			}
+			
+			else{
+				String wantedCoupon = temp1+wantedCouponNumber+temp3;
+				
+				addedCouponName  = driver.findElement(By.xpath(wantedCoupon)).getText();
+				
+				log.info("Got Inmar Coupon Name");
+			}	
+		
+		return addedCouponName;
+		
+	}
 	
 	
 	
