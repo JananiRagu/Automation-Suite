@@ -429,6 +429,7 @@ public void enterContactInformation(String firstName, String lastName, String ad
 	public boolean isContinueBtnInUpdateContactInfoDisabled() throws InterruptedException
 	{
 		Thread.sleep(5000);
+		
 	String disabled="ss-submit-button ss-signup-btn ss-submit-button-disabled";
     String actual=_continueButtonInUpdateContactInfoPopUp.getAttribute("class");
 	
@@ -440,13 +441,13 @@ public void enterContactInformation(String firstName, String lastName, String ad
 	}
 	
 //FAS 
-	 @FindBy(xpath = "//*[@class='edit ss-update-store-myaccount']")
+	 /*@FindBy(xpath = "//*[@class='edit ss-update-store-myaccount']")
 	 private WebElement _editlinkformystore;
 
 	 public void clickeditonmystore(){
 	 waitFor(_editlinkformystore);
 	 _editlinkformystore.click();
-	 } 
+	 } */
 
 	
 }

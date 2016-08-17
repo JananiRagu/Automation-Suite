@@ -45,8 +45,8 @@ public class FindAStore extends SuiteBase {
 		{
 			try{
 			
-			Map<String, String> StoreData = readxml.getUserData("TestData.xml", "new-user-4");
-			String zipcode = StoreData.get("ZipCode");
+			Map<String, String> StoreData = readxml.getUserData("TestData.xml", "fas-user-1");
+			String zipcode = StoreData.get("zipcode");
 			
 			findastore = new FindAStorePage(_driver);
 		
@@ -85,14 +85,14 @@ public class FindAStore extends SuiteBase {
 		}
 		
 		//Guest User setting a Store with City and State name
-		@Test(priority=15 , enabled=false)
+		@Test(priority=15 , enabled=true)
 		public void setStoreGuestCityState() 
 		{
 			try{
 				
-			Map<String, String> StoreData = readxml.getUserData("TestData.xml", "new-user-4");
-			String cityname = StoreData.get("CityName");
-			String state = StoreData.get("State");
+			Map<String, String> StoreData = readxml.getUserData("TestData.xml", "fas-user-1");
+			String cityname = StoreData.get("city");
+			String state = StoreData.get("state");
 			
 			findastore = new FindAStorePage(_driver);
 			
@@ -129,16 +129,16 @@ public class FindAStore extends SuiteBase {
 		}
 		
 		//Guest User setting a Store with Street Name,City and State
-		@Test(priority=16, enabled=false)
+		@Test(priority=16, enabled=true)
 		public void setStoreGueststreetname() 
 		{
 			try{
 			
-			Map<String, String> StoreData = readxml.getUserData("TestData.xml", "new-user-4");
+			Map<String, String> StoreData = readxml.getUserData("TestData.xml", "fas-user-1");
 			String street = StoreData.get("StreetAddress");
-			String cityname = StoreData.get("CityName");
-			String state = StoreData.get("State");
-			String zipcode = StoreData.get("ZipCode");
+			String cityname = StoreData.get("city");
+			String state = StoreData.get("state");
+			String zipcode = StoreData.get("zipcode");
 			
 			findastore = new FindAStorePage(_driver);
 		
@@ -190,17 +190,17 @@ public class FindAStore extends SuiteBase {
 		}
 		//SIGN IN User with ZIPCODE and change store from view store page
 		
-		@Test(priority=17, enabled=false)
+		@Test(priority=17, enabled=true)
 		public void setStoreAuthorizedZipcode() {
 
 		try{
 				
 		// Retrieving test data for valid login
-		Map<String, String> validLogin = readxml.getUserData("TestData.xml", "carded-user");
+		Map<String, String> validLogin = readxml.getUserData("TestData.xml", "authorized-user-1");
 		String userId = validLogin.get("UserName");
 		String password = validLogin.get("password");
-		Map<String, String> StoreData = readxml.getUserData("TestData.xml", "new-user-4");
-		String zipcode = StoreData.get("ZipCode");
+		Map<String, String> StoreData = readxml.getUserData("TestData.xml", "fas-user-1");
+		String zipcode = StoreData.get("zipcode");
 
 		cubHome = new CubHome(_driver);
 
@@ -273,18 +273,18 @@ public class FindAStore extends SuiteBase {
 
 		
 		//SIGN IN User with CITY 
-		@Test(priority=18,enabled=false)
+		@Test(priority=18,enabled=true)
 		public void setStoreAuthorizedCityState() {
 
 			try{
 				
 		// Retrieving test data for valid login
-		Map<String, String> validLogin = readxml.getUserData("TestData.xml", "carded-user");
+		Map<String, String> validLogin = readxml.getUserData("TestData.xml", "authorized-user-1");
 		String userId = validLogin.get("UserName");
 		String password = validLogin.get("password");
-		Map<String, String> StoreData = readxml.getUserData("TestData.xml", "new-user-4");
-		String cityname = StoreData.get("CityName");
-		String state = StoreData.get("State");
+		Map<String, String> StoreData = readxml.getUserData("TestData.xml", "fas-user-1");
+		String cityname = StoreData.get("city");
+		String state = StoreData.get("state");
 
 
 		cubHome = new CubHome(_driver);
@@ -357,13 +357,13 @@ public class FindAStore extends SuiteBase {
 
 		//Checking miles for 20 miles
 		
-		@Test(priority=19, enabled=false)
+		@Test(priority=19, enabled=true)
 		
 		public void Miles20() 
 		{
 			try{
-			Map<String, String> StoreData = readxml.getUserData("TestData.xml", "new-user-4");
-			String zipcode = StoreData.get("ZipCode");
+			Map<String, String> StoreData = readxml.getUserData("TestData.xml", "fas-user-1");
+			String zipcode = StoreData.get("zipcode");
 			int results=0;
 			findastore = new FindAStorePage(_driver);
 			
@@ -414,14 +414,14 @@ public class FindAStore extends SuiteBase {
 			}
 		
 		//Checking miles for 50 miles
-		@Test(priority=20, enabled=false)
+		@Test(priority=20, enabled=true)
 		
 		public void Miles50()
 		{
 			try{
 				
-			Map<String, String> StoreData = readxml.getUserData("TestData.xml", "new-user-4");
-			String zipcode = StoreData.get("ZipCode");
+			Map<String, String> StoreData = readxml.getUserData("TestData.xml", "fas-user-1");
+			String zipcode = StoreData.get("zipcode");
 			int results=0;
 			findastore = new FindAStorePage(_driver);
 			
@@ -472,14 +472,14 @@ public class FindAStore extends SuiteBase {
 
 //Check for Change store option present in Savings page for GUEST USER
 
-	@Test(priority=21, enabled=false)
+	@Test(priority=21, enabled=true)
 	
 	public void changeStoreFromDifferentPages() 
 	{
 		try{
 			
-		Map<String, String> StoreData = readxml.getUserData("TestData.xml", "new-user-4");
-		String zipcode = StoreData.get("ZipCode");
+		Map<String, String> StoreData = readxml.getUserData("TestData.xml", "fas-user-1");
+		String zipcode = StoreData.get("zipcode");
 		String Add1=null;
 		String Add2=null;
 		findastore = new FindAStorePage(_driver);
@@ -545,7 +545,7 @@ public class FindAStore extends SuiteBase {
 	}
 
 	//Clicking on View Stores by State
-	@Test(priority=22, enabled=false)
+	@Test(priority=22, enabled=true)
 	public void StoresbyState() 
 	{
 		try{
@@ -590,17 +590,17 @@ public class FindAStore extends SuiteBase {
 		
 		//Maps and driving directions
 	
-	@Test(priority=23, enabled=false)
+	@Test(priority=23, enabled=true)
 	public void mapanddriving() {
 
 	try{
 			
 	// Retrieving test data for valid login
-	Map<String, String> validLogin = readxml.getUserData("TestData.xml", "carded-user");
+	Map<String, String> validLogin = readxml.getUserData("TestData.xml", "authorized-user-1");
 	String userId = validLogin.get("UserName");
 	String password = validLogin.get("password");
-	Map<String, String> StoreData = readxml.getUserData("TestData.xml", "new-user-4");
-	String zipcode = StoreData.get("ZipCode");
+	Map<String, String> StoreData = readxml.getUserData("TestData.xml", "fas-user-1");
+	String zipcode = StoreData.get("zipcode");
 	String startpoint=StoreData.get("Start");
 
 	cubHome = new CubHome(_driver);
@@ -696,16 +696,16 @@ public class FindAStore extends SuiteBase {
 }
 	//Invalid ZipCode
 	
-	@Test(priority=24, enabled=false)
+	@Test(priority=24, enabled=true)
 	public void invalidzipcode() {
 
 	try{
 			
 	// Retrieving test data for valid login
-	Map<String, String> validLogin = readxml.getUserData("TestData.xml", "carded-user");
+	Map<String, String> validLogin = readxml.getUserData("TestData.xml", "authorized-user-1");
 	String userId = validLogin.get("UserName");
 	String password = validLogin.get("password");
-	Map<String, String> Data = readxml.getUserData("TestData.xml", "invalid-user-4");
+	Map<String, String> Data = readxml.getUserData("TestData.xml", "fas-user-1");
 	String invalidzipcode1 = Data.get("IncorrectZipCode1");
 	String invalidzipcode2=Data.get("IncorrectZipCode2");
 	String invalidzipcode3=Data.get("IncorrectZipCode3");
@@ -789,13 +789,13 @@ public class FindAStore extends SuiteBase {
 }
 	
 	//Pagination
-	@Test(priority=25, enabled=false)
+	@Test(priority=25, enabled=true)
 	public void Pagination() {
 
 	try{
 			
 	// Retrieving test data for valid login
-	Map<String, String> validLogin = readxml.getUserData("TestData.xml", "carded-user");
+	Map<String, String> validLogin = readxml.getUserData("TestData.xml", "authorized-user-1");
 	String userId = validLogin.get("UserName");
 	String password = validLogin.get("password");
 	
@@ -931,15 +931,15 @@ public class FindAStore extends SuiteBase {
 	
 }
 	//Setting store from My Account page.
-	@Test(priority=26, enabled=false)
+	@Test(priority=26, enabled=true)
 	public void validSignUpandsetstore(){
 		try{
 		// Retrieving test data for valid sign up no card
-			Map<String, String> validSignUpNoCard = readxml.getUserData("TestData.xml", "new-user-1");
+			Map<String, String> validSignUpNoCard = readxml.getUserData("TestData.xml", "new-user-16");
 				String userId = validSignUpNoCard.get("UserName");
 				String password = validSignUpNoCard.get("password");
-			Map<String, String> StoreData = readxml.getUserData("TestData.xml", "new-user-4");
-				String zipcode = StoreData.get("ZipCode");
+			Map<String, String> StoreData = readxml.getUserData("TestData.xml", "fas-user-1");
+				String zipcode = StoreData.get("zipcode");
 		
 		signUpPage = new SignUpPage(_driver);
 		
@@ -1022,7 +1022,7 @@ public class FindAStore extends SuiteBase {
 	    	System.out.println("Same address displayed in My Store page");
 	    }
 		
-		Assert.assertTrue(signUpPage.isLogOutButtonPresent());	
+		//Assert.assertTrue(signUpPage.isLogOutButtonPresent());	
 		sa.assertAll();
 		
 		} catch (InterruptedException ie) {
@@ -1045,22 +1045,22 @@ public class FindAStore extends SuiteBase {
 	
 	//Invalid City Street and State
 	
-		@Test(priority=27, enabled=false)
+		@Test(priority=27, enabled=true)
 		public void invalidCityStreet() {
 
 		try{
 				
 		// Retrieving test data for valid login
-		Map<String, String> validLogin = readxml.getUserData("TestData.xml", "carded-user");
+		Map<String, String> validLogin = readxml.getUserData("TestData.xml", "authorized-user-1");
 		String userId = validLogin.get("UserName");
 		String password = validLogin.get("password");
-		Map<String, String> StoreData = readxml.getUserData("TestData.xml", "new-user-4");
-		String cityname = StoreData.get("CityName");
-		String state = StoreData.get("State");
-		Map<String, String> Data = readxml.getUserData("TestData.xml", "invalid-user-5");
-		String invalidstreet = Data.get("IncorrectStreet");
-		String invalidcity=Data.get("IncorrectCity");
-		//String invalidzipcode3=Data.get("IncorrectZipCode3");
+		Map<String, String> StoreData = readxml.getUserData("TestData.xml", "fas-user-1");
+		String cityname = StoreData.get("city");
+		String state = StoreData.get("state");
+		
+		String invalidstreet = StoreData.get("IncorrectStreet");
+		String invalidcity=StoreData.get("IncorrectCity");
+		//String invalidzipcode3=StoreData.get("IncorrectZipCode3");
 
 		cubHome = new CubHome(_driver);
 
@@ -1147,15 +1147,17 @@ public class FindAStore extends SuiteBase {
 		}
 		
 		
-		@Test(priority=28, enabled=false)
+		@Test(priority=28, enabled=true)
 		public void pharmacyFASwidget() 
 		{
 			try{
 			
-			Map<String, String> StoreData = readxml.getUserData("TestData.xml", "new-user-4");
-			String zipcode = StoreData.get("ZipCode");
-			String cityname = StoreData.get("CityName");
-			String state = StoreData.get("State");
+			Map<String, String> StoreData = readxml.getUserData("TestData.xml", "fas-user-1");
+			String zipcode = StoreData.get("zipcode");
+			String cityname = StoreData.get("city");
+			String state = StoreData.get("state");
+			
+			SoftAssert sa = new SoftAssert();
 			
 			cubHome=new CubHome(_driver);
 			//ZipCode
@@ -1168,8 +1170,8 @@ public class FindAStore extends SuiteBase {
 			Thread.sleep(3000);
 			String title=_driver.getTitle();
 			System.out.println(title);
-			Assert.assertEquals("Cub Foods - Store Search Results", title);
-			log.info("Store Locations Search resultsPage-Success" );
+			
+			sa.assertEquals("Cub Foods - Store Search Results", title, "\n Failed: Search page is not displayed when user clicks on SEARCH in FAS widget in Pharmacy page");	
 			
 			findastore.clickMakemyStore();
 			Thread.sleep(3000);
@@ -1187,15 +1189,15 @@ public class FindAStore extends SuiteBase {
 			Thread.sleep(3000);
 			String title2=_driver.getTitle();
 			System.out.println(title2);
-			Assert.assertEquals("Cub Foods - Store Search Results", title2);
-			log.info("Store Locations Search resultsPage-Success" );
+			sa.assertEquals("Cub Foods - Store Search Results", title2, "\n Failed: Search page is not displayed when user clicks on SEARCH in FAS widget in Pharmacy page");	
 			
 			findastore.clickMakemyStore();
 			Thread.sleep(3000);
 			String title3=_driver.getTitle();
 			System.out.println(title3);
-			Assert.assertEquals("Cub Foods - View Store", title3);
-			log.info("Store Locations Page-Success" );
+			sa.assertEquals("Cub Foods - Store Search Results", title3, "\n Failed: Store details are not displayed when user Searches store through FAS widget in Pharmacy page");	
+			
+			sa.assertAll();
 			
 			} catch (IOException ioe) {
 				log.info(ioe.getMessage());	

@@ -110,7 +110,7 @@ public class MyAccount extends SuiteBase
 	public void ChngPwdWrongOldPwd() {
 		try{
 		// Retrieving test data for valid login
-		Map<String, String> Data = readxml.getUserData("TestData.xml", "user-to-change-pwd");
+		Map<String, String> Data = readxml.getUserData("TestData.xml", "user-to-change-pwd1");
 		String userId = Data.get("UserName");
 		String oldPwd1 = Data.get("oldpassword");
 		String oldPwd2 = Data.get("wrongoldpassword");
@@ -165,7 +165,7 @@ public class MyAccount extends SuiteBase
 	public void ChngPwdSpace() {
 		try{
 		// Retrieving test data for valid login
-		Map<String, String> Data = readxml.getUserData("TestData.xml", "user-to-change-pwd");
+		Map<String, String> Data = readxml.getUserData("TestData.xml", "user-to-change-pwd1");
 		String userId = Data.get("UserName");
 		String oldPwd = Data.get("oldpassword");
 		String newPwd = Data.get("spacepassword");
@@ -302,7 +302,7 @@ public class MyAccount extends SuiteBase
 	public void ChngPwdShortPwd(){
 		try{
 		// Retrieving test data for valid login
-		Map<String, String> Data = readxml.getUserData("TestData.xml", "user-to-change-pwd");
+		Map<String, String> Data = readxml.getUserData("TestData.xml", "user-to-change-pwd1");
 		String userId = Data.get("UserName");
 		String oldPwd = Data.get("oldpassword");
 		String newPwd = Data.get("shortpassword");
@@ -357,7 +357,7 @@ public class MyAccount extends SuiteBase
 	public void ChngPwdDifferentNewPwds() {
 		try{
 		// Retrieving test data for valid login
-		Map<String, String> Data = readxml.getUserData("TestData.xml", "user-to-change-pwd");
+		Map<String, String> Data = readxml.getUserData("TestData.xml", "user-to-change-pwd1");
 		String userId = Data.get("UserName");
 		String oldPwd = Data.get("oldpassword");
 		String newPwd1 = Data.get("newpassword");

@@ -30,7 +30,7 @@ public class Search extends SuiteBase{
 	/* ---------------------------- Guest User ------------------------*/
 	// Search functionality without any search criteria
 
-	@Test(priority=1,enabled=true)
+	@Test(priority=1,enabled=false)
 	public void GuestSearch_Blank() throws InterruptedException
 	
 	{	
@@ -47,19 +47,23 @@ public class Search extends SuiteBase{
 	}
 
 	// Search functionality with proper search data
-	@Test(priority=2,enabled=true)
+	@Test(priority=2,enabled=false)
 	public void GuestSearch_withData() throws InterruptedException
 	
 	{	
 		Others = new SearchPage(_driver);
 		System.out.println("At Cub home page");
 		Thread.sleep(5000);
-		String Cub = "Cub";
-		Others.enterSearchDetails(Cub);
-		Thread.sleep(5000);
+		//String Cub = "Cub";
+		//Others.enterSearchDetails(Cub);
+		//Thread.sleep(5000);
 		Others.clickSearchArrow();
 		Thread.sleep(5000);
 		System.out.println("Inside search page");
+		String Cub = "Cub";
+		Others.enterSearchText(Cub);
+		Others.clickSearchButon();
+		Thread.sleep(5000);
 		String CurrentURL_Ten = Others.GetCurrentURL();
 		System.out.println("URL displayed is  : " +CurrentURL_Ten);
 	
@@ -103,14 +107,12 @@ public class Search extends SuiteBase{
 		
 		//String Previous = Others.Link_Previous();
 		//softAssert.assertEquals(Previous,"false", "Previous link is disabled after clicking on last page link");
-		
-		
 		softAssert.assertAll();
 	}
 		
 	
 	// Search functionality with in valid data	
-	@Test(priority=3,enabled=true)
+	@Test(priority=3,enabled=false)
 	public void GuestSearch_InvalidData() throws InterruptedException
 	
 	{	
@@ -132,16 +134,16 @@ public class Search extends SuiteBase{
 	/* ---------------------------- Signed User ------------------------*/
 	// Search functionality without any search criteria
 		
-	/*	@Test(priority=1,enabled=true)
+		@Test(priority=4,enabled=false)
 		public void SignedSearch_Blank()throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException 
 		{
 			
 			// Retrieving test data for valid login
-			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "carded-user");
+			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "authorized-user-1");
 			String userId = validLogin.get("UserName");
 			String password = validLogin.get("password");
 			
-			cubHome = new CubHomePage(_driver);
+			cubHome = new CubHome(_driver);
 			
 			log.info("User Name : " + userId);
 			log.info("Password : " + password);
@@ -154,17 +156,61 @@ public class Search extends SuiteBase{
 			log.info("SignInButton Clicked");
 			log.info("Entered all details and clicked on Sign In Button");
 			log.info("User Signed In");
-			System.out.println("At Cub home page");
 			Thread.sleep(5000);
-			Others.clickSearchArrow();
-			Thread.sleep(5000);
-			System.out.println("Inside search page");
-			String Message = Others.GetSearchMessage();
-			System.out.println("Error message displayed is :  " + Message);
-			softAssert.assertEquals(Message,"We apologize, we couldn't find any results matching your search term(s).", "Failed to load the page or message displayed is not matching with expected");
-			softAssert.assertAll();
-		}*/
+			this.GuestSearch_Blank();
+		}
 		
+		@Test(priority=5,enabled=false)
+		public void SignedSearch_withData()throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException 
+		{
+			
+			// Retrieving test data for valid login
+			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "authorized-user-1");
+			String userId = validLogin.get("UserName");
+			String password = validLogin.get("password");
+			
+			cubHome = new CubHome(_driver);
+			
+			log.info("User Name : " + userId);
+			log.info("Password : " + password);
+			log.info("Cub Home page is launched");
+		cubHome.clickSignInLink();
+			log.info("SignIn Link Clicked");
+		cubHome.enterLoginDetails(userId, password);
+			log.info("Entered login Details");
+		cubHome.clickSignInButton();
+			log.info("SignInButton Clicked");
+			log.info("Entered all details and clicked on Sign In Button");
+			log.info("User Signed In");
+			Thread.sleep(5000);
+			this.GuestSearch_withData();
+		}
+		
+		@Test(priority=6,enabled=true)
+		public void SignedSearch_InvalidData()throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException 
+		{
+			
+			// Retrieving test data for valid login
+			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "authorized-user-1");
+			String userId = validLogin.get("UserName");
+			String password = validLogin.get("password");
+			
+			cubHome = new CubHome(_driver);
+			
+			log.info("User Name : " + userId);
+			log.info("Password : " + password);
+			log.info("Cub Home page is launched");
+		cubHome.clickSignInLink();
+			log.info("SignIn Link Clicked");
+		cubHome.enterLoginDetails(userId, password);
+			log.info("Entered login Details");
+		cubHome.clickSignInButton();
+			log.info("SignInButton Clicked");
+			log.info("Entered all details and clicked on Sign In Button");
+			log.info("User Signed In");
+			Thread.sleep(5000);
+			this.GuestSearch_InvalidData();
+		}
 
 }
 	

@@ -236,5 +236,15 @@ public class WeeklyAdsPage extends SuiteBase{
               System.out.println(header);
               return header;
        }
+       
+       @FindBy(xpath = "//button[text()='Create a List']")
+       private WebElement _createAList;
+       
+       public void clickOnCreateListButton(){
+                       
+                       waitFor(_createAList);
+                       _createAList.click();
+       }
+
 }
      

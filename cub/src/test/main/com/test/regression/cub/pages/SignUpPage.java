@@ -293,7 +293,7 @@ public class SignUpPage extends SuiteBase{
 		Thread.sleep(5000);
 	}
 	
-	public void addRewardsCard_EnterDetails(String lastname, String CardNum)
+	/*public boolean addRewardsCard_EnterDetails(String lastname, String CardNum)
 	{
 		log.info("Entering existing Card numder and Last name details for linking a card");
 	
@@ -303,7 +303,7 @@ public class SignUpPage extends SuiteBase{
 		return(_logOut.isDisplayed());
 
 		
-	}
+	}*/
 
 	public void enterUserNameInSignUpPopup(String Username) throws InterruptedException {
 		Thread.sleep(5000);
@@ -377,7 +377,7 @@ public class SignUpPage extends SuiteBase{
 	
 	
     
-    public void addRewardsCard_CardNumCardlesId(String Cardnumber, String CardlessId)
+    /*public void addRewardsCard_CardNumCardlesId(String Cardnumber, String CardlessId)
     {
            log.info("Entering existing reward card number and Cardless Id details for linking a card");
            
@@ -415,5 +415,5 @@ public class SignUpPage extends SuiteBase{
                   log.info("Entered existing Last name and Cardless id details for linking a card");
     }
 
-	
+	*/
 }

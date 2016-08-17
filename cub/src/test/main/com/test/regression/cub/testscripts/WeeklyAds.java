@@ -50,7 +50,7 @@ public class WeeklyAds extends SuiteBase {
 	try{
 			
 	// Retrieving test data for valid login
-	Map<String, String> validLogin = readxml.getUserData("TestData.xml", "carded-user");
+	Map<String, String> validLogin = readxml.getUserData("TestData.xml", "authorized-user-1");
 	String userId = validLogin.get("UserName");
 	String password = validLogin.get("password");
 
@@ -96,6 +96,7 @@ public class WeeklyAds extends SuiteBase {
 		   WebElement Adname= _driver.findElement(By.xpath("//*[@class='v2_item_info_details']/div[1]"));
 		   String name=Adname.getText();
 		   System.out.println(name);
+		   Thread.sleep(3000);
 		   weeklyAdspage.clickadditem();
 		   log.info("Click on Add item button");
 		   Thread.sleep(6000);
@@ -139,7 +140,7 @@ public class WeeklyAds extends SuiteBase {
 	}
 	
 	//GUEST User adding weekly Ad to Shopping List
-	@Test(priority=2 , enabled=false)
+	@Test(priority=2 , enabled=true)
 	public void AddingweeklyAdtoSL_Guestuser() 
 	{
 		try{
@@ -198,13 +199,13 @@ public class WeeklyAds extends SuiteBase {
 	}
 	
 	//Remove the Weekly Ad
-	@Test(priority=3, enabled=false)
+	@Test(priority=3, enabled=true)
 	public void RemovingweeklyAdtoSL_authoriseduser() {
 
 	try{
 			
 	// Retrieving test data for valid login
-	Map<String, String> validLogin = readxml.getUserData("TestData.xml", "carded-user");
+	Map<String, String> validLogin = readxml.getUserData("TestData.xml", "authorized-user-1");
 	String userId = validLogin.get("UserName");
 	String password = validLogin.get("password");
 
@@ -289,13 +290,13 @@ public class WeeklyAds extends SuiteBase {
 	}
 	
 	//Validating the links inside information pop up
-	@Test(priority=4, enabled=false)
+	@Test(priority=4, enabled=true)
 	public void LinksValidationinsidepopup_authoriseduser() {
 
 	try{
 			
 	// Retrieving test data for valid login
-	Map<String, String> validLogin = readxml.getUserData("TestData.xml", "carded-user");
+	Map<String, String> validLogin = readxml.getUserData("TestData.xml", "authorized-user-1");
 	String userId = validLogin.get("UserName");
 	String password = validLogin.get("password");
 
@@ -463,13 +464,13 @@ public class WeeklyAds extends SuiteBase {
 	}
 	
 	//Validating the links outside information pop up(facebook and twitter)
-		@Test(priority=5, enabled=false)
+		@Test(priority=5, enabled=true)
 		public void LinksValidationonpage_authoriseduser() {
 
 		try{
 				
 		// Retrieving test data for valid login
-		Map<String, String> validLogin = readxml.getUserData("TestData.xml", "carded-user");
+		Map<String, String> validLogin = readxml.getUserData("TestData.xml", "authorized-user-1");
 		String userId = validLogin.get("UserName");
 		String password = validLogin.get("password");
 
@@ -564,13 +565,13 @@ public class WeeklyAds extends SuiteBase {
 		}
 		
 	//Validating the links outside information pop up(facebook and twitter)
-	@Test(priority=6, enabled=false)
+	@Test(priority=6, enabled=true)
 	public void HelpandFeedback_authoriseduser() {
 
 		try{
 						
 			// Retrieving test data for valid login
-			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "carded-user");
+			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "authorized-user-1");
 			String userId = validLogin.get("UserName");
 			String password = validLogin.get("password");
 
@@ -646,13 +647,13 @@ public class WeeklyAds extends SuiteBase {
 	}
 	
 	//Footer Links
-	@Test(priority=7, enabled=false)
+	@Test(priority=7, enabled=true)
 	public void FooterLinks_authoriseduser() {
 
 		try{
 						
 			// Retrieving test data for valid login
-			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "carded-user");
+			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "authorized-user-1");
 			String userId = validLogin.get("UserName");
 			String password = validLogin.get("password");
 
@@ -784,13 +785,13 @@ public class WeeklyAds extends SuiteBase {
 		}
 	}
 	
-	@Test(priority=8, enabled=false)
+	@Test(priority=8, enabled=true)
 	public void Pagination_authoriseduser() {
 
 		try{
 						
 			// Retrieving test data for valid login
-			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "carded-user");
+			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "authorized-user-1");
 			String userId = validLogin.get("UserName");
 			String password = validLogin.get("password");
 
@@ -894,13 +895,13 @@ public class WeeklyAds extends SuiteBase {
 	}
 	
 	//More Ads option functionality
-	@Test(priority=9, enabled=false)
+	@Test(priority=9, enabled=true)
 	public void MoreAdsOption_authoriseduser() {
 
 		try{
 						
 			// Retrieving test data for valid login
-			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "carded-user");
+			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "authorized-user-1");
 			String userId = validLogin.get("UserName");
 			String password = validLogin.get("password");
 

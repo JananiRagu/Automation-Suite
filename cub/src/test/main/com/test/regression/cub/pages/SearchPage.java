@@ -27,8 +27,16 @@ public class SearchPage extends SuiteBase{
 	@FindBy(xpath = "//*[@id='frm-search']/*[@id='inp-search']")
 	private WebElement _SearchTextField;
 	
+		// Inside search page  ---- Search text box 
+		@FindBy(xpath = "//*[@id='frm-searchrefine']/input[1]")
+		private WebElement _SearchTextBox;
+	
 	@FindBy(xpath = "//*[@id='frm-search']/*[@type='submit']")
 	private WebElement _ArrowButton;
+	
+		// Inside search page  ---- Search button 
+		@FindBy(xpath = "//*[@id='btn-searchrefine']")
+		private WebElement SearchButton;
 	
 	// Inside Recipes page 
 	
@@ -69,10 +77,22 @@ public class SearchPage extends SuiteBase{
 		_SearchTextField.sendKeys(SearchText);
 	}
 	
+	public void enterSearchText(String SearchText)
+	{
+		waitFor(_SearchTextBox);
+		_SearchTextBox.sendKeys(SearchText);
+	}
+	
 	public void clickSearchArrow()
 	{
 		waitFor(_ArrowButton);
 		_ArrowButton.sendKeys(Keys.ENTER);
+	}
+	
+	public void clickSearchButon()
+	{
+		waitFor(SearchButton);
+		SearchButton.sendKeys(Keys.ENTER);
 	}
 	
 	/* ------------Inside search page ----------*/ 

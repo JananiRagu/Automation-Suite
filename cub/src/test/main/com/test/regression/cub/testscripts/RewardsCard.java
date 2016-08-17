@@ -41,12 +41,12 @@ public class RewardsCard extends SuiteBase
 	Logger log = Logg.createLogger();
 	ReadXML readxml = new ReadXML();
 	
-	@Test(priority=70,enabled=false)
+	@Test(priority=70,enabled=true)
 	public void RequestNewCardnRemove() 
 	{
 		try{
 		// Retrieving test data for valid sign up no card
-			Map<String, String> EnterDetails = readxml.getUserData("TestData.xml", "new-user-2");
+			Map<String, String> EnterDetails = readxml.getUserData("TestData.xml", "new-user-12");
 			
 				String userId = EnterDetails.get("UserName");
 				String password = EnterDetails.get("password");
@@ -130,13 +130,13 @@ public class RewardsCard extends SuiteBase
 		
 	}
 	
-	@Test(priority=71,enabled=false)
+	@Test(priority=71,enabled=true)
 	public void AddCardlessIdnUpdate() 
 	{
 		try{
 		// Retrieving test data for valid sign up no card
 			
-				Map<String, String> CardlessId = readxml.getUserData("TestData.xml", "new-user-2");
+				Map<String, String> CardlessId = readxml.getUserData("TestData.xml", "new-user-14");
 				String userId = CardlessId.get("UserName");
 				String password = CardlessId.get("password");
 				String cardlessNum = CardlessId.get("cardlessid");
@@ -217,13 +217,13 @@ public class RewardsCard extends SuiteBase
 	}
 	
 
-	@Test(priority=72,enabled=false)
+	@Test(priority=72,enabled=true)
 	public void AddExistingCard() 
 	{
 		try{
 		// Retrieving test data for valid sign up no card
 			
-				Map<String, String> Card = readxml.getUserData("TestData.xml", "new-user-3");
+				Map<String, String> Card = readxml.getUserData("TestData.xml", "new-user-13");
 				String userId = Card.get("UserName");
 				String password = Card.get("password");
 				String cardlessNum = Card.get("cardlessid");
@@ -334,7 +334,7 @@ public class RewardsCard extends SuiteBase
 	}
 	
 
-	@Test(priority=73,enabled=false)
+	@Test(priority=73,enabled=true)
 	public void PrintTempCard() 
 	{
 		try{
@@ -399,7 +399,7 @@ public class RewardsCard extends SuiteBase
 	}
 	
 
-	@Test(priority=73,enabled=false)
+	@Test(priority=73,enabled=true)
 	public void  ReplaceLostCard() 
 	{
 		try{
@@ -469,7 +469,7 @@ public class RewardsCard extends SuiteBase
 	}
 	
 
-	@Test(priority=74,enabled=false)
+	@Test(priority=74,enabled=true)
 	public void AddInvalidCardlessId() 
 	{
 		try{
@@ -543,7 +543,7 @@ public class RewardsCard extends SuiteBase
 		
 	}
 	
-	@Test(priority=75,enabled=false)
+	@Test(priority=75,enabled=true)
 	public void RequestNewCardInvalid() 
 	{
 		try{
@@ -747,7 +747,7 @@ public class RewardsCard extends SuiteBase
 	}
 	
 
-	@Test(priority=76,enabled=false)
+	@Test(priority=76,enabled=true)
 	public void  ReplaceLostCardInvalid() 
 	{
 		try{
@@ -930,7 +930,7 @@ public class RewardsCard extends SuiteBase
 		
 	}
 	
-	@Test(priority=77,enabled=false)
+	@Test(priority=77,enabled=true)
 	public void PPLinkWhileRequestingNewCard() {
 		
 		try{
@@ -1146,13 +1146,13 @@ public class RewardsCard extends SuiteBase
 	}
 	
 	
-	@Test(priority=80,enabled=false)
+	@Test(priority=80,enabled=true)
 	public void MultipleUsersSingleCard() 
 	{
 		try{
 		// Retrieving test data for valid sign up no card
 			
-				Map<String, String> Card = readxml.getUserData("TestData.xml", "new-user-3");
+				Map<String, String> Card = readxml.getUserData("TestData.xml", "new-user-15");
 				String userId = Card.get("UserName");
 				String password = Card.get("password");
 				String CardNum = Card.get("rewardsnumber");

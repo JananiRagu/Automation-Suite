@@ -17,7 +17,8 @@ import com.test.regression.cub.pages.MyAccountPage;
 import com.test.regression.cub.pages.RewardsCardPage;
 import com.test.regression.cub.pages.ShoppingListPage;
 import com.test.regression.cub.pages.SignUpPage;
-import com.test.regression.cub.pages.WeeklyAdPage;
+
+import com.test.regression.cub.pages.WeeklyAdsPage;
 import com.test.regression.cub.utils.*;
 
 
@@ -27,13 +28,13 @@ public class SignUp extends SuiteBase{
 	ReadXML readxml = new ReadXML();
 	CubHome cubHome;
 	SignUpPage signUpPage;
-	WeeklyAdPage waObj;
+	WeeklyAdsPage waObj;
 	ShoppingListPage slObj;
 	MyAccountPage map;
 	CouponPage cp;
 	RewardsCardPage rc;
 
-	@Test(priority=3, enabled=false)
+	@Test(priority=3, enabled=true)
 	public void validSignUp_noCard(){
 		try{
 		// Retrieving test data for valid sign up no card
@@ -87,7 +88,7 @@ public class SignUp extends SuiteBase{
 		
 	}
 
-	@Test(priority=4, enabled=false)
+	@Test(priority=4, enabled=true)
 	public void validSignUp_yesIHaveOne(){
 		
 		try {
@@ -147,7 +148,7 @@ public class SignUp extends SuiteBase{
 		
 	}
 	
-	@Test(priority=5, enabled=false)
+	@Test(priority=5, enabled=true)
 	public void validSignUp_noCardButWantOne(){
 		
 		try {
@@ -213,7 +214,7 @@ public class SignUp extends SuiteBase{
 		}
 	}
 	
-	@Test(priority=6, enabled=false)
+	@Test(priority=6, enabled=true)
 	public void userNameNPasswordFieldValidationSignUp(){
 		try{
 			
@@ -287,7 +288,7 @@ public class SignUp extends SuiteBase{
 		
 	}
 	
-	@Test(priority=5, enabled=false)
+	@Test(priority=5, enabled=true)
 	public void validateSignInLinkInSignUpPopup(){
 		
 		try {
@@ -316,7 +317,7 @@ public class SignUp extends SuiteBase{
 		}
 	}
 	
-	@Test(priority=3, enabled=false)
+	@Test(priority=3, enabled=true)
 	public void validSignUp4mSL(){
 		try{
 		// Retrieving test data for valid sign up no card
@@ -332,7 +333,7 @@ public class SignUp extends SuiteBase{
 		log.info("Password : " + password);
 		
 		cubHome.clickWeeklyAdTile();
-		waObj = new WeeklyAdPage(_driver);
+		waObj = new WeeklyAdsPage(_driver);
 		waObj.clickOnCreateListButton();
 		
 		slObj = new ShoppingListPage(_driver);
@@ -446,7 +447,7 @@ public class SignUp extends SuiteBase{
 		
 	}*/
 	
-	@Test(priority=5, enabled=false)
+	@Test(priority=5, enabled=true)
 	public void signUp_validateContactInfoPopup(){
 		
 		try {
@@ -501,7 +502,6 @@ public class SignUp extends SuiteBase{
 			
 			map.enterContactInformation(firstNameNumber, lastName, address1, address2, city, state, zip, homePhone, mobilePhone);
 		
-			Thread.sleep(5000);
 					
 			SoftAssert sa = new SoftAssert();
 			
@@ -512,7 +512,7 @@ public class SignUp extends SuiteBase{
 			log.info("Checking for Error is displayed when user enters FirstName with Special Characters");
 			map.enterContactInformation(firstNameSpecialCharacters, lastName, address1, address2, city, state, zip, homePhone, mobilePhone);
 		
-			Thread.sleep(5000);
+			
 					
 	        boolean result2 =map.isContinueBtnInUpdateContactInfoDisabled();
 		    sa.assertTrue(result2, "\n Failed for FirstName with Special Characters");
@@ -521,7 +521,7 @@ public class SignUp extends SuiteBase{
 			log.info("Checking for Error is displayed when user doesnot enter FirstName");
 			map.enterContactInformation(nullVariable, lastName, address1, address2, city, state, zip, homePhone, mobilePhone);
 		
-			Thread.sleep(5000);
+			
 					
 	        boolean result3 =map.isContinueBtnInUpdateContactInfoDisabled();
 		    sa.assertTrue(result3, "\n Failed for No FirstName Entered");
@@ -529,7 +529,7 @@ public class SignUp extends SuiteBase{
 		    log.info("Checking for Error is displayed when user enters LastName with Special Characters");
 		    map.enterContactInformation(firstname, lastNameSpecialCharacters, address1, address2, city, state, zip, homePhone, mobilePhone);
 		    map.isContinueBtnInUpdateContactInfoDisabled();
-			Thread.sleep(5000);
+		
 					
 	        boolean result4 = map.isContinueBtnInUpdateContactInfoDisabled();
 		    sa.assertTrue(result4, "\n Failed for LastName with Special Characters");
@@ -538,7 +538,7 @@ public class SignUp extends SuiteBase{
 			log.info("Checking for Error is displayed when user enters LastName with Numbers");
 			map.enterContactInformation(firstname, lastNameNumber, address1, address2, city, state, zip, homePhone, mobilePhone);
 			map.isContinueBtnInUpdateContactInfoDisabled();
-			Thread.sleep(5000);
+		
 					
 	        boolean result5 = map.isContinueBtnInUpdateContactInfoDisabled();
 	         sa.assertTrue(result5, "\n Failed for LastName with Numbers");
@@ -547,7 +547,7 @@ public class SignUp extends SuiteBase{
 			log.info("Checking for Error is displayed when user doesnot enter LastName");
 			map.enterContactInformation(firstname, nullVariable, address1, address2, city, state, zip, homePhone, mobilePhone);
 			map.isContinueBtnInUpdateContactInfoDisabled();
-			Thread.sleep(5000);
+
 					
 	        boolean result6 = map.isContinueBtnInUpdateContactInfoDisabled();
 	        sa.assertTrue(result6, "\n Failed for No LastName Entered");
@@ -555,7 +555,7 @@ public class SignUp extends SuiteBase{
 	        log.info("Checking for Error is displayed when user enters ZIP with Special Characters");
 	        map.enterContactInformation(firstname, lastName, address1, address2, city, state, zipcodespecialchar, homePhone, mobilePhone);
 		
-			Thread.sleep(5000);
+	
 					
 	        boolean result7 =map.isContinueBtnInUpdateContactInfoDisabled();
 		    sa.assertTrue(result7, "\n Failed for ZIP with Special Characters");
@@ -563,8 +563,7 @@ public class SignUp extends SuiteBase{
 		    
 			log.info("Checking for Error is displayed when user enters ZIP with alphabets");
 			map.enterContactInformation(firstname, lastName, address1, address2, city, state, zipcodealphabets, homePhone, mobilePhone);
-		
-			Thread.sleep(5000);
+	
 					
 			
 	        boolean result8 =map.isContinueBtnInUpdateContactInfoDisabled();
@@ -574,7 +573,6 @@ public class SignUp extends SuiteBase{
 		  	log.info("Checking for Error is displayed when user enters ZIP with space");
 		  	map.enterContactInformation(firstname, lastName, address1, address2, city, state, zipcodespace, homePhone, mobilePhone);
 		
-		  	Thread.sleep(5000);
 		  				
 		   boolean result9 =map.isContinueBtnInUpdateContactInfoDisabled();
 		  	sa.assertTrue(result9, "\n Failed for ZIP with Space");
@@ -609,7 +607,7 @@ public class SignUp extends SuiteBase{
 		    log.info("Checking for Error is displayed when user enters CITY with numbers");
 		    map.enterContactInformation(firstname, lastName, address1, address2, citynumber, state, zip, homePhone, mobilePhone);
 
-		  	Thread.sleep(5000);
+	
 		  				
 		   boolean result13 =map.isContinueBtnInUpdateContactInfoDisabled();
 		  	sa.assertTrue(result13, "\n Failed for  CITY with numbers");
@@ -618,7 +616,7 @@ public class SignUp extends SuiteBase{
 			log.info("Checking for Error is displayed when user doesnot enter City");
 			map.enterContactInformation(firstname, lastName, address1, address2, nullVariable, state, zip, homePhone, mobilePhone);
 		
-			Thread.sleep(5000);
+	
 					
 	        boolean result14 =map.isContinueBtnInUpdateContactInfoDisabled();
 		    sa.assertTrue(result14, "\n Failed for No LastName Entered");
@@ -626,7 +624,7 @@ public class SignUp extends SuiteBase{
 		    log.info("Checking for Error is displayed when user enters Mobile Number with Space");
 		    map.enterContactInformation(firstname, lastName, address1, address2, city, state, zip, homePhone, mobileSpace);
 		 
-		  	Thread.sleep(5000);
+	
 		  				
 		   boolean result15 =map.isUpdateContactInfoPopUpPresent();
 		  	sa.assertTrue(result15, "\n Failed for Mobile Number with Space");
@@ -635,7 +633,7 @@ public class SignUp extends SuiteBase{
 			log.info("Checking for Error is displayed when user enters Mobile Number with Special Characters");
 			map.enterContactInformation(firstname, lastName, address1, address2, city, state, zip, homePhone, mobileSplChar);
 			
-			Thread.sleep(5000);
+	
 					
 	        boolean result16 =map.isUpdateContactInfoPopUpPresent();
 		    sa.assertTrue(result16, "\n Failed for Mobile Number with Special Characters");
@@ -644,7 +642,6 @@ public class SignUp extends SuiteBase{
 		    log.info("Checking for Error is displayed when user enters Mobile Number with Alphabets");
 		    map.enterContactInformation(firstname, lastName, address1, address2, city, state, zip, homePhone, mobileAlphabets);
 		 
-		  	Thread.sleep(5000);
 		  				
 		   boolean result17 =map.isUpdateContactInfoPopUpPresent();
 		  	sa.assertTrue(result17, "\n Failed for Mobile Number with Alphabets");
@@ -652,7 +649,7 @@ public class SignUp extends SuiteBase{
 		  	 log.info("Checking for Error is displayed when user enters Home Phone Number with Space");
 		  	map.enterContactInformation(firstname, lastName, address1, address2, city, state, zip, homePhoneSpace, mobilePhone);
 			 
-			  	Thread.sleep(5000);
+		
 			  				
 			   boolean result18 =map.isUpdateContactInfoPopUpPresent();
 			  	sa.assertTrue(result18, "\n Failed for Home Phone  Number with Space");
@@ -661,7 +658,7 @@ public class SignUp extends SuiteBase{
 				log.info("Checking for Error is displayed when user enters hNumber with Special Characters");
 				map.enterContactInformation(firstname, lastName, address1, address2, city, state, zip, homePhoneSpecialChar, mobilePhone);
 				
-				Thread.sleep(5000);
+		
 						
 		        boolean result19 =map.isUpdateContactInfoPopUpPresent();
 			    sa.assertTrue(result19, "\n Failed for Home Phone  Number with Special Characters");
@@ -670,7 +667,7 @@ public class SignUp extends SuiteBase{
 			    log.info("Checking for Error is displayed when user enters Home Phone  Number with Alphabets");
 			    map.enterContactInformation(firstname, lastName, address1, address2, city, state, zip, homePhoneAlphabets, mobilePhone);
 
-			  	Thread.sleep(5000);
+
 			  				
 			   boolean result20 =map.isUpdateContactInfoPopUpPresent();
 			  	sa.assertTrue(result20, "\n Failed for Home Phone  Number with Alphabets");
@@ -678,7 +675,7 @@ public class SignUp extends SuiteBase{
 			  	log.info("Checking for Error is displayed when user doesnot enter Home Address");
 			  	map.enterContactInformation(firstname, lastName, nullVariable, address2, city, state, zip, homePhone, mobilePhone);
 
-				Thread.sleep(5000);
+			
 						
 		        boolean result21 =map.isContinueBtnInUpdateContactInfoDisabled();
 			    sa.assertTrue(result21, "\n Failed for No Address Entered");

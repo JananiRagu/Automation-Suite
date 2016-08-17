@@ -27,7 +27,7 @@ public class SiteMap extends SuiteBase{
 	
 // Navigate to different links in Site Map page 
 
-	@Test(priority=1,enabled=false)
+	@Test(priority=1,enabled=true)
 	public void GuestUserSiteMap() throws InterruptedException
 	
 	{	
@@ -472,7 +472,7 @@ public class SiteMap extends SuiteBase{
 		{
 			
 			// Retrieving test data for valid login
-			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "carded-user");
+			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "authorized-user-1");
 			String userId = validLogin.get("UserName");
 			String password = validLogin.get("password");
 			

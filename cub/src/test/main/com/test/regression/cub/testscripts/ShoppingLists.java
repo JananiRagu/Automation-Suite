@@ -35,12 +35,12 @@ public class ShoppingLists extends SuiteBase{
 	
 	Logger log = Logg.createLogger();
 	ReadXML readxml = new ReadXML();
-	
-	@Test(enabled=false, priority=6)
+	/*
+	@Test(enabled=true, priority=6)
 	public void createShoppingList(){
 		
 		try{
-		Map<String, String> newSL = readxml.getUserData("TestData.xml", "carded-user");
+		Map<String, String> newSL = readxml.getUserData("TestData.xml", "authorized-user-1");
 		String userId = newSL.get("UserName");
 		String password = newSL.get("password");
 		String SLName = newSL.get("SLName");
@@ -90,11 +90,11 @@ public class ShoppingLists extends SuiteBase{
 		
 	}
 	
-	@Test(enabled=false, priority=7)
+	@Test(enabled=true, priority=7)
 	public void Add3Items2ShoppingList(){
 		
 		try{
-		Map<String, String> AddItems2newSL = readxml.getUserData("TestData.xml", "carded-user");
+		Map<String, String> AddItems2newSL = readxml.getUserData("TestData.xml", "authorized-user-1");
 		String userId = AddItems2newSL.get("UserName");
 		String password = AddItems2newSL.get("password");
 		String SLName = AddItems2newSL.get("SLName");
@@ -155,9 +155,9 @@ public class ShoppingLists extends SuiteBase{
 			Assert.fail(e.getLocalizedMessage());
 		}
 			
-	}
+	}*/
 	
-	@Test(enabled=false, priority=8)
+	@Test(enabled=true, priority=8)
 	public void AddnEditItemsInShoppingList(){
 		
 		try{
@@ -194,9 +194,16 @@ public class ShoppingLists extends SuiteBase{
 		sl.clickOnMyListInMyToolsHomePage(_driver);
 			
 		sl.addNewShoppingList(SLName);
+		Thread.sleep(5000);
 		
-		boolean result = sl.verifyNewAddedShoppingListName(SLName);
+		sl.clickOnViewAllShoppingLists();
+		
+		boolean result = sl.isListPresentInViewAllListsPage(_driver, SLName);
+		
+		//boolean result = sl.verifyNewAddedShoppingListName(SLName);
 		sa.assertTrue(result, "New Shopping list is not created");
+		_driver.navigate().back();
+		Thread.sleep(5000);
 			
 		sl.addItems2SL(item1, quantity1);
 			
@@ -264,12 +271,12 @@ public class ShoppingLists extends SuiteBase{
 			Assert.fail(e.getLocalizedMessage());
 		}		
 	}
-	
-	@Test(enabled=false, priority=9)
+	/*
+	@Test(enabled=true, priority=9)
 	public void deleteItemFromSL(){
 		
 		try {
-		Map<String, String> AddItems2newSL = readxml.getUserData("TestData.xml", "carded-user");
+		Map<String, String> AddItems2newSL = readxml.getUserData("TestData.xml", "authorized-user-1");
 		String userId = AddItems2newSL.get("UserName");
 		String password = AddItems2newSL.get("password");
 		String SLName = AddItems2newSL.get("SLName");
@@ -322,9 +329,9 @@ public class ShoppingLists extends SuiteBase{
 			log.info(e.getMessage());
 			Assert.fail(e.getLocalizedMessage());
 		}
-	}
+	}*/
 	
-	@Test(enabled=false, priority=10)
+	@Test(enabled=true, priority=10)
 	public void addMoreThan1SL() {
 		
 			try{

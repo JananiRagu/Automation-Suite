@@ -114,7 +114,7 @@ public class Coupons extends SuiteBase{
 	
 	
 	
-	@Test(priority=12, enabled=false)
+	@Test(priority=12, enabled=true)
 	public void addCouponForWantOneNewUser() {
 		try {
 		Map<String, String> addCouponForWantOneNewUserData = readxml.getUserData("TestData.xml", "new-user-5");
@@ -233,7 +233,7 @@ public class Coupons extends SuiteBase{
 	// Sign Up for an account just by closing the Rewards Card pop up
 	// So, it will prompt for card-less id while trying to add coupon
 			
-	@Test(priority=13, enabled=false)
+	@Test(priority=13, enabled=true)
 	public void addCouponForNoCardNewUser() {
 		
 		try {
@@ -324,7 +324,7 @@ public class Coupons extends SuiteBase{
 	} 
 	
 	
-	@Test(priority=11, enabled=false)
+	@Test(priority=11, enabled=true)
 	public void couponPageFullLoad() throws XPathExpressionException, ParserConfigurationException, SAXException, IOException, InterruptedException{
 		
 		
@@ -371,7 +371,7 @@ public class Coupons extends SuiteBase{
 		
 	}
 	
-	@Test(priority=13, enabled=false)
+	@Test(priority=13, enabled=true)
 	public void addCouponForNoCardNotNowCardlessIdNewUser() {
 		
 		try {
@@ -528,7 +528,7 @@ public class Coupons extends SuiteBase{
 		}
 	} 
 	
-	@Test(priority=14, enabled=false)
+	@Test(priority=14, enabled=true)
 	public void chkCouponSort() throws InterruptedException{
 		
 		SoftAssert sa = new SoftAssert();
@@ -602,7 +602,7 @@ public class Coupons extends SuiteBase{
 	
 	
 	
-	@Test(priority=11, enabled=false)
+	@Test(priority=11, enabled=true)
 	public void addCouponFromCouponDetailsPageForAuthorizedUser() {
 		try{
 		Map<String, String> newSL = readxml.getUserData("TestData.xml", "authorized-user-3");
@@ -684,7 +684,7 @@ public class Coupons extends SuiteBase{
 		
 	} 
 	
-	@Test(priority=12, enabled=false)
+	@Test(priority=12, enabled=true)
 	public void categoryTestInCoupons() {
 		
 		try{
@@ -713,7 +713,7 @@ public class Coupons extends SuiteBase{
 	}
 	
 
-	@Test(priority=11, enabled=false)
+	@Test(priority=11, enabled=true)
 	public void searchTestInCoupons() {
 		
 		try{

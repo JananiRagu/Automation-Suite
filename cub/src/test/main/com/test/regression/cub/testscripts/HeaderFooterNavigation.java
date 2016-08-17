@@ -80,7 +80,7 @@ public class HeaderFooterNavigation extends SuiteBase{
 		
 		try{
 			// Retrieving test data for valid login
-			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "carded-user");
+			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "authorized-user-1");
 			String userId = validLogin.get("UserName");
 			String password = validLogin.get("password");
 			
@@ -199,7 +199,7 @@ public class HeaderFooterNavigation extends SuiteBase{
 	{
 				try{
 			// Retrieving test data for valid login
-			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "carded-user");
+			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "authorized-user-1");
 			String userId = validLogin.get("UserName");
 			String password = validLogin.get("password");
 			

@@ -58,9 +58,16 @@ public class Recipes extends SuiteBase{
 		String CurrentURL = RecipesPage.GetCurrentURL();
 		System.out.println("URL displayed is  : " +CurrentURL);
 		String[] arrCurrentURL = CurrentURL.split("=");
-		softAssert.assertEquals(arrCurrentURL[1].trim(),"chicken", "Text 'chicken' displayed is not matching with expected");	
-		System.out.println("Searched criteria is " + arrCurrentURL[1]);
-		
+		if (arrCurrentURL[1].contains("chicken&"))
+		{
+			String[] arrChicken = arrCurrentURL[1].split("&");
+			softAssert.assertEquals(arrChicken[0].trim().toLowerCase(),"chicken", "Text 'chicken' displayed is not matching with expected");			
+		}
+		else
+		{
+			softAssert.assertEquals(arrCurrentURL[1].trim().toLowerCase(),"chicken", "Text 'chicken' displayed is not matching with expected");	
+			System.out.println("Searched criteria is " + arrCurrentURL[1]);
+		}
 		//----- Click on pagination link 3 ---------
 		
 		RecipesPage.clickOnPaginationLinkNumber_3();
@@ -71,14 +78,17 @@ public class Recipes extends SuiteBase{
 		
 		//Items display count
 		String[] arrItemsCount = arrCurrentPaginationURL[1].split("&");
+		System.out.println("Count displayed " + arrItemsCount[0] + "");
 		softAssert.assertEquals(arrItemsCount[0].trim(),"10", "Count displayed " + arrItemsCount[0] + " is not matching with expected count '10'");
 		
 		//Item Name
 		String[] arrItemName = arrCurrentPaginationURL[2].split("&");
+		System.out.println("Item name " + arrItemName[0] + "");
 		softAssert.assertEquals(arrItemName[0].trim(),"chicken", "Item name " + arrItemName[0] + " is not matching with expected text 'chicken'");
 		
 		//Page count
 		//String[] arrPageCount = arrCurrentPaginationURL[5].split("&");
+		System.out.println("Page count displayed " + arrCurrentPaginationURL[5]+ "");
 		softAssert.assertEquals(arrCurrentPaginationURL[5].trim(),"3", "Page count displayed " + arrCurrentPaginationURL[5] + " is not matching with expected count '3'");
 		
 		//------- Click on last pagination link ------------
@@ -91,14 +101,17 @@ public class Recipes extends SuiteBase{
 		
 		//Items display count
 		String[] arrLastItemsCount = arrLastPaginationURL[1].split("&");
+		System.out.println("Count displayed " + arrLastItemsCount[0] + "");
 		softAssert.assertEquals(arrLastItemsCount[0].trim(),"10", "Count displayed " + arrLastItemsCount[0] + " is not matching with expected count '10'");
 		
 		//Item Name
 		String[] arrLastItemName = arrLastPaginationURL[2].split("&");
+		System.out.println("Item name " + arrLastItemName[0] + "");
 		softAssert.assertEquals(arrLastItemName[0].trim(),"chicken", "Item name " + arrLastItemName[0] + " is not matching with expected text 'chicken'");
 		
 		//Page count
 		//String[] arrPageCount = arrCurrentPaginationURL[5].split("&");
+		System.out.println("Page count displayed " + arrLastPaginationURL[5]+ "");
 		softAssert.assertEquals(arrLastPaginationURL[5].trim(),"34", "Page count displayed " + arrLastPaginationURL[5] + " is not matching with expected count '34'");
 		softAssert.assertAll();
 	}
@@ -462,7 +475,7 @@ public class Recipes extends SuiteBase{
 		
 	}
 	
-	@Test(priority=4,enabled=true)
+	@Test(priority=6,enabled=true)
 	public void Guest_Recipes_Print_Tweet() throws InterruptedException
 	
 	{
@@ -500,6 +513,166 @@ public class Recipes extends SuiteBase{
         _driver.switchTo().window(newAdwinID).close();
 
  	}
+	
+	/* ---------------------------- Signed User ------------------------*/
+	// Search functionality without any search criteria
+		
+		@Test(priority=7,enabled=true)
+		public void Signed_RecipesPagination()throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException 
+		{
+			
+			// Retrieving test data for valid login
+			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "authorized-user-1");
+			String userId = validLogin.get("UserName");
+			String password = validLogin.get("password");
+			
+			cubHome = new CubHome(_driver);
+			
+			log.info("User Name : " + userId);
+			log.info("Password : " + password);
+			log.info("Cub Home page is launched");
+		cubHome.clickSignInLink();
+			log.info("SignIn Link Clicked");
+		cubHome.enterLoginDetails(userId, password);
+			log.info("Entered login Details");
+		cubHome.clickSignInButton();
+			log.info("SignInButton Clicked");
+			log.info("Entered all details and clicked on Sign In Button");
+			log.info("User Signed In");
+			Thread.sleep(5000);
+			this.Guest_Recipes_Pagination();
+		}
+	
+		@Test(priority=8,enabled=true)
+		public void Signed_ResultContent()throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException 
+		{
+			
+			// Retrieving test data for valid login
+			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "authorized-user-1");
+			String userId = validLogin.get("UserName");
+			String password = validLogin.get("password");
+			
+			cubHome = new CubHome(_driver);
+			
+			log.info("User Name : " + userId);
+			log.info("Password : " + password);
+			log.info("Cub Home page is launched");
+		cubHome.clickSignInLink();
+			log.info("SignIn Link Clicked");
+		cubHome.enterLoginDetails(userId, password);
+			log.info("Entered login Details");
+		cubHome.clickSignInButton();
+			log.info("SignInButton Clicked");
+			log.info("Entered all details and clicked on Sign In Button");
+			log.info("User Signed In");
+			Thread.sleep(5000);
+			this.Guest_Search_ResultContent();
+		}
+	
+		@Test(priority=9,enabled=true)
+		public void Signed_Category()throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException 
+		{
+			
+			// Retrieving test data for valid login
+			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "authorized-user-1");
+			String userId = validLogin.get("UserName");
+			String password = validLogin.get("password");
+			
+			cubHome = new CubHome(_driver);
+			
+			log.info("User Name : " + userId);
+			log.info("Password : " + password);
+			log.info("Cub Home page is launched");
+		cubHome.clickSignInLink();
+			log.info("SignIn Link Clicked");
+		cubHome.enterLoginDetails(userId, password);
+			log.info("Entered login Details");
+		cubHome.clickSignInButton();
+			log.info("SignInButton Clicked");
+			log.info("Entered all details and clicked on Sign In Button");
+			log.info("User Signed In");
+			Thread.sleep(5000);
+			this.Guest_Recipes_Category();
+		}
+		
+		@Test(priority=10,enabled=true)
+		public void Signed_Sorting()throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException 
+		{
+			
+			// Retrieving test data for valid login
+			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "authorized-user-1");
+			String userId = validLogin.get("UserName");
+			String password = validLogin.get("password");
+			
+			cubHome = new CubHome(_driver);
+			
+			log.info("User Name : " + userId);
+			log.info("Password : " + password);
+			log.info("Cub Home page is launched");
+		cubHome.clickSignInLink();
+			log.info("SignIn Link Clicked");
+		cubHome.enterLoginDetails(userId, password);
+			log.info("Entered login Details");
+		cubHome.clickSignInButton();
+			log.info("SignInButton Clicked");
+			log.info("Entered all details and clicked on Sign In Button");
+			log.info("User Signed In");
+			Thread.sleep(5000);
+			this.Guest_Recipes_Sorting();
+		}
+		
+		@Test(priority=11,enabled=true)
+		public void Signed_Sorting_Time()throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException 
+		{
+			
+			// Retrieving test data for valid login
+			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "authorized-user-1");
+			String userId = validLogin.get("UserName");
+			String password = validLogin.get("password");
+			
+			cubHome = new CubHome(_driver);
+			
+			log.info("User Name : " + userId);
+			log.info("Password : " + password);
+			log.info("Cub Home page is launched");
+		cubHome.clickSignInLink();
+			log.info("SignIn Link Clicked");
+		cubHome.enterLoginDetails(userId, password);
+			log.info("Entered login Details");
+		cubHome.clickSignInButton();
+			log.info("SignInButton Clicked");
+			log.info("Entered all details and clicked on Sign In Button");
+			log.info("User Signed In");
+			Thread.sleep(5000);
+			this.Guest_Recipes_Sorting_Time();
+		}
+		
+		@Test(priority=12,enabled=true)
+		public void Signed_Print_Tweet()throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException 
+		{
+			
+			// Retrieving test data for valid login
+			Map<String, String> validLogin = readxml.getUserData("TestData.xml", "authorized-user-1");
+			String userId = validLogin.get("UserName");
+			String password = validLogin.get("password");
+			
+			cubHome = new CubHome(_driver);
+			
+			log.info("User Name : " + userId);
+			log.info("Password : " + password);
+			log.info("Cub Home page is launched");
+		cubHome.clickSignInLink();
+			log.info("SignIn Link Clicked");
+		cubHome.enterLoginDetails(userId, password);
+			log.info("Entered login Details");
+		cubHome.clickSignInButton();
+			log.info("SignInButton Clicked");
+			log.info("Entered all details and clicked on Sign In Button");
+			log.info("User Signed In");
+			Thread.sleep(5000);
+			this.Guest_Recipes_Print_Tweet();
+		}
+		
 }
 	
 	
