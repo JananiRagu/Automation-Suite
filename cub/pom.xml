@@ -34,7 +34,7 @@
         	<suiteXmlFiles>
         	<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
         	</suiteXmlFiles>
-        	<forkMode>never</forkMode>
+        <!-- 	<forkMode>never</forkMode> -->
         </configuration>
       </plugin>  
       
