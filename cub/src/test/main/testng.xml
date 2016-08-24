@@ -7,8 +7,7 @@
     	<class name="com.test.regression.cub.testscripts.SignIn"> </class> 
     </classes>
 </test> 
- 
- 
+ <!--  
 <test name="Sign Up - Testing">
     <classes> 
     	<class name="com.test.regression.cub.testscripts.SignUp"> </class>  
@@ -97,5 +96,5 @@
     	<class name="com.test.regression.cub.testscripts.Coupons"> </class> 
     </classes>
 </test>
-
+-->
 </suite> 

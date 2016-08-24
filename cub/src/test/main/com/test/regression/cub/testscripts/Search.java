@@ -30,7 +30,7 @@ public class Search extends SuiteBase{
 	/* ---------------------------- Guest User ------------------------*/
 	// Search functionality without any search criteria
 
-	@Test(priority=1,enabled=false)
+	@Test(priority=1,enabled=true)
 	public void GuestSearch_Blank() throws InterruptedException
 	
 	{	
@@ -47,7 +47,7 @@ public class Search extends SuiteBase{
 	}
 
 	// Search functionality with proper search data
-	@Test(priority=2,enabled=false)
+	@Test(priority=2,enabled=true)
 	public void GuestSearch_withData() throws InterruptedException
 	
 	{	
@@ -112,7 +112,7 @@ public class Search extends SuiteBase{
 		
 	
 	// Search functionality with in valid data	
-	@Test(priority=3,enabled=false)
+	@Test(priority=3,enabled=true)
 	public void GuestSearch_InvalidData() throws InterruptedException
 	
 	{	
@@ -134,7 +134,7 @@ public class Search extends SuiteBase{
 	/* ---------------------------- Signed User ------------------------*/
 	// Search functionality without any search criteria
 		
-		@Test(priority=4,enabled=false)
+		@Test(priority=4,enabled=true)
 		public void SignedSearch_Blank()throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException 
 		{
 			
@@ -160,7 +160,7 @@ public class Search extends SuiteBase{
 			this.GuestSearch_Blank();
 		}
 		
-		@Test(priority=5,enabled=false)
+		@Test(priority=5,enabled=true)
 		public void SignedSearch_withData()throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException 
 		{
 			
