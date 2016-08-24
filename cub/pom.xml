@@ -18,6 +18,8 @@
   </properties>
    
   <build>
+  
+  <sourceDirectory>src/test/main</sourceDirectory>
  
     <plugins>
       <plugin>
