@@ -129,7 +129,13 @@ public class UpdateXML {
 		      StreamResult consoleResult = new StreamResult(System.out); 
 		      xformer.transform(new DOMSource(doc), consoleResult); 
 
-		}catch(SAXException | TransformerException | IOException | ParserConfigurationException ex) {
+		}catch(SAXException ex) {
+		    ex.printStackTrace();
+		}catch(TransformerException ex) {
+		    ex.printStackTrace();
+		}catch(IOException ex) {
+		    ex.printStackTrace();
+		}catch(ParserConfigurationException ex) {
 		    ex.printStackTrace();
 		}
 		   
