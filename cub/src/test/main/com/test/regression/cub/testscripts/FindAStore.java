@@ -1,3 +1,43 @@
+
+/********************************************************FAS TESTING*******************************************************************************************************************************
+ * 
+ * ================================================================================================================================================================================================
+ *                                  Test Cases Covered as part of FAS Functionality
+ * ================================================================================================================================================================================================
+ * 
+ * TC 1. 'setStoreGuestZipCode'                       =>   Sets the Store for a guest user having zipcode                                                                                      
+ * 
+ * TC 2. 'setStoreGuestCityState'                     =>   Sets the Store for a guest user having city and state name
+ * 
+ * TC 3. 'setStoreGueststreetname'                    =>   Sets the store for a guest user having Street name
+ * 
+ * TC 4. 'setStoreAuthorizedZipCode'                  =>   Sets the store for a authorized user having ZipCode                                                                   
+ * 
+ * TC 5. 'setStoreAuthorizedCityState'        		  =>   Sets the store for a authorized user having City and State                                                
+ * 
+ * TC 6. 'Miles20'                                    =>   Sets the store for a authorized user having ZipCode and setting the Miles as 20                                                          
+ * 
+ * TC 7. 'Miles50'  								  =>   Sets the store for a authorized user having ZipCode and setting the Miles as 50                                                             
+ * 
+ * TC 8. 'changeStoreFromDifferentPages'              =>   Sets the store for a authorized user from one page and validating the changed store in other page                                                                                       *
+ * 
+ * TC 9. 'StoresbyState'                              =>   Validates stores by the given states
+ * 
+ * TC 10. 'mapanddriving'							  =>   Validates Maps and the driving directions of selected store
+ * 
+ * TC 11. 'invalidzipcode'							  =>   Validate for invalid ZipCodes
+ * 
+ * TC 12. 'Pagination'                                =>   Validates Pagination of FAS page
+ * 
+ * TC 13. 'validSignUpandsetstore'	                  =>   Sets the store during Sign Up
+ * 
+ * TC 14. 'invalidCityStreet'                         =>   Validate for invalid city and street name
+ * 
+ * TC 15. 'pharmacyFASwidget'                         =>   Validate for FAS widget in Pharmacy page
+ * 
+ * ================================================================================================================================================================================================
+ */
+
 package com.test.regression.cub.testscripts;
 
 import java.io.IOException;

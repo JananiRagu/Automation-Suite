@@ -1,17 +1,22 @@
 package com.test.regression.cub.pages;
 
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.test.regression.cub.utils.Constant;
+import com.test.regression.cub.utils.ReadPropertiesFile;
 import com.test.regression.cub.utils.SuiteBase;
 
 public class FindAStorePage extends SuiteBase{
 	
 	WebDriver _driver;
+	
+	ReadPropertiesFile properties = new ReadPropertiesFile();
 	
 	public FindAStorePage(WebDriver driver) {
 		
@@ -308,10 +313,10 @@ public class FindAStorePage extends SuiteBase{
 	public void clicknext(){
 		_Next.click();
 	}
-	public void clickOnMyStoreUnderMyTools() throws InterruptedException
+	public void clickOnMyStoreUnderMyTools() throws InterruptedException, IOException
 	{
 			Thread.sleep(10000);
-			_driver.navigate().to(Constant.URL+"stores/view-store.html");
+			_driver.navigate().to(properties.getPropValue("testURL")+"stores/view-store.html");
 		  
 	}
 	public void clickshow25(){

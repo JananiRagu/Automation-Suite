@@ -1,3 +1,31 @@
+
+/********************************************************Weekly Ads TESTING************************************************************************************************************************
+ * 
+ * ================================================================================================================================================================================================
+ *                                  Test Cases Covered as part of Weekly Ads Functionality
+ * ================================================================================================================================================================================================
+ * 
+ * TC 1. 'AddingweeklyAdtoSL_authoriseduser'                    =>  Adding Weekly Ads to the Shopping List for Authorized user                                                                                     
+ * 
+ * TC 2. 'AddingweeklyAdtoSL_Guestuser'                         =>  Adding Weekly Ads to the Shopping List for Guest user
+ * 
+ * TC 3. 'RemovingweeklyAdtoSL_authoriseduser'                  =>  Removing Weekly Ads from the Shopping List for Authorized user
+ * 
+ * TC 4. 'LinksValidationinsidepopup_authoriseduser'            =>  Validates the Links present inside the info pop up                                                                   
+ * 
+ * TC 5. 'LinksValidationonpage_authoriseduser'        		    =>  Validates the Links present on the page
+ * 
+ * TC 6. 'HelpandFeedback_authoriseduser'                       =>  Validates the help and feedback icons for Authorized user
+ * 
+ * TC 7. 'FooterLinks_authoriseduser'  						    =>  Validates the Footer links                                                     
+ * 
+ * TC 8. 'Pagination_authoriseduser'                            =>  Validates the Pagination
+ * 
+ * TC 9. 'MoreAdsOption_authoriseduser'                         =>  Validates MoreAdsOption icon for Authorized user
+ * 
+ * ================================================================================================================================================================================================
+ */
+
 package com.test.regression.cub.testscripts;
 
 import java.awt.List;

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" parallel="none">
-  <test name="Shopping List - Testing(failed)" parallel="none">
+  <test name="Sign In - Testing(failed)" parallel="none">
     <classes>
-      <class name="com.test.regression.cub.testscripts.ShoppingLists">
+      <class name="com.test.regression.cub.testscripts.SignIn">
         <methods>
           <include name="initialization"/>
           <include name="breakDown"/>
           <include name="DataSetUp"/>
-          <include name="AddnEditItemsInShoppingList"/>
+          <include name="validLogin"/>
           <include name="closeDriver"/>
         </methods>
-      </class> <!-- com.test.regression.cub.testscripts.ShoppingLists -->
+      </class> <!-- com.test.regression.cub.testscripts.SignIn -->
     </classes>
-  </test> <!-- Shopping List - Testing(failed) -->
+  </test> <!-- Sign In - Testing(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,5 +1,7 @@
 package com.test.regression.cub.pages;
 
+import java.io.IOException;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,6 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import com.test.regression.cub.utils.Constant;
 import com.test.regression.cub.utils.Logg;
+import com.test.regression.cub.utils.ReadPropertiesFile;
 import com.test.regression.cub.utils.SuiteBase;
 
 public class CommuPrefPage extends SuiteBase{
@@ -16,6 +19,7 @@ public class CommuPrefPage extends SuiteBase{
 	WebDriver _driver;
 
 	Logger log = Logg.createLogger();
+	ReadPropertiesFile properties = new ReadPropertiesFile();
 	
 	public CommuPrefPage(WebDriver driver) 
 	{
@@ -35,7 +39,7 @@ public class CommuPrefPage extends SuiteBase{
 
 //Method to click on My Account link under My Tools
 	
-public void clickOnMyAccountUnderMyTools(WebDriver driver) throws InterruptedException
+public void clickOnMyAccountUnderMyTools(WebDriver driver) throws InterruptedException, IOException
 {
 		/* waitFor(_MyToolsLink);
 		 _MyToolsLink.click();
@@ -43,7 +47,7 @@ public void clickOnMyAccountUnderMyTools(WebDriver driver) throws InterruptedExc
 		_MyAccount.click(); */
 	
 		Thread.sleep(10000);
-		driver.navigate().to(Constant.URL+"tools/view-account.html");
+		driver.navigate().to(properties.getPropValue("testURL")+"tools/view-account.html");
 		log.info("Clicked on My Account link under My Tools tab");
 }
 

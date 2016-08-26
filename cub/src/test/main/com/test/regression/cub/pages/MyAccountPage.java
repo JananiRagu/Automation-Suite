@@ -1,5 +1,6 @@
 package com.test.regression.cub.pages;
 
+import java.io.IOException;
 import java.rmi.server.SocketSecurityException;
 import org.apache.log4j.Logger;
 
@@ -17,6 +18,7 @@ import org.testng.Assert;
 
 import com.test.regression.cub.utils.Constant;
 import com.test.regression.cub.utils.Logg;
+import com.test.regression.cub.utils.ReadPropertiesFile;
 import com.sun.jna.StringArray;
 import com.test.regression.cub.utils.Constant;
 import com.test.regression.cub.utils.Logg;
@@ -26,7 +28,7 @@ public class MyAccountPage extends SuiteBase{
 	
 	WebDriver _driver;
 	Logger log = Logg.createLogger();
-
+	ReadPropertiesFile properties = new ReadPropertiesFile();
 	
 	public MyAccountPage(WebDriver driver) {
 		super();
@@ -48,7 +50,7 @@ public class MyAccountPage extends SuiteBase{
 
 //Method to click on My Account link under My Tools
 	
-public void clickOnMyAccountUnderMyTools(WebDriver driver) throws InterruptedException
+public void clickOnMyAccountUnderMyTools(WebDriver driver) throws InterruptedException, IOException
 {
 		/*waitFor(_MyToolsLink);
 		 _MyToolsLink.click();
@@ -57,7 +59,7 @@ public void clickOnMyAccountUnderMyTools(WebDriver driver) throws InterruptedExc
 
 	
 		Thread.sleep(10000);
-		driver.navigate().to(Constant.URL+"tools/view-account.html");
+		driver.navigate().to(properties.getPropValue("testURL")+"tools/view-account.html");
 		log.info("Clicked on My Account link under My Tools tab");
 }
 

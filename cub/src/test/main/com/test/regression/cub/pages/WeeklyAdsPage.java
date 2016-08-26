@@ -1,24 +1,23 @@
 package com.test.regression.cub.pages;
 
 
+import java.io.IOException;
 import java.util.List;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.test.regression.cub.utils.Constant;
+import com.test.regression.cub.utils.ReadPropertiesFile;
 import com.test.regression.cub.utils.SuiteBase;
 
 public class WeeklyAdsPage extends SuiteBase{
        
        WebDriver _driver;
+       
+       ReadPropertiesFile properties = new ReadPropertiesFile();
        
        
        public WeeklyAdsPage(WebDriver driver) {
@@ -142,10 +141,10 @@ public class WeeklyAdsPage extends SuiteBase{
                return size;
        }
        
-       public void clickOnMylistUnderMyTools(WebDriver driver) throws InterruptedException
+       public void clickOnMylistUnderMyTools(WebDriver driver) throws InterruptedException, IOException
        {
               Thread.sleep(10000);
-              driver.navigate().to(Constant.URL+"shopping-list.html");  
+              driver.navigate().to(properties.getPropValue("testURL")+"shopping-list.html");  
        }
        public void clickviewFullList(WebDriver driver){
               System.out.println("list");

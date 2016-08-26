@@ -1,3 +1,23 @@
+
+
+/********************************************************Navigation TESTING************************************************************************************************************************ *
+ *  
+ * ================================================================================================================================================================================================
+ *                                  Test Cases Covered as part of Navigation Functionality
+ * ================================================================================================================================================================================================
+ * 
+ * TC 1. 'NavigationtoDepartments_GuestUser'              =>  Validates the Links in Departments page as a guest user                                                                                    
+ * 
+ * TC 2. 'NavigationtoDepartments_AuthorisedUser'         =>  Validates the Links in Departments page as a authorized user    
+ * 
+ * TC 3. 'NavigationtoPharmacy_GuestUser'                 =>  Validates the Links in Pharmacy page as a guest user    
+ * 
+ * TC 4. 'NavigationtoPharmacy_AuthorisedUser'            =>  Validates the Links in Pharmacy page as a authorized user                                                                     
+ * 
+ * ================================================================================================================================================================================================
+ */
+
+
 package com.test.regression.cub.testscripts;
 
 import java.io.IOException;

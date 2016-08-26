@@ -1,8 +1,10 @@
 package com.test.regression.cub.utils;
 
 import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.concurrent.TimeUnit;
+
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
@@ -10,9 +12,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxBinary;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -21,8 +22,6 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-
-import com.test.regression.cub.utils.Constant;
 
 public class SuiteBase {	
 	
@@ -56,9 +55,11 @@ public class SuiteBase {
  	}
  	}
    
-       
+     ReadPropertiesFile properties = new ReadPropertiesFile();
+     
+     
    @BeforeMethod
-     public void initialization(Method method) throws InterruptedException {
+     public void initialization(Method method) throws InterruptedException, IOException {
 	   
 	   
 	   log.info("***************************************************************");
@@ -67,8 +68,8 @@ public class SuiteBase {
 	   
 	   log.info("***************************************************************");
 	   
-    	 _driver = InitializeDriver(Constant.browser_name);
-    	 	 _driver.get(Constant.URL);
+    	 _driver = InitializeDriver(properties.getPropValue("browser"));
+    	 	 _driver.get(properties.getPropValue("testURL"));
     	 
     	 log.info("Launched "+ Constant.URL + " Successfully!");
          
@@ -86,9 +87,14 @@ public class SuiteBase {
  		 
  		  }else if(browser.equalsIgnoreCase("chrome")){
  			  
- 			  System.setProperty("webdriver.chrome.driver", "./exeFiles/chromedriver.exe");
+ 			 ChromeOptions options = new ChromeOptions();
+ 			options.addArguments("chrome.switches","--disable-extensions");
+ 			//System.setProperty("webdriver.chrome.driver",(System.getProperty("user.dir") + "//src//test//resources//chromedriver_new.exe"));
+ 			
+ 			  
+ 			  System.setProperty("webdriver.chrome.driver", "./exeFiles/chromedriver2.23.exe");
  			 
- 			  _driver = new ChromeDriver();
+ 			  _driver = new ChromeDriver(options);
  			  System.out.println("Chrome Launched Successfully!!");
  		  }
  		  

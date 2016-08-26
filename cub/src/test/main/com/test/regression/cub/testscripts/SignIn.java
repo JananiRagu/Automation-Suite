@@ -85,7 +85,7 @@ public class SignIn extends SuiteBase {
 		}
 	}
 	
-	@Test(priority=2,enabled=true) 
+	@Test(priority=2,enabled=false) 
 	  public void inValidLogin(){
 		
 		try {
@@ -130,7 +130,7 @@ public class SignIn extends SuiteBase {
 	 
 	}
 	
-	@Test(priority=3,enabled=true) 
+	@Test(priority=3,enabled=false) 
 	  public void userNameNPasswordFieldValidation(){
 		
 		try {
@@ -187,7 +187,7 @@ public class SignIn extends SuiteBase {
 	 
 	}
 	
-@Test(priority=4, enabled=true)
+@Test(priority=4, enabled=false)
 	
 	public void validLoginFromShoppingListPage() {
 		try {
@@ -246,7 +246,7 @@ public class SignIn extends SuiteBase {
 
 
 
-@Test(priority=5, enabled=true)
+@Test(priority=5, enabled=false)
 
 public void validLoginFromCouponsPage() {
 	try {
@@ -312,7 +312,7 @@ public void validLoginFromCouponsPage() {
 	}
 }
 
-@Test(priority=5, enabled=true)
+@Test(priority=5, enabled=false)
 public void validateSignUpLinkInSignInPopup(){
 	
 	try {
@@ -338,7 +338,7 @@ public void validateSignUpLinkInSignInPopup(){
 	}
 }
 
-@Test(priority=1, enabled=true)
+@Test(priority=1, enabled=false)
 
 public void forgotPassword() {
 	try {

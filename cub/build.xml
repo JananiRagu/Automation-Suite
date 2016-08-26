@@ -117,7 +117,7 @@
               	        </delete>
               	        <mkdir dir="${basedir}/testng-xslt">
               	        </mkdir>
-              	        <xslt in="${basedir}/test-output/testng-results.xml" style="${basedir}/testng-results.xsl" out="${basedir}/testng-xslt/index.html">
+              	        <xslt in="${basedir}/target/surefire-reports/testng-results.xml" style="${basedir}/testng-results.xsl" out="${basedir}/testng-xslt/index.html">
               	            <param expression="${basedir}/testng-xslt/" name="testNgXslt.outputDir" />
               	            <param expression="true" name="testNgXslt.sortTestCaseLinks" />
               	            <param expression="FAIL,SKIP,PASS,CONF,BY_CLASS" name="testNgXslt.testDetailsFilter" />

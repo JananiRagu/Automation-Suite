@@ -1,134 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="124916" started-at="2016-08-17T09:20:52Z" finished-at="2016-08-17T09:22:56Z">
+  <suite name="Suite" duration-ms="62245" started-at="2016-08-26T07:09:45Z" finished-at="2016-08-26T07:10:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="124916" started-at="2016-08-17T09:20:52Z" finished-at="2016-08-17T09:22:56Z">
-      <class name="com.test.regression.cub.testscripts.AboutUs">
-        <test-method status="PASS" signature="DataSetUp()[pri:0, instance:com.test.regression.cub.testscripts.AboutUs@29ca901e]" name="DataSetUp" is-config="true" duration-ms="343" started-at="2016-08-17T14:50:51Z" finished-at="2016-08-17T14:50:52Z">
+    <test name="Sign In - Testing" duration-ms="62245" started-at="2016-08-26T07:09:45Z" finished-at="2016-08-26T07:10:47Z">
+      <class name="com.test.regression.cub.testscripts.SignIn">
+        <test-method status="PASS" signature="DataSetUp()[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="DataSetUp" is-config="true" duration-ms="457" started-at="2016-08-26T12:39:45Z" finished-at="2016-08-26T12:39:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DataSetUp -->
-        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.AboutUs@29ca901e]" name="initialization" is-config="true" duration-ms="14175" started-at="2016-08-17T14:50:52Z" finished-at="2016-08-17T14:51:06Z">
+        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="initialization" is-config="true" duration-ms="30126" started-at="2016-08-26T12:39:45Z" finished-at="2016-08-26T12:40:15Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.test.regression.cub.testscripts.AboutUs.AboutUsNavigationSignedInUser() throws java.lang.InterruptedException,java.io.IOException,javax.xml.xpath.XPathExpressionException,javax.xml.parsers.ParserConfigurationException,org.xml.sax.SAXException]]>
+                <![CDATA[public void com.test.regression.cub.testscripts.SignIn.validLogin()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method status="FAIL" signature="AboutUsNavigationSignedInUser()[pri:0, instance:com.test.regression.cub.testscripts.AboutUs@29ca901e]" name="AboutUsNavigationSignedInUser" duration-ms="107578" started-at="2016-08-17T14:51:06Z" finished-at="2016-08-17T14:52:54Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Timed out after 30 seconds waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: (//a[text()='Investor Information'])[2]'
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'sdwvpctcs2813', ip: '10.15.11.210', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\hxdxa4\AppData\Local\Temp\scoped_dir9472_7550}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 3a21b79083b0a9ffa1ab881a050237e9]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: (//a[text()='Investor Information'])[2]'
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'sdwvpctcs2813', ip: '10.15.11.210', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\hxdxa4\AppData\Local\Temp\scoped_dir9472_7550}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 3a21b79083b0a9ffa1ab881a050237e9
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
-	at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:138)
-	at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:142)
-	at com.test.regression.cub.pages.AboutUsPage.clickOnInvestorInformation(AboutUsPage.java:95)
-	at com.test.regression.cub.testscripts.AboutUs.AboutUsNavigationSignedInUser(AboutUs.java:152)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//a[text()='Investor Information'])[2]"}
-  (Session info: chrome=52.0.2743.116)
-  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.26 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'sdwvpctcs2813', ip: '10.15.11.210', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\hxdxa4\AppData\Local\Temp\scoped_dir9472_7550}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 3a21b79083b0a9ffa1ab881a050237e9
-*** Element info: {Using=xpath, value=(//a[text()='Investor Information'])[2]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
-	... 28 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method status="PASS" signature="validLogin()[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="validLogin" duration-ms="28539" started-at="2016-08-26T12:40:15Z" finished-at="2016-08-26T12:40:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AboutUsNavigationSignedInUser -->
-        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.AboutUs@29ca901e]" name="breakDown" is-config="true" duration-ms="1085" started-at="2016-08-17T14:52:54Z" finished-at="2016-08-17T14:52:55Z">
+        </test-method> <!-- validLogin -->
+        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="breakDown" is-config="true" duration-ms="0" started-at="2016-08-26T12:40:44Z" finished-at="2016-08-26T12:40:44Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AboutUsNavigationSignedInUser status=FAILURE method=AboutUs.AboutUsNavigationSignedInUser()[pri:0, instance:com.test.regression.cub.testscripts.AboutUs@29ca901e] output={null}]]]>
+                <![CDATA[[TestResult name=validLogin status=SUCCESS method=SignIn.validLogin()[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- breakDown -->
-        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.AboutUs@29ca901e]" name="closeDriver" is-config="true" duration-ms="1814" started-at="2016-08-17T14:52:55Z" finished-at="2016-08-17T14:52:56Z">
+        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="closeDriver" is-config="true" duration-ms="3558" started-at="2016-08-26T12:40:44Z" finished-at="2016-08-26T12:40:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.test.regression.cub.testscripts.AboutUs.AboutUsNavigationSignedInUser() throws java.lang.InterruptedException,java.io.IOException,javax.xml.xpath.XPathExpressionException,javax.xml.parsers.ParserConfigurationException,org.xml.sax.SAXException]]>
+                <![CDATA[public void com.test.regression.cub.testscripts.SignIn.validLogin()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-      </class> <!-- com.test.regression.cub.testscripts.AboutUs -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.test.regression.cub.testscripts.SignIn -->
+    </test> <!-- Sign In - Testing -->
+  </suite> <!-- Suite -->
 </testng-results>
