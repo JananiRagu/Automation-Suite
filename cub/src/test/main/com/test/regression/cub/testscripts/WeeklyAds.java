@@ -126,10 +126,8 @@ public class WeeklyAds extends SuiteBase {
 		   System.out.println(name);
 		   Thread.sleep(3000);
 		   weeklyAdspage.clickadditem();
-		   log.info("Click on Add item button");
 		   Thread.sleep(6000);
 		   weeklyAdspage.clickcloseicon();
-		   log.info("Close the information icon pop up");
 		   Thread.sleep(3000);
 		   
 		   //Navigate to shopping list page
@@ -199,14 +197,11 @@ public class WeeklyAds extends SuiteBase {
 			 String name=Adname.getText();
 			 System.out.println(name);
 			 weeklyAdspage.clickadditem();
-			 log.info("Click on Add item button in the information icon");
 			 Thread.sleep(6000);
 			 weeklyAdspage.clickcloseicon();
-			 log.info("Close the information pop up");
 			 Thread.sleep(5000);
 			   //Navigate to shopping list page
 			 weeklyAdspage.clickviewFullList(_driver);
-			 log.info("Click on View full list button to navigate to SL");
 			 Thread.sleep(5000);
 			 WebElement AdnameSL=_driver.findElement(By.xpath("//*[@id='listitem-itemText_0']"));
 			 String name1=AdnameSL.getText();
@@ -279,13 +274,10 @@ public class WeeklyAds extends SuiteBase {
 		   String name=Adname.getText();
 		   System.out.println(name);
 		   weeklyAdspage.clickadditem();
-		   log.info("Add an item to Shopping list");
 		   Thread.sleep(6000);
 		   weeklyAdspage.clickremoveitem();
-		   log.info("Remove an item to Shopping list");
 		   Thread.sleep(3000);
 		   weeklyAdspage.clickcloseicon();
-		   log.info("Close the information icon pop up");
 		   Thread.sleep(3000);
 		   //Navigate to shopping list page
 		   weeklyAdspage.clickOnMylistUnderMyTools(_driver);
@@ -369,8 +361,6 @@ public class WeeklyAds extends SuiteBase {
 		   String parentHandle = _driver.getWindowHandle(); // get the current window handle                 
 		    weeklyAdspage.clickfacebook();
 		    Thread.sleep(3000);
-		    System.out.println("Facebook opened");
-		    Thread.sleep(3000);
 		    int noOfWindowsOpen = _driver.getWindowHandles().size();
 		    System.out.println(noOfWindowsOpen+ " windows are open now");
 		    
@@ -381,8 +371,7 @@ public class WeeklyAds extends SuiteBase {
 		    String t=_driver.getTitle();
 		    System.out.println(t);
 		    sa.assertEquals("Facebook", t);
-		   _driver.close();  
-		   log.info("Close the child browser");
+		   _driver.close();
 			Thread.sleep(5000);
 			_driver.switchTo().window(parentHandle);
 			 log.info("switch to parent browser");  
@@ -394,8 +383,6 @@ public class WeeklyAds extends SuiteBase {
 			//Twitter
 			weeklyAdspage.clicktwitter();
 		    Thread.sleep(5000);
-		    System.out.println("twitter opened");
-		    Thread.sleep(3000);
 		    int noOfWindowsOpen1 = _driver.getWindowHandles().size();
 		    System.out.println(noOfWindowsOpen1+ " windows are open now");
 		    
@@ -406,8 +393,7 @@ public class WeeklyAds extends SuiteBase {
 		    String t1=_driver.getTitle();
 		    System.out.println(t1);
 		    sa.assertEquals("Share a link on Twitter", t1);
-		   _driver.close();  
-		   log.info("Close the child browser");
+		   _driver.close();
 			Thread.sleep(5000);
 			_driver.switchTo().window(parentHandle);
 			 log.info("switch to parent browser"); 
@@ -419,8 +405,6 @@ public class WeeklyAds extends SuiteBase {
 			//Google+
 			weeklyAdspage.clickgoogle();
 			Thread.sleep(5000);
-			System.out.println("Google+ opened");
-		    Thread.sleep(3000);
 		    int noOfWindowsOpen2 = _driver.getWindowHandles().size();
 		    System.out.println(noOfWindowsOpen2+ " windows are open now");
 		    
@@ -431,8 +415,7 @@ public class WeeklyAds extends SuiteBase {
 		    String t2=_driver.getTitle();
 		    System.out.println(t2);
 		    sa.assertEquals("Google+", t2);
-		    _driver.close();  
-		    log.info("Close the child browser");
+		    _driver.close(); 
 			Thread.sleep(5000);
 			_driver.switchTo().window(parentHandle);
 			 log.info("switch to parent browser");  
@@ -444,8 +427,6 @@ public class WeeklyAds extends SuiteBase {
 			//Pinterest
 			weeklyAdspage.clickpinterest();
 			Thread.sleep(5000);
-			System.out.println("Pinterest opened");
-		    Thread.sleep(3000);
 		    int noOfWindowsOpen3 = _driver.getWindowHandles().size();
 		    System.out.println(noOfWindowsOpen3+ " windows are open now");
 		    
@@ -456,8 +437,7 @@ public class WeeklyAds extends SuiteBase {
 		    String t3=_driver.getTitle();
 		    System.out.println(t3);
 		    sa.assertEquals("Pinterest • The world’s catalog of ideas", t3);
-		    _driver.close();  
-		    log.info("Close the child browser");
+		    _driver.close();
 			Thread.sleep(5000);
 			_driver.switchTo().window(parentHandle);
 			 log.info("switch to parent browser");  
@@ -532,8 +512,6 @@ public class WeeklyAds extends SuiteBase {
 			//Facebook
 			weeklyAdspage.clickfb();
 			Thread.sleep(5000);
-		    System.out.println("Facebook opened");
-		    Thread.sleep(3000);
 		    int noOfWindowsOpen = _driver.getWindowHandles().size();
 		    System.out.println(noOfWindowsOpen+ " windows are open now"); 
 		    for (String winHandle : _driver.getWindowHandles()) { //Gets the new window handle
@@ -554,8 +532,6 @@ public class WeeklyAds extends SuiteBase {
 		    //Twitter
 			weeklyAdspage.clicktw();
 			Thread.sleep(5000);
-			System.out.println("twitter opened");
-		    Thread.sleep(3000);
 		    int noOfWindowsOpen1 = _driver.getWindowHandles().size();
 		    System.out.println(noOfWindowsOpen1+ " windows are open now"); 
 		    for (String winHandle : _driver.getWindowHandles()) { //Gets the new window handle
@@ -629,7 +605,6 @@ public class WeeklyAds extends SuiteBase {
 			weeklyAdspage.clickWeeklysavings(_driver);
 			Thread.sleep(8000);
 			weeklyAdspage.clickhelp();
-			log.info("Help pop up opened");
 			Thread.sleep(5000);
 			String text=_driver.findElement(By.xpath("html/body/div[2]/h1")).getText();
 			System.out.println(text);
@@ -639,7 +614,6 @@ public class WeeklyAds extends SuiteBase {
 			weeklyAdspage.clickclosehelp();
 			Thread.sleep(3000);
 			weeklyAdspage.clickfeedback();
-			log.info("feedback pop up opened");
 			Thread.sleep(5000);
 			String text1=_driver.findElement(By.xpath("//*[@id='feedback_dialog']/div/div[1]/div[1]")).getText();
 			System.out.println(text1);
@@ -714,7 +688,6 @@ public class WeeklyAds extends SuiteBase {
 				
 			//Powered By Flipp
 			weeklyAdspage.clickpoweredbyflipp();
-			log.info("Powered by Flipp link opened");
 			Thread.sleep(5000);
 			for (String winHandle : _driver.getWindowHandles()) { //Gets the new window handle
 		        System.out.println("Want to swtich to window "+ winHandle);
@@ -734,7 +707,6 @@ public class WeeklyAds extends SuiteBase {
 			 
 			 //Patent
 			 weeklyAdspage.clickpatent();
-			 log.info("Patent link opened");
 			 Thread.sleep(5000);
 			 for (String winHandle : _driver.getWindowHandles()) { //Gets the new window handle
 			       _driver.switchTo().window(winHandle);              
@@ -753,7 +725,6 @@ public class WeeklyAds extends SuiteBase {
 			
 			//Privacy
 			 weeklyAdspage.clickprivacy();
-			 log.info("Privacy link opened");
 			 Thread.sleep(5000);
 			 for (String winHandle : _driver.getWindowHandles()) { //Gets the new window handle
 			       _driver.switchTo().window(winHandle);              
@@ -772,7 +743,6 @@ public class WeeklyAds extends SuiteBase {
 			
 			//Terms of use
 			weeklyAdspage.clicktermsofuse();
-			 log.info("Terms of use link opened");
 			 Thread.sleep(5000);
 			 for (String winHandle : _driver.getWindowHandles()) { //Gets the new window handle
 			       _driver.switchTo().window(winHandle);              
@@ -861,41 +831,30 @@ public class WeeklyAds extends SuiteBase {
 			
 			//2nd Page
 			String initialpagenotop1=weeklyAdspage.toppageno();
-			System.out.println(initialpagenotop1);
 			String initialpagenodown1=weeklyAdspage.downpageno();
-			System.out.println(initialpagenodown1);
 			sa.assertEquals(initialpagenotop1, initialpagenodown1);
 			weeklyAdspage.clickrightscroll();
-			log.info("Click on right scroll for next page-success");
 			Thread.sleep(3000);
 			
 			//3rd Page
 			String initialpagenotop2=weeklyAdspage.toppageno();
-			System.out.println(initialpagenotop2);
 			String initialpagenodown2=weeklyAdspage.downpageno();
-			System.out.println(initialpagenodown2);
 			sa.assertEquals(initialpagenotop2, initialpagenodown2);
 			weeklyAdspage.clickrightscroll();
 			Thread.sleep(3000);
 			
 			//Click on Left scroll
 			weeklyAdspage.clickleftscroll();
-			log.info("CLick on left scroll-success");
 			Thread.sleep(3000);
 			String initialpagenotop3=weeklyAdspage.toppageno();
-			System.out.println(initialpagenotop3);
 			String initialpagenodown3=weeklyAdspage.downpageno();
-			System.out.println(initialpagenodown3);
 			sa.assertEquals(initialpagenotop3, initialpagenodown3);
 			
 			//previous page
 			weeklyAdspage.clickleftscroll();
-			log.info("CLick on left scroll for previous page-success");
 			Thread.sleep(3000);
 			String initialpagenotop4=weeklyAdspage.toppageno();
-			System.out.println(initialpagenotop4);
 			String initialpagenodown4=weeklyAdspage.downpageno();
-			System.out.println(initialpagenodown4);
 			sa.assertEquals(initialpagenotop4, initialpagenodown4);
 			Thread.sleep(3000);
 			

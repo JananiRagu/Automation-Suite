@@ -289,44 +289,58 @@ public class NavigationPage extends SuiteBase{
        
        public void clickDepartments(){
               _Departments.click();
+              log.info("Click on Departments link");
        }
        public void clickMeat(){
               _MeatandSeafood.click();
+              log.info("Click on Meat and Sea Food link on Departments page");
        }
        public void clickBakery(){
               _DeliandBakery.click();
+              log.info("Click on Deli and Bakery link on Departments page");
        }
        public void clickFresh(){
               _FreshProduce.click();
+              log.info("Click on Fresh Produce link on Departments page");
        }
        public void clickGift(){
               _GiftCards.click();
+              log.info("Click on Gift Cards link on Departments page");
        }
        public void clickBeer(){
               _BeerandWine.click();
+              log.info("Click on Beer and Wine link on Departments page");
        }
        public void clickPet(){
               _Pet.click();
+              log.info("Click on Pet link on Departments page");
        }
        public void clickbacktoDept(){
               _backtoDept.click();
+              log.info("Navigate back to Departments page");
        }
        public void clickpharmacy(){
               _pharmacy.click();
+              log.info("Click on Pharmacy link");
        }
        public void clickDeptpharma(){
               _Deptpharmacy.click();
+              log.info("Click on Departments link in Pharmacy page");
        }
        public void clickServices(){
               _Servicespharmacy.click();
+              log.info("Click on Services link in Pharmacy page");
        }
        public void clickstorehealth(){
               _Storehealthpharmacy.click();
+              log.info("Click on Store health link in Pharmacy page");
        }
        public void clickdiabetes(){
               _diabetespharmacy.click();
+              log.info("Click on Diabetes link in Pharmacy page");
        }
        public void clickbacktopharma(){
               _backtoPharma.click();
+              log.info("Navigate back to Pharmacy page");
        }
 }

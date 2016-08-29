@@ -76,7 +76,6 @@ public class Navigation extends SuiteBase {
               
               //Navigate to Meat and Sea Food page
               navigationpage.clickMeat();
-              log.info("Click on Meat and SeaFood");
               Thread.sleep(5000);
               String title1=_driver.getCurrentUrl();
               System.out.println(title1);
@@ -85,12 +84,10 @@ public class Navigation extends SuiteBase {
               
               navigationpage.clickbacktoDept();
               Thread.sleep(3000);
-              log.info("Navigate back to Departments page");
               sa.assertEquals("https://www.cub.com/departments.html", title);
               
               //Navigate to Deli and Bakery page
               navigationpage.clickBakery();
-              log.info("Click on Deli and Bakery");
               Thread.sleep(5000);
               String title2=_driver.getCurrentUrl();
               sa.assertEquals("https://www.cub.com/departments/deli-bakery.html", title2);
@@ -98,12 +95,10 @@ public class Navigation extends SuiteBase {
                            
               navigationpage.clickbacktoDept();
               Thread.sleep(3000);
-              log.info("Navigate back to Departments page");
               sa.assertEquals("https://www.cub.com/departments.html", title);
               
               //Navigate to Fresh Produce page
               navigationpage.clickFresh();
-              log.info("Click on Fresh Produce");
               Thread.sleep(5000);
               String title3=_driver.getCurrentUrl();
               sa.assertEquals("https://www.cub.com/departments/produce.html", title3);
@@ -111,12 +106,10 @@ public class Navigation extends SuiteBase {
                                          
               navigationpage.clickbacktoDept();
               Thread.sleep(3000);
-              log.info("Navigate back to Departments page");
               sa.assertEquals("https://www.cub.com/departments.html", title);
               
               //Navigate to Gift Cards page
               navigationpage.clickGift();
-              log.info("Click on Gift Cards");
               Thread.sleep(5000);
               String title4=_driver.getCurrentUrl();
               sa.assertEquals("https://www.cub.com/departments/gift-card-floral.html", title4);
@@ -124,12 +117,10 @@ public class Navigation extends SuiteBase {
                                          
               navigationpage.clickbacktoDept();
               Thread.sleep(3000);
-              log.info("Navigate back to Departments page");
               sa.assertEquals("https://www.cub.com/departments.html", title);
               
               //Navigate to Beer and Wine page
               navigationpage.clickBeer();
-              log.info("Click on Beer and Wine");
               Thread.sleep(5000);
               String title5=_driver.getCurrentUrl();
               sa.assertEquals("https://www.cub.com/departments/liquor.html", title5);
@@ -137,12 +128,10 @@ public class Navigation extends SuiteBase {
                                          
               navigationpage.clickbacktoDept();
               Thread.sleep(3000);
-              log.info("Navigate back to Departments page");
               sa.assertEquals("https://www.cub.com/departments.html", title);
               
               //Navigate to Pet page
               navigationpage.clickPet();
-              log.info("Click on Pet");
               Thread.sleep(5000);
               String title6=_driver.getCurrentUrl();
               sa.assertEquals("https://www.cub.com/departments/pet.html", title6);
@@ -150,7 +139,6 @@ public class Navigation extends SuiteBase {
                                                        
               navigationpage.clickbacktoDept();
               Thread.sleep(3000);
-              log.info("Navigate back to Departments page");
               sa.assertEquals("https://www.cub.com/departments.html", title);
               
               sa.assertAll();
@@ -189,7 +177,6 @@ public class Navigation extends SuiteBase {
               SoftAssert sa = new SoftAssert();
               
               navigationpage.clickDepartments();
-              log.info("Click on Departments");
               Thread.sleep(5000);
               String title=_driver.getCurrentUrl();
               System.out.println(title);
@@ -198,7 +185,6 @@ public class Navigation extends SuiteBase {
               
               //Navigate to Meat and Sea Food page
               navigationpage.clickMeat();
-              log.info("Click on Meat and SeaFood");
               Thread.sleep(5000);
               String title1=_driver.getCurrentUrl();
               System.out.println(title1);
@@ -207,12 +193,10 @@ public class Navigation extends SuiteBase {
               
               navigationpage.clickbacktoDept();
               Thread.sleep(3000);
-              log.info("Navigate back to Departments page");
               sa.assertEquals("https://www.cub.com/departments.html", title);
               
               //Navigate to Deli and Bakery page
               navigationpage.clickBakery();
-              log.info("Click on Deli and Bakery");
               Thread.sleep(5000);
               String title2=_driver.getCurrentUrl();
               sa.assertEquals("https://www.cub.com/departments/deli-bakery.html", title2);
@@ -220,12 +204,10 @@ public class Navigation extends SuiteBase {
                            
               navigationpage.clickbacktoDept();
               Thread.sleep(3000);
-              log.info("Navigate back to Departments page");
               sa.assertEquals("https://www.cub.com/departments.html", title);
               
               //Navigate to Fresh Produce page
               navigationpage.clickFresh();
-              log.info("Click on Fresh Produce");
               Thread.sleep(5000);
               String title3=_driver.getCurrentUrl();
               sa.assertEquals("https://www.cub.com/departments/produce.html", title3);
@@ -233,12 +215,10 @@ public class Navigation extends SuiteBase {
                                          
               navigationpage.clickbacktoDept();
               Thread.sleep(3000);
-              log.info("Navigate back to Departments page");
               sa.assertEquals("https://www.cub.com/departments.html", title);
               
               //Navigate to Gift Cards page
               navigationpage.clickGift();
-              log.info("Click on Gift Cards");
               Thread.sleep(5000);
               String title4=_driver.getCurrentUrl();
               sa.assertEquals("https://www.cub.com/departments/gift-card-floral.html", title4);
@@ -246,12 +226,10 @@ public class Navigation extends SuiteBase {
                                          
               navigationpage.clickbacktoDept();
               Thread.sleep(3000);
-              log.info("Navigate back to Departments page");
               sa.assertEquals("https://www.cub.com/departments.html", title);
               
               //Navigate to Beer and Wine page
               navigationpage.clickBeer();
-              log.info("Click on Beer and Wine");
               Thread.sleep(5000);
               String title5=_driver.getCurrentUrl();
               sa.assertEquals("https://www.cub.com/departments/liquor.html", title5);
@@ -259,12 +237,10 @@ public class Navigation extends SuiteBase {
                                          
               navigationpage.clickbacktoDept();
               Thread.sleep(3000);
-              log.info("Navigate back to Departments page");
               sa.assertEquals("https://www.cub.com/departments.html", title);
               
               //Navigate to Pet page
               navigationpage.clickPet();
-              log.info("Click on Pet");
               Thread.sleep(5000);
               String title6=_driver.getCurrentUrl();
               sa.assertEquals("https://www.cub.com/departments/pet.html", title6);
@@ -272,7 +248,6 @@ public class Navigation extends SuiteBase {
                                                        
               navigationpage.clickbacktoDept();
               Thread.sleep(3000);
-              log.info("Navigate back to Departments page");
               sa.assertEquals("https://www.cub.com/departments.html", title);
               
               sa.assertAll();
@@ -304,12 +279,10 @@ public class Navigation extends SuiteBase {
               
               try {
               cubHome = new CubHome(_driver);
-       
-              
+            
               SoftAssert sa = new SoftAssert();
               navigationpage=new NavigationPage(_driver);
               navigationpage.clickpharmacy();
-              log.info("Click on Pharmacy");
               Thread.sleep(5000);
               String title=_driver.getCurrentUrl();
               System.out.println(title);
@@ -318,7 +291,6 @@ public class Navigation extends SuiteBase {
               
               //Navigate to Pharmacy Departments page
               navigationpage.clickDeptpharma();
-              log.info("Click on Pharmacy Departments");
               Thread.sleep(5000);
               String title1=_driver.getCurrentUrl();
               System.out.println(title1);
@@ -327,12 +299,10 @@ public class Navigation extends SuiteBase {
               
               navigationpage.clickbacktopharma();
               Thread.sleep(3000);
-              log.info("Navigate back to Pharmacy page");
               sa.assertEquals("https://www.cub.com/pharmacy.html", title);
               
               //Navigate to Our Services page
               navigationpage.clickServices();
-              log.info("Click on Our services");
               Thread.sleep(5000);
               String title2=_driver.getCurrentUrl();
               System.out.println(title2);
@@ -341,12 +311,10 @@ public class Navigation extends SuiteBase {
                            
               navigationpage.clickbacktopharma();
               Thread.sleep(3000);
-              log.info("Navigate back to Pharmacy page");
               sa.assertEquals("https://www.cub.com/pharmacy.html", title);
               
               //Navigate to Store Health page
               navigationpage.clickstorehealth();
-              log.info("Click on Store Health");
               Thread.sleep(5000);
               String title3=_driver.getCurrentUrl();
               System.out.println(title3);
@@ -355,7 +323,6 @@ public class Navigation extends SuiteBase {
                                          
               //Navigate to Diabetes page
               navigationpage.clickdiabetes();
-              log.info("Click on Diabetes");
               Thread.sleep(5000);
               String title4=_driver.getCurrentUrl();
               System.out.println(title4);
@@ -364,7 +331,6 @@ public class Navigation extends SuiteBase {
                                          
               navigationpage.clickbacktopharma();
               Thread.sleep(3000);
-              log.info("Navigate back to Pharmacy page");
               sa.assertEquals("https://www.cub.com/pharmacy.html", title);
               
               sa.assertAll();
@@ -402,7 +368,6 @@ public class Navigation extends SuiteBase {
               SoftAssert sa = new SoftAssert();
               navigationpage=new NavigationPage(_driver);
               navigationpage.clickpharmacy();
-              log.info("Click on Pharmacy");
               Thread.sleep(5000);
               String title=_driver.getCurrentUrl();
               System.out.println(title);
@@ -411,7 +376,6 @@ public class Navigation extends SuiteBase {
               
               //Navigate to Pharmacy Departments page
               navigationpage.clickDeptpharma();
-              log.info("Click on Pharmacy Departments");
               Thread.sleep(5000);
               String title1=_driver.getCurrentUrl();
               System.out.println(title1);
@@ -420,12 +384,10 @@ public class Navigation extends SuiteBase {
               
               navigationpage.clickbacktopharma();
               Thread.sleep(3000);
-              log.info("Navigate back to Pharmacy page");
               sa.assertEquals("https://www.cub.com/pharmacy.html", title);
               
               //Navigate to Our Services page
               navigationpage.clickServices();
-              log.info("Click on Our services");
               Thread.sleep(5000);
               String title2=_driver.getCurrentUrl();
               System.out.println(title2);
@@ -434,12 +396,10 @@ public class Navigation extends SuiteBase {
                            
               navigationpage.clickbacktopharma();
               Thread.sleep(3000);
-              log.info("Navigate back to Pharmacy page");
               sa.assertEquals("https://www.cub.com/pharmacy.html", title);
               
               //Navigate to Store Health page
               navigationpage.clickstorehealth();
-              log.info("Click on Store Health");
               Thread.sleep(5000);
               String title3=_driver.getCurrentUrl();
               System.out.println(title3);
@@ -448,7 +408,6 @@ public class Navigation extends SuiteBase {
                                          
               //Navigate to Diabetes page
               navigationpage.clickdiabetes();
-              log.info("Click on Diabetes");
               Thread.sleep(5000);
               String title4=_driver.getCurrentUrl();
               System.out.println(title4);
@@ -457,7 +416,6 @@ public class Navigation extends SuiteBase {
                                          
               navigationpage.clickbacktopharma();
               Thread.sleep(3000);
-              log.info("Navigate back to Pharmacy page");
               sa.assertEquals("https://www.cub.com/pharmacy.html", title);
               
               sa.assertAll();
