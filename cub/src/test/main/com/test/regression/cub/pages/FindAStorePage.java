@@ -3,12 +3,14 @@ package com.test.regression.cub.pages;
 
 import java.io.IOException;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.test.regression.cub.utils.Constant;
+import com.test.regression.cub.utils.Logg;
 import com.test.regression.cub.utils.ReadPropertiesFile;
 import com.test.regression.cub.utils.SuiteBase;
 
@@ -17,6 +19,7 @@ public class FindAStorePage extends SuiteBase{
 	WebDriver _driver;
 	
 	ReadPropertiesFile properties = new ReadPropertiesFile();
+	Logger log = Logg.createLogger();
 	
 	public FindAStorePage(WebDriver driver) {
 		
@@ -171,25 +174,32 @@ public class FindAStorePage extends SuiteBase{
 	
 	public void clickFindAStore() {
 		_FindAStore.click();
+		log.info("Click on FAS link");
 	}
 	public void clicksearchbutton(){
 		_searchbutton.click();
+		log.info("Click on search button");
 	}
 	
 	public void enterZipCode(String zip){
 		_enterzipcode.sendKeys(zip);//entering in FAS page
+		log.info("Enter ZipCode");
 	}
 	public void clickMakemyStore(){
 		_Makethismystore.click();
+		log.info("Click on make my store button");
 	}
 	public void entercity(String city){
 		_city.sendKeys(city);
+		log.info("Enter city name");
 	}
 	public void selectstate(String state){
 		_state.sendKeys(state);
+		log.info("Enter state name");
 	}
 	public void enterstreetname(String street){
 		_StreetAddress.sendKeys(street);
+		log.info("Enter street name");
 	}
 	public int results(int result){
 		String result1=_Resultstab.getText();
@@ -203,11 +213,13 @@ public class FindAStorePage extends SuiteBase{
 	{
 	waitFor(_Savings);
 	_Savings.click();
+	log.info("Click on savings button");
 	} 
 	public void clickOnDepartments()
 	{
 	waitFor(_Departments);
 	_Departments.click();
+	log.info("Click on Departments button");
 	}
 	
 
@@ -216,32 +228,40 @@ public class FindAStorePage extends SuiteBase{
 	public void clickOnChange()
 	{
 	_clickchange.click();
+	log.info("Click on change link");
 	}
 	public void clickOnSearch()
 	{
 	_clicksearch.click();
+	log.info("Click on search button");
 	}
 	public void clickOnStore()
 	{
 	waitFor(_selectclickstore);
 	_selectclickstore.click();
+	log.info("Click on select store button");
 	String Add=_selectclickstore.getText();
 	System.out.println(Add);
+	
 	}
 	public void clickOnusestore()
 	{
 	waitFor(_clickusestore);
 	_clickusestore.click();
+	log.info("Click on use this store button");
 	}
 	public void enterzip(String zip1){
 		_zipcodebox.sendKeys(zip1);//entering in popup
+		log.info("Enter Zip code in the box ");
 	}
 	public String SelectAddressSavings(String Add){
 		Add=_selectclickstore.getText();
+		log.info("Get the address after selecting");
 		return Add;
 	}
 	public String Address2Departments(String Add2){
 		Add2=_checkstorename.getText();
+		log.info("Check the address in departments page");
 		return Add2;
 	}
 	
@@ -250,56 +270,66 @@ public class FindAStorePage extends SuiteBase{
 	public void ClickState1()
 	{
 	_clickstate1.click();
+	log.info("Click on one state name");
 	}
 	
 	public void ClickState2()
 	{
 		_clickstate2.click();
+		log.info("Click on other state name");
 	}
 	public void ClickStore()
 	{
 		_MakeStore.click();
+		log.info("Click Make my store button");
 	}
 	
 	public void ClickStore1()
 	{
 	_setstore1.click();
+	log.info("Click on 1st store");
 	}
 	public void ClickStore2()
 	{
 	_setstore2.click();
+	log.info("Click on 2nd store");
 	}
 	
 	public void clickFAS() {
 		_FAS.click();
+		log.info("Click on FAS link");
 		}
 	
 	public void clickmap(){
 		waitFor(_maps);
 		_maps.click();
+		log.info("Click on Maps");
 	}
 	public void clickdriving(){
 		waitFor(_drivingdirection);
 		_drivingdirection.click();
+		log.info("Click on driving direction");
 	}
 	public void enterlocation(String start){
 		_fromlocation.sendKeys(start);
+		log.info("Enter the starting point of the location");
 	}
 	public void clicksearchlocation(){
 		_searchdirection.click();
+		log.info("Click on search location button");
 	}
 	
 	public boolean isIncorrectZipcode(){
 		waitFor(_errormessage);
 		boolean IncorrectZipCode = _errormessage.isDisplayed();
-		//log.info("ZipCode Incorrect Text Status : "+IncorrectZipCode);
+		log.info("ZipCode Incorrect Text Status : "+IncorrectZipCode);
 		return(IncorrectZipCode);
 	}
 	
 	public boolean isIncorrectCityStreet(){
 		waitFor(_errormessage1);
 		boolean IncorrectZipCode = _errormessage1.isDisplayed();
-		//log.info("ZipCode Incorrect Text Status : "+IncorrectZipCode);
+		log.info("ZipCode Incorrect Text Status : "+IncorrectZipCode);
 		return(IncorrectZipCode);
 	}
 	public int page(int p){
@@ -309,56 +339,68 @@ public class FindAStorePage extends SuiteBase{
 	}
 	public void clickprevious(){
 		_Previous.click();
+		log.info("Click on Previous link");
 	}
 	public void clicknext(){
 		_Next.click();
+		log.info("Click on Next link");
 	}
 	public void clickOnMyStoreUnderMyTools() throws InterruptedException, IOException
 	{
 			Thread.sleep(10000);
 			_driver.navigate().to(properties.getPropValue("testURL")+"stores/view-store.html");
-		  
+			log.info("Click on MyStore link under My Tools");
 	}
 	public void clickshow25(){
 		waitFor(_show25);
 		_show25.click();
+		log.info("Click on show25");
 	}
 	public void clickshow50(){
 		waitFor(_show50);
 		_show50.click();
+		log.info("Click on show50");
 	}
 	
 	public void clickchangemystore(){
 		waitFor(_changemystore);
 		_changemystore.click();
+		log.info("Click on changemystore link");
 	}
 	public void clickprint(){
 		waitFor(_printlink);
 		_printlink.click();
+		log.info("Click on print icon to print the driving direction");
 	}
 	
 	public void enterZippharma(String zip1){
 		_enterzippharma.sendKeys(zip1);//entering in pharmacy page
+		log.info("Enter Zipcode in pharmacy page");
 	}
 	
 	public void enterCitypharma(String city1){
 		_entercitypharma.sendKeys(city1);
+		log.info("Enter city name in pharmacy page");
 	}
 	public void selectStatepharma(String state1){
 		_selectstatepharma.sendKeys(state1);
+		log.info("Select state in pharmacy page");
 	}
 	public void clicksearchpharmacy(){
 		waitFor(_clicksearchpharma);
 		_clicksearchpharma.click();
+		log.info("Click on search button in pharmacy page");
 	}
 	
 	public void clickseestoredetails(){
 		waitFor(_seestoredetails);
 		_seestoredetails.click();
+		log.info("Click on see store details link");
 	}
 	public void clickmakemystoreAtseestore(){
 		waitFor(_MakemystoreAtSeestore);
 		_MakemystoreAtSeestore.click();
+		log.info("Click on Make my store at see store details page");
 	}
 }
 

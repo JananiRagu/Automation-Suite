@@ -80,7 +80,7 @@ public class FindAStore extends SuiteBase {
 	
 	//Guest User setting a Store with Zipcode using See store details link
 	
-		@Test(priority=14, enabled=true)
+		@Test(priority=14, enabled=false)
 		public void setStoreGuestZipCode() 
 		{
 			try{
@@ -125,7 +125,7 @@ public class FindAStore extends SuiteBase {
 		}
 		
 		//Guest User setting a Store with City and State name
-		@Test(priority=15 , enabled=true)
+		@Test(priority=15 , enabled=false)
 		public void setStoreGuestCityState() 
 		{
 			try{
@@ -169,7 +169,7 @@ public class FindAStore extends SuiteBase {
 		}
 		
 		//Guest User setting a Store with Street Name,City and State
-		@Test(priority=16, enabled=true)
+		@Test(priority=16, enabled=false)
 		public void setStoreGueststreetname() 
 		{
 			try{
@@ -230,7 +230,7 @@ public class FindAStore extends SuiteBase {
 		}
 		//SIGN IN User with ZIPCODE and change store from view store page
 		
-		@Test(priority=17, enabled=true)
+		@Test(priority=17, enabled=false)
 		public void setStoreAuthorizedZipcode() {
 
 		try{
@@ -261,20 +261,14 @@ public class FindAStore extends SuiteBase {
 			log.info("Find a Store page is launched");
 
 		findastore.clickFAS();
-			log.info("Entered Zip Code details");
 		findastore.enterZipCode(zipcode);
-			log.info("Search button is CLicked");
 		findastore.clicksearchbutton();
-			log.info("Store Locations page is displayed");
 			Thread.sleep(5000);
-		
 			WebElement element = _driver.findElement(By.xpath("//a[text()='Make This My Store']"));
 			
 			element.click();
 			Thread.sleep(5000);
-		
 			log.info("My Store is set");
-		
 			Thread.sleep(5000);
 			String title=_driver.getTitle();
 			System.out.println(title);
@@ -313,7 +307,7 @@ public class FindAStore extends SuiteBase {
 
 		
 		//SIGN IN User with CITY 
-		@Test(priority=18,enabled=true)
+		@Test(priority=18,enabled=false)
 		public void setStoreAuthorizedCityState() {
 
 			try{
@@ -344,30 +338,15 @@ public class FindAStore extends SuiteBase {
 			Thread.sleep(5000);
 
 		findastore.clickFAS();
-
-			log.info("Find a Store page is launched");
-
 		findastore.entercity(cityname);
-			log.info("Entered City name details");
-
 		findastore.selectstate(state);
-			log.info("Entered State name details");
-
 		findastore.clicksearchbutton();
-			log.info("Search button is CLicked");
-			log.info("Store Locations page is displayed");
-
-			Thread.sleep(5000);
-		
+			Thread.sleep(5000);		
 		WebElement element = _driver.findElement(By.xpath("//a[text()='Make This My Store']"));
-		
 		element.click();
-		
 		Thread.sleep(5000);
-			log.info("My Store is set");
-		
+			log.info("My Store is set");	
 		Thread.sleep(5000);
-
 			String title=_driver.getTitle();
 			System.out.println(title);
 		Assert.assertEquals("Cub Foods - View Store", title);
@@ -397,7 +376,7 @@ public class FindAStore extends SuiteBase {
 
 		//Checking miles for 20 miles
 		
-		@Test(priority=19, enabled=true)
+		@Test(priority=19, enabled=false)
 		
 		public void Miles20() 
 		{
@@ -407,7 +386,7 @@ public class FindAStore extends SuiteBase {
 			int results=0;
 			findastore = new FindAStorePage(_driver);
 			
-				log.info("Find a Store page is launched");
+			log.info("Find a Store page is launched");
 			findastore.clickFindAStore();
 			findastore.enterZipCode(zipcode);
 			Select sel1 = new Select(_driver.findElement(By.id("find-radius")));
@@ -454,7 +433,7 @@ public class FindAStore extends SuiteBase {
 			}
 		
 		//Checking miles for 50 miles
-		@Test(priority=20, enabled=true)
+		@Test(priority=20, enabled=false)
 		
 		public void Miles50()
 		{
@@ -512,7 +491,7 @@ public class FindAStore extends SuiteBase {
 
 //Check for Change store option present in Savings page for GUEST USER
 
-	@Test(priority=21, enabled=true)
+	@Test(priority=21, enabled=false)
 	
 	public void changeStoreFromDifferentPages() 
 	{
@@ -585,7 +564,7 @@ public class FindAStore extends SuiteBase {
 	}
 
 	//Clicking on View Stores by State
-	@Test(priority=22, enabled=true)
+	@Test(priority=22, enabled=false)
 	public void StoresbyState() 
 	{
 		try{
@@ -630,7 +609,7 @@ public class FindAStore extends SuiteBase {
 		
 		//Maps and driving directions
 	
-	@Test(priority=23, enabled=true)
+	@Test(priority=23, enabled=false)
 	public void mapanddriving() {
 
 	try{
@@ -662,23 +641,20 @@ public class FindAStore extends SuiteBase {
 		log.info("Find a Store page is launched");
 
 	findastore.clickFAS();
-		log.info("Entered Zip Code details");
 	findastore.enterZipCode(zipcode);
-		log.info("Search button is CLicked");
 	findastore.clicksearchbutton();
-		log.info("Store Locations page is displayed");
-		Thread.sleep(5000);
+	Thread.sleep(5000);
 	
-		WebElement element = _driver.findElement(By.xpath("//a[text()='Make This My Store']"));
+	WebElement element = _driver.findElement(By.xpath("//a[text()='Make This My Store']"));
 		
-		element.click();
-		Thread.sleep(5000);
+	element.click();
+	Thread.sleep(5000);
 	
-		log.info("My Store is set");
+	log.info("My Store is set");
 	
-		Thread.sleep(5000);
-		String title=_driver.getTitle();
-		System.out.println(title);
+	Thread.sleep(5000);
+	String title=_driver.getTitle();
+	System.out.println(title);
 	Assert.assertEquals("Cub Foods - View Store", title);
 		log.info("Store Locations Page-Success" );
 		Thread.sleep(2000);
@@ -686,7 +662,6 @@ public class FindAStore extends SuiteBase {
 		String title1=_driver.getTitle();
 		System.out.println(title1);
 		Assert.assertEquals("Cub Foods - View Store", title);
-		log.info("Map is displayed");
 		Thread.sleep(5000);
 		
 		findastore.clickdriving();
@@ -707,7 +682,6 @@ public class FindAStore extends SuiteBase {
 		Thread.sleep(4000);
 		
 		findastore.clickprint();
-		log.info("Click on Print Link");
 		Thread.sleep(6000);
 		String title4=_driver.getTitle();
 		System.out.println(title4);
@@ -736,7 +710,7 @@ public class FindAStore extends SuiteBase {
 }
 	//Invalid ZipCode
 	
-	@Test(priority=24, enabled=true)
+	@Test(priority=24, enabled=false)
 	public void invalidzipcode() {
 
 	try{
@@ -772,9 +746,7 @@ public class FindAStore extends SuiteBase {
 		
 		findastore.clickFAS();
 		//Alphanumeric characters
-		log.info("Entered Zip Code details");
 		findastore.enterZipCode(invalidzipcode1);
-		log.info("Search button is CLicked");
 		findastore.clicksearchbutton();
 		log.info("Error Message is displayed");
 		Thread.sleep(5000);
@@ -785,7 +757,6 @@ public class FindAStore extends SuiteBase {
 		//Alphabets
 		findastore.clickFAS();
 		findastore.enterZipCode(invalidzipcode2);
-		log.info("Search button is CLicked");
 		findastore.clicksearchbutton();
 		log.info("Error Message is displayed");
 		Thread.sleep(5000);
@@ -796,7 +767,6 @@ public class FindAStore extends SuiteBase {
 		//Special Characters
 		findastore.clickFAS();
 		findastore.enterZipCode(invalidzipcode3);
-		log.info("Search button is CLicked");
 		findastore.clicksearchbutton();
 		log.info("Error Message is displayed");
 		Thread.sleep(5000);
@@ -971,7 +941,7 @@ public class FindAStore extends SuiteBase {
 	
 }
 	//Setting store from My Account page.
-	@Test(priority=26, enabled=true)
+	@Test(priority=26, enabled=false)
 	public void validSignUpandsetstore(){
 		try{
 		// Retrieving test data for valid sign up no card
@@ -1015,19 +985,16 @@ public class FindAStore extends SuiteBase {
 	    }
 	    
 	    MyAccount.clickeditonmystore();
-	    log.info("Click on Edit link");
+	    
 	    Thread.sleep(5000);
 	    
 	    findastore = new FindAStorePage(_driver);
 	  
 	    findastore.enterzip(zipcode);
-	    log.info("Enter Zipcode");
 	    Thread.sleep(2000);
 	    findastore.clickOnSearch();
-	    log.info("Click on Search");
 	    Thread.sleep(5000);
 	    findastore.clickOnStore();
-	    log.info("Select Store");
 	    Thread.sleep(5000);
 	    WebElement ad=_driver.findElement(By.xpath("//*[@class='ss-selected-store']/ul/li[1]"));
 	    String result1=ad.getText();
@@ -1036,7 +1003,6 @@ public class FindAStore extends SuiteBase {
 		Thread.sleep(5000);
 		
 		findastore.clickOnusestore();
-		log.info("Click on Use store button");
 		Thread.sleep(50000);
 		//Verify the selected store is displayed in My Account page
 		WebElement ele1 = _driver.findElement(By.xpath("//*[@id='_content_svubanners_master_en_tools_view-account_jcr_content_centerpar_start_101a']/div[2]/div[5]/div/div"));
@@ -1051,7 +1017,6 @@ public class FindAStore extends SuiteBase {
 	    //Check in My Store page
 	    Thread.sleep(8000);
 	    findastore.clickOnMyStoreUnderMyTools();
-	    log.info("Click on My Store Link");
 	    Thread.sleep(10000);
 	    WebElement ele2 = _driver.findElement(By.xpath("//*[@id='store-details']/p[1]"));
 		String result3=ele2.getText().split("\n")[0];
@@ -1085,7 +1050,7 @@ public class FindAStore extends SuiteBase {
 	
 	//Invalid City Street and State
 	
-		@Test(priority=27, enabled=true)
+		@Test(priority=27, enabled=false)
 		public void invalidCityStreet() {
 
 		try{
@@ -1124,20 +1089,15 @@ public class FindAStore extends SuiteBase {
 			
 			findastore.clickFAS();
 			//Invalid Street
-			log.info("Entered incorrect street details");
 			findastore.enterstreetname(invalidstreet);
-			log.info("Search button is CLicked");
 			findastore.clicksearchbutton();
-			log.info("Error Message is displayed");
 			Thread.sleep(5000);
 			boolean result1=findastore.isIncorrectZipcode();
 			sa.assertTrue(result1, "Invalid street name");
 			//Invalid City Name
 			findastore.clickFAS();
 			findastore.entercity(invalidcity);
-			log.info("Entered incorrect city details");
 			findastore.enterstreetname(invalidstreet);
-			log.info("Search button is CLicked");
 			findastore.clicksearchbutton();
 			log.info("Error Message is displayed");
 			Thread.sleep(5000);
@@ -1186,8 +1146,8 @@ public class FindAStore extends SuiteBase {
 		
 		}
 		
-		
-		@Test(priority=28, enabled=true)
+	//Pharmacy FAS widget	
+		@Test(priority=28, enabled=false)
 		public void pharmacyFASwidget() 
 		{
 			try{
