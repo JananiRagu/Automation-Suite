@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="96849" started-at="2016-09-06T09:39:22Z" finished-at="2016-09-06T09:40:59Z">
+    <groups>
+    </groups>
+    <test name="Sign Up - Testing" duration-ms="96849" started-at="2016-09-06T09:39:22Z" finished-at="2016-09-06T09:40:59Z">
+      <class name="com.test.regression.farmfresh.testscripts.SignUp">
+        <test-method status="PASS" signature="DataSetUp()[pri:0, instance:com.test.regression.farmfresh.testscripts.SignUp@192b07fd]" name="DataSetUp" is-config="true" duration-ms="425" started-at="2016-09-06T15:09:21Z" finished-at="2016-09-06T15:09:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DataSetUp -->
+        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.farmfresh.testscripts.SignUp@192b07fd]" name="initialization" is-config="true" duration-ms="15801" started-at="2016-09-06T15:09:22Z" finished-at="2016-09-06T15:09:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.farmfresh.testscripts.SignUp.validSignUp4mSL()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="validSignUp4mSL()[pri:0, instance:com.test.regression.farmfresh.testscripts.SignUp@192b07fd]" name="validSignUp4mSL" duration-ms="75675" started-at="2016-09-06T15:09:38Z" finished-at="2016-09-06T15:10:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validSignUp4mSL -->
+        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.farmfresh.testscripts.SignUp@192b07fd]" name="breakDown" is-config="true" duration-ms="0" started-at="2016-09-06T15:10:53Z" finished-at="2016-09-06T15:10:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validSignUp4mSL status=SUCCESS method=SignUp.validSignUp4mSL()[pri:0, instance:com.test.regression.farmfresh.testscripts.SignUp@192b07fd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- breakDown -->
+        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.farmfresh.testscripts.SignUp@192b07fd]" name="closeDriver" is-config="true" duration-ms="5352" started-at="2016-09-06T15:10:53Z" finished-at="2016-09-06T15:10:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.farmfresh.testscripts.SignUp.validSignUp4mSL()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- com.test.regression.farmfresh.testscripts.SignUp -->
+    </test> <!-- Sign Up - Testing -->
+  </suite> <!-- Suite -->
+</testng-results>

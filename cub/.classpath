@@ -12,18 +12,17 @@
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO"/>
 	<classpathentry kind="var" path="ECLIPSE_HOME"/>
-	<classpathentry kind="src" output="target/classes" path="src/main/java">
-		<attributes>
-			<attribute name="optional" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" path="src/test/main"/>
+	<classpathentry kind="src" output="target/classes" path="src/test/main">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -1,0 +1,911 @@
+2016-08-25 14:47:27,430 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-25 14:47:27,449 - com.test.regression.cub.utils.Logg -INFO - Starting addCouponForAuthorizedUser ................
+2016-08-25 14:47:27,450 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-25 14:47:43,255 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-08-25 14:47:44,100 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-08-25 14:47:45,234 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-08-25 14:47:53,398 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-08-25 14:48:03,420 - com.test.regression.cub.utils.Logg -INFO - Signed In Successfully
+2016-08-25 14:48:08,563 - com.test.regression.cub.utils.Logg -INFO - ...Inside clickOnCouponsInMyToolsHomePage method...
+2016-08-25 14:48:26,793 - com.test.regression.cub.utils.Logg -INFO - Clicked on Coupons in Home page
+2016-08-25 14:48:26,794 - com.test.regression.cub.utils.Logg -INFO - ...Inside loadCompleteCouponsPage method...
+2016-08-25 14:48:26,794 - com.test.regression.cub.utils.Logg -INFO - ...Inside scrollPageDown method...
+2016-08-25 14:48:34,237 - com.test.regression.cub.utils.Logg -INFO - Timed out after 5 seconds waiting for element to be clickable: [[ChromeDriver: chrome on XP (c9e3af1815d6f031ad6f70db0933f231)] -> xpath: //button[@class='button tiny more-coupons-button']]
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir205372_26392}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c9e3af1815d6f031ad6f70db0933f231
+2016-08-25 14:48:41,644 - com.test.regression.cub.utils.Logg -INFO - Timed out after 5 seconds waiting for element to be clickable: [[ChromeDriver: chrome on XP (c9e3af1815d6f031ad6f70db0933f231)] -> xpath: //button[@class='button tiny more-coupons-button']]
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir205372_26392}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c9e3af1815d6f031ad6f70db0933f231
+2016-08-25 14:48:48,795 - com.test.regression.cub.utils.Logg -INFO - Timed out after 5 seconds waiting for element to be clickable: [[ChromeDriver: chrome on XP (c9e3af1815d6f031ad6f70db0933f231)] -> xpath: //button[@class='button tiny more-coupons-button']]
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir205372_26392}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c9e3af1815d6f031ad6f70db0933f231
+2016-08-25 14:48:55,385 - com.test.regression.cub.utils.Logg -INFO - Timed out after 5 seconds waiting for element to be clickable: [[ChromeDriver: chrome on XP (c9e3af1815d6f031ad6f70db0933f231)] -> xpath: //button[@class='button tiny more-coupons-button']]
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir205372_26392}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c9e3af1815d6f031ad6f70db0933f231
+2016-08-25 14:49:03,347 - com.test.regression.cub.utils.Logg -INFO - !!!!!!!!!!!!!!At Last Get Success!!!!!!!!!!!!!!!!
+2016-08-25 14:49:03,347 - com.test.regression.cub.utils.Logg -INFO - ...Inside scrollPageDown method...
+2016-08-25 14:49:09,879 - com.test.regression.cub.utils.Logg -INFO - !!!!!!!!!!!!!!At Last Get Success!!!!!!!!!!!!!!!!
+2016-08-25 14:49:09,880 - com.test.regression.cub.utils.Logg -INFO - ...Inside scrollPageDown method...
+2016-08-25 14:49:15,119 - com.test.regression.cub.utils.Logg -INFO - !!!!!!!!!!!!!!At Last Get Success!!!!!!!!!!!!!!!!
+2016-08-25 14:53:03,264 - com.test.regression.cub.utils.Logg -INFO - Coupons Page is loaded fully
+2016-08-25 14:53:03,264 - com.test.regression.cub.utils.Logg -INFO - ...Inside addSingleCoupon method...
+2016-08-25 14:53:03,265 - com.test.regression.cub.utils.Logg -INFO - ...Inside chkIfFlipp method...
+2016-08-25 14:53:03,984 - com.test.regression.cub.utils.Logg -INFO - Coupon is Flippp!
+2016-08-25 14:53:03,984 - com.test.regression.cub.utils.Logg -INFO - isCouponFlipp value : true
+2016-08-25 14:53:03,987 - com.test.regression.cub.utils.Logg -INFO - ...Inside addNthFlippCoupon method...
+2016-08-25 14:53:03,987 - com.test.regression.cub.utils.Logg -INFO - Trying to Add this coupon//div[@class='coupon-list']/div[32]/div/div/div[3]/button[text()='+ Add Item']
+2016-08-25 14:53:09,711 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[32]/div/div/div[3]/button[text()='+ Add Item']
+2016-08-25 14:53:09,714 - com.test.regression.cub.utils.Logg -INFO - Added nth coupon
+2016-08-25 14:53:09,714 - com.test.regression.cub.utils.Logg -INFO - ...Inside getNthFlippCouponName method...
+2016-08-25 14:53:09,807 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page which i am trying to add: save $5.00
+2016-08-25 14:53:09,808 - com.test.regression.cub.utils.Logg -INFO - ...Inside getCouponName method...
+2016-08-25 14:53:09,808 - com.test.regression.cub.utils.Logg -INFO - ...Inside chkIfFlipp method...
+2016-08-25 14:53:09,852 - com.test.regression.cub.utils.Logg -INFO - Coupon is Flippp!
+2016-08-25 14:53:09,852 - com.test.regression.cub.utils.Logg -INFO - isCouponFlipp value : true
+2016-08-25 14:53:09,953 - com.test.regression.cub.utils.Logg -INFO - Got Flipp Coupon Name
+2016-08-25 14:53:21,303 - com.test.regression.cub.utils.Logg -INFO - Clicked on My eCoupons in Home page
+2016-08-25 14:53:32,947 - com.test.regression.cub.utils.Logg -INFO - Is Coupon present in My eCoupons Pagetrue
+2016-08-25 14:53:32,973 - com.test.regression.cub.utils.Logg -INFO - ...Inside clickOnMyListInMyToolsHomePage method...
+2016-08-25 14:53:42,658 - com.test.regression.cub.utils.Logg -INFO - Launched My Shopping List Page
+2016-08-25 14:53:48,168 - com.test.regression.cub.utils.Logg -INFO - addCouponForAuthorizedUser execution Complete.............
+2016-08-25 14:53:48,170 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-25 14:53:48,174 - com.test.regression.cub.utils.Logg -INFO - Starting addCouponFromCouponDetailsPageForAuthorizedUser ................
+2016-08-25 14:53:48,175 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-25 14:54:00,393 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-08-25 14:54:01,156 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-08-25 14:54:02,713 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-08-25 14:54:08,666 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-08-25 14:54:18,668 - com.test.regression.cub.utils.Logg -INFO - Signed In Successfully
+2016-08-25 14:54:23,694 - com.test.regression.cub.utils.Logg -INFO - ...Inside clickOnCouponsInMyToolsHomePage method...
+2016-08-25 14:55:01,349 - com.test.regression.cub.utils.Logg -INFO - Clicked on Coupons in Home page
+2016-08-25 14:55:06,352 - com.test.regression.cub.utils.Logg -INFO - ...Inside navigateToCouponDetailPage method...
+2016-08-25 14:55:31,449 - com.test.regression.cub.utils.Logg -INFO - no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='coupon-list']/div[59]/div/div/div[1]/div[2]/h3/a"}
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir207700_24535}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 037b7f0b64b6a5b67e3e2ba8c6d69e2a
+*** Element info: {Using=xpath, value=//div[@class='coupon-list']/div[59]/div/div/div[1]/div[2]/h3/a}
+2016-08-25 14:55:35,301 - com.test.regression.cub.utils.Logg -INFO - addCouponFromCouponDetailsPageForAuthorizedUser execution Complete.............
+2016-08-25 14:55:35,304 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-25 14:55:35,304 - com.test.regression.cub.utils.Logg -INFO - Starting couponPageFullLoad ................
+2016-08-25 14:55:35,304 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-25 14:55:52,248 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-08-25 14:55:52,255 - com.test.regression.cub.utils.Logg -INFO - ...Inside clickOnCouponsInMyToolsHomePage method...
+2016-08-25 14:55:58,769 - com.test.regression.cub.utils.Logg -INFO - Clicked on Coupons in Home page
+2016-08-25 14:55:58,770 - com.test.regression.cub.utils.Logg -INFO - ...Inside loadCompleteCouponsPage method...
+2016-08-25 14:55:58,770 - com.test.regression.cub.utils.Logg -INFO - ...Inside scrollPageDown method...
+2016-08-25 14:56:05,470 - com.test.regression.cub.utils.Logg -INFO - Timed out after 5 seconds waiting for element to be clickable: [[ChromeDriver: chrome on XP (a5ed318e55f7dd58412acd032fab501b)] -> xpath: //button[@class='button tiny more-coupons-button']]
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir206400_13400}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a5ed318e55f7dd58412acd032fab501b
+2016-08-25 14:56:10,969 - com.test.regression.cub.utils.Logg -INFO - Timed out after 5 seconds waiting for element to be clickable: [[ChromeDriver: chrome on XP (a5ed318e55f7dd58412acd032fab501b)] -> xpath: //button[@class='button tiny more-coupons-button']]
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir206400_13400}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a5ed318e55f7dd58412acd032fab501b
+2016-08-25 14:56:16,437 - com.test.regression.cub.utils.Logg -INFO - Timed out after 5 seconds waiting for element to be clickable: [[ChromeDriver: chrome on XP (a5ed318e55f7dd58412acd032fab501b)] -> xpath: //button[@class='button tiny more-coupons-button']]
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir206400_13400}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a5ed318e55f7dd58412acd032fab501b
+2016-08-25 14:56:22,131 - com.test.regression.cub.utils.Logg -INFO - Timed out after 5 seconds waiting for element to be clickable: [[ChromeDriver: chrome on XP (a5ed318e55f7dd58412acd032fab501b)] -> xpath: //button[@class='button tiny more-coupons-button']]
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir206400_13400}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a5ed318e55f7dd58412acd032fab501b
+2016-08-25 14:56:24,812 - com.test.regression.cub.utils.Logg -INFO - !!!!!!!!!!!!!!At Last Get Success!!!!!!!!!!!!!!!!
+2016-08-25 14:56:24,812 - com.test.regression.cub.utils.Logg -INFO - ...Inside scrollPageDown method...
+2016-08-25 14:56:26,864 - com.test.regression.cub.utils.Logg -INFO - !!!!!!!!!!!!!!At Last Get Success!!!!!!!!!!!!!!!!
+2016-08-25 14:56:26,864 - com.test.regression.cub.utils.Logg -INFO - ...Inside scrollPageDown method...
+2016-08-25 14:56:29,587 - com.test.regression.cub.utils.Logg -INFO - !!!!!!!!!!!!!!At Last Get Success!!!!!!!!!!!!!!!!
+2016-08-25 15:03:45,744 - com.test.regression.cub.utils.Logg -INFO - couponPageFullLoad execution Complete.............
+2016-08-25 15:03:45,746 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-25 15:03:45,747 - com.test.regression.cub.utils.Logg -INFO - Starting searchTestInCoupons ................
+2016-08-25 15:03:45,747 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-25 15:03:57,807 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-08-25 15:03:57,848 - com.test.regression.cub.utils.Logg -INFO - ...Inside clickOnCouponsInMyToolsHomePage method...
+2016-08-25 15:04:02,494 - com.test.regression.cub.utils.Logg -INFO - Clicked on Coupons in Home page
+2016-08-25 15:04:02,496 - com.test.regression.cub.utils.Logg -INFO - ...Inside searchForAnItemInCoupons method...
+2016-08-25 15:04:08,000 - com.test.regression.cub.utils.Logg -INFO - ...Inside getSelectedCategory method...
+2016-08-25 15:04:11,126 - com.test.regression.cub.utils.Logg -INFO - searchTestInCoupons execution Complete.............
+2016-08-25 15:04:11,128 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-25 15:04:11,129 - com.test.regression.cub.utils.Logg -INFO - Starting addCouponForWantOneNewUser ................
+2016-08-25 15:04:11,130 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-25 15:04:24,224 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-08-25 15:04:25,106 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
+2016-08-25 15:04:25,107 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-08-25 15:04:25,107 - com.test.regression.cub.utils.Logg -INFO - User Name : newuser5_110@cub.com
+2016-08-25 15:04:25,108 - com.test.regression.cub.utils.Logg -INFO - Password : password
+2016-08-25 15:04:27,020 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
+2016-08-25 15:04:43,762 - com.test.regression.cub.utils.Logg -INFO - Selected 'No, But I want one' option
+2016-08-25 15:04:48,921 - com.test.regression.cub.utils.Logg -INFO - Clicked on Continue Button
+2016-08-25 15:04:53,392 - com.test.regression.cub.utils.Logg -INFO - Entered the Contact Information details..
+2016-08-25 15:04:55,185 - com.test.regression.cub.utils.Logg -INFO - Clicked on Use this address button on Address Verification
+2016-08-25 15:05:05,237 - com.test.regression.cub.utils.Logg -INFO - ...Inside clickOnCouponsInMyToolsHomePage method...
+2016-08-25 15:05:10,898 - com.test.regression.cub.utils.Logg -INFO - Clicked on Coupons in Home page
+2016-08-25 15:05:15,900 - com.test.regression.cub.utils.Logg -INFO - ...Inside addListOfCoupons method...
+2016-08-25 15:05:15,900 - com.test.regression.cub.utils.Logg -INFO - ...Inside chkIfFlipp method...
+2016-08-25 15:05:15,944 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
+2016-08-25 15:05:15,945 - com.test.regression.cub.utils.Logg -INFO - isCouponFlipp value is false
+2016-08-25 15:05:15,945 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
+2016-08-25 15:05:15,945 - com.test.regression.cub.utils.Logg -INFO - ...Inside addNthInmarCoupon method...
+2016-08-25 15:05:15,945 - com.test.regression.cub.utils.Logg -INFO - Trying to Add this coupon//div[@class='coupon-list']/div[1]/div/div/div[2]/button[text()='+ Add Item']
+2016-08-25 15:05:21,105 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[1]/div/div/div[2]/button[text()='+ Add Item']
+2016-08-25 15:05:21,108 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
+2016-08-25 15:05:21,108 - com.test.regression.cub.utils.Logg -INFO - ...Inside getNthInmarCouponName method...
+2016-08-25 15:05:21,178 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page which i am trying to add: save $1.50
+2016-08-25 15:05:21,178 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $1.50
+2016-08-25 15:05:21,178 - com.test.regression.cub.utils.Logg -INFO - ...Inside chkIfFlipp method...
+2016-08-25 15:05:21,221 - com.test.regression.cub.utils.Logg -INFO - Coupon is Flippp!
+2016-08-25 15:05:21,222 - com.test.regression.cub.utils.Logg -INFO - isCouponFlipp value is true
+2016-08-25 15:05:21,222 - com.test.regression.cub.utils.Logg -INFO - Trying to add Flipp Coupon
+2016-08-25 15:05:21,222 - com.test.regression.cub.utils.Logg -INFO - ...Inside addNthFlippCoupon method...
+2016-08-25 15:05:21,223 - com.test.regression.cub.utils.Logg -INFO - Trying to Add this coupon//div[@class='coupon-list']/div[3]/div/div/div[3]/button[text()='+ Add Item']
+2016-08-25 15:05:26,971 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[3]/div/div/div[3]/button[text()='+ Add Item']
+2016-08-25 15:05:26,972 - com.test.regression.cub.utils.Logg -INFO - Added wanted Flipp coupon
+2016-08-25 15:05:26,972 - com.test.regression.cub.utils.Logg -INFO - ...Inside getNthFlippCouponName method...
+2016-08-25 15:05:27,033 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page which i am trying to add: save $2.00
+2016-08-25 15:05:27,033 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $2.00
+2016-08-25 15:05:27,033 - com.test.regression.cub.utils.Logg -INFO - ...Inside chkIfFlipp method...
+2016-08-25 15:05:27,091 - com.test.regression.cub.utils.Logg -INFO - Coupon is Flippp!
+2016-08-25 15:05:27,091 - com.test.regression.cub.utils.Logg -INFO - isCouponFlipp value is true
+2016-08-25 15:05:27,091 - com.test.regression.cub.utils.Logg -INFO - Trying to add Flipp Coupon
+2016-08-25 15:05:27,095 - com.test.regression.cub.utils.Logg -INFO - ...Inside addNthFlippCoupon method...
+2016-08-25 15:05:27,096 - com.test.regression.cub.utils.Logg -INFO - Trying to Add this coupon//div[@class='coupon-list']/div[9]/div/div/div[3]/button[text()='+ Add Item']
+2016-08-25 15:05:32,332 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[9]/div/div/div[3]/button[text()='+ Add Item']
+2016-08-25 15:05:32,333 - com.test.regression.cub.utils.Logg -INFO - Added wanted Flipp coupon
+2016-08-25 15:05:32,337 - com.test.regression.cub.utils.Logg -INFO - ...Inside getNthFlippCouponName method...
+2016-08-25 15:05:32,400 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page which i am trying to add: save $3.00
+2016-08-25 15:05:32,401 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $3.00
+2016-08-25 15:05:32,401 - com.test.regression.cub.utils.Logg -INFO - ...Inside chkIfFlipp method...
+2016-08-25 15:05:32,442 - com.test.regression.cub.utils.Logg -INFO - Coupon is Flippp!
+2016-08-25 15:05:32,443 - com.test.regression.cub.utils.Logg -INFO - isCouponFlipp value is true
+2016-08-25 15:05:32,443 - com.test.regression.cub.utils.Logg -INFO - Trying to add Flipp Coupon
+2016-08-25 15:05:32,443 - com.test.regression.cub.utils.Logg -INFO - ...Inside addNthFlippCoupon method...
+2016-08-25 15:05:32,443 - com.test.regression.cub.utils.Logg -INFO - Trying to Add this coupon//div[@class='coupon-list']/div[11]/div/div/div[3]/button[text()='+ Add Item']
+2016-08-25 15:05:37,590 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[11]/div/div/div[3]/button[text()='+ Add Item']
+2016-08-25 15:05:37,592 - com.test.regression.cub.utils.Logg -INFO - Added wanted Flipp coupon
+2016-08-25 15:05:37,592 - com.test.regression.cub.utils.Logg -INFO - ...Inside getNthFlippCouponName method...
+2016-08-25 15:05:37,651 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page which i am trying to add: 2 for 6.00 Save up to $2.49 ea.
+2016-08-25 15:05:37,651 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : 2 for 6.00 Save up to $2.49 ea.
+2016-08-25 15:05:48,328 - com.test.regression.cub.utils.Logg -INFO - Clicked on My eCoupons in Home page
+2016-08-25 15:05:48,329 - com.test.regression.cub.utils.Logg -INFO - Validating whether the added coupon is in My eCoupons page
+2016-08-25 15:05:55,373 - com.test.regression.cub.utils.Logg -INFO - No. of coupons in eCoupons page is : 4
+2016-08-25 15:05:59,113 - com.test.regression.cub.utils.Logg -INFO - addCouponForWantOneNewUser execution Complete.............
+2016-08-25 15:05:59,116 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-25 15:05:59,117 - com.test.regression.cub.utils.Logg -INFO - Starting categoryTestInCoupons ................
+2016-08-25 15:05:59,117 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-25 15:06:13,836 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-08-25 15:06:13,846 - com.test.regression.cub.utils.Logg -INFO - ...Inside clickOnCouponsInMyToolsHomePage method...
+2016-08-25 15:06:20,283 - com.test.regression.cub.utils.Logg -INFO - Clicked on Coupons in Home page
+2016-08-25 15:06:20,284 - com.test.regression.cub.utils.Logg -INFO - ...Inside selectCatergory method...
+2016-08-25 15:06:26,026 - com.test.regression.cub.utils.Logg -INFO - ...Inside getSelectedCategory method...
+2016-08-25 15:06:29,679 - com.test.regression.cub.utils.Logg -INFO - categoryTestInCoupons execution Complete.............
+2016-08-25 15:06:29,680 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-25 15:06:29,680 - com.test.regression.cub.utils.Logg -INFO - Starting addCouponForNoCardNewUser ................
+2016-08-25 15:06:29,681 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-25 15:06:40,174 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-08-25 15:06:40,223 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-08-25 15:06:40,224 - com.test.regression.cub.utils.Logg -INFO - User Name : newuser4_110@cub.com
+2016-08-25 15:06:40,224 - com.test.regression.cub.utils.Logg -INFO - Password : password
+2016-08-25 15:06:41,900 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
+2016-08-25 15:06:46,296 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
+2016-08-25 15:07:02,873 - com.test.regression.cub.utils.Logg -INFO - Didnt Select any option in Rewards Card popup, Just Closed the popup
+2016-08-25 15:07:02,876 - com.test.regression.cub.utils.Logg -INFO - ...Inside clickOnCouponsInMyToolsHomePage method...
+2016-08-25 15:07:09,666 - com.test.regression.cub.utils.Logg -INFO - Clicked on Coupons in Home page
+2016-08-25 15:07:14,668 - com.test.regression.cub.utils.Logg -INFO - ...Inside addSingleCouponWithCardlessId method...
+2016-08-25 15:07:14,668 - com.test.regression.cub.utils.Logg -INFO - ...Inside chkIfFlipp method...
+2016-08-25 15:07:14,739 - com.test.regression.cub.utils.Logg -INFO - Coupon is Flippp!
+2016-08-25 15:07:14,739 - com.test.regression.cub.utils.Logg -INFO - isCouponFlipp value is true
+2016-08-25 15:07:14,740 - com.test.regression.cub.utils.Logg -INFO - Trying to add Flipp Coupon
+2016-08-25 15:07:14,740 - com.test.regression.cub.utils.Logg -INFO - ...Inside addNthFlippCoupon method...
+2016-08-25 15:07:14,740 - com.test.regression.cub.utils.Logg -INFO - Trying to Add this coupon//div[@class='coupon-list']/div[2]/div/div/div[3]/button[text()='+ Add Item']
+2016-08-25 15:07:19,938 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[2]/div/div/div[3]/button[text()='+ Add Item']
+2016-08-25 15:07:19,938 - com.test.regression.cub.utils.Logg -INFO - Added wanted Flipp coupon
+2016-08-25 15:07:19,938 - com.test.regression.cub.utils.Logg -INFO - ...Inside enterCardlessId method...
+2016-08-25 15:07:21,669 - com.test.regression.cub.utils.Logg -INFO - Entered Cardless id
+2016-08-25 15:07:26,670 - com.test.regression.cub.utils.Logg -INFO - Entered Cardless Id Details
+2016-08-25 15:07:26,670 - com.test.regression.cub.utils.Logg -INFO - ...Inside clickContinueInAddCardlessIdPopup method...
+2016-08-25 15:07:36,834 - com.test.regression.cub.utils.Logg -INFO - Clicked on Continue in Add Cardless id popup
+2016-08-25 15:07:36,835 - com.test.regression.cub.utils.Logg -INFO - ...Inside clickContinueAfterAddingCardlessIdCongratsPopup method...
+2016-08-25 15:07:41,972 - com.test.regression.cub.utils.Logg -INFO - Clicked on Continue in Congrats popup
+2016-08-25 15:07:41,973 - com.test.regression.cub.utils.Logg -INFO - ...Inside getNthFlippCouponName method...
+2016-08-25 15:07:42,153 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page which i am trying to add: save $2.00
+2016-08-25 15:07:42,154 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $2.00
+2016-08-25 15:07:42,154 - com.test.regression.cub.utils.Logg -INFO - ...Inside addListOfCoupons method...
+2016-08-25 15:07:42,154 - com.test.regression.cub.utils.Logg -INFO - ...Inside chkIfFlipp method...
+2016-08-25 15:07:42,246 - com.test.regression.cub.utils.Logg -INFO - Coupon is Flippp!
+2016-08-25 15:07:42,247 - com.test.regression.cub.utils.Logg -INFO - isCouponFlipp value is true
+2016-08-25 15:07:42,247 - com.test.regression.cub.utils.Logg -INFO - Trying to add Flipp Coupon
+2016-08-25 15:07:42,248 - com.test.regression.cub.utils.Logg -INFO - ...Inside addNthFlippCoupon method...
+2016-08-25 15:07:42,249 - com.test.regression.cub.utils.Logg -INFO - Trying to Add this coupon//div[@class='coupon-list']/div[4]/div/div/div[3]/button[text()='+ Add Item']
+2016-08-25 15:07:47,376 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[4]/div/div/div[3]/button[text()='+ Add Item']
+2016-08-25 15:07:47,376 - com.test.regression.cub.utils.Logg -INFO - Added wanted Flipp coupon
+2016-08-25 15:07:47,377 - com.test.regression.cub.utils.Logg -INFO - ...Inside getNthFlippCouponName method...
+2016-08-25 15:07:47,464 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page which i am trying to add: save $2.00
+2016-08-25 15:07:47,465 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $2.00
+2016-08-25 15:07:47,465 - com.test.regression.cub.utils.Logg -INFO - ...Inside chkIfFlipp method...
+2016-08-25 15:07:47,522 - com.test.regression.cub.utils.Logg -INFO - Coupon is Flippp!
+2016-08-25 15:07:47,522 - com.test.regression.cub.utils.Logg -INFO - isCouponFlipp value is true
+2016-08-25 15:07:47,523 - com.test.regression.cub.utils.Logg -INFO - Trying to add Flipp Coupon
+2016-08-25 15:07:47,523 - com.test.regression.cub.utils.Logg -INFO - ...Inside addNthFlippCoupon method...
+2016-08-25 15:07:47,523 - com.test.regression.cub.utils.Logg -INFO - Trying to Add this coupon//div[@class='coupon-list']/div[9]/div/div/div[3]/button[text()='+ Add Item']
+2016-08-25 15:07:52,759 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[9]/div/div/div[3]/button[text()='+ Add Item']
+2016-08-25 15:07:52,759 - com.test.regression.cub.utils.Logg -INFO - Added wanted Flipp coupon
+2016-08-25 15:07:52,759 - com.test.regression.cub.utils.Logg -INFO - ...Inside getNthFlippCouponName method...
+2016-08-25 15:07:52,833 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page which i am trying to add: save $3.00
+2016-08-25 15:07:52,834 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $3.00
+2016-08-25 15:08:07,505 - com.test.regression.cub.utils.Logg -INFO - Clicked on My eCoupons in Home page
+2016-08-25 15:08:07,505 - com.test.regression.cub.utils.Logg -INFO - Validating whether the added coupon is in My eCoupons page
+2016-08-25 15:08:14,537 - com.test.regression.cub.utils.Logg -INFO - No. of coupons in eCoupons page is : 3
+2016-08-25 15:08:17,884 - com.test.regression.cub.utils.Logg -INFO - addCouponForNoCardNewUser execution Complete.............
+2016-08-25 15:08:17,886 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-25 15:08:17,886 - com.test.regression.cub.utils.Logg -INFO - Starting addCouponForNoCardNotNowCardlessIdNewUser ................
+2016-08-25 15:08:17,887 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-25 15:08:28,500 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-08-25 15:08:28,559 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-08-25 15:08:28,560 - com.test.regression.cub.utils.Logg -INFO - User Name : newuser6_110@cub.com
+2016-08-25 15:08:28,560 - com.test.regression.cub.utils.Logg -INFO - Password : password
+2016-08-25 15:08:29,309 - com.test.regression.cub.utils.Logg -INFO - Clicked on SignUp Link..
+2016-08-25 15:08:31,072 - com.test.regression.cub.utils.Logg -INFO - Entered SignUp Username and Password
+2016-08-25 15:09:01,099 - com.test.regression.cub.utils.Logg -INFO - Didnt Select any option in Rewards Card popup, Just Closed the popup
+2016-08-25 15:09:01,105 - com.test.regression.cub.utils.Logg -INFO - ...Inside clickOnCouponsInMyToolsHomePage method...
+2016-08-25 15:09:24,370 - com.test.regression.cub.utils.Logg -INFO - Clicked on Coupons in Home page
+2016-08-25 15:09:29,371 - com.test.regression.cub.utils.Logg -INFO - ...Inside addSingleCouponWithNotNowInCardlessIdPopup method...
+2016-08-25 15:09:29,371 - com.test.regression.cub.utils.Logg -INFO - ...Inside chkIfFlipp method...
+2016-08-25 15:09:30,096 - com.test.regression.cub.utils.Logg -INFO - Coupon is Flippp!
+2016-08-25 15:09:30,096 - com.test.regression.cub.utils.Logg -INFO - isCouponFlipp value is true
+2016-08-25 15:09:30,096 - com.test.regression.cub.utils.Logg -INFO - Trying to add Flipp Coupon
+2016-08-25 15:09:30,097 - com.test.regression.cub.utils.Logg -INFO - ...Inside addNthFlippCoupon method...
+2016-08-25 15:09:30,097 - com.test.regression.cub.utils.Logg -INFO - Trying to Add this coupon//div[@class='coupon-list']/div[2]/div/div/div[3]/button[text()='+ Add Item']
+2016-08-25 15:09:35,244 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[2]/div/div/div[3]/button[text()='+ Add Item']
+2016-08-25 15:09:35,244 - com.test.regression.cub.utils.Logg -INFO - Added wanted Flipp coupon
+2016-08-25 15:09:35,245 - com.test.regression.cub.utils.Logg -INFO - ...Inside enterCardlessId method...
+2016-08-25 15:09:37,059 - com.test.regression.cub.utils.Logg -INFO - Entered Cardless id
+2016-08-25 15:09:42,061 - com.test.regression.cub.utils.Logg -INFO - Entered Cardless Id Details
+2016-08-25 15:09:42,061 - com.test.regression.cub.utils.Logg -INFO - ...Inside clickNotNowInCardlessIdPopup method...
+2016-08-25 15:09:47,341 - com.test.regression.cub.utils.Logg -INFO - Clicked on Not Now in Add Cardless id popup
+2016-08-25 15:09:47,342 - com.test.regression.cub.utils.Logg -INFO - ...Inside getNthFlippCouponName method...
+2016-08-25 15:09:47,506 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page which i am trying to add: save $2.00
+2016-08-25 15:09:47,507 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $2.00
+2016-08-25 15:09:47,507 - com.test.regression.cub.utils.Logg -INFO - ...Inside addListOfCoupons method...
+2016-08-25 15:09:47,507 - com.test.regression.cub.utils.Logg -INFO - ...Inside chkIfFlipp method...
+2016-08-25 15:09:47,559 - com.test.regression.cub.utils.Logg -INFO - Coupon is Inmar!
+2016-08-25 15:09:47,559 - com.test.regression.cub.utils.Logg -INFO - isCouponFlipp value is false
+2016-08-25 15:09:47,559 - com.test.regression.cub.utils.Logg -INFO - Trying to add Inmar Coupon
+2016-08-25 15:09:47,559 - com.test.regression.cub.utils.Logg -INFO - ...Inside addNthInmarCoupon method...
+2016-08-25 15:09:47,560 - com.test.regression.cub.utils.Logg -INFO - Trying to Add this coupon//div[@class='coupon-list']/div[5]/div/div/div[2]/button[text()='+ Add Item']
+2016-08-25 15:09:52,841 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[5]/div/div/div[2]/button[text()='+ Add Item']
+2016-08-25 15:09:52,842 - com.test.regression.cub.utils.Logg -INFO - Added wanted Inmar Coupon
+2016-08-25 15:09:52,842 - com.test.regression.cub.utils.Logg -INFO - ...Inside getNthInmarCouponName method...
+2016-08-25 15:09:52,909 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page which i am trying to add: save $0.50
+2016-08-25 15:09:52,910 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : save $0.50
+2016-08-25 15:09:52,910 - com.test.regression.cub.utils.Logg -INFO - ...Inside chkIfFlipp method...
+2016-08-25 15:09:52,958 - com.test.regression.cub.utils.Logg -INFO - Coupon is Flippp!
+2016-08-25 15:09:52,977 - com.test.regression.cub.utils.Logg -INFO - isCouponFlipp value is true
+2016-08-25 15:09:52,978 - com.test.regression.cub.utils.Logg -INFO - Trying to add Flipp Coupon
+2016-08-25 15:09:52,978 - com.test.regression.cub.utils.Logg -INFO - ...Inside addNthFlippCoupon method...
+2016-08-25 15:09:52,978 - com.test.regression.cub.utils.Logg -INFO - Trying to Add this coupon//div[@class='coupon-list']/div[8]/div/div/div[3]/button[text()='+ Add Item']
+2016-08-25 15:09:58,108 - com.test.regression.cub.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[8]/div/div/div[3]/button[text()='+ Add Item']
+2016-08-25 15:09:58,109 - com.test.regression.cub.utils.Logg -INFO - Added wanted Flipp coupon
+2016-08-25 15:09:58,109 - com.test.regression.cub.utils.Logg -INFO - ...Inside getNthFlippCouponName method...
+2016-08-25 15:09:58,181 - com.test.regression.cub.utils.Logg -INFO - Coupon name in Coupons page which i am trying to add: 6.99 ea. Save up to $3.00 ea.
+2016-08-25 15:09:58,181 - com.test.regression.cub.utils.Logg -INFO - Added Coupon Name : 6.99 ea. Save up to $3.00 ea.
+2016-08-25 15:10:08,753 - com.test.regression.cub.utils.Logg -INFO - Clicked on My eCoupons in Home page
+2016-08-25 15:10:08,753 - com.test.regression.cub.utils.Logg -INFO - Validating whether the added coupon is in My eCoupons page
+2016-08-25 15:10:15,783 - com.test.regression.cub.utils.Logg -INFO - No. of coupons in eCoupons page is : 3
+2016-08-25 15:10:27,964 - com.test.regression.cub.utils.Logg -INFO - Clicked on My Account link under My Tools tab
+2016-08-25 15:10:28,036 - com.test.regression.cub.utils.Logg -INFO - Is Cardless id displayed in My Account Page : true
+2016-08-25 15:10:31,204 - com.test.regression.cub.utils.Logg -INFO - addCouponForNoCardNotNowCardlessIdNewUser execution Complete.............
+2016-08-25 15:10:31,205 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-25 15:10:31,208 - com.test.regression.cub.utils.Logg -INFO - Starting chkCouponSort ................
+2016-08-25 15:10:31,209 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-25 15:10:40,458 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-08-25 15:10:40,461 - com.test.regression.cub.utils.Logg -INFO - ...Inside clickOnCouponsInMyToolsHomePage method...
+2016-08-25 15:10:44,688 - com.test.regression.cub.utils.Logg -INFO - Clicked on Coupons in Home page
+2016-08-25 15:10:44,688 - com.test.regression.cub.utils.Logg -INFO - ...Inside loadCompleteCouponsPage method...
+2016-08-25 15:10:44,688 - com.test.regression.cub.utils.Logg -INFO - ...Inside scrollPageDown method...
+2016-08-25 15:10:50,500 - com.test.regression.cub.utils.Logg -INFO - Timed out after 5 seconds waiting for element to be clickable: [[ChromeDriver: chrome on XP (458478f9decd78e02e5b6a10265c5983)] -> xpath: //button[@class='button tiny more-coupons-button']]
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir211520_19826}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 458478f9decd78e02e5b6a10265c5983
+2016-08-25 15:10:55,765 - com.test.regression.cub.utils.Logg -INFO - Timed out after 5 seconds waiting for element to be clickable: [[ChromeDriver: chrome on XP (458478f9decd78e02e5b6a10265c5983)] -> xpath: //button[@class='button tiny more-coupons-button']]
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir211520_19826}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 458478f9decd78e02e5b6a10265c5983
+2016-08-25 15:11:01,316 - com.test.regression.cub.utils.Logg -INFO - Timed out after 5 seconds waiting for element to be clickable: [[ChromeDriver: chrome on XP (458478f9decd78e02e5b6a10265c5983)] -> xpath: //button[@class='button tiny more-coupons-button']]
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir211520_19826}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 458478f9decd78e02e5b6a10265c5983
+2016-08-25 15:11:06,423 - com.test.regression.cub.utils.Logg -INFO - Timed out after 5 seconds waiting for element to be clickable: [[ChromeDriver: chrome on XP (458478f9decd78e02e5b6a10265c5983)] -> xpath: //button[@class='button tiny more-coupons-button']]
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir211520_19826}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 458478f9decd78e02e5b6a10265c5983
+2016-08-25 15:11:09,060 - com.test.regression.cub.utils.Logg -INFO - !!!!!!!!!!!!!!At Last Get Success!!!!!!!!!!!!!!!!
+2016-08-25 15:11:09,060 - com.test.regression.cub.utils.Logg -INFO - ...Inside scrollPageDown method...
+2016-08-25 15:11:11,305 - com.test.regression.cub.utils.Logg -INFO - !!!!!!!!!!!!!!At Last Get Success!!!!!!!!!!!!!!!!
+2016-08-25 15:11:11,305 - com.test.regression.cub.utils.Logg -INFO - ...Inside scrollPageDown method...
+2016-08-25 15:11:16,823 - com.test.regression.cub.utils.Logg -INFO - !!!!!!!!!!!!!!At Last Get Success!!!!!!!!!!!!!!!!
+2016-08-25 16:25:53,176 - com.test.regression.cub.utils.Logg -INFO - chkCouponSort execution Complete.............
+2016-08-26 11:55:19,768 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-26 11:55:19,795 - com.test.regression.cub.utils.Logg -INFO - Starting validLogin ................
+2016-08-26 11:55:19,796 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-26 12:02:43,718 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-26 12:02:43,726 - com.test.regression.cub.utils.Logg -INFO - Starting validLogin ................
+2016-08-26 12:02:43,726 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-26 12:05:03,707 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-26 12:05:03,714 - com.test.regression.cub.utils.Logg -INFO - Starting validLogin ................
+2016-08-26 12:05:03,714 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-26 12:05:28,849 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-26 12:05:28,857 - com.test.regression.cub.utils.Logg -INFO - Starting validLogin ................
+2016-08-26 12:05:28,858 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-26 12:14:56,621 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-26 12:14:56,628 - com.test.regression.cub.utils.Logg -INFO - Starting validLogin ................
+2016-08-26 12:14:56,629 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-26 12:15:22,344 - com.test.regression.cub.utils.Logg -INFO - Launched null Successfully!
+2016-08-26 12:15:23,233 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-08-26 12:15:23,237 - com.test.regression.cub.utils.Logg -INFO - User Name : louie4test@cub.com
+2016-08-26 12:15:23,238 - com.test.regression.cub.utils.Logg -INFO - Password : @testing
+2016-08-26 12:15:23,474 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-08-26 12:15:24,629 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-08-26 12:15:29,899 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-08-26 12:15:44,981 - com.test.regression.cub.utils.Logg -INFO - unknown error: unhandled inspector error: {"code":-32603,"message":"Cannot navigate to invalid URL"}
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 35 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir292280_24700}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9c1e7e7b11f8cb3e2807f981393ea428
+2016-08-26 12:15:54,022 - com.test.regression.cub.utils.Logg -INFO - validLogin execution Complete.............
+2016-08-26 12:17:02,004 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-26 12:17:02,011 - com.test.regression.cub.utils.Logg -INFO - Starting validLogin ................
+2016-08-26 12:17:02,011 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-26 12:17:20,281 - com.test.regression.cub.utils.Logg -INFO - Launched null Successfully!
+2016-08-26 12:17:20,591 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-08-26 12:17:20,595 - com.test.regression.cub.utils.Logg -INFO - User Name : louie4test@cub.com
+2016-08-26 12:17:20,596 - com.test.regression.cub.utils.Logg -INFO - Password : @testing
+2016-08-26 12:17:20,794 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-08-26 12:17:28,344 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-08-26 12:17:35,130 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-08-26 12:17:50,169 - com.test.regression.cub.utils.Logg -INFO - unknown error: unhandled inspector error: {"code":-32603,"message":"Cannot navigate to invalid URL"}
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir292612_31976}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f7dffb4de8dc0cbd6642df0ecf2be13e
+2016-08-26 12:17:54,740 - com.test.regression.cub.utils.Logg -INFO - validLogin execution Complete.............
+2016-08-26 12:21:25,465 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-26 12:21:25,484 - com.test.regression.cub.utils.Logg -INFO - Starting validLogin ................
+2016-08-26 12:21:25,485 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-26 12:21:47,241 - com.test.regression.cub.utils.Logg -INFO - Launched null Successfully!
+2016-08-26 12:21:47,577 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-08-26 12:21:47,580 - com.test.regression.cub.utils.Logg -INFO - User Name : louie4test@cub.com
+2016-08-26 12:21:47,580 - com.test.regression.cub.utils.Logg -INFO - Password : @testing
+2016-08-26 12:21:49,446 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-08-26 12:21:52,237 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-08-26 12:21:57,411 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-08-26 12:22:12,464 - com.test.regression.cub.utils.Logg -INFO - unknown error: unhandled inspector error: {"code":-32603,"message":"Cannot navigate to invalid URL"}
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir294160_31936}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d288f1ed241584f5d28bd300fbb0b283
+2016-08-26 12:22:18,250 - com.test.regression.cub.utils.Logg -INFO - validLogin execution Complete.............
+2016-08-26 12:32:09,219 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-26 12:32:09,274 - com.test.regression.cub.utils.Logg -INFO - Starting validLogin ................
+2016-08-26 12:32:09,275 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-26 12:32:30,808 - com.test.regression.cub.utils.Logg -INFO - Launched null Successfully!
+2016-08-26 12:32:31,110 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-08-26 12:32:31,115 - com.test.regression.cub.utils.Logg -INFO - User Name : louie4test@cub.com
+2016-08-26 12:32:31,117 - com.test.regression.cub.utils.Logg -INFO - Password : @testing
+2016-08-26 12:32:31,537 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-08-26 12:32:34,764 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-08-26 12:32:40,082 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-08-26 12:32:55,122 - com.test.regression.cub.utils.Logg -INFO - unknown error: unhandled inspector error: {"code":-32603,"message":"Cannot navigate to invalid URL"}
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir286516_24085}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d29aea5f6bc1098c9cca42aa798485b9
+2016-08-26 12:32:59,650 - com.test.regression.cub.utils.Logg -INFO - validLogin execution Complete.............
+2016-08-26 12:39:45,624 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-26 12:39:45,634 - com.test.regression.cub.utils.Logg -INFO - Starting validLogin ................
+2016-08-26 12:39:45,635 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-08-26 12:40:15,748 - com.test.regression.cub.utils.Logg -INFO - Launched null Successfully!
+2016-08-26 12:40:16,076 - com.test.regression.cub.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-08-26 12:40:16,080 - com.test.regression.cub.utils.Logg -INFO - User Name : louie4test@cub.com
+2016-08-26 12:40:16,080 - com.test.regression.cub.utils.Logg -INFO - Password : @testing
+2016-08-26 12:40:16,394 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-08-26 12:40:18,416 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-08-26 12:40:23,610 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-08-26 12:40:44,206 - com.test.regression.cub.utils.Logg -INFO - Clicked on My Account link under My Tools tab
+2016-08-26 12:40:47,850 - com.test.regression.cub.utils.Logg -INFO - validLogin execution Complete.............
+2016-09-06 11:43:24,415 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 11:43:24,448 - com.test.regression.farmfresh.utils.Logg -INFO - Starting validLogin ................
+2016-09-06 11:43:24,449 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 11:43:41,997 - com.test.regression.farmfresh.utils.Logg -INFO - Launched null Successfully!
+2016-09-06 11:43:42,551 - com.test.regression.farmfresh.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-09-06 11:43:42,554 - com.test.regression.farmfresh.utils.Logg -INFO - User Name : louie4test@ff.com
+2016-09-06 11:43:42,554 - com.test.regression.farmfresh.utils.Logg -INFO - Password : @testing
+2016-09-06 11:43:42,799 - com.test.regression.farmfresh.utils.Logg -INFO - SignIn Link Clicked
+2016-09-06 11:43:44,657 - com.test.regression.farmfresh.utils.Logg -INFO - Entered login Details
+2016-09-06 11:43:49,830 - com.test.regression.farmfresh.utils.Logg -INFO - SignInButton Clicked
+2016-09-06 11:44:08,860 - com.test.regression.farmfresh.utils.Logg -INFO - Clicked on My Account link under My Tools tab
+2016-09-06 11:44:28,928 - com.test.regression.farmfresh.utils.Logg -INFO - no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='account-section-details acct-info']/div/div/div[2]"}
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir914644_882}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 042c9dac308f4464ae35b68869385608
+*** Element info: {Using=xpath, value=//div[@class='account-section-details acct-info']/div/div/div[2]}
+2016-09-06 11:44:34,947 - com.test.regression.farmfresh.utils.Logg -INFO - validLogin execution Complete.............
+2016-09-06 11:49:31,633 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 11:49:31,639 - com.test.regression.farmfresh.utils.Logg -INFO - Starting forgotPassword ................
+2016-09-06 11:49:31,640 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 11:49:47,083 - com.test.regression.farmfresh.utils.Logg -INFO - Launched null Successfully!
+2016-09-06 11:49:47,346 - com.test.regression.farmfresh.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-09-06 11:49:47,349 - com.test.regression.farmfresh.utils.Logg -INFO - User Name Valid: louie4test@ff.com
+2016-09-06 11:49:47,349 - com.test.regression.farmfresh.utils.Logg -INFO - User Name In-Valid: hjdjfg@ff.com
+2016-09-06 11:49:48,992 - com.test.regression.farmfresh.utils.Logg -INFO - SignIn Link Clicked
+2016-09-06 11:49:58,497 - com.test.regression.farmfresh.utils.Logg -INFO - forgotPassword execution Complete.............
+2016-09-06 11:49:58,498 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 11:49:58,505 - com.test.regression.farmfresh.utils.Logg -INFO - Starting validLogin ................
+2016-09-06 11:49:58,505 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 11:50:13,611 - com.test.regression.farmfresh.utils.Logg -INFO - Launched null Successfully!
+2016-09-06 11:50:13,652 - com.test.regression.farmfresh.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-09-06 11:50:13,652 - com.test.regression.farmfresh.utils.Logg -INFO - User Name : louie4test@ff.com
+2016-09-06 11:50:13,653 - com.test.regression.farmfresh.utils.Logg -INFO - Password : @testing
+2016-09-06 11:50:13,914 - com.test.regression.farmfresh.utils.Logg -INFO - SignIn Link Clicked
+2016-09-06 11:50:15,153 - com.test.regression.farmfresh.utils.Logg -INFO - Entered login Details
+2016-09-06 11:50:20,324 - com.test.regression.farmfresh.utils.Logg -INFO - SignInButton Clicked
+2016-09-06 11:50:41,455 - com.test.regression.farmfresh.utils.Logg -INFO - Clicked on My Account link under My Tools tab
+2016-09-06 11:50:45,514 - com.test.regression.farmfresh.utils.Logg -INFO - validLogin execution Complete.............
+2016-09-06 11:50:45,516 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 11:50:45,516 - com.test.regression.farmfresh.utils.Logg -INFO - Starting inValidLogin ................
+2016-09-06 11:50:45,517 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 11:51:00,356 - com.test.regression.farmfresh.utils.Logg -INFO - Launched null Successfully!
+2016-09-06 11:51:00,417 - com.test.regression.farmfresh.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-09-06 11:51:00,417 - com.test.regression.farmfresh.utils.Logg -INFO - User Nametest33@mailinator.com
+2016-09-06 11:51:00,417 - com.test.regression.farmfresh.utils.Logg -INFO - PasswordAn55333
+2016-09-06 11:51:02,854 - com.test.regression.farmfresh.utils.Logg -INFO - SignIn Link Clicked
+2016-09-06 11:51:04,098 - com.test.regression.farmfresh.utils.Logg -INFO - Entered login Details
+2016-09-06 11:51:09,803 - com.test.regression.farmfresh.utils.Logg -INFO - SignInButton Clicked
+2016-09-06 11:51:20,620 - com.test.regression.farmfresh.utils.Logg -INFO - Password Incorrect Text Status : true
+2016-09-06 11:51:24,293 - com.test.regression.farmfresh.utils.Logg -INFO - inValidLogin execution Complete.............
+2016-09-06 11:51:24,294 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 11:51:24,295 - com.test.regression.farmfresh.utils.Logg -INFO - Starting userNameNPasswordFieldValidation ................
+2016-09-06 11:51:24,295 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 11:51:38,019 - com.test.regression.farmfresh.utils.Logg -INFO - Launched null Successfully!
+2016-09-06 11:51:38,027 - com.test.regression.farmfresh.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-09-06 11:51:38,027 - com.test.regression.farmfresh.utils.Logg -INFO - User Nametest test
+2016-09-06 11:51:38,027 - com.test.regression.farmfresh.utils.Logg -INFO - Password12345
+2016-09-06 11:51:38,939 - com.test.regression.farmfresh.utils.Logg -INFO - SignIn Link Clicked
+2016-09-06 11:51:40,045 - com.test.regression.farmfresh.utils.Logg -INFO - Entered login Details
+2016-09-06 11:51:45,210 - com.test.regression.farmfresh.utils.Logg -INFO - SignInButton Clicked
+2016-09-06 11:51:50,879 - com.test.regression.farmfresh.utils.Logg -INFO - Password Incorrect Text Status : true
+2016-09-06 11:51:50,880 - com.test.regression.farmfresh.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-09-06 11:51:50,880 - com.test.regression.farmfresh.utils.Logg -INFO - User Name7894632
+2016-09-06 11:51:50,880 - com.test.regression.farmfresh.utils.Logg -INFO - Password12345
+2016-09-06 11:51:51,350 - com.test.regression.farmfresh.utils.Logg -INFO - Entered login Details
+2016-09-06 11:51:58,219 - com.test.regression.farmfresh.utils.Logg -INFO - SignInButton Clicked
+2016-09-06 11:52:03,292 - com.test.regression.farmfresh.utils.Logg -INFO - Password Incorrect Text Status : true
+2016-09-06 11:52:03,712 - com.test.regression.farmfresh.utils.Logg -INFO - Pop up closed successfully..
+2016-09-06 11:52:08,851 - com.test.regression.farmfresh.utils.Logg -INFO - SignIn Link Clicked
+2016-09-06 11:52:13,280 - com.test.regression.farmfresh.utils.Logg -INFO - userNameNPasswordFieldValidation execution Complete.............
+2016-09-06 11:52:13,287 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 11:52:13,287 - com.test.regression.farmfresh.utils.Logg -INFO - Starting validLoginFromShoppingListPage ................
+2016-09-06 11:52:13,287 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 11:52:27,263 - com.test.regression.farmfresh.utils.Logg -INFO - Launched null Successfully!
+2016-09-06 11:52:27,329 - com.test.regression.farmfresh.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-09-06 11:52:27,329 - com.test.regression.farmfresh.utils.Logg -INFO - User Name : louie4test@ff.com
+2016-09-06 11:52:27,329 - com.test.regression.farmfresh.utils.Logg -INFO - Password : @testing
+2016-09-06 11:52:47,728 - com.test.regression.farmfresh.utils.Logg -INFO - Entered login Details
+2016-09-06 11:52:52,879 - com.test.regression.farmfresh.utils.Logg -INFO - SignInButton Clicked
+2016-09-06 11:53:11,145 - com.test.regression.farmfresh.utils.Logg -INFO - Clicked on My Account link under My Tools tab
+2016-09-06 11:53:15,160 - com.test.regression.farmfresh.utils.Logg -INFO - validLoginFromShoppingListPage execution Complete.............
+2016-09-06 11:53:15,162 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 11:53:15,162 - com.test.regression.farmfresh.utils.Logg -INFO - Starting validLoginFromCouponsPage ................
+2016-09-06 11:53:15,162 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 11:53:30,386 - com.test.regression.farmfresh.utils.Logg -INFO - Launched null Successfully!
+2016-09-06 11:53:30,454 - com.test.regression.farmfresh.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-09-06 11:53:30,455 - com.test.regression.farmfresh.utils.Logg -INFO - User Name : louie4test@ff.com
+2016-09-06 11:53:30,455 - com.test.regression.farmfresh.utils.Logg -INFO - Password : @testing
+2016-09-06 11:53:30,461 - com.test.regression.farmfresh.utils.Logg -INFO - ...Inside clickOnCouponsInMyToolsHomePage method...
+2016-09-06 11:53:36,205 - com.test.regression.farmfresh.utils.Logg -INFO - Clicked on Coupons in Home page
+2016-09-06 11:53:36,205 - com.test.regression.farmfresh.utils.Logg -INFO - ...Inside addSingleCoupon method...
+2016-09-06 11:53:36,206 - com.test.regression.farmfresh.utils.Logg -INFO - ...Inside chkIfFlipp method...
+2016-09-06 11:53:36,450 - com.test.regression.farmfresh.utils.Logg -INFO - Coupon is Inmar!
+2016-09-06 11:53:36,450 - com.test.regression.farmfresh.utils.Logg -INFO - isCouponFlipp value : false
+2016-09-06 11:53:36,451 - com.test.regression.farmfresh.utils.Logg -INFO - ...Inside addNthInmarCoupon method...
+2016-09-06 11:53:36,451 - com.test.regression.farmfresh.utils.Logg -INFO - Trying to Add this coupon//div[@class='coupon-list']/div[1]/div/div/div[2]/button[text()='+ Add Item']
+2016-09-06 11:53:41,596 - com.test.regression.farmfresh.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[1]/div/div/div[2]/button[text()='+ Add Item']
+2016-09-06 11:53:41,597 - com.test.regression.farmfresh.utils.Logg -INFO - Added nth coupon
+2016-09-06 11:53:41,601 - com.test.regression.farmfresh.utils.Logg -INFO - ...Inside getNthInmarCouponName method...
+2016-09-06 11:53:41,663 - com.test.regression.farmfresh.utils.Logg -INFO - Coupon name in Coupons page which i am trying to add: $10 off 50
+2016-09-06 11:53:42,976 - com.test.regression.farmfresh.utils.Logg -INFO - Entered login Details
+2016-09-06 11:53:48,159 - com.test.regression.farmfresh.utils.Logg -INFO - SignInButton Clicked
+2016-09-06 11:54:09,254 - com.test.regression.farmfresh.utils.Logg -INFO - Clicked on My Account link under My Tools tab
+2016-09-06 11:54:13,460 - com.test.regression.farmfresh.utils.Logg -INFO - validLoginFromCouponsPage execution Complete.............
+2016-09-06 11:54:13,462 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 11:54:13,462 - com.test.regression.farmfresh.utils.Logg -INFO - Starting validateSignUpLinkInSignInPopup ................
+2016-09-06 11:54:13,462 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 11:54:27,202 - com.test.regression.farmfresh.utils.Logg -INFO - Launched null Successfully!
+2016-09-06 11:54:28,660 - com.test.regression.farmfresh.utils.Logg -INFO - SignIn Link Clicked
+2016-09-06 11:54:28,919 - com.test.regression.farmfresh.utils.Logg -INFO - Clicked on SignIn Link in SignUp popup..
+2016-09-06 11:54:29,263 - com.test.regression.farmfresh.utils.Logg -INFO - stale element reference: element is not attached to the page document
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 219 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir923392_13144}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c9d806a1d81d65941ac0bea200e25a01
+2016-09-06 11:54:34,058 - com.test.regression.farmfresh.utils.Logg -INFO - validateSignUpLinkInSignInPopup execution Complete.............
+2016-09-06 11:58:45,982 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 11:58:45,995 - com.test.regression.farmfresh.utils.Logg -INFO - Starting validateSignUpLinkInSignInPopup ................
+2016-09-06 11:58:45,996 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 11:59:02,865 - com.test.regression.farmfresh.utils.Logg -INFO - Launched null Successfully!
+2016-09-06 11:59:03,755 - com.test.regression.farmfresh.utils.Logg -INFO - SignIn Link Clicked
+2016-09-06 11:59:05,056 - com.test.regression.farmfresh.utils.Logg -INFO - Clicked on SignIn Link in SignUp popup..
+2016-09-06 11:59:09,492 - com.test.regression.farmfresh.utils.Logg -INFO - validateSignUpLinkInSignInPopup execution Complete.............
+2016-09-06 12:47:18,855 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 12:47:18,881 - com.test.regression.farmfresh.utils.Logg -INFO - Starting validSignUp ................
+2016-09-06 12:47:18,882 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 12:47:35,453 - com.test.regression.farmfresh.utils.Logg -INFO - Launched null Successfully!
+2016-09-06 12:47:35,651 - com.test.regression.farmfresh.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-09-06 12:47:35,653 - com.test.regression.farmfresh.utils.Logg -INFO - User Name : newuser1_123@ff.com
+2016-09-06 12:47:35,654 - com.test.regression.farmfresh.utils.Logg -INFO - Password : password
+2016-09-06 12:47:35,878 - com.test.regression.farmfresh.utils.Logg -INFO - Clicked on SignUp Link..
+2016-09-06 12:47:37,789 - com.test.regression.farmfresh.utils.Logg -INFO - Entered SignUp Username and Password
+2016-09-06 12:47:37,790 - com.test.regression.farmfresh.utils.Logg -INFO - 
+2016-09-06 12:47:43,051 - com.test.regression.farmfresh.utils.Logg -INFO - validSignUp execution Complete.............
+2016-09-06 12:49:55,897 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 12:49:55,904 - com.test.regression.farmfresh.utils.Logg -INFO - Starting validSignUp ................
+2016-09-06 12:49:55,905 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 12:50:13,916 - com.test.regression.farmfresh.utils.Logg -INFO - Launched null Successfully!
+2016-09-06 12:50:14,206 - com.test.regression.farmfresh.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-09-06 12:50:14,210 - com.test.regression.farmfresh.utils.Logg -INFO - User Name : newuser1_124@ff.com
+2016-09-06 12:50:14,210 - com.test.regression.farmfresh.utils.Logg -INFO - Password : password
+2016-09-06 12:50:15,001 - com.test.regression.farmfresh.utils.Logg -INFO - Clicked on SignUp Link..
+2016-09-06 12:50:16,503 - com.test.regression.farmfresh.utils.Logg -INFO - Entered SignUp Username and Password
+2016-09-06 12:50:16,504 - com.test.regression.farmfresh.utils.Logg -INFO - 
+2016-09-06 12:50:21,878 - com.test.regression.farmfresh.utils.Logg -INFO - validSignUp execution Complete.............
+2016-09-06 13:08:30,097 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 13:08:30,105 - com.test.regression.farmfresh.utils.Logg -INFO - Starting validSignUp ................
+2016-09-06 13:08:30,105 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 13:08:46,963 - com.test.regression.farmfresh.utils.Logg -INFO - Launched null Successfully!
+2016-09-06 13:08:47,144 - com.test.regression.farmfresh.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-09-06 13:08:47,147 - com.test.regression.farmfresh.utils.Logg -INFO - User Name : newuser1_125@ff.com
+2016-09-06 13:08:47,147 - com.test.regression.farmfresh.utils.Logg -INFO - Password : password
+2016-09-06 13:08:47,368 - com.test.regression.farmfresh.utils.Logg -INFO - Clicked on SignUp Link..
+2016-09-06 13:08:49,045 - com.test.regression.farmfresh.utils.Logg -INFO - Entered SignUp Username and Password
+2016-09-06 13:09:09,860 - com.test.regression.farmfresh.utils.Logg -INFO - no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='layout']/div[2]/div[2]/div[1]/form/div/input"}
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.70 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir927168_9254}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e33313ea2db48704a4cacbc2826f8e0f
+*** Element info: {Using=xpath, value=//*[@id='layout']/div[2]/div[2]/div[1]/form/div/input}
+2016-09-06 13:09:16,322 - com.test.regression.farmfresh.utils.Logg -INFO - validSignUp execution Complete.............
+2016-09-06 13:10:40,706 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 13:10:40,713 - com.test.regression.farmfresh.utils.Logg -INFO - Starting validSignUp ................
+2016-09-06 13:10:40,714 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 13:10:59,561 - com.test.regression.farmfresh.utils.Logg -INFO - Launched null Successfully!
+2016-09-06 13:10:59,905 - com.test.regression.farmfresh.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-09-06 13:10:59,908 - com.test.regression.farmfresh.utils.Logg -INFO - User Name : newuser1_126@ff.com
+2016-09-06 13:10:59,908 - com.test.regression.farmfresh.utils.Logg -INFO - Password : password
+2016-09-06 13:11:00,157 - com.test.regression.farmfresh.utils.Logg -INFO - Clicked on SignUp Link..
+2016-09-06 13:11:03,090 - com.test.regression.farmfresh.utils.Logg -INFO - Entered SignUp Username and Password
+2016-09-06 13:11:29,271 - com.test.regression.farmfresh.utils.Logg -INFO - no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='layout']/div[2]/div[2]/div[1]/form/div/input"}
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 21.16 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir928664_4264}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 15f25cc034908a110ff645225c375e37
+*** Element info: {Using=xpath, value=//*[@id='layout']/div[2]/div[2]/div[1]/form/div/input}
+2016-09-06 13:11:35,317 - com.test.regression.farmfresh.utils.Logg -INFO - validSignUp execution Complete.............
+2016-09-06 13:15:19,409 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 13:15:19,416 - com.test.regression.farmfresh.utils.Logg -INFO - Starting validSignUp ................
+2016-09-06 13:15:19,417 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 13:15:36,540 - com.test.regression.farmfresh.utils.Logg -INFO - Launched null Successfully!
+2016-09-06 13:15:36,932 - com.test.regression.farmfresh.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-09-06 13:15:36,935 - com.test.regression.farmfresh.utils.Logg -INFO - User Name : newuser1_127@ff.com
+2016-09-06 13:15:36,935 - com.test.regression.farmfresh.utils.Logg -INFO - Password : password
+2016-09-06 13:15:37,112 - com.test.regression.farmfresh.utils.Logg -INFO - Clicked on SignUp Link..
+2016-09-06 13:15:38,894 - com.test.regression.farmfresh.utils.Logg -INFO - Entered SignUp Username and Password
+2016-09-06 13:16:00,770 - com.test.regression.farmfresh.utils.Logg -INFO - Enter Zip code in the box 
+2016-09-06 13:16:25,826 - com.test.regression.farmfresh.utils.Logg -INFO - no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='layout']/div[2]/div[2]/div[1]/form/button"}
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir931908_15673}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e9f0faad669100cfd9bea14c5632f775
+*** Element info: {Using=xpath, value=//*[@id='layout']/div[2]/div[2]/div[1]/form/button}
+2016-09-06 13:16:31,674 - com.test.regression.farmfresh.utils.Logg -INFO - validSignUp execution Complete.............
+2016-09-06 13:17:33,564 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 13:17:33,572 - com.test.regression.farmfresh.utils.Logg -INFO - Starting validSignUp ................
+2016-09-06 13:17:33,573 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 13:17:50,428 - com.test.regression.farmfresh.utils.Logg -INFO - Launched null Successfully!
+2016-09-06 13:17:50,815 - com.test.regression.farmfresh.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-09-06 13:17:50,818 - com.test.regression.farmfresh.utils.Logg -INFO - User Name : newuser1_128@ff.com
+2016-09-06 13:17:50,818 - com.test.regression.farmfresh.utils.Logg -INFO - Password : password
+2016-09-06 13:17:51,557 - com.test.regression.farmfresh.utils.Logg -INFO - Clicked on SignUp Link..
+2016-09-06 13:17:52,602 - com.test.regression.farmfresh.utils.Logg -INFO - Entered SignUp Username and Password
+2016-09-06 13:18:14,362 - com.test.regression.farmfresh.utils.Logg -INFO - Enter Zip code in the box 
+2016-09-06 13:18:20,727 - com.test.regression.farmfresh.utils.Logg -INFO - Click on search button
+2016-09-06 13:19:26,347 - com.test.regression.farmfresh.utils.Logg -INFO - Timed out after 30 seconds waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='layout']/div[2]/div[2]/section/ul/a[2]'
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir925556_16964}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: bbe5ef17d968f4212019165bea33e302
+2016-09-06 13:19:32,791 - com.test.regression.farmfresh.utils.Logg -INFO - validSignUp execution Complete.............
+2016-09-06 13:26:20,474 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 13:26:20,481 - com.test.regression.farmfresh.utils.Logg -INFO - Starting validSignUp ................
+2016-09-06 13:26:20,482 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 13:26:36,254 - com.test.regression.farmfresh.utils.Logg -INFO - Launched null Successfully!
+2016-09-06 13:26:36,776 - com.test.regression.farmfresh.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-09-06 13:26:36,779 - com.test.regression.farmfresh.utils.Logg -INFO - User Name : newuser1_129@ff.com
+2016-09-06 13:26:36,779 - com.test.regression.farmfresh.utils.Logg -INFO - Password : password
+2016-09-06 13:26:37,046 - com.test.regression.farmfresh.utils.Logg -INFO - Clicked on SignUp Link..
+2016-09-06 13:26:38,699 - com.test.regression.farmfresh.utils.Logg -INFO - Entered SignUp Username and Password
+2016-09-06 13:27:00,691 - com.test.regression.farmfresh.utils.Logg -INFO - Enter Zip code in the box 
+2016-09-06 13:27:05,805 - com.test.regression.farmfresh.utils.Logg -INFO - Click on search button
+2016-09-06 13:27:07,022 - com.test.regression.farmfresh.utils.Logg -INFO - unknown error: Element is not clickable at point (242, 363). Other element would receive the click: <div class="ss-overlay" style="display: block;"></div>
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 997 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir933956_31487}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 00bb138c559b1bf2b7f2106f0e85c593
+2016-09-06 13:27:14,119 - com.test.regression.farmfresh.utils.Logg -INFO - validSignUp execution Complete.............
+2016-09-06 13:27:46,768 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 13:27:46,795 - com.test.regression.farmfresh.utils.Logg -INFO - Starting validSignUp ................
+2016-09-06 13:27:46,795 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 13:28:06,321 - com.test.regression.farmfresh.utils.Logg -INFO - Launched null Successfully!
+2016-09-06 13:28:06,646 - com.test.regression.farmfresh.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-09-06 13:28:06,649 - com.test.regression.farmfresh.utils.Logg -INFO - User Name : newuser1_130@ff.com
+2016-09-06 13:28:06,649 - com.test.regression.farmfresh.utils.Logg -INFO - Password : password
+2016-09-06 13:28:07,041 - com.test.regression.farmfresh.utils.Logg -INFO - Clicked on SignUp Link..
+2016-09-06 13:28:08,738 - com.test.regression.farmfresh.utils.Logg -INFO - Entered SignUp Username and Password
+2016-09-06 13:28:22,269 - com.test.regression.farmfresh.utils.Logg -INFO - Enter Zip code in the box 
+2016-09-06 13:28:27,932 - com.test.regression.farmfresh.utils.Logg -INFO - Click on search button
+2016-09-06 13:28:33,251 - com.test.regression.farmfresh.utils.Logg -INFO - Click on select store button
+2016-09-06 13:28:33,856 - com.test.regression.farmfresh.utils.Logg -INFO - Click on use this store button
+2016-09-06 13:28:57,723 - com.test.regression.farmfresh.utils.Logg -INFO - Clicked on My Account link under My Tools tab
+2016-09-06 13:29:03,497 - com.test.regression.farmfresh.utils.Logg -INFO - validSignUp execution Complete.............
+2016-09-06 14:31:19,571 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 14:31:19,622 - com.test.regression.farmfresh.utils.Logg -INFO - Starting userNameNPasswordFieldValidationSignUp ................
+2016-09-06 14:31:19,623 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 14:31:40,498 - com.test.regression.farmfresh.utils.Logg -INFO - Launched null Successfully!
+2016-09-06 14:31:40,601 - com.test.regression.farmfresh.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-09-06 14:31:40,602 - com.test.regression.farmfresh.utils.Logg -INFO - User Name : test test
+2016-09-06 14:31:40,602 - com.test.regression.farmfresh.utils.Logg -INFO - Password : 123456
+2016-09-06 14:31:41,309 - com.test.regression.farmfresh.utils.Logg -INFO - Clicked on SignUp Link..
+2016-09-06 14:31:47,158 - com.test.regression.farmfresh.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-09-06 14:31:47,159 - com.test.regression.farmfresh.utils.Logg -INFO - User Name : test.com
+2016-09-06 14:31:47,159 - com.test.regression.farmfresh.utils.Logg -INFO - Password : 123456
+2016-09-06 14:31:52,449 - com.test.regression.farmfresh.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-09-06 14:31:52,449 - com.test.regression.farmfresh.utils.Logg -INFO - User Name : test@ff.com
+2016-09-06 14:31:52,450 - com.test.regression.farmfresh.utils.Logg -INFO - Password : abcde
+2016-09-06 14:31:57,745 - com.test.regression.farmfresh.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-09-06 14:31:57,746 - com.test.regression.farmfresh.utils.Logg -INFO - User Name : test@ff.com
+2016-09-06 14:31:57,755 - com.test.regression.farmfresh.utils.Logg -INFO - Password : abcde f
+2016-09-06 14:32:03,063 - com.test.regression.farmfresh.utils.Logg -INFO - Pop up closed successfully..
+2016-09-06 14:32:08,809 - com.test.regression.farmfresh.utils.Logg -INFO - Clicked on SignUp Link..
+2016-09-06 14:32:13,459 - com.test.regression.farmfresh.utils.Logg -INFO - userNameNPasswordFieldValidationSignUp execution Complete.............
+2016-09-06 14:33:03,302 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 14:33:03,309 - com.test.regression.farmfresh.utils.Logg -INFO - Starting validateSignInLinkInSignUpPopup ................
+2016-09-06 14:33:03,309 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 14:33:21,033 - com.test.regression.farmfresh.utils.Logg -INFO - Launched null Successfully!
+2016-09-06 14:33:22,385 - com.test.regression.farmfresh.utils.Logg -INFO - Clicked on SignUp Link..
+2016-09-06 14:33:22,628 - com.test.regression.farmfresh.utils.Logg -INFO - Clicked on SignIn Link in SignUp popup..
+2016-09-06 14:33:27,553 - com.test.regression.farmfresh.utils.Logg -INFO - validateSignInLinkInSignUpPopup execution Complete.............
+2016-09-06 14:38:18,026 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 14:38:18,033 - com.test.regression.farmfresh.utils.Logg -INFO - Starting validSignUp4mCouponsPage ................
+2016-09-06 14:38:18,033 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 14:38:40,675 - com.test.regression.farmfresh.utils.Logg -INFO - Launched null Successfully!
+2016-09-06 14:38:41,717 - com.test.regression.farmfresh.utils.Logg -INFO - ...Inside clickOnCouponsInMyToolsHomePage method...
+2016-09-06 14:38:49,130 - com.test.regression.farmfresh.utils.Logg -INFO - Clicked on Coupons in Home page
+2016-09-06 14:38:49,130 - com.test.regression.farmfresh.utils.Logg -INFO - ...Inside addSingleCoupon method...
+2016-09-06 14:38:49,131 - com.test.regression.farmfresh.utils.Logg -INFO - ...Inside chkIfFlipp method...
+2016-09-06 14:38:53,592 - com.test.regression.farmfresh.utils.Logg -INFO - Coupon is Inmar!
+2016-09-06 14:38:53,593 - com.test.regression.farmfresh.utils.Logg -INFO - isCouponFlipp value : false
+2016-09-06 14:38:53,594 - com.test.regression.farmfresh.utils.Logg -INFO - ...Inside addNthInmarCoupon method...
+2016-09-06 14:38:53,594 - com.test.regression.farmfresh.utils.Logg -INFO - Trying to Add this coupon//div[@class='coupon-list']/div[1]/div/div/div[2]/button[text()='+ Add Item']
+2016-09-06 14:39:00,542 - com.test.regression.farmfresh.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[1]/div/div/div[2]/button[text()='+ Add Item']
+2016-09-06 14:39:00,542 - com.test.regression.farmfresh.utils.Logg -INFO - Added nth coupon
+2016-09-06 14:39:00,542 - com.test.regression.farmfresh.utils.Logg -INFO - ...Inside getNthInmarCouponName method...
+2016-09-06 14:39:00,621 - com.test.regression.farmfresh.utils.Logg -INFO - Coupon name in Coupons page which i am trying to add: $10 off 50
+2016-09-06 14:39:01,727 - com.test.regression.farmfresh.utils.Logg -INFO - Clicked on SignIn Link in SignUp popup..
+2016-09-06 14:39:08,571 - com.test.regression.farmfresh.utils.Logg -INFO - Entered SignUp Username and Password
+2016-09-06 14:39:27,342 - com.test.regression.farmfresh.utils.Logg -INFO - 
+2016-09-06 14:39:33,157 - com.test.regression.farmfresh.utils.Logg -INFO - validSignUp4mCouponsPage execution Complete.............
+2016-09-06 14:39:33,161 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 14:39:33,161 - com.test.regression.farmfresh.utils.Logg -INFO - Starting validSignUp4mSL ................
+2016-09-06 14:39:33,161 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 14:39:52,896 - com.test.regression.farmfresh.utils.Logg -INFO - Launched null Successfully!
+2016-09-06 14:39:52,944 - com.test.regression.farmfresh.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-09-06 14:39:52,945 - com.test.regression.farmfresh.utils.Logg -INFO - User Name : newuser8_99@ff.com
+2016-09-06 14:39:52,945 - com.test.regression.farmfresh.utils.Logg -INFO - Password : password
+2016-09-06 14:40:21,435 - com.test.regression.farmfresh.utils.Logg -INFO - Entered SignUp Username and Password
+2016-09-06 14:40:46,486 - com.test.regression.farmfresh.utils.Logg -INFO - no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='layout']/div[3]/div[2]/div[1]/form/div/input"}
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir939356_20797}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5baf65a2c86dc521c79ff122c665bdc4
+*** Element info: {Using=xpath, value=//*[@id='layout']/div[3]/div[2]/div[1]/form/div/input}
+2016-09-06 14:40:49,970 - com.test.regression.farmfresh.utils.Logg -INFO - validSignUp4mSL execution Complete.............
+2016-09-06 14:43:35,422 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 14:43:35,428 - com.test.regression.farmfresh.utils.Logg -INFO - Starting validSignUp4mCouponsPage ................
+2016-09-06 14:43:35,430 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 14:43:53,719 - com.test.regression.farmfresh.utils.Logg -INFO - Launched null Successfully!
+2016-09-06 14:43:54,207 - com.test.regression.farmfresh.utils.Logg -INFO - ...Inside clickOnCouponsInMyToolsHomePage method...
+2016-09-06 14:44:05,694 - com.test.regression.farmfresh.utils.Logg -INFO - Clicked on Coupons in Home page
+2016-09-06 14:44:05,694 - com.test.regression.farmfresh.utils.Logg -INFO - ...Inside addSingleCoupon method...
+2016-09-06 14:44:05,695 - com.test.regression.farmfresh.utils.Logg -INFO - ...Inside chkIfFlipp method...
+2016-09-06 14:44:05,815 - com.test.regression.farmfresh.utils.Logg -INFO - Coupon is Inmar!
+2016-09-06 14:44:05,815 - com.test.regression.farmfresh.utils.Logg -INFO - isCouponFlipp value : false
+2016-09-06 14:44:05,816 - com.test.regression.farmfresh.utils.Logg -INFO - ...Inside addNthInmarCoupon method...
+2016-09-06 14:44:05,823 - com.test.regression.farmfresh.utils.Logg -INFO - Trying to Add this coupon//div[@class='coupon-list']/div[1]/div/div/div[2]/button[text()='+ Add Item']
+2016-09-06 14:44:11,008 - com.test.regression.farmfresh.utils.Logg -INFO - Added this coupon successfully : //div[@class='coupon-list']/div[1]/div/div/div[2]/button[text()='+ Add Item']
+2016-09-06 14:44:11,009 - com.test.regression.farmfresh.utils.Logg -INFO - Added nth coupon
+2016-09-06 14:44:11,009 - com.test.regression.farmfresh.utils.Logg -INFO - ...Inside getNthInmarCouponName method...
+2016-09-06 14:44:11,470 - com.test.regression.farmfresh.utils.Logg -INFO - Coupon name in Coupons page which i am trying to add: $10 off 50
+2016-09-06 14:44:12,047 - com.test.regression.farmfresh.utils.Logg -INFO - Clicked on SignIn Link in SignUp popup..
+2016-09-06 14:44:18,040 - com.test.regression.farmfresh.utils.Logg -INFO - Entered SignUp Username and Password
+2016-09-06 14:44:37,349 - com.test.regression.farmfresh.utils.Logg -INFO - 
+2016-09-06 14:44:43,535 - com.test.regression.farmfresh.utils.Logg -INFO - validSignUp4mCouponsPage execution Complete.............
+2016-09-06 14:44:43,539 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 14:44:43,539 - com.test.regression.farmfresh.utils.Logg -INFO - Starting validSignUp4mSL ................
+2016-09-06 14:44:43,539 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 14:45:09,135 - com.test.regression.farmfresh.utils.Logg -INFO - Launched null Successfully!
+2016-09-06 14:45:09,177 - com.test.regression.farmfresh.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-09-06 14:45:09,177 - com.test.regression.farmfresh.utils.Logg -INFO - User Name : newuser8_100@ff.com
+2016-09-06 14:45:09,177 - com.test.regression.farmfresh.utils.Logg -INFO - Password : password
+2016-09-06 14:45:44,468 - com.test.regression.farmfresh.utils.Logg -INFO - Entered SignUp Username and Password
+2016-09-06 14:46:09,547 - com.test.regression.farmfresh.utils.Logg -INFO - no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='layout']/div[3]/div[2]/div[1]/form/div/input"}
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir938252_17723}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9c7cf642a7a43720d02244b965ff444a
+*** Element info: {Using=xpath, value=//*[@id='layout']/div[3]/div[2]/div[1]/form/div/input}
+2016-09-06 14:46:13,781 - com.test.regression.farmfresh.utils.Logg -INFO - validSignUp4mSL execution Complete.............
+2016-09-06 14:54:32,408 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 14:54:32,417 - com.test.regression.farmfresh.utils.Logg -INFO - Starting validSignUp4mSL ................
+2016-09-06 14:54:32,418 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 14:54:52,266 - com.test.regression.farmfresh.utils.Logg -INFO - Launched null Successfully!
+2016-09-06 14:54:52,519 - com.test.regression.farmfresh.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-09-06 14:54:52,523 - com.test.regression.farmfresh.utils.Logg -INFO - User Name : newuser8_101@ff.com
+2016-09-06 14:54:52,523 - com.test.regression.farmfresh.utils.Logg -INFO - Password : password
+2016-09-06 14:55:19,977 - com.test.regression.farmfresh.utils.Logg -INFO - Entered SignUp Username and Password
+2016-09-06 14:55:25,131 - com.test.regression.farmfresh.utils.Logg -INFO - Enter Zip code in the box 
+2016-09-06 14:55:44,061 - com.test.regression.farmfresh.utils.Logg -INFO - Click on search button
+2016-09-06 14:56:50,219 - com.test.regression.farmfresh.utils.Logg -INFO - Timed out after 30 seconds waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //section[@class='ss-map-info-container']/ul/a[2]'
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir943396_16244}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0ddd09c39d4ca29af1d18e7a4c5e2df8
+2016-09-06 14:56:54,606 - com.test.regression.farmfresh.utils.Logg -INFO - validSignUp4mSL execution Complete.............
+2016-09-06 15:03:27,723 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 15:03:27,730 - com.test.regression.farmfresh.utils.Logg -INFO - Starting validSignUp4mSL ................
+2016-09-06 15:03:27,730 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 15:03:43,848 - com.test.regression.farmfresh.utils.Logg -INFO - Launched null Successfully!
+2016-09-06 15:03:44,230 - com.test.regression.farmfresh.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-09-06 15:03:44,232 - com.test.regression.farmfresh.utils.Logg -INFO - User Name : newuser8_102@ff.com
+2016-09-06 15:03:44,233 - com.test.regression.farmfresh.utils.Logg -INFO - Password : password
+2016-09-06 15:04:08,623 - com.test.regression.farmfresh.utils.Logg -INFO - Entered SignUp Username and Password
+2016-09-06 15:04:13,796 - com.test.regression.farmfresh.utils.Logg -INFO - Enter Zip code in the box 
+2016-09-06 15:04:33,338 - com.test.regression.farmfresh.utils.Logg -INFO - Click on search button
+2016-09-06 15:05:39,185 - com.test.regression.farmfresh.utils.Logg -INFO - Timed out after 30 seconds waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //section[@class='ss-map-info-container']/ul/a[2]'
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir945992_3172}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ac6872ac0b897e552ecd6db8db36f4f3
+2016-09-06 15:05:43,805 - com.test.regression.farmfresh.utils.Logg -INFO - validSignUp4mSL execution Complete.............
+2016-09-06 15:07:06,407 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 15:07:06,415 - com.test.regression.farmfresh.utils.Logg -INFO - Starting validSignUp4mSL ................
+2016-09-06 15:07:06,416 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 15:07:24,071 - com.test.regression.farmfresh.utils.Logg -INFO - Launched null Successfully!
+2016-09-06 15:07:24,282 - com.test.regression.farmfresh.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-09-06 15:07:24,285 - com.test.regression.farmfresh.utils.Logg -INFO - User Name : newuser8_103@ff.com
+2016-09-06 15:07:24,285 - com.test.regression.farmfresh.utils.Logg -INFO - Password : password
+2016-09-06 15:07:48,202 - com.test.regression.farmfresh.utils.Logg -INFO - Entered SignUp Username and Password
+2016-09-06 15:07:58,371 - com.test.regression.farmfresh.utils.Logg -INFO - Enter Zip code in the box 
+2016-09-06 15:08:05,214 - com.test.regression.farmfresh.utils.Logg -INFO - element not visible
+  (Session info: chrome=52.0.2743.116)
+  (Driver info: chromedriver=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 101 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir946728_10365}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=52.0.2743.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: aac6b1d24d33d5e080b8109f213d3286
+2016-09-06 15:08:11,953 - com.test.regression.farmfresh.utils.Logg -INFO - validSignUp4mSL execution Complete.............
+2016-09-06 15:09:22,291 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 15:09:22,297 - com.test.regression.farmfresh.utils.Logg -INFO - Starting validSignUp4mSL ................
+2016-09-06 15:09:22,298 - com.test.regression.farmfresh.utils.Logg -INFO - ***************************************************************
+2016-09-06 15:09:38,091 - com.test.regression.farmfresh.utils.Logg -INFO - Launched null Successfully!
+2016-09-06 15:09:38,418 - com.test.regression.farmfresh.utils.Logg -INFO - Test Data Used >>>>>>>
+2016-09-06 15:09:38,420 - com.test.regression.farmfresh.utils.Logg -INFO - User Name : newuser8_104@ff.com
+2016-09-06 15:09:38,421 - com.test.regression.farmfresh.utils.Logg -INFO - Password : password
+2016-09-06 15:10:03,728 - com.test.regression.farmfresh.utils.Logg -INFO - Entered SignUp Username and Password
+2016-09-06 15:10:13,879 - com.test.regression.farmfresh.utils.Logg -INFO - Enter Zip code in the box 
+2016-09-06 15:10:19,024 - com.test.regression.farmfresh.utils.Logg -INFO - Click on search button
+2016-09-06 15:10:25,787 - com.test.regression.farmfresh.utils.Logg -INFO - Click on select store button
+2016-09-06 15:10:26,690 - com.test.regression.farmfresh.utils.Logg -INFO - Click on use this store button
+2016-09-06 15:10:53,693 - com.test.regression.farmfresh.utils.Logg -INFO - Clicked on My Account link under My Tools tab
+2016-09-06 15:10:59,122 - com.test.regression.farmfresh.utils.Logg -INFO - validSignUp4mSL execution Complete.............

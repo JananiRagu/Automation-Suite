@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+  <!--
+<test name="Sign In - Testing">
+    <classes> 
+    	<class name="com.test.regression.farmfresh.testscripts.SignIn"> </class> 
+    </classes>
+</test> 
+-->
+<test name="Sign Up - Testing">
+    <classes> 
+    	<class name="com.test.regression.farmfresh.testscripts.SignUp"> </class>  
+    </classes>
+</test> 
+<!-- 
+ 
+<test name="Shopping List - Testing">
+    <classes> 
+    	<class name="com.test.regression.cub.testscripts.ShoppingLists"> </class> 
+    </classes>
+</test> 
+
+<test name="Header Footer Navigation - Testing">
+    <classes> 
+    	<class name="com.test.regression.cub.testscripts.HeaderFooterNavigation"> </class> 
+    </classes>
+</test> 
+  
+    <test name="My Account- Testing">
+    <classes> 
+    	<class name="com.test.regression.cub.testscripts.MyAccount"> </class> 
+    </classes>
+</test>
+ 
+
+<test name="Find a Store - Testing">
+    <classes> 
+    	<class name="com.test.regression.cub.testscripts.FindAStore"> </class> 
+    </classes>
+</test>
+
+
+<test name="Weekly Ad - Testing">
+    <classes> 
+    	<class name="com.test.regression.cub.testscripts.WeeklyAds"> </class> 
+    </classes>
+</test>
+
+<test name="About Us - Testing">
+    <classes> 
+    	<class name="com.test.regression.cub.testscripts.AboutUs"> </class> 
+    </classes>
+</test>
+
+<test name="Communication Preference - Testing">
+    <classes> 
+    	<class name="com.test.regression.cub.testscripts.CommunicationPref"> </class> 
+    </classes>
+</test>
+
+<test name="Navigation - Testing">
+    <classes> 
+    	<class name="com.test.regression.cub.testscripts.Navigation"> </class> 
+    </classes>
+</test>
+
+<test name="Recipes - Testing">
+    <classes> 
+    	<class name="com.test.regression.cub.testscripts.Recipes"> </class> 
+    </classes>
+</test>
+
+<test name="Rewards Card - Testing">
+    <classes> 
+    	<class name="com.test.regression.cub.testscripts.RewardsCard"> </class> 
+    </classes>
+</test>
+
+<test name="Search - Testing">
+    <classes> 
+    	<class name="com.test.regression.cub.testscripts.Search"> </class> 
+    </classes>
+</test>
+
+<test name="SiteMap - Testing">
+    <classes> 
+    	<class name="com.test.regression.cub.testscripts.SiteMap"> </class> 
+    </classes>
+</test>
+
+
+
+<test name="Coupons - Testing">
+    <classes> 
+    	<class name="com.test.regression.cub.testscripts.Coupons"> </class> 
+    </classes>
+</test>
+-->
+</suite> 
