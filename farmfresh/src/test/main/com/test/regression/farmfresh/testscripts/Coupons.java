@@ -46,6 +46,7 @@ import org.xml.sax.SAXException;
 
 import com.test.regression.farmfresh.pages.CouponPage;
 import com.test.regression.farmfresh.pages.FFHome;
+import com.test.regression.farmfresh.pages.FindAStorePage;
 import com.test.regression.farmfresh.pages.MyAccountPage;
 import com.test.regression.farmfresh.pages.MyeCouponsPage;
 import com.test.regression.farmfresh.pages.ShoppingListPage;
@@ -56,7 +57,7 @@ import com.test.regression.farmfresh.utils.SuiteBase;
 
 public class Coupons extends SuiteBase {
 
-	FFHome cubHome;
+	FFHome ffHome;
 	CouponPage cp;
 	SignUpPage signUpPage;
 	MyeCouponsPage ecp;
@@ -67,7 +68,7 @@ public class Coupons extends SuiteBase {
 	
 	/* Add a Single Coupon for the Authorized User  */
 
-	@Test(priority = 11, enabled = true)
+	@Test(priority = 11, enabled = false)
 	public void addCouponForAuthorizedUser() {
 		try {
 
@@ -79,9 +80,9 @@ public class Coupons extends SuiteBase {
 			String password = newSL.get("password");
 			String wantedCouponNumber = newSL.get("CouponToAdd");
 
-			cubHome = new FFHome(_driver);
+			ffHome = new FFHome(_driver);
 
-			cubHome.completeSignIn(userId, password);
+			ffHome.completeSignIn(userId, password);
 			log.info("Signed In Successfully");
 
 			Thread.sleep(5000);
@@ -144,123 +145,51 @@ public class Coupons extends SuiteBase {
 	
 	/*   Adds a list of Coupons for a newly Signed Up User who has selected 'I don't Have a card, But want one' option during sign up  */
 
-	@Test(priority = 12, enabled = true)
-	public void addCouponForWantOneNewUser() {
-		try {
-			Map<String, String> addCouponForWantOneNewUserData = readxml.getUserData("TestData.xml", "new-user-5");
-			String userId = addCouponForWantOneNewUserData.get("UserName");
-			String password = addCouponForWantOneNewUserData.get("password");
-			String firstName = addCouponForWantOneNewUserData.get("firstname");
-			String lastName = addCouponForWantOneNewUserData.get("lastname");
-			String address1 = addCouponForWantOneNewUserData.get("address1");
-			String address2 = addCouponForWantOneNewUserData.get("address2");
-			String city = addCouponForWantOneNewUserData.get("city");
-			String state = addCouponForWantOneNewUserData.get("state");
-			String zip = addCouponForWantOneNewUserData.get("zipcode");
-			String homePhone = addCouponForWantOneNewUserData.get("homephone");
-			String mobilePhone = addCouponForWantOneNewUserData.get("mobilephone");
-			String cardlessId = addCouponForWantOneNewUserData.get("cardlessid");
-			String allWantedCouponNumbersInString = addCouponForWantOneNewUserData.get("wantedCoupons");
-			signUpPage = new SignUpPage(_driver);
-			try {
-				signUpPage.clickSignUpLink();
-				log.info("Test Data Used >>>>>>>");
-				log.info("User Name : " + userId);
-				log.info("Password : " + password);
-				signUpPage.enterSignUpDetails(userId, password);
-
-				signUpPage.clickNoButWantCardRadio();
-
-				signUpPage.clickContinueButton();
-				signUpPage.enterContactInformationInSignUp(firstName, lastName, address1, address2, city, state, zip,
-						homePhone, mobilePhone, cardlessId);
-
-				signUpPage.clickUseThisAddressButton();
-				Thread.sleep(5000);
-
-				cp = new CouponPage(_driver);
-
-				cp.clickOnCouponsInMyToolsHomePage(_driver);
-
-			} catch (UnhandledAlertException al) {
-				_driver.switchTo().alert().accept();
-			}
-
-			Thread.sleep(5000);
-
-			// Delimiting the wanted coupon numbers' data
-
-			List<String> allWantedCouponNumbers = Arrays.asList(allWantedCouponNumbersInString.split(","));
-			int size = allWantedCouponNumbers.size();
-
-			cp.addListOfCoupons(allWantedCouponNumbers);
-
-
-			Thread.sleep(5000);
-			ecp = new MyeCouponsPage(_driver);
-
-			ecp.clickOnMyeCouponsInMyToolsHomePage(_driver);
-			log.info("Validating whether the added coupon is in My eCoupons page");
-
-			int eCouponsNumber = ecp.noOfECoupons();
-
-			Assert.assertTrue(size == eCouponsNumber);
-
-		} catch (InterruptedException ie) {
-			log.info(ie.getMessage());
-			Assert.fail("Caught Interrupted Exception");
-		} catch (IOException ioe) {
-			log.info(ioe.getMessage());
-			Assert.fail("Caught IOException Exception");
-		} catch (XPathExpressionException xee) {
-			log.info(xee.getMessage());
-			Assert.fail("Caught XPathExpressionException Exception");
-		} catch (ParserConfigurationException pce) {
-			log.info(pce.getMessage());
-			Assert.fail("Caught ParserConfigurationException Exception");
-		} catch (SAXException saxe) {
-			log.info(saxe.getMessage());
-			Assert.fail("Caught SAXException Exception");
-		} catch (Exception e) {
-			log.info(e.getMessage());
-			Assert.fail(e.getLocalizedMessage());
-		}
-	}
+	
 
 	// Sign Up for an account just by closing the Rewards Card pop up
 	// So, it will prompt for card-less id while trying to add coupon
 
-	@Test(priority = 13, enabled = true)
-	public void addCouponForNoCardNewUser() {
+	@Test(priority = 13, enabled = false)
+	public void addCouponForNewUser() {
 
 		try {
 			Map<String, String> addCouponForNoCardNewUserData = readxml.getUserData("TestData.xml", "new-user-4");
 			String userId = addCouponForNoCardNewUserData.get("UserName");
 			String password = addCouponForNoCardNewUserData.get("password");
 			String allWantedCouponNumbersInString = addCouponForNoCardNewUserData.get("wantedCoupons");
-			String cardlessId = addCouponForNoCardNewUserData.get("cardlessid");
-			String cardlessId7 = cardlessId.substring(0, 7);
-			String cardlessId4 = cardlessId.substring(7, 11);
+			String rewardsNum = addCouponForNoCardNewUserData.get("rewardsNum");
+			String state = addCouponForNoCardNewUserData.get("state");
 
 			signUpPage = new SignUpPage(_driver);
 			log.info("Test Data Used >>>>>>>");
 			log.info("User Name : " + userId);
 			log.info("Password : " + password);
-			try {
+			
 				signUpPage.clickSignUpLink();
 
 				signUpPage.enterSignUpDetails(userId, password);
 
+				Thread.sleep(9000);
+				FindAStorePage findastore = new FindAStorePage(_driver);
+				findastore.enterzip(state);
+				
+				findastore.clickOnSearch();
+				
 				Thread.sleep(5000);
-				signUpPage.closeRewardsCardPopup();
+				findastore.clickOnStore();
+						
+				
+				findastore.clickOnusestore();
+			
+				
+				findastore.clickOnContinue();
 
 				cp = new CouponPage(_driver);
 
 				cp.clickOnCouponsInMyToolsHomePage(_driver);
 
-			} catch (UnhandledAlertException al) {
-				_driver.switchTo().alert().accept();
-			}
+			
 
 			Thread.sleep(5000);
 			// Delimiting the wanted coupon numbers' data
@@ -272,7 +201,7 @@ public class Coupons extends SuiteBase {
 
 			// Adding First Coupon
 
-			cp.addSingleCouponWithCardlessId(firstWantedCoupon, cardlessId7, cardlessId4);
+			cp.addSingleCouponWithRewardsNum(firstWantedCoupon, rewardsNum);
 
 			if (size > 1) {
 
@@ -356,7 +285,7 @@ public class Coupons extends SuiteBase {
 
 	/* Adds a list of Coupons for a new user by selecting 'Not Now' in CardlessId pop up  */
 	
-	@Test(priority = 13, enabled = true)
+	@Test(priority = 13, enabled = false)
 	public void addCouponForNoCardNotNowCardlessIdNewUser() {
 
 		try {
@@ -365,12 +294,8 @@ public class Coupons extends SuiteBase {
 			String userId = addCouponForNoCardNewUserData.get("UserName");
 			String password = addCouponForNoCardNewUserData.get("password");
 			String allWantedCouponNumbersInString = addCouponForNoCardNewUserData.get("wantedCoupons");
-			String cardlessId = addCouponForNoCardNewUserData.get("cardlessid");
-			String cardlessId7 = cardlessId.substring(0, 7);
-			String cardlessId4 = cardlessId.substring(7, 11);
-
-
-			SoftAssert sa = new SoftAssert();
+			String rewardsNum = addCouponForNoCardNewUserData.get("rewardsNum");
+			String state = addCouponForNoCardNewUserData.get("state");
 
 			signUpPage = new SignUpPage(_driver);
 			log.info("Test Data Used >>>>>>>");
@@ -381,8 +306,21 @@ public class Coupons extends SuiteBase {
 
 				signUpPage.enterSignUpDetails(userId, password);
 
+				Thread.sleep(9000);
+				FindAStorePage findastore = new FindAStorePage(_driver);
+				findastore.enterzip(state);
+				
+				findastore.clickOnSearch();
+				
 				Thread.sleep(5000);
-				signUpPage.closeRewardsCardPopup();
+				findastore.clickOnStore();
+						
+				
+				findastore.clickOnusestore();
+			
+				
+				findastore.clickOnContinue();
+
 
 				cp = new CouponPage(_driver);
 
@@ -400,7 +338,7 @@ public class Coupons extends SuiteBase {
 
 			// Adding First Coupon
 
-			cp.addSingleCouponWithNotNowInCardlessIdPopup(firstWantedCoupon, cardlessId7, cardlessId4);
+			cp.addSingleCouponWithNotNowInCardlessIdPopup(firstWantedCoupon, rewardsNum);
 
 			if (size > 1) {
 
@@ -457,7 +395,7 @@ public class Coupons extends SuiteBase {
 
 	/* Validates Sorting Functionality on Alphabetical Order & Expiration Date */
 	
-	@Test(priority = 14, enabled = true)
+	@Test(priority = 14, enabled = false)
 	public void chkCouponSort() throws InterruptedException {
 
 		try{
@@ -519,7 +457,7 @@ public class Coupons extends SuiteBase {
 	
 	/* Add a Single Coupon for the Authorized User from Coupon Details page    */
 
-	@Test(priority = 11, enabled = true)
+	@Test(priority = 11, enabled = false)
 	public void addCouponFromCouponDetailsPageForAuthorizedUser() {
 		
 		try {
@@ -530,10 +468,10 @@ public class Coupons extends SuiteBase {
 
 			SoftAssert sa = new SoftAssert();
 
-			cubHome = new FFHome(_driver);
+			ffHome = new FFHome(_driver);
 
 			
-				cubHome.completeSignIn(userId, password);
+				ffHome.completeSignIn(userId, password);
 				log.info("Signed In Successfully");
 
 				Thread.sleep(5000);
@@ -597,7 +535,7 @@ public class Coupons extends SuiteBase {
 	
 	/* Validates Filter Functionality on Coupons  */
 
-	@Test(priority = 12, enabled = true)
+	@Test(priority = 12, enabled = false)
 	public void categoryTestInCoupons() {
 
 		try {
@@ -626,7 +564,7 @@ public class Coupons extends SuiteBase {
 	
 	/*       Validates Search Functionality on Coupons   */    
 
-	@Test(priority = 11, enabled = true)
+	@Test(priority = 11, enabled = false)
 	public void searchTestInCoupons() {
 
 		try {

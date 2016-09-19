@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="none">
- 
+
 <test name="Sign In - Testing">
     <classes> 
     	<class name="com.test.regression.cub.testscripts.SignIn"> </class> 
     </classes>
 </test> 
- <!--
+
 <test name="Sign Up - Testing">
     <classes> 
     	<class name="com.test.regression.cub.testscripts.SignUp"> </class>  
     </classes>
 </test> 
 
- 
+
 <test name="Shopping List - Testing">
     <classes> 
     	<class name="com.test.regression.cub.testscripts.ShoppingLists"> </class> 
     </classes>
 </test> 
+
 
 <test name="Header Footer Navigation - Testing">
     <classes> 
@@ -96,5 +97,5 @@
     	<class name="com.test.regression.cub.testscripts.Coupons"> </class> 
     </classes>
 </test>
--->
+
 </suite> 

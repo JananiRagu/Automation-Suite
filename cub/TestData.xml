@@ -8,8 +8,8 @@
 <authorizedUsers>
 						
 <user userid="authorized-user-1">
-<UserName>louie4test@cub.com</UserName>
-<password>@testing</password>
+<UserName>testcpwd@cub.com</UserName>
+<password>password</password>
 <SLName>List Created From Automation</SLName>
 <SLName1>List two</SLName1>
 <item1>litchi</item1>
@@ -25,13 +25,13 @@
 <user userid="authorized-user-2">
 <UserName>trix4supervalu@cub.com</UserName>
 <password>trix@test</password>
-<CouponToAdd>41</CouponToAdd>
+<CouponToAdd>72</CouponToAdd>
 </user>
 
 <user userid="authorized-user-3">
-<UserName>tom4supervalu@cub.com</UserName>
-<password>tom@test</password>
-<CouponToAdd>68</CouponToAdd>
+<UserName>au919@cub.com</UserName>
+<password>password</password>
+<CouponToAdd>25</CouponToAdd>
 </user>
 
 <user userid="authorized-user-4">
@@ -82,7 +82,7 @@
 <!-- Change the UserName everytime -->	
 					
 <user userid="new-user-1">
-<UserName>newuser1_119@cub.com</UserName>
+<UserName>newuser1_150@cub.com</UserName>
 <password>password</password>
 </user>
 
@@ -91,7 +91,7 @@
 <!-- Change the UserName and cardless id everytime -->
 
 <user userid="new-user-2">
-<UserName>newuser2_119@cub.com</UserName>
+<UserName>newuser2_150@cub.com</UserName>
 <password>password</password>
 <firstname>new</firstname>
 <lastname>user</lastname>
@@ -102,7 +102,7 @@
 <zipcode>55434</zipcode>
 <homephone>8523697410</homephone>
 <mobilephone>7410254863</mobilephone>
-<cardlessid>70963010117</cardlessid>
+<cardlessid>70963010148</cardlessid>
 <cardlessid1>56998866377</cardlessid1>
 <wantedCoupons>1,3,5,9</wantedCoupons>
 </user>
@@ -112,11 +112,11 @@
 <!-- Change the UserName everytime -->
 
 <user userid="new-user-3">
-<UserName>newuser3_119@cub.com</UserName>
+<UserName>newuser3_150@cub.com</UserName>
 <password>password</password>
 <lastname>Test</lastname>
 <rewardsnumber>48630936861</rewardsnumber>
-<cardlessid>32132455679</cardlessid>
+<cardlessid>32132455710</cardlessid>
 <zipcode>55434</zipcode>
 </user>
 
@@ -127,7 +127,7 @@
 <!-- Change the UserName, cardlessid7, cardlessid4 and wantedCoupons -->
 
 <user userid="new-user-4">
-<UserName>newuser4_119@cub.com</UserName>
+<UserName>newuser4_150@cub.com</UserName>
 <password>password</password>
 <firstname>addCoupon</firstname>
 <lastname>NoCardNewUser</lastname>
@@ -138,14 +138,14 @@
 <zipcode>58963</zipcode>
 <homephone>8523697410</homephone>
 <mobilephone>7410254863</mobilephone>
-<cardlessid>50852010117</cardlessid>
+<cardlessid>50852010148</cardlessid>
 <wantedCoupons>2,4,9</wantedCoupons>
 </user>
 
 <!-- Change the UserName and cardless id everytime -->
 
 <user userid="new-user-5">
-<UserName>newuser5_119@cub.com</UserName>
+<UserName>newuser5_150@cub.com</UserName>
 <password>password</password>
 <firstname>test</firstname>
 <lastname>want</lastname>
@@ -156,14 +156,14 @@
 <zipcode>58963</zipcode>
 <homephone>8523697410</homephone>
 <mobilephone>7410254863</mobilephone>
-<cardlessid>30741010117</cardlessid>
+<cardlessid>30741010148</cardlessid>
 <wantedCoupons>1,3,9,11</wantedCoupons>
 </user>
 
 <!-- Change the UserName and cardless id everytime -->
 
 <user userid="new-user-6">
-<UserName>newuser6_119@cub.com</UserName>
+<UserName>newuser6_150@cub.com</UserName>
 <password>password</password>
 <firstname>test</firstname>
 <lastname>want</lastname>
@@ -174,14 +174,14 @@
 <zipcode>58963</zipcode>
 <homephone>8523697410</homephone>
 <mobilephone>7410254863</mobilephone>
-<cardlessid>20789010117</cardlessid>
+<cardlessid>20789010148</cardlessid>
 <wantedCoupons>2,5,8</wantedCoupons>
 </user>
 
 <!-- Change the UserName and cardless id everytime -->
 
 <user userid="new-user-7">
-<UserName>newuser7_119@cub.com</UserName>
+<UserName>newuser7_150@cub.com</UserName>
 <password>password</password>
 <firstname>test</firstname>
 <lastname>want</lastname>
@@ -192,22 +192,22 @@
 <zipcode>58963</zipcode>
 <homephone>8523697410</homephone>
 <mobilephone>7410254863</mobilephone>
-<cardlessid>40456010117</cardlessid>
+<cardlessid>40456010148</cardlessid>
 <wantedCoupons>10,2,4,1,6</wantedCoupons>
 </user>
 
 <user userid="new-user-8">
-<UserName>newuser8_85@cub.com</UserName>
+<UserName>newuser8_116@cub.com</UserName>
 <password>password</password>
 </user>
 
 <user userid="new-user-9">
-<UserName>newuser9_84@cub.com</UserName>
+<UserName>newuser9_115@cub.com</UserName>
 <password>password</password>
 </user>
 
 <user userid="new-user-10">
-<UserName>newuser10_71@cub.com</UserName>
+<UserName>newuser10_102@cub.com</UserName>
 <password>password</password>
 <firstname>test</firstname>
 <lastname>want</lastname>
@@ -218,17 +218,17 @@
 <zipcode>58963</zipcode>
 <homephone>8523697410</homephone>
 <mobilephone>7410254863</mobilephone>
-<cardlessid>15456010117</cardlessid>
+<cardlessid>15456010148</cardlessid>
 <wantedCoupons>10,2,4,1,6</wantedCoupons>
 </user>
 
 <user userid="new-user-11">
-<UserName>newuser11_35@cub.com</UserName>
+<UserName>newuser11_66@cub.com</UserName>
 <password>password</password>
 </user>
 
 <user userid="new-user-12">
-<UserName>newuser12_119@cub.com</UserName>
+<UserName>newuser12_150@cub.com</UserName>
 <password>password</password>
 <firstname>new</firstname>
 <lastname>user</lastname>
@@ -239,7 +239,7 @@
 <zipcode>55434</zipcode>
 <homephone>8523697410</homephone>
 <mobilephone>7410254863</mobilephone>
-<cardlessid>70986240027</cardlessid>
+<cardlessid>70986240058</cardlessid>
 <cardlessid1>56456866001</cardlessid1>
 <wantedCoupons>1,3,5,9</wantedCoupons>
 </user>
@@ -249,16 +249,16 @@
 <!-- Change the UserName everytime -->
 
 <user userid="new-user-13">
-<UserName>newuser13_27@cub.com</UserName>
+<UserName>newuser13_58@cub.com</UserName>
 <password>password</password>
 <lastname>Test</lastname>
 <rewardsnumber>48630936861</rewardsnumber>
-<cardlessid>32137896027</cardlessid>
+<cardlessid>32137896058</cardlessid>
 <zipcode>55434</zipcode>
 </user>
 
 <user userid="new-user-14">
-<UserName>newuser14_27@cub.com</UserName>
+<UserName>newuser14_58@cub.com</UserName>
 <password>password</password>
 <firstname>new</firstname>
 <lastname>user</lastname>
@@ -269,7 +269,7 @@
 <zipcode>55434</zipcode>
 <homephone>8523697410</homephone>
 <mobilephone>7410254863</mobilephone>
-<cardlessid>70852010027</cardlessid>
+<cardlessid>70852010058</cardlessid>
 <cardlessid1>56008866377</cardlessid1>
 <wantedCoupons>1,3,5,9</wantedCoupons>
 </user>
@@ -279,17 +279,17 @@
 <!-- Change the UserName everytime -->
 
 <user userid="new-user-15">
-<UserName>newuser15_27@cub.com</UserName>
+<UserName>newuser15_58@cub.com</UserName>
 <password>password</password>
 <lastname>Test</lastname>
 <rewardsnumber>48630936861</rewardsnumber>
-<cardlessid>32100255027</cardlessid>
+<cardlessid>32100255058</cardlessid>
 <zipcode>55434</zipcode>
 </user>
 
 
 <user userid="new-user-16">
-<UserName>newuser16_27@cub.com</UserName>
+<UserName>newuser16_58@cub.com</UserName>
 <password>password</password>
 </user>
 

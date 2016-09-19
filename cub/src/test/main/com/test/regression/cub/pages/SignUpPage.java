@@ -309,6 +309,7 @@ public class SignUpPage extends SuiteBase{
 		Thread.sleep(5000);
 		_userName.clear();
 		_userName.sendKeys(Username);
+		//Thread.sleep(2000);
 		_userName.sendKeys(Keys.TAB);
 		
 	}

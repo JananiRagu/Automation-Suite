@@ -1,54 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="96849" started-at="2016-09-06T09:39:22Z" finished-at="2016-09-06T09:40:59Z">
+  <suite name="Suite" duration-ms="76466" started-at="2016-09-19T07:23:53Z" finished-at="2016-09-19T07:25:09Z">
     <groups>
     </groups>
-    <test name="Sign Up - Testing" duration-ms="96849" started-at="2016-09-06T09:39:22Z" finished-at="2016-09-06T09:40:59Z">
-      <class name="com.test.regression.farmfresh.testscripts.SignUp">
-        <test-method status="PASS" signature="DataSetUp()[pri:0, instance:com.test.regression.farmfresh.testscripts.SignUp@192b07fd]" name="DataSetUp" is-config="true" duration-ms="425" started-at="2016-09-06T15:09:21Z" finished-at="2016-09-06T15:09:22Z">
+    <test name="Coupons - Testing" duration-ms="76466" started-at="2016-09-19T07:23:53Z" finished-at="2016-09-19T07:25:09Z">
+      <class name="com.test.regression.farmfresh.testscripts.Coupons">
+        <test-method status="PASS" signature="DataSetUp()[pri:0, instance:com.test.regression.farmfresh.testscripts.Coupons@64bfbc86]" name="DataSetUp" is-config="true" duration-ms="880" started-at="2016-09-19T12:53:52Z" finished-at="2016-09-19T12:53:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DataSetUp -->
-        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.farmfresh.testscripts.SignUp@192b07fd]" name="initialization" is-config="true" duration-ms="15801" started-at="2016-09-06T15:09:22Z" finished-at="2016-09-06T15:09:38Z">
+        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.farmfresh.testscripts.Coupons@64bfbc86]" name="initialization" is-config="true" duration-ms="23191" started-at="2016-09-19T12:53:53Z" finished-at="2016-09-19T12:54:16Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.test.regression.farmfresh.testscripts.SignUp.validSignUp4mSL()]]>
+                <![CDATA[public void com.test.regression.farmfresh.testscripts.Coupons.couponPageFullLoad()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method status="PASS" signature="validSignUp4mSL()[pri:0, instance:com.test.regression.farmfresh.testscripts.SignUp@192b07fd]" name="validSignUp4mSL" duration-ms="75675" started-at="2016-09-06T15:09:38Z" finished-at="2016-09-06T15:10:53Z">
+        <test-method status="FAIL" signature="couponPageFullLoad()[pri:0, instance:com.test.regression.farmfresh.testscripts.Coupons@64bfbc86]" name="couponPageFullLoad" duration-ms="47993" started-at="2016-09-19T12:54:16Z" finished-at="2016-09-19T12:55:04Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [188] but found [48]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [188] but found [48]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at org.testng.Assert.assertEquals(Assert.java:380)
+	at com.test.regression.farmfresh.testscripts.Coupons.couponPageFullLoad(Coupons.java:272)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:75)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:46)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validSignUp4mSL -->
-        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.farmfresh.testscripts.SignUp@192b07fd]" name="breakDown" is-config="true" duration-ms="0" started-at="2016-09-06T15:10:53Z" finished-at="2016-09-06T15:10:53Z">
+        </test-method> <!-- couponPageFullLoad -->
+        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.farmfresh.testscripts.Coupons@64bfbc86]" name="breakDown" is-config="true" duration-ms="370" started-at="2016-09-19T12:55:04Z" finished-at="2016-09-19T12:55:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validSignUp4mSL status=SUCCESS method=SignUp.validSignUp4mSL()[pri:0, instance:com.test.regression.farmfresh.testscripts.SignUp@192b07fd] output={null}]]]>
+                <![CDATA[[TestResult name=couponPageFullLoad status=FAILURE method=Coupons.couponPageFullLoad()[pri:0, instance:com.test.regression.farmfresh.testscripts.Coupons@64bfbc86] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- breakDown -->
-        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.farmfresh.testscripts.SignUp@192b07fd]" name="closeDriver" is-config="true" duration-ms="5352" started-at="2016-09-06T15:10:53Z" finished-at="2016-09-06T15:10:59Z">
+        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.farmfresh.testscripts.Coupons@64bfbc86]" name="closeDriver" is-config="true" duration-ms="4887" started-at="2016-09-19T12:55:05Z" finished-at="2016-09-19T12:55:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.test.regression.farmfresh.testscripts.SignUp.validSignUp4mSL()]]>
+                <![CDATA[public void com.test.regression.farmfresh.testscripts.Coupons.couponPageFullLoad()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-      </class> <!-- com.test.regression.farmfresh.testscripts.SignUp -->
-    </test> <!-- Sign Up - Testing -->
+      </class> <!-- com.test.regression.farmfresh.testscripts.Coupons -->
+    </test> <!-- Coupons - Testing -->
   </suite> <!-- Suite -->
 </testng-results>

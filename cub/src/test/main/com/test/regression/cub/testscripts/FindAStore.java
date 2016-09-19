@@ -80,7 +80,7 @@ public class FindAStore extends SuiteBase {
 	
 	//Guest User setting a Store with Zipcode using See store details link
 	
-		@Test(priority=14, enabled=false)
+		@Test(priority=14, enabled=true)
 		public void setStoreGuestZipCode() 
 		{
 			try{
@@ -125,7 +125,7 @@ public class FindAStore extends SuiteBase {
 		}
 		
 		//Guest User setting a Store with City and State name
-		@Test(priority=15 , enabled=false)
+		@Test(priority=15 , enabled=true)
 		public void setStoreGuestCityState() 
 		{
 			try{
@@ -169,7 +169,7 @@ public class FindAStore extends SuiteBase {
 		}
 		
 		//Guest User setting a Store with Street Name,City and State
-		@Test(priority=16, enabled=false)
+		@Test(priority=16, enabled=true)
 		public void setStoreGueststreetname() 
 		{
 			try{
@@ -230,7 +230,7 @@ public class FindAStore extends SuiteBase {
 		}
 		//SIGN IN User with ZIPCODE and change store from view store page
 		
-		@Test(priority=17, enabled=false)
+		@Test(priority=17, enabled=true)
 		public void setStoreAuthorizedZipcode() {
 
 		try{
@@ -307,7 +307,7 @@ public class FindAStore extends SuiteBase {
 
 		
 		//SIGN IN User with CITY 
-		@Test(priority=18,enabled=false)
+		@Test(priority=18,enabled=true)
 		public void setStoreAuthorizedCityState() {
 
 			try{
@@ -376,7 +376,7 @@ public class FindAStore extends SuiteBase {
 
 		//Checking miles for 20 miles
 		
-		@Test(priority=19, enabled=false)
+		@Test(priority=19, enabled=true)
 		
 		public void Miles20() 
 		{
@@ -433,7 +433,7 @@ public class FindAStore extends SuiteBase {
 			}
 		
 		//Checking miles for 50 miles
-		@Test(priority=20, enabled=false)
+		@Test(priority=20, enabled=true)
 		
 		public void Miles50()
 		{
@@ -491,7 +491,7 @@ public class FindAStore extends SuiteBase {
 
 //Check for Change store option present in Savings page for GUEST USER
 
-	@Test(priority=21, enabled=false)
+	@Test(priority=21, enabled=true)
 	
 	public void changeStoreFromDifferentPages() 
 	{
@@ -564,7 +564,7 @@ public class FindAStore extends SuiteBase {
 	}
 
 	//Clicking on View Stores by State
-	@Test(priority=22, enabled=false)
+	@Test(priority=22, enabled=true)
 	public void StoresbyState() 
 	{
 		try{
@@ -609,7 +609,7 @@ public class FindAStore extends SuiteBase {
 		
 		//Maps and driving directions
 	
-	@Test(priority=23, enabled=false)
+	@Test(priority=23, enabled=true)
 	public void mapanddriving() {
 
 	try{
@@ -710,7 +710,7 @@ public class FindAStore extends SuiteBase {
 }
 	//Invalid ZipCode
 	
-	@Test(priority=24, enabled=false)
+	@Test(priority=24, enabled=true)
 	public void invalidzipcode() {
 
 	try{

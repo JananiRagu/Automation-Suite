@@ -26,7 +26,7 @@ import com.test.regression.farmfresh.utils.SuiteBase;
 
 public class ShoppingLists extends SuiteBase{
 	
-	FFHome cubHome;
+	FFHome ffHome;
 	ShoppingListPage sl;
 	CouponPage cp;
 	SignUpPage signUpPage;
@@ -45,17 +45,17 @@ public class ShoppingLists extends SuiteBase{
 		String password = newSL.get("password");
 		String SLName = newSL.get("SLName");
 
-		cubHome = new CubHome(_driver);
+		ffHome = new ffHome(_driver);
 			log.info("Test Data Used >>>>>>>");
 			log.info("User Name : " + userId);
 			log.info("Password : " + password);
 			
 		
-		cubHome.clickSignInLink();
+		ffHome.clickSignInLink();
 			
-		cubHome.enterLoginDetails(userId, password);
+		ffHome.enterLoginDetails(userId, password);
 			
-		cubHome.clickSignInButton();
+		ffHome.clickSignInButton();
 			
 			
 		sl=new ShoppingListPage(_driver);
@@ -105,17 +105,17 @@ public class ShoppingLists extends SuiteBase{
 		String item3 = AddItems2newSL.get("item3");
 		String quantity3 = AddItems2newSL.get("quantity3");
 
-		cubHome = new CubHome(_driver);
+		ffHome = new ffHome(_driver);
 		
 			log.info("Test Data Used >>>>>>>");
 			log.info("User Name : " + userId);
 			log.info("Password : " + password);
 			
-		cubHome.clickSignInLink();
+		ffHome.clickSignInLink();
 			
-		cubHome.enterLoginDetails(userId, password);
+		ffHome.enterLoginDetails(userId, password);
 			
-		cubHome.clickSignInButton();
+		ffHome.clickSignInButton();
 			
 			
 		sl=new ShoppingListPage(_driver);
@@ -177,17 +177,17 @@ public class ShoppingLists extends SuiteBase{
 		String item3 = AddnEditItems2newSL.get("item3");
 		String quantity3 = AddnEditItems2newSL.get("quantity3");
 
-		cubHome = new FFHome(_driver);
+		ffHome = new FFHome(_driver);
 			
 			log.info("Test Data Used >>>>>>>");
 			log.info("User Name : " + userId);
 			log.info("Password : " + password);
 			
-		cubHome.clickSignInLink();
+		ffHome.clickSignInLink();
 			
-		cubHome.enterLoginDetails(userId, password);
+		ffHome.enterLoginDetails(userId, password);
 			
-		cubHome.clickSignInButton();
+		ffHome.clickSignInButton();
 			
 		sl=new ShoppingListPage(_driver);
 		
@@ -284,16 +284,16 @@ public class ShoppingLists extends SuiteBase{
 		String quantity1 = AddItems2newSL.get("quantity1");
 		
 
-		cubHome = new CubHome(_driver);
+		ffHome = new ffHome(_driver);
 			log.info("Test Data Used >>>>>>>");
 			log.info("User Name : " + userId);
 			log.info("Password : " + password);
 			
-		cubHome.clickSignInLink();
+		ffHome.clickSignInLink();
 			
-		cubHome.enterLoginDetails(userId, password);
+		ffHome.enterLoginDetails(userId, password);
 			
-		cubHome.clickSignInButton();
+		ffHome.clickSignInButton();
 			
 		sl=new ShoppingListPage(_driver);
 		
@@ -344,17 +344,17 @@ public class ShoppingLists extends SuiteBase{
 				String SLName = newSL.get("SLName");
 				String SLName1 = newSL.get("SLName1");
 
-				cubHome = new FFHome(_driver);
+				ffHome = new FFHome(_driver);
 					log.info("Test Data Used >>>>>>>");
 					log.info("User Name : " + userId);
 					log.info("Password : " + password);
 					
 				
-				cubHome.clickSignInLink();
+				ffHome.clickSignInLink();
 					
-				cubHome.enterLoginDetails(userId, password);
+				ffHome.enterLoginDetails(userId, password);
 					
-				cubHome.clickSignInButton();
+				ffHome.clickSignInButton();
 					
 					
 				sl=new ShoppingListPage(_driver);
@@ -425,7 +425,7 @@ public class ShoppingLists extends SuiteBase{
 		String item2 = AddItems2newSL.get("item2");
 		
 
-		cubHome = new FFHome(_driver);
+		ffHome = new FFHome(_driver);
 		
 			log.info("Test Data Used >>>>>>>");
 			log.info("User Name : " + userId);

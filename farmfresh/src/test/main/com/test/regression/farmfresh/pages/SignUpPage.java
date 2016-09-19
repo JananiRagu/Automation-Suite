@@ -153,7 +153,7 @@ public class SignUpPage extends SuiteBase{
 		log.info("Clicked on SignIn Link in SignUp popup..");
 	}
 	
-	public void enterSignUpDetails(String UserName, String Password){
+	public void enterSignUpDetails(String UserName, String Password) throws InterruptedException{
 		waitFor(_userName);
 		_userName.clear();
 		_userName.sendKeys(UserName);
@@ -163,7 +163,7 @@ public class SignUpPage extends SuiteBase{
 		_password.sendKeys(Keys.ENTER);
 		
 		log.info("Entered SignUp Username and Password");
-		
+		Thread.sleep(5000);
 	}
 	
 	

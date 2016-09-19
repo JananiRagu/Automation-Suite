@@ -144,19 +144,19 @@ public class ShoppingListPage extends SuiteBase{
 	
 	public boolean verifyNewAddedShoppingListName(String shoppingListName){
 		
-		System.out.println("Inside verifyNewAddedSLName method");
+		log.info("Inside verifyNewAddedSLName method");
 		
 		int listSize = _selectList.size();
 		WebElement lastListWE = _selectList.get(listSize-2);
 		String lastListName = lastListWE.getText();
-		System.out.println("Last SL name : " + lastListName);
+		log.info("Last SL name : " + lastListName);
 		boolean listAdded = lastListName.equals(shoppingListName);
 		return listAdded;
 	}
 	
 	public boolean isListPresentInViewAllListsPage(WebDriver driver, String shoppingListName){
 		
-		System.out.println("Inside isListPresentInViewAllListsPage method");
+		log.info("Inside isListPresentInViewAllListsPage method");
 		//int listSize = _allSavedLists.size();
 		
 		String temp1 = "//*[@id='saved-list-manager-content']/div/div/table/tbody/tr[";
@@ -173,11 +173,11 @@ public class ShoppingListPage extends SuiteBase{
 			String wantedXpath = temp1+listNo+temp2;
 			
 			String listName = (driver.findElement(By.xpath(wantedXpath))).getText();
-			System.out.println("List Name : " + listName);
+			log.info("List Name : " + listName);
 			boolean result = shoppingListName.equalsIgnoreCase(listName);
 			if(result){
 			tempResult++;
-			System.out.println(shoppingListName+" is Present!!!!");
+			log.info(shoppingListName+" is Present!!!!");
 			}
 			count++;
 		}
@@ -190,7 +190,7 @@ public class ShoppingListPage extends SuiteBase{
 	
 	public void deleteSLFromViewAllListsPage(WebDriver driver, String shoppingListName){
 		
-		System.out.println("Inside deleteSLFromViewAllListsPage method");
+		log.info("Inside deleteSLFromViewAllListsPage method");
 		//int listSize = _allSavedLists.size();
 		
 		String temp1 = "//*[@id='saved-list-manager-content']/div/div/table/tbody/tr[";
@@ -211,7 +211,7 @@ public class ShoppingListPage extends SuiteBase{
 			if(result){
 				String want2DeleteXpath = temp1+listNo+temp3;
 				(driver.findElement(By.xpath(want2DeleteXpath))).click();
-				System.out.println("Deleting list - " + shoppingListName);
+				log.info("Deleting list - " + shoppingListName);
 				log.info("Deleted "+shoppingListName+" from View All Lists page");
 			}
 			
@@ -235,6 +235,7 @@ public class ShoppingListPage extends SuiteBase{
 		waitFor(_add2ListButton);
 		_add2ListButton.click();
 		
+		Thread.sleep(5000);
 		log.info("Added an item to Shopping list");
 	}
 	
@@ -294,18 +295,18 @@ public class ShoppingListPage extends SuiteBase{
 	
 	public int SLSize(){
 		
-		System.out.println("Inside SLSize method");
+		log.info("Inside SLSize method");
 		for(WebElement slItem : _slList){
-			System.out.println(slItem.getText());
+			log.info(slItem.getText());
 		}
 		int slSize = _slList.size();
-		System.out.println(slSize);
+		log.info(slSize);
 		return slSize;
 	}
 	
 	public boolean edit1stAddedSLItem(WebDriver driver, String updatedItem, String updatedQuantity){
 		
-		System.out.println("Inside editSLItem method");
+		log.info("Inside editSLItem method");
 		
 		String temp = "//table[@id='shoppinglist-full']/tbody[@id='fullList']/tr[3]/td[@class='";
 		
@@ -325,11 +326,11 @@ public class ShoppingListPage extends SuiteBase{
 		
 		WebElement updatedItem1 = driver.findElement(By.xpath(temp+"col_sli-details']/label"));
 		String updatedItemName = updatedItem1.getText();
-		System.out.println(updatedItemName);
+		log.info(updatedItemName);
 		
 		WebElement updatedQuantity1 = driver.findElement(By.xpath(temp+"col_sli-quantity']/label"));
 		String updatedItemQuantity = updatedQuantity1.getText();
-		System.out.println(updatedItemQuantity);
+		log.info(updatedItemQuantity);
 		
 		if(updatedItemName.equals(updatedItem)){
 			log.info("Updated Shopping list item name and quantity");
@@ -341,13 +342,13 @@ public class ShoppingListPage extends SuiteBase{
 	
 	public boolean cancelWhileEditingSLItem(WebDriver driver, String updatedItem){
 		
-		System.out.println("Inside cancelWhileEditingSLItem method");
+		log.info("Inside cancelWhileEditingSLItem method");
 		
 		String temp = "//table[@id='shoppinglist-full']/tbody[@id='fullList']/tr[1]/td[@class='";
 		
 		WebElement Item1b4Update = driver.findElement(By.xpath(temp+"col_sli-details']/label"));
 		String ItemNameb4Update = Item1b4Update.getText();
-		System.out.println(ItemNameb4Update);
+		log.info(ItemNameb4Update);
 		
 		WebElement editLinkOfFirstAddedItem = driver.findElement(By.xpath(temp+"col_sli-modify']/a"));
 		editLinkOfFirstAddedItem.click();
@@ -360,7 +361,7 @@ public class ShoppingListPage extends SuiteBase{
 		
 		WebElement updatedItem1 = driver.findElement(By.xpath(temp+"col_sli-details']/label"));
 		String updatedItemName = updatedItem1.getText();
-		System.out.println(updatedItemName);
+		log.info(updatedItemName);
 		
 		if(updatedItemName.equals(ItemNameb4Update)){
 			return true;
@@ -370,7 +371,7 @@ public class ShoppingListPage extends SuiteBase{
 	}
 	
 	public void deleteLastSLItem(WebDriver driver){
-		System.out.println("Inside deleteSLItem method");
+		log.info("Inside deleteSLItem method");
 		
 		String temp = "//table[@id='shoppinglist-full']/tbody[@id='fullList']/tr[1]/td[@class='";
 		

@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -18,8 +19,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import com.google.common.collect.Ordering;
-import com.test.regression.cub.utils.Constant;
 import com.test.regression.cub.utils.Logg;
 import com.test.regression.cub.utils.ReadPropertiesFile;
 import com.test.regression.cub.utils.SuiteBase;
@@ -67,6 +68,10 @@ public class CouponPage extends SuiteBase{
 
 	@FindBy(xpath = "//input[@class='ss-combined-input ss-cardless2-input']")
 	private WebElement _last4DigitsCardlessId;
+	
+	
+	@FindBy(xpath = "//div[@class='ss-popup-anchor']/input")
+	private WebElement _rewardsNumber;
 	
 	@FindBy(xpath = "//button[text()='Continue']")
 	private WebElement _continueButtonInCardlessIdPopUp;
@@ -212,28 +217,42 @@ public class CouponPage extends SuiteBase{
 		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		   boolean reachedbottom = Boolean.parseBoolean(js.executeScript("return $(document).height() == ($(window).height() + $(window).scrollTop());").toString());
-
+		   //System.out.println("Reached Bottom boolean " + reachedbottom);
+		   //System.out.println("Coupon Count Comparison " + _(_allCoupons.size() != totalNoOfCoupons()));
+		   if(_allCoupons.size() != totalNoOfCoupons()){
 		   while (!reachedbottom) {
+			   
+			   
+			       
+			   
+		        ((JavascriptExecutor) driver).executeScript("window.scrollBy(0,800)", "");
+		        
+		        ((JavascriptExecutor) driver).executeScript("window.scrollBy(0,800)", "");
 		        ((JavascriptExecutor) driver).executeScript("window.scrollBy(0,800)", "");
 		        try {
 		            reachedbottom=Boolean.parseBoolean(js.executeScript("return $(document).height() == ($(window).height() + $(window).scrollTop());").toString());
 		            
-		            Wait<WebDriver> wait_element = new WebDriverWait(driver, 5);
+		            Wait<WebDriver> wait_element = new WebDriverWait(driver, 10);
 		            
 		            wait_element.until(ExpectedConditions.elementToBeClickable(_moreCouponsButton));
-		            
+		            if(_allCoupons.size() != totalNoOfCoupons()){
 		            _moreCouponsButton.click();
+		            }
 		            log.info("!!!!!!!!!!!!!!At Last Get Success!!!!!!!!!!!!!!!!");
 		            
-		            break;
+		           
 		        } catch (Exception ex) {
 		            
 		            log.info(ex.getMessage());
 		        }
-		    }
+		       
+		    }}
+		   
 		
 	}
 	
+	
+
 	public void clickMoreCouponsButton(){
 		
 		waitFor(_moreCouponsButton);
@@ -245,18 +264,9 @@ public class CouponPage extends SuiteBase{
 		log.info("...Inside loadCompleteCouponsPage method...");
 		
 		
-		scrollPageDown(driver);
 		
-		scrollPageDown(driver);
+			scrollPageDown(driver);
 		
-		scrollPageDown(driver);
-		
-		do{
-			
-			clickMoreCouponsButton();
-			Thread.sleep(9000);
-			
-		}while(_moreCouponsButton.isDisplayed());
 		
 		int totalNoOfCoupons = _allCoupons.size();
 		return totalNoOfCoupons;
@@ -484,10 +494,16 @@ public class CouponPage extends SuiteBase{
 		log.info("...Inside navigateToCouponDetailPage method...");
 		
 		Thread.sleep(5000);
+		String wantedCn;
 		String temp1 = "//div[@class='coupon-list']/div[";
 		String temp2 = "]/div/div/div[1]/div[2]/h3/a";
+		String temp3 = "]/div/div/div[2]/div[2]/h3/a";
 		
-		String wantedCn = temp1+wantedCouponNumber+temp2;
+		boolean isCouponFlipp = chkIfFlipp(driver, wantedCouponNumber);
+		if(isCouponFlipp)
+			wantedCn = temp1+wantedCouponNumber+temp3;
+		else
+			wantedCn = temp1+wantedCouponNumber+temp2;
 		WebElement wantedCoupon = driver.findElement(By.xpath(wantedCn));
 		waitFor(wantedCoupon);
 		wantedCoupon.click();
@@ -750,6 +766,47 @@ public class CouponPage extends SuiteBase{
 			}	
 		
 		return addedCouponName;
+		
+	}
+
+	public void addSingleCouponWithRewardsNum(String firstWantedCoupon, String rewardsNum) throws InterruptedException {
+		
+		log.info("...Inside addSingleCouponWithRewardsNum method...");
+		
+		boolean isFirstCouponFlipp = chkIfFlipp(_driver, firstWantedCoupon);
+		log.info("isCouponFlipp value is "+ isFirstCouponFlipp);
+		
+		String firstAddedCouponName;
+		
+		if(isFirstCouponFlipp){
+				log.info("Trying to add Flipp Coupon");
+			addNthFlippCoupon(_driver, firstWantedCoupon);
+				log.info("Added wanted Flipp coupon");
+			enterRewardsNumber(rewardsNum);
+				log.info("Entered Cardless Id Details");
+			clickContinueInAddCardlessIdPopup();
+			clickContinueAfterAddingCardlessIdCongratsPopup();
+	
+			firstAddedCouponName = getNthFlippCouponName(_driver, firstWantedCoupon);
+				log.info("Added Coupon Name : " + firstAddedCouponName);
+		}
+		else{
+				log.info("Trying to add Inmar Coupon");
+			addNthInmarCoupon(_driver, firstWantedCoupon);
+				log.info("Added wanted Inmar Coupon");
+			enterRewardsNumber(rewardsNum);
+				log.info("Entered Cardless Id Details");
+			clickContinueInAddCardlessIdPopup();
+			clickContinueAfterAddingCardlessIdCongratsPopup();
+		
+			firstAddedCouponName = getNthInmarCouponName(_driver, firstWantedCoupon);
+				log.info("Added Coupon Name : " + firstAddedCouponName);
+		}
+	}
+
+	private void enterRewardsNumber(String rewardsNum) {
+		waitFor(_rewardsNumber);
+		_rewardsNumber.sendKeys(rewardsNum);
 		
 	}
 	

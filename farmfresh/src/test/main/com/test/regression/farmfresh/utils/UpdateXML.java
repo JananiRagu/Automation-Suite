@@ -74,7 +74,7 @@ public class UpdateXML {
 		            	//System.out.println("Updated Successfully..");
 		            }
 		            
-		            else if("cardlessid".equals(eElement.getNodeName())){
+		            else if("rewardsNum".equals(eElement.getNodeName())){
 		            	
 		            	String cardlessId = eElement.getTextContent();
 		            	
@@ -83,7 +83,7 @@ public class UpdateXML {
 		            	
 		            	String cardlessIdAsStringUpdated = String.valueOf(cardlessIdAsIntUpdated);
 		            	
-		            	String cardlessIdAsStringUpdatedNFormatted = String.format("%011d", cardlessIdAsIntUpdated);
+		            	String cardlessIdAsStringUpdatedNFormatted = String.format("%010d", cardlessIdAsIntUpdated);
 		            	
 		            	eElement.setTextContent(cardlessIdAsStringUpdatedNFormatted);
 		            }
