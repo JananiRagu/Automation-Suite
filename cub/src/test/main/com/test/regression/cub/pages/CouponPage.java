@@ -217,9 +217,8 @@ public class CouponPage extends SuiteBase{
 		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		   boolean reachedbottom = Boolean.parseBoolean(js.executeScript("return $(document).height() == ($(window).height() + $(window).scrollTop());").toString());
-		   //System.out.println("Reached Bottom boolean " + reachedbottom);
-		   //System.out.println("Coupon Count Comparison " + _(_allCoupons.size() != totalNoOfCoupons()));
-		   if(_allCoupons.size() != totalNoOfCoupons()){
+		   
+		   //if(_allCoupons.size() < totalNoOfCoupons()){
 		   while (!reachedbottom) {
 			   
 			   
@@ -235,9 +234,9 @@ public class CouponPage extends SuiteBase{
 		            Wait<WebDriver> wait_element = new WebDriverWait(driver, 10);
 		            
 		            wait_element.until(ExpectedConditions.elementToBeClickable(_moreCouponsButton));
-		            if(_allCoupons.size() != totalNoOfCoupons()){
+		           // if(_allCoupons.size() != totalNoOfCoupons()){
 		            _moreCouponsButton.click();
-		            }
+		            //}
 		            log.info("!!!!!!!!!!!!!!At Last Get Success!!!!!!!!!!!!!!!!");
 		            
 		           
@@ -246,7 +245,7 @@ public class CouponPage extends SuiteBase{
 		            log.info(ex.getMessage());
 		        }
 		       
-		    }}
+		    }//}
 		   
 		
 	}
@@ -264,9 +263,9 @@ public class CouponPage extends SuiteBase{
 		log.info("...Inside loadCompleteCouponsPage method...");
 		
 		
-		
+		while(_allCoupons.size() < totalNoOfCoupons()){
 			scrollPageDown(driver);
-		
+		}
 		
 		int totalNoOfCoupons = _allCoupons.size();
 		return totalNoOfCoupons;
