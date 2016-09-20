@@ -941,7 +941,7 @@ public class FindAStore extends SuiteBase {
 	
 }
 	//Setting store from My Account page.
-	@Test(priority=26, enabled=false)
+	@Test(priority=26, enabled=true)
 	public void validSignUpandsetstore(){
 		try{
 		// Retrieving test data for valid sign up no card
@@ -1050,7 +1050,7 @@ public class FindAStore extends SuiteBase {
 	
 	//Invalid City Street and State
 	
-		@Test(priority=27, enabled=false)
+		@Test(priority=27, enabled=true)
 		public void invalidCityStreet() {
 
 		try{
@@ -1147,7 +1147,7 @@ public class FindAStore extends SuiteBase {
 		}
 		
 	//Pharmacy FAS widget	
-		@Test(priority=28, enabled=false)
+		@Test(priority=28, enabled=true)
 		public void pharmacyFASwidget() 
 		{
 			try{

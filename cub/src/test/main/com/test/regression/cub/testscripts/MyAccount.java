@@ -940,6 +940,7 @@ public class MyAccount extends SuiteBase
 	    log.info("Checking for Error is displayed when user enters Mobile Number with Space");
 	  	myAccount.enterContactInformation(firstName, lastName, address1, address2, city, state, zip, homePhone, mobileSpace);
 	 myAccount.clickContinueButtonInUpdateContactInfoPopUp();
+	 myAccount.clickUseThisAddressButton();
 	  	  boolean result1 =myAccount.isUpdateContactInfoPopUpPresent();
 	  	sa.assertTrue(result1, "\n Failed for Mobile Number with Space");
 		
@@ -947,6 +948,7 @@ public class MyAccount extends SuiteBase
 		log.info("Checking for Error is displayed when user enters Mobile Number with Special Characters");
 		myAccount.enterContactInformation(firstName, lastName, address1, address2, city, state, zip, homePhone, mobileSplChar);
 		 myAccount.clickContinueButtonInUpdateContactInfoPopUp();
+		 myAccount.clickUseThisAddressButton();
 		 boolean result2 =myAccount.isUpdateContactInfoPopUpPresent();
 	    sa.assertTrue(result2, "\n Failed for Mobile Number with Special Characters");
 	    
@@ -954,6 +956,7 @@ public class MyAccount extends SuiteBase
 	    log.info("Checking for Error is displayed when user enters Mobile Number with Alphabets");
 	  	myAccount.enterContactInformation(firstName, lastName, address1, address2, city, state, zip, homePhone, mobileAlphabets);
 		 myAccount.clickContinueButtonInUpdateContactInfoPopUp();
+		 myAccount.clickUseThisAddressButton();
 	  	 boolean result3 =myAccount.isUpdateContactInfoPopUpPresent();
 	  	sa.assertTrue(result3, "\n Failed for Mobile Number with Alphabets");
 	  		  	
@@ -1024,6 +1027,7 @@ public class MyAccount extends SuiteBase
 	    log.info("Checking for Error is displayed when user enters Home Phone Number with Space");
 	  	myAccount.enterContactInformation(firstName, lastName, address1, address2, city, state, zip, homePhoneSpace, mobilePhone);
 		 myAccount.clickContinueButtonInUpdateContactInfoPopUp();
+		 myAccount.clickUseThisAddressButton();
 	  	 boolean result1 =myAccount.isUpdateContactInfoPopUpPresent();
 	  	sa.assertTrue(result1, "\n Failed for Home Phone  Number with Space");
 		
@@ -1031,6 +1035,7 @@ public class MyAccount extends SuiteBase
 		log.info("Checking for Error is displayed when user enters  Home Phone Number with Special Characters");
 		myAccount.enterContactInformation(firstName, lastName, address1, address2, city, state, zip, homePhoneSpecialChar, mobilePhone);
 		 myAccount.clickContinueButtonInUpdateContactInfoPopUp();
+		 myAccount.clickUseThisAddressButton();
 		 boolean result2 =myAccount.isUpdateContactInfoPopUpPresent();
 	    sa.assertTrue(result2, "\n Failed for Home Phone  Number with Special Characters");
 	    
@@ -1038,6 +1043,7 @@ public class MyAccount extends SuiteBase
 	    log.info("Checking for Error is displayed when user enters Home Phone  Number with Alphabets");
 	  	myAccount.enterContactInformation(firstName, lastName, address1, address2, city, state, zip, homePhoneAlphabets, mobilePhone);
 	  	 myAccount.clickContinueButtonInUpdateContactInfoPopUp();
+	  	myAccount.clickUseThisAddressButton();
 	  	  boolean result3 =myAccount.isUpdateContactInfoPopUpPresent();
 	  	sa.assertTrue(result3, "\n Failed for Home Phone  Number with Alphabets");
 	  	

@@ -1,0 +1,80 @@
+2016-09-20 10:57:29,833 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-09-20 10:57:29,861 - com.test.regression.cub.utils.Logg -INFO - Starting ChngContInfoInvalidLastName ................
+2016-09-20 10:57:29,861 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-09-20 10:57:49,950 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-09-20 10:57:50,452 - com.test.regression.cub.utils.Logg -INFO - Cub Home page is launched
+2016-09-20 10:57:50,658 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-09-20 10:57:52,220 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-09-20 10:57:58,793 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-09-20 10:58:19,472 - com.test.regression.cub.utils.Logg -INFO - Clicked on My Account link under My Tools tab
+2016-09-20 10:58:19,710 - com.test.regression.cub.utils.Logg -INFO - Clicked EDIT link to Update Contact Info in My Account Page..
+2016-09-20 10:58:24,711 - com.test.regression.cub.utils.Logg -INFO - Checking for Error is displayed when user enters LastName with Special Characters
+2016-09-20 10:58:24,711 - com.test.regression.cub.utils.Logg -INFO - Entering contact details in UPDATE CONTACT INFO PopUp in My Account page..
+2016-09-20 10:58:28,487 - com.test.regression.cub.utils.Logg -INFO - Entered the Contact Information details..
+2016-09-20 10:58:33,534 - com.test.regression.cub.utils.Logg -INFO - Checking for Error is displayed when user enters LastName with Numbers
+2016-09-20 10:58:33,535 - com.test.regression.cub.utils.Logg -INFO - Entering contact details in UPDATE CONTACT INFO PopUp in My Account page..
+2016-09-20 10:58:35,953 - com.test.regression.cub.utils.Logg -INFO - Entered the Contact Information details..
+2016-09-20 10:58:40,975 - com.test.regression.cub.utils.Logg -INFO - Checking for Error is displayed when user doesnot enter LastName
+2016-09-20 10:58:40,976 - com.test.regression.cub.utils.Logg -INFO - Entering contact details in UPDATE CONTACT INFO PopUp in My Account page..
+2016-09-20 10:58:43,700 - com.test.regression.cub.utils.Logg -INFO - Entered the Contact Information details..
+2016-09-20 10:58:59,410 - com.test.regression.cub.utils.Logg -INFO - ChngContInfoInvalidLastName execution Complete.............
+2016-09-20 11:03:34,712 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-09-20 11:03:34,719 - com.test.regression.cub.utils.Logg -INFO - Starting GuestUserSiteMap ................
+2016-09-20 11:03:34,720 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-09-20 11:04:35,469 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-09-20 11:04:47,958 - com.test.regression.cub.utils.Logg -INFO - Site Map in AboutUs page  Navigation - Success 
+2016-09-20 11:06:23,338 - com.test.regression.cub.utils.Logg -INFO - GuestUserSiteMap execution Complete.............
+2016-09-20 11:06:23,486 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-09-20 11:06:23,487 - com.test.regression.cub.utils.Logg -INFO - Starting GuestUserSiteMap ................
+2016-09-20 11:06:23,488 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-09-20 11:06:55,672 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-09-20 11:07:03,307 - com.test.regression.cub.utils.Logg -INFO - Site Map in AboutUs page  Navigation - Success 
+2016-09-20 11:08:31,873 - com.test.regression.cub.utils.Logg -INFO - GuestUserSiteMap execution Complete.............
+2016-09-20 11:08:31,884 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-09-20 11:08:31,885 - com.test.regression.cub.utils.Logg -INFO - Starting SignedUserSiteMap ................
+2016-09-20 11:08:31,885 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-09-20 11:09:03,811 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-09-20 11:09:03,902 - com.test.regression.cub.utils.Logg -INFO - Cub Home page is launched
+2016-09-20 11:09:04,227 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-09-20 11:09:05,687 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-09-20 11:09:12,903 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-09-20 11:11:02,244 - com.test.regression.cub.utils.Logg -INFO - SignedUserSiteMap execution Complete.............
+2016-09-20 11:11:02,282 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-09-20 11:11:02,282 - com.test.regression.cub.utils.Logg -INFO - Starting SignedUserSiteMap ................
+2016-09-20 11:11:02,283 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-09-20 11:11:27,167 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-09-20 11:11:27,233 - com.test.regression.cub.utils.Logg -INFO - Cub Home page is launched
+2016-09-20 11:11:28,477 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-09-20 11:11:29,274 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-09-20 11:11:34,407 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-09-20 11:13:26,382 - com.test.regression.cub.utils.Logg -INFO - SignedUserSiteMap execution Complete.............
+2016-09-20 14:00:19,933 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-09-20 14:00:19,972 - com.test.regression.cub.utils.Logg -INFO - Starting GuestUserSiteMap ................
+2016-09-20 14:00:19,973 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-09-20 14:00:49,410 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-09-20 14:01:02,541 - com.test.regression.cub.utils.Logg -INFO - Site Map in AboutUs page  Navigation - Success 
+2016-09-20 14:02:33,443 - com.test.regression.cub.utils.Logg -INFO - GuestUserSiteMap execution Complete.............
+2016-09-20 14:02:33,485 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-09-20 14:02:33,487 - com.test.regression.cub.utils.Logg -INFO - Starting GuestUserSiteMap ................
+2016-09-20 14:02:33,487 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-09-20 14:03:03,857 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-09-20 14:03:16,756 - com.test.regression.cub.utils.Logg -INFO - Site Map in AboutUs page  Navigation - Success 
+2016-09-20 14:04:46,947 - com.test.regression.cub.utils.Logg -INFO - GuestUserSiteMap execution Complete.............
+2016-09-20 14:04:46,950 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-09-20 14:04:46,950 - com.test.regression.cub.utils.Logg -INFO - Starting SignedUserSiteMap ................
+2016-09-20 14:04:46,951 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-09-20 14:05:21,593 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-09-20 14:05:21,888 - com.test.regression.cub.utils.Logg -INFO - Cub Home page is launched
+2016-09-20 14:05:22,253 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-09-20 14:05:25,118 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-09-20 14:05:30,310 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-09-20 14:07:33,911 - com.test.regression.cub.utils.Logg -INFO - SignedUserSiteMap execution Complete.............
+2016-09-20 14:07:33,973 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-09-20 14:07:33,973 - com.test.regression.cub.utils.Logg -INFO - Starting SignedUserSiteMap ................
+2016-09-20 14:07:33,973 - com.test.regression.cub.utils.Logg -INFO - ***************************************************************
+2016-09-20 14:07:50,601 - com.test.regression.cub.utils.Logg -INFO - Launched https://www.cub.com/ Successfully!
+2016-09-20 14:07:50,661 - com.test.regression.cub.utils.Logg -INFO - Cub Home page is launched
+2016-09-20 14:07:51,309 - com.test.regression.cub.utils.Logg -INFO - SignIn Link Clicked
+2016-09-20 14:07:52,230 - com.test.regression.cub.utils.Logg -INFO - Entered login Details
+2016-09-20 14:07:57,397 - com.test.regression.cub.utils.Logg -INFO - SignInButton Clicked
+2016-09-20 14:09:47,249 - com.test.regression.cub.utils.Logg -INFO - SignedUserSiteMap execution Complete.............

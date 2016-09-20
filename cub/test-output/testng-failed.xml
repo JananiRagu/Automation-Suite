@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" parallel="none">
-  <test name="Coupons - Testing(failed)" parallel="none">
+  <listeners>
+    <listener class-name="com.test.regression.cub.utils.RetryListener"/>
+    <listener class-name="com.test.regression.cub.utils.TestListener"/>
+  </listeners>
+  <test name="SiteMap - Testing(failed)" parallel="none">
     <classes>
-      <class name="com.test.regression.cub.testscripts.Coupons">
+      <class name="com.test.regression.cub.testscripts.SiteMap">
         <methods>
+          <include name="GuestUserSiteMap"/>
           <include name="initialization"/>
+          <include name="SignedUserSiteMap"/>
           <include name="breakDown"/>
           <include name="DataSetUp"/>
-          <include name="couponPageFullLoad"/>
           <include name="closeDriver"/>
         </methods>
-      </class> <!-- com.test.regression.cub.testscripts.Coupons -->
+      </class> <!-- com.test.regression.cub.testscripts.SiteMap -->
     </classes>
-  </test> <!-- Coupons - Testing(failed) -->
+  </test> <!-- SiteMap - Testing(failed) -->
 </suite> <!-- Failed suite [Suite] -->

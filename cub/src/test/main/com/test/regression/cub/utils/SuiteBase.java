@@ -145,7 +145,7 @@ public class SuiteBase {
      
 	}
 	 public void waitFor(WebElement webElement){
-	        waitFor(webElement, 30);
+	        waitFor(webElement, 60);
 	 }
 	 
 	  public void setDriver(WebDriver driver) {

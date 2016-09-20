@@ -1,118 +1,317 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="2" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="57536" started-at="2016-09-19T12:25:50Z" finished-at="2016-09-19T12:26:47Z">
+  <suite name="Suite" duration-ms="567392" started-at="2016-09-20T08:30:19Z" finished-at="2016-09-20T08:39:47Z">
     <groups>
     </groups>
-    <test name="Coupons - Testing" duration-ms="57536" started-at="2016-09-19T12:25:50Z" finished-at="2016-09-19T12:26:47Z">
-      <class name="com.test.regression.cub.testscripts.Coupons">
-        <test-method status="PASS" signature="DataSetUp()[pri:0, instance:com.test.regression.cub.testscripts.Coupons@64bfbc86]" name="DataSetUp" is-config="true" duration-ms="404" started-at="2016-09-19T17:55:49Z" finished-at="2016-09-19T17:55:50Z">
+    <test name="SiteMap - Testing" duration-ms="567392" started-at="2016-09-20T08:30:19Z" finished-at="2016-09-20T08:39:47Z">
+      <class name="com.test.regression.cub.testscripts.SiteMap">
+        <test-method status="PASS" signature="DataSetUp()[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="DataSetUp" is-config="true" duration-ms="663" started-at="2016-09-20T14:00:19Z" finished-at="2016-09-20T14:00:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DataSetUp -->
-        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.Coupons@64bfbc86]" name="initialization" is-config="true" duration-ms="24409" started-at="2016-09-19T17:55:50Z" finished-at="2016-09-19T17:56:14Z">
+        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="initialization" is-config="true" duration-ms="29479" started-at="2016-09-20T14:00:19Z" finished-at="2016-09-20T14:00:49Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.test.regression.cub.testscripts.Coupons.couponPageFullLoad()]]>
+                <![CDATA[public void com.test.regression.cub.testscripts.SiteMap.GuestUserSiteMap() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method status="FAIL" signature="couponPageFullLoad()[pri:0, instance:com.test.regression.cub.testscripts.Coupons@64bfbc86]" name="couponPageFullLoad" duration-ms="10039" started-at="2016-09-19T17:56:14Z" finished-at="2016-09-19T17:56:24Z">
-          <exception class="org.testng.internal.thread.ThreadTimeoutException">
-            <message>
-              <![CDATA[Method org.testng.internal.TestNGMethod.couponPageFullLoad() didn't finish within the time-out 10000]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.couponPageFullLoad() didn't finish within the time-out 10000
-	at java.net.SocketInputStream.socketRead0(Native Method)
-	at java.net.SocketInputStream.socketRead(Unknown Source)
-	at java.net.SocketInputStream.read(Unknown Source)
-	at java.net.SocketInputStream.read(Unknown Source)
-	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
-	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
-	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
-	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
-	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:165)
-	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
-	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
-	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:687)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:680)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
-	at com.test.regression.cub.pages.CouponPage.scrollPageDown(CouponPage.java:236)
-	at com.test.regression.cub.pages.CouponPage.loadCompleteCouponsPage(CouponPage.java:267)
-	at com.test.regression.cub.testscripts.Coupons.couponPageFullLoad(Coupons.java:327)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
-	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- couponPageFullLoad -->
-        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.Coupons@64bfbc86]" name="breakDown" is-config="true" duration-ms="1586" started-at="2016-09-19T17:56:24Z" finished-at="2016-09-19T17:56:26Z">
+        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="breakDown" is-config="true" duration-ms="336" started-at="2016-09-20T14:02:24Z" finished-at="2016-09-20T14:02:25Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=couponPageFullLoad status=FAILURE method=Coupons.couponPageFullLoad()[pri:0, instance:com.test.regression.cub.testscripts.Coupons@64bfbc86] output={null}]]]>
+                <![CDATA[[TestResult name=GuestUserSiteMap status=FAILURE method=SiteMap.GuestUserSiteMap()[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- breakDown -->
-        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.Coupons@64bfbc86]" name="closeDriver" is-config="true" duration-ms="21460" started-at="2016-09-19T17:56:26Z" finished-at="2016-09-19T17:56:47Z">
+        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="closeDriver" is-config="true" duration-ms="8362" started-at="2016-09-20T14:02:25Z" finished-at="2016-09-20T14:02:33Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.test.regression.cub.testscripts.Coupons.couponPageFullLoad()]]>
+                <![CDATA[public void com.test.regression.cub.testscripts.SiteMap.GuestUserSiteMap() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-      </class> <!-- com.test.regression.cub.testscripts.Coupons -->
-    </test> <!-- Coupons - Testing -->
+        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="initialization" is-config="true" duration-ms="30373" started-at="2016-09-20T14:02:33Z" finished-at="2016-09-20T14:03:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SiteMap.GuestUserSiteMap() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="FAIL" signature="GuestUserSiteMap()[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="GuestUserSiteMap" duration-ms="94701" started-at="2016-09-20T14:03:03Z" finished-at="2016-09-20T14:04:38Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Timed out after 60 seconds waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='content-primary']/div/div[3]/div/ul/li[1]/a'
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir621188_2535}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 02825e9783ff3f3395d311185519d08d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 60 seconds waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='content-primary']/div/div[3]/div/ul/li[1]/a'
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir621188_2535}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 02825e9783ff3f3395d311185519d08d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:144)
+	at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:148)
+	at com.test.regression.cub.pages.SiteMapPage.clickOnSavings(SiteMapPage.java:191)
+	at com.test.regression.cub.testscripts.SiteMap.GuestUserSiteMap(SiteMap.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:1049)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1254)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:75)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:46)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='content-primary']/div/div[3]/div/ul/li[1]/a"}
+  (Session info: chrome=53.0.2785.116)
+  (Driver info: chromedriver=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.27 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir621188_2535}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 02825e9783ff3f3395d311185519d08d
+*** Element info: {Using=xpath, value=//*[@id='content-primary']/div/div[3]/div/ul/li[1]/a}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GuestUserSiteMap -->
+        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="breakDown" is-config="true" duration-ms="308" started-at="2016-09-20T14:04:38Z" finished-at="2016-09-20T14:04:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=GuestUserSiteMap status=FAILURE method=SiteMap.GuestUserSiteMap()[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- breakDown -->
+        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="closeDriver" is-config="true" duration-ms="8057" started-at="2016-09-20T14:04:38Z" finished-at="2016-09-20T14:04:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SiteMap.GuestUserSiteMap() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="initialization" is-config="true" duration-ms="34645" started-at="2016-09-20T14:04:46Z" finished-at="2016-09-20T14:05:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SiteMap.SignedUserSiteMap() throws java.lang.InterruptedException,java.io.IOException,javax.xml.xpath.XPathExpressionException,javax.xml.parsers.ParserConfigurationException,org.xml.sax.SAXException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="breakDown" is-config="true" duration-ms="365" started-at="2016-09-20T14:07:26Z" finished-at="2016-09-20T14:07:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SignedUserSiteMap status=FAILURE method=SiteMap.SignedUserSiteMap()[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- breakDown -->
+        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="closeDriver" is-config="true" duration-ms="6979" started-at="2016-09-20T14:07:26Z" finished-at="2016-09-20T14:07:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SiteMap.SignedUserSiteMap() throws java.lang.InterruptedException,java.io.IOException,javax.xml.xpath.XPathExpressionException,javax.xml.parsers.ParserConfigurationException,org.xml.sax.SAXException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="initialization" is-config="true" duration-ms="16630" started-at="2016-09-20T14:07:33Z" finished-at="2016-09-20T14:07:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SiteMap.SignedUserSiteMap() throws java.lang.InterruptedException,java.io.IOException,javax.xml.xpath.XPathExpressionException,javax.xml.parsers.ParserConfigurationException,org.xml.sax.SAXException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="FAIL" signature="SignedUserSiteMap()[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="SignedUserSiteMap" duration-ms="109759" started-at="2016-09-20T14:07:50Z" finished-at="2016-09-20T14:09:40Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Timed out after 60 seconds waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='content-primary']/div/div[3]/div/ul/li[1]/a'
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir626324_8689}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a23360038e720688c847ff57457a0c9e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 60 seconds waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='content-primary']/div/div[3]/div/ul/li[1]/a'
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir626324_8689}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a23360038e720688c847ff57457a0c9e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:144)
+	at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:148)
+	at com.test.regression.cub.pages.SiteMapPage.clickOnSavings(SiteMapPage.java:191)
+	at com.test.regression.cub.testscripts.SiteMap.SignedUserSiteMap(SiteMap.java:499)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:1049)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1254)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:75)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:46)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='content-primary']/div/div[3]/div/ul/li[1]/a"}
+  (Session info: chrome=53.0.2785.116)
+  (Driver info: chromedriver=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.22 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir626324_8689}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a23360038e720688c847ff57457a0c9e
+*** Element info: {Using=xpath, value=//*[@id='content-primary']/div/div[3]/div/ul/li[1]/a}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignedUserSiteMap -->
+        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="breakDown" is-config="true" duration-ms="208" started-at="2016-09-20T14:09:40Z" finished-at="2016-09-20T14:09:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SignedUserSiteMap status=FAILURE method=SiteMap.SignedUserSiteMap()[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- breakDown -->
+        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="closeDriver" is-config="true" duration-ms="6672" started-at="2016-09-20T14:09:40Z" finished-at="2016-09-20T14:09:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SiteMap.SignedUserSiteMap() throws java.lang.InterruptedException,java.io.IOException,javax.xml.xpath.XPathExpressionException,javax.xml.parsers.ParserConfigurationException,org.xml.sax.SAXException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- com.test.regression.cub.testscripts.SiteMap -->
+    </test> <!-- SiteMap - Testing -->
   </suite> <!-- Suite -->
 </testng-results>

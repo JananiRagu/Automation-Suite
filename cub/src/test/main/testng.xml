@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="none">
-<!-- 
+
 <test name="Sign In - Testing">
     <classes> 
     	<class name="com.test.regression.cub.testscripts.SignIn"> </class> 
     </classes>
 </test> 
-
+<!-- 
 <test name="Sign Up - Testing">
     <classes> 
     	<class name="com.test.regression.cub.testscripts.SignUp"> </class>  
@@ -27,7 +27,7 @@
     	<class name="com.test.regression.cub.testscripts.HeaderFooterNavigation"> </class> 
     </classes>
 </test> 
-  
+
     <test name="My Account- Testing">
     <classes> 
     	<class name="com.test.regression.cub.testscripts.MyAccount"> </class> 
@@ -90,12 +90,17 @@
     </classes>
 </test>
 
--->
+
 
 <test name="Coupons - Testing">
     <classes> 
     	<class name="com.test.regression.cub.testscripts.Coupons"> </class> 
     </classes>
 </test>
+-->
+<listeners>
+        <listener class-name="com.test.regression.cub.utils.RetryListener"/>
+        <listener class-name="com.test.regression.cub.utils.TestListener"/>
+  </listeners>
 
 </suite> 

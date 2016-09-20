@@ -31,61 +31,116 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Coupons - Testing</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">57.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">SiteMap - Testing</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">4</td><td class="numi">567.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Coupons - Testing &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">com.test.regression.cub.testscripts.Coupons</td><td><a href="#m1"><b>couponPageFullLoad</b>  </a></td><td class="numi">1</td><td>1474287974791</td><td class="numi">10039</td></tr>
+<tr><th colspan="4">SiteMap - Testing &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="4">com.test.regression.cub.testscripts.SiteMap</td><td><a href="#m1"><b>GuestUserSiteMap</b>  </a></td><td class="numi">1</td><td>1474360383858</td><td class="numi">94701</td></tr><tr class="failedodd"><td><a href="#m2"><b>GuestUserSiteMap</b>  </a></td><td class="numi">1</td><td>1474360383858</td><td class="numi">94701</td></tr><tr class="failedodd"><td><a href="#m3"><b>SignedUserSiteMap</b>  </a></td><td class="numi">1</td><td>1474360670602</td><td class="numi">109759</td></tr><tr class="failedodd"><td><a href="#m4"><b>SignedUserSiteMap</b>  </a></td><td class="numi">1</td><td>1474360670602</td><td class="numi">109759</td></tr>
 </table>
-<h1>Coupons - Testing</h1>
-<h2 id="m1">com.test.regression.cub.testscripts.Coupons:couponPageFullLoad</h2>
+<h1>SiteMap - Testing</h1>
+<h2 id="m1">com.test.regression.cub.testscripts.SiteMap:SignedUserSiteMap</h2>
 <div style="padding-left:3em">
-<p>Method org.testng.internal.TestNGMethod.couponPageFullLoad() didn&apos;t finish within the time-out 10000</p>
-java.net.SocketInputStream.socketRead0(Native Method)
-<br/>at java.net.SocketInputStream.socketRead(Unknown Source)
-<br/>at java.net.SocketInputStream.read(Unknown Source)
-<br/>at java.net.SocketInputStream.read(Unknown Source)
-<br/>at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
-<br/>at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
-<br/>at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
-<br/>at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
-<br/>at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
-<br/>at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
-<br/>at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:165)
-<br/>at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
-<br/>at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
-<br/>at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
-<br/>at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
-<br/>at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-<br/>at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-<br/>at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-<br/>at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
-<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
-<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+<p>Timed out after 60 seconds waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@id=&apos;content-primary&apos;]/div/div[3]/div/ul/li[1]/a&apos;
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;SDEVPCSVU7112&apos;, ip: &apos;10.15.142.48&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir626324_8689}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a23360038e720688c847ff57457a0c9e</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+<br/>at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:144)
+<br/>at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:148)
+<br/>at com.test.regression.cub.pages.SiteMapPage.clickOnSavings(SiteMapPage.java:191)
+<br/>at com.test.regression.cub.testscripts.SiteMap.SignedUserSiteMap(SiteMap.java:499)
+<br/>25 lines not shown
+<p>Caused by no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;content-primary&apos;]/div/div[3]/div/ul/li[1]/a&quot;}
+  (Session info: chrome=53.0.2785.116)
+  (Driver info: chromedriver=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.22 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;SDEVPCSVU7112&apos;, ip: &apos;10.15.142.48&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir626324_8689}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a23360038e720688c847ff57457a0c9e
+*** Element info: {Using=xpath, value=//*[@id=&apos;content-primary&apos;]/div/div[3]/div/ul/li[1]/a}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 <br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
 <br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
 <br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 <br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 <br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 <br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-<br/>at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
+<br/>at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
 <br/>at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
 <br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
 <br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
 <br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:687)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:680)
 <br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
-<br/>at com.test.regression.cub.pages.CouponPage.scrollPageDown(CouponPage.java:236)
-<br/>at com.test.regression.cub.pages.CouponPage.loadCompleteCouponsPage(CouponPage.java:267)
-<br/>at com.test.regression.cub.testscripts.Coupons.couponPageFullLoad(Coupons.java:327)
-<br/>13 lines not shown
+<br/>at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:144)
+<br/>at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:148)
+<br/>at com.test.regression.cub.pages.SiteMapPage.clickOnSavings(SiteMapPage.java:191)
+<br/>at com.test.regression.cub.testscripts.SiteMap.SignedUserSiteMap(SiteMap.java:499)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.test.regression.cub.testscripts.SiteMap:GuestUserSiteMap</h2>
+<div style="padding-left:3em">
+<p>Timed out after 60 seconds waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@id=&apos;content-primary&apos;]/div/div[3]/div/ul/li[1]/a&apos;
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;SDEVPCSVU7112&apos;, ip: &apos;10.15.142.48&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir621188_2535}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 02825e9783ff3f3395d311185519d08d</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+<br/>at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:144)
+<br/>at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:148)
+<br/>at com.test.regression.cub.pages.SiteMapPage.clickOnSavings(SiteMapPage.java:191)
+<br/>at com.test.regression.cub.testscripts.SiteMap.GuestUserSiteMap(SiteMap.java:45)
+<br/>25 lines not shown
+<p>Caused by no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;content-primary&apos;]/div/div[3]/div/ul/li[1]/a&quot;}
+  (Session info: chrome=53.0.2785.116)
+  (Driver info: chromedriver=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.27 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;SDEVPCSVU7112&apos;, ip: &apos;10.15.142.48&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir621188_2535}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 02825e9783ff3f3395d311185519d08d
+*** Element info: {Using=xpath, value=//*[@id=&apos;content-primary&apos;]/div/div[3]/div/ul/li[1]/a}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+<br/>at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:144)
+<br/>at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:148)
+<br/>at com.test.regression.cub.pages.SiteMapPage.clickOnSavings(SiteMapPage.java:191)
+<br/>at com.test.regression.cub.testscripts.SiteMap.GuestUserSiteMap(SiteMap.java:45)
+<br/>25 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>
