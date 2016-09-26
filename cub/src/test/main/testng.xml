@@ -3,7 +3,7 @@
 <suite name="Suite" parallel="none">
 
 
-
+<!-- 
 <test name="Sign In - Testing">
     <classes> 
     	<class name="com.test.regression.cub.testscripts.SignIn"> </class> 
@@ -92,7 +92,7 @@
     </classes>
 </test>
 
-
+ -->
 
 <test name="Coupons - Testing">
     <classes> 
