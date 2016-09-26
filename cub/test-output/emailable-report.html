@@ -31,40 +31,62 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">SiteMap - Testing</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">4</td><td class="numi">567.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Sign In - Testing</td><td class="numi">7</td><td class="numi">7</td><td class="numi">0</td><td class="numi">0</td><td class="numi">576.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Sign Up - Testing</td><td class="numi">3</td><td class="numi">3</td><td class="numi_attn">4</td><td class="numi_attn">1</td><td class="numi">834.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Shopping List - Testing</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">1,208.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">13</td><td class="numi">13</td><td class="numi_attn">4</td><td class="numi_attn">1</td><td class="numi">2,628.6 seconds</td><td colspan="2">&nbsp;</td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">SiteMap - Testing &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="4">com.test.regression.cub.testscripts.SiteMap</td><td><a href="#m1"><b>GuestUserSiteMap</b>  </a></td><td class="numi">1</td><td>1474360383858</td><td class="numi">94701</td></tr><tr class="failedodd"><td><a href="#m2"><b>GuestUserSiteMap</b>  </a></td><td class="numi">1</td><td>1474360383858</td><td class="numi">94701</td></tr><tr class="failedodd"><td><a href="#m3"><b>SignedUserSiteMap</b>  </a></td><td class="numi">1</td><td>1474360670602</td><td class="numi">109759</td></tr><tr class="failedodd"><td><a href="#m4"><b>SignedUserSiteMap</b>  </a></td><td class="numi">1</td><td>1474360670602</td><td class="numi">109759</td></tr>
+<tr><th colspan="4">Sign In - Testing &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="7">com.test.regression.cub.testscripts.SignIn</td><td><a href="#m1"><b>forgotPassword</b>  </a></td><td class="numi">1</td><td>1474868165791</td><td class="numi">17147</td></tr><tr class="passedodd"><td><a href="#m2"><b>validLogin</b>  </a></td><td class="numi">1</td><td>1474868225906</td><td class="numi">43535</td></tr><tr class="passedodd"><td><a href="#m3"><b>inValidLogin</b>  </a></td><td class="numi">1</td><td>1474868313120</td><td class="numi">14323</td></tr><tr class="passedodd"><td><a href="#m4"><b>userNameNPasswordFieldValidation</b>  </a></td><td class="numi">1</td><td>1474868368391</td><td class="numi">28975</td></tr><tr class="passedodd"><td><a href="#m5"><b>validLoginFromShoppingListPage</b>  </a></td><td class="numi">1</td><td>1474868440521</td><td class="numi">97860</td></tr><tr class="passedodd"><td><a href="#m6"><b>validLoginFromCouponsPage</b>  </a></td><td class="numi">1</td><td>1474868578958</td><td class="numi">67363</td></tr><tr class="passedodd"><td><a href="#m7"><b>validateSignUpLinkInSignInPopup</b>  </a></td><td class="numi">1</td><td>1474868693461</td><td class="numi">2258</td></tr>
+<tr><th colspan="4">Sign Up - Testing &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="5">com.test.regression.cub.testscripts.SignUp</td><td><a href="#m8"><b>initialization</b>  </a></td><td class="numi">1</td><td>1474869496381</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m9"><b>initialization</b>  </a></td><td class="numi">1</td><td>1474869496381</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m10"><b>initialization</b>  </a></td><td class="numi">1</td><td>1474869496381</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m11"><b>initialization</b>  </a></td><td class="numi">1</td><td>1474869496381</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m12"><b>initialization</b>  </a></td><td class="numi">1</td><td>1474869496381</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Sign Up - Testing &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.test.regression.cub.testscripts.SignUp</td><td><a href="#m13"><b>validSignUp_yesIHaveOne_validateRewardsPopup</b>  </a></td><td class="numi">1</td><td>1474869116849</td><td class="numi">339905</td></tr>
+<tr><th colspan="4">Sign Up - Testing &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="13">com.test.regression.cub.testscripts.SignUp</td><td><a href="#m14"><b>initialization</b>  </a></td><td class="numi">3</td><td>1474869536071</td><td class="numi">5</td></tr><tr class="skippedodd"><td><a href="#m15"><b>breakDown</b>  </a></td><td class="numi">4</td><td>1474869536070</td><td class="numi">7</td></tr><tr class="skippedodd"><td><a href="#m16"><b>closeDriver</b>  </a></td><td class="numi">4</td><td>1474869536070</td><td class="numi">8</td></tr><tr class="skippedodd"><td><a href="#m17"><b>initialization</b>  </a></td><td class="numi">3</td><td>1474869536071</td><td class="numi">5</td></tr><tr class="skippedodd"><td><a href="#m18"><b>breakDown</b>  </a></td><td class="numi">4</td><td>1474869536070</td><td class="numi">7</td></tr><tr class="skippedodd"><td><a href="#m19"><b>closeDriver</b>  </a></td><td class="numi">4</td><td>1474869536070</td><td class="numi">8</td></tr><tr class="skippedodd"><td><a href="#m20"><b>initialization</b>  </a></td><td class="numi">3</td><td>1474869536071</td><td class="numi">5</td></tr><tr class="skippedodd"><td><a href="#m21"><b>breakDown</b>  </a></td><td class="numi">4</td><td>1474869536070</td><td class="numi">7</td></tr><tr class="skippedodd"><td><a href="#m22"><b>closeDriver</b>  </a></td><td class="numi">4</td><td>1474869536070</td><td class="numi">8</td></tr><tr class="skippedodd"><td><a href="#m23"><b>initialization</b>  </a></td><td class="numi">3</td><td>1474869536071</td><td class="numi">5</td></tr><tr class="skippedodd"><td><a href="#m24"><b>breakDown</b>  </a></td><td class="numi">4</td><td>1474869536070</td><td class="numi">7</td></tr><tr class="skippedodd"><td><a href="#m25"><b>closeDriver</b>  </a></td><td class="numi">4</td><td>1474869536070</td><td class="numi">8</td></tr><tr class="skippedodd"><td><a href="#m26"><b>initialization</b>  </a></td><td class="numi">3</td><td>1474869536071</td><td class="numi">5</td></tr>
+<tr><th colspan="4">Sign Up - Testing &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="4">com.test.regression.cub.testscripts.SignUp</td><td><a href="#m27"><b>signUp_validateContactInfoPopup</b>  </a></td><td class="numi">1</td><td>1474869536069</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m28"><b>validSignUp_noCardButWantOne</b>  </a></td><td class="numi">1</td><td>1474869536071</td><td class="numi">1</td></tr><tr class="skippedodd"><td><a href="#m29"><b>validateSignInLinkInSignUpPopup</b>  </a></td><td class="numi">1</td><td>1474869536074</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m30"><b>userNameNPasswordFieldValidationSignUp</b>  </a></td><td class="numi">1</td><td>1474869536077</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Sign Up - Testing &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="3">com.test.regression.cub.testscripts.SignUp</td><td><a href="#m31"><b>validSignUp4mSL</b>  </a></td><td class="numi">1</td><td>1474868739466</td><td class="numi">126615</td></tr><tr class="passedodd"><td><a href="#m32"><b>validSignUp_noCard</b>  </a></td><td class="numi">1</td><td>1474868909891</td><td class="numi">58299</td></tr><tr class="passedodd"><td><a href="#m33"><b>validSignUp_yesIHaveOne</b>  </a></td><td class="numi">1</td><td>1474869013833</td><td class="numi">65044</td></tr>
+<tr><th colspan="4">Shopping List - Testing &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="3">com.test.regression.cub.testscripts.ShoppingLists</td><td><a href="#m34"><b>slOtherPagesWidget</b>  </a></td><td class="numi">1</td><td>1474869738405</td><td class="numi">344848</td></tr><tr class="passedodd"><td><a href="#m35"><b>AddnEditItemsInShoppingList</b>  </a></td><td class="numi">1</td><td>1474870123737</td><td class="numi">414969</td></tr><tr class="passedodd"><td><a href="#m36"><b>addMoreThan1SL</b>  </a></td><td class="numi">1</td><td>1474870575037</td><td class="numi">173521</td></tr>
 </table>
-<h1>SiteMap - Testing</h1>
-<h2 id="m1">com.test.regression.cub.testscripts.SiteMap:SignedUserSiteMap</h2>
-<div style="padding-left:3em">
-<p>Timed out after 60 seconds waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@id=&apos;content-primary&apos;]/div/div[3]/div/ul/li[1]/a&apos;
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;SDEVPCSVU7112&apos;, ip: &apos;10.15.142.48&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir626324_8689}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a23360038e720688c847ff57457a0c9e</p>
-org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
-<br/>at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:144)
-<br/>at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:148)
-<br/>at com.test.regression.cub.pages.SiteMapPage.clickOnSavings(SiteMapPage.java:191)
-<br/>at com.test.regression.cub.testscripts.SiteMap.SignedUserSiteMap(SiteMap.java:499)
-<br/>25 lines not shown
-<p>Caused by no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;content-primary&apos;]/div/div[3]/div/ul/li[1]/a&quot;}
+<h1>Sign In - Testing</h1>
+<h2 id="m1">com.test.regression.cub.testscripts.SignIn:forgotPassword</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.test.regression.cub.testscripts.SignIn:validLoginFromShoppingListPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.test.regression.cub.testscripts.SignIn:validLogin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.test.regression.cub.testscripts.SignIn:validateSignUpLinkInSignInPopup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.test.regression.cub.testscripts.SignIn:validLoginFromCouponsPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.test.regression.cub.testscripts.SignIn:inValidLogin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.test.regression.cub.testscripts.SignIn:userNameNPasswordFieldValidation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Sign Up - Testing</h1>
+<h2 id="m8">com.test.regression.cub.testscripts.SignUp:initialization</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>public void com.test.regression.cub.testscripts.SignUp.signUp_validateContactInfoPopup()</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>unknown error: cannot get automation extension
+from timeout: cannot determine loading status
+from timeout: Timed out receiving message from renderer: 1.050
   (Session info: chrome=53.0.2785.116)
   (Driver info: chromedriver=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.22 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Command duration or timeout: 10.29 seconds
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
 System info: host: &apos;SDEVPCSVU7112&apos;, ip: &apos;10.15.142.48&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir626324_8689}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a23360038e720688c847ff57457a0c9e
-*** Element info: {Using=xpath, value=//*[@id=&apos;content-primary&apos;]/div/div[3]/div/ul/li[1]/a}</p>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir1911744_23780}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 718f612ae8eb3a5411fe7a92df3c4a0c</p>
 sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 <br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 <br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -72,75 +94,98 @@ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 <br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 <br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 <br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-<br/>at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
-<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
-<br/>at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:144)
-<br/>at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:148)
-<br/>at com.test.regression.cub.pages.SiteMapPage.clickOnSavings(SiteMapPage.java:191)
-<br/>at com.test.regression.cub.testscripts.SiteMap.SignedUserSiteMap(SiteMap.java:499)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:945)
+<br/>at com.test.regression.cub.utils.SuiteBase.InitializeDriver(SuiteBase.java:121)
+<br/>at com.test.regression.cub.utils.SuiteBase.initialization(SuiteBase.java:71)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+<br/>at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:767)
+<br/>at org.testng.TestRunner.run(TestRunner.java:617)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+<br/>at org.testng.TestNG.run(TestNG.java:1031)
+<br/>at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+<br/>at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:75)
+<br/>at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:46)
+<br/>1 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.test.regression.cub.testscripts.SignUp:validSignUp_yesIHaveOne_validateRewardsPopup</h2>
+<div style="padding-left:3em">
+<p>The following asserts failed:
+
+  Failed: No error displayed when user enters invalid cardless id and valid lastname.., 
+  Failed: No error displayed when user enters invalid last name and valid  card number.., 
+  Failed: No error displayed when user enters invalid Cardles id and valid  card number.., 
+  Failed: No error displayed when user enters valid Cardles id and invalid card number.., 
+  Failed: No error displayed when user enters valid cardless id and invalid lastname.., 
+  Failed: Continue button is enabled  when user enters alphabets in Cardles id feild while adding existing card.., 
+  Failed: Continue button is enabled  when user enters Special Characters in Cardles id feild while adding existing card.., 
+  Failed: Continue button is enabled  when user enters Space in Cardles id feild while adding existing card.., 
+  Failed: No error displayed when user enters invalid card number and valid lastname..</p>
+org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:37)
+<br/>at com.test.regression.cub.testscripts.SignUp.validSignUp_yesIHaveOne_validateRewardsPopup(SignUp.java:829)
 <br/>25 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">com.test.regression.cub.testscripts.SiteMap:GuestUserSiteMap</h2>
-<div style="padding-left:3em">
-<p>Timed out after 60 seconds waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@id=&apos;content-primary&apos;]/div/div[3]/div/ul/li[1]/a&apos;
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;SDEVPCSVU7112&apos;, ip: &apos;10.15.142.48&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir621188_2535}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 02825e9783ff3f3395d311185519d08d</p>
-org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
-<br/>at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:144)
-<br/>at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:148)
-<br/>at com.test.regression.cub.pages.SiteMapPage.clickOnSavings(SiteMapPage.java:191)
-<br/>at com.test.regression.cub.testscripts.SiteMap.GuestUserSiteMap(SiteMap.java:45)
-<br/>25 lines not shown
-<p>Caused by no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;content-primary&apos;]/div/div[3]/div/ul/li[1]/a&quot;}
-  (Session info: chrome=53.0.2785.116)
-  (Driver info: chromedriver=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.27 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;SDEVPCSVU7112&apos;, ip: &apos;10.15.142.48&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir621188_2535}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 02825e9783ff3f3395d311185519d08d
-*** Element info: {Using=xpath, value=//*[@id=&apos;content-primary&apos;]/div/div[3]/div/ul/li[1]/a}</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-<br/>at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
-<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
-<br/>at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:144)
-<br/>at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:148)
-<br/>at com.test.regression.cub.pages.SiteMapPage.clickOnSavings(SiteMapPage.java:191)
-<br/>at com.test.regression.cub.testscripts.SiteMap.GuestUserSiteMap(SiteMap.java:45)
-<br/>25 lines not shown
-</div>
+<h2 id="m10">com.test.regression.cub.testscripts.SignUp:breakDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">com.test.regression.cub.testscripts.SignUp:initialization</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">com.test.regression.cub.testscripts.SignUp:breakDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">com.test.regression.cub.testscripts.SignUp:initialization</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">com.test.regression.cub.testscripts.SignUp:closeDriver</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">com.test.regression.cub.testscripts.SignUp:breakDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">com.test.regression.cub.testscripts.SignUp:initialization</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">com.test.regression.cub.testscripts.SignUp:closeDriver</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">com.test.regression.cub.testscripts.SignUp:breakDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">com.test.regression.cub.testscripts.SignUp:closeDriver</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">com.test.regression.cub.testscripts.SignUp:closeDriver</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">com.test.regression.cub.testscripts.SignUp:signUp_validateContactInfoPopup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">com.test.regression.cub.testscripts.SignUp:validateSignInLinkInSignUpPopup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">com.test.regression.cub.testscripts.SignUp:validSignUp_noCardButWantOne</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">com.test.regression.cub.testscripts.SignUp:userNameNPasswordFieldValidationSignUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">com.test.regression.cub.testscripts.SignUp:validSignUp_noCard</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">com.test.regression.cub.testscripts.SignUp:validSignUp_yesIHaveOne</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">com.test.regression.cub.testscripts.SignUp:validSignUp4mSL</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Shopping List - Testing</h1>
+<h2 id="m28">com.test.regression.cub.testscripts.ShoppingLists:AddnEditItemsInShoppingList</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">com.test.regression.cub.testscripts.ShoppingLists:addMoreThan1SL</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">com.test.regression.cub.testscripts.ShoppingLists:slOtherPagesWidget</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

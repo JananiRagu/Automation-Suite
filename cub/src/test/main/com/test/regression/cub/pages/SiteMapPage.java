@@ -1,6 +1,5 @@
 package com.test.regression.cub.pages;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -23,7 +22,7 @@ public class SiteMapPage extends SuiteBase{
 	private WebElement _About;
 	
 //About Us - Site Map Link
-	@FindBy(xpath = "//*[@id='nav-secondary']/li[11]/a")
+	@FindBy(xpath = "//*[@id='nav-secondary']/li[10]/a")
 	private WebElement _SiteMap;	
 	
 // Links in Site Map Page

@@ -1,317 +1,734 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="2" passed="0">
+<testng-results skipped="4" failed="1" total="18" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="567392" started-at="2016-09-20T08:30:19Z" finished-at="2016-09-20T08:39:47Z">
+  <suite name="Suite" duration-ms="2628579" started-at="2016-09-26T05:35:25Z" finished-at="2016-09-26T06:19:13Z">
     <groups>
     </groups>
-    <test name="SiteMap - Testing" duration-ms="567392" started-at="2016-09-20T08:30:19Z" finished-at="2016-09-20T08:39:47Z">
-      <class name="com.test.regression.cub.testscripts.SiteMap">
-        <test-method status="PASS" signature="DataSetUp()[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="DataSetUp" is-config="true" duration-ms="663" started-at="2016-09-20T14:00:19Z" finished-at="2016-09-20T14:00:19Z">
+    <test name="Sign In - Testing" duration-ms="576081" started-at="2016-09-26T05:35:25Z" finished-at="2016-09-26T05:45:01Z">
+      <class name="com.test.regression.cub.testscripts.SignIn">
+        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="initialization" is-config="true" duration-ms="40479" started-at="2016-09-26T11:05:25Z" finished-at="2016-09-26T11:06:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SignIn.forgotPassword()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="forgotPassword()[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="forgotPassword" duration-ms="17147" started-at="2016-09-26T11:06:05Z" finished-at="2016-09-26T11:06:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotPassword -->
+        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="breakDown" is-config="true" duration-ms="1" started-at="2016-09-26T11:06:22Z" finished-at="2016-09-26T11:06:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=forgotPassword status=SUCCESS method=SignIn.forgotPassword()[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- breakDown -->
+        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="closeDriver" is-config="true" duration-ms="9145" started-at="2016-09-26T11:06:22Z" finished-at="2016-09-26T11:06:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SignIn.forgotPassword()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="initialization" is-config="true" duration-ms="33805" started-at="2016-09-26T11:06:32Z" finished-at="2016-09-26T11:07:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SignIn.validLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="validLogin()[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="validLogin" duration-ms="43535" started-at="2016-09-26T11:07:05Z" finished-at="2016-09-26T11:07:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="breakDown" is-config="true" duration-ms="0" started-at="2016-09-26T11:07:49Z" finished-at="2016-09-26T11:07:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validLogin status=SUCCESS method=SignIn.validLogin()[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- breakDown -->
+        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="closeDriver" is-config="true" duration-ms="4535" started-at="2016-09-26T11:07:49Z" finished-at="2016-09-26T11:07:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SignIn.validLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="initialization" is-config="true" duration-ms="39129" started-at="2016-09-26T11:07:53Z" finished-at="2016-09-26T11:08:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SignIn.inValidLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="inValidLogin()[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="inValidLogin" duration-ms="14323" started-at="2016-09-26T11:08:33Z" finished-at="2016-09-26T11:08:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inValidLogin -->
+        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="breakDown" is-config="true" duration-ms="0" started-at="2016-09-26T11:08:47Z" finished-at="2016-09-26T11:08:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=inValidLogin status=SUCCESS method=SignIn.inValidLogin()[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- breakDown -->
+        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="closeDriver" is-config="true" duration-ms="4042" started-at="2016-09-26T11:08:47Z" finished-at="2016-09-26T11:08:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SignIn.inValidLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="initialization" is-config="true" duration-ms="36821" started-at="2016-09-26T11:08:51Z" finished-at="2016-09-26T11:09:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SignIn.userNameNPasswordFieldValidation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="userNameNPasswordFieldValidation()[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="userNameNPasswordFieldValidation" duration-ms="28975" started-at="2016-09-26T11:09:28Z" finished-at="2016-09-26T11:09:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userNameNPasswordFieldValidation -->
+        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="breakDown" is-config="true" duration-ms="0" started-at="2016-09-26T11:09:57Z" finished-at="2016-09-26T11:09:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userNameNPasswordFieldValidation status=SUCCESS method=SignIn.userNameNPasswordFieldValidation()[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- breakDown -->
+        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="closeDriver" is-config="true" duration-ms="5145" started-at="2016-09-26T11:09:57Z" finished-at="2016-09-26T11:10:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SignIn.userNameNPasswordFieldValidation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="initialization" is-config="true" duration-ms="38004" started-at="2016-09-26T11:10:02Z" finished-at="2016-09-26T11:10:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SignIn.validLoginFromShoppingListPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="validLoginFromShoppingListPage()[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="validLoginFromShoppingListPage" duration-ms="97860" started-at="2016-09-26T11:10:40Z" finished-at="2016-09-26T11:12:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginFromShoppingListPage -->
+        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="breakDown" is-config="true" duration-ms="1" started-at="2016-09-26T11:12:18Z" finished-at="2016-09-26T11:12:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validLoginFromShoppingListPage status=SUCCESS method=SignIn.validLoginFromShoppingListPage()[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- breakDown -->
+        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="closeDriver" is-config="true" duration-ms="5916" started-at="2016-09-26T11:12:18Z" finished-at="2016-09-26T11:12:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SignIn.validLoginFromShoppingListPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="initialization" is-config="true" duration-ms="34655" started-at="2016-09-26T11:12:24Z" finished-at="2016-09-26T11:12:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SignIn.validLoginFromCouponsPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="validLoginFromCouponsPage()[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="validLoginFromCouponsPage" duration-ms="67363" started-at="2016-09-26T11:12:58Z" finished-at="2016-09-26T11:14:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginFromCouponsPage -->
+        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="closeDriver" is-config="true" duration-ms="11846" started-at="2016-09-26T11:14:06Z" finished-at="2016-09-26T11:14:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SignIn.validLoginFromCouponsPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="breakDown" is-config="true" duration-ms="0" started-at="2016-09-26T11:14:06Z" finished-at="2016-09-26T11:14:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validLoginFromCouponsPage status=SUCCESS method=SignIn.validLoginFromCouponsPage()[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- breakDown -->
+        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="initialization" is-config="true" duration-ms="35283" started-at="2016-09-26T11:14:18Z" finished-at="2016-09-26T11:14:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SignIn.validateSignUpLinkInSignInPopup()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="validateSignUpLinkInSignInPopup()[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="validateSignUpLinkInSignInPopup" duration-ms="2258" started-at="2016-09-26T11:14:53Z" finished-at="2016-09-26T11:14:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSignUpLinkInSignInPopup -->
+        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="breakDown" is-config="true" duration-ms="0" started-at="2016-09-26T11:14:55Z" finished-at="2016-09-26T11:14:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateSignUpLinkInSignInPopup status=SUCCESS method=SignIn.validateSignUpLinkInSignInPopup()[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- breakDown -->
+        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignIn@192b07fd]" name="closeDriver" is-config="true" duration-ms="5615" started-at="2016-09-26T11:14:55Z" finished-at="2016-09-26T11:15:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SignIn.validateSignUpLinkInSignInPopup()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- com.test.regression.cub.testscripts.SignIn -->
+    </test> <!-- Sign In - Testing -->
+    <test name="Sign Up - Testing" duration-ms="833996" started-at="2016-09-26T05:45:02Z" finished-at="2016-09-26T05:58:56Z">
+      <class name="com.test.regression.cub.testscripts.SignUp">
+        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="initialization" is-config="true" duration-ms="37381" started-at="2016-09-26T11:15:02Z" finished-at="2016-09-26T11:15:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SignUp.validSignUp4mSL()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="validSignUp4mSL()[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="validSignUp4mSL" duration-ms="126615" started-at="2016-09-26T11:15:39Z" finished-at="2016-09-26T11:17:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validSignUp4mSL -->
+        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="closeDriver" is-config="true" duration-ms="5604" started-at="2016-09-26T11:17:46Z" finished-at="2016-09-26T11:17:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SignUp.validSignUp4mSL()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="breakDown" is-config="true" duration-ms="0" started-at="2016-09-26T11:17:46Z" finished-at="2016-09-26T11:17:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validSignUp4mSL status=SUCCESS method=SignUp.validSignUp4mSL()[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- breakDown -->
+        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="initialization" is-config="true" duration-ms="38195" started-at="2016-09-26T11:17:51Z" finished-at="2016-09-26T11:18:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SignUp.validSignUp_noCard()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="validSignUp_noCard()[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="validSignUp_noCard" duration-ms="58299" started-at="2016-09-26T11:18:29Z" finished-at="2016-09-26T11:19:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validSignUp_noCard -->
+        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="breakDown" is-config="true" duration-ms="0" started-at="2016-09-26T11:19:28Z" finished-at="2016-09-26T11:19:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validSignUp_noCard status=SUCCESS method=SignUp.validSignUp_noCard()[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- breakDown -->
+        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="closeDriver" is-config="true" duration-ms="5770" started-at="2016-09-26T11:19:28Z" finished-at="2016-09-26T11:19:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SignUp.validSignUp_noCard()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="initialization" is-config="true" duration-ms="39871" started-at="2016-09-26T11:19:33Z" finished-at="2016-09-26T11:20:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SignUp.validSignUp_yesIHaveOne()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="validSignUp_yesIHaveOne()[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="validSignUp_yesIHaveOne" duration-ms="65044" started-at="2016-09-26T11:20:13Z" finished-at="2016-09-26T11:21:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validSignUp_yesIHaveOne -->
+        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="breakDown" is-config="true" duration-ms="0" started-at="2016-09-26T11:21:18Z" finished-at="2016-09-26T11:21:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validSignUp_yesIHaveOne status=SUCCESS method=SignUp.validSignUp_yesIHaveOne()[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- breakDown -->
+        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="closeDriver" is-config="true" duration-ms="5148" started-at="2016-09-26T11:21:18Z" finished-at="2016-09-26T11:21:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SignUp.validSignUp_yesIHaveOne()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="initialization" is-config="true" duration-ms="32818" started-at="2016-09-26T11:21:24Z" finished-at="2016-09-26T11:21:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SignUp.validSignUp_yesIHaveOne_validateRewardsPopup()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="FAIL" signature="validSignUp_yesIHaveOne_validateRewardsPopup()[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="validSignUp_yesIHaveOne_validateRewardsPopup" duration-ms="339905" started-at="2016-09-26T11:21:56Z" finished-at="2016-09-26T11:27:36Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+
+  Failed: No error displayed when user enters invalid cardless id and valid lastname.., 
+  Failed: No error displayed when user enters invalid last name and valid  card number.., 
+  Failed: No error displayed when user enters invalid Cardles id and valid  card number.., 
+  Failed: No error displayed when user enters valid Cardles id and invalid card number.., 
+  Failed: No error displayed when user enters valid cardless id and invalid lastname.., 
+  Failed: Continue button is enabled  when user enters alphabets in Cardles id feild while adding existing card.., 
+  Failed: Continue button is enabled  when user enters Special Characters in Cardles id feild while adding existing card.., 
+  Failed: Continue button is enabled  when user enters Space in Cardles id feild while adding existing card.., 
+  Failed: No error displayed when user enters invalid card number and valid lastname..]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+
+  Failed: No error displayed when user enters invalid cardless id and valid lastname.., 
+  Failed: No error displayed when user enters invalid last name and valid  card number.., 
+  Failed: No error displayed when user enters invalid Cardles id and valid  card number.., 
+  Failed: No error displayed when user enters valid Cardles id and invalid card number.., 
+  Failed: No error displayed when user enters valid cardless id and invalid lastname.., 
+  Failed: Continue button is enabled  when user enters alphabets in Cardles id feild while adding existing card.., 
+  Failed: Continue button is enabled  when user enters Special Characters in Cardles id feild while adding existing card.., 
+  Failed: Continue button is enabled  when user enters Space in Cardles id feild while adding existing card.., 
+  Failed: No error displayed when user enters invalid card number and valid lastname..
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:37)
+	at com.test.regression.cub.testscripts.SignUp.validSignUp_yesIHaveOne_validateRewardsPopup(SignUp.java:829)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:75)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:46)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validSignUp_yesIHaveOne_validateRewardsPopup -->
+        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="breakDown" is-config="true" duration-ms="6897" started-at="2016-09-26T11:27:36Z" finished-at="2016-09-26T11:27:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validSignUp_yesIHaveOne_validateRewardsPopup status=FAILURE method=SignUp.validSignUp_yesIHaveOne_validateRewardsPopup()[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- breakDown -->
+        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="closeDriver" is-config="true" duration-ms="32697" started-at="2016-09-26T11:27:43Z" finished-at="2016-09-26T11:28:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SignUp.validSignUp_yesIHaveOne_validateRewardsPopup()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="FAIL" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="initialization" is-config="true" duration-ms="0" started-at="2016-09-26T11:28:16Z" finished-at="2016-09-26T11:28:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.SignUp.signUp_validateContactInfoPopup()]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: cannot get automation extension
+from timeout: cannot determine loading status
+from timeout: Timed out receiving message from renderer: 1.050
+  (Session info: chrome=53.0.2785.116)
+  (Driver info: chromedriver=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.29 seconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir1911744_23780}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 718f612ae8eb3a5411fe7a92df3c4a0c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot get automation extension
+from timeout: cannot determine loading status
+from timeout: Timed out receiving message from renderer: 1.050
+  (Session info: chrome=53.0.2785.116)
+  (Driver info: chromedriver=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.29 seconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir1911744_23780}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 718f612ae8eb3a5411fe7a92df3c4a0c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:945)
+	at com.test.regression.cub.utils.SuiteBase.InitializeDriver(SuiteBase.java:121)
+	at com.test.regression.cub.utils.SuiteBase.initialization(SuiteBase.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:75)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:46)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="SKIP" signature="signUp_validateContactInfoPopup()[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="signUp_validateContactInfoPopup" duration-ms="0" started-at="2016-09-26T11:28:56Z" finished-at="2016-09-26T11:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp_validateContactInfoPopup -->
+        <test-method status="SKIP" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="closeDriver" is-config="true" duration-ms="0" started-at="2016-09-26T11:28:56Z" finished-at="2016-09-26T11:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="SKIP" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="breakDown" is-config="true" duration-ms="0" started-at="2016-09-26T11:28:56Z" finished-at="2016-09-26T11:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- breakDown -->
+        <test-method status="SKIP" signature="validSignUp_noCardButWantOne()[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="validSignUp_noCardButWantOne" duration-ms="1" started-at="2016-09-26T11:28:56Z" finished-at="2016-09-26T11:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validSignUp_noCardButWantOne -->
+        <test-method status="SKIP" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="initialization" is-config="true" duration-ms="0" started-at="2016-09-26T11:28:56Z" finished-at="2016-09-26T11:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="SKIP" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="breakDown" is-config="true" duration-ms="0" started-at="2016-09-26T11:28:56Z" finished-at="2016-09-26T11:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- breakDown -->
+        <test-method status="SKIP" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="closeDriver" is-config="true" duration-ms="0" started-at="2016-09-26T11:28:56Z" finished-at="2016-09-26T11:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="SKIP" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="initialization" is-config="true" duration-ms="0" started-at="2016-09-26T11:28:56Z" finished-at="2016-09-26T11:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="SKIP" signature="validateSignInLinkInSignUpPopup()[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="validateSignInLinkInSignUpPopup" duration-ms="0" started-at="2016-09-26T11:28:56Z" finished-at="2016-09-26T11:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSignInLinkInSignUpPopup -->
+        <test-method status="SKIP" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="closeDriver" is-config="true" duration-ms="0" started-at="2016-09-26T11:28:56Z" finished-at="2016-09-26T11:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="SKIP" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="breakDown" is-config="true" duration-ms="0" started-at="2016-09-26T11:28:56Z" finished-at="2016-09-26T11:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- breakDown -->
+        <test-method status="SKIP" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="initialization" is-config="true" duration-ms="0" started-at="2016-09-26T11:28:56Z" finished-at="2016-09-26T11:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="SKIP" signature="userNameNPasswordFieldValidationSignUp()[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="userNameNPasswordFieldValidationSignUp" duration-ms="0" started-at="2016-09-26T11:28:56Z" finished-at="2016-09-26T11:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userNameNPasswordFieldValidationSignUp -->
+        <test-method status="SKIP" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="breakDown" is-config="true" duration-ms="0" started-at="2016-09-26T11:28:56Z" finished-at="2016-09-26T11:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- breakDown -->
+        <test-method status="SKIP" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SignUp@5f9d02cb]" name="closeDriver" is-config="true" duration-ms="0" started-at="2016-09-26T11:28:56Z" finished-at="2016-09-26T11:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- com.test.regression.cub.testscripts.SignUp -->
+    </test> <!-- Sign Up - Testing -->
+    <test name="Shopping List - Testing" duration-ms="1208024" started-at="2016-09-26T05:59:05Z" finished-at="2016-09-26T06:19:13Z">
+      <class name="com.test.regression.cub.testscripts.ShoppingLists">
+        <test-method status="PASS" signature="DataSetUp()[pri:0, instance:com.test.regression.cub.testscripts.ShoppingLists@185d8b6]" name="DataSetUp" is-config="true" duration-ms="527" started-at="2016-09-26T11:05:24Z" finished-at="2016-09-26T11:05:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DataSetUp -->
-        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="initialization" is-config="true" duration-ms="29479" started-at="2016-09-20T14:00:19Z" finished-at="2016-09-20T14:00:49Z">
+        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.ShoppingLists@185d8b6]" name="initialization" is-config="true" duration-ms="192553" started-at="2016-09-26T11:29:05Z" finished-at="2016-09-26T11:32:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.test.regression.cub.testscripts.SiteMap.GuestUserSiteMap() throws java.lang.InterruptedException]]>
+                <![CDATA[public void com.test.regression.cub.testscripts.ShoppingLists.slOtherPagesWidget()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="breakDown" is-config="true" duration-ms="336" started-at="2016-09-20T14:02:24Z" finished-at="2016-09-20T14:02:25Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=GuestUserSiteMap status=FAILURE method=SiteMap.GuestUserSiteMap()[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="slOtherPagesWidget()[pri:0, instance:com.test.regression.cub.testscripts.ShoppingLists@185d8b6]" name="slOtherPagesWidget" duration-ms="344848" started-at="2016-09-26T11:32:18Z" finished-at="2016-09-26T11:38:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- breakDown -->
-        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="closeDriver" is-config="true" duration-ms="8362" started-at="2016-09-20T14:02:25Z" finished-at="2016-09-20T14:02:33Z">
+        </test-method> <!-- slOtherPagesWidget -->
+        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.ShoppingLists@185d8b6]" name="closeDriver" is-config="true" duration-ms="7049" started-at="2016-09-26T11:38:03Z" finished-at="2016-09-26T11:38:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.test.regression.cub.testscripts.SiteMap.GuestUserSiteMap() throws java.lang.InterruptedException]]>
+                <![CDATA[public void com.test.regression.cub.testscripts.ShoppingLists.slOtherPagesWidget()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="initialization" is-config="true" duration-ms="30373" started-at="2016-09-20T14:02:33Z" finished-at="2016-09-20T14:03:03Z">
+        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.ShoppingLists@185d8b6]" name="breakDown" is-config="true" duration-ms="0" started-at="2016-09-26T11:38:03Z" finished-at="2016-09-26T11:38:03Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.test.regression.cub.testscripts.SiteMap.GuestUserSiteMap() throws java.lang.InterruptedException]]>
+                <![CDATA[[TestResult name=slOtherPagesWidget status=SUCCESS method=ShoppingLists.slOtherPagesWidget()[pri:0, instance:com.test.regression.cub.testscripts.ShoppingLists@185d8b6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- breakDown -->
+        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.ShoppingLists@185d8b6]" name="initialization" is-config="true" duration-ms="33409" started-at="2016-09-26T11:38:10Z" finished-at="2016-09-26T11:38:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.ShoppingLists.AddnEditItemsInShoppingList()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method status="FAIL" signature="GuestUserSiteMap()[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="GuestUserSiteMap" duration-ms="94701" started-at="2016-09-20T14:03:03Z" finished-at="2016-09-20T14:04:38Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Timed out after 60 seconds waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='content-primary']/div/div[3]/div/ul/li[1]/a'
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir621188_2535}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 02825e9783ff3f3395d311185519d08d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 60 seconds waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='content-primary']/div/div[3]/div/ul/li[1]/a'
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir621188_2535}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 02825e9783ff3f3395d311185519d08d
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
-	at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:144)
-	at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:148)
-	at com.test.regression.cub.pages.SiteMapPage.clickOnSavings(SiteMapPage.java:191)
-	at com.test.regression.cub.testscripts.SiteMap.GuestUserSiteMap(SiteMap.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.retryFailed(Invoker.java:1049)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1254)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:75)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:46)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='content-primary']/div/div[3]/div/ul/li[1]/a"}
-  (Session info: chrome=53.0.2785.116)
-  (Driver info: chromedriver=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.27 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir621188_2535}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 02825e9783ff3f3395d311185519d08d
-*** Element info: {Using=xpath, value=//*[@id='content-primary']/div/div[3]/div/ul/li[1]/a}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
-	... 28 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method status="PASS" signature="AddnEditItemsInShoppingList()[pri:0, instance:com.test.regression.cub.testscripts.ShoppingLists@185d8b6]" name="AddnEditItemsInShoppingList" duration-ms="414969" started-at="2016-09-26T11:38:43Z" finished-at="2016-09-26T11:45:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GuestUserSiteMap -->
-        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="breakDown" is-config="true" duration-ms="308" started-at="2016-09-20T14:04:38Z" finished-at="2016-09-20T14:04:38Z">
+        </test-method> <!-- AddnEditItemsInShoppingList -->
+        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.ShoppingLists@185d8b6]" name="closeDriver" is-config="true" duration-ms="4847" started-at="2016-09-26T11:45:38Z" finished-at="2016-09-26T11:45:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=GuestUserSiteMap status=FAILURE method=SiteMap.GuestUserSiteMap()[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- breakDown -->
-        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="closeDriver" is-config="true" duration-ms="8057" started-at="2016-09-20T14:04:38Z" finished-at="2016-09-20T14:04:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.regression.cub.testscripts.SiteMap.GuestUserSiteMap() throws java.lang.InterruptedException]]>
+                <![CDATA[public void com.test.regression.cub.testscripts.ShoppingLists.AddnEditItemsInShoppingList()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="initialization" is-config="true" duration-ms="34645" started-at="2016-09-20T14:04:46Z" finished-at="2016-09-20T14:05:21Z">
+        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.ShoppingLists@185d8b6]" name="breakDown" is-config="true" duration-ms="0" started-at="2016-09-26T11:45:38Z" finished-at="2016-09-26T11:45:38Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.test.regression.cub.testscripts.SiteMap.SignedUserSiteMap() throws java.lang.InterruptedException,java.io.IOException,javax.xml.xpath.XPathExpressionException,javax.xml.parsers.ParserConfigurationException,org.xml.sax.SAXException]]>
+                <![CDATA[[TestResult name=AddnEditItemsInShoppingList status=SUCCESS method=ShoppingLists.AddnEditItemsInShoppingList()[pri:0, instance:com.test.regression.cub.testscripts.ShoppingLists@185d8b6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- breakDown -->
+        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.ShoppingLists@185d8b6]" name="initialization" is-config="true" duration-ms="31479" started-at="2016-09-26T11:45:43Z" finished-at="2016-09-26T11:46:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.regression.cub.testscripts.ShoppingLists.addMoreThan1SL()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="breakDown" is-config="true" duration-ms="365" started-at="2016-09-20T14:07:26Z" finished-at="2016-09-20T14:07:26Z">
+        <test-method status="PASS" signature="addMoreThan1SL()[pri:0, instance:com.test.regression.cub.testscripts.ShoppingLists@185d8b6]" name="addMoreThan1SL" duration-ms="173521" started-at="2016-09-26T11:46:15Z" finished-at="2016-09-26T11:49:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addMoreThan1SL -->
+        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.ShoppingLists@185d8b6]" name="breakDown" is-config="true" duration-ms="0" started-at="2016-09-26T11:49:08Z" finished-at="2016-09-26T11:49:08Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SignedUserSiteMap status=FAILURE method=SiteMap.SignedUserSiteMap()[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb] output={null}]]]>
+                <![CDATA[[TestResult name=addMoreThan1SL status=SUCCESS method=ShoppingLists.addMoreThan1SL()[pri:0, instance:com.test.regression.cub.testscripts.ShoppingLists@185d8b6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- breakDown -->
-        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="closeDriver" is-config="true" duration-ms="6979" started-at="2016-09-20T14:07:26Z" finished-at="2016-09-20T14:07:33Z">
+        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.ShoppingLists@185d8b6]" name="closeDriver" is-config="true" duration-ms="5315" started-at="2016-09-26T11:49:08Z" finished-at="2016-09-26T11:49:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.test.regression.cub.testscripts.SiteMap.SignedUserSiteMap() throws java.lang.InterruptedException,java.io.IOException,javax.xml.xpath.XPathExpressionException,javax.xml.parsers.ParserConfigurationException,org.xml.sax.SAXException]]>
+                <![CDATA[public void com.test.regression.cub.testscripts.ShoppingLists.addMoreThan1SL()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method status="PASS" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="initialization" is-config="true" duration-ms="16630" started-at="2016-09-20T14:07:33Z" finished-at="2016-09-20T14:07:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.regression.cub.testscripts.SiteMap.SignedUserSiteMap() throws java.lang.InterruptedException,java.io.IOException,javax.xml.xpath.XPathExpressionException,javax.xml.parsers.ParserConfigurationException,org.xml.sax.SAXException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialization -->
-        <test-method status="FAIL" signature="SignedUserSiteMap()[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="SignedUserSiteMap" duration-ms="109759" started-at="2016-09-20T14:07:50Z" finished-at="2016-09-20T14:09:40Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Timed out after 60 seconds waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='content-primary']/div/div[3]/div/ul/li[1]/a'
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir626324_8689}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a23360038e720688c847ff57457a0c9e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 60 seconds waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='content-primary']/div/div[3]/div/ul/li[1]/a'
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir626324_8689}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a23360038e720688c847ff57457a0c9e
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
-	at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:144)
-	at com.test.regression.cub.utils.SuiteBase.waitFor(SuiteBase.java:148)
-	at com.test.regression.cub.pages.SiteMapPage.clickOnSavings(SiteMapPage.java:191)
-	at com.test.regression.cub.testscripts.SiteMap.SignedUserSiteMap(SiteMap.java:499)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.retryFailed(Invoker.java:1049)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1254)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:75)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:46)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='content-primary']/div/div[3]/div/ul/li[1]/a"}
-  (Session info: chrome=53.0.2785.116)
-  (Driver info: chromedriver=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.22 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'SDEVPCSVU7112', ip: '10.15.142.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.23.409699 (49b0fa931cda1caad0ae15b7d1b68004acd05129), userDataDir=C:\Users\jrag00m\AppData\Local\Temp\scoped_dir626324_8689}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a23360038e720688c847ff57457a0c9e
-*** Element info: {Using=xpath, value=//*[@id='content-primary']/div/div[3]/div/ul/li[1]/a}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
-	... 28 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SignedUserSiteMap -->
-        <test-method status="PASS" signature="breakDown(org.testng.ITestResult)[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="breakDown" is-config="true" duration-ms="208" started-at="2016-09-20T14:09:40Z" finished-at="2016-09-20T14:09:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=SignedUserSiteMap status=FAILURE method=SiteMap.SignedUserSiteMap()[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- breakDown -->
-        <test-method status="PASS" signature="closeDriver(java.lang.reflect.Method)[pri:0, instance:com.test.regression.cub.testscripts.SiteMap@148080bb]" name="closeDriver" is-config="true" duration-ms="6672" started-at="2016-09-20T14:09:40Z" finished-at="2016-09-20T14:09:47Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.regression.cub.testscripts.SiteMap.SignedUserSiteMap() throws java.lang.InterruptedException,java.io.IOException,javax.xml.xpath.XPathExpressionException,javax.xml.parsers.ParserConfigurationException,org.xml.sax.SAXException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-      </class> <!-- com.test.regression.cub.testscripts.SiteMap -->
-    </test> <!-- SiteMap - Testing -->
+      </class> <!-- com.test.regression.cub.testscripts.ShoppingLists -->
+    </test> <!-- Shopping List - Testing -->
   </suite> <!-- Suite -->
 </testng-results>

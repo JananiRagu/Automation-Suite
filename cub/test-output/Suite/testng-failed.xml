@@ -5,18 +5,35 @@
     <listener class-name="com.test.regression.cub.utils.RetryListener"/>
     <listener class-name="com.test.regression.cub.utils.TestListener"/>
   </listeners>
-  <test name="SiteMap - Testing(failed)" parallel="none">
+  <test name="Sign Up - Testing(failed)" parallel="none">
     <classes>
-      <class name="com.test.regression.cub.testscripts.SiteMap">
+      <class name="com.test.regression.cub.testscripts.SignIn">
         <methods>
-          <include name="GuestUserSiteMap"/>
           <include name="initialization"/>
-          <include name="SignedUserSiteMap"/>
+          <include name="breakDown"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- com.test.regression.cub.testscripts.SignIn -->
+      <class name="com.test.regression.cub.testscripts.ShoppingLists">
+        <methods>
+          <include name="initialization"/>
           <include name="breakDown"/>
           <include name="DataSetUp"/>
           <include name="closeDriver"/>
         </methods>
-      </class> <!-- com.test.regression.cub.testscripts.SiteMap -->
+      </class> <!-- com.test.regression.cub.testscripts.ShoppingLists -->
+      <class name="com.test.regression.cub.testscripts.SignUp">
+        <methods>
+          <include name="initialization"/>
+          <include name="validateSignInLinkInSignUpPopup"/>
+          <include name="breakDown"/>
+          <include name="validSignUp_noCardButWantOne"/>
+          <include name="signUp_validateContactInfoPopup"/>
+          <include name="validSignUp_yesIHaveOne_validateRewardsPopup"/>
+          <include name="userNameNPasswordFieldValidationSignUp"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- com.test.regression.cub.testscripts.SignUp -->
     </classes>
-  </test> <!-- SiteMap - Testing(failed) -->
+  </test> <!-- Sign Up - Testing(failed) -->
 </suite> <!-- Failed suite [Suite] -->

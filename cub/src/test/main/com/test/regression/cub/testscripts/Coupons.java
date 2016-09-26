@@ -143,7 +143,7 @@ public class Coupons extends SuiteBase {
 	
 	/*   Adds a list of Coupons for a newly Signed Up User who has selected 'I don't Have a card, But want one' option during sign up  */
 
-	@Test(priority = 12, enabled=true)
+	@Test(priority = 12, enabled=false)
 	public void addCouponForWantOneNewUser() {
 		try {
 			Map<String, String> addCouponForWantOneNewUserData = readxml.getUserData("TestData.xml", "new-user-5");
@@ -229,7 +229,7 @@ public class Coupons extends SuiteBase {
 	// Sign Up for an account just by closing the Rewards Card pop up
 	// So, it will prompt for card-less id while trying to add coupon
 
-	@Test(priority = 13, enabled=true)
+	@Test(priority = 13, enabled=false)
 	public void addCouponForNoCardNewUser() {
 
 		try {
@@ -456,7 +456,7 @@ public class Coupons extends SuiteBase {
 
 	/* Validates Sorting Functionality on Alphabetical Order & Expiration Date */
 	
-	@Test(priority = 14, enabled=true)
+	@Test(priority = 14, enabled=false)
 	public void chkCouponSort() throws InterruptedException {
 
 		try{
@@ -518,7 +518,7 @@ public class Coupons extends SuiteBase {
 	
 	/* Add a Single Coupon for the Authorized User from Coupon Details page    */
 
-	@Test(priority = 11, enabled=true)
+	@Test(priority = 11, enabled=false)
 	public void addCouponFromCouponDetailsPageForAuthorizedUser() {
 		
 		try {
@@ -596,7 +596,7 @@ public class Coupons extends SuiteBase {
 	
 	/* Validates Filter Functionality on Coupons  */
 
-	@Test(priority = 12, enabled=true)
+	@Test(priority = 12, enabled=false)
 	public void categoryTestInCoupons() {
 
 		try {
@@ -625,7 +625,7 @@ public class Coupons extends SuiteBase {
 	
 	/*       Validates Search Functionality on Coupons   */    
 
-	@Test(priority = 11, enabled=true)
+	@Test(priority = 11, enabled=false)
 	public void searchTestInCoupons() {
 
 		try {
