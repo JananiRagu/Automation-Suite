@@ -99,8 +99,8 @@ public class ShoppingListPage extends SuiteBase{
 	@FindBy(xpath = "//table[@id='shopping-list-sidebar-items']/tbody/tr/td[2]/a")
 	private WebElement _deleteLinkFor1ItemInSLWidget;
 	
-	public void clickSignInInSLWidget(){
-		
+	public void clickSignInInSLWidget() throws InterruptedException{
+		Thread.sleep(2000);
 		waitFor(_signInLinkInSLWidget);
 		_signInLinkInSLWidget.click();
 	}

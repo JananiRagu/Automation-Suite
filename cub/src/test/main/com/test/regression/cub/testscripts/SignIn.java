@@ -2,8 +2,10 @@ package com.test.regression.cub.testscripts;
 
 import java.io.IOException;
 import java.util.Map;
+
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.xpath.XPathExpressionException;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.UnhandledAlertException;
 import org.testng.Assert;
@@ -15,8 +17,6 @@ import com.test.regression.cub.pages.CouponPage;
 import com.test.regression.cub.pages.CubHome;
 import com.test.regression.cub.pages.MyAccountPage;
 import com.test.regression.cub.pages.ShoppingListPage;
-import com.test.regression.cub.pages.SignUpPage;
-
 import com.test.regression.cub.pages.WeeklyAdsPage;
 import com.test.regression.cub.utils.Logg;
 import com.test.regression.cub.utils.ReadXML;
@@ -85,7 +85,7 @@ public class SignIn extends SuiteBase {
 		}
 	}
 	
-	@Test(priority=2,enabled=true) 
+	@Test(priority=2,enabled=false) 
 	  public void inValidLogin(){
 		
 		try {
@@ -130,7 +130,7 @@ public class SignIn extends SuiteBase {
 	 
 	}
 	
-	@Test(priority=3,enabled=true) 
+	@Test(priority=3,enabled=false) 
 	  public void userNameNPasswordFieldValidation(){
 		
 		try {
@@ -187,7 +187,7 @@ public class SignIn extends SuiteBase {
 	 
 	}
 	
-@Test(priority=4, enabled=true)
+@Test(priority=4, enabled=false)
 	
 	public void validLoginFromShoppingListPage() {
 		try {
@@ -232,6 +232,8 @@ public class SignIn extends SuiteBase {
 		} catch (XPathExpressionException xee) {
 			log.info(xee.getMessage());	
 			Assert.fail("Caught XPathExpressionException Exception");
+		} catch(UnhandledAlertException al){
+			_driver.switchTo().alert().accept();
 		} catch (ParserConfigurationException pce) {
 			log.info(pce.getMessage());
 			Assert.fail("Caught ParserConfigurationException Exception");
@@ -246,7 +248,7 @@ public class SignIn extends SuiteBase {
 
 
 
-@Test(priority=5, enabled=true)
+@Test(priority=5, enabled=false)
 
 public void validLoginFromCouponsPage() {
 	try {
@@ -312,7 +314,7 @@ public void validLoginFromCouponsPage() {
 	}
 }
 
-@Test(priority=5, enabled=true)
+@Test(priority=5, enabled=false)
 public void validateSignUpLinkInSignInPopup(){
 	
 	try {
@@ -338,7 +340,7 @@ public void validateSignUpLinkInSignInPopup(){
 	}
 }
 
-@Test(priority=1, enabled=true)
+@Test(priority=1, enabled=false)
 
 public void forgotPassword() {
 	try {

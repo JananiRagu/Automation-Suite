@@ -39,7 +39,7 @@ public class SignUp extends SuiteBase{
 	CouponPage cp;
 	RewardsCardPage rc;
 
-	@Test(priority=3, enabled=false)
+	@Test(priority=3, enabled=true)
 	public void validSignUp(){
 		try{
 		// Retrieving test data for valid sign up no card
@@ -109,7 +109,7 @@ public class SignUp extends SuiteBase{
 	
 	
 	
-	@Test(priority=6, enabled=false)
+	@Test(priority=6, enabled=true)
 	public void userNameNPasswordFieldValidationSignUp(){
 		try{
 			
@@ -183,7 +183,7 @@ public class SignUp extends SuiteBase{
 		
 	}
 	
-	@Test(priority=5, enabled=false)
+	@Test(priority=5, enabled=true)
 	public void validateSignInLinkInSignUpPopup(){
 		
 		try {
@@ -285,7 +285,7 @@ public class SignUp extends SuiteBase{
 		
 	}
 	
-	@Test(priority=3, enabled=false)
+	@Test(priority=3, enabled=true)
 	public void validSignUp4mCouponsPage() throws InterruptedException{
 		try{
 		// Retrieving test data for valid sign up no card

@@ -3,13 +3,13 @@
 <suite name="Suite" parallel="none">
 
 
-<!-- 
+
 <test name="Sign In - Testing">
     <classes> 
     	<class name="com.test.regression.cub.testscripts.SignIn"> </class> 
     </classes>
 </test> 
-
+<!-- 
 <test name="Sign Up - Testing">
     <classes> 
     	<class name="com.test.regression.cub.testscripts.SignUp"> </class>  
@@ -92,14 +92,14 @@
     </classes>
 </test>
 
- -->
+
 
 <test name="Coupons - Testing">
     <classes> 
     	<class name="com.test.regression.cub.testscripts.Coupons"> </class> 
     </classes>
 </test>
-
+ -->
 <listeners>
         <listener class-name="com.test.regression.cub.utils.RetryListener"/>
         <listener class-name="com.test.regression.cub.utils.TestListener"/>

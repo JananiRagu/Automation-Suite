@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="none">
-  <!--
+ 
+ <!-- testing... -->
 <test name="Sign In - Testing">
     <classes> 
     	<class name="com.test.regression.farmfresh.testscripts.SignIn"> </class> 
     </classes>
 </test> 
-
+ <!--
 <test name="Sign Up - Testing">
     <classes> 
     	<class name="com.test.regression.farmfresh.testscripts.SignUp"> </class>  
@@ -89,12 +90,12 @@
     </classes>
 </test>
 
--->
+
 
 <test name="Coupons - Testing">
     <classes> 
     	<class name="com.test.regression.farmfresh.testscripts.Coupons"> </class> 
     </classes>
 </test>
-
+-->
 </suite> 
