@@ -33,7 +33,7 @@ public class MyeCouponsPage extends SuiteBase{
 	@FindBy(xpath = "//a[text()='My eCoupons']")
 	private WebElement _MyECoupons;
 	
-	@FindAll({@FindBy(xpath = "//div[@id='coupons-outer']/div/div/div/p/strong")})
+	@FindAll({@FindBy(xpath = "//*[@id='coupons-outer']/div/div/div/p[1]/strong")})
 	private List<WebElement> _myECoupons;
 	
 	public void clickOnMyeCouponsInMyToolsHomePage(WebDriver driver) throws InterruptedException, IOException{

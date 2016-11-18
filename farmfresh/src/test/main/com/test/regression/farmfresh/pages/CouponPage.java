@@ -102,7 +102,7 @@ public class CouponPage extends SuiteBase{
 	@FindBy(xpath = "//div[@class='coupon-details-tab-container']/ul/li[2]/div")
 	private WebElement _tNcLinkTriangle;
 	
-	@FindBy(xpath = "//div[@class='coupon-details large-8 medium-8 small-8 column']/h3[2]")
+	@FindBy(xpath = "//*[@id='content-primary']/div/div/div/div[1]/div[2]/div/div[2]/p[3]")
 	private WebElement _couponNameFromCouponDetailsPage;
 	
 	@FindBy(xpath = "//*[@id='coupon-category']")
@@ -260,7 +260,11 @@ public class CouponPage extends SuiteBase{
 			clickMoreCouponsButton();
 			Thread.sleep(5000);
 			
-		}while(_moreCouponsButton.isDisplayed());
+			scrollPageDown(driver);
+			
+			scrollPageDown(driver);
+			
+		}while(_allCoupons.size() < totalNoOfCoupons());
 		
 		Thread.sleep(5000);
 		int totalNoOfCoupons = _allCoupons.size();
@@ -421,8 +425,7 @@ public class CouponPage extends SuiteBase{
 		}
 	}
 
-	public void addSingleCouponWithNotNowInCardlessIdPopup(String firstWantedCoupon, String cardlessId7,
-			String cardlessId4) throws InterruptedException {
+	public void addSingleCouponWithNotNowInCardlessIdPopup(String firstWantedCoupon, String rewardsNum) throws InterruptedException {
 		
 		log.info("...Inside addSingleCouponWithNotNowInCardlessIdPopup method...");
 		
@@ -435,7 +438,7 @@ public class CouponPage extends SuiteBase{
 				log.info("Trying to add Flipp Coupon");
 			addNthFlippCoupon(_driver, firstWantedCoupon);
 				log.info("Added wanted Flipp coupon");
-			enterCardlessId(cardlessId7, cardlessId4);
+			enterRewardsNumber(rewardsNum);
 				log.info("Entered Cardless Id Details");
 			clickNotNowInCardlessIdPopup();
 	
@@ -446,7 +449,7 @@ public class CouponPage extends SuiteBase{
 				log.info("Trying to add Inmar Coupon");
 			addNthInmarCoupon(_driver, firstWantedCoupon);
 				log.info("Added wanted Inmar Coupon");
-			enterCardlessId(cardlessId7, cardlessId4);
+				enterRewardsNumber(rewardsNum);
 				log.info("Entered Cardless Id Details");
 			clickNotNowInCardlessIdPopup();
 		
