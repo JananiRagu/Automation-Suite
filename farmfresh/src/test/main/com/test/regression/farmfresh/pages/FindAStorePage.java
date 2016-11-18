@@ -125,7 +125,7 @@ public class FindAStorePage extends SuiteBase{
 	@FindBy(xpath = "//*[@id='content-primary']/div/div/li")
 	private WebElement _errormessage1;
 	
-	@FindBy(xpath = "//*[@id='content-primary']/div/div[2]/div[3]/ul/li[2]/ol/li[1]")
+	@FindBy(xpath = "//*[@id='content-primary']/div/div[2]/div[3]/ul/li[1]/ol/li[1]")
 	private WebElement _pagenumber;
 	
 	@FindBy(xpath = "//*[@id='content-primary']/div/div/div[4]/ul/li[1]")

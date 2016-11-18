@@ -1,11 +1,11 @@
 
 
 /********************************************************Navigation TESTING************************************************************************************************************************ *
- *  
+*  
  * ================================================================================================================================================================================================
- *                                  Test Cases Covered as part of Navigation Functionality
- * ================================================================================================================================================================================================
- * 
+*                                  Test Cases Covered as part of Navigation Functionality
+* ================================================================================================================================================================================================
+* 
  * TC 1. 'NavigationtoDepartments_GuestUser'              =>  Validates the Links in Departments page as a guest user                                                                                    
  * 
  * TC 2. 'NavigationtoDepartments_AuthorisedUser'         =>  Validates the Links in Departments page as a authorized user    
@@ -15,7 +15,7 @@
  * TC 4. 'NavigationtoPharmacy_AuthorisedUser'            =>  Validates the Links in Pharmacy page as a authorized user                                                                     
  * 
  * ================================================================================================================================================================================================
- */
+*/
 
 
 package com.test.regression.farmfresh.testscripts;
@@ -57,7 +57,7 @@ public class Navigation extends SuiteBase {
        NavigationPage navigationpage;
 
        //Guest user Navigate to Departments page
-       @Test(priority=1, enabled=true)
+       @Test(priority=1, enabled=false)
        public void NavigatetoDepartments_GuestUser() {
               
               try {
@@ -71,7 +71,7 @@ public class Navigation extends SuiteBase {
               Thread.sleep(5000);
               String title=_driver.getCurrentUrl();
               System.out.println(title);
-              sa.assertEquals("https://www.cub.com/departments.html", title);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments.html", title);
               log.info("Departments page is displayed" );
               
               //Navigate to Meat and Sea Food page
@@ -80,78 +80,105 @@ public class Navigation extends SuiteBase {
               Thread.sleep(5000);
               String title1=_driver.getCurrentUrl();
               System.out.println(title1);
-              sa.assertEquals("https://www.cub.com/departments/meat-seafood.html", title1);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments/meat-seafood.html", title1);
               log.info("Meat and SeaFood page is displayed" );
               
               navigationpage.clickbacktoDept();
               Thread.sleep(3000);
               log.info("Navigate back to Departments page");
-              sa.assertEquals("https://www.cub.com/departments.html", title);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments.html", title);
+              
+            //Navigate to Fresh Produce page
+              navigationpage.clickFresh();
+              log.info("Click on Fresh Produce");
+              Thread.sleep(5000);
+              String title3=_driver.getCurrentUrl();
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments/produce.html", title3);
+              log.info("Fresh Produce page is displayed" );
+                                         
+              navigationpage.clickbacktoDept();
+              Thread.sleep(3000);
+              log.info("Navigate back to Departments page");
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments.html", title);
               
               //Navigate to Deli and Bakery page
               navigationpage.clickBakery();
               log.info("Click on Deli and Bakery");
               Thread.sleep(5000);
               String title2=_driver.getCurrentUrl();
-              sa.assertEquals("https://www.cub.com/departments/deli-bakery.html", title2);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments/deli-bakery.html", title2);
               log.info("Deli and Bakery page is displayed" );
                            
               navigationpage.clickbacktoDept();
               Thread.sleep(3000);
               log.info("Navigate back to Departments page");
-              sa.assertEquals("https://www.cub.com/departments.html", title);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments.html", title);
               
-              //Navigate to Fresh Produce page
-              navigationpage.clickFresh();
-              log.info("Click on Fresh Produce");
+              //Navigate to Catering
+              navigationpage.clickcatering();
+              log.info("Click on Catering");
               Thread.sleep(5000);
-              String title3=_driver.getCurrentUrl();
-              sa.assertEquals("https://www.cub.com/departments/produce.html", title3);
-              log.info("Fresh Produce page is displayed" );
+              String title4=_driver.getCurrentUrl();
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments/catering.html", title4);
+              log.info("Catering page is displayed" );
                                          
               navigationpage.clickbacktoDept();
               Thread.sleep(3000);
               log.info("Navigate back to Departments page");
-              sa.assertEquals("https://www.cub.com/departments.html", title);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments.html", title);
+              
               
               //Navigate to Gift Cards page
               navigationpage.clickGift();
               log.info("Click on Gift Cards");
               Thread.sleep(5000);
-              String title4=_driver.getCurrentUrl();
-              sa.assertEquals("https://www.cub.com/departments/gift-card-floral.html", title4);
+              String title5=_driver.getCurrentUrl();
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments/gift-card-floral.html", title5);
               log.info("Gift Cards page is displayed" );
                                          
               navigationpage.clickbacktoDept();
               Thread.sleep(3000);
               log.info("Navigate back to Departments page");
-              sa.assertEquals("https://www.cub.com/departments.html", title);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments.html", title);
               
               //Navigate to Beer and Wine page
               navigationpage.clickBeer();
               log.info("Click on Beer and Wine");
               Thread.sleep(5000);
-              String title5=_driver.getCurrentUrl();
-              sa.assertEquals("https://www.cub.com/departments/liquor.html", title5);
+              String title6=_driver.getCurrentUrl();
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments/liquor.html", title6);
               log.info("Beer and Wine page is displayed" );
                                          
               navigationpage.clickbacktoDept();
               Thread.sleep(3000);
               log.info("Navigate back to Departments page");
-              sa.assertEquals("https://www.cub.com/departments.html", title);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments.html", title);
               
-              //Navigate to Pet page
+              //Navigate to Private brands
               navigationpage.clickPet();
               log.info("Click on Pet");
               Thread.sleep(5000);
-              String title6=_driver.getCurrentUrl();
-              sa.assertEquals("https://www.cub.com/departments/pet.html", title6);
+              String title7=_driver.getCurrentUrl();
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments/pet.html", title7);
               log.info("Pet page is displayed" );
                                                        
               navigationpage.clickbacktoDept();
               Thread.sleep(3000);
               log.info("Navigate back to Departments page");
-              sa.assertEquals("https://www.cub.com/departments.html", title);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments.html", title);
+              
+              //Navigate to Pet page
+              navigationpage.clickPet();
+              log.info("Click on Pet");
+              Thread.sleep(5000);
+              String title8=_driver.getCurrentUrl();
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments/pet.html", title8);
+              log.info("Pet page is displayed" );
+                                                       
+              navigationpage.clickbacktoDept();
+              Thread.sleep(3000);
+              log.info("Navigate back to Departments page");
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments.html", title);
               
               sa.assertAll();
               
@@ -160,7 +187,7 @@ public class Navigation extends SuiteBase {
        }
        }
        
-       @Test(priority=2, enabled=true)
+       @Test(priority=2, enabled=false)
        public void NavigatetoDepartments_SignedInuser() {
               
               try {
@@ -193,7 +220,7 @@ public class Navigation extends SuiteBase {
               Thread.sleep(5000);
               String title=_driver.getCurrentUrl();
               System.out.println(title);
-              sa.assertEquals("https://www.cub.com/departments.html", title);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments.html", title);
               log.info("Departments page is displayed" );
               
               //Navigate to Meat and Sea Food page
@@ -202,80 +229,108 @@ public class Navigation extends SuiteBase {
               Thread.sleep(5000);
               String title1=_driver.getCurrentUrl();
               System.out.println(title1);
-              sa.assertEquals("https://www.cub.com/departments/meat-seafood.html", title1);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments/meat-seafood.html", title1);
               log.info("Meat and SeaFood page is displayed" );
               
               navigationpage.clickbacktoDept();
               Thread.sleep(3000);
               log.info("Navigate back to Departments page");
-              sa.assertEquals("https://www.cub.com/departments.html", title);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments.html", title);
+              
+            //Navigate to Fresh Produce page
+              navigationpage.clickFresh();
+              log.info("Click on Fresh Produce");
+              Thread.sleep(5000);
+              String title3=_driver.getCurrentUrl();
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments/produce.html", title3);
+              log.info("Fresh Produce page is displayed" );
+                                         
+              navigationpage.clickbacktoDept();
+              Thread.sleep(3000);
+              log.info("Navigate back to Departments page");
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments.html", title);
               
               //Navigate to Deli and Bakery page
               navigationpage.clickBakery();
               log.info("Click on Deli and Bakery");
               Thread.sleep(5000);
               String title2=_driver.getCurrentUrl();
-              sa.assertEquals("https://www.cub.com/departments/deli-bakery.html", title2);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments/deli-bakery.html", title2);
               log.info("Deli and Bakery page is displayed" );
                            
               navigationpage.clickbacktoDept();
               Thread.sleep(3000);
               log.info("Navigate back to Departments page");
-              sa.assertEquals("https://www.cub.com/departments.html", title);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments.html", title);
               
-              //Navigate to Fresh Produce page
-              navigationpage.clickFresh();
-              log.info("Click on Fresh Produce");
+              //Navigate to Catering
+              navigationpage.clickcatering();
+              log.info("Click on Catering");
               Thread.sleep(5000);
-              String title3=_driver.getCurrentUrl();
-              sa.assertEquals("https://www.cub.com/departments/produce.html", title3);
-              log.info("Fresh Produce page is displayed" );
+              String title4=_driver.getCurrentUrl();
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments/catering.html", title4);
+              log.info("Catering page is displayed" );
                                          
               navigationpage.clickbacktoDept();
               Thread.sleep(3000);
               log.info("Navigate back to Departments page");
-              sa.assertEquals("https://www.cub.com/departments.html", title);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments.html", title);
+              
               
               //Navigate to Gift Cards page
               navigationpage.clickGift();
               log.info("Click on Gift Cards");
               Thread.sleep(5000);
-              String title4=_driver.getCurrentUrl();
-              sa.assertEquals("https://www.cub.com/departments/gift-card-floral.html", title4);
+              String title5=_driver.getCurrentUrl();
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments/gift-card-floral.html", title5);
               log.info("Gift Cards page is displayed" );
                                          
               navigationpage.clickbacktoDept();
               Thread.sleep(3000);
               log.info("Navigate back to Departments page");
-              sa.assertEquals("https://www.cub.com/departments.html", title);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments.html", title);
               
               //Navigate to Beer and Wine page
               navigationpage.clickBeer();
               log.info("Click on Beer and Wine");
               Thread.sleep(5000);
-              String title5=_driver.getCurrentUrl();
-              sa.assertEquals("https://www.cub.com/departments/liquor.html", title5);
+              String title6=_driver.getCurrentUrl();
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments/liquor.html", title6);
               log.info("Beer and Wine page is displayed" );
                                          
               navigationpage.clickbacktoDept();
               Thread.sleep(3000);
               log.info("Navigate back to Departments page");
-              sa.assertEquals("https://www.cub.com/departments.html", title);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments.html", title);
               
-              //Navigate to Pet page
+              //Navigate to Private brands
               navigationpage.clickPet();
               log.info("Click on Pet");
               Thread.sleep(5000);
-              String title6=_driver.getCurrentUrl();
-              sa.assertEquals("https://www.cub.com/departments/pet.html", title6);
+              String title7=_driver.getCurrentUrl();
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments/pet.html", title7);
               log.info("Pet page is displayed" );
                                                        
               navigationpage.clickbacktoDept();
               Thread.sleep(3000);
               log.info("Navigate back to Departments page");
-              sa.assertEquals("https://www.cub.com/departments.html", title);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments.html", title);
+              
+              //Navigate to Pet page
+              navigationpage.clickPet();
+              log.info("Click on Pet");
+              Thread.sleep(5000);
+              String title8=_driver.getCurrentUrl();
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments/pet.html", title8);
+              log.info("Pet page is displayed" );
+                                                       
+              navigationpage.clickbacktoDept();
+             Thread.sleep(3000);
+              log.info("Navigate back to Departments page");
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/departments.html", title);
               
               sa.assertAll();
+              
               
        } catch (InterruptedException ie) {
               log.info(ie.getMessage());
@@ -299,7 +354,7 @@ public class Navigation extends SuiteBase {
        }
        
        //Guest User Navigate to pharmacy page
-       @Test(priority=3, enabled=true)
+       @Test(priority=3, enabled=false)
        public void NavigatetoPharmacy_GuestUser() {
               
               try {
@@ -313,22 +368,8 @@ public class Navigation extends SuiteBase {
               Thread.sleep(5000);
               String title=_driver.getCurrentUrl();
               System.out.println(title);
-              sa.assertEquals("https://www.cub.com/pharmacy.html", title);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/pharmacy.html", title);
               log.info("Pharmacy page is displayed" );
-              
-              //Navigate to Pharmacy Departments page
-              navigationpage.clickDeptpharma();
-              log.info("Click on Pharmacy Departments");
-              Thread.sleep(5000);
-              String title1=_driver.getCurrentUrl();
-              System.out.println(title1);
-              sa.assertEquals("https://www.cub.com/pharmacy/home.html", title1);
-              log.info("Pharmacy Departments page is displayed" );
-              
-              navigationpage.clickbacktopharma();
-              Thread.sleep(3000);
-              log.info("Navigate back to Pharmacy page");
-              sa.assertEquals("https://www.cub.com/pharmacy.html", title);
               
               //Navigate to Our Services page
               navigationpage.clickServices();
@@ -336,13 +377,13 @@ public class Navigation extends SuiteBase {
               Thread.sleep(5000);
               String title2=_driver.getCurrentUrl();
               System.out.println(title2);
-              sa.assertEquals("https://www.cub.com/pharmacy/our-services.html", title2);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/pharmacy/our-services.html", title2);
               log.info("Our services page is displayed" );
                            
               navigationpage.clickbacktopharma();
               Thread.sleep(3000);
               log.info("Navigate back to Pharmacy page");
-              sa.assertEquals("https://www.cub.com/pharmacy.html", title);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/pharmacy.html", title);
               
               //Navigate to Store Health page
               navigationpage.clickstorehealth();
@@ -350,7 +391,7 @@ public class Navigation extends SuiteBase {
               Thread.sleep(5000);
               String title3=_driver.getCurrentUrl();
               System.out.println(title3);
-              sa.assertEquals("https://www.cub.com/pharmacy/instore-health.html", title3);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/pharmacy/instore-health.html", title3);
               log.info("Store Health page is displayed" );
                                          
               //Navigate to Diabetes page
@@ -359,13 +400,13 @@ public class Navigation extends SuiteBase {
               Thread.sleep(5000);
               String title4=_driver.getCurrentUrl();
               System.out.println(title4);
-              sa.assertEquals("https://www.cub.com/pharmacy/instore-health/diabetes-coach.html", title4);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/pharmacy/instore-health/diabetes-coach.html", title4);
               log.info("Diabetes page is displayed" );
                                          
               navigationpage.clickbacktopharma();
               Thread.sleep(3000);
               log.info("Navigate back to Pharmacy page");
-              sa.assertEquals("https://www.cub.com/pharmacy.html", title);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/pharmacy.html", title);
               
               sa.assertAll();
               
@@ -375,7 +416,7 @@ public class Navigation extends SuiteBase {
        }
        
        //Signed In User Navigate to Pharmacy
-       @Test(priority=4, enabled=true)
+       @Test(priority=4, enabled=false)
        public void NavigatetoPharmacy_SignedInUser() {
               
               try {
@@ -387,7 +428,7 @@ public class Navigation extends SuiteBase {
 
                      cubHome = new FFHome(_driver);
 
-                     log.info("User Name : " + userId);
+                    log.info("User Name : " + userId);
                      log.info("Password : " + password);
                      log.info("Cub Home page is launched");
                      cubHome.clickSignInLink();
@@ -406,36 +447,23 @@ public class Navigation extends SuiteBase {
               Thread.sleep(5000);
               String title=_driver.getCurrentUrl();
               System.out.println(title);
-              sa.assertEquals("https://www.cub.com/pharmacy.html", title);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/pharmacy.html", title);
               log.info("Pharmacy page is displayed" );
               
-              //Navigate to Pharmacy Departments page
-              navigationpage.clickDeptpharma();
-              log.info("Click on Pharmacy Departments");
-              Thread.sleep(5000);
-              String title1=_driver.getCurrentUrl();
-              System.out.println(title1);
-              sa.assertEquals("https://www.cub.com/pharmacy/home.html", title1);
-              log.info("Pharmacy Departments page is displayed" );
               
-              navigationpage.clickbacktopharma();
-              Thread.sleep(3000);
-              log.info("Navigate back to Pharmacy page");
-              sa.assertEquals("https://www.cub.com/pharmacy.html", title);
-              
-              //Navigate to Our Services page
+            //Navigate to Our Services page
               navigationpage.clickServices();
               log.info("Click on Our services");
               Thread.sleep(5000);
               String title2=_driver.getCurrentUrl();
               System.out.println(title2);
-              sa.assertEquals("https://www.cub.com/pharmacy/our-services.html", title2);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/pharmacy/our-services.html", title2);
               log.info("Our services page is displayed" );
                            
               navigationpage.clickbacktopharma();
               Thread.sleep(3000);
               log.info("Navigate back to Pharmacy page");
-              sa.assertEquals("https://www.cub.com/pharmacy.html", title);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/pharmacy.html", title);
               
               //Navigate to Store Health page
               navigationpage.clickstorehealth();
@@ -443,7 +471,7 @@ public class Navigation extends SuiteBase {
               Thread.sleep(5000);
               String title3=_driver.getCurrentUrl();
               System.out.println(title3);
-              sa.assertEquals("https://www.cub.com/pharmacy/instore-health.html", title3);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/pharmacy/instore-health.html", title3);
               log.info("Store Health page is displayed" );
                                          
               //Navigate to Diabetes page
@@ -452,13 +480,13 @@ public class Navigation extends SuiteBase {
               Thread.sleep(5000);
               String title4=_driver.getCurrentUrl();
               System.out.println(title4);
-              sa.assertEquals("https://www.cub.com/pharmacy/instore-health/diabetes-coach.html", title4);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/pharmacy/instore-health/diabetes-coach.html", title4);
               log.info("Diabetes page is displayed" );
                                          
               navigationpage.clickbacktopharma();
               Thread.sleep(3000);
               log.info("Navigate back to Pharmacy page");
-              sa.assertEquals("https://www.cub.com/pharmacy.html", title);
+              sa.assertEquals("https://www.farmfreshsupermarkets.com/pharmacy.html", title);
               
               sa.assertAll();
               
@@ -495,7 +523,7 @@ public class Navigation extends SuiteBase {
       	SoftAssert softAssert = new SoftAssert();
    		
    		NavigationPage = new NavigationPage(_driver);
-   		System.out.println("At Cub home page");
+   		System.out.println("At Farm Fresh home page");
    		Thread.sleep(5000);
    		NavigationPage.ClickOnSavings();
    		Thread.sleep(2000);
@@ -503,11 +531,11 @@ public class Navigation extends SuiteBase {
    		NavigationPage.ClickOnWeeklyAddSpecials();
    		Thread.sleep(2000);
    		String WeeklyAd = NavigationPage.GetCurrentURL();
-   		softAssert.assertEquals(WeeklyAd.trim(),"https://www.cub.com/savings/view-ads.html", "Weekly ads special Page is not displayed");
+   		softAssert.assertEquals(WeeklyAd.trim(),"https://www.farmfreshsupermarkets.com/savings/view-ads.html", "Weekly ads special Page is not displayed");
    		
    		NavigationPage.ClickOnWeeklyAd();
    		Thread.sleep(2000);
-   		softAssert.assertEquals(WeeklyAd.trim(),"https://www.cub.com/savings/view-ads.html", "Weekly ad page is not displayed");
+   		softAssert.assertEquals(WeeklyAd.trim(),"https://www.farmfreshsupermarkets.com/savings/view-ads.html", "Weekly ad page is not displayed");
    		
    		NavigationPage.ClickOnCoupons();
    		Thread.sleep(2000);
@@ -522,7 +550,7 @@ public class Navigation extends SuiteBase {
    		NavigationPage.ClickOnMobileFAQs();
    		Thread.sleep(2000);
    		String strMobileFAQs = NavigationPage.GetCurrentURL();
-   		softAssert.assertEquals(strMobileFAQs.trim(),"https://www.cub.com/savings/mobile/faqs.html", "Mobile FAQs Page is not displayed");
+   		softAssert.assertEquals(strMobileFAQs.trim(),"https://www.farmfreshsupermarkets.com/savings/mobile/faqs.html", "Mobile FAQs Page is not displayed");
    		
    		NavigationPage.ClickOnMyCubRewards();
    		Thread.sleep(2000);
@@ -532,12 +560,12 @@ public class Navigation extends SuiteBase {
    		NavigationPage.ClickOnMyCubRewardsFAQs();
    		Thread.sleep(2000);
    		String strRewardsFAQs= NavigationPage.GetCurrentURL();
-   		softAssert.assertEquals(strRewardsFAQs.trim(),"https://www.cub.com/savings/my-cub-rewards/faqs.html", "My Cub rewards FAQs Page is not displayed");
+   		softAssert.assertEquals(strRewardsFAQs.trim(),"https://www.farmfreshsupermarkets.com/savings/my-cub-rewards/faqs.html", "My Cub rewards FAQs Page is not displayed");
    		
    		NavigationPage.ClickOnMyCubRewardsSummerTravel();
    		Thread.sleep(2000);
    		String strRewardsSummerTravel= NavigationPage.GetCurrentURL();
-   		softAssert.assertEquals(strRewardsSummerTravel.trim(),"https://www.cub.com/savings/my-cub-rewards/summer-travel.html", "My Cub rewards summer travel Page is not displayed");
+   		softAssert.assertEquals(strRewardsSummerTravel.trim(),"https://www.farmfreshsupermarkets.com/savings/my-cub-rewards/summer-travel.html", "My Cub rewards summer travel Page is not displayed");
    		
    		NavigationPage.ClickOnPromotionsAndSweepstakes();
    		Thread.sleep(2000);
@@ -556,7 +584,7 @@ public class Navigation extends SuiteBase {
    		
     	}
    	
-   	@Test(priority=2,enabled=true)
+   	@Test(priority=2,enabled=false)
    	public void Signed_Savings_Navigation()throws InterruptedException, IOException, XPathExpressionException, ParserConfigurationException, SAXException 
    	{
    		

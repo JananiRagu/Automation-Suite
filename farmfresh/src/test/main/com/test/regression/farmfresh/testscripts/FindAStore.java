@@ -97,11 +97,11 @@ public class FindAStore extends SuiteBase {
 			findastore.clickseestoredetails();
 			String title=_driver.getTitle();
 			System.out.println(title);
-			Assert.assertEquals("Cub Foods - View Store", title);
+			Assert.assertEquals("Farm Fresh Supermarkets - View Store", title);
 			findastore.clickmakemystoreAtseestore();
 			String title1=_driver.getTitle();
 			System.out.println(title1);
-			Assert.assertEquals("Cub Foods - View Store", title1);
+			Assert.assertEquals("Farm Fresh Supermarkets - View Store", title1);
 			
 			log.info("Store Locations Page-Success" );
 			
@@ -147,7 +147,7 @@ public class FindAStore extends SuiteBase {
 			findastore.clickMakemyStore();
 				String title=_driver.getTitle();
 				System.out.println(title);
-			Assert.assertEquals("Cub Foods - View Store", title);
+			Assert.assertEquals("Farm Fresh Supermarkets - View Store", title);
 				log.info("Store Locations Page-Success" );	
 			
 			} catch (IOException ioe) {
@@ -193,7 +193,7 @@ public class FindAStore extends SuiteBase {
 			String title=_driver.getTitle();
 			System.out.println(title);
 			
-			Assert.assertEquals("Cub Foods - View Store", title);
+			Assert.assertEquals("Farm Fresh Supermarkets - View Store", title);
 			log.info("Store Locations Page-Success" );
 				
 				//Enter Zipcode and Street Address
@@ -208,7 +208,7 @@ public class FindAStore extends SuiteBase {
 			String title1=_driver.getTitle();
 			System.out.println(title1);
 				
-			Assert.assertEquals("Cub Foods - View Store", title1);
+			Assert.assertEquals("Farm Fresh Supermarkets - View Store", title1);
 			
 			} catch (IOException ioe) {
 				log.info(ioe.getMessage());	
@@ -272,7 +272,7 @@ public class FindAStore extends SuiteBase {
 			Thread.sleep(5000);
 			String title=_driver.getTitle();
 			System.out.println(title);
-		Assert.assertEquals("Cub Foods - View Store", title);
+		Assert.assertEquals("Farm Fresh Supermarkets - View Store", title);
 			log.info("Store Locations Page-Success" );
 			
 			//Change My Store link in View Store page
@@ -280,7 +280,7 @@ public class FindAStore extends SuiteBase {
 			Thread.sleep(5000);
 			String title1=_driver.getTitle();
 			System.out.println(title1);
-		Assert.assertEquals("Cub Foods - Search Stores", title1);
+		Assert.assertEquals("Farm Fresh Supermarkets - Search Stores", title1);
 		log.info("Search store page-Success" );
 
 		} catch (InterruptedException ie) {
@@ -349,7 +349,7 @@ public class FindAStore extends SuiteBase {
 		Thread.sleep(5000);
 			String title=_driver.getTitle();
 			System.out.println(title);
-		Assert.assertEquals("Cub Foods - View Store", title);
+		Assert.assertEquals("Farm Fresh Supermarkets - View Store", title);
 			log.info("Store Locations Page-Success" );
 
 			} catch (InterruptedException ie) {
@@ -577,13 +577,13 @@ public class FindAStore extends SuiteBase {
 		 Thread.sleep(2000);
 		String title=_driver.getTitle();
 		System.out.println(title);
-		Assert.assertEquals("Cub Foods - View Stores by State", title);
+		Assert.assertEquals("Farm Fresh Supermarkets - View Stores by State", title);
 		
 		findastore.ClickStore();
 		 Thread.sleep(2000);
 		String title1=_driver.getTitle();
 		System.out.println(title1);
-		Assert.assertEquals("Cub Foods - View Store", title1);
+		Assert.assertEquals("Farm Fresh Supermarkets - View Store", title1);
 		log.info("Store Locations Page-Success" );
 		 Thread.sleep(2000);
 		 
@@ -592,9 +592,9 @@ public class FindAStore extends SuiteBase {
 		findastore.clickFindAStore();
 		findastore.ClickState2();
 		Thread.sleep(2000);
-		Assert.assertEquals("Cub Foods - View Stores by State", title); 
+		Assert.assertEquals("Farm Fresh Supermarkets - View Stores by State", title); 
 		findastore.ClickStore();
-		Assert.assertEquals("Cub Foods - View Store", title1);
+		Assert.assertEquals("Farm Fresh Supermarkets - View Store", title1);
 		log.info("Store Locations Page-Success" );
 		Thread.sleep(2000);
 		
@@ -655,19 +655,19 @@ public class FindAStore extends SuiteBase {
 	Thread.sleep(5000);
 	String title=_driver.getTitle();
 	System.out.println(title);
-	Assert.assertEquals("Cub Foods - View Store", title);
+	Assert.assertEquals("Farm Fresh Supermarkets - View Store", title);
 		log.info("Store Locations Page-Success" );
 		Thread.sleep(2000);
 		findastore.clickmap();
 		String title1=_driver.getTitle();
 		System.out.println(title1);
-		Assert.assertEquals("Cub Foods - View Store", title);
+		Assert.assertEquals("Farm Fresh Supermarkets - View Store", title);
 		Thread.sleep(5000);
 		
 		findastore.clickdriving();
 		String title2=_driver.getTitle();
 		System.out.println(title2);
-		Assert.assertEquals("Cub Foods - View Store", title);
+		Assert.assertEquals("Farm Fresh Supermarkets - View Store", title);
 		log.info("Driving Directions page is displayed");
 		Thread.sleep(5000);
 		
@@ -677,15 +677,15 @@ public class FindAStore extends SuiteBase {
 		Thread.sleep(5000);
 		String title3=_driver.getTitle();
 		System.out.println(title3);
-		Assert.assertEquals("Cub Foods - Driving Directions", title3);
+		Assert.assertEquals("Farm Fresh Supermarkets - Driving Directions", title3);
 		log.info("Driving Directions are displayed");
 		Thread.sleep(4000);
 		
-		findastore.clickprint();
+		/*findastore.clickprint();
 		Thread.sleep(6000);
 		String title4=_driver.getTitle();
 		System.out.println(title4);
-		Assert.assertEquals("Cub Foods - Driving Directions", title4);
+		Assert.assertEquals("Farm Fresh Supermarkets - Driving Directions", title4);*/
 
 	} catch (InterruptedException ie) {
 		log.info(ie.getMessage());
@@ -799,7 +799,7 @@ public class FindAStore extends SuiteBase {
 }
 	
 	//Pagination
-	@Test(priority=25, enabled=true)
+	@Test(priority=25, enabled=false)
 	public void Pagination() {
 
 	try{
@@ -832,7 +832,7 @@ public class FindAStore extends SuiteBase {
 	Thread.sleep(2000);
 	String title=_driver.getTitle();
 	System.out.println(title);
-	Assert.assertEquals("Cub Foods - View Stores by State",title); 
+	Assert.assertEquals("Farm Fresh Supermarkets - View Stores by State",title); 
 	
 	Thread.sleep(5000);
 	int result=0;
@@ -842,6 +842,7 @@ public class FindAStore extends SuiteBase {
 	
 	int p=0;
 	int R1=findastore.page(p);
+	System.out.println(p);
 	Thread.sleep(5000);
 	int v=0;
 	int v1=0; 
@@ -856,7 +857,7 @@ public class FindAStore extends SuiteBase {
 			}
 	
 	if(r>10){
-		WebElement check=_driver.findElement(By.xpath("//*[@id='store-search-result']/tbody/tr[17]/td[1]/div/div"));//last table of the page 10
+		WebElement check=_driver.findElement(By.xpath("//*[@id='store-search-result']/tbody/tr[14]/td[1]/div/div"));//last table of the page 10
 		String val=check.getText();
 		v=Integer.parseInt(val);
 		System.out.println(val);
@@ -870,7 +871,7 @@ public class FindAStore extends SuiteBase {
 	findastore.clickshow25();
 	Thread.sleep(3000);
 	if(r>25){
-		WebElement check1=_driver.findElement(By.xpath("//*[@id='store-search-result']/tbody/tr[44]/td[1]/div/div"));//last table of the page 25
+		WebElement check1=_driver.findElement(By.xpath("//*[@id='store-search-result']/tbody/tr[36]/td[1]/div/div"));//last table of the page 25
 		String val1=check1.getText();
 		v1=Integer.parseInt(val1);
 		System.out.println(val1);
@@ -884,7 +885,7 @@ public class FindAStore extends SuiteBase {
 	findastore.clickshow50();
 	Thread.sleep(3000);
 	if(r>50){
-		WebElement check2=_driver.findElement(By.xpath("//*[@id='store-search-result']/tbody/tr[84]/td[1]/div/div"));//last table of the page 50
+		WebElement check2=_driver.findElement(By.xpath("//*[@id='store-search-result']/tbody/tr[56]/td[1]/div/div"));//last table of the page 50
 		String val2=check2.getText();
 		v2=Integer.parseInt(val2);
 		System.out.println(val2);
@@ -893,11 +894,9 @@ public class FindAStore extends SuiteBase {
 			System.out.println("Pass");
 			
 		}
-	}else{
-		Assert.assertTrue(false);
 	}
 	
-	WebElement lastnumber=_driver.findElement(By.xpath("//*[@id='store-search-result']/tbody/tr[50]/td[1]/div/div"));
+	WebElement lastnumber=_driver.findElement(By.xpath("//*[@id='store-search-result']/tbody/tr[56]/td[1]/div/div"));
 	String val3=lastnumber.getText();
 	System.out.println(val3);
 	v3=Integer.parseInt(val3);
@@ -909,18 +908,29 @@ public class FindAStore extends SuiteBase {
 		System.out.println("Total number of results displayed is correct");
 	}
 	Thread.sleep(3000);
-	findastore.clicknext();
+	if(r<50){
+	findastore.clickshow25();
 	Thread.sleep(5000);
-	WebElement check3=_driver.findElement(By.xpath("//*[@id='content-primary']/div/div[2]/div[3]/ul/li[3]"));//Next
-	WebElement check4=_driver.findElement(By.xpath("//*[@id='content-primary']/div/div[2]/div[3]/ul/li[1]/a"));//Previous
-	
-	if(check3.getAttribute("disabled")=="disabled" || check4.getAttribute("disabled")!="disabled"){
+	WebElement check3=_driver.findElement(By.xpath("//*[@id='content-primary']/div/div[2]/div[3]/ul/li[2]/a"));//Next
+		
+	if(check3.getAttribute("disabled")!="disabled"){
 		Assert.assertTrue(true);
 		System.out.println("Pagination for Next link");
 	}else{
 		Assert.assertTrue(false);
 	}
+	}else{
+		findastore.clicknext();
+		Thread.sleep(5000);
+		WebElement check4=_driver.findElement(By.xpath("//*[@id='content-primary']/div/div[2]/div[3]/ul/li[1]/a"));//Previous
 		
+		if(check4.getAttribute("disabled")!="disabled"){
+			Assert.assertTrue(true);
+			System.out.println("Pagination for Previous link");
+		}else{
+			Assert.assertTrue(false);
+		}
+		}
 	
 	} catch (InterruptedException ie) {
 		log.info(ie.getMessage());
@@ -941,7 +951,7 @@ public class FindAStore extends SuiteBase {
 	
 }
 	//Setting store from My Account page.
-	@Test(priority=26, enabled=false)
+	@Test(priority=26, enabled=true)
 	public void validSignUpandsetstore(){
 		try{
 		// Retrieving test data for valid sign up no card
@@ -960,12 +970,18 @@ public class FindAStore extends SuiteBase {
 		signUpPage.clickSignUpLink();
 		
 		signUpPage.enterSignUpDetails(userId,password);
+		Thread.sleep(10000);
 		
-		signUpPage.clickDontWantCardRadio();
+		findastore = new FindAStorePage(_driver);
 		
-		signUpPage.clickContinueButton();
+		findastore.enterzip(zipcode);
+		Thread.sleep(5000);
+		findastore.clickOnSearch();
+		Thread.sleep(5000);
 		
+		findastore.clickOnStore();
 		Thread.sleep(50000);
+		
 		MyAccount = new MyAccountPage(_driver);
 		MyAccount.clickOnMyAccountUnderMyTools(_driver);
 		log.info("Click on My Accounts link");
@@ -977,7 +993,7 @@ public class FindAStore extends SuiteBase {
 		//String result=ele.getText();
 	    System.out.println(result);
 	    Thread.sleep(5000);
-	    String r="Cub Foods Nicollet";
+	    String r="Farm Fresh - Cedar Road";
 	    SoftAssert sa = new SoftAssert();
 	    if(result.equals(r)){	    	
 	    	sa.assertTrue(true,"Default store is displayed");
@@ -1162,6 +1178,7 @@ public class FindAStore extends SuiteBase {
 			cubHome=new FFHome(_driver);
 			//ZipCode
 			cubHome.clickOnPharmacy();
+			
 			findastore = new FindAStorePage(_driver);
 		
 			findastore.enterZippharma(zipcode);
@@ -1171,13 +1188,13 @@ public class FindAStore extends SuiteBase {
 			String title=_driver.getTitle();
 			System.out.println(title);
 			
-			sa.assertEquals("Cub Foods - Store Search Results", title, "\n Failed: Search page is not displayed when user clicks on SEARCH in FAS widget in Pharmacy page");	
+			sa.assertEquals("Farm Fresh Supermarkets - Store Search Results", title, "\n Failed: Search page is not displayed when user clicks on SEARCH in FAS widget in Pharmacy page");	
 			
 			findastore.clickMakemyStore();
 			Thread.sleep(3000);
 			String title1=_driver.getTitle();
 			System.out.println(title1);
-			Assert.assertEquals("Cub Foods - View Store", title1);
+			Assert.assertEquals("Farm Fresh Supermarkets - View Store", title1);
 			log.info("Store Locations Page-Success" );
 			
 			//City and State
@@ -1189,13 +1206,13 @@ public class FindAStore extends SuiteBase {
 			Thread.sleep(3000);
 			String title2=_driver.getTitle();
 			System.out.println(title2);
-			sa.assertEquals("Cub Foods - Store Search Results", title2, "\n Failed: Search page is not displayed when user clicks on SEARCH in FAS widget in Pharmacy page");	
+			sa.assertEquals("Farm Fresh Supermarkets - Store Search Results", title2, "\n Failed: Search page is not displayed when user clicks on SEARCH in FAS widget in Pharmacy page");	
 			
 			findastore.clickMakemyStore();
 			Thread.sleep(3000);
 			String title3=_driver.getTitle();
 			System.out.println(title3);
-			sa.assertEquals("Cub Foods - Store Search Results", title3, "\n Failed: Store details are not displayed when user Searches store through FAS widget in Pharmacy page");	
+			sa.assertEquals("Farm Fresh Supermarkets - View Store", title3, "\n Failed: Store details are not displayed when user Searches store through FAS widget in Pharmacy page");	
 			
 			sa.assertAll();
 			

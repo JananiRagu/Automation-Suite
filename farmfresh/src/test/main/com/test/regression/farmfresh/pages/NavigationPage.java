@@ -29,19 +29,25 @@ public class NavigationPage extends SuiteBase{
        @FindBy(xpath="//*[@id='nav-secondary']/li[1]/a")
        public WebElement _MeatandSeafood;
        
-       @FindBy(xpath="//*[@id='nav-secondary']/li[2]/a")
+       @FindBy(xpath="//*[@id='nav-secondary']/li[3]/a")
        public WebElement _DeliandBakery;
        
-       @FindBy(xpath="//*[@id='nav-secondary']/li[3]/a")
+       @FindBy(xpath="//*[@id='nav-secondary']/li[2]/a")
        public WebElement _FreshProduce;
        
        @FindBy(xpath="//*[@id='nav-secondary']/li[4]/a")
-       public WebElement _GiftCards;
+       public WebElement _Catering;
        
        @FindBy(xpath="//*[@id='nav-secondary']/li[5]/a")
-       public WebElement _BeerandWine;
+       public WebElement _Giftcard;
        
        @FindBy(xpath="//*[@id='nav-secondary']/li[6]/a")
+       public WebElement _BeerandWine;
+       
+       @FindBy(xpath="//*[@id='nav-secondary']/li[7]/a")
+       public WebElement _Privatebrands;
+       
+       @FindBy(xpath="//*[@id='nav-secondary']/li[8]/a")
        public WebElement _Pet;
        
        @FindBy(xpath="//*[@id='nav-breadcrumb']/li[2]/a")
@@ -49,17 +55,14 @@ public class NavigationPage extends SuiteBase{
        
        @FindBy(xpath="//*[@id='nav-pri-pharmacy']/a")
        public WebElement _pharmacy;
-       
+             
        @FindBy(xpath="//*[@id='nav-secondary']/li[1]/a")
-       public WebElement _Deptpharmacy;
-       
-       @FindBy(xpath="//*[@id='nav-secondary']/li[2]/a")
        public WebElement _Servicespharmacy;
        
-       @FindBy(xpath="//*[@id='nav-secondary']/li[3]/a")
+       @FindBy(xpath="//*[@id='nav-secondary']/li[2]/a")
        public WebElement _Storehealthpharmacy;
        
-       @FindBy(xpath="//*[@id='nav-secondary']/li[3]/ul/li/a")
+       @FindBy(xpath="//*[@id='nav-secondary']/li[2]/ul/li/a")
        public WebElement _diabetespharmacy;
        
        @FindBy(xpath="//*[@id='nav-breadcrumb']/li[2]/a")
@@ -126,7 +129,7 @@ public class NavigationPage extends SuiteBase{
    	
    		//Inside promotion and sweep stakes page
    		@FindBy(xpath = "//*[@id='content-primary']/div/div[1]/h1")
-   		public WebElement _PromotionsAndSweepstakesText;
+  		public WebElement _PromotionsAndSweepstakesText;
    	
    	@FindBy(xpath = "//*[@id='nav-secondary']/li[6]/a")
    	public WebElement _DiscountedTickets;
@@ -235,7 +238,7 @@ public class NavigationPage extends SuiteBase{
    		waitFor(_MyCubRewardsText);
    		String strMyCubRewardsText = _MyCubRewardsText.getText();
    		return strMyCubRewardsText;
-   	}
+  	}
    	
    	public void ClickOnPromotionsAndSweepstakes()
    	{
@@ -299,8 +302,11 @@ public class NavigationPage extends SuiteBase{
        public void clickFresh(){
               _FreshProduce.click();
        }
+       public void clickcatering(){
+           _Catering.click();
+    }
        public void clickGift(){
-              _GiftCards.click();
+              _Giftcard.click();
        }
        public void clickBeer(){
               _BeerandWine.click();
@@ -308,15 +314,17 @@ public class NavigationPage extends SuiteBase{
        public void clickPet(){
               _Pet.click();
        }
+       public void clickPrivatebrands(){
+           _Privatebrands.click();
+    }
+       
        public void clickbacktoDept(){
               _backtoDept.click();
        }
        public void clickpharmacy(){
               _pharmacy.click();
        }
-       public void clickDeptpharma(){
-              _Deptpharmacy.click();
-       }
+     
        public void clickServices(){
               _Servicespharmacy.click();
        }
@@ -325,7 +333,7 @@ public class NavigationPage extends SuiteBase{
        }
        public void clickdiabetes(){
               _diabetespharmacy.click();
-       }
+      }
        public void clickbacktopharma(){
               _backtoPharma.click();
        }
