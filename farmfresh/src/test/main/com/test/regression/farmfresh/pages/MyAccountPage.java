@@ -42,7 +42,7 @@ public class MyAccountPage extends SuiteBase{
 	@FindBy(xpath = "//a[text()='My Account']")
 	private WebElement _MyAccount;
 	
-	@FindBy(xpath = "//div[@class='account-section-details']/div/div[2]/div[@class='value personal current-cardlessid']")
+	@FindBy(xpath = "//div[@class='account-edit-section rewards-edit-section']/div/div")
 	private WebElement _cardlessid;
 	
 

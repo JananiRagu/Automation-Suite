@@ -68,7 +68,7 @@ public class Coupons extends SuiteBase {
 	
 	/* Add a Single Coupon for the Authorized User  */
 
-	@Test(priority = 11, enabled = false)
+	@Test(priority = 11, enabled=true)
 	public void addCouponForAuthorizedUser() {
 		try {
 
@@ -94,7 +94,7 @@ public class Coupons extends SuiteBase {
 			log.info("Coupons Page is loaded fully");
 
 			String addedCouponName = cp.addSingleCoupon(_driver, wantedCouponNumber);
-
+			System.out.println("Name of the coupon that is just added : " + addedCouponName);
 			String couponNameInSl = cp.getCouponName(_driver, wantedCouponNumber);
 
 			Thread.sleep(5000);
@@ -150,7 +150,7 @@ public class Coupons extends SuiteBase {
 	// Sign Up for an account just by closing the Rewards Card pop up
 	// So, it will prompt for card-less id while trying to add coupon
 
-	@Test(priority = 13, enabled = false)
+	@Test(priority = 13, enabled=true)
 	public void addCouponForNewUser() {
 
 		try {
@@ -245,7 +245,7 @@ public class Coupons extends SuiteBase {
 	
 	/* Validate Coupons Page is loaded fully */
 
-	@Test(priority = 11, enabled = true)
+	@Test(priority = 11, enabled=true)
 	public void couponPageFullLoad()  {
 
 		cp = new CouponPage(_driver);
@@ -285,7 +285,7 @@ public class Coupons extends SuiteBase {
 
 	/* Adds a list of Coupons for a new user by selecting 'Not Now' in CardlessId pop up  */
 	
-	@Test(priority = 13, enabled = false)
+	@Test(priority = 13, enabled=true)
 	public void addCouponForNoCardNotNowCardlessIdNewUser() {
 
 		try {
@@ -297,6 +297,9 @@ public class Coupons extends SuiteBase {
 			String rewardsNum = addCouponForNoCardNewUserData.get("rewardsNum");
 			String state = addCouponForNoCardNewUserData.get("state");
 
+			SoftAssert sa = new SoftAssert();
+
+			
 			signUpPage = new SignUpPage(_driver);
 			log.info("Test Data Used >>>>>>>");
 			log.info("User Name : " + userId);
@@ -365,7 +368,7 @@ public class Coupons extends SuiteBase {
 
 			log.info("Is Cardless id displayed in My Account Page : " + result);
 
-			sa.assertTrue(result,
+			sa.assertFalse(result,
 					"Oops! Cardless Id is present in My Account page even when the user has not entered..");
 
 			sa.assertAll();
@@ -395,7 +398,7 @@ public class Coupons extends SuiteBase {
 
 	/* Validates Sorting Functionality on Alphabetical Order & Expiration Date */
 	
-	@Test(priority = 14, enabled = false)
+	@Test(priority = 14, enabled=true)
 	public void chkCouponSort() throws InterruptedException {
 
 		try{
@@ -457,7 +460,7 @@ public class Coupons extends SuiteBase {
 	
 	/* Add a Single Coupon for the Authorized User from Coupon Details page    */
 
-	@Test(priority = 11, enabled = false)
+	@Test(priority = 11, enabled=true)
 	public void addCouponFromCouponDetailsPageForAuthorizedUser() {
 		
 		try {
@@ -479,6 +482,9 @@ public class Coupons extends SuiteBase {
 
 				cp.clickOnCouponsInMyToolsHomePage(_driver);
 
+				cp.loadCompleteCouponsPage(_driver);
+				log.info("Coupons Page is loaded fully");
+				
 				Thread.sleep(5000);
 
 				cp.navigateToCouponDetailPage(_driver, wantedCouponNumber);
@@ -535,7 +541,7 @@ public class Coupons extends SuiteBase {
 	
 	/* Validates Filter Functionality on Coupons  */
 
-	@Test(priority = 12, enabled = false)
+	@Test(priority = 12, enabled=true)
 	public void categoryTestInCoupons() {
 
 		try {
@@ -564,7 +570,7 @@ public class Coupons extends SuiteBase {
 	
 	/*       Validates Search Functionality on Coupons   */    
 
-	@Test(priority = 11, enabled = false)
+	@Test(priority = 11, enabled=true)
 	public void searchTestInCoupons() {
 
 		try {

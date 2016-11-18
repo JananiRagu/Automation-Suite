@@ -2,26 +2,27 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="none">
  
- <!-- testing... -->
+ 
 <test name="Sign In - Testing">
     <classes> 
     	<class name="com.test.regression.farmfresh.testscripts.SignIn"> </class> 
     </classes>
-</test> 
- <!--
+</test>
+
+
 <test name="Sign Up - Testing">
     <classes> 
     	<class name="com.test.regression.farmfresh.testscripts.SignUp"> </class>  
     </classes>
 </test> 
 
- 
+
 <test name="Shopping List - Testing">
     <classes> 
     	<class name="com.test.regression.farmfresh.testscripts.ShoppingLists"> </class> 
     </classes>
 </test> 
-
+ <!--
 <test name="Header Footer Navigation - Testing">
     <classes> 
     	<class name="com.test.regression.farmfresh.testscripts.HeaderFooterNavigation"> </class> 

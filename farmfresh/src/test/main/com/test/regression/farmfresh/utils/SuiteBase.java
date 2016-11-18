@@ -71,7 +71,7 @@ public class SuiteBase {
     	 _driver = InitializeDriver(properties.getPropValue("browser"));
     	 	 _driver.get(properties.getPropValue("testURL"));
     	 
-    	 log.info("Launched "+ Constant.URL + " Successfully!");
+    	 log.info("Launched "+ properties.getPropValue("testURL") + " Successfully!");
          
      }
 

@@ -31,7 +31,7 @@
 <user userid="authorized-user-3">
 <UserName>tom4supervalu@ff.com</UserName>
 <password>tom@test</password>
-<CouponToAdd>15</CouponToAdd>
+<CouponToAdd>21</CouponToAdd>
 </user>
 
 <user userid="authorized-user-4">
@@ -82,7 +82,7 @@
 <!-- Change the UserName everytime -->	
 					
 <user userid="new-user-1">
-<UserName>newuser1_159@ff.com</UserName>
+<UserName>newuser1_194@ff.com</UserName>
 <password>password</password>
 <state>VA</state>
 <zip>23223</zip>
@@ -93,15 +93,15 @@
 <!-- Change the UserName and cardless id everytime -->
 
 <user userid="new-user-2">
-<UserName>newuser2_159@ff.com</UserName>
+<UserName>newuser2_194@ff.com</UserName>
 <password>password</password>
 <firstname>new</firstname>
 <lastname>user</lastname>
 <address1>123 cedar ave</address1>
 <address2>test</address2>
 <city>Central Ave Ne Blaine</city>
-<state>MN</state>
-<zipcode>55434</zipcode>
+<state>VA</state>
+<zipcode>23223</zipcode>
 <homephone>8523697410</homephone>
 <mobilephone>7410254863</mobilephone>
 <cardlessid>70963010150</cardlessid>
@@ -114,12 +114,12 @@
 <!-- Change the UserName everytime -->
 
 <user userid="new-user-3">
-<UserName>newuser3_159@ff.com</UserName>
+<UserName>newuser3_194@ff.com</UserName>
 <password>password</password>
 <lastname>Test</lastname>
 <rewardsnumber>48630936861</rewardsnumber>
 <cardlessid>32132455712</cardlessid>
-<zipcode>55434</zipcode>
+<zipcode>23223</zipcode>
 </user>
 
 
@@ -129,33 +129,33 @@
 <!-- Change the UserName, cardlessid7, cardlessid4 and wantedCoupons -->
 
 <user userid="new-user-4">
-<UserName>newuser4_159@ff.com</UserName>
+<UserName>newuser4_194@ff.com</UserName>
 <password>password</password>
 <firstname>addCoupon</firstname>
 <lastname>NoCardNewUser</lastname>
 <address1>123 cedar Road</address1>
 <address2>test</address2>
 <city>Minneapolis</city>
-<state>VA</state>
+<state>va</state>
 <zipcode>23223</zipcode>
 <homephone>8523697410</homephone>
 <mobilephone>7410254863</mobilephone>
-<rewardsNum>5085201008</rewardsNum>
+<rewardsNum>5085201043</rewardsNum>
 <wantedCoupons>2,4,9</wantedCoupons>
 </user>
 
 <!-- Change the UserName and cardless id everytime -->
 
 <user userid="new-user-5">
-<UserName>newuser5_159@ff.com</UserName>
+<UserName>newuser5_194@ff.com</UserName>
 <password>password</password>
 <firstname>test</firstname>
 <lastname>want</lastname>
 <address1>123 cedar ave</address1>
 <address2>test</address2>
 <city>Eden Prairie</city>
-<state>MN</state>
-<zipcode>58963</zipcode>
+<state>va</state>
+<zipcode>23223</zipcode>
 <homephone>8523697410</homephone>
 <mobilephone>7410254863</mobilephone>
 <cardlessid>30741010150</cardlessid>
@@ -165,33 +165,33 @@
 <!-- Change the UserName and cardless id everytime -->
 
 <user userid="new-user-6">
-<UserName>newuser6_159@ff.com</UserName>
+<UserName>newuser6_194@ff.com</UserName>
 <password>password</password>
 <firstname>test</firstname>
 <lastname>want</lastname>
 <address1>123 cedar ave</address1>
 <address2>test</address2>
 <city>Eden Prairie</city>
-<state>MN</state>
-<zipcode>58963</zipcode>
+<state>Va</state>
+<zipcode>23223</zipcode>
 <homephone>8523697410</homephone>
 <mobilephone>7410254863</mobilephone>
-<rewardsNum>5010011008</rewardsNum>
+<rewardsNum>5010011043</rewardsNum>
 <wantedCoupons>2,5,8</wantedCoupons>
 </user>
 
 <!-- Change the UserName and cardless id everytime -->
 
 <user userid="new-user-7">
-<UserName>newuser7_159@ff.com</UserName>
+<UserName>newuser7_194@ff.com</UserName>
 <password>password</password>
 <firstname>test</firstname>
 <lastname>want</lastname>
 <address1>123 cedar ave</address1>
 <address2>test</address2>
 <city>Eden Prairie</city>
-<state>MN</state>
-<zipcode>58963</zipcode>
+<state>va</state>
+<zipcode>23223</zipcode>
 <homephone>8523697410</homephone>
 <mobilephone>7410254863</mobilephone>
 <cardlessid>40456010150</cardlessid>
@@ -199,29 +199,29 @@
 </user>
 
 <user userid="new-user-8">
-<UserName>newuser8_125@ff.com</UserName>
+<UserName>newuser8_160@ff.com</UserName>
 <password>password</password>
 <state>VA</state>
 <zip>23223</zip>
 </user>
 
 <user userid="new-user-9">
-<UserName>newuser9_124@ff.com</UserName>
+<UserName>newuser9_159@ff.com</UserName>
 <password>password</password>
 <state>VA</state>
 <zip>23223</zip>
 </user>
 
 <user userid="new-user-10">
-<UserName>newuser10_111@ff.com</UserName>
+<UserName>newuser10_146@ff.com</UserName>
 <password>password</password>
 <firstname>test</firstname>
 <lastname>want</lastname>
 <address1>123 cedar ave</address1>
 <address2>test</address2>
 <city>Eden Prairie</city>
-<state>MN</state>
-<zipcode>58963</zipcode>
+<state>va</state>
+<zipcode>23223</zipcode>
 <homephone>8523697410</homephone>
 <mobilephone>7410254863</mobilephone>
 <cardlessid>15456010150</cardlessid>
@@ -229,20 +229,20 @@
 </user>
 
 <user userid="new-user-11">
-<UserName>newuser11_75@ff.com</UserName>
+<UserName>newuser11_110@ff.com</UserName>
 <password>password</password>
 </user>
 
 <user userid="new-user-12">
-<UserName>newuser12_159@ff.com</UserName>
+<UserName>newuser12_194@ff.com</UserName>
 <password>password</password>
 <firstname>new</firstname>
 <lastname>user</lastname>
 <address1>123 cedar ave</address1>
 <address2>test</address2>
 <city>Central Ave Ne Blaine</city>
-<state>MN</state>
-<zipcode>55434</zipcode>
+<state>va</state>
+<zipcode>23223</zipcode>
 <homephone>8523697410</homephone>
 <mobilephone>7410254863</mobilephone>
 <cardlessid>70986240060</cardlessid>
@@ -255,24 +255,24 @@
 <!-- Change the UserName everytime -->
 
 <user userid="new-user-13">
-<UserName>newuser13_67@ff.com</UserName>
+<UserName>newuser13_102@ff.com</UserName>
 <password>password</password>
 <lastname>Test</lastname>
 <rewardsnumber>48630936861</rewardsnumber>
 <cardlessid>32137896060</cardlessid>
-<zipcode>55434</zipcode>
+<zipcode>23223</zipcode>
 </user>
 
 <user userid="new-user-14">
-<UserName>newuser14_67@ff.com</UserName>
+<UserName>newuser14_102@ff.com</UserName>
 <password>password</password>
 <firstname>new</firstname>
 <lastname>user</lastname>
 <address1>123 cedar ave</address1>
 <address2>test</address2>
 <city>Central Ave Ne Blaine</city>
-<state>MN</state>
-<zipcode>55434</zipcode>
+<state>va</state>
+<zipcode>23223</zipcode>
 <homephone>8523697410</homephone>
 <mobilephone>7410254863</mobilephone>
 <cardlessid>70852010060</cardlessid>
@@ -285,17 +285,17 @@
 <!-- Change the UserName everytime -->
 
 <user userid="new-user-15">
-<UserName>newuser15_67@ff.com</UserName>
+<UserName>newuser15_102@ff.com</UserName>
 <password>password</password>
 <lastname>Test</lastname>
 <rewardsnumber>48630936861</rewardsnumber>
 <cardlessid>32100255060</cardlessid>
-<zipcode>55434</zipcode>
+<zipcode>23223</zipcode>
 </user>
 
 
 <user userid="new-user-16">
-<UserName>newuser16_67@ff.com</UserName>
+<UserName>newuser16_102@ff.com</UserName>
 <password>password</password>
 </user>
 
