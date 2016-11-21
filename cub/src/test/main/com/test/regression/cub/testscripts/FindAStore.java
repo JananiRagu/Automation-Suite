@@ -80,7 +80,7 @@ public class FindAStore extends SuiteBase {
 	
 	//Guest User setting a Store with Zipcode using See store details link
 	
-		@Test(priority=14, enabled=true)
+		@Test(priority=14, enabled=false)
 		public void setStoreGuestZipCode() 
 		{
 			try{
@@ -125,7 +125,7 @@ public class FindAStore extends SuiteBase {
 		}
 		
 		//Guest User setting a Store with City and State name
-		@Test(priority=15 , enabled=true)
+		@Test(priority=15 , enabled=false)
 		public void setStoreGuestCityState() 
 		{
 			try{
@@ -169,7 +169,7 @@ public class FindAStore extends SuiteBase {
 		}
 		
 		//Guest User setting a Store with Street Name,City and State
-		@Test(priority=16, enabled=true)
+		@Test(priority=16, enabled=false)
 		public void setStoreGueststreetname() 
 		{
 			try{
@@ -230,7 +230,7 @@ public class FindAStore extends SuiteBase {
 		}
 		//SIGN IN User with ZIPCODE and change store from view store page
 		
-		@Test(priority=17, enabled=true)
+		@Test(priority=17, enabled=false)
 		public void setStoreAuthorizedZipcode() {
 
 		try{
@@ -307,7 +307,7 @@ public class FindAStore extends SuiteBase {
 
 		
 		//SIGN IN User with CITY 
-		@Test(priority=18,enabled=true)
+		@Test(priority=18,enabled=false)
 		public void setStoreAuthorizedCityState() {
 
 			try{
@@ -376,7 +376,7 @@ public class FindAStore extends SuiteBase {
 
 		//Checking miles for 20 miles
 		
-		@Test(priority=19, enabled=true)
+		@Test(priority=19, enabled=false)
 		
 		public void Miles20() 
 		{
@@ -433,7 +433,7 @@ public class FindAStore extends SuiteBase {
 			}
 		
 		//Checking miles for 50 miles
-		@Test(priority=20, enabled=true)
+		@Test(priority=20, enabled=false)
 		
 		public void Miles50()
 		{
@@ -491,7 +491,7 @@ public class FindAStore extends SuiteBase {
 
 //Check for Change store option present in Savings page for GUEST USER
 
-	@Test(priority=21, enabled=true)
+	@Test(priority=21, enabled=false)
 	
 	public void changeStoreFromDifferentPages() 
 	{
@@ -564,7 +564,7 @@ public class FindAStore extends SuiteBase {
 	}
 
 	//Clicking on View Stores by State
-	@Test(priority=22, enabled=true)
+	@Test(priority=22, enabled=false)
 	public void StoresbyState() 
 	{
 		try{
@@ -609,7 +609,7 @@ public class FindAStore extends SuiteBase {
 		
 		//Maps and driving directions
 	
-	@Test(priority=23, enabled=true)
+	@Test(priority=23, enabled=false)
 	public void mapanddriving() {
 
 	try{
@@ -710,7 +710,7 @@ public class FindAStore extends SuiteBase {
 }
 	//Invalid ZipCode
 	
-	@Test(priority=24, enabled=true)
+	@Test(priority=24, enabled=false)
 	public void invalidzipcode() {
 
 	try{
@@ -909,18 +909,17 @@ public class FindAStore extends SuiteBase {
 		System.out.println("Total number of results displayed is correct");
 	}
 	Thread.sleep(3000);
-	findastore.clicknext();
-	Thread.sleep(5000);
-	WebElement check3=_driver.findElement(By.xpath("//*[@id='content-primary']/div/div[2]/div[3]/ul/li[3]"));//Next
-	WebElement check4=_driver.findElement(By.xpath("//*[@id='content-primary']/div/div[2]/div[3]/ul/li[1]/a"));//Previous
 	
-	if(check3.getAttribute("disabled")=="disabled" || check4.getAttribute("disabled")!="disabled"){
+	WebElement check3=_driver.findElement(By.xpath("//*[@id='content-primary']/div/div[2]/div[3]/ul/li[2]/a"));//Next
+	//WebElement check4=_driver.findElement(By.xpath("//*[@id='content-primary']/div/div[2]/div[3]/ul/li[1]/a"));//Previous
+	/*findastore.clicknext();
+	Thread.sleep(5000);*/
+	if(check3.getAttribute("disabled")!="disabled"){
 		Assert.assertTrue(true);
 		System.out.println("Pagination for Next link");
 	}else{
 		Assert.assertTrue(false);
 	}
-		
 	
 	} catch (InterruptedException ie) {
 		log.info(ie.getMessage());
@@ -941,7 +940,7 @@ public class FindAStore extends SuiteBase {
 	
 }
 	//Setting store from My Account page.
-	@Test(priority=26, enabled=true)
+	@Test(priority=26, enabled=false)
 	public void validSignUpandsetstore(){
 		try{
 		// Retrieving test data for valid sign up no card
@@ -1050,7 +1049,7 @@ public class FindAStore extends SuiteBase {
 	
 	//Invalid City Street and State
 	
-		@Test(priority=27, enabled=true)
+		@Test(priority=27, enabled=false)
 		public void invalidCityStreet() {
 
 		try{
@@ -1147,7 +1146,7 @@ public class FindAStore extends SuiteBase {
 		}
 		
 	//Pharmacy FAS widget	
-		@Test(priority=28, enabled=true)
+		@Test(priority=28, enabled=false)
 		public void pharmacyFASwidget() 
 		{
 			try{
