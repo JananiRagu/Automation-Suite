@@ -80,7 +80,7 @@ public class WeeklyAdsPage extends SuiteBase{
        @FindBy(xpath = "//*[@class='wishabi-flyerfooter-trailer']/div/div[1]/span[2]/a[3]")
        private WebElement _termsofuse;
        
-       @FindBy(xpath = "//*[@class='int-modal-close-x']/a")
+       @FindBy(xpath = "html/body/div[2]/div[2]/a")
        private WebElement _closefeedbackpopup;
        
        @FindBy(xpath = "//*[@class='wishabi-flyerview-arrow-centerer-right']/div")

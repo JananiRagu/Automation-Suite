@@ -72,7 +72,7 @@ public class WeeklyAds extends SuiteBase {
 	WeeklyAdsPage weeklyAdspage;
 
 	//Sign In User Adding Weekly Ads to SL
-	@Test(priority=1, enabled=true)
+	@Test(priority=1, enabled=false)
 	public void AddingweeklyAdtoSL_authoriseduser() {
 
 	try{
@@ -168,7 +168,7 @@ public class WeeklyAds extends SuiteBase {
 	}
 	
 	//GUEST User adding weekly Ad to Shopping List
-	@Test(priority=2 , enabled=true)
+	@Test(priority=2 , enabled=false)
 	public void AddingweeklyAdtoSL_Guestuser() 
 	{
 		try{
@@ -227,7 +227,7 @@ public class WeeklyAds extends SuiteBase {
 	}
 	
 	//Remove the Weekly Ad
-	@Test(priority=3, enabled=true)
+	@Test(priority=3, enabled=false)
 	public void RemovingweeklyAdtoSL_authoriseduser() {
 
 	try{
@@ -318,7 +318,7 @@ public class WeeklyAds extends SuiteBase {
 	}
 	
 	//Validating the links inside information pop up
-	@Test(priority=4, enabled=true)
+	@Test(priority=4, enabled=false)
 	public void LinksValidationinsidepopup_authoriseduser() {
 
 	try{
@@ -492,7 +492,7 @@ public class WeeklyAds extends SuiteBase {
 	}
 	
 	//Validating the links outside information pop up(facebook and twitter)
-		@Test(priority=5, enabled=true)
+		@Test(priority=5, enabled=false)
 		public void LinksValidationonpage_authoriseduser() {
 
 		try{
@@ -593,7 +593,7 @@ public class WeeklyAds extends SuiteBase {
 		}
 		
 	//Validating the links outside information pop up(facebook and twitter)
-	@Test(priority=6, enabled=true)
+	@Test(priority=6, enabled=false)
 	public void HelpandFeedback_authoriseduser() {
 
 		try{
@@ -813,7 +813,7 @@ public class WeeklyAds extends SuiteBase {
 		}
 	}
 	
-	@Test(priority=8, enabled=true)
+	@Test(priority=8, enabled=false)
 	public void Pagination_authoriseduser() {
 
 		try{
@@ -923,7 +923,7 @@ public class WeeklyAds extends SuiteBase {
 	}
 	
 	//More Ads option functionality
-	@Test(priority=9, enabled=true)
+	@Test(priority=9, enabled=false)
 	public void MoreAdsOption_authoriseduser() {
 
 		try{

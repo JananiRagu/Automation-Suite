@@ -52,6 +52,7 @@ import org.testng.asserts.SoftAssert;
 import org.xml.sax.SAXException;
 
 import com.test.regression.farmfresh.pages.FFHome;
+import com.test.regression.farmfresh.pages.FindAStorePage;
 import com.test.regression.farmfresh.pages.MyAccountPage;
 import com.test.regression.farmfresh.pages.ShoppingListPage;
 import com.test.regression.farmfresh.pages.SignUpPage;
@@ -72,7 +73,7 @@ public class WeeklyAds extends SuiteBase {
 	WeeklyAdsPage weeklyAdspage;
 
 	//Sign In User Adding Weekly Ads to SL
-	@Test(priority=1, enabled=true)
+	@Test(priority=1, enabled=false)
 	public void AddingweeklyAdtoSL_authoriseduser() {
 
 	try{
@@ -86,7 +87,7 @@ public class WeeklyAds extends SuiteBase {
 
 		log.info("User Name : " + userId);
 		log.info("Password : " + password);
-		log.info("Cub Home page is launched");
+		log.info("FarmFresh Home page is launched");
 	cubHome.clickSignInLink();
 		
 	cubHome.enterLoginDetails(userId, password);
@@ -101,7 +102,7 @@ public class WeeklyAds extends SuiteBase {
 		Thread.sleep(5000);
 		String title=_driver.getTitle();
 		System.out.println(title);
-		Assert.assertEquals("Cub Foods - View Ads", title);
+		Assert.assertEquals("Farm Fresh Supermarkets - View Ads | NC & VA Grocery Store | Farm Fresh Supermarkets", title);
 		log.info("Weekly Ads page-Success" );
 		weeklyAdspage=new WeeklyAdsPage(_driver);
 		
@@ -168,7 +169,7 @@ public class WeeklyAds extends SuiteBase {
 	}
 	
 	//GUEST User adding weekly Ad to Shopping List
-	@Test(priority=2 , enabled=true)
+	@Test(priority=2 , enabled=false)
 	public void AddingweeklyAdtoSL_Guestuser() 
 	{
 		try{
@@ -178,7 +179,7 @@ public class WeeklyAds extends SuiteBase {
 			Thread.sleep(5000);
 			String title=_driver.getTitle();
 			System.out.println(title);
-			Assert.assertEquals("Cub Foods - View Ads", title);
+			Assert.assertEquals("Farm Fresh Supermarkets - View Ads | NC & VA Grocery Store | Farm Fresh Supermarkets", title);
 			log.info("Weekly Ads page-Success" );
 			weeklyAdspage=new WeeklyAdsPage(_driver);
 			
@@ -227,7 +228,7 @@ public class WeeklyAds extends SuiteBase {
 	}
 	
 	//Remove the Weekly Ad
-	@Test(priority=3, enabled=true)
+	@Test(priority=3, enabled=false)
 	public void RemovingweeklyAdtoSL_authoriseduser() {
 
 	try{
@@ -241,7 +242,7 @@ public class WeeklyAds extends SuiteBase {
 
 		log.info("User Name : " + userId);
 		log.info("Password : " + password);
-		log.info("Cub Home page is launched");
+		log.info("FarmFresh Home page is launched");
 	cubHome.clickSignInLink();
 		
 	cubHome.enterLoginDetails(userId, password);
@@ -256,7 +257,7 @@ public class WeeklyAds extends SuiteBase {
 		Thread.sleep(5000);
 		String title=_driver.getTitle();
 		System.out.println(title);
-		Assert.assertEquals("Cub Foods - View Ads", title);
+		Assert.assertEquals("Farm Fresh Supermarkets - View Ads | NC & VA Grocery Store | Farm Fresh Supermarkets", title);
 		log.info("Weekly Ads page-Success" );
 		weeklyAdspage=new WeeklyAdsPage(_driver);
 		
@@ -318,7 +319,7 @@ public class WeeklyAds extends SuiteBase {
 	}
 	
 	//Validating the links inside information pop up
-	@Test(priority=4, enabled=true)
+	@Test(priority=4, enabled=false)
 	public void LinksValidationinsidepopup_authoriseduser() {
 
 	try{
@@ -332,7 +333,7 @@ public class WeeklyAds extends SuiteBase {
 
 		log.info("User Name : " + userId);
 		log.info("Password : " + password);
-		log.info("Cub Home page is launched");
+		log.info("FarmFresh Home page is launched");
 	cubHome.clickSignInLink();
 		
 	cubHome.enterLoginDetails(userId, password);
@@ -347,7 +348,7 @@ public class WeeklyAds extends SuiteBase {
 		Thread.sleep(5000);
 		String title=_driver.getTitle();
 		System.out.println(title);
-		sa.assertEquals("Cub Foods - View Ads", title);
+		sa.assertEquals("Farm Fresh Supermarkets - View Ads | NC & VA Grocery Store | Farm Fresh SupermarketsCub Foods - View Ads", title);
 		log.info("Weekly Ads page-Success" );
 		weeklyAdspage=new WeeklyAdsPage(_driver);
 		
@@ -492,7 +493,7 @@ public class WeeklyAds extends SuiteBase {
 	}
 	
 	//Validating the links outside information pop up(facebook and twitter)
-		@Test(priority=5, enabled=true)
+		@Test(priority=5, enabled=false)
 		public void LinksValidationonpage_authoriseduser() {
 
 		try{
@@ -506,7 +507,7 @@ public class WeeklyAds extends SuiteBase {
 
 			log.info("User Name : " + userId);
 			log.info("Password : " + password);
-			log.info("Cub Home page is launched");
+			log.info("FarmFresh Home page is launched");
 		cubHome.clickSignInLink();
 			
 		cubHome.enterLoginDetails(userId, password);
@@ -521,7 +522,7 @@ public class WeeklyAds extends SuiteBase {
 			Thread.sleep(5000);
 			String title=_driver.getTitle();
 			System.out.println(title);
-			sa.assertEquals("Cub Foods - View Ads", title);
+			sa.assertEquals("Farm Fresh Supermarkets - View Ads | NC & VA Grocery Store | Farm Fresh SupermarketsCub Foods - View AdsCub Foods - View Ads", title);
 			log.info("Weekly Ads page-Success" );
 			weeklyAdspage=new WeeklyAdsPage(_driver);
 			
@@ -593,7 +594,7 @@ public class WeeklyAds extends SuiteBase {
 		}
 		
 	//Validating the links outside information pop up(facebook and twitter)
-	@Test(priority=6, enabled=true)
+	@Test(priority=6, enabled=false)
 	public void HelpandFeedback_authoriseduser() {
 
 		try{
@@ -607,7 +608,7 @@ public class WeeklyAds extends SuiteBase {
 
 			log.info("User Name : " + userId);
 			log.info("Password : " + password);
-			log.info("Cub Home page is launched");
+			log.info("FarmFresh Home page is launched");
 			cubHome.clickSignInLink();
 					
 			cubHome.enterLoginDetails(userId, password);
@@ -622,7 +623,7 @@ public class WeeklyAds extends SuiteBase {
 			Thread.sleep(5000);
 			String title=_driver.getTitle();
 			System.out.println(title);
-			sa.assertEquals("Cub Foods - View Ads", title);
+			sa.assertEquals("Farm Fresh Supermarkets - View Ads | NC & VA Grocery Store | Farm Fresh SupermarketsCub Foods - View Ads", title);
 			log.info("Weekly Ads page-Success" );
 			weeklyAdspage=new WeeklyAdsPage(_driver);
 			
@@ -630,7 +631,7 @@ public class WeeklyAds extends SuiteBase {
 			Thread.sleep(8000);
 			weeklyAdspage.clickhelp();
 			log.info("Help pop up opened");
-			Thread.sleep(5000);
+			Thread.sleep(8000);
 			String text=_driver.findElement(By.xpath("html/body/div[2]/h1")).getText();
 			System.out.println(text);
 			if(text.equals("Reading circulars")){
@@ -640,16 +641,17 @@ public class WeeklyAds extends SuiteBase {
 			Thread.sleep(3000);
 			weeklyAdspage.clickfeedback();
 			log.info("feedback pop up opened");
-			Thread.sleep(5000);
+			Thread.sleep(10000);
 			String text1=_driver.findElement(By.xpath("//*[@id='feedback_dialog']/div/div[1]/div[1]")).getText();
 			System.out.println(text1);
 			if(text1.equals("Add Your Feedback")){
 				sa.assertTrue(true,"Correct pop up");
 			}
 			weeklyAdspage.clickclosefeedback();
-			Thread.sleep(5000);
+			Thread.sleep(10000);
 			String title1=_driver.getTitle();
-			sa.assertEquals("Cub Foods - View Ads", title1);
+			//System.out.println(title1);
+			sa.assertEquals("Farm Fresh Supermarkets - View Ads | NC & VA Grocery Store | Farm Fresh Supermarkets", title1);
 			
 			sa.assertAll();
 					
@@ -675,7 +677,7 @@ public class WeeklyAds extends SuiteBase {
 	}
 	
 	//Footer Links
-	@Test(priority=7, enabled=true)
+	@Test(priority=7, enabled=false)
 	public void FooterLinks_authoriseduser() {
 
 		try{
@@ -686,10 +688,10 @@ public class WeeklyAds extends SuiteBase {
 			String password = validLogin.get("password");
 
 			cubHome = new FFHome(_driver);
-
+			
 			log.info("User Name : " + userId);
 			log.info("Password : " + password);
-			log.info("Cub Home page is launched");
+			log.info("FarmFresh Home page is launched");
 			cubHome.clickSignInLink();
 			SoftAssert sa = new SoftAssert();
 			cubHome.enterLoginDetails(userId, password);
@@ -704,7 +706,7 @@ public class WeeklyAds extends SuiteBase {
 			Thread.sleep(5000);
 			String title=_driver.getTitle();
 			System.out.println(title);
-			sa.assertEquals("Cub Foods - View Ads", title);
+			sa.assertEquals("Farm Fresh Supermarkets - View Ads | NC & VA Grocery Store | Farm Fresh Supermarkets", title);
 			log.info("Weekly Ads page-Success" );
 			weeklyAdspage=new WeeklyAdsPage(_driver);
 					
@@ -715,14 +717,16 @@ public class WeeklyAds extends SuiteBase {
 			//Powered By Flipp
 			weeklyAdspage.clickpoweredbyflipp();
 			log.info("Powered by Flipp link opened");
-			Thread.sleep(5000);
+			Thread.sleep(8000);
 			for (String winHandle : _driver.getWindowHandles()) { //Gets the new window handle
 		        System.out.println("Want to swtich to window "+ winHandle);
 		    	_driver.switchTo().window(winHandle);              
 		    }
+			Thread.sleep(8000);
 			String text=_driver.getTitle();
 			System.out.println(text);
-			sa.assertEquals("All Flyers for 10011 - Flipp", text);
+			Thread.sleep(8000);
+			sa.assertEquals("Flipp - Your Local Weekly Ads & Coupons", text);
 			 _driver.close();  
 			 log.info("Close the child browser");
 			 Thread.sleep(5000);
@@ -739,6 +743,7 @@ public class WeeklyAds extends SuiteBase {
 			 for (String winHandle : _driver.getWindowHandles()) { //Gets the new window handle
 			       _driver.switchTo().window(winHandle);              
 			   }
+			 Thread.sleep(8000);
 			String text1=_driver.getTitle();
 			System.out.println(text1);
 			sa.assertEquals("Flipp - Reimagine the Weekly Shopping Experience", text1);
@@ -758,6 +763,7 @@ public class WeeklyAds extends SuiteBase {
 			 for (String winHandle : _driver.getWindowHandles()) { //Gets the new window handle
 			       _driver.switchTo().window(winHandle);              
 			   }
+			 Thread.sleep(8000);
 			String text2=_driver.getTitle();
 			System.out.println(text2);
 			sa.assertEquals("Flipp - Reimagine the Weekly Shopping Experience", text2);
@@ -777,6 +783,7 @@ public class WeeklyAds extends SuiteBase {
 			 for (String winHandle : _driver.getWindowHandles()) { //Gets the new window handle
 			       _driver.switchTo().window(winHandle);              
 			   }
+			 Thread.sleep(8000);
 			String text3=_driver.getCurrentUrl();
 			System.out.println(text3);
 			sa.assertEquals("https://corp.flipp.com/flipp/terms_of_use", text3);
@@ -787,8 +794,9 @@ public class WeeklyAds extends SuiteBase {
 			 log.info("switch to parent browser"); 
 			Thread.sleep(8000);
 			_driver.switchTo().frame("flipp-iframe");
-			Thread.sleep(3000);
+			Thread.sleep(8000);
 			
+			System.out.println("all are true");
 			sa.assertAll();
 			System.out.println("All footer links are opening");
 								
@@ -813,7 +821,7 @@ public class WeeklyAds extends SuiteBase {
 		}
 	}
 	
-	@Test(priority=8, enabled=true)
+	@Test(priority=8, enabled=false)
 	public void Pagination_authoriseduser() {
 
 		try{
@@ -827,7 +835,7 @@ public class WeeklyAds extends SuiteBase {
 
 			log.info("User Name : " + userId);
 			log.info("Password : " + password);
-			log.info("Cub Home page is launched");
+			log.info("FarmFresh Home page is launched");
 			cubHome.clickSignInLink();
 					
 			cubHome.enterLoginDetails(userId, password);
@@ -842,7 +850,7 @@ public class WeeklyAds extends SuiteBase {
 			Thread.sleep(5000);
 			String title=_driver.getTitle();
 			System.out.println(title);
-			Assert.assertEquals("Cub Foods - View Ads", title);
+			Assert.assertEquals("Farm Fresh Supermarkets - View Ads | NC & VA Grocery Store | Farm Fresh Supermarkets", title);
 			log.info("Weekly Ads page-Success" );
 			weeklyAdspage=new WeeklyAdsPage(_driver);
 			
@@ -937,7 +945,7 @@ public class WeeklyAds extends SuiteBase {
 
 			log.info("User Name : " + userId);
 			log.info("Password : " + password);
-			log.info("Cub Home page is launched");
+			log.info("FarmFresh Home page is launched");
 			cubHome.clickSignInLink();
 					
 			cubHome.enterLoginDetails(userId, password);
@@ -952,7 +960,7 @@ public class WeeklyAds extends SuiteBase {
 			Thread.sleep(5000);
 			String title=_driver.getTitle();
 			System.out.println(title);
-			Assert.assertEquals("Cub Foods - View Ads", title);
+			Assert.assertEquals("Farm Fresh Supermarkets - View Ads | NC & VA Grocery Store | Farm Fresh Supermarkets", title);
 			log.info("Weekly Ads page-Success" );
 			weeklyAdspage=new WeeklyAdsPage(_driver);
 			SoftAssert sa = new SoftAssert();		

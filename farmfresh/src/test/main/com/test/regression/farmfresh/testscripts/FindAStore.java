@@ -951,7 +951,7 @@ public class FindAStore extends SuiteBase {
 	
 }
 	//Setting store from My Account page.
-	@Test(priority=26, enabled=true)
+	@Test(priority=26, enabled=false)
 	public void validSignUpandsetstore(){
 		try{
 		// Retrieving test data for valid sign up no card

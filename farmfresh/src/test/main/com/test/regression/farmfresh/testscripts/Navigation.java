@@ -57,7 +57,7 @@ public class Navigation extends SuiteBase {
        NavigationPage navigationpage;
 
        //Guest user Navigate to Departments page
-       @Test(priority=1, enabled=false)
+       @Test(priority=1, enabled=true)
        public void NavigatetoDepartments_GuestUser() {
               
               try {
@@ -187,7 +187,7 @@ public class Navigation extends SuiteBase {
        }
        }
        
-       @Test(priority=2, enabled=false)
+       @Test(priority=2, enabled=true)
        public void NavigatetoDepartments_SignedInuser() {
               
               try {
@@ -354,7 +354,7 @@ public class Navigation extends SuiteBase {
        }
        
        //Guest User Navigate to pharmacy page
-       @Test(priority=3, enabled=false)
+       @Test(priority=3, enabled=true)
        public void NavigatetoPharmacy_GuestUser() {
               
               try {
@@ -416,7 +416,7 @@ public class Navigation extends SuiteBase {
        }
        
        //Signed In User Navigate to Pharmacy
-       @Test(priority=4, enabled=false)
+       @Test(priority=4, enabled=true)
        public void NavigatetoPharmacy_SignedInUser() {
               
               try {
@@ -514,7 +514,7 @@ public class Navigation extends SuiteBase {
        /* ---------------------------- Guest User ------------------------*/
    	// Search functionality without any search criteria
 
-   	@Test(priority=1,enabled=true)
+   	@Test(priority=1,enabled=false)
    	public void Guest_Savings_Navigation() throws InterruptedException
    	
    	{	
